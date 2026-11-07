@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Urbex Finder</title>
+  <link rel="stylesheet" href="vendor/leaflet.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="bar">
+    <div class="brand">Urbex<span>Finder</span></div>
+    <form id="searchForm" class="search">
+      <input id="searchInput" type="search" placeholder="Town, address or lat,lon" autocomplete="off">
+      <button type="submit" class="btn">Go</button>
+      <button type="button" id="locateBtn" class="btn ghost" title="Use my location">◎ Near me</button>
+    </form>
+    <div class="controls">
+      <label>Radius
+        <select id="radius">
+          <option value="2000">2 km</option>
+          <option value="5000" selected>5 km</option>
+          <option value="10000">10 km</option>
+          <option value="25000">25 km</option>
+          <option value="50000">50 km</option>
+        </select>
+      </label>
+      <button id="scanBtn" class="btn accent">Scan this area</button>
+      <button id="savedBtn" class="btn ghost">★ Saved <span id="savedCount">0</span></button>
+    </div>
+  </header>
+
+  <main class="layout">
+    <aside class="sidebar">
+      <div id="status" class="status">Search for a place or tap <b>Near me</b>, then <b>Scan this area</b>.</div>
+      <div id="filters" class="filters"></div>
+      <ol id="results" class="results"></ol>
+      <p class="disclaimer">Places come from OpenStreetMap and may be out of date, demolished, private or dangerous. Check who owns a site and get permission. Never force entry, and don't go alone.</p>
+    </aside>
+    <div id="map"></div>
+  </main>
+
+  <section id="detail" class="drawer" hidden>
+    <button class="close" data-close aria-label="Close">×</button>
+    <div id="detailBody"></div>
+  </section>
+
+  <section id="saved" class="drawer" hidden>
+    <button class="close" data-close aria-label="Close">×</button>
+    <h2>Saved spots</h2>
+    <p class="muted">Export them as a KML file, then open it in Google Earth (Projects → Open → Import KML file).</p>
+    <div class="row">
+      <button id="exportKml" class="btn accent">Export KML for Google Earth</button>
+    </div>
+    <ul id="savedList" class="saved-list"></ul>
+  </section>
+
+  <script src="vendor/leaflet.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
