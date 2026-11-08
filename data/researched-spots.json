@@ -614,8 +614,8 @@
    "cat": "ruins",
    "type": "ghost town",
    "lat": 40.16748,
-   "lon": -104.37218,
-   "approx": false,
+   "lon": -104.37448,
+   "approx": true,
    "location": "Roggen, Colorado, Roggen, Weld County",
    "condition": "About half the town is abandoned: a deserted main street, a gas station and about a dozen boarded-up homes and shacks (2015).",
    "access": "Some residents remain; houses are boarded up.",
@@ -936,8 +936,8 @@
    "name": "Former Lathrop Park juvenile facility",
    "cat": "other",
    "type": "site",
-   "lat": 37.62352,
-   "lon": -104.781,
+   "lat": 37.62508,
+   "lon": -104.78215,
    "approx": true,
    "location": "Walsenburg, just east of the hospital, Walsenburg, Huerfano County",
    "condition": "Closed boys' juvenile facility, buildings left empty (undated local article; may since have been reused).",
@@ -1096,6 +1096,586 @@
    "access": "Glenwood Springs Historical Society; National Register.",
    "sources": [
     "https://glenwoodhistory.com/projects/cardiff-the-coke-ovens"
+   ]
+  },
+  {
+   "id": "ludlow-ghost-town",
+   "name": "Ludlow ghost town",
+   "cat": "ruins",
+   "type": "ghost town",
+   "lat": 37.33319,
+   "lon": -104.58388,
+   "approx": true,
+   "location": "About a mile from the Ludlow Massacre Memorial, off I-25 north of Trinidad",
+   "condition": "A dozen or so mostly intact structures including a stone jail, two one-room schoolhouses and a partly collapsed building with a piano inside (2016); several original buildings still standing.",
+   "access": "Monument visitable year round; ownership of the structures unknown.",
+   "sources": [
+    "https://www.placesthatwere.com/2016/01/the-bloody-history-of-ludlow-colorado.html",
+    "https://uncovercolorado.com/ghost-towns/ludlow"
+   ]
+  },
+  {
+   "id": "berwind-and-tabasco-coal-camp-ruins",
+   "name": "Berwind and Tabasco coal camp ruins",
+   "cat": "ruins",
+   "type": "ghost town",
+   "lat": 37.33038,
+   "lon": -104.51149,
+   "approx": true,
+   "location": "Berwind Canyon, southwest of Ludlow",
+   "condition": "Decaying ruins of the coal camps closed by CF&I in 1928.",
+   "access": "Unknown.",
+   "sources": [
+    "https://www.du.edu/ludlow/berwind.html",
+    "https://en.wikipedia.org/wiki/Berwind,_Colorado"
+   ]
+  },
+  {
+   "id": "first-state-bank-of-aguilar",
+   "name": "First State Bank of Aguilar",
+   "cat": "other",
+   "type": "site",
+   "lat": 37.40279,
+   "lon": -104.65332,
+   "approx": true,
+   "location": "Aguilar, Colorado",
+   "condition": "Abandoned bank building (2015 blog; current condition unverified).",
+   "access": "Unknown.",
+   "sources": [
+    "https://lifedeathiron.com/2015/11/28/25-more-abandoned-buildings-in-colorado-you-must-see-before-they-are-gone"
+   ]
+  },
+  {
+   "id": "cokedale-coke-ovens",
+   "name": "Cokedale coke ovens",
+   "cat": "industrial",
+   "type": "mine",
+   "lat": 37.1453,
+   "lon": -104.6211,
+   "approx": true,
+   "location": "Across Highway 12 from Cokedale, west of Trinidad",
+   "condition": "Ruins of the 1907 coke ovens, the largest surviving group in the state (2022).",
+   "access": "Viewable from the highway.",
+   "sources": [
+    "https://www.denvergazette.com/2022/05/15/coke-ovens-among-living-history-at-this-model-camp-colorful-colorado/"
+   ]
+  },
+  {
+   "id": "pritchett-soda-shop",
+   "name": "Pritchett Soda Shop",
+   "cat": "other",
+   "type": "site",
+   "lat": 37.36855,
+   "lon": -102.86234,
+   "approx": true,
+   "location": "Pritchett, Colorado",
+   "condition": "Abandoned soda shop (2015 blog; current condition unverified).",
+   "access": "Unknown.",
+   "sources": [
+    "https://lifedeathiron.com/2015/11/25/25-abandoned-buildings-in-colorado-you-must-see-before-they-are-gone"
+   ]
+  },
+  {
+   "id": "goldfield-city-hall-and-ghost-town",
+   "name": "Goldfield City Hall and ghost town",
+   "cat": "ruins",
+   "type": "ghost town",
+   "lat": 38.71777,
+   "lon": -105.12609,
+   "approx": true,
+   "location": "About 1 mile north of Victor on CO 67, Goldfield, Teller County",
+   "condition": "Partial ghost town; the 1899 city hall and fire station and a few building remains stand.",
+   "access": "Residents live there; paved road.",
+   "sources": [
+    "https://ghosttowns.com/states/co/goldfield.html",
+    "https://historycolorado.org/node/6894"
+   ]
+  },
+  {
+   "id": "855-main-street-abandoned-storefront",
+   "name": "855 Main Street abandoned storefront",
+   "cat": "other",
+   "type": "site",
+   "lat": 39.69682,
+   "lon": -105.72538,
+   "approx": false,
+   "location": "855 Main Street, Silver Plume",
+   "condition": "Abandoned former bookstore and antique shop (also a residence) with its contents still inside.",
+   "access": "Private.",
+   "sources": [
+    "https://espnwesterncolorado.com/silver-plume-colorado-has-a-crazy-abandoned-storefront/"
+   ]
+  },
+  {
+   "id": "colorado-central-mill-silverdale",
+   "name": "Colorado Central Mill (Silverdale)",
+   "cat": "industrial",
+   "type": "mill",
+   "lat": 39.70623,
+   "lon": -105.69712,
+   "approx": true,
+   "location": "Silverdale Trailhead off Guanella Pass Road above Georgetown",
+   "condition": "Concrete 1920s mill structure and rusted iron left from the Silverdale mining camp.",
+   "access": "Owned by Georgetown; public trail. Legal to visit.",
+   "sources": [
+    "https://www.denver7.com/lifestyle/discover-colorado/family-hike-on-guanella-pass-silver-dale-and-colorado-central-mill"
+   ]
+  },
+  {
+   "id": "hessie-townsite-cabins",
+   "name": "Hessie townsite cabins",
+   "cat": "ruins",
+   "type": "ghost town",
+   "lat": 40.0023,
+   "lon": -105.13602,
+   "approx": true,
+   "location": "Hessie Trailhead west of Eldora",
+   "condition": "Town deserted by 1905; small cabins remain along the trail.",
+   "access": "National forest trail. Legal to visit.",
+   "sources": [
+    "https://www.indianpeakswilderness.org/post/hessie-history"
+   ]
+  },
+  {
+   "id": "wellington-ore-bin",
+   "name": "Wellington Ore Bin",
+   "cat": "industrial",
+   "type": "mine",
+   "lat": 39.4849,
+   "lon": -106.01025,
+   "approx": false,
+   "location": "French Gulch, B&B Trailhead, Breckenridge",
+   "condition": "Five-level 1880s ore bin, stabilized in 2016, with graffiti.",
+   "access": "Hiking trail. Legal to visit.",
+   "sources": [
+    "https://breckhistory.org/?p=4841"
+   ]
+  },
+  {
+   "id": "iowa-hill-mining-site",
+   "name": "Iowa Hill mining site",
+   "cat": "industrial",
+   "type": "mine",
+   "lat": 39.48291,
+   "lon": -106.04655,
+   "approx": true,
+   "location": "Iowa Hill trail off Boreas Pass Road, Breckenridge",
+   "condition": "Abandoned hydraulic placer mining area with sluices and an 1870s boarding house.",
+   "access": "Public interpretive trail. Legal to visit.",
+   "sources": [
+    "https://gobreck.com/trip-ideas/hiking/historic-hiking-trails-in-breckenridge/"
+   ]
+  },
+  {
+   "id": "leadville-mill",
+   "name": "Leadville Mill",
+   "cat": "industrial",
+   "type": "mill",
+   "lat": 39.25082,
+   "lon": -106.29252,
+   "approx": true,
+   "location": "California Gulch, Leadville",
+   "condition": "Dormant mill; a contested proposal would reopen it (2024).",
+   "access": "Private.",
+   "sources": [
+    "https://arkvalleyvoice.com/leadville-mining-waste-processing-proposal-generating-conflict"
+   ]
+  },
+  {
+   "id": "sterling-great-western-sugar-factory",
+   "name": "Sterling Great Western Sugar Factory",
+   "cat": "industrial",
+   "type": "factory",
+   "lat": 40.62554,
+   "lon": -103.20771,
+   "approx": true,
+   "location": "US 6 at the southern edge of Sterling",
+   "condition": "Sugar factory that ran 1905-1985; idle factory and water tower still standing (2009); part of the site may be used for storage.",
+   "access": "Private.",
+   "sources": [
+    "https://longmontian.blogspot.com/2009/07/sterling-sugar-beet-factory.html"
+   ]
+  },
+  {
+   "id": "romantic-motor-vu-drive-in",
+   "name": "Romantic Motor Vu Drive-In",
+   "cat": "leisure",
+   "type": "theater",
+   "lat": 40.51525,
+   "lon": -107.54645,
+   "approx": true,
+   "location": "Craig, Colorado",
+   "condition": "Abandoned drive-in; the screen was still standing in Aug 2022 Street View.",
+   "access": "Unknown.",
+   "sources": [
+    "https://cinematreasures.org/theaters/27791/comments"
+   ]
+  },
+  {
+   "id": "merri-land-amusement-park-remnants",
+   "name": "Merri-Land amusement park remnants",
+   "cat": "leisure",
+   "type": "amusement park",
+   "lat": 40.39776,
+   "lon": -105.07498,
+   "approx": true,
+   "location": "Just west of Rossum Drive, Loveland",
+   "condition": "Small 1968-1970s park mostly destroyed in the 1976 flood; a possible ticket booth and pavilion are still visible from Rossum Drive.",
+   "access": "Private; view from Rossum Drive only.",
+   "sources": [
+    "https://kmax943.com/loveland-colorados-old-amusement-park/"
+   ]
+  },
+  {
+   "id": "apache-court-motel",
+   "name": "Apache Court Motel",
+   "cat": "leisure",
+   "type": "motel",
+   "lat": 38.85858,
+   "lon": -104.91787,
+   "approx": true,
+   "location": "Manitou Springs historic district",
+   "condition": "Abandoned motel with a decaying sign (photo, undated).",
+   "access": "Unknown.",
+   "sources": [
+    "https://www.75centralphotography.com/place/united-states/colorado/colorado-springs/manitou-springs-historic-distric/"
+   ]
+  },
+  {
+   "id": "colorado-building-and-theater-pueblo",
+   "name": "Colorado Building and theater (Pueblo)",
+   "cat": "leisure",
+   "type": "theater",
+   "lat": 38.27077,
+   "lon": -104.60874,
+   "approx": false,
+   "location": "401 N Main St, Pueblo",
+   "condition": "1925 Art Deco building; the 1,000-seat theater has been closed since the 1970s and most offices have been vacant since 2005. For sale (Jan 2024).",
+   "access": "Private, for sale.",
+   "sources": [
+    "https://constructionreporter.com/news/nearly-century-old-downtown-pueblo-building-with-theater-space-up-for-sale",
+    "https://www.pueblofilmcommission.org/news/tag/SCEDD"
+   ]
+  },
+  {
+   "id": "rugby-abandoned-general-store",
+   "name": "Rugby abandoned general store",
+   "cat": "other",
+   "type": "site",
+   "lat": 37.47001,
+   "lon": -104.66498,
+   "approx": true,
+   "location": "About 100 yards west of I-25 at Exit 41 (Rugby Road), about 15 miles north of Trinidad",
+   "condition": "Red brick abandoned general store (2015; no newer confirmation).",
+   "access": "Unknown.",
+   "sources": [
+    "https://lifedeathiron.com/2015/11/25/25-abandoned-buildings-in-colorado-you-must-see-before-they-are-gone"
+   ]
+  },
+  {
+   "id": "redstone-coke-ovens",
+   "name": "Redstone Coke Ovens",
+   "cat": "industrial",
+   "type": "factory",
+   "lat": 39.18082,
+   "lon": -107.23977,
+   "approx": true,
+   "location": "Along Highway 133 at Redstone",
+   "condition": "About 90 coke ovens abandoned for over a century; several restored (CPR, Dec 2025).",
+   "access": "Public historic site; legal to view.",
+   "sources": [
+    "https://www.cpr.org/2025/12/22/colorado-history-coke-ovens-redstone/"
+   ]
+  },
+  {
+   "id": "birch-ruins",
+   "name": "Birch Ruins",
+   "cat": "houses",
+   "type": "house",
+   "lat": 40.37719,
+   "lon": -105.52322,
+   "approx": true,
+   "location": "Knoll-Willows Open Space, Estes Park",
+   "condition": "Stone walls and fireplace of a bungalow left standing since a 1907 fire (2023).",
+   "access": "Public open space; legal to visit.",
+   "sources": [
+    "https://atlasobscura.com/places/birch-ruins"
+   ]
+  },
+  {
+   "id": "rio-cucharas-inn",
+   "name": "Rio Cucharas Inn",
+   "cat": "leisure",
+   "type": "hotel",
+   "lat": 37.62196,
+   "lon": -104.78215,
+   "approx": true,
+   "location": "Off US 160 heading east, a little past Lathrop State Park, Walsenburg",
+   "condition": "Closed to guests around 2016-2018; 2020 drone footage shows trash, Kokopelli murals on the adobe walls and swallows nesting in the rafters. Once had an Olympic-size indoor pool.",
+   "access": "Private.",
+   "sources": [
+    "https://kekbfm.com/abandoned-colorado-rio-cucharas-inn/",
+    "https://k99.com/drone-footage-captures-footage-of-abandoned-colorado-hotel/"
+   ]
+  },
+  {
+   "id": "a-frame-lounge",
+   "name": "A-Frame Lounge",
+   "cat": "other",
+   "type": "site",
+   "lat": 39.92054,
+   "lon": -104.86581,
+   "approx": true,
+   "location": "8801 Interstate 76 Frontage Road, Henderson",
+   "condition": "Defunct 1964 A-frame lounge (5,280 sq ft) with wings on both sides; listed for sale in 2019; virtual tour around 2020-2022.",
+   "access": "Private.",
+   "sources": [
+    "https://94kix.com/ixp/510/p/colorado-a-frame-lounge/"
+   ]
+  },
+  {
+   "id": "1925-farm-near-frederick",
+   "name": "1925 farm near Frederick",
+   "cat": "houses",
+   "type": "house",
+   "lat": 40.09869,
+   "lon": -104.93832,
+   "approx": true,
+   "location": "Near Frederick (exact spot not given)",
+   "condition": "Farm from 1925 abandoned for close to 30 years (photo gallery, undated).",
+   "access": "Private.",
+   "sources": [
+    "https://espnwesterncolorado.com/ixp/510/p/colorado-abandoned-frederick-farm/"
+   ]
+  },
+  {
+   "id": "2100-larimer-st-monfort-building",
+   "name": "2100 Larimer St (Monfort building)",
+   "cat": "other",
+   "type": "site",
+   "lat": 39.75381,
+   "lon": -104.99098,
+   "approx": false,
+   "location": "2100 Larimer St, Denver",
+   "condition": "Still empty five years after planned renovations began; part of the roof caved onto the street and the city labeled it neglected and derelict (~2024-2025).",
+   "access": "Private.",
+   "sources": [
+    "https://businessden.com/monfort-building-near-coors-field-is-neglected-and-derelict-city-says/"
+   ]
+  },
+  {
+   "id": "former-sears-store-monaco-and-evans",
+   "name": "Former Sears store, Monaco and Evans",
+   "cat": "leisure",
+   "type": "mall",
+   "lat": 39.67962,
+   "lon": -104.9377,
+   "approx": true,
+   "location": "Monaco Parkway and Evans Avenue, Denver",
+   "condition": "Vacant, blighted former Sears that attracts dumping and camping (~2023-2024); the city has pushed to remove it, so check it still stands.",
+   "access": "Private.",
+   "sources": [
+    "https://www.denver7.com/news/front-range/denver/councilwoman-stepping-in-to-remove-empty-sears-building-in-southeast-denver"
+   ]
+  },
+  {
+   "id": "altona-schoolhouse",
+   "name": "Altona Schoolhouse",
+   "cat": "institutional",
+   "type": "school",
+   "lat": 40.22443,
+   "lon": -105.27053,
+   "approx": true,
+   "location": "Heil Valley Ranch open space, near Lyons",
+   "condition": "Abandoned historic schoolhouse and ranch buildings (virtual tour, undated).",
+   "access": "Public open space; building entry rules unknown.",
+   "sources": [
+    "https://1037theriver.com/abandoned-colorado-schoolhouse-at-heil-valley-ranch/"
+   ]
+  },
+  {
+   "id": "colorado-motorsports-park-byers-race-track",
+   "name": "Colorado Motorsports Park / Byers Race Track",
+   "cat": "leisure",
+   "type": "race track",
+   "lat": 39.68048,
+   "lon": -104.24721,
+   "approx": false,
+   "location": "2050 S County Road 201, Byers",
+   "condition": "Built as a greyhound track and later used as Colorado Motorsports Park; called 'the abandoned racetrack in Byers' on Reddit (2026).",
+   "access": "Private; listed for sale or lease.",
+   "sources": [
+    "https://www.rofo.com/commercial-real-estate/building/CO/Byers/2050-S-County-Road-201-206924.html",
+    "https://reddit.sentinel-team.org/posts/1szarw0/snapshots/2026-05-01T03%3A24%3A07.050221Z"
+   ]
+  },
+  {
+   "id": "model",
+   "name": "Model",
+   "cat": "ruins",
+   "type": "ghost town",
+   "lat": 37.37291,
+   "lon": -104.24453,
+   "approx": false,
+   "location": "Along US 350 between Trinidad and La Junta, Model, Las Animas County",
+   "condition": "Abandoned village; many abandoned homes, some apparently left with belongings inside, weathered rather than vandalized (2016 blog; Reddit thread 2026).",
+   "access": "Unknown; probably private land.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Model,_Colorado",
+    "https://placesthatwere.com/2016/01/eerie-ghost-towns-of-colorado.html?m=0"
+   ]
+  },
+  {
+   "id": "tyrone-schoolhouse",
+   "name": "Tyrone schoolhouse",
+   "cat": "institutional",
+   "type": "school",
+   "lat": 37.45363,
+   "lon": -104.20409,
+   "approx": true,
+   "location": "Tyrone, near Model",
+   "condition": "Abandoned schoolhouse with junk in the schoolroom and old desks in the basement (2016); construction equipment suggested possible renovation.",
+   "access": "Unknown; likely private.",
+   "sources": [
+    "https://placesthatwere.com/2016/01/eerie-ghost-towns-of-colorado.html?m=0"
+   ]
+  },
+  {
+   "id": "st-aloysius-church-ruins-morley",
+   "name": "St. Aloysius Church ruins, Morley",
+   "cat": "religious",
+   "type": "church",
+   "lat": 37.0328,
+   "lon": -104.50554,
+   "approx": true,
+   "location": "Former coal camp at Morley, south of Trinidad near I-25",
+   "condition": "1917 concrete-block church abandoned by 1956; the rest of the camp was demolished but the church shell still stands.",
+   "access": "Private; the owner reportedly allows visitors who ask permission first.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Morley,_Colorado",
+    "https://k99.com/ixp/510/p/colorado-abandoned-church-morley/"
+   ]
+  },
+  {
+   "id": "unfinished-grand-junction-regional-airport-building",
+   "name": "Unfinished Grand Junction Regional Airport building",
+   "cat": "other",
+   "type": "site",
+   "lat": 39.06726,
+   "lon": -108.56448,
+   "approx": true,
+   "location": "Grand Junction Regional Airport grounds",
+   "condition": "About $4M spent on a building left unfinished and empty since 2013 after the FAA pulled funding (~2019 report).",
+   "access": "Airport property; restricted.",
+   "sources": [
+    "https://cbsnews.com/colorado/news/unfinished-airport-building-could-house-blm-headquarters-in-grand-junction"
+   ]
+  },
+  {
+   "id": "arroyo-school",
+   "name": "Arroyo School",
+   "cat": "institutional",
+   "type": "school",
+   "lat": 37.50501,
+   "lon": -105.00777,
+   "approx": true,
+   "location": "Near La Veta",
+   "condition": "Abandoned shell of Arroyo School (photographer's print listing, undated).",
+   "access": "Unknown.",
+   "sources": [
+    "https://joshua-house.pixels.com/featured/arroyo-school-sunset-joshua-house.html"
+   ]
+  },
+  {
+   "id": "elephant-rock-property-former-living-word-fellowship-compoun",
+   "name": "Elephant Rock property (former Living Word Fellowship compound)",
+   "cat": "other",
+   "type": "site",
+   "lat": 39.12221,
+   "lon": -104.9172,
+   "approx": true,
+   "location": "Elephant Rock, Palmer Lake",
+   "condition": "28-acre former camp with main buildings and seven cabins, described in 2024 as abandoned with buildings intact, as if members left one morning.",
+   "access": "Owned by the Town of Palmer Lake; future being decided.",
+   "sources": [
+    "https://www.coloradopolitics.com/2024/10/13/after-decades-of-use-by-a-cult-future-of-palmer-lake-property-now-in-the-hands-of-citizens/",
+    "https://kmax943.com/ixp/510/p/colorado-abandoned-cult-land/"
+   ]
+  },
+  {
+   "id": "creepy-abandoned-barn-off-huron-street",
+   "name": "Creepy abandoned barn off Huron Street",
+   "cat": "other",
+   "type": "site",
+   "lat": 39.91009,
+   "lon": -104.98755,
+   "approx": true,
+   "location": "Off Huron Street, Northglenn",
+   "condition": "Abandoned barn shown in a YouTube video with dolls and nooses hanging inside (undated); a nearby barn fire was reported, so check it still stands.",
+   "access": "Private; trespassing charges warned.",
+   "sources": [
+    "https://www.youtube.com/watch?v=jDTNoIEp0dA",
+    "https://kmax943.com/creepy-abandoned-colorado-barn/"
+   ]
+  },
+  {
+   "id": "former-encounter-church-building",
+   "name": "Former Encounter Church building",
+   "cat": "religious",
+   "type": "church",
+   "lat": 39.64821,
+   "lon": -104.98796,
+   "approx": true,
+   "location": "Denver south suburbs (exact building unconfirmed), Englewood, Arapahoe County",
+   "condition": "Former school, then shopping center, then megachurch; abandoned since 2017 per write-ups of a YouTube urbex video.",
+   "access": "Unknown; articles warn against trespassing.",
+   "sources": [
+    "https://1037theriver.com/ixp/510/p/colorado-abandoned-megachurch/"
+   ]
+  },
+  {
+   "id": "abandoned-broomfield-homestead-tv-graveyard",
+   "name": "Abandoned Broomfield homestead ('TV graveyard')",
+   "cat": "houses",
+   "type": "house",
+   "lat": 39.93078,
+   "lon": -105.07433,
+   "approx": true,
+   "location": "Broomfield (exact spot not given)",
+   "condition": "Main house, three-car garage and silo with a field of old TVs; belongings left behind (urbex photos, undated).",
+   "access": "Unknown; trespassing warned.",
+   "sources": [
+    "https://kekbfm.com/abandoned-colorado-homestead/"
+   ]
+  },
+  {
+   "id": "abandoned-1952-farmhouse",
+   "name": "Abandoned 1952 farmhouse",
+   "cat": "houses",
+   "type": "house",
+   "lat": 39.80055,
+   "lon": -105.08116,
+   "approx": true,
+   "location": "Near 82nd Avenue, Arvada (one source)",
+   "condition": "1952 farmhouse, heavily vandalized with graffiti and signs of squatting (undated).",
+   "access": "Unknown.",
+   "sources": [
+    "https://929nin.com/satanic-farmhouse-denver/"
+   ]
+  },
+  {
+   "id": "prosser-gulch-mining-remains",
+   "name": "Prosser Gulch mining remains",
+   "cat": "ruins",
+   "type": "ghost town",
+   "lat": 39.80193,
+   "lon": -105.51416,
+   "approx": true,
+   "location": "Prosser Gulch between Central City and Nevadaville",
+   "condition": "Stone, wood and metal buildings, old homes and a rusty car, described as structurally unsound (undated).",
+   "access": "Private land.",
+   "sources": [
+    "https://kmax943.com/ixp/510/p/prosser-gulch-ghost-town/"
    ]
   }
  ]
