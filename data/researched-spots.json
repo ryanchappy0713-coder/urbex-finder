@@ -1,0 +1,68 @@
+{
+ "researched": "2026-11-08",
+ "note": "Abandoned places reported by news outlets and urbex coverage. Most are private property; check recent photos and ask permission.",
+ "spots": [
+  {
+   "id": "lakeside-speedway",
+   "name": "Lakeside Speedway",
+   "cat": "leisure",
+   "type": "race track",
+   "lat": 39.7785,
+   "lon": -105.0545,
+   "approx": true,
+   "location": "Inside the Lakeside Amusement Park grounds, 4601 Sheridan Blvd, Lakeside",
+   "condition": "Closed in 1988 and still sitting abandoned next to the amusement park; used as a graveyard for old vehicles.",
+   "access": "Private property; trespassing is prohibited.",
+   "sources": [
+    "https://94kix.com/abandoned-lakeside-speedway/",
+    "https://kmax943.com/check-out-an-abandoned-colorado-speedway/"
+   ]
+  },
+  {
+   "id": "south-platte-hotel",
+   "name": "South Platte Hotel",
+   "cat": "leisure",
+   "type": "hotel",
+   "lat": 39.4075,
+   "lon": -105.1714,
+   "approx": true,
+   "location": "South Platte, at the confluence of the North Fork and South Platte River, southwest of Denver",
+   "condition": "Built in 1912; bought by Denver Water and vacant ever since.",
+   "access": "Owned by Denver Water; local outlets warn against entering.",
+   "sources": [
+    "https://1037theriver.com/south-platte-hotel-colorado/",
+    "https://mix1043fm.com/colorado-abandoned-south-platte-hotel/"
+   ]
+  },
+  {
+   "id": "prairie-lodge-motel",
+   "name": "Prairie Lodge Motel",
+   "cat": "leisure",
+   "type": "motel",
+   "lat": 40.1675,
+   "lon": -104.3722,
+   "approx": true,
+   "location": "Roggen, Weld County, off I-76",
+   "condition": "Abandoned motel in the Roggen ghost town; ran for years after most of the town was left to rot.",
+   "access": "Private; outlets say visiting is prohibited for legal and safety reasons.",
+   "sources": [
+    "https://94kix.com/ixp/510/p/colorado-abandoned-prairie-lodge/"
+   ]
+  },
+  {
+   "id": "gilman",
+   "name": "Gilman (abandoned company town)",
+   "cat": "ruins",
+   "type": "ghost town",
+   "lat": 39.5328,
+   "lon": -106.3939,
+   "approx": false,
+   "location": "Gilman, Eagle County, on US-24 near Minturn",
+   "condition": "Mining company town vacated over environmental contamination; buildings still standing.",
+   "access": "Private and an EPA cleanup site with contamination; view from the highway overlook.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Gilman,_Colorado"
+   ]
+  }
+ ]
+}

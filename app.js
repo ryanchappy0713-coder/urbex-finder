@@ -260,9 +260,9 @@ out center tags ${MAX_RESULTS * 3};`;
 
   // Query OpenStreetMap (your radius) and Wikidata (50 km) at the same time.
   async function searchArea(lat, lon, r, onEarly = () => {}) {
-    const key = `urbex.cache.v5.${lat.toFixed(2)},${lon.toFixed(2)},${r}`;
+    const key = `urbex.cache.v6.${lat.toFixed(2)},${lon.toFixed(2)},${r}`;
     const cached = readCache(key);
-    if (cached) return { places: [...mySpots(lat, lon, Math.max(r, 50000)), ...cached], notes: ['(Saved results from an earlier scan.)'] };
+    if (cached) return { places: [...mySpots(lat, lon, Math.max(r, 50000)), ...(await researchedSpots(lat, lon, r)), ...cached], notes: ['(Saved results from an earlier scan.)'] };
 
     let osmDone = false;
     const early = { wd: null, mines: null, city: null };
@@ -291,7 +291,7 @@ out center tags ${MAX_RESULTS * 3};`;
     if (osm.status === 'rejected') notes.push('OpenStreetMap servers are busy right now, so this only shows Wikidata places. Scan again later for more.');
     const found = [...(ct.status === 'fulfilled' ? ct.value : []), ...mergeWikidata(osmPlaces, wdPlaces), ...(mn.status === 'fulfilled' ? mn.value : [])];
     if (osm.status === 'fulfilled' && wd.status === 'fulfilled') writeCache(key, found);
-    return { places: [...mySpots(lat, lon, Math.max(r, 50000)), ...found], notes };
+    return { places: [...mySpots(lat, lon, Math.max(r, 50000)), ...(await researchedSpots(lat, lon, r)), ...found], notes };
   }
 
   function withDist(places, lat, lon, r) {
@@ -341,6 +341,22 @@ out center tags ${MAX_RESULTS * 3};`;
   }
 
 
+
+
+  // ---------- Researched spots (bundled: data/researched-spots.json) ----------
+  // Abandoned places found through news and urbex coverage, with sources.
+  let researchData = null;
+  async function researchedSpots(lat, lon, r) {
+    try { if (!researchData) researchData = await fetchJson('data/researched-spots.json'); } catch { return []; }
+    return (researchData.spots || []).map((x) => ({
+      id: `research/${x.id}`, source: 'research', osmType: null, osmId: null,
+      lat: x.lat, lon: x.lon, dist: haversine(lat, lon, x.lat, x.lon), cat: x.cat || 'other',
+      status: 'abandoned', conf: 'high', label: `Abandoned ${x.type}`, name: x.name, hasName: true,
+      tags: { location: x.location, 'reported condition': x.condition, access: x.access,
+        ...(x.approx ? { 'map position': 'approximate (from the description in the sources)' } : {}) },
+      aiSources: x.sources, researched: researchData.researched,
+    })).filter((p) => p.dist <= r);
+  }
 
   // ---------- Official city lists of vacant / derelict buildings ----------
   // Bundled with the app (data/vacant-buildings.json), built from cities' published lists.
@@ -706,6 +722,7 @@ out center tags ${MAX_RESULTS * 3};`;
     if (p.tags?.closed && +p.tags.closed >= 1990) s += 4;
     if (p.source === 'ai' || p.source === 'mine') s += conditionScore(p.tags?.['reported condition'] || '');
     if (p.source === 'mine') s += 30; // your own finds first
+    if (p.source === 'research') s += 18;
     s -= Math.min(25, (p.dist / 1000) / maxKm * 25);
     return s;
   }
@@ -778,7 +795,7 @@ out center tags ${MAX_RESULTS * 3};`;
       li.innerHTML = `<span class="dot" style="background:${color}"></span>
         <span class="name">${state.saved[p.id] ? '★ ' : ''}${esc(p.name)}</span>
         <span class="dist">${fmtDist(p.dist)}</span>
-        <span class="sub">${top.has(p.id) ? '<b class="top">⭐ Top pick</b> · ' : ''}<span class="conf conf-${confOf(p)}">${CONF_INFO[confOf(p)].label}</span> · ${p.source === 'ai' ? '✨ ' : ''}${esc(p.hasName ? p.label : CATEGORIES[p.cat].label)}${accessWarning(p.tags) ? ' · ⚠ private' : ''}${p.check && STATUS_INFO[p.check.status] ? ` · ${STATUS_INFO[p.check.status].icon} ${STATUS_INFO[p.check.status].badge}` : ''}</span>`;
+        <span class="sub">${top.has(p.id) ? '<b class="top">⭐ Top pick</b> · ' : ''}${p.source === 'research' ? '📰 ' : ''}<span class="conf conf-${confOf(p)}">${CONF_INFO[confOf(p)].label}</span> · ${p.source === 'ai' ? '✨ ' : ''}${esc(p.hasName ? p.label : CATEGORIES[p.cat].label)}${accessWarning(p.tags) ? ' · ⚠ private' : ''}${p.check && STATUS_INFO[p.check.status] ? ` · ${STATUS_INFO[p.check.status].icon} ${STATUS_INFO[p.check.status].badge}` : ''}</span>`;
       li.onclick = () => openDetail(p);
       resultsEl.appendChild(li);
 
@@ -809,7 +826,9 @@ out center tags ${MAX_RESULTS * 3};`;
     const earth = `https://earth.google.com/web/@${p.lat},${p.lon},120a,450d,35y,0h,55t,0r`;
     const gmapsSat = `https://www.google.com/maps/@?api=1&map_action=map&center=${p.lat},${p.lon}&zoom=19&basemap=satellite`;
     const streetView = `https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=${p.lat},${p.lon}`;
-    const source = p.source === 'mine' ? 'Added by you'
+    const source = p.source === 'research'
+      ? 'Researched from news and urbex coverage: ' + (p.aiSources || []).map((u) => `<a href="${esc(u)}" target="_blank" rel="noopener">${esc(u.replace(/^https?:\/\/(www\.)?/, '').split('/')[0])}</a>`).join(', ')
+      : p.source === 'mine' ? 'Added by you'
       : p.source === 'city'
       ? `<a href="${esc(p.list.url)}" target="_blank" rel="noopener">${esc(p.list.name)}</a>, ${esc(p.list.publisher)} (${esc(p.list.date)})`
       : p.source === 'usgs'
@@ -1284,6 +1303,12 @@ ${list.map((s) => `<Placemark><name>${x(s.name)}</name><styleUrl>#spot</styleUrl
   async function showCheck(p) {
     const box = document.getElementById('checkBox');
     if (!box || state.activeId !== p.id) return;
+    if (p.source === 'research') {
+      box.innerHTML = `<div class="badges"><span class="badge good">✓ Reported abandoned</span></div>
+        <p class="muted" style="margin:6px 0">${esc(p.tags['reported condition'])}<br><b>Access:</b> ${esc(p.tags.access)}<br>
+        <small>Researched ${esc(p.researched)}. Places change fast, so check the newest photos and 🕰 imagery before you go.</small></p>`;
+      return;
+    }
     if (p.source === 'mine') {
       box.innerHTML = `<p class="muted" style="margin:6px 0">You added this spot${p.tags['reported condition'] ? ` (${esc(p.tags['reported condition'])})` : ''}. Use 🕰 Compare years and Street View to keep an eye on it.</p>`;
       return;
