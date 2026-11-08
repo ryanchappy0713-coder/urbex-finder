@@ -685,7 +685,19 @@ out center tags ${MAX_RESULTS * 3};`;
     if (p.osmType === 'way' || p.osmType === 'relation') s += 6; // mapped as a building outline, not just a point
     if (p.check?.status === 'abandoned' || p.check?.status === 'standing') s += 15;
     if (p.tags?.closed && +p.tags.closed >= 1990) s += 4;
+    if (p.source === 'ai') s += conditionScore(p.tags?.['reported condition'] || '');
     s -= Math.min(25, (p.dist / 1000) / maxKm * 25);
+    return s;
+  }
+  // AI-found places: untouched beats vandalized; sealed, guarded or gone sinks.
+  function conditionScore(c) {
+    c = c.toLowerCase();
+    let s = 0;
+    if (/untouched|pristine|intact|time capsule|frozen in time|still (?:has|full of|inside)|furniture|left behind/.test(c)) s += 20;
+    if (/some (?:graffiti|vandal)|minor|light (?:graffiti|vandal)|partly/.test(c)) s += 6;
+    if (/heavily|ransacked|trashed|gutted|stripped|burn(?:ed|t) out/.test(c)) s -= 6;
+    if (/sealed|bricked|guarded|security|cameras|patrol|no access/.test(c)) s -= 12;
+    if (/demolish|torn down|razed|redevelop|reopen/.test(c)) s -= 40;
     return s;
   }
   const isGone = (p) => p.check?.status === 'demolished';
@@ -1611,7 +1623,7 @@ ${question || 'My question: '}`;
     } catch { /* coordinates alone are fine */ }
     const known = state.places.map((p) => p.name).slice(0, 80);
     const where = `${town ? town + ' ' : ''}(${lat.toFixed(4)}, ${lon.toFixed(4)})`;
-    const prompt = `AI Discover: find abandoned places within about ${km} km of ${where} that would be fun to explore: places that are genuinely abandoned (not just closed or reused), still standing, and still fairly untouched.
+    const prompt = `AI Discover: find abandoned places within about ${km} km of ${where} that I can go urban exploring in: places that are genuinely abandoned (not just closed or reused) and still standing. Partly vandalized or ransacked places are fine to include; untouched ones (interiors and objects still intact) are the best, so list those first.
 
 Already in my list, so skip these: ${known.length ? known.join('; ') : '(nothing yet)'}.
 
@@ -1622,11 +1634,11 @@ Search the way experienced explorers do:
 - local news about vacant, condemned or fire-damaged buildings,
 - preservation "endangered places" lists for the state, and Wikipedia lists of ghost towns or abandoned places in the area.
 
-Favor places with recent (2022 or later) photos or videos that show interiors still intact. Skip places that sources say were demolished, redeveloped, reopened, or completely sealed, and note it when a place is heavily vandalized or actively guarded. Also mention any abandoned places that are legal to visit, such as preserved ghost towns or ruins on public land.
+Favor places with recent (2022 or later) photos or videos. Skip places that sources say were demolished, redeveloped or reopened. In "status", say how untouched it is (untouched / some vandalism / heavily ransacked), and note if it is sealed, fenced or actively guarded. Also mention any abandoned places that are legal to visit, such as preserved ghost towns or ruins on public land.
 
 Reply with a short summary (2-4 sentences), then a JSON code block in exactly this form:
 \`\`\`json
-[{"name": "...", "type": "e.g. hospital, school, factory, mine, theater, house, ghost town", "location": "street address or nearby landmark, with town", "lat": null, "lon": null, "status": "what the newest sources say about its condition, with year (e.g. 'standing, interior intact, 2024 video')", "sources": ["https://..."]}]
+[{"name": "...", "type": "e.g. hospital, school, factory, mine, theater, house, ghost town", "location": "street address or nearby landmark, with town", "lat": null, "lon": null, "status": "condition from the newest sources, with year (e.g. 'untouched, furniture still inside, 2024 video' or 'some graffiti, easy to walk through, 2023')", "sources": ["https://..."]}]
 \`\`\`
 Give lat and lon only when a source states them or you are confident; otherwise leave them null and give the best location you can. List up to 15 places, best first.`;
     if (!getKey()) { openChat(prompt, { discover: true }); return; }
