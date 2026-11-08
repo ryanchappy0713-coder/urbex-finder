@@ -2869,6 +2869,585 @@
     "https://sentinelcolorado.com/metro/aurora-poised-to-gain-authority-to-step-in-against-neglectful-property-owners/",
     "https://www.loopnet.com/property/1525-joliet-st-aurora-co-80010/08001-R0097198"
    ]
+  },
+  {
+   "id": "apex-ghost-town",
+   "name": "Apex ghost town",
+   "cat": "ruins",
+   "type": "ghost town",
+   "lat": 39.86561,
+   "lon": -105.5699,
+   "approx": true,
+   "location": "End of Apex Valley Road, a graded dirt road off CO 119 between Black Hawk and Nederland, at about 9,842 ft",
+   "condition": "A handful of scattered buildings remain, including the hotel (a Gilpin County historic site) and a log cabin with a plaque marking it Gilpin County Historical Landmark No. 1 (photographed 2014). Two fires and heavy snow have destroyed much of the town. A few summer cabins and one year-round resident remain.",
+   "access": "unknown (summer cabins are privately held; one blog says it is unclear whether a road with abandoned cabins is public or private; the road is open after snowmelt, usually around April)",
+   "sources": [
+    "https://lifedeathiron.com/2014/03/29/apex-colorado-ghost-town-comparative-photos-1890s-and-today",
+    "https://k99.com/explore-whats-left-of-the-abandoned-town-of-apex-colorado/",
+    "https://uncovercolorado.com/ghost-towns/apex"
+   ]
+  },
+  {
+   "id": "baltimore-townsite",
+   "name": "Baltimore townsite",
+   "cat": "ruins",
+   "type": "ghost town",
+   "lat": 39.91709,
+   "lon": -105.50175,
+   "approx": true,
+   "location": "About a quarter mile off Tolland Road, between Rollinsville and East Portal, near Rollinsville, Gilpin County",
+   "condition": "Most of the town was abandoned around 1900. Some cabins may have been used as summer cabins into the 1930s-1950s, and the remains of a saloon are visible. Date of the description is unknown.",
+   "access": "unknown",
+   "sources": [
+    "https://sah-archipedia.org/node/3426"
+   ]
+  },
+  {
+   "id": "east-portal-camp-cabins-moffat-tunnel",
+   "name": "East Portal Camp Cabins (Moffat Tunnel)",
+   "cat": "houses",
+   "type": "cabin",
+   "lat": 39.90217,
+   "lon": -105.64632,
+   "approx": true,
+   "location": "East Portal of the Moffat Tunnel, at the end of Tolland/Rollins Pass road, East Portal (near Rollinsville), Gilpin County",
+   "condition": "Five worker cabins remain. Tunnel workers' families lived in them until the early 2000s. A 2023 request asked the Gilpin County Historic Preservation Commission to designate them a local landmark. This is a railroad camp, not a mining site.",
+   "access": "unknown",
+   "sources": [
+    "https://www.preserverollinspass.org/wp-content/uploads/2023/05/Local-Landmark-Designation-Request-East-Portal-Camp-Cabins.pdf"
+   ]
+  },
+  {
+   "id": "golden-gilpin-mill",
+   "name": "Golden Gilpin Mill",
+   "cat": "industrial",
+   "type": "mill",
+   "lat": 39.80115,
+   "lon": -105.49327,
+   "approx": true,
+   "location": "About 1 mile north of Black Hawk on CO 119, near the Black Hawk end of the old Gilpin Tramway",
+   "condition": "Described as the only surviving one of Black Hawk's 1880s-1920s mills. It had stopped operating by 1994. A state mining-reclamation (DRMS) document notes problems with the owner's reclamation permit. No current condition report was found.",
+   "access": "private (has an owner holding a reclamation permit; inside Black Hawk city limits)",
+   "sources": [
+    "https://sah-archipedia.org/node/8845",
+    "https://dnrweblink.state.co.us/DRMSSearch/0/doc/1176115/Page12.aspx"
+   ]
+  },
+  {
+   "id": "stanley-mining-company-mill",
+   "name": "Stanley Mining Company mill",
+   "cat": "industrial",
+   "type": "mill",
+   "lat": 39.7426,
+   "lon": -105.51364,
+   "approx": true,
+   "location": "About 1 mile west of Idaho Springs along Clear Creek, near US 6 / I-70",
+   "condition": "A large four-story mill with metal-clad framing and big tailings piles. A 1950 photo describes it in disrepair, and it has since been stabilized. An adventure park planned for the 40-acre site (first phase targeted for 2019) has no confirmed construction; its website said 'Coming Soon'.",
+   "access": "private (redevelopment site)",
+   "sources": [
+    "https://sah-archipedia.org/node/8192",
+    "https://digital.denverlibrary.org/nodes/view/1025123",
+    "https://1037theriver.com/stanley-mines-adventure-park/"
+   ]
+  },
+  {
+   "id": "7-30-mine-trail-ruins",
+   "name": "7:30 Mine Trail ruins",
+   "cat": "industrial",
+   "type": "mine",
+   "lat": 39.6961,
+   "lon": -105.72584,
+   "approx": true,
+   "location": "7:30 Mine Road/Trail climbing Republican Mountain above Silver Plume toward Brown Gulch, ending at the Griffin Memorial",
+   "condition": "Mine ruins, an abandoned cabin and old ore carts along the old mining road. Most mine openings are closed with grates. The roadbed is crumbling and exposed. Date of the information is unclear (recent trail guides).",
+   "access": "public trail (Clear Creek County trail); the surrounding Dives-Pelican and Seven-Thirty claims are patented private land",
+   "sources": [
+    "https://www.clearcreekcounty.us/index.aspx?nid=846",
+    "https://www.theoutbound.com/colorado/hiking/hike-the-7-30-mine-road-in-silver-plume",
+    "https://www.dangerousroads.org/north-america/usa/14257-driving-history-the-abandoned-7-30-mine-road-in-colorado.html"
+   ]
+  },
+  {
+   "id": "waldorf-ghost-town-and-mine",
+   "name": "Waldorf ghost town and mine",
+   "cat": "ruins",
+   "type": "ghost town",
+   "lat": 39.70623,
+   "lon": -105.69942,
+   "approx": true,
+   "location": "Leavenworth Creek Road off Guanella Pass Road (turnoff about 0.7 mi south of Georgetown Reservoir), at about 11,666 ft below McClellan Mountain, near Georgetown, Clear Creek County",
+   "condition": "A few original buildings and mine structures remain. A 2007 SummitPost visit describes the remains as standing silent and empty. Archive photos also show collapsed buildings.",
+   "access": "public land (Arapaho and Roosevelt National Forest, Clear Creek Ranger District)",
+   "sources": [
+    "https://www.ghosttowns.com/states/co/waldorf.html",
+    "https://www.summitpost.org/waldorf-ghost-town/335229",
+    "https://www.mtbproject.com/photo/7041659/leavenworth-road"
+   ]
+  },
+  {
+   "id": "conqueror-mine-complex-north-empire",
+   "name": "Conqueror Mine complex / North Empire",
+   "cat": "industrial",
+   "type": "mine",
+   "lat": 39.76111,
+   "lon": -105.683,
+   "approx": true,
+   "location": "North Empire Road (Main St north from Empire) to the tailings-pond parking area, then about 1.5 mi up North Empire Creek through four switchbacks",
+   "condition": "Some small structures and building remains of the Conqueror Mine, plus piles of wood and mining debris. The boarding house burned after 1960; only its stone foundation was left by 1978.",
+   "access": "unknown; the road is difficult and needs a high-clearance 4x4",
+   "sources": [
+    "https://4x4explore.com/rds/e_rds/empire_lp.html",
+    "https://www.ghosttowns.com/states/co/northempire.html",
+    "https://onxmaps.com/offroad/trails/us/colorado/bill-moore-lake"
+   ]
+  },
+  {
+   "id": "anglo-saxon-mill-and-mine-ruins-saxon-mountain-cabins",
+   "name": "Anglo Saxon mill and mine ruins / Saxon Mountain cabins",
+   "cat": "industrial",
+   "type": "mill",
+   "lat": 39.67546,
+   "lon": -105.64583,
+   "approx": true,
+   "location": "Saxon Mountain Road: side road about 200 yd east off a switchback about 2 mi up leads to the mill and mine ruins; several abandoned cabins on the right about 1 mi farther, Georgetown / Lawson, Clear Creek County",
+   "condition": "Ruins of the Anglo Saxon mill and mine, and several abandoned cabins (2012 off-road report).",
+   "access": "unknown (partly Arapaho National Forest per trail guides)",
+   "sources": [
+    "https://tflcar.com/2012/11/colorado-off-road-adventure-saxon-mountain-trail",
+    "https://4x4explore.com/rds/s_rds/saxon_mtn.html"
+   ]
+  },
+  {
+   "id": "blue-bird-mine-complex",
+   "name": "Blue Bird Mine complex",
+   "cat": "industrial",
+   "type": "mine",
+   "lat": 39.96138,
+   "lon": -105.51083,
+   "approx": true,
+   "location": "Caribou Ranch Open Space: about 2 mi from the parking lot via the Switzerland Trail railbed (DeLonde/Blue Bird loop), on a 0.1-mi spur, near Nederland, Boulder County",
+   "condition": "A preserved collection of mine buildings and debris, including a bunkhouse later used as a boarding house. Boulder County calls it well preserved. Trip reports are from 2010-2025. This is a protected historic site, not a museum.",
+   "access": "public land (Boulder County Open Space); closed April 1 - June 30 for wildlife",
+   "sources": [
+    "https://bouldercountyopenspace.org/hard-rock-mine-tour/bluebird.html",
+    "https://cyberwest.com/caribou-ranch-open-space-hike",
+    "https://www.komoot.com/smarttour/e782292022"
+   ]
+  },
+  {
+   "id": "cardinal-mill",
+   "name": "Cardinal Mill",
+   "cat": "industrial",
+   "type": "mill",
+   "lat": 39.96892,
+   "lon": -105.54997,
+   "approx": false,
+   "location": "About 2 mi west of Nederland above Coon Track Creek, near Nederland, Boulder County",
+   "condition": "Mill building still standing. It processed gold, silver and tungsten from 1902 to 1942, and the whole building had begun sliding toward the creek. Boulder County bought it in 2003, and it was listed on the National Register in 2011.",
+   "access": "public owner (Boulder County) but closed to the public for safety reasons",
+   "sources": [
+    "https://bouldercountyopenspace.org/hard-rock-mine-tour/cardinal.html"
+   ]
+  },
+  {
+   "id": "hall-valley-handcart-gulch-mining-camp",
+   "name": "Hall Valley / Handcart Gulch mining camp",
+   "cat": "ruins",
+   "type": "ghost town",
+   "lat": 39.10893,
+   "lon": -105.75846,
+   "approx": true,
+   "location": "Park County Road 60 north from US 285 at Webster; the Hall Valley/Handcart Gulch staging area is about 4.5 mi northwest, toward Webster Pass, near Webster/Grant (Bailey area), Park County",
+   "condition": "A handful of buildings, including a tumbledown cabin and some ruins. Much of the townsite is covered by Hall Valley Campground. Date of the information is unknown.",
+   "access": "public land (Pike National Forest)",
+   "sources": [
+    "https://ghosttowns.com/states/co/hall.html",
+    "https://www.fs.usda.gov/r02/psicc/recreation/hall-valley-area"
+   ]
+  },
+  {
+   "id": "former-denny-s-bayou-seafood-bbq",
+   "name": "Former Denny's / Bayou Seafood & BBQ",
+   "cat": "other",
+   "type": "store",
+   "lat": 38.83396,
+   "lon": -104.82535,
+   "approx": true,
+   "location": "302 N. Academy Blvd. (near The Citadel mall), Colorado Springs, El Paso County",
+   "condition": "Former Denny's, closed in 2017 when state regulators seized four Colorado Springs Denny's. It later housed Bayou Seafood & BBQ, which also closed. KOAA called it an 'abandoned restaurant' and KKTV a vacant building when it caught fire on Sept. 2, 2025, and a man was found critically injured inside. The fire was contained; I found no follow-up on demolition. Newest info Sept 2025.",
+   "access": "Private; fire-damaged, possibly unsafe",
+   "sources": [
+    "https://www.koaa.com/news/local-news/one-person-is-in-critical-condition-after-a-fire-in-an-abandoned-restaurant-in-colorado-springs",
+    "https://www.kktv.com/2025/09/03/fire-colorado-springs-restaurant-under-control-1-critical-condition",
+    "https://www.firehouse.com/community-risk/community-risk-reduction/video/55314491/colorado-springs-co-firefighters-find-man-in-vacant-building-after-fire"
+   ]
+  },
+  {
+   "id": "needle-s-eye-tunnel-moffat-road-rollins-pass",
+   "name": "Needle's Eye Tunnel (Moffat Road / Rollins Pass)",
+   "cat": "other",
+   "type": "tunnel",
+   "lat": 39.93602,
+   "lon": -105.65933,
+   "approx": false,
+   "location": "Rollins Pass Road (east side), just below the Continental Divide, on the abandoned Moffat Road 'Hill Route' grade, Rollinsville, Gilpin/Boulder County",
+   "condition": "Short high-altitude railroad tunnel still standing but closed year-round after a partial collapse/rockfall (1979 or 1990, sources differ) that blocked through travel; line abandoned 1935, rails pulled. Info current to roughly 2021-2025.",
+   "access": "public land (National Forest); tunnel closed to entry and vehicles",
+   "sources": [
+    "https://www.coloradopreservation.org/endangered-places/moffat-road-hill-route",
+    "https://clui.org/ludb/site/rollins-pass",
+    "https://www.ndholmes.com/trip-reports/the-remains-of-east-rollins-pass/"
+   ]
+  },
+  {
+   "id": "devil-s-slide-trestles-moffat-road",
+   "name": "Devil's Slide Trestles (Moffat Road)",
+   "cat": "rail",
+   "type": "railroad",
+   "lat": 39.93218,
+   "lon": -105.5372,
+   "approx": true,
+   "location": "Rollins Pass Road east side, about 16 mi from Rollinsville, ~11,600 ft, roughly 1,000 ft above Middle Boulder Creek; short hike from parking area",
+   "condition": "1905 wooden trestles still standing but decaying, unstable and closed to crossing; viewable from trail on either side (Denver Gazette, July 2025).",
+   "access": "public land (National Forest); trestles closed",
+   "sources": [
+    "https://www.denvergazette.com/2025/07/09/historic-train-trestles-too-dangerous-to-cross-can-be-seen-on-colorado-hike-de56f8ad-b955-456e-8414-b95a95664095/",
+    "https://www.dangerousroads.org/north-america/usa/2967-devils-slide-trestles.html"
+   ]
+  },
+  {
+   "id": "riflesight-notch-trestle-and-collapsed-tunnel-33",
+   "name": "Riflesight Notch Trestle and collapsed Tunnel 33",
+   "cat": "rail",
+   "type": "railroad",
+   "lat": 39.91804,
+   "lon": -105.78556,
+   "approx": true,
+   "location": "Rollins Pass Road (west side), about 7 mi from Winter Park; Riflesight trail (1.73 mi, west side) passes two small 'twin' trestles and ends at collapsed Tunnel No. 33 beneath the trestle",
+   "condition": "Loop trestle still standing but dilapidated and unpassable; tunnel beneath caved in after closure; twin trestles nearby. Reports 2007-2022, no 2024-specific report.",
+   "access": "public land (National Forest); seasonal closure Nov 16-Jun 14 noted",
+   "sources": [
+    "https://atlasobscura.com/places/rifle-sight-notch",
+    "https://www.preserverollinspass.org/?p=389",
+    "https://clancytucker.blogspot.com/2022/05/29-july-2022-rifle-sight-notch-colorado.html"
+   ]
+  },
+  {
+   "id": "switzerland-trail-grade-colorado-northwestern-denver-boulder",
+   "name": "Switzerland Trail grade (Colorado & Northwestern / Denver, Boulder & Western)",
+   "cat": "rail",
+   "type": "railroad",
+   "lat": 40.10256,
+   "lon": -105.36321,
+   "approx": true,
+   "location": "Switzerland Trail county road / OHV route between Sunset, Gold Hill Road and Glacier Lake (Boulder County Rd 93 north section), Sunset / Gold Hill / Ward, Boulder County",
+   "condition": "Line closed 1919, rails pulled; roadbed survives with rock cuts, trestle ruins and visible embankment rockwork; a townsite building remains at Sunset. 5280 and Boulder Reporting Lab (July 2026) coverage.",
+   "access": "public land (county road / National Forest); some private inholdings",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Switzerland_Trail",
+    "https://5280.com/how-to-explore-the-ghost-railroad-outside-of-boulder/",
+    "https://boulderreportinglab.org/2026/07/19/boulder-once-had-a-railroad-into-the-mountains-heres-what-happened-to-it/"
+   ]
+  },
+  {
+   "id": "hagerman-tunnel-and-colorado-midland-grade-with-douglass-cit",
+   "name": "Hagerman Tunnel and Colorado Midland grade (with Douglass City ruins)",
+   "cat": "other",
+   "type": "tunnel",
+   "lat": 39.25082,
+   "lon": -106.29482,
+   "approx": true,
+   "location": "Colorado Midland Centennial Trail from trailhead on Hagerman Pass Road (past Native/Windsor Lakes turnoff); tunnel at 11,528 ft, Leadville, Lake County",
+   "condition": "Abandoned 1887 tunnel (bypassed 1893), open at both ends but west end caved in 1943 - do not enter; trail passes trestle remains, snowshed remains, rock cuts and Douglass City worker-camp ruins. Trip reports to 2020-2022.",
+   "access": "public land (San Isabel/White River National Forest)",
+   "sources": [
+    "https://www.hikingwalking.com/destinations/co/co_cent/leadville/colorado_midland/colorado_midland_detail",
+    "https://trekkingwiththebs.blogspot.com/2020/07/hagerman-tunnel-hike.html",
+    "https://drgw.net/info/HagermanTunnel"
+   ]
+  },
+  {
+   "id": "colorado-midland-railroad-tunnels-buena-vista",
+   "name": "Colorado Midland Railroad Tunnels (Buena Vista)",
+   "cat": "other",
+   "type": "tunnel",
+   "lat": 38.84222,
+   "lon": -106.13343,
+   "approx": true,
+   "location": "County Road 371 north of Buena Vista along the Arkansas River; Midland grade bike trail (8.8 mi) from River Park/Shields Gulch",
+   "condition": "Rock tunnels from the Colorado Midland (abandoned c.1918-1922) still standing; can be driven, biked or walked through; trestles scrapped in WWII. Info to roughly 2021-2024.",
+   "access": "public (county road / BLM)",
+   "sources": [
+    "https://www.uncovercolorado.com/activities/midland-railroad-tunnels",
+    "https://1037theriver.com/midland-railroad-tunnels-buena-vista-colorado/",
+    "https://arkvalleyvoice.com/history-lives-the-midland-railroad-and-midland-hill"
+   ]
+  },
+  {
+   "id": "colorado-midland-tunnels-in-ute-pass",
+   "name": "Colorado Midland tunnels in Ute Pass",
+   "cat": "other",
+   "type": "tunnel",
+   "lat": 38.82874,
+   "lon": -104.52535,
+   "approx": true,
+   "location": "Old Colorado Midland grade up Ute Pass above US 24 (Ute Pass trail; Tunnel 2 just past hike-a-bike section), Manitou Springs / Cascade, El Paso County",
+   "condition": "Several 1886 Colorado Midland tunnels (5-8 per sources) remain on the abandoned grade, last Midland Terminal train 1949; some may be on restricted property. Undated/older sources.",
+   "access": "mixed public/private - check land status",
+   "sources": [
+    "https://westsidepioneer.com/Articles/030112/CobwebCorners.html",
+    "https://singletracks.com/bike-trails/colorado-midland-ute-pass.html"
+   ]
+  },
+  {
+   "id": "alpine-tunnel-west-portal-and-alpine-station",
+   "name": "Alpine Tunnel West Portal and Alpine Station",
+   "cat": "other",
+   "type": "tunnel",
+   "lat": 38.60932,
+   "lon": -106.51674,
+   "approx": true,
+   "location": "End of FS Roads 765/839, about 13 mi northeast of Pitkin",
+   "condition": "DSP&P tunnel abandoned 1910; west portal buried by landslides with rails/redwood timbers inside; ruins of engine house and section house, part of turntable; telegraph office/platform partly restored by volunteers. Road damaged 2016, briefly reopened Aug 2022; check status.",
+   "access": "public land (Gunnison National Forest)",
+   "sources": [
+    "https://clui.org/ludb/site/alpine-tunnel-west-portal",
+    "https://www.uncovercolorado.com/alpine-tunnel-west-portal-pitkin",
+    "https://www.legendsofamerica.com/co-alpinetunnel/"
+   ]
+  },
+  {
+   "id": "boreas-pass-railroad-relics-baker-s-tank-engine-house-ruins",
+   "name": "Boreas Pass railroad relics (Baker's Tank, engine house ruins)",
+   "cat": "rail",
+   "type": "railroad",
+   "lat": 39.45664,
+   "lon": -105.90816,
+   "approx": true,
+   "location": "Boreas Pass Road (DSP&P/C&S grade); Baker's Tank at MP 102.16 ~3-4 mi below summit on Breckenridge side; engine house ruins across road from summit section house, Breckenridge / Como, Summit-Park County",
+   "condition": "Last train 1937; wooden Baker's water tank still stands (restored 1958); foundations/remains of 1883 engine house (burned 1909) visible at summit; summit section house is a restored hut.",
+   "access": "public land (National Forest road)",
+   "sources": [
+    "https://www.waymarking.com/waymarks/WM9Q3X_Bakers_Tank_Mile_Post_10216_Boreas_Pass_Road_Summit_County_Colorado",
+    "https://sah-archipedia.org/node/9655",
+    "https://4x4explore.com/rds/b_rds/boreas_ps.html"
+   ]
+  },
+  {
+   "id": "sargents-d-rgw-water-tank",
+   "name": "Sargents D&RGW Water Tank",
+   "cat": "other",
+   "type": "site",
+   "lat": 38.40416,
+   "lon": -106.41503,
+   "approx": true,
+   "location": "Beside former Marshall Pass line bed in Sargents, east of Monarch Pass on US 50",
+   "condition": "1937 redwood 55,500-gal tank still standing ~12 ft from the former tracks (removed 1955); only surviving tank in original location on the Marshall Pass route; acquired 2005 by local historical association.",
+   "access": "private (historical association), visible from public road",
+   "sources": [
+    "https://www.historycolorado.org/node/7844",
+    "https://npgallery.nps.gov/GetAsset/3d0324ca-78cf-4ce8-965d-a0438ace838a"
+   ]
+  },
+  {
+   "id": "trout-lake-rio-grande-southern-water-tank-and-trestle-bridge",
+   "name": "Trout Lake Rio Grande Southern Water Tank and Trestle (Bridge 51-A)",
+   "cat": "rail",
+   "type": "railroad",
+   "lat": 38.02925,
+   "lon": -108.47125,
+   "approx": true,
+   "location": "Galloping Goose Trail around Trout Lake; trestle at east end of lake (Trestle Road), Trout Lake / Telluride, San Miguel County",
+   "condition": "RGS abandoned c.1951-1953; 50,000-gal wooden water tank (NRHP 2003) and wooden trestle still standing; trestle stabilized by Forest Service, closed to vehicles.",
+   "access": "public land (Uncompahgre National Forest) / trail",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Trout_Lake_(Colorado)",
+    "https://historypointer.com/nris/resource/03000777",
+    "https://www.onxmaps.com/offroad/trails/us/colorado/trestle-road-3l6orepmv6w4"
+   ]
+  },
+  {
+   "id": "rattlesnake-trestle-san-luis-southern-railway",
+   "name": "Rattlesnake Trestle (San Luis Southern Railway)",
+   "cat": "rail",
+   "type": "railroad",
+   "lat": 37.43546,
+   "lon": -105.51419,
+   "approx": true,
+   "location": "Near Blanca along County Road 12 (old road crossing, bypassed by newer bridge)",
+   "condition": "1910 wooden trestle, 190 ft long, still standing after line closure; used as a county road bridge until replaced; NRHP 2004.",
+   "access": "unknown (county ROW)",
+   "sources": [
+    "https://en.wikipedia.org/wiki/San_Luis_Southern_Railway_Trestle",
+    "https://townofblanca.colorado.gov/rattlesnake-trestle"
+   ]
+  },
+  {
+   "id": "wilson-gulch-trestle-d-rgw-farmington-branch",
+   "name": "Wilson Gulch Trestle (D&RGW Farmington Branch)",
+   "cat": "rail",
+   "type": "railroad",
+   "lat": 37.27695,
+   "lon": -107.8766,
+   "approx": true,
+   "location": "Wilson Gulch south of Durango on the former Farmington Branch right-of-way (county-owned strip)",
+   "condition": "Century-old wooden trestle (c.1905) still standing; branch abandoned 1968, rails removed by 1971.",
+   "access": "public (La Plata County-owned ROW)",
+   "sources": [
+    "https://www.durangoherald.com/?p=197875",
+    "https://drgw.net/info/FarmingtonBranch"
+   ]
+  },
+  {
+   "id": "devil-s-creek-railroad-trestle",
+   "name": "Devil's Creek Railroad Trestle",
+   "cat": "rail",
+   "type": "railroad",
+   "lat": 38.03047,
+   "lon": -107.31699,
+   "approx": true,
+   "location": "Silver Thread Scenic Byway (SH 149) stop #21, near Lake Fork canyon, Lake City, Hinsdale County",
+   "condition": "Railroad bed and trestle remains of the abandoned D&RG branch still at the site; timbers partly removed after abandonment.",
+   "access": "unknown (viewable from byway)",
+   "sources": [
+    "https://silverthreadbyway.com/21-devil-s-creek-railroad-trestle",
+    "https://lakecity.com/silver-thread-scenic-byway/"
+   ]
+  },
+  {
+   "id": "gold-camp-road-tunnel-3-short-line-railroad",
+   "name": "Gold Camp Road Tunnel 3 (Short Line railroad)",
+   "cat": "other",
+   "type": "tunnel",
+   "lat": 38.83396,
+   "lon": -104.82765,
+   "approx": true,
+   "location": "Upper Gold Camp Road, closed 8.5-mi section on the former Colorado Springs & Cripple Creek District 'Short Line' grade",
+   "condition": "Former railroad tunnel partially collapsed 1988; road section closed to vehicles since; fire damage reported 2006; other tunnels on the grade remain. Open to hikers/bikers.",
+   "access": "public land (Pike National Forest / city)",
+   "sources": [
+    "https://www.atlasobscura.com/places/gold-camp-road-tunnels",
+    "https://www.fs.usda.gov/r02/psicc/projects/archive/4488",
+    "https://uncovercolorado.com/activities/gold-camp-road-tunnels"
+   ]
+  },
+  {
+   "id": "tennessee-pass-railroad-tunnels-original-1890-bore",
+   "name": "Tennessee Pass railroad tunnels (original 1890 bore)",
+   "cat": "other",
+   "type": "tunnel",
+   "lat": 39.35564,
+   "lon": -106.33105,
+   "approx": true,
+   "location": "Tennessee Pass on the dormant D&RGW/UP Tennessee Pass line beside US 24; 1945 tunnel 50 ft west of original; Belden Tunnel near Gilman, Leadville / Red Cliff, Lake-Eagle County",
+   "condition": "Line silent since 1997; original 1890 tunnel portals buried, part collapsed 2012 causing a highway sinkhole and was sealed; 1945 tunnel stands with snow curtain. Reddit exploration post May 2025.",
+   "access": "private (railroad property, line out of service)",
+   "sources": [
+    "https://clui.org/ludb/site/tennessee-pass-railroad-tunnel-west-portal",
+    "https://forum.trains.com/t/colorado-hwy-sinkhole-into-old-railroad-tunnel/241034",
+    "https://www.coloradocentralmagazine.com/?p=16810"
+   ]
+  },
+  {
+   "id": "uintah-railway-grade-and-trestle-sites-baxter-pass",
+   "name": "Uintah Railway grade and trestle sites, Baxter Pass",
+   "cat": "rail",
+   "type": "railroad",
+   "lat": 39.60054,
+   "lon": -106.85688,
+   "approx": true,
+   "location": "Baxter Pass road north of Mack, which largely follows the old Uintah track bed; grade visible north of old US 6 west of Mack, Mack / Atchee, Garfield-Mesa County",
+   "condition": "Narrow-gauge line abandoned 1939; grade and several old trestle sites still visible; part of company hotel at Mack reportedly survives (unverified). Some sites on private property.",
+   "access": "mixed public (BLM road) / private",
+   "sources": [
+    "https://www.abandonedrails.com/uintah-railway",
+    "https://www.highways-byways.com/Baxter_Pass.html",
+    "https://en.wikipedia.org/wiki/Uintah_Railway"
+   ]
+  },
+  {
+   "id": "valley-drive-in",
+   "name": "Valley Drive-In",
+   "cat": "leisure",
+   "type": "drive-in",
+   "lat": 40.25026,
+   "lon": -103.79995,
+   "approx": true,
+   "location": "On US Highway 34, Fort Morgan. Single screen, room for about 300 cars",
+   "condition": "Drive-ins.com says the theater is closed but the physical facility remains. The Fort Morgan Times reported in May 2011 that it would not reopen because of financial pressures. RoadArch says it closed in 2011 and the sign remains. Newest info is the undated drive-ins.com listing (site updated 2026).",
+   "access": "Private. The owner reportedly planned to lease the property (2011).",
+   "sources": [
+    "https://drive-ins.com/wiki/cotvall/valley-drive-in-theater",
+    "https://drive-ins.com/news/cotvall/valley-drive-in-theater",
+    "https://roadarch.com/driveins/co.html"
+   ]
+  },
+  {
+   "id": "cave-of-the-winds-abandoned-exit-road-and-farewell-sign",
+   "name": "Cave of the Winds abandoned exit road and farewell sign",
+   "cat": "other",
+   "type": "site",
+   "lat": 38.85858,
+   "lon": -104.92017,
+   "approx": true,
+   "location": "The former exit road of the Cave of the Winds attraction in Williams Canyon, about 3 miles up to Rampart Range Road, Manitou Springs, El Paso County",
+   "condition": "The road is abandoned and full of rockfall, with a stream running over it. The old sign bidding visitors farewell still stands. Graffiti reported as recent as 2018.",
+   "access": "Posted no trespassing, hiking or camping. A trail guide says it can be hiked if you have turned in a waiver at the Cave.",
+   "sources": [
+    "https://kmax943.com/abandoned-exit-colorados-cave-of-the-winds/",
+    "https://929nin.com/cave-of-the-winds-colorado/",
+    "https://www.singletracks.com/?p=284138"
+   ]
+  },
+  {
+   "id": "former-russell-stover-candy-plant",
+   "name": "Former Russell Stover candy plant",
+   "cat": "industrial",
+   "type": "factory",
+   "lat": 38.47819,
+   "lon": -107.87628,
+   "approx": true,
+   "location": "2200 Stover Ave., Montrose (about 280,000 sq ft building on a 21.7-acre site)",
+   "condition": "Russell Stover closed the plant in 2020. It has been vacant since then. A planned 2021 food-processing reuse never happened, and a 2024 foreclosure auction drew no bidders. Local group Red Nile LLC bought it in 2024, and later local coverage says it is still vacant with no clear plans. Newest info: 2024.",
+   "access": "Private property, owned by Red Nile LLC since 2024",
+   "sources": [
+    "https://www.montrosepress.com/news/local-group-buys-russell-stover-plant-after-years-of-vacancy/article_e98690d0-4dd1-11ef-b713-7f0c37890035.html",
+    "https://www.montrosebusinesstimes.com/2024/05/30/former-russell-stover-plant-heading-foreclosure-sale-developers-failed-find-tenant-buyer/",
+    "https://kekbfm.com/colorado-montrose-russell-stover-plant-update/"
+   ]
+  },
+  {
+   "id": "ute-ulay-mill-and-town-site",
+   "name": "Ute-Ulay Mill and Town Site",
+   "cat": "industrial",
+   "type": "mill",
+   "lat": 38.03047,
+   "lon": -107.31929,
+   "approx": true,
+   "location": "County Road 20 along Henson Creek, about 4 miles west of Lake City",
+   "condition": "Colorado Preservation Inc. put it on its Most Endangered Places list in 2015, naming the threat as 'demolition by neglect \u2013 vacant'. Denver7 calls it a decaying, neglected mining town. A 2011 blog called the mill 'remarkably intact', and a 2012 photo caption says the mill and some buildings are still standing. A Mining History Association tour describes a restored headframe and hoist house, a boarding house and a log cabin. It was listed on the National Register in 2017. Newest info: 2017.",
+   "access": "Interpretive site that visitors can tour (per Denver7 and the Mining History Association). Exact ownership unknown.",
+   "sources": [
+    "https://www.coloradopreservation.org/?p=16160",
+    "https://www.denver7.com/lifestyle/discover-colorado/colorado-ghost-towns-and-mining-history-exploring-the-ute-ulay-mining-complex-and-town-site",
+    "https://mininghistoryassociation.org/LakeCityTour2.htm"
+   ]
+  },
+  {
+   "id": "ohio-city",
+   "name": "Ohio City",
+   "cat": "ruins",
+   "type": "ghost town",
+   "lat": 38.5716,
+   "lon": -106.61989,
+   "approx": false,
+   "location": "Ohio City townsite, northeast of Gunnison on the road toward Pitkin",
+   "condition": "Described as 'pretty much just a ghost town' apart from a few year-round residents. Original buildings still standing include the schoolhouse, jail and city hall, plus some cabins and old homes. Info is from tourism pages, year not stated.",
+   "access": "Unknown. Some residents live there, so treat buildings as private.",
+   "sources": [
+    "https://www.uncovercolorado.com/ghost-towns/ohio-city",
+    "https://www.allcrestedbutte.com/history_museums/ohio_city_colorado_ghost_town.php"
+   ]
   }
  ]
 }

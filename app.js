@@ -225,6 +225,7 @@ out center tags ${MAX_RESULTS * 3};`;
       });
       const shown = show(places, r);
       runStatusChecks(state.places);
+      if (typeof liveBox !== 'undefined' && liveBox.open) runLiveSearch(true);
       const R = +$('radius').value;
       if (R > r && shown.length) notes.unshift(`Few places within ${r / 1000} km, so this shows the nearest ones up to ${R / 1000} km.`);
       const extra = notes.length ? `<br><small>${notes.join(' ')}</small>` : '';
@@ -1478,6 +1479,9 @@ Each user message may begin with an "App context" block describing what the user
     .add-form { display: flex; flex-direction: column; gap: 10px; margin-top: 12px; }
     .add-form label { display: flex; flex-direction: column; gap: 4px; color: var(--muted); font-size: 12px; }
     .add-form input, .add-form select { padding: 8px; border-radius: 6px; border: 1px solid var(--line); background: var(--bg); color: var(--text); font: inherit; }
+    .live-list { list-style: none; padding: 0; margin: 6px 0; }
+    .live-list li { display: flex; gap: 8px; padding: 6px 0; border-bottom: 1px solid var(--line); }
+    .live-list img { width: 56px; height: 42px; object-fit: cover; border-radius: 4px; flex: none; }
     .photos { display: flex; gap: 8px; overflow-x: auto; padding-bottom: 4px; }
     .photos a { flex: none; width: 128px; text-decoration: none; color: var(--muted); font-size: 11px; }
     .photos img { width: 128px; height: 96px; object-fit: cover; border-radius: 6px; display: block; background: var(--panel-2); }
@@ -1922,6 +1926,69 @@ Give lat and lon only when a source states them or you are confident; otherwise 
       render();
       openDetail(p);
     };
+  }
+
+
+  // ---------- Live social search: recent Reddit posts about abandoned places near the scan ----------
+  const liveBox = document.createElement('details');
+  liveBox.className = 'scout';
+  liveBox.innerHTML = `<summary>📡 Live from Reddit: recent posts about abandoned places here</summary><div id="liveBody" class="muted" style="font-size:12.5px">Scan an area first.</div>`;
+  scoutBox.before(liveBox);
+  liveBox.addEventListener('toggle', () => { if (liveBox.open) runLiveSearch(); });
+  let liveFor = null;
+
+  async function liveTown() {
+    const c = state.center;
+    if (!c) return null;
+    try {
+      const r = await fetchJson(`${NOMINATIM}/reverse?format=jsonv2&zoom=10&lat=${c.lat}&lon=${c.lon}`);
+      const a = r.address || {};
+      return { town: a.city || a.town || a.village || a.county || '', state: a.state || '' };
+    } catch { return { town: '', state: '' }; }
+  }
+
+  // Reddit's own search first; PullPush (a public Reddit archive) as a fallback.
+  async function redditSearch(q) {
+    const tryJson = async (url) => { const res = await fetch(url); if (!res.ok) throw new Error(res.status); return res.json(); };
+    try {
+      const d = await tryJson(`https://www.reddit.com/search.json?q=${encodeURIComponent(q)}&sort=new&limit=25&raw_json=1`);
+      return (d.data?.children || []).map((c) => c.data).map((x) => ({ title: x.title, sub: x.subreddit, url: `https://www.reddit.com${x.permalink}`, t: x.created_utc, thumb: /^https?:/.test(x.thumbnail || '') ? x.thumbnail : '', score: x.score, comments: x.num_comments }));
+    } catch {
+      const d = await tryJson(`https://api.pullpush.io/reddit/search/submission/?q=${encodeURIComponent(q)}&size=25&sort=desc&sort_type=created_utc`);
+      return (d.data || []).map((x) => ({ title: x.title, sub: x.subreddit, url: `https://www.reddit.com${x.permalink || `/comments/${x.id}`}`, t: x.created_utc, thumb: /^https?:/.test(x.thumbnail || '') ? x.thumbnail : '', score: x.score, comments: x.num_comments }));
+    }
+  }
+
+  async function runLiveSearch(force) {
+    const body = document.getElementById('liveBody');
+    if (!state.center) { body.textContent = 'Search for a place or tap Near me first.'; return; }
+    const key = `${state.center.lat.toFixed(2)},${state.center.lon.toFixed(2)}`;
+    if (liveFor === key && !force) return;
+    liveFor = key;
+    body.innerHTML = 'Searching Reddit right now…';
+    const loc = await liveTown();
+    const place = loc.town || loc.state;
+    if (!place) { body.textContent = "Couldn't work out the town name for this spot."; return; }
+    const queries = [`abandoned ${place}`, `urbex ${place}`, ...(loc.state && loc.state !== place ? [`abandoned ${loc.state}`] : [])];
+    let posts = [], failed = 0;
+    for (const q of queries) {
+      try { posts.push(...await redditSearch(q)); } catch { failed++; }
+    }
+    if (!posts.length) {
+      body.innerHTML = failed === queries.length
+        ? `Couldn't reach Reddit from this browser right now (it sometimes blocks apps). <a href="https://www.reddit.com/search/?q=${encodeURIComponent('abandoned ' + place)}&sort=new" target="_blank" rel="noopener">Open the search on Reddit</a> instead.`
+        : 'No recent posts found for this area.';
+      return;
+    }
+    // Keep posts that look like they are about places, newest first, no duplicates.
+    const seen = new Set();
+    posts = posts.filter((x) => x.title && !seen.has(x.url) && seen.add(x.url) && /abandon|urbex|derelict|ghost town|vacant|ruin|explor|decay|forgotten|old /i.test(x.title))
+      .sort((a, b) => (b.t || 0) - (a.t || 0)).slice(0, 30);
+    body.innerHTML = `<p style="margin:6px 0">Newest posts for <b>${esc(place)}</b>, searched just now. Explorers rarely post exact locations, so look for clues and then use Add a spot.</p>
+      <ul class="live-list">${posts.map((x) => `<li>${x.thumb ? `<img src="${esc(x.thumb)}" alt="" loading="lazy">` : ''}<div><a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.title)}</a><br>
+        <small>r/${esc(x.sub)} · ${x.t ? new Date(x.t * 1000).toISOString().slice(0, 10) : ''}${x.comments != null ? ` · ${x.comments} comments` : ''}</small></div></li>`).join('')}</ul>
+      <button class="btn" id="liveRefresh" type="button">↻ Search again</button>`;
+    document.getElementById('liveRefresh').onclick = () => runLiveSearch(true);
   }
 
   async function addDiscovered(text, report) {
