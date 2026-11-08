@@ -28,7 +28,7 @@
     ruins:         { label: 'Ruins',               color: '#b08968' },
     houses:        { label: 'Houses',              color: '#9a9993' },
     mines:         { label: 'Old mines (USGS)',    color: '#a47148' },
-    official:      { label: 'Derelict (city list)', color: '#ff5d8f' },
+    official:      { label: 'Neglected (city list)', color: '#ff5d8f' },
     other:         { label: 'Other',               color: '#6c757d' },
   };
 
@@ -36,7 +36,7 @@
   const state = {
     center: null,          // {lat, lon}
     places: [],            // normalized results
-    hidden: new Set(),     // hidden categories
+    hidden: new Set(['official']), // hidden categories (city neglected-property list is off by default)
     hideDemolished: true,  // hide places the status check says are gone
     hideReused: true,      // hide places that are back in use
     showLeads: false,      // low-confidence leads (former/closed, ghost towns, mines)
@@ -335,8 +335,8 @@ out center tags ${MAX_RESULTS * 3};`;
           .replace(/\b(\d+)(ST|ND|RD|TH)\b/g, (m, n, x) => n + x.toLowerCase());
         out.push({
           id: `city/${list.id}/${b.address}`, source: 'city', osmType: null, osmId: null,
-          lat: b.lat, lon: b.lon, dist, cat: 'official', status: 'derelict', conf: 'high',
-          label: `On ${list.city}'s ${list.shortName}`, name, hasName: true,
+          lat: b.lat, lon: b.lon, dist, cat: 'official', status: 'neglected', conf: 'low',
+          label: `Neglected property (${list.city} city list)`, name, hasName: true,
           tags: { address: `${b.address}, ${list.city}`, list: `${list.name} (${list.date})`, ...(b.district ? { 'council district': String(b.district) } : {}), ...(b.approx ? { 'map position': 'approximate (matched to the street, not the exact building)' } : {}) },
           list,
         });
@@ -1166,8 +1166,7 @@ ${list.map((s) => `<Placemark><name>${x(s.name)}</name><styleUrl>#spot</styleUrl
     const box = document.getElementById('checkBox');
     if (!box || state.activeId !== p.id) return;
     if (p.source === 'city') {
-      box.innerHTML = `<div class="badges"><span class="badge good">✓ On ${esc(p.list.city)}'s ${esc(p.list.shortName)}</span></div>
-        <p class="muted" style="margin:6px 0">City inspectors listed this building as neglected or derelict as of ${esc(p.list.date)}. Check Street View for its current state.</p>`;
+      box.innerHTML = `<p class="muted" style="margin:6px 0">On ${esc(p.list.city)}'s neglected property list (${esc(p.list.date)}). That usually means a run-down building the owner is being made to fix, not an abandoned one. Many are still owned and used.</p>`;
       return;
     }
     const ai = `<button class="btn" id="checkAi">🔎 Check with AI (web search)</button>`;
