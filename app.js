@@ -674,7 +674,7 @@ out center tags ${MAX_RESULTS * 3};`;
   const CAT_WEIGHT = { official: 16, institutional: 25, industrial: 20, military: 20, leisure: 18, religious: 14, rail: 12, ruins: 10, houses: 6, other: 4, mines: 0 };
   const CONF_INFO = { high: { label: 'Likely abandoned', score: 50 }, medium: { label: 'Disused', score: 28 }, low: { label: 'Lead', score: 0 } };
   function confOf(p) {
-    if (p.check?.status === 'abandoned') return 'high';
+    if (p.check?.status === 'abandoned' || p.check?.status === 'standing') return 'high';
     return p.conf || 'low';
   }
   function scoreOf(p) {
@@ -683,7 +683,7 @@ out center tags ${MAX_RESULTS * 3};`;
     if (p.hasName) s += 8;
     if (p.tags?.wikipedia) s += 6;
     if (p.osmType === 'way' || p.osmType === 'relation') s += 6; // mapped as a building outline, not just a point
-    if (p.check?.status === 'abandoned') s += 15;
+    if (p.check?.status === 'abandoned' || p.check?.status === 'standing') s += 15;
     if (p.tags?.closed && +p.tags.closed >= 1990) s += 4;
     s -= Math.min(25, (p.dist / 1000) / maxKm * 25);
     return s;
@@ -1068,8 +1068,35 @@ ${list.map((s) => `<Placemark><name>${x(s.name)}</name><styleUrl>#spot</styleUrl
     return best && { status: best.status, evidence: best.evidence };
   }
 
+  // Ghost towns and ruins: the useful question is whether buildings are still standing.
+  const STANDING_RE = new RegExp([
+    String.raw`\b(?:\d+|one|two|three|four|five|six|seven|eight|nine|ten|a few|a couple of|several|some|many|numerous|dozens of|about \d+|over \d+|more than \d+)\s+(?:[\w-]+\s+){0,3}?(?:buildings?|structures?|cabins?|houses|homes|shacks|stores?|churches|schools?|mills?)\s+(?:still\s+)?(?:remain|remains|stand|stands|survive|survives|are still standing)\b`,
+    String.raw`\b(?:buildings?|structures?|cabins?)\s+(?:still\s+)?(?:remain(?:s)?\s+standing|still stand(?:s|ing)?)\b`,
+    String.raw`\b(?:the\s+)?remaining\s+(?:buildings|structures|cabins|log cabins)\b`,
+    String.raw`\b(?:best|well)[- ]preserved\s+(?:ghost towns?|mining towns?)\b`,
+    String.raw`\bstanding\s+(?:buildings|structures|cabins)\b`,
+  ].join('|'), 'i');
+  const NOTHING_LEFT_RE = /\b(?:nothing|little|no (?:trace|buildings?|structures?))\s+(?:now\s+)?(?:remains?|is left|are left|survives?)\b|\bonly (?:the\s+)?(?:foundations?|a (?:historical\s+)?marker|a cemetery)\s+(?:remains?|survives?|marks?)\b/i;
+  function sentenceAround(text, m) {
+    const dot = text.lastIndexOf('. ', m.index), nl = text.lastIndexOf('\n', m.index);
+    const start = Math.max(dot >= 0 ? dot + 2 : 0, nl >= 0 ? nl + 1 : 0);
+    const ends = [text.indexOf('. ', m.index + m[0].length), text.indexOf('\n', m.index + m[0].length)].filter((x) => x >= 0);
+    return text.slice(start, (ends.length ? Math.min(...ends) : text.length) + 1).replace(/\s+/g, ' ').trim().slice(0, 300);
+  }
+  function standingEvidence(text) {
+    const m = STANDING_RE.exec(text);
+    return m ? sentenceAround(text, m) : null;
+  }
+  const isGhostLike = (p) => p.cat === 'ruins' || /ghost town|abandoned village|mining camp|mining town|ruins/i.test(`${p.label} ${p.tags?.description || ''}`);
+  // Turn a Wikipedia result into this place's check.
+  function applyCheck(p, r) {
+    if (r && r.standing && !r.nothingLeft && isGhostLike(p)) return { status: 'standing', evidence: r.standing, source: r.source, url: r.url };
+    return r && r.status ? r : { status: null };
+  }
+
   const STATUS_INFO = {
     demolished: { badge: 'Likely demolished', icon: '🚫', cls: 'warn' },
+    standing: { badge: 'Buildings still standing', icon: '🏚', cls: 'good' },
     reused: { badge: 'Reused / restored', icon: '♻', cls: '' },
     abandoned: { badge: 'Reported abandoned', icon: '✓', cls: 'good' },
   };
@@ -1081,11 +1108,11 @@ ${list.map((s) => `<Placemark><name>${x(s.name)}</name><styleUrl>#spot</styleUrl
     return w && /^en:/.test(w) ? w.slice(3) : null;
   }
   function readStatusCache(key) {
-    try { const c = JSON.parse(localStorage.getItem('urbex.status.v2.' + key) || 'null'); if (c && Date.now() - c.t < STATUS_TTL) return c.r; } catch { /* ignore */ }
+    try { const c = JSON.parse(localStorage.getItem('urbex.status.v3.' + key) || 'null'); if (c && Date.now() - c.t < STATUS_TTL) return c.r; } catch { /* ignore */ }
     return undefined;
   }
   function writeStatusCache(key, r) {
-    try { localStorage.setItem('urbex.status.v2.' + key, JSON.stringify({ t: Date.now(), r })); } catch { /* ignore */ }
+    try { localStorage.setItem('urbex.status.v3.' + key, JSON.stringify({ t: Date.now(), r })); } catch { /* ignore */ }
   }
 
   // Fetch up to 20 articles in one request (as wikitext) and classify each.
@@ -1117,8 +1144,10 @@ ${list.map((s) => `<Placemark><name>${x(s.name)}</name><styleUrl>#spot</styleUrl
         const asked = back[page.title];
         if (!asked || page.missing) continue;
         const wikitext = page.revisions?.[0]?.slots?.main?.content || '';
-        const found = classifyText(wikiToText(wikitext));
-        out[asked] = found ? { ...found, source: 'Wikipedia', url: `https://en.wikipedia.org/wiki/${encodeURIComponent(page.title.replace(/ /g, '_'))}` } : null;
+        const text = wikiToText(wikitext);
+        const found = classifyText(text);
+        const standing = standingEvidence(text), nothingLeft = NOTHING_LEFT_RE.test(text);
+        out[asked] = (found || standing) ? { ...(found || { status: null, evidence: '' }), standing, nothingLeft, source: 'Wikipedia', url: `https://en.wikipedia.org/wiki/${encodeURIComponent(page.title.replace(/ /g, '_'))}` } : null;
       }
       for (const t of chunk) writeStatusCache('wp:' + t, out[t]);
       if (i + 20 < todo.length) await new Promise((ok) => setTimeout(ok, 500));
@@ -1174,7 +1203,7 @@ ${list.map((s) => `<Placemark><name>${x(s.name)}</name><styleUrl>#spot</styleUrl
       const chunk = todo.slice(i, i + 20);
       try {
         const res = await wikiStatusMany([...new Set(chunk.map(wikiTitle))]);
-        for (const p of chunk) p.check = res[wikiTitle(p)] || { status: null };
+        for (const p of chunk) p.check = applyCheck(p, res[wikiTitle(p)]);
       } catch { break; /* Wikipedia busy: leave the rest unchecked */ }
       if (run !== checkRun) return;
       render();
@@ -1222,7 +1251,7 @@ ${list.map((s) => `<Placemark><name>${x(s.name)}</name><styleUrl>#spot</styleUrl
       wire(); return;
     }
     box.innerHTML = '<p class="muted">Checking Wikipedia…</p>';
-    try { p.check = (await wikiStatus(title)) || { status: null }; } catch { box.innerHTML = `<p class="muted">Couldn't reach Wikipedia.</p><div class="row">${ai}</div>`; wire(); return; }
+    try { p.check = applyCheck(p, await wikiStatus(title)); } catch { box.innerHTML = `<p class="muted">Couldn't reach Wikipedia.</p><div class="row">${ai}</div>`; wire(); return; }
     render();
     showCheck(p);
   }
@@ -1582,17 +1611,24 @@ ${question || 'My question: '}`;
     } catch { /* coordinates alone are fine */ }
     const known = state.places.map((p) => p.name).slice(0, 80);
     const where = `${town ? town + ' ' : ''}(${lat.toFixed(4)}, ${lon.toFixed(4)})`;
-    const prompt = `AI Discover: find abandoned, disused, derelict or ruined places within about ${km} km of ${where} that are NOT already in my list.
+    const prompt = `AI Discover: find abandoned places within about ${km} km of ${where} that would be fun to explore: places that are genuinely abandoned (not just closed or reused), still standing, and still fairly untouched.
 
-Already in my list: ${known.length ? known.join('; ') : '(nothing yet)'}.
+Already in my list, so skip these: ${known.length ? known.join('; ') : '(nothing yet)'}.
 
-Search broadly: YouTube urban exploration videos, Reddit (r/urbanexploration, r/abandoned, and local city or state subreddits), urbex blogs and forums, Atlas Obscura, local news about vacant, closed or condemned buildings, and Wikipedia lists of abandoned places in the area. Favor places that still seem to be standing, and note when a source says something was demolished or redeveloped.
+Search the way experienced explorers do:
+- YouTube urban exploration videos from the last few years (look for the place name in titles and descriptions),
+- Reddit (r/urbanexploration, r/abandoned, and local city or state subreddits),
+- urbex blogs, forums and regional urbex sites, and Atlas Obscura,
+- local news about vacant, condemned or fire-damaged buildings,
+- preservation "endangered places" lists for the state, and Wikipedia lists of ghost towns or abandoned places in the area.
+
+Favor places with recent (2022 or later) photos or videos that show interiors still intact. Skip places that sources say were demolished, redeveloped, reopened, or completely sealed, and note it when a place is heavily vandalized or actively guarded. Also mention any abandoned places that are legal to visit, such as preserved ghost towns or ruins on public land.
 
 Reply with a short summary (2-4 sentences), then a JSON code block in exactly this form:
 \`\`\`json
-[{"name": "...", "type": "e.g. hospital, school, factory, mine, theater, house", "location": "street address or nearby landmark, with town", "lat": null, "lon": null, "status": "what sources say about its current condition, with year", "sources": ["https://..."]}]
+[{"name": "...", "type": "e.g. hospital, school, factory, mine, theater, house, ghost town", "location": "street address or nearby landmark, with town", "lat": null, "lon": null, "status": "what the newest sources say about its condition, with year (e.g. 'standing, interior intact, 2024 video')", "sources": ["https://..."]}]
 \`\`\`
-Give lat and lon only when a source states them or you are confident; otherwise leave them null and give the best location you can. List up to 15 places.`;
+Give lat and lon only when a source states them or you are confident; otherwise leave them null and give the best location you can. List up to 15 places, best first.`;
     if (!getKey()) { openChat(prompt, { discover: true }); return; }
     openChat();
     const btn = discoverBox.querySelector('#discoverBtn');
