@@ -79,7 +79,10 @@
   let radiusCircle = null, youMarker = null;
   const markers = new Map();
 
-  map.on('click', (e) => setCenter(e.latlng.lat, e.latlng.lng, { pan: false }));
+  map.on('click', (e) => {
+    if (state.addMode) { state.addMode = false; document.getElementById('map').style.cursor = ''; openAddSpot(e.latlng.lat, e.latlng.lng); return; }
+    setCenter(e.latlng.lat, e.latlng.lng, { pan: false });
+  });
 
   // Wider search areas (added here so index.html doesn't need changing).
   {
@@ -259,7 +262,7 @@ out center tags ${MAX_RESULTS * 3};`;
   async function searchArea(lat, lon, r, onEarly = () => {}) {
     const key = `urbex.cache.v5.${lat.toFixed(2)},${lon.toFixed(2)},${r}`;
     const cached = readCache(key);
-    if (cached) return { places: cached, notes: ['(Saved results from an earlier scan.)'] };
+    if (cached) return { places: [...mySpots(lat, lon, Math.max(r, 50000)), ...cached], notes: ['(Saved results from an earlier scan.)'] };
 
     let osmDone = false;
     const early = { wd: null, mines: null, city: null };
@@ -286,9 +289,9 @@ out center tags ${MAX_RESULTS * 3};`;
       try { osmPlaces = await osmQuery(25000); } catch { /* keep what we have */ }
     }
     if (osm.status === 'rejected') notes.push('OpenStreetMap servers are busy right now, so this only shows Wikidata places. Scan again later for more.');
-    const places = [...(ct.status === 'fulfilled' ? ct.value : []), ...mergeWikidata(osmPlaces, wdPlaces), ...(mn.status === 'fulfilled' ? mn.value : [])];
-    if (osm.status === 'fulfilled' && wd.status === 'fulfilled') writeCache(key, places);
-    return { places, notes };
+    const found = [...(ct.status === 'fulfilled' ? ct.value : []), ...mergeWikidata(osmPlaces, wdPlaces), ...(mn.status === 'fulfilled' ? mn.value : [])];
+    if (osm.status === 'fulfilled' && wd.status === 'fulfilled') writeCache(key, found);
+    return { places: [...mySpots(lat, lon, Math.max(r, 50000)), ...found], notes };
   }
 
   function withDist(places, lat, lon, r) {
@@ -701,7 +704,8 @@ out center tags ${MAX_RESULTS * 3};`;
     if (p.osmType === 'way' || p.osmType === 'relation') s += 6; // mapped as a building outline, not just a point
     if (p.check?.status === 'abandoned' || p.check?.status === 'standing') s += 15;
     if (p.tags?.closed && +p.tags.closed >= 1990) s += 4;
-    if (p.source === 'ai') s += conditionScore(p.tags?.['reported condition'] || '');
+    if (p.source === 'ai' || p.source === 'mine') s += conditionScore(p.tags?.['reported condition'] || '');
+    if (p.source === 'mine') s += 30; // your own finds first
     s -= Math.min(25, (p.dist / 1000) / maxKm * 25);
     return s;
   }
@@ -805,7 +809,8 @@ out center tags ${MAX_RESULTS * 3};`;
     const earth = `https://earth.google.com/web/@${p.lat},${p.lon},120a,450d,35y,0h,55t,0r`;
     const gmapsSat = `https://www.google.com/maps/@?api=1&map_action=map&center=${p.lat},${p.lon}&zoom=19&basemap=satellite`;
     const streetView = `https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=${p.lat},${p.lon}`;
-    const source = p.source === 'city'
+    const source = p.source === 'mine' ? 'Added by you'
+      : p.source === 'city'
       ? `<a href="${esc(p.list.url)}" target="_blank" rel="noopener">${esc(p.list.name)}</a>, ${esc(p.list.publisher)} (${esc(p.list.date)})`
       : p.source === 'usgs'
       ? `<a href="${esc(t['USGS record'] || 'https://mrdata.usgs.gov/mrds/')}" target="_blank" rel="noopener">USGS Mineral Resources Data System</a>`
@@ -871,6 +876,12 @@ out center tags ${MAX_RESULTS * 3};`;
 
     showCheck(p);
     loadPhotos(p);
+    if (p.source === 'mine') {
+      const b = document.createElement('button');
+      b.className = 'btn'; b.textContent = '✏ Edit spot';
+      b.onclick = () => openAddSpot(p.lat, p.lon, state.saved[p.id]);
+      $('checkBox').appendChild(b);
+    }
     $('compareYears').onclick = () => {
       detailEl.hidden = true;
       if (map.hasLayer(streets)) { map.removeLayer(streets); satellite.addTo(map); }
@@ -929,9 +940,21 @@ out center tags ${MAX_RESULTS * 3};`;
 
   // ---------- Saved spots ----------
   function saveSpot(p, note) {
-    state.saved[p.id] = { id: p.id, name: p.name, label: p.label, lat: p.lat, lon: p.lon, cat: p.cat,
-      note: note || '', savedAt: new Date().toISOString() };
+    const prev = state.saved[p.id] || {};
+    state.saved[p.id] = { ...prev, id: p.id, name: p.name, label: p.label, lat: p.lat, lon: p.lon, cat: p.cat,
+      note: note || '', savedAt: prev.savedAt || new Date().toISOString() };
     persist();
+  }
+
+  // Spots the user added by hand. They live in the saved list (so they export to Google Earth)
+  // and show up in every scan that covers them.
+  function mySpots(lat, lon, r) {
+    return Object.values(state.saved).filter((s) => s.id.startsWith('mine/')).map((s) => ({
+      id: s.id, source: 'mine', osmType: null, osmId: null, lat: s.lat, lon: s.lon,
+      dist: haversine(lat, lon, s.lat, s.lon), cat: s.cat || 'other', status: 'yours', conf: 'high',
+      label: s.label || 'Your spot', name: s.name, hasName: true,
+      tags: { 'reported condition': s.condition || '', notes: s.note || '' },
+    })).filter((p) => p.dist <= r);
   }
   function loadSaved() {
     try { return JSON.parse(localStorage.getItem('urbex.saved') || '{}'); } catch { return {}; }
@@ -949,7 +972,9 @@ out center tags ${MAX_RESULTS * 3};`;
       li.innerHTML = `<span><b>${esc(s.name)}</b><br><small class="muted">${esc(s.label)}${s.note ? ' · ' + esc(s.note.slice(0, 60)) : ''}</small></span>
         <a class="btn" href="https://earth.google.com/web/@${s.lat},${s.lon},120a,450d,35y,0h,55t,0r" target="_blank" rel="noopener">🌍</a>`;
       li.querySelector('span').onclick = () => {
+        const c = state.center || { lat: s.lat, lon: s.lon };
         const p = state.places.find((x) => x.id === s.id) ||
+          (s.id.startsWith('mine/') ? mySpots(c.lat, c.lon, Infinity).find((x) => x.id === s.id) : null) ||
           { ...s, tags: s.id.startsWith('wd/') ? { wikidata: s.id.slice(3) } : {}, status: '', hasName: true,
             source: s.id.startsWith('wd/') ? 'wikidata' : 'osm', osmType: s.id.split('/')[0], osmId: s.id.split('/')[1],
             dist: state.center ? haversine(state.center.lat, state.center.lon, s.lat, s.lon) : 0 };
@@ -977,6 +1002,7 @@ ${list.map((s) => `<Placemark><name>${x(s.name)}</name><styleUrl>#spot</styleUrl
   }
   function alertish(msg) { setStatus(msg, true); }
   function sourceUrl(id) {
+    if (id.startsWith('mine/')) return 'Added by you in Urbex Finder';
     return id.startsWith('wd/') ? `https://www.wikidata.org/wiki/${id.slice(3)}` : `https://www.openstreetmap.org/${id}`;
   }
 
@@ -1258,6 +1284,10 @@ ${list.map((s) => `<Placemark><name>${x(s.name)}</name><styleUrl>#spot</styleUrl
   async function showCheck(p) {
     const box = document.getElementById('checkBox');
     if (!box || state.activeId !== p.id) return;
+    if (p.source === 'mine') {
+      box.innerHTML = `<p class="muted" style="margin:6px 0">You added this spot${p.tags['reported condition'] ? ` (${esc(p.tags['reported condition'])})` : ''}. Use 🕰 Compare years and Street View to keep an eye on it.</p>`;
+      return;
+    }
     if (p.source === 'city') {
       box.innerHTML = `<p class="muted" style="margin:6px 0">On ${esc(p.list.city)}'s neglected property list (${esc(p.list.date)}). That usually means a run-down building the owner is being made to fix, not an abandoned one. Many are still owned and used.</p>`;
       return;
@@ -1343,6 +1373,9 @@ Each user message may begin with an "App context" block describing what the user
     .scout .btn { padding: 5px 8px; font-size: 12px; }
     .year-ctl { background: var(--panel); color: var(--text); border: 1px solid var(--line); border-radius: 6px; padding: 4px 6px; font-size: 12px; }
     .year-ctl select { font-size: 12px; padding: 2px; }
+    .add-form { display: flex; flex-direction: column; gap: 10px; margin-top: 12px; }
+    .add-form label { display: flex; flex-direction: column; gap: 4px; color: var(--muted); font-size: 12px; }
+    .add-form input, .add-form select { padding: 8px; border-radius: 6px; border: 1px solid var(--line); background: var(--bg); color: var(--text); font: inherit; }
     .photos { display: flex; gap: 8px; overflow-x: auto; padding-bottom: 4px; }
     .photos a { flex: none; width: 128px; text-decoration: none; color: var(--muted); font-size: 11px; }
     .photos img { width: 128px; height: 96px; object-fit: cover; border-radius: 6px; display: block; background: var(--panel-2); }
@@ -1646,14 +1679,15 @@ ${question || 'My question: '}`;
 
 Already in my list, so skip these: ${known.length ? known.join('; ') : '(nothing yet)'}.
 
-Search the way experienced explorers do:
+Search the way experienced explorers do, and run targeted searches by type of place, e.g. "abandoned race track ${town}", "abandoned dog track", "abandoned mall", "abandoned hotel", "abandoned lodge", "abandoned hospital", "abandoned sanatorium", "abandoned school", "abandoned factory", "abandoned mill", "abandoned power plant", "abandoned amusement park", "abandoned drive-in", "abandoned missile silo", "abandoned military base", "abandoned church", "abandoned mansion", "abandoned mine" near the area. Big closed venues and sites (race tracks, malls, stadiums, bases) are often the best finds. Also:
+- local "abandoned places in [city/state]" list articles from newspapers, TV stations and travel sites,
 - YouTube urban exploration videos from the last few years (look for the place name in titles and descriptions),
 - Reddit (r/urbanexploration, r/abandoned, and local city or state subreddits),
 - urbex blogs, forums and regional urbex sites, and Atlas Obscura,
 - local news about vacant, condemned or fire-damaged buildings,
 - preservation "endangered places" lists for the state, and Wikipedia lists of ghost towns or abandoned places in the area.
 
-Favor places with recent (2022 or later) photos or videos. Skip places that sources say were demolished, redeveloped or reopened. In "status", say how untouched it is (untouched / some vandalism / heavily ransacked), and note if it is sealed, fenced or actively guarded. Also mention any abandoned places that are legal to visit, such as preserved ghost towns or ruins on public land.
+Favor places with recent (2022 or later) photos or videos. Skip places that were fully demolished, redeveloped or reopened. But if a site is only partly demolished or slated for redevelopment and a main building still stands (say, a grandstand or main hall), include it and say so. In "status", say how untouched it is (untouched / some vandalism / heavily ransacked), and note if it is sealed, fenced or actively guarded. Also mention any abandoned places that are legal to visit, such as preserved ghost towns or ruins on public land.
 
 Reply with a short summary (2-4 sentences), then a JSON code block in exactly this form:
 \`\`\`json
@@ -1667,7 +1701,7 @@ Give lat and lon only when a source states them or you are confident; otherwise 
     try {
       await sendChat(prompt, {
         display: `✨ Discover more abandoned places near ${town || 'me'}`,
-        maxUses: 10,
+        maxUses: 15,
         effort: 'medium',
         transform: (t) => t.replace(/```json[\s\S]*?(```|$)/, '').trim(),
         onDone: addDiscovered,
@@ -1712,6 +1746,49 @@ Give lat and lon only when a source states them or you are confident; otherwise 
       <p><b>5. Find the owner</b> in county property records so you can ask permission.</p>
       <div class="row">${link(g(`${town} county assessor parcel map property owner search`), 'Property records')}</div>
       <p style="font-size:12px">Found something? Tap its spot on the map to make it the search center, then scan, or ask the AI about it.</p>`;
+  }
+
+
+  // ---------- Add your own spot ----------
+  const addBtn = document.createElement('button');
+  addBtn.className = 'btn'; addBtn.id = 'addSpotBtn';
+  addBtn.textContent = '➕ Add a spot you found';
+  addBtn.style.cssText = 'width:100%;margin-bottom:10px;justify-content:center';
+  addBtn.onclick = () => {
+    state.addMode = true;
+    document.getElementById('map').style.cursor = 'crosshair';
+    setStatus('Tap the map where the spot is. (Zoom in and switch to Satellite to place it exactly.)');
+  };
+  scoutBox.after(addBtn);
+
+  function openAddSpot(lat, lon, existing) {
+    savedEl.hidden = true; document.getElementById('chat')?.setAttribute('hidden', '');
+    const cats = Object.entries(CATEGORIES).filter(([k]) => !['mines', 'official'].includes(k));
+    detailBody.innerHTML = `
+      <h2>${existing ? 'Edit your spot' : 'Add a spot'}</h2>
+      <div class="muted">${lat.toFixed(5)}, ${lon.toFixed(5)}</div>
+      <div class="add-form">
+        <label>Name<input id="addName" placeholder="e.g. Mile High Greyhound Park" value="${esc(existing?.name || '')}"></label>
+        <label>Type<select id="addCat">${cats.map(([k, c]) => `<option value="${k}" ${existing?.cat === k ? 'selected' : ''}>${c.label}</option>`).join('')}</select></label>
+        <label>Condition<select id="addCond">${['untouched', 'some vandalism', 'heavily ransacked', 'sealed or guarded', 'not sure yet'].map((c) => `<option ${existing?.condition === c ? 'selected' : ''}>${c}</option>`).join('')}</select></label>
+        <label>Notes<textarea id="addNote" placeholder="Access, what's inside, hazards, who owns it…">${esc(existing?.note || '')}</textarea></label>
+        <div class="row"><button class="btn accent" id="addSave">Save spot</button><button class="btn ghost" id="addCancel">Cancel</button></div>
+      </div>`;
+    detailEl.hidden = false;
+    $('addCancel').onclick = () => { detailEl.hidden = true; };
+    $('addSave').onclick = () => {
+      const name = $('addName').value.trim() || 'My spot';
+      const id = existing?.id || `mine/${Date.now()}`;
+      const cat = $('addCat').value;
+      state.saved[id] = { id, name, label: `Your spot · ${CATEGORIES[cat].label}`, lat, lon, cat, condition: $('addCond').value,
+        note: $('addNote').value, savedAt: existing?.savedAt || new Date().toISOString() };
+      persist();
+      const c = state.center || { lat, lon };
+      const p = mySpots(c.lat, c.lon, Infinity).find((x) => x.id === id);
+      state.places = [...state.places.filter((x) => x.id !== id), p];
+      render();
+      openDetail(p);
+    };
   }
 
   async function addDiscovered(text, report) {
