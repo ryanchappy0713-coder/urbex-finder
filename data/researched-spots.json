@@ -2369,6 +2369,506 @@
    "sources": [
     "https://www.cogenweb.org/pitkin/photos.htm"
    ]
+  },
+  {
+   "id": "titan-i-missile-complex-2c-725-c-south-of-elizabeth",
+   "name": "Titan I Missile Complex 2C (725-C), south of Elizabeth",
+   "cat": "military",
+   "type": "missile site",
+   "lat": 39.36159,
+   "lon": -104.59902,
+   "approx": true,
+   "location": "South of Elizabeth. Listed as Complex 2C by the state and as 725-C (725th Strategic Missile Squadron, Lowry AFB) by The Military Standard. Sources give no exact coordinates.",
+   "condition": "Decommissioned and missiles removed in 1965. Denver7 says Colorado's Titan sites 'have been sitting abandoned for more than 50 years'. CDPHE lists it among the 6 former Titan I complexes. No current condition report for this site specifically (info up to about 2021-2025).",
+   "access": "Unknown. The Titan sites passed to various public and private owners. Officials warn they are hazardous, and trespassers at other Titan silos have been cited and rescued.",
+   "sources": [
+    "https://cdphe.colorado.gov/hm/titan-1-missile-complexes",
+    "https://www.themilitarystandard.com/missile/titan1/silo/725-c/",
+    "https://www.denver7.com/news/local-news/there-are-a-lot-more-decommissioned-icbm-sites-in-colorado-than-you-knew-about"
+   ]
+  },
+  {
+   "id": "titan-i-missile-complexes-1a-1b-and-1c-former-lowry-bombing-",
+   "name": "Titan I Missile Complexes 1A, 1B and 1C, former Lowry Bombing and Gunnery Range",
+   "cat": "military",
+   "type": "missile site",
+   "lat": 39.70643,
+   "lon": -104.80743,
+   "approx": true,
+   "location": "Former Lowry Bombing and Gunnery Range, southeast of Denver and east of Aurora. 1B is state site D015, 1C is D044.",
+   "condition": "Decommissioned in 1965 and described as abandoned underground complexes. CDPHE says the 1A site was closed in Nov 2004 after soil and water cleanup, and that investigations at 1B and 1C are complete. No current interior condition reported.",
+   "access": "Complex 1A is owned by the City and County of Denver. Ownership of 1B and 1C is not stated in sources. Sources say one Arapahoe County silo is off limits to visitors.",
+   "sources": [
+    "https://cdphe.colorado.gov/hm/titan-1-missile-complexes",
+    "https://www.denver7.com/news/local-news/there-are-a-lot-more-decommissioned-icbm-sites-in-colorado-than-you-knew-about",
+    "https://www.outtherecolorado.com/adventures/the-abandoned-nuclear-missile-silos-under-colorado/article_43670e4a-8432-53ab-bce9-50ec2247a9af.html"
+   ]
+  },
+  {
+   "id": "huerfano-county-correctional-center-former-corecivic-prison",
+   "name": "Huerfano County Correctional Center (former CoreCivic prison)",
+   "cat": "institutional",
+   "type": "prison",
+   "lat": 37.62352,
+   "lon": -104.7833,
+   "approx": true,
+   "location": "Former CoreCivic 752-bed private prison near Walsenburg",
+   "condition": "Closed in 2010 and briefly proposed for reopening by the state DOC in 2018. Mother Jones (Sept 2025) says it had 'lain dormant for 15 years'. In 2025 ICE named it a possible immigrant detention site, which drew local opposition. Whether it is operating in 2026 is unconfirmed, so it may reopen.",
+   "access": "Privately owned by CoreCivic. Not public.",
+   "sources": [
+    "https://www.motherjones.com/politics/2025/09/ice-detention-money-goldrush-concentration-camp-godsend-walsenburg-colorado-corecivic/",
+    "https://krdo.com/news/2018/01/22/prison-reopening-near-walsenburg-bringing-70-jobs",
+    "https://breakthroughnews.org/2025/08/19/colorado-residents-reject-trumps-plan-to-turn-private-prison-into-ice-detention/"
+   ]
+  },
+  {
+   "id": "new-raymer-centre-avenue-storefronts",
+   "name": "New Raymer Centre Avenue storefronts",
+   "cat": "ruins",
+   "type": "ghost town",
+   "lat": 40.60801,
+   "lon": -103.84249,
+   "approx": true,
+   "location": "Centre Avenue, the main street of New Raymer, off CO-14/CO-52 in northeastern Weld County",
+   "condition": "Colorado Preservation Inc. put Centre Avenue on its 2017 Most Endangered Places list. The listed threat was demolition by neglect, and Friends of New Raymer (formed 2017) was working on it. CBS Denver described a row of about half a dozen small one-story buildings that have survived while vacant. I found no update after 2017.",
+   "access": "Unknown. The buildings are in a small inhabited town and a nonprofit is involved, so treat them as private property.",
+   "sources": [
+    "https://coloradopreservation.org/?p=10565",
+    "https://www.cbsnews.com/colorado/news/new-raymer-revival",
+    "https://lifedeathiron.com/2015/11/28/25-more-abandoned-buildings-in-colorado-you-must-see-before-they-are-gone"
+   ]
+  },
+  {
+   "id": "new-raymer-abandoned-service-station",
+   "name": "New Raymer abandoned service station",
+   "cat": "other",
+   "type": "site",
+   "lat": 40.60801,
+   "lon": -103.84479,
+   "approx": true,
+   "location": "New Raymer townsite (exact address not given)",
+   "condition": "Lifedeathiron's 2015 list of abandoned Colorado buildings includes 'Service Station - New Raymer'. Newest information is 2015.",
+   "access": "unknown",
+   "sources": [
+    "https://lifedeathiron.com/2015/11/28/25-more-abandoned-buildings-in-colorado-you-must-see-before-they-are-gone",
+    "https://lifedeathiron.com/tag/abandoned-buildings-in-colorado"
+   ]
+  },
+  {
+   "id": "hereford-community-center-john-van-bergen-prairie-style-colo",
+   "name": "Hereford Community Center (John van Bergen prairie-style colony)",
+   "cat": "other",
+   "type": "site",
+   "lat": 40.97498,
+   "lon": -104.30579,
+   "approx": true,
+   "location": "Hereford, about 25 miles north of Briggsdale on CO-14, near the Wyoming line",
+   "condition": "A Colorado Preservation page (undated) says the Community Center is abandoned and threatened with demolition, while the Hereford Inn is now a single-family home. Ghosttowns.com lists a few old buildings and a grain storage bin still standing. A follow-up search found nothing more recent, so its current status is unverified.",
+   "access": "Unknown. Other colony buildings, such as the schoolhouse at 67300 Circle Dr., are private homes.",
+   "sources": [
+    "https://www.coloradopreservation.org/?p=14786",
+    "https://www.ghosttowns.com/states/co/hereford.html"
+   ]
+  },
+  {
+   "id": "teller-city",
+   "name": "Teller City",
+   "cat": "ruins",
+   "type": "ghost town",
+   "lat": 40.65319,
+   "lon": -106.34472,
+   "approx": true,
+   "location": "Routt National Forest in North Park, southeast of Walden. It has an interpretive loop trail, and the last stretch of road is high-clearance or 4WD., near Rand / Walden, Jackson County",
+   "condition": "The USFS says remnants of foundations, log cabins and streets remain at the 1870s-80s silver camp. Ghosttowns.com says parts of cabins are still standing. 2024 travel coverage (Travel Lemming, updated June 2024) describes the site the same way. Ghosttowns.com also once reported an indefinite closure because of beetle-kill blowdown (undated).",
+   "access": "Public National Forest land, generally open mid-April to mid-November. Check with the USFS before going.",
+   "sources": [
+    "https://www.fs.usda.gov/media/69273",
+    "https://ghosttowns.com/states/co/tellercity.html",
+    "https://www.visitnorthparkco.com/ghost-towns-of-jackson-county"
+   ]
+  },
+  {
+   "id": "phippsburg-false-front-storefronts",
+   "name": "Phippsburg false-front storefronts",
+   "cat": "ruins",
+   "type": "ghost town",
+   "lat": 40.23212,
+   "lon": -106.94475,
+   "approx": true,
+   "location": "Row of false-fronted commercial buildings along CO-131, about 7 miles north of Yampa, Phippsburg, Routt County",
+   "condition": "An undated Lifedeathiron post calls Phippsburg an 'almost ghost town' whose businesses are all long abandoned. Only the Union Pacific switch yard and the post office were still open. The row of abandoned false-front storefronts was photographed along Highway 131.",
+   "access": "Unknown. The town is still lightly inhabited and the buildings are likely private, so view them from the highway.",
+   "sources": [
+    "https://lifedeathiron.com/tag/ghost-town/page/3"
+   ]
+  },
+  {
+   "id": "kinikinik-store",
+   "name": "Kinikinik Store",
+   "cat": "other",
+   "type": "site",
+   "lat": 40.69989,
+   "lon": -105.54457,
+   "approx": true,
+   "location": "Wooden building just off CO-14 in the upper Poudre Canyon, Poudre Canyon (Kinikinik), Larimer County",
+   "condition": "Townsquare radio articles describe it as a 'now abandoned Larimer County location', a wooden building beside Highway 14 that most travelers pass without noticing. The articles are undated and were probably written in the 2020s.",
+   "access": "Unknown, probably private. It is visible from CO-14.",
+   "sources": [
+    "https://kekbfm.com/colorado-poudre-canyon-kinikinik-store/",
+    "https://tri1025.com/whats-the-story-behind-the-kinikinik-store-in-the-poudre-canyon/"
+   ]
+  },
+  {
+   "id": "saint-mary-s-glacier-ski-area-the-slopes-at-st-mary-s-glacie",
+   "name": "Saint Mary's Glacier Ski Area (The Slopes at St. Mary's Glacier)",
+   "cat": "leisure",
+   "type": "ski area",
+   "lat": 39.67546,
+   "lon": -105.64353,
+   "approx": true,
+   "location": "St. Mary's Glacier area off Fall River Road above Idaho Springs; 373 acres in 81 parcels, 3 of them the parking area, Alice / St. Mary's, Clear Creek County",
+   "condition": "Closed for good in 1986. A 2002 revival plan failed. Listed in 2023-2024 for $7M as sold 'with the buildings, old lifts and carved-out ski runs' (T-bar and rope tows, rental shop, a few small cabins). Described as uninhabited in a 2024 report. Newest info 2024; no sale confirmed.",
+   "access": "private (backcountry skiers still use the surrounding area)",
+   "sources": [
+    "https://unofficialnetworks.com/2024/05/29/7-million-colorado-forgotten-ski-area",
+    "https://businessden.com/former-clear-creek-county-ski-area-lists-for-7-million/",
+    "https://9news.com/article/money/markets/real-estate/saint-marys-glacier-ski-area/73-81c56a66-ef2b-4a51-9a8a-c7682ea39377"
+   ]
+  },
+  {
+   "id": "ski-idlewild",
+   "name": "Ski Idlewild",
+   "cat": "leisure",
+   "type": "ski area",
+   "lat": 39.92451,
+   "lon": -105.7804,
+   "approx": false,
+   "location": "Ski Idlewild parcel in what is now downtown Winter Park; the parcel was annexed into Winter Park, Winter Park (former Hideaway Park), Grand County",
+   "condition": "Abandoned after it could not pay a $550 tramway inspection fee (operated from 1961, possibly until 1986). Colorado Ski History says the site is abandoned and boarded up, with all lifts and buildings left except the ice rink. The lodge has been broken into several times and the runs are badly overgrown. Wikipedia says the base lodge was closed and used for document storage. Info is old (about 2007, when a developer proposed building on the parcel). No demolition found, but the current state is unconfirmed.",
+   "access": "private (town / developer parcel)",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Ski_Idlewild",
+    "https://www.new.coloradoskihistory.com/lost/idlewild.html"
+   ]
+  },
+  {
+   "id": "hesperus-ski-area",
+   "name": "Hesperus Ski Area",
+   "cat": "leisure",
+   "type": "ski area",
+   "lat": 37.29706,
+   "lon": -108.05722,
+   "approx": false,
+   "location": "About 11 miles west of Durango off US 160; 160 acres leased from the Scott family, Hesperus, La Plata County",
+   "condition": "Closed since the 2023-24 season after the gearbox on the Bighorn chairlift (installed 1962) failed. It stayed closed in 2024-25 and 2025-26. The lift, day lodge, rental shop and ski-school yurt are still in place but idle. Newest info Sept 2025; no reopening announced. Note it is temporarily closed, not formally abandoned, by owner Mountain Capital Partners (owner of Purgatory).",
+   "access": "private",
+   "sources": [
+    "https://www.the-journal.com/?p=140670",
+    "https://snowbrains.com/hesperus-ski-area-co-to-remain-closed-for-another-season/",
+    "https://unofficialnetworks.com/2025/09/22/hesperus-ski-area-still-closed/"
+   ]
+  },
+  {
+   "id": "ski-san-isabel",
+   "name": "Ski San Isabel",
+   "cat": "leisure",
+   "type": "ski area",
+   "lat": 38.23848,
+   "lon": -105.08502,
+   "approx": true,
+   "location": "CO 165 near Bigelow Divide, outside Wetmore (San Isabel National Forest area), Wetmore area, Custer County",
+   "condition": "Beginner area with 2 rope tows, snack bar, rentals and lodge; operated from the 1960s to 1985. A Colorado Central Magazine piece reports that remains of the lodge, rental shop and rope tow are still there. That piece is undated, and other summaries could not confirm the current condition.",
+   "access": "unknown",
+   "sources": [
+    "https://www.coloradocentralmagazine.com/?p=17257",
+    "https://coloradoskihistory.com/lost/sanisabel.html"
+   ]
+  },
+  {
+   "id": "o-a-greager-scout-camp-miramonte-lake-boy-scout-camp",
+   "name": "O.A. Greager Scout Camp (Miramonte Lake Boy Scout Camp)",
+   "cat": "other",
+   "type": "camp",
+   "lat": 38.13055,
+   "lon": -108.2923,
+   "approx": true,
+   "location": "Lakefront at Miramonte Reservoir (Dan Noble State Wildlife Area), south of Norwood, Norwood area, San Miguel County",
+   "condition": "Telluride News calls this formerly popular summer camp 'idle' and 'in limbo for a half dozen years'. Locals objected to its abandonment and to the Western Colorado Boy Scout council's failure to refurbish or reopen it. The article is undated (year unknown), and no follow-up on a sale or demolition was found.",
+   "access": "private (scout property next to the public state wildlife area)",
+   "sources": [
+    "https://www.telluridenews.com/the_watch/news/article_cbf19fe8-f22b-539f-a795-97b2203c76fa.html"
+   ]
+  },
+  {
+   "id": "jaffa-opera-house",
+   "name": "Jaffa Opera House",
+   "cat": "other",
+   "type": "site",
+   "lat": 37.1694,
+   "lon": -104.50284,
+   "approx": true,
+   "location": "Main Street, contributing property in the Corazon de Trinidad historic district, downtown Trinidad",
+   "condition": "Built 1883. Unused for about 20 years. The city began issuing citations in January 2024. A survey found the northwest corner failing, and wildlife had been living inside. Repairs are estimated at about $13M (CPR, April 2025).",
+   "access": "Owned by the nonprofit Jaffa Opera House Foundation, which is seeking an EPA remediation grant. Private, no public access.",
+   "sources": [
+    "https://www.cpr.org/2025/04/12/trinidad-city-council-concerns-historic-jaffa-opera-house/",
+    "https://en.wikipedia.org/wiki/Jaffa_Opera_House"
+   ]
+  },
+  {
+   "id": "golden-nugget-nite-club-former-antonito-opera-house",
+   "name": "Golden Nugget Nite Club (former Antonito Opera House)",
+   "cat": "other",
+   "type": "site",
+   "lat": 37.07918,
+   "lon": -106.00863,
+   "approx": true,
+   "location": "Main Street, Antonito",
+   "condition": "Opera house built in 1911 and later converted into the Golden Nugget nightclub. A local radio article describes it as boarded up and sitting abandoned on Main Street. The closing date is not given (year of info unknown, probably 2020s).",
+   "access": "unknown",
+   "sources": [
+    "https://newcountry991.com/whats-the-story-behind-this-abandoned-colorado-night-club/",
+    "https://conejoscountycitizen.com/article/opera-houses-early-homes-of-entertainment"
+   ]
+  },
+  {
+   "id": "querida-bassick-city-and-bassick-mine",
+   "name": "Querida (Bassick City) and Bassick Mine",
+   "cat": "ruins",
+   "type": "ghost town",
+   "lat": 38.12611,
+   "lon": -105.33444,
+   "approx": true,
+   "location": "From Silver Cliff, go 5.5 mi east on Hwy 96, then 1.2 mi south on County Road 341, Querida, Custer County",
+   "condition": "Remains of the Bassick silver mine and mill ruins, a collapsed shaft and a few old homes are still standing. Year of info unknown (Wikipedia and ghost town guides).",
+   "access": "unknown",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Querida,_Colorado",
+    "https://www.ghosttowns.com/states/co/bassick.html",
+    "https://uncovercolorado.com/ghost-towns/querida"
+   ]
+  },
+  {
+   "id": "rosita-ghost-town",
+   "name": "Rosita ghost town",
+   "cat": "ruins",
+   "type": "ghost town",
+   "lat": 38.09722,
+   "lon": -105.33611,
+   "approx": true,
+   "location": "Rosita townsite, southeast of Westcliffe and Silver Cliff",
+   "condition": "A few buildings remain 'in various states of ruin'. The post office closed in 1966. At least one old house is privately occupied. Year of info unknown.",
+   "access": "Mixed private property. Some residences are occupied.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Rosita,_Colorado",
+    "https://ghosttowns.com/states/co/rosita.html",
+    "https://kmitch.com/Custer/custerrosita.html"
+   ]
+  },
+  {
+   "id": "uptop-ghost-town",
+   "name": "Uptop Ghost Town",
+   "cat": "ruins",
+   "type": "ghost town",
+   "lat": 37.61343,
+   "lon": -105.18939,
+   "approx": true,
+   "location": "Old La Veta Pass, on the former D&RG narrow-gauge route west of La Veta, La Veta Pass (near La Veta), Huerfano County",
+   "condition": "About a dozen buildings still stand, including a well-preserved chapel that is occasionally open. The site was designated a historic ghost town district in 2000. Year of info unknown.",
+   "access": "Privately run historic site, occasionally open to the public",
+   "sources": [
+    "https://www.uncovercolorado.com/activities/uptop-ghost-town"
+   ]
+  },
+  {
+   "id": "chandler-coal-camp-ruins",
+   "name": "Chandler coal camp ruins",
+   "cat": "ruins",
+   "type": "ghost town",
+   "lat": 38.44225,
+   "lon": -105.23718,
+   "approx": true,
+   "location": "South of SH 115 along Chandler Road, west of Williamsburg and north of Rockvale, near Ca\u00f1on City, Fremont County",
+   "condition": "Victor-American company coal town, completely depopulated since about 1942. Many houses were moved to Ca\u00f1on City. A February 2022 Outdoor Project gallery shows coal mining ruins and remnants of several buildings along a marked trail. That page does not explicitly name Chandler, so check it.",
+   "access": "Trail access is reported (trail markers, no map at the trailhead). Ownership unknown.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Chandler,_Colorado",
+    "https://www.outdoorproject.com/gallery/nojs/92845",
+    "https://wetmorehistoricalsociety.com/?p=2094"
+   ]
+  },
+  {
+   "id": "tercio-coal-camp",
+   "name": "Tercio coal camp",
+   "cat": "ruins",
+   "type": "ghost town",
+   "lat": 37.05197,
+   "lon": -104.99667,
+   "approx": true,
+   "location": "South Fork of the Purgatoire River, west of Trinidad near the New Mexico border, Tercio, Las Animas County",
+   "condition": "Ghost town and former CF&I coal camp. The mine closed after 1904, and the company store ran until 1949. A Wikipedia photo shows the large former Colorado Supply Company store building still standing, plus a slag pile. Photo year unknown.",
+   "access": "unknown (likely private ranch land)",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Tercio,_Colorado",
+    "https://scalar.usc.edu/works/mines-of-the-colorado-fuel-and-iron-company/tercio-coal-mine.10"
+   ]
+  },
+  {
+   "id": "delhi-ghost-town",
+   "name": "Delhi ghost town",
+   "cat": "ruins",
+   "type": "ghost town",
+   "lat": 37.64216,
+   "lon": -104.01714,
+   "approx": true,
+   "location": "US 350, about halfway between Trinidad and La Junta, on the old Santa Fe Trail, Delhi, Las Animas County",
+   "condition": "A boarded-up 'One Stop' general store with an outhouse, deserted homes and cabins, car skeletons and outbuildings, all in 'pretty rough shape'. Sources date from about 2018 to the 2020s.",
+   "access": "unknown (unincorporated, private parcels; visible from the highway)",
+   "sources": [
+    "https://newcountry991.com/did-you-know-the-ghost-town-of-delhi-colorado-was-in-a-movie/",
+    "https://lifedeathiron.com/2018/05/29/colorados-lost-highway-a-photo-voyage-down-highway-350-from-la-junta-to-trinidad"
+   ]
+  },
+  {
+   "id": "timpas-ghost-town",
+   "name": "Timpas ghost town",
+   "cat": "ruins",
+   "type": "ghost town",
+   "lat": 37.81807,
+   "lon": -103.77412,
+   "approx": true,
+   "location": "US 350 southwest of La Junta, Timpas, Otero County",
+   "condition": "Mostly abandoned since the post office closed in 1970. The Timpas School is being restored by a recent owner and is about half livable, so it is no longer fully derelict. Year of info unknown (2020s radio article).",
+   "access": "School is privately owned. Other parcels unknown.",
+   "sources": [
+    "https://newcountry991.com/take-a-look-at-the-tiny-ghost-town-of-timpas-colorado/",
+    "https://www.waymarking.com/waymarks/WM7NET_The_Timpas_School_Timpas_Colorado"
+   ]
+  },
+  {
+   "id": "garcia-schoolhouse",
+   "name": "Garcia Schoolhouse",
+   "cat": "institutional",
+   "type": "school",
+   "lat": 37.00419,
+   "lon": -105.53953,
+   "approx": true,
+   "location": "Garcia village, near the New Mexico border (exact address not given)",
+   "condition": "Schoolhouse built in 1913. It later held a library that closed in 1995, and the building has sat empty since. The article says it 'may get new life'. Year of info about the 2020s. This is a separate building from the Garcia adobes already in the app.",
+   "access": "Trespassing prohibited",
+   "sources": [
+    "https://mix1043fm.com/historic-abandoned-colorado-schoolhouse/"
+   ]
+  },
+  {
+   "id": "unnamed-ruins-near-gardner-possibly-sharpsdale",
+   "name": "Unnamed ruins near Gardner (possibly Sharpsdale)",
+   "cat": "ruins",
+   "type": "ghost town",
+   "lat": 37.78334,
+   "lon": -105.16555,
+   "approx": true,
+   "location": "Against a rocky bluff near the Huerfano River, a few miles west of Gardner. A commenter places Sharpsdale about 4 mi west, at the junction of the Huerfano River and May Creek., near Gardner, Huerfano County",
+   "condition": "A 2016 blog describes the 'forlorn and tattered remains' of an old settlement of unknown identity.",
+   "access": "unknown",
+   "sources": [
+    "https://lifedeathiron.com/2016/09/06/mysterious-colorado-ghost-town-on-the-huerfano-river"
+   ]
+  },
+  {
+   "id": "fitzsimons-place-apartments-aka-aspen-grove-bahamas-apartmen",
+   "name": "Fitzsimons Place apartments (aka Aspen Grove / Bahamas Apartments)",
+   "cat": "other",
+   "type": "site",
+   "lat": 39.74014,
+   "lon": -104.87334,
+   "approx": true,
+   "location": "1568 Nome St, just off East Colfax Ave, Aurora, Adams County",
+   "condition": "The city condemned and closed this 99-unit, 73,000 sq ft complex in August 2024 (one source says 2025). Code enforcement boarded up windows and doors as units emptied. Later reports say nearly all windows are boarded and fencing has been up for more than a year. BusinessDen called it 'vacant Aurora apartments' in April 2026, when a buyer backed out of buying it.",
+   "access": "Owned by CBZ Management / Nome Partners LLC (New York). Fenced and boarded. The sale is unresolved and ex-tenants are in litigation.",
+   "sources": [
+    "https://businessden.com/2026/04/15/buyer-backs-out-of-plan-to-acquire-cbz-apartments-in-aurora/",
+    "https://businessden.com/ex-residents-ask-judge-to-stop-cbzs-sale-of-vacant-aurora-apartments/",
+    "https://www.cbsnews.com/colorado/news/residents-fitzsimons-apartments-forced-out-aurora-condemns-building/"
+   ]
+  },
+  {
+   "id": "former-early-college-of-arvada-campus",
+   "name": "Former Early College of Arvada campus",
+   "cat": "institutional",
+   "type": "school",
+   "lat": 39.80616,
+   "lon": -105.05019,
+   "approx": false,
+   "location": "4905 W. 60th Ave, Arvada, Jefferson County",
+   "condition": "The city bought it for $6.3M in 2024, and it has sat vacant since. A plan to use it as a homeless navigation center drew pushback in 2024. A prospective buyer backed out in 2025 because the improvements cost too much. Neighbors have raised concerns about activity at the vacant property. The city estimated $150K-250K a year in upkeep while it stays vacant (2025).",
+   "access": "Owned by the City of Arvada and back on the market",
+   "sources": [
+    "https://www.arvadapress.com/article_bcb3a874-a986-4503-8cb5-c1136f0022e6.html",
+    "https://www.coloradopolitics.com/2024/10/14/arvada-residents-push-back-against-turning-shuttered-school-into-homeless-navigation-center-92bbcc58-54b2-521d-b61e-047499e7ad68/"
+   ]
+  },
+  {
+   "id": "former-esther-peiffer-elementary-school",
+   "name": "Former Esther Peiffer Elementary School",
+   "cat": "institutional",
+   "type": "school",
+   "lat": 39.61803,
+   "lon": -105.1486,
+   "approx": true,
+   "location": "4997 S Miller Way, Littleton, Jefferson County",
+   "condition": "Closed in 2023 when Jeffco consolidated schools. Reported as 'the building remains empty while waiting for a buyer.' The board declared it surplus in March 2025. No buyer had been reported as of the latest coverage (2025).",
+   "access": "Owned by Jeffco Public Schools, which says it monitors and maintains the building until sale",
+   "sources": [
+    "https://www.thegoldentranscript.com/news/jeffco-closed-22-schools-since-2019-heres-where-they-stand/article_c88953a8-f557-4987-8c87-fc86bdf11034.html",
+    "https://www.westminsterwindow.com/news/article_cbb0a8f5-e6a1-5f0e-8c85-f7624762724a.html"
+   ]
+  },
+  {
+   "id": "former-martin-plastics-building",
+   "name": "Former Martin Plastics building",
+   "cat": "industrial",
+   "type": "factory",
+   "lat": 39.64977,
+   "lon": -104.98911,
+   "approx": true,
+   "location": "Englewood; the source gives no exact address and says the building sits raised above the road",
+   "condition": "A 2023 urbex photo blog describes the former Martin Plastics plant as abandoned. The business started at the site in 1955. The blog does not say when it closed.",
+   "access": "unknown",
+   "sources": [
+    "https://fourbaggersandforeclosures.blogspot.com/2023/09/abandoned-packing-peanuts-martin.html"
+   ]
+  },
+  {
+   "id": "london-motel",
+   "name": "London Motel",
+   "cat": "leisure",
+   "type": "motel",
+   "lat": 39.64665,
+   "lon": -104.98911,
+   "approx": true,
+   "location": "Englewood, next to a former trailer park; the source gives no exact address",
+   "condition": "A 2021 urbex blog says the motel was closed and boarded up long before the neighboring trailer park closed in 2017. Nothing newer was found, so check that it is still standing.",
+   "access": "unknown",
+   "sources": [
+    "https://fourbaggersandforeclosures.blogspot.com/2021/05/the-london-motel-englewood-co.html"
+   ]
+  },
+  {
+   "id": "apparently-abandoned-building-at-1525-joliet-st",
+   "name": "Apparently abandoned building at 1525 Joliet St",
+   "cat": "other",
+   "type": "site",
+   "lat": 39.74014,
+   "lon": -104.87564,
+   "approx": true,
+   "location": "1525 Joliet St, north Aurora (80010)",
+   "condition": "The Aurora Sentinel describes it as an apparently abandoned building whose owners the city has been unable to get to deal with it. The article is undated, probably around 2024. County records show a 2,088 sq ft building on a 0.30-acre lot.",
+   "access": "Privately owned (the owner is unresponsive to the city)",
+   "sources": [
+    "https://sentinelcolorado.com/metro/aurora-poised-to-gain-authority-to-step-in-against-neglectful-property-owners/",
+    "https://www.loopnet.com/property/1525-joliet-st-aurora-co-80010/08001-R0097198"
+   ]
   }
  ]
 }
