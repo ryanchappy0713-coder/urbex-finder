@@ -1677,6 +1677,698 @@
    "sources": [
     "https://kmax943.com/ixp/510/p/prosser-gulch-ghost-town/"
    ]
+  },
+  {
+   "id": "hartman-castle",
+   "name": "Hartman Castle",
+   "cat": "houses",
+   "type": "mansion",
+   "lat": 38.54435,
+   "lon": -106.92693,
+   "approx": true,
+   "location": "Hartman Castle, Gunnison (Victorian castle built 1893/1894; exact address not given in sources)",
+   "condition": "Named to the 2026 Most Endangered Places list. CPI says it is privately owned but vacant, empty since 2017. Primary threats are economic challenges and vacancy. Much of the original structure is intact but has not been maintained. Gunnison County approved it as a local landmark in March 2026. No sale had closed in the sources found (2026).",
+   "access": "Private property. The Hartman Castle Preservation Corp. and CPI are raising money to buy it from the current owner.",
+   "sources": [
+    "https://www.coloradopreservation.org/endangered-place/hartman-castle/",
+    "https://www.cpr.org/2026/02/14/hartman-castle-gunnison-colorado-endangered-places/",
+    "https://www.denvergazette.com/2026/02/13/castle-fort-and-small-town-americana-movie-theater-on-2026-most-endangered-places-in-colorado-list/"
+   ]
+  },
+  {
+   "id": "ordway-pharmacy",
+   "name": "Ordway Pharmacy",
+   "cat": "other",
+   "type": "site",
+   "lat": 38.21806,
+   "lon": -103.75606,
+   "approx": true,
+   "location": "Downtown Ordway (exact address not given in sources)",
+   "condition": "Named to the 2026 Most Endangered Places list. Served the town for more than a century and has stood empty since 2020. Restoring it is part of a wider downtown revitalization plan (2026).",
+   "access": "unknown",
+   "sources": [
+    "https://www.denvergazette.com/2026/02/13/castle-fort-and-small-town-americana-movie-theater-on-2026-most-endangered-places-in-colorado-list/",
+    "https://www.coloradopreservation.org/county/crowley/"
+   ]
+  },
+  {
+   "id": "pearl-theater",
+   "name": "Pearl Theater",
+   "cat": "leisure",
+   "type": "theater",
+   "lat": 38.84222,
+   "lon": -106.13113,
+   "approx": true,
+   "location": "314 E. Main Street, Buena Vista (one source gives 316 E. Main)",
+   "condition": "Listed on the 2026 Most Endangered Places list with Alert status. Built 1888 and converted to a theater in 1951. User reports on Cinema Treasures say it closed in the late 2000s. Years of neglect and water damage have left a failing back wall and a compromised roof. The town has declared it unsafe, and CPI warns the family may have to demolish it if it cannot be stabilized. Buena Vista made it a local landmark in 2025 (2026).",
+   "access": "Privately owned by the Groy family, who are fundraising to restore it.",
+   "sources": [
+    "https://www.coloradopreservation.org/?p=17986",
+    "https://arkvalleyvoice.com/new-life-for-the-pearl-theatre-in-buena-vista",
+    "https://arkvalleyvoice.com/bv-trustees-designate-pearl-theater-as-local-landmark-commit-to-prop-123/"
+   ]
+  },
+  {
+   "id": "red-cliff-town-hall-and-firehouse",
+   "name": "Red Cliff Town Hall and Firehouse",
+   "cat": "other",
+   "type": "site",
+   "lat": 39.51221,
+   "lon": -106.36808,
+   "approx": true,
+   "location": "Old Town Hall and Firehouse, Red Cliff (built about 1887)",
+   "condition": "Added to the Most Endangered Places list in January 2025. Closed in 1980 and vacant since. The foundation has settled, the floor sags, the doors no longer keep out the weather, and several structural parts are at risk of failing (2025).",
+   "access": "Owned by the Town of Red Cliff, which is raising money to stabilize it.",
+   "sources": [
+    "https://www.cpr.org/2025/01/30/colorados-most-endangered-places-list-2025-additions/",
+    "https://www.coloradopreservation.org/?p=16954",
+    "https://www.cbsnews.com/colorado/news/red-cliff-town-hall-colorado-history-preservation"
+   ]
+  },
+  {
+   "id": "former-cathedral-high-school",
+   "name": "Former Cathedral High School",
+   "cat": "institutional",
+   "type": "school",
+   "lat": 39.74573,
+   "lon": -104.98318,
+   "approx": false,
+   "location": "1840 Grant Street, Uptown, Denver",
+   "condition": "The school closed in 1982. The building is now boarded up, with graffiti, broken windows and peeling paint, and CBS reports significant deterioration from vandals and urban explorers. The old gym is also vacant. Denver labeled it Neglected and Derelict in 2025 and fined the owner $139,500. In July 2026 a developer announced plans to turn it into a hotel (2026).",
+   "access": "Private (owner GFI); fenced. Redevelopment is planned.",
+   "sources": [
+    "https://www.cbsnews.com/colorado/news/cathedral-school-building-vandalism-denver-urban-explorers/",
+    "https://www.denvergazette.com/2026/07/28/developer-plans-to-transform-derelict-school-into-hotel/",
+    "https://businessden.com/city-seeks-receiver-for-under-contract-cathedral-high-campus-in-uptown/"
+   ]
+  },
+  {
+   "id": "mcintire-ranch-and-mansion",
+   "name": "McIntire Ranch and Mansion",
+   "cat": "houses",
+   "type": "mansion",
+   "lat": 37.25834,
+   "lon": -105.90474,
+   "approx": true,
+   "location": "Adobe ranch-house ruins on BLM land near the Conejos River (1880 home of Governor Albert McIntire), near Sanford, Conejos County",
+   "condition": "On the 2019 Most Endangered Places list. Threats are demolition by neglect, vandalism, weather and remote location. The BLM says the adobe house has had no roof for about 50 years and is working with partners to stabilize it. No newer status was found (2019-2020).",
+   "access": "Public land managed by the BLM; remote, with limited public access.",
+   "sources": [
+    "https://www.coloradopreservation.org/endangered-place/mcintire-ranch-mansion/",
+    "https://www.blm.gov/sites/default/files/docs/2020-12/blm_co_arch_2020Highlights.pdf",
+    "https://www.cpr.org/news/story/colorados-5-most-endangered-historic-places-include-potato-cellars-a-firehouse-and-more"
+   ]
+  },
+  {
+   "id": "lafayette-head-home-and-ute-indian-agency",
+   "name": "Lafayette Head Home and Ute Indian Agency",
+   "cat": "houses",
+   "type": "house",
+   "lat": 37.08879,
+   "lon": -106.02025,
+   "approx": true,
+   "location": "1855 adobe compound in Conejos",
+   "condition": "On the 2021 Most Endangered Places list. Vacant since the last resident left in 2009. CBS said in 2021 that it was being vandalized and was a safety hazard, and only part of the home still stands. Designer Ronald Rael saved it from demolition in 2018, and workshop volunteers later re-plastered the exterior walls. No 2025-2026 status was found (2021-2024).",
+   "access": "Privately owned (Ronald Rael).",
+   "sources": [
+    "https://www.cbsnews.com/colorado/news/lafayette-head-conejos-endangered-places",
+    "https://www.rmpbs.org/blogs/rocky-mountain-pbs/restoring-one-of-colorados-most-endangered-places/",
+    "https://coloradopreservation.org/2021-colorados-most-endangered-places"
+   ]
+  },
+  {
+   "id": "iglesia-de-la-inmaculada-concepcion",
+   "name": "Iglesia de la Inmaculada Concepcion",
+   "cat": "religious",
+   "type": "church",
+   "lat": 37.16187,
+   "lon": -105.37831,
+   "approx": true,
+   "location": "Chama, San Luis Valley (1938 adobe Catholic church; one of the Costilla County Mission Churches)",
+   "condition": "Listed in 2024 with Alert status; the threat is demolition by neglect. The roof is failing and water damage has collapsed sections of the adobe wall. The Denver Gazette's 2024 list coverage describes the church as vacant since the early 1980s with a damaged bell tower. A Colorado Encyclopedia entry conflicts with this, saying a priest still holds summer Mass there (2024).",
+   "access": "Owned by the Diocese of Pueblo.",
+   "sources": [
+    "https://www.denvergazette.com/outtherecolorado/news/list-of-5-most-endangered-historical-spots-in-colorado-released/article_a1091dcc-c60f-11ee-866a-af3ec0ca7979.html",
+    "https://www.coloradopreservation.org/?p=16116",
+    "https://alamosanews.com/article/nine-mission-churches-in-costilla-county-named-as-most-endangered-places-in-colorado"
+   ]
+  },
+  {
+   "id": "tarryall-cline-ranch-headquarters",
+   "name": "Tarryall-Cline Ranch headquarters",
+   "cat": "houses",
+   "type": "house",
+   "lat": 39.12194,
+   "lon": -105.47556,
+   "approx": true,
+   "location": "Cline Ranch State Wildlife Area, Tarryall (1928 ranch house and outbuildings), Tarryall area, Park County",
+   "condition": "On the 2018 Most Endangered Places list. Threats are demolition by neglect, vandalism and severe weather. The buildings have suffered decades of neglect, and a design firm describes them as vacant. A 2025 bid to rehabilitate the ranch-house exterior was canceled, and a visitor-center project is being planned (2025).",
+   "access": "Owned by Park County and run with Colorado Parks & Wildlife as a State Wildlife Area. The buildings themselves may be closed.",
+   "sources": [
+    "https://www.coloradopreservation.org/?p=16157",
+    "https://www.coloradocentralmagazine.com/tarryall-cline-ranch-a-park-county-gem/",
+    "https://constructionbidsource.com/state/colorado/county/park/740150"
+   ]
+  },
+  {
+   "id": "elk-creek-octagon-and-barn-at-shaffer-s-crossing",
+   "name": "Elk Creek Octagon and Barn at Shaffer's Crossing",
+   "cat": "other",
+   "type": "site",
+   "lat": 39.56998,
+   "lon": -105.25619,
+   "approx": true,
+   "location": "Behind the meadow bought by the Archdiocese of Denver for a retreat center, Shaffer's Crossing",
+   "condition": "On the 2018 Most Endangered Places list, with threats listed as demolition by neglect, vandalism and abandonment. The barn dates to about 1903; the Octagon was once a school, grange hall, church and sheep barn. CPI shows the status as In Progress. No newer condition report was found (2018).",
+   "access": "unknown (next to Archdiocese of Denver land)",
+   "sources": [
+    "https://www.coloradopreservation.org/endangered-place/elk-creek-barn-octagon-at-shaffers-crossing/",
+    "https://www.coloradopreservation.org/?p=11133"
+   ]
+  },
+  {
+   "id": "virginia-dale-cafe-post-office-gas-station",
+   "name": "Virginia Dale Cafe / Post Office / Gas Station",
+   "cat": "other",
+   "type": "store",
+   "lat": 40.95424,
+   "lon": -105.34964,
+   "approx": true,
+   "location": "US 287 at Virginia Dale, about 5 miles south of the Wyoming state line (State Line Cafe)",
+   "condition": "Family-run cafe, post office and gas station. The post office was 'retired' in 1993, and the building closed and was boarded up in the 1990s. A 2013 WebUrbanist piece said it was 'in respectable condition'. No sale, demolition or restoration found. Newest info: 2013 condition report plus undated radio piece.",
+   "access": "unknown; private property next to US 287 (the nearby 1862 stage station belongs to the Virginia Dale Community Club, which is a separate property)",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Virginia_Dale,_Colorado",
+    "https://waymarking.com/waymarks/wmJ20F_Virginia_Dale_CO_retired",
+    "https://kmax943.com/the-bizarre-history-of-the-abandoned-virginia-dale-cafe-on-highway-287/"
+   ]
+  },
+  {
+   "id": "wild-wild-rest-sinclair-station-abandoned-sinclair-station",
+   "name": "Wild Wild Rest Sinclair Station (abandoned Sinclair station)",
+   "cat": "other",
+   "type": "gas station",
+   "lat": 37.34519,
+   "lon": -108.289,
+   "approx": true,
+   "location": "US 160 between Mesa Verde National Park and Mancos, near Mancos, Montezuma County",
+   "condition": "Former Sinclair gas station, convenience store and general store that also had an RV park, rodeo arena and motorcycle races. Closed in 2006. It was contaminated by a gasoline spill, and the owner put up signs reading 'Massive petroleum spill, toxic site' that blamed the state. Described as derelict for over a decade. Durango Herald articles are undated in the results.",
+   "access": "Private; owner Raymond McCarty, in a long legal dispute over the contaminated parcels. Petroleum contamination on site.",
+   "sources": [
+    "https://maps.roadtrippers.com/us/mancos-co/points-of-interest/abandoned-sinclair-station",
+    "https://fourcornersfreepress.com/derelicts/",
+    "https://dh.durangoherald.com/tj/wp-json/wp/v2/posts/110710"
+   ]
+  },
+  {
+   "id": "last-chance-dairy-king",
+   "name": "Last Chance Dairy King",
+   "cat": "other",
+   "type": "diner",
+   "lat": 39.74082,
+   "lon": -103.59391,
+   "approx": true,
+   "location": "Junction of US 36 and CO 71, Last Chance",
+   "condition": "Abandoned Dairy King 'in a state of forgotten remodelling' and defunct for many years. The sign is still up above empty trailers where the restaurant stood. The business closed when traffic fell after I-70 bypassed the town, and most of the town burned in a 2012 fire. This is a separate building from the Last Chance Motel already in the app. Articles undated, post-2012.",
+   "access": "Private property; sources warn against trespassing",
+   "sources": [
+    "https://www.westword.com/news/photos-last-chance-colorado-barely-endures-ravages-of-time-and-fire-5902834",
+    "https://www.onlyinyourstate.com/trip-ideas/colorado/last-chance-town-co",
+    "https://ghosttowns.com/states/co/lastchance.html"
+   ]
+  },
+  {
+   "id": "ruins-of-america-trading-post",
+   "name": "Ruins of America Trading Post",
+   "cat": "other",
+   "type": "store",
+   "lat": 37.7661,
+   "lon": -108.90594,
+   "approx": true,
+   "location": "Near Dove Creek (US 491 corridor); exact location not given, near Dove Creek, Dolores County",
+   "condition": "A photographer's 2018 post shows the ruins of the trading post. Its 'Welcome come on in' and 'Closed' signs and the store motto are still on the door. No history or newer status found.",
+   "access": "unknown",
+   "sources": [
+    "https://geraintsmith.com/ruins-of-america-trading-post-colorado/",
+    "https://geraintsmith.com/2018/07/14"
+   ]
+  },
+  {
+   "id": "antero-junction",
+   "name": "Antero Junction",
+   "cat": "other",
+   "type": "site",
+   "lat": 38.9223,
+   "lon": -105.96712,
+   "approx": true,
+   "location": "Junction of US 285 and US 24, south of Hartsel, Antero Junction, Park County",
+   "condition": "Extinct ranching and traveler-service settlement founded in 1892. It has a few semi-occupied buildings 'alongside several abandoned sites and structures'. Newest info: current UncoverColorado / Wikipedia pages.",
+   "access": "unknown; buildings appear to be private, some partly occupied",
+   "sources": [
+    "https://www.uncovercolorado.com/activities/antero-junction-ghost-town",
+    "https://en.wikipedia.org/wiki/Antero_Junction,_Colorado"
+   ]
+  },
+  {
+   "id": "hartsel-former-gas-station",
+   "name": "Hartsel former gas station",
+   "cat": "other",
+   "type": "gas station",
+   "lat": 39.02163,
+   "lon": -105.79678,
+   "approx": true,
+   "location": "Hartsel, on US 24 (exact address not given)",
+   "condition": "Roadarch.com's Colorado gas station pages say this former station 'has been vacant for many years'. Photo year is not clear in the results, which also could not show which of the two linked pages lists it.",
+   "access": "unknown",
+   "sources": [
+    "https://roadarch.com/gas/co.html",
+    "https://www.roadarch.com/gas/co3.html"
+   ]
+  },
+  {
+   "id": "sedgwick-1920s-gas-station",
+   "name": "Sedgwick 1920s gas station",
+   "cat": "other",
+   "type": "gas station",
+   "lat": 40.93409,
+   "lon": -102.52357,
+   "approx": true,
+   "location": "Sedgwick, near the I-76 / US 138 corridor (exact address not given)",
+   "condition": "Roadarch.com lists a station built in the 1920s that has been 'abandoned for many years', with comparison photos from 2012 and 2024. Which roadarch page holds the entry was not clear in the results.",
+   "access": "unknown",
+   "sources": [
+    "https://roadarch.com/gas/co.html",
+    "https://www.roadarch.com/gas/co3.html"
+   ]
+  },
+  {
+   "id": "abandoned-us-34-rest-area-east-of-greeley",
+   "name": "Abandoned US 34 rest area east of Greeley",
+   "cat": "other",
+   "type": "roadside attraction",
+   "lat": 40.42331,
+   "lon": -104.70913,
+   "approx": true,
+   "location": "US 34 east of Greeley, near the Dearfield ghost town site",
+   "condition": "A roadside rest area that 'looks like it's been abandoned for decades', found by a YouTuber looking for Dearfield. Single undated radio-station article; no exact milepost given.",
+   "access": "unknown; probably state highway right-of-way",
+   "sources": [
+    "https://kmax943.com/abandoned-greeley-rest-area-looks-like-life-after-the-apocalypse/"
+   ]
+  },
+  {
+   "id": "tarado-mansion-former-adams-hotel",
+   "name": "Tarado Mansion (former Adams Hotel)",
+   "cat": "houses",
+   "type": "mansion",
+   "lat": 39.28579,
+   "lon": -103.27723,
+   "approx": true,
+   "location": "Arriba, eastern plains (exact address not given in sources)",
+   "condition": "Radio-station urbex posts describe it as a massive abandoned building that was a boarding house, then a hotel, then a mansion. The posts are undated, probably 2020s.",
+   "access": "Private property; sources say trespassing is strictly prohibited",
+   "sources": [
+    "https://retro1025.com/ixp/510/p/colorado-abandoned-tarado-mansion/",
+    "https://power1029noco.com/ixp/510/p/colorado-abandoned-tarado-mansion/"
+   ]
+  },
+  {
+   "id": "walker-home-ruins-john-brisben-walker-mansion",
+   "name": "Walker Home Ruins (John Brisben Walker mansion)",
+   "cat": "houses",
+   "type": "mansion",
+   "lat": 39.63533,
+   "lon": -105.22688,
+   "approx": false,
+   "location": "Mount Falcon Park, about 0.7 mi from the west trailhead, Morrison, Jefferson County",
+   "condition": "Stone ruin of a craftsman-style chalet that burned after a lightning strike in 1918. A historical marker says the remains are only the foundation, and one source says stone walls with fireplaces on several floors still stand. Info from about 2020-2026.",
+   "access": "Public Jefferson County Open Space park, free",
+   "sources": [
+    "https://www.hmdb.org/m.asp?m=141095",
+    "https://www.jeffco.us/1332/Mount-Falcon-Park",
+    "https://morrisonhistory.org/places/john-brisben-walker-house/"
+   ]
+  },
+  {
+   "id": "allen-ranch-abandoned-main-house",
+   "name": "Allen Ranch abandoned main house",
+   "cat": "other",
+   "type": "ranch",
+   "lat": 39.10893,
+   "lon": -105.75616,
+   "approx": true,
+   "location": "Allen Ranch homestead, Tarryall Valley",
+   "condition": "Park County Local History archive photos (donated 2020) show the abandoned main house, plus a ruined building photographed in 2003.",
+   "access": "unknown",
+   "sources": [
+    "https://pclha.cvlcollections.org/items/show/1570",
+    "https://pclha.cvlcollections.org/items/show/1571"
+   ]
+  },
+  {
+   "id": "koch-homestead-adelaide-ranch",
+   "name": "Koch Homestead (Adelaide Ranch)",
+   "cat": "other",
+   "type": "ranch",
+   "lat": 39.19111,
+   "lon": -106.82356,
+   "approx": true,
+   "location": "Hunter Creek Valley, White River National Forest, Aspen, Pitkin County",
+   "condition": "Five relatively intact but deteriorating buildings; on the 2023 Most Endangered list. A barn collapsed in the late 1990s. HistoriCorps has since done stabilization work, but the buildings are not reused.",
+   "access": "U.S. Forest Service land; reached by trail",
+   "sources": [
+    "https://www.coloradopreservation.org/endangered-place/koch-homestead/",
+    "https://9news.com/article/news/history/most-endangered-sites-colorado-2023-list/73-9f9f92ea-abea-4dae-b24d-9617d4591070",
+    "https://k99.com/ixp/510/p/aspen-koch-ranch/"
+   ]
+  },
+  {
+   "id": "homestead-meadows",
+   "name": "Homestead Meadows",
+   "cat": "houses",
+   "type": "farmhouse",
+   "lat": 40.68102,
+   "lon": -105.47269,
+   "approx": true,
+   "location": "Lion Gulch Trailhead on US 36, 8 mi east of Estes Park; 2.5 mi hike up the gulch, near Lyons/Estes Park, Larimer County",
+   "condition": "Group of 6-8 abandoned homesteads (1889-1923). The Irvin Homestead is the most intact, with several buildings standing; others are reduced to stoves and cellars. National Register listed. Info about 2020.",
+   "access": "Public, Roosevelt National Forest",
+   "sources": [
+    "https://uncovercolorado.com/ghost-towns/homestead-meadows",
+    "https://www.koaa.com/lifestyle/great-colorado-history-hikes-homestead-meadows",
+    "https://news.yahoo.com/hiked-8-miles-eerie-ghost-100100062.html"
+   ]
+  },
+  {
+   "id": "atchee",
+   "name": "Atchee",
+   "cat": "ruins",
+   "type": "ghost town",
+   "lat": 39.56303,
+   "lon": -108.91288,
+   "approx": false,
+   "location": "Old Uintah Railway grade north of Mack/Grand Junction (Baxter Pass road), Atchee, Garfield County",
+   "condition": "Fully abandoned. One standing structure (walls of the steam-engine machine and repair shop) plus foundations; a cabin stands along the rail grade nearby. Info about 2015-2020.",
+   "access": "Private land, dirt roads",
+   "sources": [
+    "https://lifedeathiron.com/tag/atchee",
+    "https://en.wikipedia.org/wiki/Atchee,_Colorado"
+   ]
+  },
+  {
+   "id": "russell-gulch",
+   "name": "Russell Gulch",
+   "cat": "ruins",
+   "type": "ghost town",
+   "lat": 39.78013,
+   "lon": -105.53484,
+   "approx": false,
+   "location": "About 5 mi north of Idaho Springs on Upper Russell Gulch Road, 9,150 ft",
+   "condition": "Largely abandoned. Brick schoolhouse, mule barn, IOOF hall, some empty commercial buildings and ruins remain; a handful of residents. A disc golf course runs among the ruins.",
+   "access": "Mixed; some residents; disc golf by reservation",
+   "sources": [
+    "https://ghosttowns.com/states/co/russellgulch.html",
+    "https://uncovercolorado.com/ghost-towns/russell-gulch",
+    "https://en.wikipedia.org/wiki/Russell_Gulch,_Colorado"
+   ]
+  },
+  {
+   "id": "carr",
+   "name": "Carr",
+   "cat": "ruins",
+   "type": "ghost town",
+   "lat": 40.89493,
+   "lon": -104.87548,
+   "approx": false,
+   "location": "I-25 exit 293 north of Fort Collins, about 3 mi east, Carr, Weld County",
+   "condition": "A few old houses, the schoolhouse, a church and some store fronts (one source says the storefronts are gone). A few year-round residents; mostly abandoned per ghosttowns.com.",
+   "access": "Reachable by 2WD; buildings presumably private",
+   "sources": [
+    "https://ghosttowns.com/states/co/carr.html",
+    "https://en.wikipedia.org/wiki/Carr,_Colorado"
+   ]
+  },
+  {
+   "id": "buckingham-schoolhouse",
+   "name": "Buckingham schoolhouse",
+   "cat": "ruins",
+   "type": "ghost town",
+   "lat": 40.62169,
+   "lon": -103.97808,
+   "approx": true,
+   "location": "Townsite in NE Weld County (Pawnee Grassland area); schoolhouse on the hill, Buckingham, Weld County",
+   "condition": "A 2002 prairie fire burned all original buildings except the schoolhouse on the hill. A ghost-town listing says some structures remain. No recent update found.",
+   "access": "unknown",
+   "sources": [
+    "https://ghosttowns.com/states/co/buckingham.html",
+    "https://rockymountainprofiles.com/colorado/adena-thru-dearfield/buckingham-co"
+   ]
+  },
+  {
+   "id": "wild-horse",
+   "name": "Wild Horse",
+   "cat": "ruins",
+   "type": "ghost town",
+   "lat": 38.82583,
+   "lon": -103.0116,
+   "approx": false,
+   "location": "Straddles US 287, Wild Horse, Cheyenne County",
+   "condition": "Practically a ghost town apart from the post office. Remaining buildings are mostly south of the highway, and the school is still used as a community center.",
+   "access": "Mixed; some buildings in use",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Wild_Horse,_Colorado",
+    "https://lifedeathiron.com/tag/wild-horse"
+   ]
+  },
+  {
+   "id": "garcia-abandoned-adobes",
+   "name": "Garcia abandoned adobes",
+   "cat": "ruins",
+   "type": "ghost town",
+   "lat": 37.00419,
+   "lon": -105.53723,
+   "approx": true,
+   "location": "Old plaza of Garcia at the New Mexico state line, next to Costilla NM",
+   "condition": "Abandoned adobe homes and businesses with stucco falling off outnumber the occupied ones; remains of adobe plazas. Info from 2019-2020.",
+   "access": "Occupied town; buildings private",
+   "sources": [
+    "https://lifedeathiron.com/2020/04/30/a-ghost-town-a-day-for-30-days-day-30-garcia-colorado-and-costilla-new-mexico",
+    "https://geraintsmith.com/tag/garcia/",
+    "https://www.coloradocentralmagazine.com/in-search-of-colorados-oldest-town/"
+   ]
+  },
+  {
+   "id": "brown-s-dance-hall",
+   "name": "Brown's Dance Hall",
+   "cat": "other",
+   "type": "site",
+   "lat": 39.12166,
+   "lon": -104.16579,
+   "approx": true,
+   "location": "Ramah, about 45 mi east of Colorado Springs on Hwy 24",
+   "condition": "Listed and photographed in a 2015 list of abandoned buildings. The town itself is still inhabited. No newer status found.",
+   "access": "unknown",
+   "sources": [
+    "https://lifedeathiron.com/2015/11/28/25-more-abandoned-buildings-in-colorado-you-must-see-before-they-are-gone"
+   ]
+  },
+  {
+   "id": "skaguay-skagway-power-plant",
+   "name": "Skaguay (Skagway) Power Plant",
+   "cat": "industrial",
+   "type": "power plant",
+   "lat": 38.39738,
+   "lon": -105.12858,
+   "approx": true,
+   "location": "Hydroelectric plant in a steep canyon below Skaguay Reservoir. The trailhead is at the reservoir off CO Hwy 81 near Victor, inside Skaguay Reservoir State Wildlife Area. It is a hike of about 9-10 miles round trip with about 1,600 ft of gain.",
+   "condition": "Built 1899-1901 (one source says 1909). Abandoned after a 1965 flood damaged the pipeline, which was never repaired. The main building still stands with some equipment, and four decaying houses are nearby. Sources are undated, roughly 2013-2020s.",
+   "access": "Reached by a trail through a state wildlife area. One local outlet warns that trespassers on private property can be prosecuted. There is no cell service.",
+   "sources": [
+    "https://www.theoutbound.com/colorado/backpacking/backpack-to-the-abandoned-skagway-power-plant-and-ghost-town",
+    "https://www.cmc.org/education-adventure/trips/routes-places/skaguay-power-plant",
+    "https://uncovercolorado.com/activities/skagway-power-plant"
+   ]
+  },
+  {
+   "id": "robertson-flour-mill-saguache-flour-mill",
+   "name": "Robertson Flour Mill (Saguache Flour Mill)",
+   "cat": "industrial",
+   "type": "mill",
+   "lat": 38.08775,
+   "lon": -106.14234,
+   "approx": true,
+   "location": "Water-powered gristmill near Saguache. It is listed on the National Register as the Saguache Flour Mill.",
+   "condition": "Three-story log building, about 30 ft square, built in 1873. Abandoned since 1925. The National Register nomination (1978 listing) says it is in surprisingly good condition and still holds its roller machinery, though rodents have damaged the leather pulleys and silk screens. No recent status found.",
+   "access": "unknown",
+   "sources": [
+    "https://sah-archipedia.org/buildings/CO-01-SH11",
+    "https://npgallery.nps.gov/GetAsset/66afb981-3bd5-4f18-b80c-f7c801d31a1c",
+    "https://historycolorado.org/node/7835"
+   ]
+  },
+  {
+   "id": "schneider-brewery-philip-schneider-brewing-co",
+   "name": "Schneider Brewery (Philip Schneider Brewing Co.)",
+   "cat": "industrial",
+   "type": "factory",
+   "lat": 37.1694,
+   "lon": -104.50054,
+   "approx": true,
+   "location": "236 North Convent Street, downtown Trinidad",
+   "condition": "SAH Archipedia (from a 1997 book) calls it abandoned and neglected after closing around 1960. An undated audio tour says it stands empty. Another source says part of it was used for school district storage. A January 2023 press release announced selective demolition and restoration by the Downtown Trinidad Development Group. Current status unverified, so it may be under rehab.",
+   "access": "Privately owned (Downtown Trinidad Development Group as of 2023)",
+   "sources": [
+    "https://sah-archipedia.org/buildings/CO-01-LA06",
+    "https://youraudiotour.com/tours/a-walk-through-the-history-of-trinidad/stops/10144",
+    "https://krtnradio.com/?p=82874"
+   ]
+  },
+  {
+   "id": "salida-smokestack-ohio-colorado-smelting-refining-co",
+   "name": "Salida Smokestack (Ohio-Colorado Smelting & Refining Co.)",
+   "cat": "other",
+   "type": "site",
+   "lat": 38.53712,
+   "lon": -105.99097,
+   "approx": true,
+   "location": "Former smelter site just outside Salida. It is a wayside on the Collegiate Peaks Scenic Byway., near Salida, Chaffee County",
+   "condition": "The 365-385 ft brick stack was completed in 1917 and is the only remaining standing structure of a smelter that ran 1902-1920. A July 2025 photo shows it still standing and remarkably well preserved.",
+   "access": "Owned by the Salida Museum Association and viewable from the roadside wayside",
+   "sources": [
+    "https://salidamuseum.org/history/salida-smokestack/",
+    "https://www.hmdb.org/m.asp?m=293380",
+    "https://historycolorado.org/node/5726"
+   ]
+  },
+  {
+   "id": "blistered-horn-mill",
+   "name": "Blistered Horn Mill",
+   "cat": "industrial",
+   "type": "mill",
+   "lat": 38.75523,
+   "lon": -106.47985,
+   "approx": true,
+   "location": "About 4 miles south of Tincup, off Gunnison County Road 765, about 4 miles north of Cumberland Pass, near Tincup, Gunnison County",
+   "condition": "Stamp mill built around 1890 by the Brunswick Mining and Milling Co. It is abandoned and partially collapsed (Wikipedia, undated).",
+   "access": "Roadside along a county road; ownership unknown",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Blistered_Horn_Mill,_Colorado"
+   ]
+  },
+  {
+   "id": "marble-mill-site-colorado-yule-marble-co-finishing-mill",
+   "name": "Marble Mill Site (Colorado Yule Marble Co. finishing mill)",
+   "cat": "industrial",
+   "type": "mill",
+   "lat": 39.06924,
+   "lon": -107.19302,
+   "approx": false,
+   "location": "Marble Mill Site Park, a 25-acre site in the town of Marble along the Crystal River near County Road 3",
+   "condition": "The finishing mill closed in 1941 and was in ruins by the late 1970s. Some marble walls and crane piers still stand, along with two small outbuildings. It is listed on the National Register.",
+   "access": "Public park with open access to the ruins. Removing marble or artifacts is illegal.",
+   "sources": [
+    "https://www.atlasobscura.com:443/places/marble-mill-site-park",
+    "https://historycolorado.org/node/7341",
+    "https://soprissun.com/marbles-mill-site-makeover/"
+   ]
+  },
+  {
+   "id": "paris-mill",
+   "name": "Paris Mill",
+   "cat": "industrial",
+   "type": "mill",
+   "lat": 39.2839,
+   "lon": -106.06262,
+   "approx": true,
+   "location": "At about 11,000 ft, three miles west of Alma, near the Sweet Home Mine, near Alma, Park County",
+   "condition": "Processed gold, silver and lead ore. Closed in 1937 or 1951 (sources differ). Colorado Preservation describes it as currently abandoned. It was on Colorado's Most Endangered Places list in 2004. A 2024 article (The Flume) reports the first site tour in a 20-year rehabilitation effort, so the buildings still stand, are not in operation, and are being stabilized.",
+   "access": "Private, with a rehabilitation effort under way; tours have been held",
+   "sources": [
+    "https://www.coloradopreservation.org/?p=1923",
+    "https://www.theflume.com/news/paris-mill-welcomes-first-site-tour-in-20-year-rehabilitation-effort/article_ae80cafa-8fc1-11ef-a068-d39306efcd85.html"
+   ]
+  },
+  {
+   "id": "north-london-mill",
+   "name": "North London Mill",
+   "cat": "industrial",
+   "type": "mill",
+   "lat": 39.29451,
+   "lon": -106.15282,
+   "approx": false,
+   "location": "At about 11,400 ft on the Mosquito Pass road (Park County side), near Alma, Park County",
+   "condition": "Gold mill that ran 1892-1937, photographed by the Park County archive on Oct 13, 2019. The nonprofit North London Mill Preservation, Inc., formed in 2017, is working to rehabilitate the buildings. It is a Park County local landmark.",
+   "access": "Managed by North London Mill Preservation, Inc.; reached by a 4WD road",
+   "sources": [
+    "https://www.denver7.com/news/local-news/nonprofit-behind-preservation-of-historic-north-london-mill-site-says-its-future-is-bright",
+    "https://pclha.cvlcollections.org/items/show/525",
+    "https://www.waymarking.com/waymarks/wm7V6G_North_London_Mill_Leadville_CO"
+   ]
+  },
+  {
+   "id": "magnolia-mill",
+   "name": "Magnolia Mill",
+   "cat": "industrial",
+   "type": "mill",
+   "lat": 39.35768,
+   "lon": -106.08391,
+   "approx": false,
+   "location": "Back side of Montgomery Reservoir, a short hike uphill. The reservoir covers the old town of Montgomery, about 13 miles south of Breckenridge, near Hoosier Pass., near Montgomery Reservoir, Park County",
+   "condition": "Ore mill that is no longer in use. The Park County archive photographed it in October 2019 and tagged it under 'abandoned mines'. The evidence is weak: a visitor review plus archive tags.",
+   "access": "unknown (Colorado Springs Utilities owns the reservoir land)",
+   "sources": [
+    "https://pclha.cvlcollections.org/items/show/488",
+    "https://wanderlog.com/tp/67620/alma-trip-planner"
+   ]
+  },
+  {
+   "id": "abbott-church",
+   "name": "Abbott Church",
+   "cat": "religious",
+   "type": "church",
+   "lat": 39.9017,
+   "lon": -103.15217,
+   "approx": true,
+   "location": "On a knoll above a small creek just north of Lindon, southern Washington County, about 100 miles east of Denver. Elevation.maplogs lists it as an Akron-area point of interest., near Lindon / Abbott, Washington County",
+   "condition": "Wooden church built in 1913 by settler Albert Abbott. Photo captions and listings describe it as standing alone and abandoned in open farmland. The newest dated source is a Rocky Mountain Profiles photo page from June 2020, which calls it a 'lonely place' but does not itself say abandoned. The adjoining 1913 cemetery is reportedly still in use. Abandonment is moderately confirmed.",
+   "access": "unknown; the cemetery is in active use",
+   "sources": [
+    "https://rockymountainprofiles.com/colorado/colorado-scenes/buildings-sites-vistas/abbott-church-colorado",
+    "https://kevin-schwalbe.pixels.com/featured/historic-abbott-church-kevin-schwalbe.html",
+    "https://1johnbord-blog.blogspot.com/2017/03/ghosts-on-prairie.html"
+   ]
+  },
+  {
+   "id": "las-mesitas-church-ruins-san-isidro",
+   "name": "Las Mesitas Church ruins (San Isidro)",
+   "cat": "religious",
+   "type": "church",
+   "lat": 37.06446,
+   "lon": -106.11058,
+   "approx": true,
+   "location": "Las Mesitas, on the western edge of the San Luis Valley near Antonito. TopoQuest gives about 37.057 N, 106.127 W. One local report says it is about seven miles from Antonito; the coordinates put it west of town. Next to Las Mesitas Catholic Cemetery.",
+   "condition": "The church was destroyed by fire in 1975 and stands as a roofless stone shell, a popular photography subject. The bell melted in the fire. The sources give no stabilization or ownership details. The newest info is undated Conejos County Citizen coverage and photo blogs.",
+   "access": "unknown (next to a Catholic cemetery)",
+   "sources": [
+    "https://conejoscountycitizen.com/article/photogenic-old-church-has-amazing-story",
+    "https://www.aroundtheworldineightyyears.com/old-catholic-churches-las-mesitas/",
+    "https://mgerwingarch.com/m-gerwing/tag/San+Luis+Valley"
+   ]
+  },
+  {
+   "id": "aspen-grove-brick-schoolhouse",
+   "name": "Aspen Grove brick schoolhouse",
+   "cat": "institutional",
+   "type": "school",
+   "lat": 39.18488,
+   "lon": -106.80467,
+   "approx": true,
+   "location": "Only the Aspen Grove area, Pitkin County, is given (cogenweb photo page)",
+   "condition": "The Pitkin County GenWeb photo page describes an abandoned or long-deserted brick schoolhouse. The source is undated, the details are thin, and current condition is unverified.",
+   "access": "unknown",
+   "sources": [
+    "https://www.cogenweb.org/pitkin/photos.htm"
+   ]
   }
  ]
 }
