@@ -10,7 +10,9 @@ cd urbex-finder
 python3 -m http.server 8000
 ```
 
-Then open http://localhost:8000. "Near me" needs `localhost` or HTTPS. To use it on your
+Then open http://localhost:8000.
+
+Live site: https://ryanchappy0713-coder.github.io/urbex-finder/ "Near me" needs `localhost` or HTTPS. To use it on your
 phone, host the folder on any static host (GitHub Pages, Netlify, Cloudflare Pages).
 
 ## How it works

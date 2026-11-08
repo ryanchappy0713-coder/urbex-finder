@@ -37,6 +37,10 @@
     places: [],            // normalized results
     hidden: new Set(),     // hidden categories
     hideDemolished: true,  // hide places the status check says are gone
+    hideReused: true,      // hide places that are back in use
+    showLeads: false,      // low-confidence leads (former/closed, ghost towns, mines)
+    sort: 'best',
+    query: '',
     activeId: null,
     saved: loadSaved(),
   };
@@ -152,6 +156,10 @@
   nwr["abandoned:railway"~"^(station|halt)$"];
   nwr["disused:railway"~"^(station|halt)$"];
   nwr["military"="bunker"]["name"];
+  way["railway"="abandoned"]["tunnel"="yes"];
+  way["railway"="abandoned"]["bridge"="yes"];
+  way["abandoned:railway"]["tunnel"="yes"];
+  way["abandoned:railway"]["bridge"="yes"];
 );
 out center tags ${MAX_RESULTS * 3};`;
     }
@@ -196,8 +204,11 @@ out center tags ${MAX_RESULTS * 3};`;
       const R = +$('radius').value;
       if (R > r && shown.length) notes.unshift(`Few places within ${r / 1000} km, so this shows the nearest ones up to ${R / 1000} km.`);
       const extra = notes.length ? `<br><small>${notes.join(' ')}</small>` : '';
+      const strong = shown.filter((p) => confOf(p) !== 'low').length;
       setStatus((shown.length
-        ? `Found <b>${shown.length}</b> places. Tap one to research it.`
+        ? (strong
+          ? `Found <b>${strong}</b> likely abandoned or disused places${shown.length > strong ? ` and ${shown.length - strong} weaker leads` : ''}. Best spots are at the top.`
+          : `Found <b>${shown.length}</b> leads (closed or former places, mine sites). None are confirmed abandoned yet, so check them with the satellite view.`)
         : `Nothing found within ${Math.max(50, r / 1000)} km. Try a nearby city or a bigger radius.`) + extra);
     } catch (err) {
       setStatus(`Scan failed: ${esc(err.message)}. The free servers may be busy. Try again in a minute.`, true);
@@ -340,7 +351,7 @@ out center tags ${MAX_RESULTS * 3};`;
         const name = decodeXml(get(chunk, 'site_name')) || 'Unnamed mine';
         out.push({
           id: `usgs/${get(chunk, 'dep_id')}`, source: 'usgs', osmType: null, osmId: null,
-          lat: plat, lon: plon, dist, cat: 'mines', status: 'past producer',
+          lat: plat, lon: plon, dist, cat: 'mines', status: 'past producer', conf: 'low',
           label: what.length ? `Old ${what.slice(0, 2).join(' & ')} mine` : 'Old mine',
           name, hasName: name !== 'Unnamed mine',
           tags: { name, commodities: what.join(', ') || codes.join(', '), status: 'Past producer (USGS)', 'USGS record': get(chunk, 'url') },
@@ -360,7 +371,10 @@ out center tags ${MAX_RESULTS * 3};`;
   const WD_STATES = ['Q63065035', 'Q11639308', 'Q56651571', 'Q111802839'];
   const WD_STATE_LABEL = { Q63065035: 'abandoned', Q11639308: 'decommissioned', Q104664889: 'closed',
     Q56651571: 'out of service', Q111802839: 'closed' };
-  const WD_TYPES = { Q74047: 'ghost town', Q109607: 'ruins' };
+  const WD_TYPES = { Q74047: 'ghost town', Q109607: 'ruins', Q811336: 'derelict', Q42412840: 'abandoned',
+    Q106772341: 'abandoned', Q350895: 'abandoned village', Q27654220: 'abandoned village', Q21507948: 'ghost town',
+    Q4663385: 'former', Q65464941: 'former', Q64578911: 'former', Q113377182: 'former', Q39919471: 'former',
+    Q96371632: 'former', Q17715832: 'ruins', Q17485079: 'ruins', Q1570262: 'unfinished' };
 
   const DESC_YES = '\\\\b(abandoned|disused|derelict|defunct|ghost town|ruin|ruins|decommissioned|former (hospital|school|asylum|sanatorium|prison|jail|factory|mill|mine|power|church|hotel|military|air|army|navy|railway|train|station|theat|amusement|resort|plant|brewery|warehouse|depot|fort|missile|base))';
   const DESC_NO = 'demolish|destroyed|razed|torn down|replaced|redevelop|now (a|an|the|home|used|part)|converted|museum|company|organization|band|team|newspaper|magazine|airline|club|league|political';
@@ -464,10 +478,15 @@ out center tags ${MAX_RESULTS * 3};`;
     const cat = catFromText(all);
     const tags = { name: w.name, description: w.desc || '', closed: w.closedYear || '', wikidata: w.qid, 'instance of': [...w.types].join(', ') || '', 'state of use': w.state || '' };
     if (w.article) tags.wikipedia = 'en:' + w.article;
+    const st = (w.state || '').toLowerCase();
+    const conf = /abandoned$|derelict/.test(st) || /\b(abandoned|derelict)\b/i.test(w.desc || '') ? 'high'
+      : /decommissioned|out of service|unfinished|ruins|disused/.test(st) || /\b(disused|decommissioned|ruin)/i.test(w.desc || '') || (st === 'closed' && !w.fromClosed) ? 'medium'
+      : 'low'; // former, defunct, ghost towns, closure date only
     return {
+      conf,
       id: `wd/${w.qid}`, source: 'wikidata', osmType: null, osmId: null,
       lat: w.lat, lon: w.lon, tags, cat, status: w.state || 'closed',
-      label: cap(w.state && !['ghost town', 'ruins'].includes(w.state) && !type.toLowerCase().startsWith(w.state) ? `${w.state} ${type}` : type),
+      label: cap(w.state && !['ghost town', 'ruins', 'abandoned village'].includes(w.state) && !type.toLowerCase().startsWith(w.state) ? `${w.state} ${type}` : (w.state === 'abandoned village' && type === 'place' ? 'abandoned village' : type)),
       name: w.name, hasName: true,
     };
   }
@@ -567,11 +586,29 @@ out center tags ${MAX_RESULTS * 3};`;
       : isState(t, 'was') ? 'former' : 'unknown';
 
     const nice = { works: 'factory', ruins: 'ruins', yes: 'building', vacant: 'vacant storefront', brownfield: 'brownfield site', mine_shaft: 'mine shaft' }[what] || human(what);
+    const derelictTag = /^(derelict|ruinous|dilapidated)$/.test(t['building:condition'] || t.condition || '') ? 'derelict' : t.vacant === 'yes' ? 'vacant' : '';
     const label = nice === 'ruins' ? 'Ruins'
-      : cap(`${status === 'unknown' ? '' : status + ' '}${nice}`.trim());
+      : cap(`${status === 'unknown' ? (derelictTag ? derelictTag + ' ' : '') : status + ' '}${nice === 'building' || !derelictTag || status !== 'unknown' ? nice : nice + ' building'}`.trim());
+
+    // How sure are we that this is an actual abandoned place worth visiting?
+    const derelict = /^(derelict|ruinous|dilapidated)$/.test(t['building:condition'] || t.condition || '') || t.vacant === 'yes' || building === 'abandoned';
+    let conf = derelict || status === 'abandoned' ? 'high'
+      : status === 'disused' || status === 'ruined' || military || building === 'bunker' || shop === 'vacant' ? 'medium'
+      : 'low'; // former (was:), brownfield land, mine shafts, historic sites with no lifecycle tag
+    if (landuse === 'brownfield' || /^(mineshaft|adit)$/.test(manMade || '') || /^(mine|mine_shaft)$/.test(historic || '')) conf = 'low';
+
+    // Signs the place is back in use: an active main tag next to the old one, or construction.
+    let check;
+    const active = (t.shop && t.shop !== 'vacant') || t.office || t.craft || t.opening_hours ||
+      (t.amenity && !/^(parking|bench|waste_basket|shelter|grave_yard)$/.test(t.amenity)) || t.tourism === 'hotel';
+    if (status !== 'unknown' && t.abandoned !== 'yes' && t.disused !== 'yes' && active) {
+      check = { status: 'reused', evidence: `OpenStreetMap lists something active here now (${['shop', 'amenity', 'office', 'craft', 'tourism'].filter((k) => t[k]).map((k) => `${k}=${t[k]}`).join(', ') || 'opening hours'}).`, source: 'OpenStreetMap', url: `https://www.openstreetmap.org/${el.type}/${el.id}` };
+    } else if (t.building === 'construction' || t.landuse === 'construction' || t.construction) {
+      check = { status: 'reused', evidence: 'OpenStreetMap shows construction here, so it is probably being redeveloped.', source: 'OpenStreetMap', url: `https://www.openstreetmap.org/${el.type}/${el.id}` };
+    }
     return {
       id: `${el.type}/${el.id}`, osmType: el.type, osmId: el.id,
-      lat, lon, tags: t, cat, status, label,
+      lat, lon, tags: t, cat, status, label, conf, check,
       name: named || label,
       hasName: !!named,
     };
@@ -581,6 +618,27 @@ out center tags ${MAX_RESULTS * 3};`;
   }
   const human = (s) => String(s || 'site').replace(/_/g, ' ').replace(/;.*/, '');
   const cap = (s) => s.charAt(0).toUpperCase() + s.slice(1);
+
+  // ---------- Ranking ----------
+  const CAT_WEIGHT = { institutional: 25, industrial: 20, military: 20, leisure: 18, religious: 14, rail: 12, ruins: 10, houses: 6, other: 4, mines: 0 };
+  const CONF_INFO = { high: { label: 'Likely abandoned', score: 50 }, medium: { label: 'Disused', score: 28 }, low: { label: 'Lead', score: 0 } };
+  function confOf(p) {
+    if (p.check?.status === 'abandoned') return 'high';
+    return p.conf || 'low';
+  }
+  function scoreOf(p) {
+    const maxKm = Math.max(5, +$('radius').value / 1000);
+    let s = CONF_INFO[confOf(p)].score + (CAT_WEIGHT[p.cat] ?? 4);
+    if (p.hasName) s += 8;
+    if (p.tags?.wikipedia) s += 6;
+    if (p.osmType === 'way' || p.osmType === 'relation') s += 6; // mapped as a building outline, not just a point
+    if (p.check?.status === 'abandoned') s += 15;
+    if (p.tags?.closed && +p.tags.closed >= 1990) s += 4;
+    s -= Math.min(25, (p.dist / 1000) / maxKm * 25);
+    return s;
+  }
+  const isGone = (p) => p.check?.status === 'demolished';
+  const isReused = (p) => p.check?.status === 'reused';
 
   // ---------- Rendering ----------
   function render() {
@@ -597,20 +655,38 @@ out center tags ${MAX_RESULTS * 3};`;
       filtersEl.appendChild(b);
     });
 
-    const gone = state.places.filter((p) => p.check?.status === 'demolished').length;
-    if (gone) {
+    // Toggles for the groups hidden by default.
+    const live = state.places.filter((p) => !isGone(p) && !isReused(p));
+    const good = live.filter((p) => confOf(p) !== 'low');
+    const leads = live.length - good.length;
+    // With very few strong results, show the leads too rather than an almost empty list.
+    const leadsOn = state.showLeads || good.length < 8;
+    const toggle = (show, text, onClick) => {
       const b = document.createElement('button');
-      b.className = 'chip' + (state.hideDemolished ? '' : ' off');
-      b.innerHTML = state.hideDemolished ? `🚫 ${gone} likely demolished hidden · show` : `🚫 Hide ${gone} likely demolished`;
-      b.onclick = () => { state.hideDemolished = !state.hideDemolished; render(); };
+      b.className = 'chip' + (show ? ' off' : '');
+      b.textContent = text; b.onclick = onClick;
       filtersEl.prepend(b);
-    }
+    };
+    const gone = state.places.filter(isGone).length, reused = state.places.filter(isReused).length;
+    if (gone) toggle(!state.hideDemolished, state.hideDemolished ? `🚫 ${gone} demolished hidden · show` : `🚫 Hide ${gone} demolished`, () => { state.hideDemolished = !state.hideDemolished; render(); });
+    if (reused) toggle(!state.hideReused, state.hideReused ? `♻ ${reused} back in use hidden · show` : `♻ Hide ${reused} back in use`, () => { state.hideReused = !state.hideReused; render(); });
+    if (leads && good.length >= 8) toggle(state.showLeads, state.showLeads ? `Hide ${leads} weaker leads` : `🔎 ${leads} more leads (closed, former, mines) · show`, () => { state.showLeads = !state.showLeads; render(); });
 
     // List + markers
     resultsEl.innerHTML = '';
     markerLayer.clearLayers();
     markers.clear();
-    state.places.filter((p) => !state.hidden.has(p.cat) && !(state.hideDemolished && p.check?.status === 'demolished')).forEach((p) => {
+    const q = state.query.trim().toLowerCase();
+    let shown = state.places.filter((p) => !state.hidden.has(p.cat)
+      && !(state.hideDemolished && isGone(p)) && !(state.hideReused && isReused(p))
+      && (leadsOn || confOf(p) !== 'low')
+      && (!q || `${p.name} ${p.label} ${p.tags?.description || ''} ${p.tags?.commodities || ''} ${p.tags?.['instance of'] || ''} ${p.tags?.type || ''}`.toLowerCase().includes(q)));
+    shown = state.sort === 'best'
+      ? shown.map((p) => [scoreOf(p), p]).sort((a, b) => b[0] - a[0]).map((x) => x[1])
+      : shown.sort((a, b) => a.dist - b.dist);
+    const top = new Set(state.sort === 'best' ? shown.filter((p) => confOf(p) !== 'low' && !isGone(p) && !isReused(p)).slice(0, 5).map((p) => p.id) : []);
+    if (!shown.length && state.places.length) resultsEl.innerHTML = '<li class="muted" style="display:block">Nothing matches. Clear the search box or turn some filters back on.</li>';
+    shown.forEach((p) => {
       const color = CATEGORIES[p.cat].color;
       const li = document.createElement('li');
       li.dataset.id = p.id;
@@ -618,12 +694,12 @@ out center tags ${MAX_RESULTS * 3};`;
       li.innerHTML = `<span class="dot" style="background:${color}"></span>
         <span class="name">${state.saved[p.id] ? '★ ' : ''}${esc(p.name)}</span>
         <span class="dist">${fmtDist(p.dist)}</span>
-        <span class="sub">${p.source === 'ai' ? '✨ ' : ''}${esc(p.hasName ? p.label : CATEGORIES[p.cat].label)}${accessWarning(p.tags) ? ' · ⚠ private' : ''}${p.check && STATUS_INFO[p.check.status] ? ` · ${STATUS_INFO[p.check.status].icon} ${STATUS_INFO[p.check.status].badge}` : ''}</span>`;
+        <span class="sub">${top.has(p.id) ? '<b class="top">⭐ Top pick</b> · ' : ''}<span class="conf conf-${confOf(p)}">${CONF_INFO[confOf(p)].label}</span> · ${p.source === 'ai' ? '✨ ' : ''}${esc(p.hasName ? p.label : CATEGORIES[p.cat].label)}${accessWarning(p.tags) ? ' · ⚠ private' : ''}${p.check && STATUS_INFO[p.check.status] ? ` · ${STATUS_INFO[p.check.status].icon} ${STATUS_INFO[p.check.status].badge}` : ''}</span>`;
       li.onclick = () => openDetail(p);
       resultsEl.appendChild(li);
 
       const m = L.circleMarker([p.lat, p.lon], {
-        radius: p.hasName ? 7 : 5, color: '#000', weight: 1, fillColor: color, fillOpacity: 0.95,
+        radius: confOf(p) === 'high' ? 8 : confOf(p) === 'medium' ? 6 : 4, color: '#000', weight: 1, fillColor: color, fillOpacity: 0.95,
       }).bindTooltip(esc(p.name)).on('click', () => openDetail(p));
       m.addTo(markerLayer);
       markers.set(p.id, m);
@@ -1063,7 +1139,7 @@ ${list.map((s) => `<Placemark><name>${x(s.name)}</name><styleUrl>#spot</styleUrl
       const info = STATUS_INFO[p.check.status];
       box.innerHTML = `<div class="badges"><span class="badge ${info.cls}">${info.icon} ${info.badge}</span></div>
         <p class="muted" style="margin:6px 0">“${esc(p.check.evidence)}”<br>
-        <small>From <a href="${esc(p.check.url)}" target="_blank" rel="noopener">${esc(p.check.source)}</a>. This is an automatic reading of the article, so double-check it.</small></p>
+        <small>From <a href="${esc(p.check.url)}" target="_blank" rel="noopener">${esc(p.check.source)}</a>. This is an automatic check, so double-check it.</small></p>
         <div class="row">${ai}</div>`;
       wire(); return;
     }
@@ -1128,6 +1204,10 @@ Each user message may begin with an "App context" block describing what the user
     #chat .setup input { width: 100%; padding: 8px 10px; border-radius: 6px; border: 1px solid var(--line); background: var(--bg); color: var(--text); font: inherit; margin: 8px 0; }
     #chat .setup ol { padding-left: 20px; } #chat .setup li { margin: 4px 0; }
     .ask-ai { margin-top: 8px; }
+    .list-tools { display: flex; gap: 6px; margin-bottom: 8px; }
+    .list-tools input { flex: 1; min-width: 0; padding: 7px 9px; border-radius: 6px; border: 1px solid var(--line); background: var(--bg); color: var(--text); font: inherit; font-size: 13px; }
+    .conf { font-weight: 600; } .conf-high { color: var(--ok); } .conf-medium { color: var(--accent); } .conf-low { color: var(--muted); font-weight: 400; }
+    .results .top { color: var(--accent); }
     .photos { display: flex; gap: 8px; overflow-x: auto; padding-bottom: 4px; }
     .photos a { flex: none; width: 128px; text-decoration: none; color: var(--muted); font-size: 11px; }
     .photos img { width: 128px; height: 96px; object-fit: cover; border-radius: 6px; display: block; background: var(--panel-2); }
@@ -1481,7 +1561,7 @@ Give lat and lon only when a source states them or you are confident; otherwise 
       const sources = (Array.isArray(it.sources) ? it.sources : []).filter((u) => /^https?:\/\//.test(u)).slice(0, 5);
       added.push({
         id: `ai/${String(it.name).toLowerCase().replace(/[^a-z0-9]+/g, '-')}`,
-        source: 'ai', osmType: null, osmId: null, lat, lon,
+        source: 'ai', osmType: null, osmId: null, lat, lon, conf: 'medium',
         cat: catFromText(`${type} ${it.name} ${it.status || ''}`.toLowerCase()),
         status: 'unverified', label: cap(`${type}`), name: String(it.name), hasName: true,
         tags: { name: String(it.name), type, location: it.location || '', 'reported condition': it.status || '',
@@ -1532,6 +1612,14 @@ Give lat and lon only when a source states them or you are confident; otherwise 
     if (list) out.push(`<ul>${list.join('')}</ul>`);
     return out.join('');
   }
+
+  const listTools = document.createElement('div');
+  listTools.className = 'list-tools';
+  listTools.innerHTML = `<input id="listQuery" type="search" placeholder="Filter results: hospital, mall, school, a name…">
+    <select id="listSort" title="Sort results"><option value="best">Best spots first</option><option value="near">Nearest first</option></select>`;
+  filtersEl.after(listTools);
+  listTools.querySelector('#listQuery').addEventListener('input', (e) => { state.query = e.target.value; render(); });
+  listTools.querySelector('#listSort').addEventListener('change', (e) => { state.sort = e.target.value === 'best' ? 'best' : 'near'; render(); });
 
   const fix = document.createElement('style');
   fix.textContent = `.leaflet-control-layers-toggle{background-image:none!important;display:flex!important;align-items:center;justify-content:center;font-size:20px;text-decoration:none;color:#333}
