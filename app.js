@@ -260,25 +260,27 @@ out center tags ${MAX_RESULTS * 3};`;
 
   // Query OpenStreetMap (your radius) and Wikidata (50 km) at the same time.
   async function searchArea(lat, lon, r, onEarly = () => {}) {
-    const key = `urbex.cache.v6.${lat.toFixed(2)},${lon.toFixed(2)},${r}`;
+    const key = `urbex.cache.v6.${wmKey() ? 'wm.' : ''}${lat.toFixed(2)},${lon.toFixed(2)},${r}`;
     const cached = readCache(key);
     if (cached) return { places: [...mySpots(lat, lon, Math.max(r, 50000)), ...(await researchedSpots(lat, lon, r)), ...cached], notes: ['(Saved results from an earlier scan.)'] };
 
     let osmDone = false;
-    const early = { wd: null, mines: null, city: null };
-    const showEarly = () => { if (!osmDone) onEarly([...(early.city || []), ...(early.wd || []), ...(early.mines || [])]); };
+    const notesEarly = [];
+    const early = { wd: null, mines: null, city: null, wm: null };
+    const showEarly = () => { if (!osmDone) onEarly([...(early.wm || []), ...(early.city || []), ...(early.wd || []), ...(early.mines || [])]); };
     const osmQuery = (radius) => overpass(buildQuery(lat, lon, radius), radius > 50000 ? 65000 : 30000)
       .then((d) => (d.elements || []).map(normalize).filter(Boolean));
-    const [osm, wd, mn, ct] = await Promise.allSettled([
+    const [osm, wd, mn, ct, wmp] = await Promise.allSettled([
       osmQuery(r).finally(() => { osmDone = true; }),
       wikidata(lat, lon, Math.max(50000, r)).then((w) => { early.wd = w; showEarly(); return w; }),
       usgsMines(lat, lon, r).then((m) => { early.mines = m; showEarly(); return m; }),
       cityRecords(lat, lon, r).then((c) => { early.city = c; showEarly(); return c; }),
+      wikimapia(lat, lon, r).then((w) => { early.wm = w; showEarly(); return w; }),
     ]);
     if (osm.status === 'rejected' && wd.status === 'rejected') {
       throw new Error(`map servers: ${osm.reason.message}; Wikidata: ${wd.reason.message}`);
     }
-    const notes = [];
+    const notes = notesEarly;
     let osmPlaces = osm.status === 'fulfilled' ? osm.value : [];
     const wdPlaces = wd.status === 'fulfilled' ? wd.value : [];
 
@@ -289,9 +291,17 @@ out center tags ${MAX_RESULTS * 3};`;
       try { osmPlaces = await osmQuery(25000); } catch { /* keep what we have */ }
     }
     if (osm.status === 'rejected') notes.push('OpenStreetMap servers are busy right now, so this only shows Wikidata places. Scan again later for more.');
-    const found = [...(ct.status === 'fulfilled' ? ct.value : []), ...mergeWikidata(osmPlaces, wdPlaces), ...(mn.status === 'fulfilled' ? mn.value : [])];
+    if (wmp.status === 'rejected') notesEarly.push(esc(wmp.reason.message) + ' Check your Wikimapia key in 🧭 Scout tools.');
+    const found = [...(wmp.status === 'fulfilled' ? dedupeAgainst(wmp.value, osmPlaces, wdPlaces) : []), ...(ct.status === 'fulfilled' ? ct.value : []), ...mergeWikidata(osmPlaces, wdPlaces), ...(mn.status === 'fulfilled' ? mn.value : [])];
     if (osm.status === 'fulfilled' && wd.status === 'fulfilled') writeCache(key, found);
     return { places: [...mySpots(lat, lon, Math.max(r, 50000)), ...(await researchedSpots(lat, lon, r)), ...found], notes };
+  }
+
+  // Drop Wikimapia places that are already on the map from OpenStreetMap or Wikidata.
+  function dedupeAgainst(wmList, ...others) {
+    const known = others.flat();
+    return wmList.filter((w) => !known.some((k) => haversine(k.lat, k.lon, w.lat, w.lon) < 80 &&
+      k.name.toLowerCase().split(/\s+/)[0] === w.name.toLowerCase().split(/\s+/)[0]));
   }
 
   function withDist(places, lat, lon, r) {
@@ -342,6 +352,56 @@ out center tags ${MAX_RESULTS * 3};`;
 
 
 
+
+
+  // ---------- Wikimapia: crowd-tagged "abandoned / shut down" places (needs a free key) ----------
+  const WM_KEY_STORE = 'urbex.wikimapiaKey';
+  const WM_ABANDONED = 2390; // Wikimapia category "abandoned / shut down"
+  function wmKey() { try { return localStorage.getItem(WM_KEY_STORE) || ''; } catch { return ''; } }
+
+  async function wikimapia(lat, lon, r) {
+    const key = wmKey();
+    if (!key) return [];
+    const R = Math.min(r, 100000);
+    const dLat = R / 111320, dLon = R / (111320 * Math.cos(lat * Math.PI / 180));
+    const bbox = [lon - dLon, lat - dLat, lon + dLon, lat + dLat].map((n) => n.toFixed(5)).join(',');
+    const out = [];
+    for (let page = 1; page <= 5; page++) {
+      const url = `https://api.wikimapia.org/?key=${encodeURIComponent(key)}&function=place.getbyarea&coordsby=bbox&bbox=${bbox}&category=${WM_ABANDONED}&count=100&page=${page}&format=json&data_blocks=location`;
+      let d;
+      try { d = await fetchJson(url); } catch { break; }
+      if (d && d.debug && d.debug.message) throw new Error(`Wikimapia: ${d.debug.message}`);
+      const list = Array.isArray(d) ? d : (d.places || []);
+      for (const x of list) {
+        const plat = +(x.location?.lat ?? x.lat), plon = +(x.location?.lon ?? x.lon);
+        if (!Number.isFinite(plat) || !Number.isFinite(plon)) continue;
+        const dist = haversine(lat, lon, plat, plon);
+        if (dist > r) continue;
+        const title = String(x.title || 'Untitled place');
+        out.push({
+          id: `wm/${x.id}`, source: 'wikimapia', osmType: null, osmId: null, lat: plat, lon: plon, dist,
+          cat: catFromText(title.toLowerCase()), status: 'abandoned', conf: 'medium',
+          label: 'Tagged abandoned on Wikimapia', name: title, hasName: true, wmId: x.id,
+          tags: { 'Wikimapia': `https://wikimapia.org/${x.id}` },
+        });
+      }
+      if (list.length < 100) break;
+    }
+    return out;
+  }
+
+  // Description and photos of one Wikimapia place, loaded when it is opened.
+  async function wikimapiaDetails(p) {
+    const key = wmKey();
+    if (!key || !p.wmId) return null;
+    const d = await fetchJson(`https://api.wikimapia.org/?key=${encodeURIComponent(key)}&function=place.getbyid&id=${p.wmId}&data_blocks=main,photos,comments&format=json`);
+    return {
+      description: (d.description || '').replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim(),
+      tags: (d.tags || []).map((t) => t.title).filter(Boolean),
+      photos: (d.photos || []).slice(0, 12).map((ph) => ({ thumb: ph['280_url'] || ph.big_url || ph['960_url'], page: ph['960_url'] || ph.big_url, date: ph.time_str || (ph.time ? new Date(ph.time * 1000).toISOString().slice(0, 10) : '') })).filter((x) => x.thumb),
+      comments: (d.comments || []).slice(-3).map((c) => `${c.name || 'someone'}: ${String(c.message || '').replace(/<[^>]+>/g, ' ').slice(0, 200)}`),
+    };
+  }
 
   // ---------- Researched spots (bundled: data/researched-spots.json) ----------
   // Abandoned places found through news and urbex coverage, with sources.
@@ -826,7 +886,9 @@ out center tags ${MAX_RESULTS * 3};`;
     const earth = `https://earth.google.com/web/@${p.lat},${p.lon},120a,450d,35y,0h,55t,0r`;
     const gmapsSat = `https://www.google.com/maps/@?api=1&map_action=map&center=${p.lat},${p.lon}&zoom=19&basemap=satellite`;
     const streetView = `https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=${p.lat},${p.lon}`;
-    const source = p.source === 'research'
+    const source = p.source === 'wikimapia'
+      ? `<a href="https://wikimapia.org/${esc(p.wmId)}" target="_blank" rel="noopener">Wikimapia place ${esc(p.wmId)}</a> (crowd-tagged "abandoned / shut down", may be out of date)`
+      : p.source === 'research'
       ? 'Researched from news and urbex coverage: ' + (p.aiSources || []).map((u) => `<a href="${esc(u)}" target="_blank" rel="noopener">${esc(u.replace(/^https?:\/\/(www\.)?/, '').split('/')[0])}</a>`).join(', ')
       : p.source === 'mine' ? 'Added by you'
       : p.source === 'city'
@@ -1303,6 +1365,21 @@ ${list.map((s) => `<Placemark><name>${x(s.name)}</name><styleUrl>#spot</styleUrl
   async function showCheck(p) {
     const box = document.getElementById('checkBox');
     if (!box || state.activeId !== p.id) return;
+    if (p.source === 'wikimapia') {
+      box.innerHTML = '<p class="muted">Loading the Wikimapia description…</p>';
+      try {
+        const w = await wikimapiaDetails(p);
+        if (state.activeId !== p.id) return;
+        p.wm = w;
+        const gone = /demolish|torn down|razed|no longer exists|redevelop/i.test(`${w.description} ${w.tags.join(' ')}`);
+        box.innerHTML = `<div class="badges"><span class="badge ${gone ? 'warn' : ''}">${gone ? '⚠ Description mentions demolition or redevelopment' : 'Tagged abandoned on Wikimapia'}</span>${w.tags.slice(0, 5).map((t) => `<span class="badge">${esc(t)}</span>`).join('')}</div>
+          ${w.description ? `<p class="muted" style="margin:6px 0">${esc(w.description.slice(0, 700))}${w.description.length > 700 ? '…' : ''}</p>` : ''}
+          ${w.comments.length ? `<p class="muted" style="font-size:12px;margin:6px 0"><b>Latest comments:</b><br>${w.comments.map(esc).join('<br>')}</p>` : ''}
+          ${w.photos.length ? `<div class="photos">${w.photos.map((x) => `<a href="${esc(x.page)}" target="_blank" rel="noopener"><img src="${esc(x.thumb)}" alt="" loading="lazy"><span>${esc(x.date || 'Wikimapia photo')}</span></a>`).join('')}</div>` : ''}
+          <p class="muted" style="font-size:12px">Crowd-tagged places can be out of date. Check 🕰 imagery and Street View.</p>`;
+      } catch { box.innerHTML = '<p class="muted">Couldn\'t load Wikimapia details right now.</p>'; }
+      return;
+    }
     if (p.source === 'research') {
       box.innerHTML = `<div class="badges"><span class="badge good">✓ Reported abandoned</span></div>
         <p class="muted" style="margin:6px 0">${esc(p.tags['reported condition'])}<br><b>Access:</b> ${esc(p.tags.access)}<br>
@@ -1785,6 +1862,37 @@ Give lat and lon only when a source states them or you are confident; otherwise 
     setStatus('Tap the map where the spot is. (Zoom in and switch to Satellite to place it exactly.)');
   };
   scoutBox.after(addBtn);
+
+
+  // ---------- Wikimapia key setup ----------
+  const wmBox = document.createElement('details');
+  wmBox.className = 'scout';
+  const wmRender = () => {
+    const on = !!wmKey();
+    wmBox.innerHTML = `<summary>🗺 Wikimapia: ${on ? 'on (crowd-tagged abandoned places)' : 'add thousands of crowd-tagged abandoned places'}</summary>
+      <div class="muted" style="font-size:12.5px;line-height:1.45">
+        <p>Wikimapia is a crowd-made map where people tag places as <b>"abandoned / shut down"</b>, with more than 170,000 places worldwide, often with descriptions and photos. It needs a free key:</p>
+        <ol style="padding-left:18px;margin:6px 0">
+          <li>Create a free account at <a href="https://wikimapia.org/" target="_blank" rel="noopener">wikimapia.org</a> (sign-up button in the top corner).</li>
+          <li>Open <a href="https://wikimapia.org/api/?action=create_key" target="_blank" rel="noopener">wikimapia.org/api → Create key</a>, fill in the short form (site: ryanchappy0713-coder.github.io), and copy the key.</li>
+          <li>Paste it here:</li>
+        </ol>
+        <div class="row"><input id="wmKeyInput" type="text" placeholder="Wikimapia API key" value="${on ? '••••••••' : ''}" style="flex:1;min-width:0;padding:7px;border-radius:6px;border:1px solid var(--line);background:var(--bg);color:var(--text)">
+          <button class="btn accent" id="wmKeySave">${on ? 'Replace' : 'Save'}</button>${on ? '<button class="btn ghost" id="wmKeyRemove">Remove</button>' : ''}</div>
+        <p style="font-size:11.5px">The key is saved only in this browser. Wikimapia data is free for non-commercial use. Places tagged there can be out of date, so check 🕰 imagery before going.</p>
+      </div>`;
+    wmBox.querySelector('#wmKeySave').onclick = () => {
+      const k = wmBox.querySelector('#wmKeyInput').value.trim();
+      if (!k || /^•+$/.test(k)) return;
+      try { localStorage.setItem(WM_KEY_STORE, k); } catch { /* ignore */ }
+      wmRender(); wmBox.open = true;
+      setStatus('Wikimapia key saved. Scan again to include its abandoned places.');
+    };
+    const rm = wmBox.querySelector('#wmKeyRemove');
+    if (rm) rm.onclick = () => { try { localStorage.removeItem(WM_KEY_STORE); } catch { /* ignore */ } wmRender(); };
+  };
+  wmRender();
+  addBtn.after(wmBox);
 
   function openAddSpot(lat, lon, existing) {
     savedEl.hidden = true; document.getElementById('chat')?.setAttribute('hidden', '');

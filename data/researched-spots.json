@@ -63,6 +63,1040 @@
    "sources": [
     "https://en.wikipedia.org/wiki/Gilman,_Colorado"
    ]
+  },
+  {
+   "id": "crystal-mill",
+   "name": "Crystal Mill",
+   "cat": "industrial",
+   "type": "mill",
+   "lat": 39.05899,
+   "lon": -107.10446,
+   "approx": false,
+   "location": "Crystal, Gunnison County, Colorado",
+   "condition": "Century-old wooden mill above the Crystal River. In 2023 the owner closed the riverside trail below it after people partied inside.",
+   "access": "Private; the townsite road was still reachable in 2023 (4WD).",
+   "sources": [
+    "https://www.aspentimes.com/news/group-racing-to-raise-10m-to-preserve-iconic-crystal-mill-before-potential-sale/"
+   ]
+  },
+  {
+   "id": "marble-ski-area-lodge-skeleton",
+   "name": "Marble Ski Area lodge skeleton",
+   "cat": "leisure",
+   "type": "ski area",
+   "lat": 39.07221,
+   "lon": -107.18894,
+   "approx": true,
+   "location": "Marble, Colorado, Marble, Gunnison County",
+   "condition": "Unfinished, abandoned shell of a planned 200-room base lodge (~2019).",
+   "access": "Private; owner permission only.",
+   "sources": [
+    "https://soprissun.com/have-you-seen-the-ghost-of-marble-past/"
+   ]
+  },
+  {
+   "id": "geneva-basin-ski-area",
+   "name": "Geneva Basin Ski Area",
+   "cat": "leisure",
+   "type": "ski area",
+   "lat": 39.50985,
+   "lon": -105.71087,
+   "approx": true,
+   "location": "Guanella Pass Road north of Grant, Grant area, Park County",
+   "condition": "Closed after 1983/84; the ski patrol building at the top of the old lift still stands (2019-2024).",
+   "access": "National forest, on foot from the gate.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Geneva_Basin_Ski_Area"
+   ]
+  },
+  {
+   "id": "echo-lake-lodge",
+   "name": "Echo Lake Lodge",
+   "cat": "leisure",
+   "type": "lodge",
+   "lat": 39.65628,
+   "lon": -105.5966,
+   "approx": false,
+   "location": "Echo Lake Lodge, Mount Blue Sky Road, Clear Creek County",
+   "condition": "Rustic lodge closed since October 2022; future uncertain.",
+   "access": "Building closed; public land setting.",
+   "sources": [
+    "https://www.cbsnews.com/colorado/news/whats-future-closed-echo-lake-lodge"
+   ]
+  },
+  {
+   "id": "animas-forks-ghost-town",
+   "name": "Animas Forks ghost town",
+   "cat": "ruins",
+   "type": "ghost town",
+   "lat": 37.93086,
+   "lon": -107.57124,
+   "approx": false,
+   "location": "Animas Forks, Colorado, Animas Forks, San Juan County",
+   "condition": "About nine buildings standing, including the two-story Duncan House and the 1882 jail; stabilized 2013-14.",
+   "access": "BLM land. Legal to visit.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Animas_Forks,_Colorado"
+   ]
+  },
+  {
+   "id": "gold-prince-mill-ruins",
+   "name": "Gold Prince Mill ruins",
+   "cat": "industrial",
+   "type": "mill",
+   "lat": 37.93486,
+   "lon": -107.57124,
+   "approx": true,
+   "location": "Animas Forks, Colorado, Animas Forks, San Juan County",
+   "condition": "Steel-frame skeleton of the concentrating mill and the boarding-house foundation remain.",
+   "access": "BLM. Legal to visit.",
+   "sources": [
+    "https://www.legendsofamerica.com/animas-forks-colorado/"
+   ]
+  },
+  {
+   "id": "sound-democrat-mill",
+   "name": "Sound Democrat Mill",
+   "cat": "industrial",
+   "type": "mill",
+   "lat": 37.91181,
+   "lon": -107.59501,
+   "approx": false,
+   "location": "Placer Gulch near Animas Forks, Placer Gulch, San Juan County",
+   "condition": "1905 stamp mill, called the last standing stamp mill in the Eureka district and one of the most complete in Colorado.",
+   "access": "BLM land, 4WD. Legal to visit.",
+   "sources": [
+    "https://www.durangotelegraph.com/news/top-stories/safe-and-sound/"
+   ]
+  },
+  {
+   "id": "old-hundred-mine-boarding-house",
+   "name": "Old Hundred Mine boarding house",
+   "cat": "industrial",
+   "type": "mine",
+   "lat": 37.82944,
+   "lon": -107.57645,
+   "approx": false,
+   "location": "Galena Mountain near Howardsville, Howardsville, San Juan County",
+   "condition": "1908 boarding house clinging to a cliff at 12,500 ft; roof rebuilt and building cabled to the cliff.",
+   "access": "No road, only a mule trail.",
+   "sources": [
+    "https://sanjuancountyhistoricalsociety.org/old-hundred-boarding-house.html"
+   ]
+  },
+  {
+   "id": "yankee-girl-mine-headframe",
+   "name": "Yankee Girl Mine headframe",
+   "cat": "industrial",
+   "type": "mine",
+   "lat": 37.91469,
+   "lon": -107.69638,
+   "approx": true,
+   "location": "Yankee Girl Mine, Ouray County, Red Mountain Pass, Ouray County",
+   "condition": "Mine closed ~1914; the timber headframe still stands and has been stabilized.",
+   "access": "Private; view from the US 550 pullout.",
+   "sources": [
+    "https://www.legendsofamerica.com/guston-colorado/"
+   ]
+  },
+  {
+   "id": "national-bell-mine",
+   "name": "National Bell Mine",
+   "cat": "industrial",
+   "type": "mine",
+   "lat": 37.90435,
+   "lon": -107.70429,
+   "approx": true,
+   "location": "National Belle Mine, Ouray County, Red Mountain valley, Ouray County",
+   "condition": "Listed among Colorado's most amazing abandoned places.",
+   "access": "Unknown.",
+   "sources": [
+    "https://www.westword.com/arts-culture/ten-most-amazing-abandoned-places-in-colorado-6921683/"
+   ]
+  },
+  {
+   "id": "ironton-ghost-town",
+   "name": "Ironton ghost town",
+   "cat": "ruins",
+   "type": "ghost town",
+   "lat": 37.93287,
+   "lon": -107.68023,
+   "approx": false,
+   "location": "Ironton, Ouray County, Colorado",
+   "condition": "Three abandoned houses still stand, two being stabilized (2018).",
+   "access": "Public townsite trail. Legal to visit.",
+   "sources": [
+    "https://gregdisch.com/2018/10/09/ironton-ghost-town/"
+   ]
+  },
+  {
+   "id": "red-mountain-town-jail",
+   "name": "Red Mountain Town jail",
+   "cat": "ruins",
+   "type": "ghost town",
+   "lat": 37.89892,
+   "lon": -107.71191,
+   "approx": false,
+   "location": "Red Mountain Town, Colorado, Red Mountain Town, Ouray County",
+   "condition": "Most of the town burned in 1939; the jail is reported as the only structure still standing.",
+   "access": "Unknown.",
+   "sources": [
+    "https://www.visitouray.com/ghost-towns"
+   ]
+  },
+  {
+   "id": "atlas-mill-ruins",
+   "name": "Atlas Mill ruins",
+   "cat": "industrial",
+   "type": "mill",
+   "lat": 38.00379,
+   "lon": -107.79227,
+   "approx": true,
+   "location": "Sneffels, Ouray County, Colorado",
+   "condition": "Remains of the 1890s-1920s Atlas Mill near Yankee Boy Basin.",
+   "access": "National forest; Camp Bird Road can close for rockfall.",
+   "sources": [
+    "https://www.ouraynews.com/2020/03/05/forest-service-eyes-atlas-mill-cleanup"
+   ]
+  },
+  {
+   "id": "alta-ghost-town",
+   "name": "Alta ghost town",
+   "cat": "ruins",
+   "type": "ghost town",
+   "lat": 37.88699,
+   "lon": -107.84683,
+   "approx": false,
+   "location": "Alta, San Miguel County, Colorado",
+   "condition": "About 20 structures standing, including the two-story 1939 boarding house; may now be fenced.",
+   "access": "Partly private; 4WD.",
+   "sources": [
+    "https://www.coloradopreservation.org/endangered-place/alta-lakes",
+    "https://en.wikipedia.org/wiki/Alta,_Colorado"
+   ]
+  },
+  {
+   "id": "tomboy-ghost-town",
+   "name": "Tomboy ghost town",
+   "cat": "ruins",
+   "type": "ghost town",
+   "lat": 37.93788,
+   "lon": -107.75746,
+   "approx": false,
+   "location": "Tomboy, San Miguel County, Colorado",
+   "condition": "Mine closed 1927; cabins and a boarding house still stand (2017).",
+   "access": "High-clearance 4x4 or hike, summer only.",
+   "sources": [
+    "https://www.denver7.com/lifestyle/discover-colorado/colorado-ghost-towns-see-the-remnants-of-the-tomboy-mining-camp-near-telluride"
+   ]
+  },
+  {
+   "id": "capitol-city",
+   "name": "Capitol City",
+   "cat": "ruins",
+   "type": "ghost town",
+   "lat": 38.00773,
+   "lon": -107.46614,
+   "approx": false,
+   "location": "Capitol City, Colorado, Capitol City, Hinsdale County",
+   "condition": "The historic post office and a smelter stack remain standing.",
+   "access": "Unknown.",
+   "sources": [
+    "https://westernmininghistory.com/towns/colorado/capitol_city"
+   ]
+  },
+  {
+   "id": "bachelor-commodore-mine-complex",
+   "name": "Bachelor-Commodore Mine Complex",
+   "cat": "industrial",
+   "type": "mine",
+   "lat": 37.86972,
+   "lon": -106.93005,
+   "approx": true,
+   "location": "Commodore Mine, Creede, Creede, Mineral County",
+   "condition": "Ore house, trestles and buildings in poor condition at risk of collapse (2019 EPA); visible from the Bachelor Loop.",
+   "access": "Visible from a public interpretive route; Superfund site.",
+   "sources": [
+    "https://historycolorado.org/node/57049"
+   ]
+  },
+  {
+   "id": "st-elmo-ghost-town",
+   "name": "St. Elmo ghost town",
+   "cat": "ruins",
+   "type": "ghost town",
+   "lat": 38.70455,
+   "lon": -106.34521,
+   "approx": true,
+   "location": "St. Elmo, Colorado, St. Elmo, Chaffee County",
+   "condition": "About 40 buildings standing: saloon, courthouse, mercantile, church, school and homes.",
+   "access": "Town legal to visit; many buildings private.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Saint_Elmo,_Colorado"
+   ]
+  },
+  {
+   "id": "mary-murphy-mine-and-tram-stations",
+   "name": "Mary Murphy Mine and tram stations",
+   "cat": "industrial",
+   "type": "mine",
+   "lat": 38.73636,
+   "lon": -106.14764,
+   "approx": true,
+   "location": "Romley, Chaffee County, Colorado",
+   "condition": "Mine building remains, the boarding house and middle tram station visible along the road (2021).",
+   "access": "4WD; ownership unknown.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mary_Murphy_Mine"
+   ]
+  },
+  {
+   "id": "winfield-ghost-town",
+   "name": "Winfield ghost town",
+   "cat": "ruins",
+   "type": "ghost town",
+   "lat": 38.98472,
+   "lon": -106.44086,
+   "approx": false,
+   "location": "Winfield, Chaffee County, Colorado",
+   "condition": "A few structures standing, including the 1889 schoolhouse (now a museum) and cabins.",
+   "access": "Historical society; private cabins nearby. Legal to visit.",
+   "sources": [
+    "https://www.uncovercolorado.com/vicksburg-winfield-ghost-towns"
+   ]
+  },
+  {
+   "id": "independence-ghost-town",
+   "name": "Independence ghost town",
+   "cat": "ruins",
+   "type": "ghost town",
+   "lat": 39.10675,
+   "lon": -106.60368,
+   "approx": false,
+   "location": "Independence, Pitkin County, Colorado",
+   "condition": "Several stabilized buildings remain below Independence Pass.",
+   "access": "National forest, Aspen Historical Society. Legal to visit.",
+   "sources": [
+    "https://aspenhistory.org/independence-ghost-town/"
+   ]
+  },
+  {
+   "id": "ashcroft-ghost-town",
+   "name": "Ashcroft ghost town",
+   "cat": "ruins",
+   "type": "ghost town",
+   "lat": 39.05559,
+   "lon": -106.79956,
+   "approx": false,
+   "location": "Ashcroft, Colorado, Ashcroft, Pitkin County",
+   "condition": "About 9-13 buildings remain: post office, saloons, hotel and mercantile.",
+   "access": "National forest, Aspen Historical Society. Legal to visit.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Ashcroft,_Colorado"
+   ]
+  },
+  {
+   "id": "interlaken-resort",
+   "name": "Interlaken Resort",
+   "cat": "leisure",
+   "type": "resort",
+   "lat": 39.08277,
+   "lon": -106.38197,
+   "approx": true,
+   "location": "Interlaken, Twin Lakes, Colorado, Twin Lakes, Lake County",
+   "condition": "1880s resort hotel abandoned for decades; stabilized, still listed as vacant.",
+   "access": "Public, about a 4.7-mile hike. Legal to visit.",
+   "sources": [
+    "https://www.coloradopreservation.org/endangered-place/interlaken-resort/"
+   ]
+  },
+  {
+   "id": "boston-mine-mayflower-gulch",
+   "name": "Boston Mine (Mayflower Gulch)",
+   "cat": "industrial",
+   "type": "mine",
+   "lat": 39.4302,
+   "lon": -106.163,
+   "approx": true,
+   "location": "Mayflower Gulch trailhead on CO 91 south of Copper Mountain, Summit County; the mine is about 1.8 miles up the trail",
+   "condition": "About six decaying cabins, collapsed miners' quarters and rusting equipment above treeline (2023).",
+   "access": "Summit County open space, 1.8-mile hike. Legal to visit.",
+   "sources": [
+    "https://www.summitdaily.com/sports/mayflower-gulch-a-hidden-backcountry-gem-worth-the-pilgrimage/"
+   ]
+  },
+  {
+   "id": "saints-john-ghost-town",
+   "name": "Saints John ghost town",
+   "cat": "ruins",
+   "type": "ghost town",
+   "lat": 39.57076,
+   "lon": -105.8816,
+   "approx": false,
+   "location": "Saints John, Colorado, Saints John, Summit County",
+   "condition": "About three cabins and a large concentrating mill remain.",
+   "access": "Dirt road from Montezuma.",
+   "sources": [
+    "https://westernmininghistory.com/towns/colorado/saints-john"
+   ]
+  },
+  {
+   "id": "dyersville",
+   "name": "Dyersville",
+   "cat": "ruins",
+   "type": "ghost town",
+   "lat": 39.47805,
+   "lon": -106.06639,
+   "approx": false,
+   "location": "Dyersville, Summit County, Colorado",
+   "condition": "Log cabins and roofless walls (sources disagree on how many).",
+   "access": "Unknown.",
+   "sources": [
+    "https://ghosttowns.com/states/co/dyersville.html"
+   ]
+  },
+  {
+   "id": "reiling-gold-dredge",
+   "name": "Reiling Gold Dredge",
+   "cat": "other",
+   "type": "site",
+   "lat": 39.48113,
+   "lon": -106.01964,
+   "approx": true,
+   "location": "French Gulch, Breckenridge, Breckenridge, Summit County",
+   "condition": "Gold dredge boat abandoned in a pond in 1922; stabilized in 2022.",
+   "access": "Public trail. Legal to visit.",
+   "sources": [
+    "https://atlasobscura.com/places/reiling-dredge"
+   ]
+  },
+  {
+   "id": "camp-hale-ruins",
+   "name": "Camp Hale ruins",
+   "cat": "military",
+   "type": "military",
+   "lat": 39.47552,
+   "lon": -106.11771,
+   "approx": true,
+   "location": "Camp Hale, Colorado, Camp Hale, Eagle County",
+   "condition": "WWII 10th Mountain Division camp; concrete ruins along the Eagle River (a hiker found a landmine there in 2025).",
+   "access": "National monument; stay on marked routes. Legal to visit.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Camp_Hale"
+   ]
+  },
+  {
+   "id": "holy-cross-city",
+   "name": "Holy Cross City",
+   "cat": "ruins",
+   "type": "ghost town",
+   "lat": 39.4155,
+   "lon": -106.47897,
+   "approx": false,
+   "location": "Holy Cross City, Colorado, Holy Cross City, Eagle County",
+   "condition": "Four scattered cabins and abandoned mining equipment (2017).",
+   "access": "Wilderness; extreme 4WD or 2.5+ mile hike.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Holy_Cross_City,_Colorado"
+   ]
+  },
+  {
+   "id": "caribou-ghost-town",
+   "name": "Caribou ghost town",
+   "cat": "ruins",
+   "type": "ghost town",
+   "lat": 39.93489,
+   "lon": -105.58385,
+   "approx": false,
+   "location": "Caribou, Boulder County, Colorado",
+   "condition": "Two stone building ruins and a collapsed log cabin, with graffiti inside.",
+   "access": "2WD road, summer only.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Caribou,_Colorado"
+   ]
+  },
+  {
+   "id": "nevadaville",
+   "name": "Nevadaville",
+   "cat": "ruins",
+   "type": "ghost town",
+   "lat": 39.79527,
+   "lon": -105.5325,
+   "approx": false,
+   "location": "Nevadaville, Colorado, Nevadaville, Gilpin County",
+   "condition": "A saloon, the old city hall/fire house/jail and the Masonic lodge still stand (2018).",
+   "access": "Street public, buildings private.",
+   "sources": [
+    "https://blog.coloradomesarealty.com/2018/11/13/check-out-this-ghost-town"
+   ]
+  },
+  {
+   "id": "santiago-mine-and-mill",
+   "name": "Santiago Mine and Mill",
+   "cat": "industrial",
+   "type": "mill",
+   "lat": 39.64328,
+   "lon": -105.77123,
+   "approx": true,
+   "location": "Santiago Mine, Clear Creek County, Waldorf, Clear Creek County",
+   "condition": "Abandoned mill on the state register, above Waldorf on the Argentine Pass road.",
+   "access": "National forest, 4WD; check for closures.",
+   "sources": [
+    "https://kmax943.com/ixp/510/p/colorado-abandoned-santiago-mill/"
+   ]
+  },
+  {
+   "id": "victor-gold-camp-headframes",
+   "name": "Victor gold camp headframes",
+   "cat": "industrial",
+   "type": "mine",
+   "lat": 38.70999,
+   "lon": -105.13998,
+   "approx": true,
+   "location": "Vindicator Valley Trail, Victor, Victor, Teller County",
+   "condition": "Many abandoned gold mines and steel and wooden headframes along an interpretive trail.",
+   "access": "Public trail. Legal to visit.",
+   "sources": [
+    "https://atlasobscura.com/places/vindicator-valley-trail"
+   ]
+  },
+  {
+   "id": "titan-i-missile-silo-complex-near-deer-trail",
+   "name": "Titan I missile silo complex near Deer Trail",
+   "cat": "military",
+   "type": "missile site",
+   "lat": 39.61313,
+   "lon": -104.04452,
+   "approx": true,
+   "location": "82000 E County Road 22, about 4 miles NNE of Deer Trail, Deer Trail, Arapahoe County",
+   "condition": "Abandoned Titan I complex (missiles removed 1965). Teens fell inside in 2024 and 2025; fenced but the gate appeared damaged (2024).",
+   "access": "Private, fenced; trespassers cited. The state warns it is unsafe to enter.",
+   "sources": [
+    "https://www.denver7.com/news/local-news/crews-work-to-rescue-teen-who-fell-down-abandoned-missile-silo-near-deer-trail",
+    "https://koaa.com/news/covering-colorado/two-teens-cited-for-breaking-into-abandoned-missile-silo-in-deer-trail-last-month"
+   ]
+  },
+  {
+   "id": "aroya-schoolhouse",
+   "name": "Aroya Schoolhouse",
+   "cat": "institutional",
+   "type": "school",
+   "lat": 38.85416,
+   "lon": -103.12549,
+   "approx": true,
+   "location": "Aroya, Colorado, Aroya, Cheyenne County",
+   "condition": "Abandoned double-arched wooden schoolhouse; roof rotting and caving in, bell tower still standing (2019).",
+   "access": "Private property.",
+   "sources": [
+    "https://kool1079.com/ixp/510/p/colorado-abandoned-schoolhouse-aroya",
+    "https://en.wikipedia.org/wiki/Aroya,_Colorado"
+   ]
+  },
+  {
+   "id": "last-chance-motel",
+   "name": "Last Chance Motel",
+   "cat": "leisure",
+   "type": "motel",
+   "lat": 39.74082,
+   "lon": -103.59161,
+   "approx": true,
+   "location": "Last Chance, Colorado (US 36 and CO 71), Last Chance, Washington County",
+   "condition": "Derelict motel abandoned for years in a near-ghost town; a 2012 fire burned most of the town.",
+   "access": "Private property.",
+   "sources": [
+    "https://townsquarenoco.com/ixp/510/p/colorado-last-chance-motel/",
+    "https://kekbfm.com/last-chance-colorado-ghost-town/"
+   ]
+  },
+  {
+   "id": "roggen-abandoned-main-street",
+   "name": "Roggen abandoned main street",
+   "cat": "ruins",
+   "type": "ghost town",
+   "lat": 40.16748,
+   "lon": -104.37218,
+   "approx": false,
+   "location": "Roggen, Colorado, Roggen, Weld County",
+   "condition": "About half the town is abandoned: a deserted main street, a gas station and about a dozen boarded-up homes and shacks (2015).",
+   "access": "Some residents remain; houses are boarded up.",
+   "sources": [
+    "https://ghosttowns.com/states/co/roggen.html"
+   ]
+  },
+  {
+   "id": "keota-ghost-town-church-store-water-tower",
+   "name": "Keota ghost town (church, store, water tower)",
+   "cat": "ruins",
+   "type": "ghost town",
+   "lat": 40.70416,
+   "lon": -104.07444,
+   "approx": false,
+   "location": "Keota, Colorado, Keota, Weld County",
+   "condition": "Weathered Methodist church, the old general store, houses, barns and a dead water tower in a mostly abandoned town (2022).",
+   "access": "A few residents nearby; respect private land.",
+   "sources": [
+    "https://kmax943.com/colorado-ghost-town-keota/",
+    "https://en.wikipedia.org/wiki/Keota,_Colorado"
+   ]
+  },
+  {
+   "id": "dearfield",
+   "name": "Dearfield",
+   "cat": "ruins",
+   "type": "ghost town",
+   "lat": 40.29054,
+   "lon": -104.2594,
+   "approx": false,
+   "location": "Dearfield, Colorado (off US 34 east of Greeley), Dearfield, Weld County",
+   "condition": "Historic Black farming town: two or three century-old buildings remain, secured with fencing in 2021; National Park Service study underway.",
+   "access": "Fenced and secured; view from outside.",
+   "sources": [
+    "https://www.cpr.org/2021/07/27/dearfield-colorado-black-history-preservation/"
+   ]
+  },
+  {
+   "id": "chivington-school",
+   "name": "Chivington School",
+   "cat": "institutional",
+   "type": "school",
+   "lat": 38.43659,
+   "lon": -102.53685,
+   "approx": true,
+   "location": "Chivington, Colorado (CO 96), Chivington, Kiowa County",
+   "condition": "Dilapidated two-story Italianate schoolhouse, closed by the 1960s (2015).",
+   "access": "Visible from the highway; a few families live in town.",
+   "sources": [
+    "https://www.hppr.org/hppr-people-communities/2015-07-29/a-journey-around-colorados-ghost-towns",
+    "https://en.wikipedia.org/wiki/Chivington,_Colorado"
+   ]
+  },
+  {
+   "id": "arlington-schoolhouse",
+   "name": "Arlington Schoolhouse",
+   "cat": "institutional",
+   "type": "school",
+   "lat": 38.33669,
+   "lon": -103.34422,
+   "approx": true,
+   "location": "Arlington, Kiowa County, Colorado",
+   "condition": "Two-story schoolhouse dominating a ghost town, with a couple of abandoned shacks (2017).",
+   "access": "Private; owner reportedly refused to sell.",
+   "sources": [
+    "https://kmax943.com/a-historic-schoolhouse-can-be-found-in-this-colorado-ghost-town/"
+   ]
+  },
+  {
+   "id": "galatea-townsite",
+   "name": "Galatea townsite",
+   "cat": "ruins",
+   "type": "ghost town",
+   "lat": 38.50463,
+   "lon": -103.02503,
+   "approx": false,
+   "location": "Galatea, Colorado, Galatea, Kiowa County",
+   "condition": "A cluster of abandoned buildings and trees marks the townsite (2021).",
+   "access": "Private land.",
+   "sources": [
+    "https://rockymountainprofiles.com/colorado/derry-ranch-thru-hull-city/galatea-colorado"
+   ]
+  },
+  {
+   "id": "boyero-townsite",
+   "name": "Boyero townsite",
+   "cat": "ruins",
+   "type": "ghost town",
+   "lat": 38.94277,
+   "lon": -103.27911,
+   "approx": false,
+   "location": "Boyero, Colorado, Boyero, Lincoln County",
+   "condition": "Prairie ghost town with abandoned buildings along County Road 39 (2020).",
+   "access": "Private; visible from the road.",
+   "sources": [
+    "https://lifedeathiron.com/2020/09/22/ghost-town-photo-blog-boyero-colorado"
+   ]
+  },
+  {
+   "id": "pritchett-grain-elevators",
+   "name": "Pritchett grain elevators",
+   "cat": "industrial",
+   "type": "grain elevator",
+   "lat": 37.36855,
+   "lon": -102.86004,
+   "approx": true,
+   "location": "Pritchett, Colorado, Pritchett, Baca County",
+   "condition": "Three roughly ten-story grain elevators abandoned after the rail spur was removed (2012; follow-up 2026).",
+   "access": "Unknown.",
+   "sources": [
+    "https://ourgrandfathersgrainelevators.com/2012/03/21/pritchett-3-elevators"
+   ]
+  },
+  {
+   "id": "cabin-creek-roadside-stop",
+   "name": "Cabin Creek roadside stop",
+   "cat": "ruins",
+   "type": "ghost town",
+   "lat": 39.70918,
+   "lon": -104.22185,
+   "approx": true,
+   "location": "Cabin Creek, near Byers, Colorado (US 36), Byers area, Adams County",
+   "condition": "Vacant roadside village (gas station, 8-room motel, cafe, houses) listed for sale in 2016; no newer info.",
+   "access": "Private.",
+   "sources": [
+    "https://www.cbsnews.com/colorado/news/for-sale-a-colorado-ghost-town"
+   ]
+  },
+  {
+   "id": "matheson-abandoned-church",
+   "name": "Matheson abandoned church",
+   "cat": "religious",
+   "type": "church",
+   "lat": 39.17165,
+   "lon": -103.97551,
+   "approx": true,
+   "location": "Matheson, Colorado, Matheson, Elbert County",
+   "condition": "Abandoned church surrounded by dead trees (2016).",
+   "access": "Unknown.",
+   "sources": [
+    "https://melindagreenharvey.com/2016/09/13/the-guard-trees"
+   ]
+  },
+  {
+   "id": "great-western-sugar-factory-longmont-sugar-mill",
+   "name": "Great Western Sugar Factory (Longmont Sugar Mill)",
+   "cat": "industrial",
+   "type": "factory",
+   "lat": 40.15981,
+   "lon": -105.06888,
+   "approx": true,
+   "location": "11801 Sugar Mill Road, near Longmont, Longmont area (unincorporated), Boulder County",
+   "condition": "Closed in 1977 and vacant since. Repeated fires (2016, 2017, 2020, Aug 2024, Mar 2025) destroyed part of the landmark building. Firefighters say it is structurally unstable with hazardous materials; an explorer fell about 20 ft inside in Oct 2025. Newest info: 2025.",
+   "access": "Private property; explorers have been cited for trespassing. Owners say they are ready to sell.",
+   "sources": [
+    "https://bouldercounty.gov/news/man-rescued-after-significant-fall-at-the-sugar-mill/",
+    "https://coloradosun.com/2025/03/25/fire-overnight-sugar-mill-factory-2025-longmont/",
+    "https://www.denver7.com/news/front-range/longmont/longmont-sugar-mill-owners-frustrated-ready-to-sell-amid-another-fire-at-the-property"
+   ]
+  },
+  {
+   "id": "former-denver-va-medical-center",
+   "name": "Former Denver VA Medical Center",
+   "cat": "institutional",
+   "type": "hospital",
+   "lat": 39.73255,
+   "lon": -104.93517,
+   "approx": false,
+   "location": "1055 Clermont St, Denver, Denver (Hale), Denver County",
+   "condition": "Vacant since the new VA hospital in Aurora opened in July 2018: five buildings and a parking structure on 8.2 acres. Redevelopment proposals pending. Newest info: 2024.",
+   "access": "Owned by GM Development (private).",
+   "sources": [
+    "https://www.denvergazette.com/2024/05/21/former-va-medical-center-may-find-second-life-as-affordable-housing-development-a6c4b1ea-17b3-11ef-a764-b7b4a90ae8a0",
+    "https://businessden.com/local-developer-pays-41m-for-former-va-hospital-campus-in-east-denver/"
+   ]
+  },
+  {
+   "id": "zuni-steam-power-plant",
+   "name": "Zuni Steam Power Plant",
+   "cat": "industrial",
+   "type": "power plant",
+   "lat": 39.73836,
+   "lon": -105.02377,
+   "approx": true,
+   "location": "Zuni Street along the South Platte River, Denver, Denver (Sun Valley), Denver County",
+   "condition": "Built 1901; stopped generating in 2015 and supplying steam in 2019, now vacant. On Colorado's Most Endangered Places list (2024). Xcel said in 2025 it would demolish it if no buyer emerged, so check current status. Newest info: 2025.",
+   "access": "Owned by Xcel Energy, listed for sale.",
+   "sources": [
+    "https://denverite.com/2025/02/28/denver-zuni-power-plant-historic-preservation-2025",
+    "https://www.axios.com/local/denver/2025/03/27/zuni-plant-redevelopment-xcel-historic-denver"
+   ]
+  },
+  {
+   "id": "valmont-school",
+   "name": "Valmont School",
+   "cat": "institutional",
+   "type": "school",
+   "lat": 40.0337,
+   "lon": -105.21187,
+   "approx": false,
+   "location": "Historic Valmont townsite, east of Boulder, Valmont, Boulder County",
+   "condition": "Two-room 1911 schoolhouse, closed 1951 and vacant since the early 1980s; failing roof and water-damaged bell tower. Colorado Most Endangered Place 2024. Newest info: 2024.",
+   "access": "Private.",
+   "sources": [
+    "https://www.denvergazette.com/outtherecolorado/news/list-of-5-most-endangered-historical-spots-in-colorado-released/article_a1091dcc-c60f-11ee-866a-af3ec0ca7979.html"
+   ]
+  },
+  {
+   "id": "former-globeville-church-senior-center",
+   "name": "Former Globeville church / senior center",
+   "cat": "religious",
+   "type": "church",
+   "lat": 39.77664,
+   "lon": -104.98577,
+   "approx": false,
+   "location": "4400 N Lincoln St, Denver, Denver (Globeville), Denver County",
+   "condition": "Former church, later a senior center; the city said in 2019 it had sat vacant for years. Newest info: 2019 (may have changed).",
+   "access": "Owned by the City of Denver.",
+   "sources": [
+    "https://www.cbsnews.com/colorado/news/denver-church-globeville-44th-lincoln/"
+   ]
+  },
+  {
+   "id": "abandoned-family-home-off-south-boulder-road",
+   "name": "Abandoned family home off South Boulder Road",
+   "cat": "houses",
+   "type": "house",
+   "lat": 39.9936,
+   "lon": -105.0897,
+   "approx": true,
+   "location": "Off E South Boulder Road, Lafayette (no exact address given), Lafayette, Boulder County",
+   "condition": "Abandoned house with furniture, TVs, toys and children's artwork left inside. Newest info: about 2022.",
+   "access": "Private; the station warns against trespassing.",
+   "sources": [
+    "https://929nin.com/abandoned-lafayette-colorado/"
+   ]
+  },
+  {
+   "id": "old-st-francis-hospital",
+   "name": "Old St. Francis Hospital",
+   "cat": "institutional",
+   "type": "hospital",
+   "lat": 38.83336,
+   "lon": -104.80986,
+   "approx": false,
+   "location": "825 E Pikes Peak Ave, Colorado Springs, Colorado Springs, El Paso County",
+   "condition": "Closed in 2010; the site and its power plant are described as completely abandoned. Fire in the empty building in April 2023.",
+   "access": "Owned by 825 East Pikes Peak LLC (private).",
+   "sources": [
+    "https://www.fox21news.com/news/local/csfd-responds-to-fire-at-old-saint-francis-hospital/amp/",
+    "https://en.wikipedia.org/wiki/St._Francis_Hospital_(Colorado_Springs,_Colorado)"
+   ]
+  },
+  {
+   "id": "little-log-cabin-daycare-and-two-abandoned-buildings",
+   "name": "'Little Log Cabin' daycare and two abandoned buildings",
+   "cat": "other",
+   "type": "site",
+   "lat": 38.83875,
+   "lon": -104.79051,
+   "approx": false,
+   "location": "2024 East Boulder Street, Colorado Springs, Colorado Springs, El Paso County",
+   "condition": "A daycare and two other buildings at the address described as abandoned (radio-station feature, ~2020s).",
+   "access": "Private; articles warn against trespassing.",
+   "sources": [
+    "https://999thepoint.com/colorados-abandoned-little-log-cabin-daycare/"
+   ]
+  },
+  {
+   "id": "vacant-onion-hemp-processing-plant",
+   "name": "Vacant onion/hemp processing plant",
+   "cat": "industrial",
+   "type": "factory",
+   "lat": 38.05706,
+   "lon": -103.72942,
+   "approx": false,
+   "location": "20094 US Highway 50, Rocky Ford, Rocky Ford, Otero County",
+   "condition": "44,649 sq ft plant built 1967, vacant since 2019/2020 (sale listing).",
+   "access": "Private, for sale.",
+   "sources": [
+    "https://www.weichert.com/125504332"
+   ]
+  },
+  {
+   "id": "columbian-hotel",
+   "name": "Columbian Hotel",
+   "cat": "leisure",
+   "type": "hotel",
+   "lat": 37.16798,
+   "lon": -104.50547,
+   "approx": false,
+   "location": "111 N Commercial St, Trinidad, Trinidad, Las Animas County",
+   "condition": "Upper two floors, about 100 rooms, vacant since the 1970s; listed for sale as a redevelopment project in March 2026.",
+   "access": "Private, for sale.",
+   "sources": [
+    "https://realmo.com/listing/111-north-commercial-st-trinidad-co-81082/12400068",
+    "https://visittrinidadcolorado.com/attraction/the-columbian-hotel/"
+   ]
+  },
+  {
+   "id": "walsen-power-plant",
+   "name": "Walsen Power Plant",
+   "cat": "industrial",
+   "type": "power plant",
+   "lat": 37.62352,
+   "lon": -104.781,
+   "approx": true,
+   "location": "Walsen Camp, west of Walsenburg, Walsenburg, Huerfano County",
+   "condition": "Vacant 1912 brick power plant, dark since 1972; neglect, vandalism and scrapping. Colorado Most Endangered Place. The only structure left of Walsen Camp.",
+   "access": "Owner unclear (reported for sale).",
+   "sources": [
+    "https://www.coloradopreservation.org/?p=1749"
+   ]
+  },
+  {
+   "id": "former-lathrop-park-juvenile-facility",
+   "name": "Former Lathrop Park juvenile facility",
+   "cat": "other",
+   "type": "site",
+   "lat": 37.62352,
+   "lon": -104.781,
+   "approx": true,
+   "location": "Walsenburg, just east of the hospital, Walsenburg, Huerfano County",
+   "condition": "Closed boys' juvenile facility, buildings left empty (undated local article; may since have been reused).",
+   "access": "State-owned.",
+   "sources": [
+    "https://worldjournalnewspaper.com/?p=5829"
+   ]
+  },
+  {
+   "id": "deputy-warden-s-house",
+   "name": "Deputy Warden's House",
+   "cat": "houses",
+   "type": "house",
+   "lat": 38.44225,
+   "lon": -105.23488,
+   "approx": true,
+   "location": "Next to the Colorado State Penitentiary, Ca\u00f1on City, Ca\u00f1on City, Fremont County",
+   "condition": "State-owned historic house empty for years, no plans to reoccupy; on Colorado's endangered list in 2011.",
+   "access": "Colorado Department of Corrections, no public access.",
+   "sources": [
+    "https://royalgorgeregion.com/?p=3344"
+   ]
+  },
+  {
+   "id": "herrick-sawmill",
+   "name": "Herrick Sawmill",
+   "cat": "industrial",
+   "type": "mill",
+   "lat": 38.39028,
+   "lon": -105.1186,
+   "approx": true,
+   "location": "Florence, Colorado, Florence, Fremont County",
+   "condition": "Abandoned sawmill more than 134 years old (Atlas Obscura).",
+   "access": "Unknown.",
+   "sources": [
+    "https://assets.atlasobscura.com/places/herrick-sawmill"
+   ]
+  },
+  {
+   "id": "loma-school-1910",
+   "name": "Loma School (1910)",
+   "cat": "institutional",
+   "type": "school",
+   "lat": 39.20342,
+   "lon": -108.81191,
+   "approx": false,
+   "location": "Loma, Colorado, Loma, Mesa County",
+   "condition": "Two-story 1910 school, closed 1982; cracked walls and boarded windows; vacated again in recent years over foundation problems (Feb 2026).",
+   "access": "Private; sources warn against trespassing.",
+   "sources": [
+    "https://www.kjct8.com/2026/02/19/mesa-county-supports-historic-loma-school-endangered-places-program/",
+    "https://999thepoint.com/ixp/510/p/colorado-abandoned-loma-school/"
+   ]
+  },
+  {
+   "id": "wiley-s-resort-motel-club-40-dance-hall",
+   "name": "Wiley's Resort Motel / Club 40 dance hall",
+   "cat": "leisure",
+   "type": "motel",
+   "lat": 40.24291,
+   "lon": -109.00925,
+   "approx": true,
+   "location": "Just west of Dinosaur, along US Highway 40, Dinosaur, Moffat County",
+   "condition": "Long-closed resort motel and dance hall, still visible from Hwy 40 (2020s articles).",
+   "access": "Unknown, likely private.",
+   "sources": [
+    "https://kekbfm.com/dinosaur-colorado-wileys-resort-motel/"
+   ]
+  },
+  {
+   "id": "calamity-camp",
+   "name": "Calamity Camp",
+   "cat": "ruins",
+   "type": "ghost town",
+   "lat": 38.61403,
+   "lon": -108.8606,
+   "approx": false,
+   "location": "Calamity Mesa, Uncompahgre Plateau, via Niche Road east of Gateway (4x4), near Gateway, Mesa County",
+   "condition": "Uranium camp used ~1916-1980: five rock cabins, a bunkhouse, cellars, a barn and corrals remain; stabilized by HistoriCorps in 2024. Some residual radiation.",
+   "access": "BLM public land (National Register). Legal to visit.",
+   "sources": [
+    "https://historicorps.org/?p=29303",
+    "https://blm.gov/visit/search-details/627/2"
+   ]
+  },
+  {
+   "id": "summitville-ghost-town",
+   "name": "Summitville ghost town",
+   "cat": "ruins",
+   "type": "ghost town",
+   "lat": 37.42977,
+   "lon": -106.58984,
+   "approx": false,
+   "location": "Summitville, about 18 miles southwest of Del Norte, Summitville, Rio Grande County",
+   "condition": "About two dozen abandoned buildings in a meadow and on the hillside; restoration in progress (2020). Next to a Superfund mine site.",
+   "access": "National forest road access; don't touch the structures.",
+   "sources": [
+    "https://ghosttowns.com/states/co/summitville.html"
+   ]
+  },
+  {
+   "id": "far-view-visitor-center",
+   "name": "Far View Visitor Center",
+   "cat": "other",
+   "type": "site",
+   "lat": 37.25765,
+   "lon": -108.49788,
+   "approx": false,
+   "location": "Far View, Mesa Verde National Park, Mesa Verde National Park, Montezuma County",
+   "condition": "Mid-century Mission 66 visitor center, mothballed and vacant since ~2012-2014; Colorado Most Endangered Place 2023.",
+   "access": "National Park Service, closed building.",
+   "sources": [
+    "https://coloradopreservation.org/?p=15715"
+   ]
+  },
+  {
+   "id": "la-morada-penitente-morada",
+   "name": "La Morada (Penitente morada)",
+   "cat": "religious",
+   "type": "church",
+   "lat": 37.20124,
+   "lon": -105.42377,
+   "approx": true,
+   "location": "San Luis, Colorado, San Luis, Costilla County",
+   "condition": "1860s Penitente meeting building, vacant for over 50 years, collapsed walls; on the 2026 Most Endangered Places list.",
+   "access": "Unknown; restoration planned.",
+   "sources": [
+    "https://www.alamosacitizen.com/la-morada-in-san-luis-added-to-most-endangered-places-list"
+   ]
+  },
+  {
+   "id": "m-m-truck-stop",
+   "name": "M&M Truck Stop",
+   "cat": "other",
+   "type": "site",
+   "lat": 37.34945,
+   "lon": -108.58407,
+   "approx": true,
+   "location": "US 491 south of Cortez, near the Port of Entry, south of Cortez, Montezuma County",
+   "condition": "Abandoned truck stop (Four Corners Free Press 'Derelicts' photo essay, date unclear).",
+   "access": "Unknown.",
+   "sources": [
+    "https://fourcornersfreepress.com/derelicts/"
+   ]
+  },
+  {
+   "id": "cardiff-coke-ovens",
+   "name": "Cardiff Coke Ovens",
+   "cat": "other",
+   "type": "site",
+   "lat": 39.54664,
+   "lon": -107.32469,
+   "approx": true,
+   "location": "Cardiff, south of Glenwood Springs along Airport Road, Glenwood Springs, Garfield County",
+   "condition": "About 50 of the 249 1887 beehive coke ovens survive as ruins; being stabilized (2023).",
+   "access": "Glenwood Springs Historical Society; National Register.",
+   "sources": [
+    "https://glenwoodhistory.com/projects/cardiff-the-coke-ovens"
+   ]
   }
  ]
 }
