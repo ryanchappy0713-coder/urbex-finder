@@ -55,6 +55,26 @@
     { maxZoom: 19, attribution: '© OpenStreetMap contributors' });
   satellite.addTo(map);
   L.control.layers({ Satellite: satellite, Streets: streets }).addTo(map);
+
+  // Historical satellite imagery (Esri World Imagery Wayback): one snapshot per year.
+  const WAYBACK = [['2026-10', 43291], ['2026-01', 22252], ['2025-01', 36557], ['2024-01', 41468], ['2023-01', 11475],
+    ['2022-01', 42663], ['2021-01', 1049], ['2020-01', 23001], ['2019-01', 6036], ['2018-01', 13161], ['2017-01', 577],
+    ['2016-01', 3515], ['2015-01', 20222], ['2014-02', 10]];
+  const LIVE_SAT = 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}';
+  const yearCtl = L.control({ position: 'bottomleft' });
+  yearCtl.onAdd = () => {
+    const d = L.DomUtil.create('div', 'year-ctl');
+    d.innerHTML = `<label title="Compare satellite photos from past years">🕰 Imagery <select id="imgYear"><option value="">Latest</option>${
+      WAYBACK.map(([dt, id]) => `<option value="${id}">${dt}</option>`).join('')}</select></label>`;
+    L.DomEvent.disableClickPropagation(d);
+    return d;
+  };
+  yearCtl.addTo(map);
+  document.getElementById('imgYear').addEventListener('change', (e) => {
+    const id = e.target.value;
+    satellite.setUrl(id ? `https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/${id}/{z}/{y}/{x}` : LIVE_SAT);
+    if (!map.hasLayer(satellite)) { map.removeLayer(streets); satellite.addTo(map); }
+  });
   const markerLayer = L.layerGroup().addTo(map);
   let radiusCircle = null, youMarker = null;
   const markers = new Map();
@@ -791,7 +811,9 @@ out center tags ${MAX_RESULTS * 3};`;
         <a class="btn accent" href="${earth}" target="_blank" rel="noopener">🌍 Open in Google Earth</a>
         <a class="btn" href="${gmapsSat}" target="_blank" rel="noopener">Satellite</a>
         <a class="btn" href="${streetView}" target="_blank" rel="noopener">Street View</a>
+        <button class="btn" id="compareYears">🕰 Compare years</button>
       </div>
+      <p class="muted" style="font-size:12px;margin:6px 0 0">Tip: use 🕰 Compare years (bottom-left of the map) to flip through satellite photos from 2014 to now. Overgrown parking lots, holes in the roof and no cars over several years are good signs. In Street View, the clock icon shows older photos too.</p>
 
       <button class="btn ask-ai" id="askPlace">💬 Ask AI about this place</button>
 
@@ -821,6 +843,13 @@ out center tags ${MAX_RESULTS * 3};`;
 
     showCheck(p);
     loadPhotos(p);
+    $('compareYears').onclick = () => {
+      detailEl.hidden = true;
+      if (map.hasLayer(streets)) { map.removeLayer(streets); satellite.addTo(map); }
+      map.setView([p.lat, p.lon], 18);
+      const sel = $('imgYear'); sel.focus();
+      setStatus(`Showing ${esc(p.name)}. Pick a year in <b>🕰 Imagery</b> (bottom-left of the map) to compare.`);
+    };
     $('aiPhotos').onclick = () => openChat(`Find recent photos and videos of ${p.name} (${p.label}, near ${p.lat.toFixed(4)}, ${p.lon.toFixed(4)}) that show its current condition: YouTube videos, Reddit posts, Instagram or TikTok posts, Flickr photos, and news photo galleries. List links newest first, with the date of each and one line on what it shows (still standing? boarded up? demolished? fenced?).`);
     $('askPlace').onclick = () => openChat(`Tell me about ${p.name}: what it was, its history, and whether it's still standing.`);
     $('saveBtn').onclick = () => { saveSpot(p, $('note').value); openDetail(p); render(); };
@@ -864,6 +893,7 @@ out center tags ${MAX_RESULTS * 3};`;
       ['Instagram', `https://www.google.com/search?q=${encodeURIComponent(`site:instagram.com ${subject} ${town}`.trim())}`],
       ['Old news', `https://www.google.com/search?tbm=nws&q=${q('closed OR demolition OR fire')}`],
       ['Owner / demolition', `https://www.google.com/search?q=${q('owner OR "for sale" OR demolition OR redevelopment')}`],
+      ['Property records', `https://www.google.com/search?q=${encodeURIComponent(`${town || ''} county assessor parcel map property owner search`.trim())}`],
     ];
     $('searchLinks').innerHTML = (town ? `<div class="muted" style="width:100%">Near ${esc(town)}</div>` : '') +
       links.map(([l, u]) => `<a class="btn" href="${u}" target="_blank" rel="noopener">${l}</a>`).join('');
@@ -1247,6 +1277,12 @@ Each user message may begin with an "App context" block describing what the user
     .list-tools input { flex: 1; min-width: 0; padding: 7px 9px; border-radius: 6px; border: 1px solid var(--line); background: var(--bg); color: var(--text); font: inherit; font-size: 13px; }
     .conf { font-weight: 600; } .conf-high { color: var(--ok); } .conf-medium { color: var(--accent); } .conf-low { color: var(--muted); font-weight: 400; }
     .results .top { color: var(--accent); }
+    .scout { margin-bottom: 10px; background: var(--panel-2); border: 1px solid var(--line); border-radius: 8px; padding: 8px 10px; }
+    .scout summary { cursor: pointer; font-weight: 600; color: var(--text); }
+    .scout p { margin: 10px 0 6px; font-size: 12.5px; line-height: 1.4; } .scout b { color: var(--text); }
+    .scout .btn { padding: 5px 8px; font-size: 12px; }
+    .year-ctl { background: var(--panel); color: var(--text); border: 1px solid var(--line); border-radius: 6px; padding: 4px 6px; font-size: 12px; }
+    .year-ctl select { font-size: 12px; padding: 2px; }
     .photos { display: flex; gap: 8px; overflow-x: auto; padding-bottom: 4px; }
     .photos a { flex: none; width: 128px; text-decoration: none; color: var(--muted); font-size: 11px; }
     .photos img { width: 128px; height: 96px; object-fit: cover; border-radius: 6px; display: block; background: var(--panel-2); }
@@ -1570,6 +1606,45 @@ Give lat and lon only when a source states them or you are confident; otherwise 
         onDone: addDiscovered,
       });
     } finally { btn.disabled = false; }
+  }
+
+
+  // ---------- Scout tools: the methods experienced explorers use ----------
+  const scoutBox = document.createElement('details');
+  scoutBox.className = 'scout';
+  scoutBox.innerHTML = `<summary>🧭 Scout tools: find untouched spots yourself</summary><div id="scoutBody" class="muted">Search for a place or tap Near me first.</div>`;
+  discoverBox.after(scoutBox);
+  scoutBox.addEventListener('toggle', () => { if (scoutBox.open) fillScout(); });
+
+  let scoutTownFor = null, scoutTown = '', scoutState = '';
+  async function fillScout() {
+    const body = document.getElementById('scoutBody');
+    const c = state.center || (() => { const m = map.getCenter(); return { lat: m.lat, lon: m.lng }; })();
+    const key = `${c.lat.toFixed(3)},${c.lon.toFixed(3)}`;
+    if (scoutTownFor !== key) {
+      scoutTownFor = key; scoutTown = ''; scoutState = '';
+      try {
+        const r = await fetchJson(`${NOMINATIM}/reverse?format=jsonv2&zoom=10&lat=${c.lat}&lon=${c.lon}`);
+        const a = r.address || {};
+        scoutTown = a.city || a.town || a.village || a.county || '';
+        scoutState = a.state || '';
+      } catch { /* links still work with coordinates */ }
+    }
+    const town = [scoutTown, scoutState].filter(Boolean).join(', ');
+    const g = (q) => `https://www.google.com/search?q=${encodeURIComponent(q)}`;
+    const maps = (q) => `https://www.google.com/maps/search/${encodeURIComponent(q)}/@${c.lat},${c.lon},13z`;
+    const link = (href, text) => `<a class="btn" href="${href}" target="_blank" rel="noopener">${text}</a>`;
+    body.innerHTML = `
+      <p><b>1. Search Google Maps.</b> People often pin and review abandoned places. Read the reviews for clues.</p>
+      <div class="row">${['abandoned', 'abandoned building', 'abandoned factory', 'abandoned hospital', 'abandoned school', 'abandoned house', 'derelict building'].map((q) => link(maps(q), q)).join('')}</div>
+      <p><b>2. Scout from above.</b> Switch to satellite and look along railways, rivers and old industrial areas for holes in roofs, trees growing in parking lots, empty loading bays and boarded windows. Then use <b>🕰 Imagery</b> (bottom-left of the map) to check the place has looked empty for years.</p>
+      <p><b>3. Look for clues in posts.</b> Explorers rarely post addresses, so look for signs, water towers and skylines in photos.</p>
+      <div class="row">${link(`https://www.reddit.com/search/?q=${encodeURIComponent(`abandoned ${scoutTown}`.trim())}`, 'Reddit')}${link('https://www.reddit.com/r/urbanexploration/', 'r/urbanexploration')}${link(`https://www.youtube.com/results?search_query=${encodeURIComponent(`abandoned ${town} urbex`.trim())}`, 'YouTube')}${link(`https://www.tiktok.com/search?q=${encodeURIComponent(`abandoned ${scoutTown}`.trim())}`, 'TikTok')}${link(g(`site:instagram.com abandoned ${town}`), 'Instagram')}</div>
+      <p><b>4. Dig into history.</b> Old news about closures and fires, old fire-insurance maps, and preservation "endangered" lists all point to forgotten buildings.</p>
+      <div class="row">${link(`https://www.google.com/search?tbm=nws&q=${encodeURIComponent(`${town} vacant building OR closed OR fire OR condemned`)}`, 'Old news')}${link(`https://www.loc.gov/collections/sanborn-maps/?q=${encodeURIComponent(scoutTown || town)}`, 'Sanborn maps')}${link(g(`${scoutState} endangered historic places list`), `${scoutState || 'State'} endangered places`)}${link('https://savingplaces.org/11-most-endangered', '11 Most Endangered')}</div>
+      <p><b>5. Find the owner</b> in county property records so you can ask permission.</p>
+      <div class="row">${link(g(`${town} county assessor parcel map property owner search`), 'Property records')}</div>
+      <p style="font-size:12px">Found something? Tap its spot on the map to make it the search center, then scan, or ask the AI about it.</p>`;
   }
 
   async function addDiscovered(text, report) {
