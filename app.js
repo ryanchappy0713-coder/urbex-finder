@@ -257,7 +257,7 @@ out center tags ${MAX_RESULTS * 3};`;
 
   // Query OpenStreetMap (your radius) and Wikidata (50 km) at the same time.
   async function searchArea(lat, lon, r, onEarly = () => {}) {
-    const key = `urbex.cache.v4.${lat.toFixed(2)},${lon.toFixed(2)},${r}`;
+    const key = `urbex.cache.v5.${lat.toFixed(2)},${lon.toFixed(2)},${r}`;
     const cached = readCache(key);
     if (cached) return { places: cached, notes: ['(Saved results from an earlier scan.)'] };
 
@@ -426,6 +426,10 @@ out center tags ${MAX_RESULTS * 3};`;
     Q106772341: 'abandoned', Q350895: 'abandoned village', Q27654220: 'abandoned village',
     Q17715832: 'ruins', Q17485079: 'ruins' };
 
+  const URBEX_PRONE = /race ?track|racetrack|raceway|speedway|greyhound|kennel|dog track|drag ?strip|air ?base|air force|army|naval|military|missile|nike site|titan|bunker|\bfort\b|arsenal|munitions|ordnance|armory|airfield|air field|airport|amusement park|theme park|water park|drive-in|ski area|resort|hotel|motel|sanatorium|asylum|psychiatric|state hospital|hospital|prison|penitentiary|reformatory|jail|factory|plant|\bmill\b|smelter|refinery|brewery|works|power station|mine\b|grain elevator|silo|orphanage/i;
+  const URBEX_NOT = /neighbou?rhood|district|company|corporation|organi[sz]ation|business|team|club|league|band|newspaper|magazine|airline|agency|department|program|event|festival|station on|railway station|bus station|theat|cinema|music venue|concert|school|college|university|library|museum|church|store|shop|restaurant|office|bank|park and ride|historic district/i;
+  const BIG_SITE = /air ?base|air force|army|naval|military|arsenal|munitions|ordnance|airfield|airport|race ?track|racetrack|raceway|speedway|greyhound|amusement park|theme park|water park|ski area|resort|plant|mine\b|prison|penitentiary/i;
+
   // Descriptions must say the place itself is abandoned; "former" and "defunct" usually describe
   // an organization that ended while its building lives on (e.g. a theater that became a concert venue).
   const DESC_YES = '\\\\b(abandoned|disused|derelict|ruin|ruins|ruined)\\\\b';
@@ -451,12 +455,20 @@ out center tags ${MAX_RESULTS * 3};`;
   FILTER(REGEX(?d, "${DESC_YES}", "i"))
   FILTER(!REGEX(?d, "${DESC_NO}", "i"))
   ${tail}`;
+    // Closed or former places, kept only for kinds of places that tend to sit abandoned
+    // (filtered below). An end date (P576) on a base or plant means it closed, not that it was demolished.
     const byClosed = `SELECT ?item ?itemLabel ?typeLabel ?coord ?desc ?article ?closed WHERE {
   ${around}
-  ?item wdt:P3999 ?closed .
-  FILTER NOT EXISTS { ?item wdt:P5817 ?inuse . VALUES ?inuse { wd:Q55654238 wd:Q55570821 } }
-  ${tail}`;
-    const results = await Promise.allSettled([sparql(byState), sparql(byDesc)]);
+  { ?item wdt:P576 ?closed } UNION { ?item wdt:P3999 ?closed }
+  UNION { ?item schema:description ?cd . FILTER(LANG(?cd) = "en" && REGEX(?cd, "\\\\b(former|defunct|closed|decommissioned)\\\\b", "i")) }
+  FILTER NOT EXISTS { ?item wdt:P5817 ?st . VALUES ?st { wd:Q55654238 wd:Q55570821 wd:Q56556915 } }
+  FILTER(!BOUND(?cd) || !REGEX(?cd, "${DESC_NO}", "i"))
+  OPTIONAL { ?item wdt:P31 ?type }
+  OPTIONAL { ?item schema:description ?desc . FILTER(LANG(?desc) = "en") }
+  OPTIONAL { ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en" . }
+} LIMIT 3000`;
+    const results = await Promise.allSettled([sparql(byState), sparql(byDesc), sparql(byClosed).then((rows) => rows.map((b) => ({ ...b, fromClosed: true })))]);
     if (results.every((x) => x.status === 'rejected')) throw results[0].reason;
 
     const byId = new Map();
@@ -471,19 +483,23 @@ out center tags ${MAX_RESULTS * 3};`;
         if (b.ty) p.state = p.state || WD_TYPES[b.ty.value.split('/').pop()];
         if (b.typeLabel && !/^Q\d+$/.test(b.typeLabel.value)) p.types.add(b.typeLabel.value);
         if (b.desc) p.desc = b.desc.value;
-        if (b.closed) { p.closedYear = b.closed.value.slice(0, 4); p.fromClosed = true; }
-        if (b.state || b.ty) p.fromClosed = false;
+        if (b.fromClosed && p.fromClosed !== false) { p.fromClosed = true; if (b.closed) p.closedYear = b.closed.value.slice(0, 4); }
+        if (!b.fromClosed) p.fromClosed = false; // also found by an explicit abandoned/disused query
         if (b.article) p.article = decodeURIComponent(b.article.value.split('/wiki/').pop()).replace(/_/g, ' ');
         byId.set(qid, p);
       }
     }
-    // Places found only through a closure date must be physical places (not companies, teams, etc.).
-    const PHYS = /hospital|school|station|factory|plant|mine|mill|hotel|theat|cinema|church|chapel|prison|jail|base|fort|amusement|stadium|arena|mall|store|airport|airfield|building|house|tower|bridge|tunnel|depot|warehouse|resort|sanatorium|asylum|brewery|motel|pool|rink|library|armory|courthouse|silo|refinery|bunker|camp|lodge|inn|orphanage|college|university|monastery|lighthouse/i;
-    const NOT = /organi[sz]ation|company|business|enterprise|team|club|league|district|program|newspaper|magazine|band|agency|department|chain|brand|firm|corporation|association|airline|network|television|radio station|website|event|festival|route|line|service/i;
+    // Closed/former places are kept only for kinds of places that tend to sit abandoned.
+    // Theaters, schools, stores, offices and the like almost always get reused, so they stay out.
+    const PRONE = URBEX_PRONE, NOT = URBEX_NOT;
     return [...byId.values()]
       .filter((p) => p.name && !/^Q\d+$/.test(p.name))
-      .filter((p) => !p.fromClosed || ([...p.types].some((t) => PHYS.test(t)) && ![...p.types].some((t) => NOT.test(t))))
-      .map((p) => { if (p.fromClosed && !p.state) p.state = 'closed'; return p; })
+      .filter((p) => {
+        if (!p.fromClosed) return true;
+        const what = `${[...p.types].join(' ')} ${p.desc || ''} ${p.name}`;
+        return PRONE.test(what) && !NOT.test(`${[...p.types].join(' ')} ${p.desc || ''}`);
+      })
+      .map((p) => { if (p.fromClosed && !p.state) p.state = 'closed'; if (p.fromClosed) { const what = `${[...p.types].join(' ')} ${p.desc || ''}`; p.bigSite = BIG_SITE.test(what) && !/hospital|medical/i.test(what); } return p; })
       .map(wdToPlace);
   }
 
@@ -531,10 +547,10 @@ out center tags ${MAX_RESULTS * 3};`;
     if (w.article) tags.wikipedia = 'en:' + w.article;
     const st = (w.state || '').toLowerCase();
     const conf = /abandoned$|derelict/.test(st) || /\b(abandoned|derelict)\b/i.test(w.desc || '') ? 'high'
-      : /decommissioned|out of service|unfinished|ruins|disused/.test(st) || /\b(disused|decommissioned|ruin)/i.test(w.desc || '') || (st === 'closed' && !w.fromClosed) ? 'medium'
+      : /decommissioned|out of service|unfinished|ruins|disused/.test(st) || /\b(disused|decommissioned|ruin)/i.test(w.desc || '') || st === 'closed' ? 'medium'
       : 'low'; // former, defunct, ghost towns, closure date only
     return {
-      conf,
+      conf, bigSite: !!w.bigSite,
       id: `wd/${w.qid}`, source: 'wikidata', osmType: null, osmId: null,
       lat: w.lat, lon: w.lon, tags, cat, status: w.state || 'closed',
       label: cap(w.state && !['ghost town', 'ruins', 'abandoned village'].includes(w.state) && !type.toLowerCase().startsWith(w.state) ? `${w.state} ${type}` : (w.state === 'abandoned village' && type === 'place' ? 'abandoned village' : type)),
@@ -1103,12 +1119,15 @@ ${list.map((s) => `<Placemark><name>${x(s.name)}</name><styleUrl>#spot</styleUrl
   // Turn a Wikipedia result into this place's check.
   function applyCheck(p, r) {
     if (r && r.standing && !r.nothingLeft && isGhostLike(p)) return { status: 'standing', evidence: r.standing, source: r.source, url: r.url };
+    // A big site (base, arsenal, track, plant…) that was redeveloped is often only partly reused.
+    if (r && r.status === 'reused' && p.bigSite) return { ...r, status: 'partly' };
     return r && r.status ? r : { status: null };
   }
 
   const STATUS_INFO = {
     demolished: { badge: 'Likely demolished', icon: '🚫', cls: 'warn' },
     standing: { badge: 'Buildings still standing', icon: '🏚', cls: 'good' },
+    partly: { badge: 'Partly redeveloped', icon: '◐', cls: '' },
     reused: { badge: 'Reused / restored', icon: '♻', cls: '' },
     abandoned: { badge: 'Reported abandoned', icon: '✓', cls: 'good' },
   };
@@ -1120,11 +1139,11 @@ ${list.map((s) => `<Placemark><name>${x(s.name)}</name><styleUrl>#spot</styleUrl
     return w && /^en:/.test(w) ? w.slice(3) : null;
   }
   function readStatusCache(key) {
-    try { const c = JSON.parse(localStorage.getItem('urbex.status.v3.' + key) || 'null'); if (c && Date.now() - c.t < STATUS_TTL) return c.r; } catch { /* ignore */ }
+    try { const c = JSON.parse(localStorage.getItem('urbex.status.v4.' + key) || 'null'); if (c && Date.now() - c.t < STATUS_TTL) return c.r; } catch { /* ignore */ }
     return undefined;
   }
   function writeStatusCache(key, r) {
-    try { localStorage.setItem('urbex.status.v3.' + key, JSON.stringify({ t: Date.now(), r })); } catch { /* ignore */ }
+    try { localStorage.setItem('urbex.status.v4.' + key, JSON.stringify({ t: Date.now(), r })); } catch { /* ignore */ }
   }
 
   // Fetch up to 20 articles in one request (as wikitext) and classify each.
