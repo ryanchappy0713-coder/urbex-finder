@@ -28,6 +28,7 @@
     ruins:         { label: 'Ruins',               color: '#b08968' },
     houses:        { label: 'Houses',              color: '#9a9993' },
     mines:         { label: 'Old mines (USGS)',    color: '#a47148' },
+    official:      { label: 'Derelict (city list)', color: '#ff5d8f' },
     other:         { label: 'Other',               color: '#6c757d' },
   };
 
@@ -236,19 +237,20 @@ out center tags ${MAX_RESULTS * 3};`;
 
   // Query OpenStreetMap (your radius) and Wikidata (50 km) at the same time.
   async function searchArea(lat, lon, r, onEarly = () => {}) {
-    const key = `urbex.cache.v2.${lat.toFixed(2)},${lon.toFixed(2)},${r}`;
+    const key = `urbex.cache.v3.${lat.toFixed(2)},${lon.toFixed(2)},${r}`;
     const cached = readCache(key);
     if (cached) return { places: cached, notes: ['(Saved results from an earlier scan.)'] };
 
     let osmDone = false;
-    const early = { wd: null, mines: null };
-    const showEarly = () => { if (!osmDone) onEarly([...(early.wd || []), ...(early.mines || [])]); };
+    const early = { wd: null, mines: null, city: null };
+    const showEarly = () => { if (!osmDone) onEarly([...(early.city || []), ...(early.wd || []), ...(early.mines || [])]); };
     const osmQuery = (radius) => overpass(buildQuery(lat, lon, radius), radius > 50000 ? 65000 : 30000)
       .then((d) => (d.elements || []).map(normalize).filter(Boolean));
-    const [osm, wd, mn] = await Promise.allSettled([
+    const [osm, wd, mn, ct] = await Promise.allSettled([
       osmQuery(r).finally(() => { osmDone = true; }),
       wikidata(lat, lon, Math.max(50000, r)).then((w) => { early.wd = w; showEarly(); return w; }),
       usgsMines(lat, lon, r).then((m) => { early.mines = m; showEarly(); return m; }),
+      cityRecords(lat, lon, r).then((c) => { early.city = c; showEarly(); return c; }),
     ]);
     if (osm.status === 'rejected' && wd.status === 'rejected') {
       throw new Error(`map servers: ${osm.reason.message}; Wikidata: ${wd.reason.message}`);
@@ -264,7 +266,7 @@ out center tags ${MAX_RESULTS * 3};`;
       try { osmPlaces = await osmQuery(25000); } catch { /* keep what we have */ }
     }
     if (osm.status === 'rejected') notes.push('OpenStreetMap servers are busy right now, so this only shows Wikidata places. Scan again later for more.');
-    const places = [...mergeWikidata(osmPlaces, wdPlaces), ...(mn.status === 'fulfilled' ? mn.value : [])];
+    const places = [...(ct.status === 'fulfilled' ? ct.value : []), ...mergeWikidata(osmPlaces, wdPlaces), ...(mn.status === 'fulfilled' ? mn.value : [])];
     if (osm.status === 'fulfilled' && wd.status === 'fulfilled') writeCache(key, places);
     return { places, notes };
   }
@@ -315,6 +317,33 @@ out center tags ${MAX_RESULTS * 3};`;
     });
   }
 
+
+
+  // ---------- Official city lists of vacant / derelict buildings ----------
+  // Bundled with the app (data/vacant-buildings.json), built from cities' published lists.
+  let cityData = null;
+  async function cityRecords(lat, lon, r) {
+    try {
+      if (!cityData) cityData = await fetchJson('data/vacant-buildings.json');
+    } catch { return []; }
+    const out = [];
+    for (const list of cityData.lists || []) {
+      for (const b of list.buildings) {
+        const dist = haversine(lat, lon, b.lat, b.lon);
+        if (dist > r) continue;
+        const name = b.address.replace(/\b([A-Z])([A-Z]+)\b/g, (m, a, z) => a + z.toLowerCase())
+          .replace(/\b(\d+)(ST|ND|RD|TH)\b/g, (m, n, x) => n + x.toLowerCase());
+        out.push({
+          id: `city/${list.id}/${b.address}`, source: 'city', osmType: null, osmId: null,
+          lat: b.lat, lon: b.lon, dist, cat: 'official', status: 'derelict', conf: 'high',
+          label: `On ${list.city}'s ${list.shortName}`, name, hasName: true,
+          tags: { address: `${b.address}, ${list.city}`, list: `${list.name} (${list.date})`, ...(b.district ? { 'council district': String(b.district) } : {}), ...(b.approx ? { 'map position': 'approximate (matched to the street, not the exact building)' } : {}) },
+          list,
+        });
+      }
+    }
+    return out;
+  }
 
   // ---------- USGS Mineral Resources Data System: old mines (US only) ----------
   const MINE_CODES = { AU: 'gold', AG: 'silver', CU: 'copper', PB: 'lead', ZN: 'zinc', U: 'uranium', MO: 'molybdenum',
@@ -620,7 +649,7 @@ out center tags ${MAX_RESULTS * 3};`;
   const cap = (s) => s.charAt(0).toUpperCase() + s.slice(1);
 
   // ---------- Ranking ----------
-  const CAT_WEIGHT = { institutional: 25, industrial: 20, military: 20, leisure: 18, religious: 14, rail: 12, ruins: 10, houses: 6, other: 4, mines: 0 };
+  const CAT_WEIGHT = { official: 16, institutional: 25, industrial: 20, military: 20, leisure: 18, religious: 14, rail: 12, ruins: 10, houses: 6, other: 4, mines: 0 };
   const CONF_INFO = { high: { label: 'Likely abandoned', score: 50 }, medium: { label: 'Disused', score: 28 }, low: { label: 'Lead', score: 0 } };
   function confOf(p) {
     if (p.check?.status === 'abandoned') return 'high';
@@ -725,7 +754,9 @@ out center tags ${MAX_RESULTS * 3};`;
     const earth = `https://earth.google.com/web/@${p.lat},${p.lon},120a,450d,35y,0h,55t,0r`;
     const gmapsSat = `https://www.google.com/maps/@?api=1&map_action=map&center=${p.lat},${p.lon}&zoom=19&basemap=satellite`;
     const streetView = `https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=${p.lat},${p.lon}`;
-    const source = p.source === 'usgs'
+    const source = p.source === 'city'
+      ? `<a href="${esc(p.list.url)}" target="_blank" rel="noopener">${esc(p.list.name)}</a>, ${esc(p.list.publisher)} (${esc(p.list.date)})`
+      : p.source === 'usgs'
       ? `<a href="${esc(t['USGS record'] || 'https://mrdata.usgs.gov/mrds/')}" target="_blank" rel="noopener">USGS Mineral Resources Data System</a>`
       : p.source === 'ai'
       ? (p.aiSources || []).map((u) => `<a href="${esc(u)}" target="_blank" rel="noopener">${esc(u.replace(/^https?:\/\/(www\.)?/, '').slice(0, 50))}</a>`).join(', ') || 'AI search'
@@ -747,6 +778,7 @@ out center tags ${MAX_RESULTS * 3};`;
       </div>
 
       ${p.source === 'wikidata' ? '<p class="muted" style="font-size:12px">From Wikidata. Wikidata sometimes misses demolitions, so check the satellite view to make sure it\'s still standing.</p>' : ''}
+ ${p.source === 'city' ? `<p class="badge warn" style="display:block;margin:10px 0;line-height:1.4">⚠ Private property on a city enforcement list. Owners are required to secure and repair these buildings, and some are still lived in or being fixed up. Look from the street, and don't go in without the owner's permission.</p>` : ''}
       ${p.source === 'usgs' ? `<p class="badge warn" style="display:block;margin:10px 0;line-height:1.4">⚠ Old mine record. USGS data can be decades old, and many sites are only shafts, adits or tailings. Never go into a mine: bad air, collapses and hidden shafts kill explorers every year.</p>` : ''}
       <h3>Still standing?</h3>
       <div id="checkBox"></div>
@@ -1133,6 +1165,11 @@ ${list.map((s) => `<Placemark><name>${x(s.name)}</name><styleUrl>#spot</styleUrl
   async function showCheck(p) {
     const box = document.getElementById('checkBox');
     if (!box || state.activeId !== p.id) return;
+    if (p.source === 'city') {
+      box.innerHTML = `<div class="badges"><span class="badge good">✓ On ${esc(p.list.city)}'s ${esc(p.list.shortName)}</span></div>
+        <p class="muted" style="margin:6px 0">City inspectors listed this building as neglected or derelict as of ${esc(p.list.date)}. Check Street View for its current state.</p>`;
+      return;
+    }
     const ai = `<button class="btn" id="checkAi">🔎 Check with AI (web search)</button>`;
     const wire = () => { const b = document.getElementById('checkAi'); if (b) b.onclick = () => openChat(`Is ${p.name} (${p.label}, near ${p.lat.toFixed(4)}, ${p.lon.toFixed(4)}) still standing today, or has it been demolished, redeveloped or reopened? Search the web and tell me what you find, with dates.`); };
     if (p.check && p.check.status) {
