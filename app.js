@@ -209,7 +209,7 @@ out center tags ${MAX_RESULTS * 3};`;
       setStatus((shown.length
         ? (strong
           ? `Found <b>${strong}</b> likely abandoned or disused places${shown.length > strong ? ` and ${shown.length - strong} weaker leads` : ''}. Best spots are at the top.`
-          : `Found <b>${shown.length}</b> leads (closed or former places, mine sites). None are confirmed abandoned yet, so check them with the satellite view.`)
+          : `No places with clear signs of abandonment here (only ${shown.length} weaker leads, hidden). Try a bigger radius, or <b>✨ Discover more with AI</b>, which searches urbex videos and posts.`)
         : `Nothing found within ${Math.max(50, r / 1000)} km. Try a nearby city or a bigger radius.`) + extra);
     } catch (err) {
       setStatus(`Scan failed: ${esc(err.message)}. The free servers may be busy. Try again in a minute.`, true);
@@ -237,7 +237,7 @@ out center tags ${MAX_RESULTS * 3};`;
 
   // Query OpenStreetMap (your radius) and Wikidata (50 km) at the same time.
   async function searchArea(lat, lon, r, onEarly = () => {}) {
-    const key = `urbex.cache.v3.${lat.toFixed(2)},${lon.toFixed(2)},${r}`;
+    const key = `urbex.cache.v4.${lat.toFixed(2)},${lon.toFixed(2)},${r}`;
     const cached = readCache(key);
     if (cached) return { places: cached, notes: ['(Saved results from an earlier scan.)'] };
 
@@ -397,15 +397,18 @@ out center tags ${MAX_RESULTS * 3};`;
   // abandoned, decommissioned, out of service, not in operation. "Permanently closed"
   // (Q104664889) is only used for heritage-listed items: unlisted closed buildings in
   // Wikidata are very often long demolished.
-  const WD_STATES = ['Q63065035', 'Q11639308', 'Q56651571', 'Q111802839'];
+  // Only states that mean the place itself is unused: abandoned, out of service, not in operation.
+  // ("Decommissioned" and "permanently closed" usually mean a business ended and the building was reused.)
+  const WD_STATES = ['Q63065035', 'Q56651571', 'Q111802839'];
   const WD_STATE_LABEL = { Q63065035: 'abandoned', Q11639308: 'decommissioned', Q104664889: 'closed',
     Q56651571: 'out of service', Q111802839: 'closed' };
   const WD_TYPES = { Q74047: 'ghost town', Q109607: 'ruins', Q811336: 'derelict', Q42412840: 'abandoned',
-    Q106772341: 'abandoned', Q350895: 'abandoned village', Q27654220: 'abandoned village', Q21507948: 'ghost town',
-    Q4663385: 'former', Q65464941: 'former', Q64578911: 'former', Q113377182: 'former', Q39919471: 'former',
-    Q96371632: 'former', Q17715832: 'ruins', Q17485079: 'ruins', Q1570262: 'unfinished' };
+    Q106772341: 'abandoned', Q350895: 'abandoned village', Q27654220: 'abandoned village',
+    Q17715832: 'ruins', Q17485079: 'ruins' };
 
-  const DESC_YES = '\\\\b(abandoned|disused|derelict|defunct|ghost town|ruin|ruins|decommissioned|former (hospital|school|asylum|sanatorium|prison|jail|factory|mill|mine|power|church|hotel|military|air|army|navy|railway|train|station|theat|amusement|resort|plant|brewery|warehouse|depot|fort|missile|base))';
+  // Descriptions must say the place itself is abandoned; "former" and "defunct" usually describe
+  // an organization that ended while its building lives on (e.g. a theater that became a concert venue).
+  const DESC_YES = '\\\\b(abandoned|disused|derelict|ruin|ruins|ruined)\\\\b';
   const DESC_NO = 'demolish|destroyed|razed|torn down|replaced|redevelop|now (a|an|the|home|used|part)|converted|museum|company|organization|band|team|newspaper|magazine|airline|club|league|political';
 
   async function wikidata(lat, lon, r) {
@@ -420,7 +423,6 @@ out center tags ${MAX_RESULTS * 3};`;
     const byState = `SELECT ?item ?itemLabel ?state ?ty ?typeLabel ?coord ?desc ?article WHERE {
   ${around}
   { ?item wdt:P5817 ?state . VALUES ?state { ${WD_STATES.map((x) => 'wd:' + x).join(' ')} } }
-  UNION { ?item wdt:P5817 ?state . VALUES ?state { wd:Q104664889 } ?item wdt:P1435 [] . }
   UNION { ?item wdt:P31 ?ty . VALUES ?ty { ${Object.keys(WD_TYPES).map((x) => 'wd:' + x).join(' ')} } }
   ${tail}`;
     const byDesc = `SELECT ?item ?itemLabel ?typeLabel ?coord ?desc ?article WHERE {
@@ -434,7 +436,7 @@ out center tags ${MAX_RESULTS * 3};`;
   ?item wdt:P3999 ?closed .
   FILTER NOT EXISTS { ?item wdt:P5817 ?inuse . VALUES ?inuse { wd:Q55654238 wd:Q55570821 } }
   ${tail}`;
-    const results = await Promise.allSettled([sparql(byState), sparql(byDesc), sparql(byClosed)]);
+    const results = await Promise.allSettled([sparql(byState), sparql(byDesc)]);
     if (results.every((x) => x.status === 'rejected')) throw results[0].reason;
 
     const byId = new Map();
@@ -688,8 +690,7 @@ out center tags ${MAX_RESULTS * 3};`;
     const live = state.places.filter((p) => !isGone(p) && !isReused(p));
     const good = live.filter((p) => confOf(p) !== 'low');
     const leads = live.length - good.length;
-    // With very few strong results, show the leads too rather than an almost empty list.
-    const leadsOn = state.showLeads || good.length < 8;
+    const leadsOn = state.showLeads;
     const toggle = (show, text, onClick) => {
       const b = document.createElement('button');
       b.className = 'chip' + (show ? ' off' : '');
@@ -699,7 +700,7 @@ out center tags ${MAX_RESULTS * 3};`;
     const gone = state.places.filter(isGone).length, reused = state.places.filter(isReused).length;
     if (gone) toggle(!state.hideDemolished, state.hideDemolished ? `🚫 ${gone} demolished hidden · show` : `🚫 Hide ${gone} demolished`, () => { state.hideDemolished = !state.hideDemolished; render(); });
     if (reused) toggle(!state.hideReused, state.hideReused ? `♻ ${reused} back in use hidden · show` : `♻ Hide ${reused} back in use`, () => { state.hideReused = !state.hideReused; render(); });
-    if (leads && good.length >= 8) toggle(state.showLeads, state.showLeads ? `Hide ${leads} weaker leads` : `🔎 ${leads} more leads (closed, former, mines) · show`, () => { state.showLeads = !state.showLeads; render(); });
+    if (leads) toggle(state.showLeads, state.showLeads ? `Hide ${leads} weaker leads` : `🔎 ${leads} more leads (closed, former, mines) · show`, () => { state.showLeads = !state.showLeads; render(); });
 
     // List + markers
     resultsEl.innerHTML = '';
@@ -714,7 +715,9 @@ out center tags ${MAX_RESULTS * 3};`;
       ? shown.map((p) => [scoreOf(p), p]).sort((a, b) => b[0] - a[0]).map((x) => x[1])
       : shown.sort((a, b) => a.dist - b.dist);
     const top = new Set(state.sort === 'best' ? shown.filter((p) => confOf(p) !== 'low' && !isGone(p) && !isReused(p)).slice(0, 5).map((p) => p.id) : []);
-    if (!shown.length && state.places.length) resultsEl.innerHTML = '<li class="muted" style="display:block">Nothing matches. Clear the search box or turn some filters back on.</li>';
+    if (!shown.length && state.places.length) resultsEl.innerHTML = q
+      ? '<li class="muted" style="display:block">Nothing matches. Clear the search box or turn some filters back on.</li>'
+      : '<li class="muted" style="display:block">No confirmed abandoned places in this area. The free map data rarely records them. Try a bigger radius or <b>✨ Discover more with AI</b>.</li>';
     shown.forEach((p) => {
       const color = CATEGORIES[p.cat].color;
       const li = document.createElement('li');
