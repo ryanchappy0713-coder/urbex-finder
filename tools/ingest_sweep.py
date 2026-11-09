@@ -27,11 +27,17 @@ def cat(t):
     return 'other'
 data = json.load(open(P))
 have = {key(s['name']) for s in data['spots']} | {key('Mile High Greyhound Park')}
+GENERIC = {'ruins','building','buildings','remains','site','camp','store','general','house','school','church','hotel','vacant','co','colorado','of','and','at','in','upper','floors'}
+havesets = [set(h.split()) - GENERIC for h in have]
+havesets = [h for h in havesets if len(h) >= 2]
 items, seen = [], set()
 for f in sorted(glob.glob(os.path.join(sys.argv[1] if len(sys.argv) > 1 else '.', 'agent_*.json'))):
     for it in json.load(open(f)):
         k = key(it.get('name', ''))
         if not k or k in seen or k in have or not it.get('sources'): continue
+        # near-duplicate: an existing name's words are all inside the new one (or vice versa)
+        ws = set(k.split()) - GENERIC
+        if any(h and (h <= ws or ws <= h) for h in havesets): continue
         # skip anything whose condition says it's gone or reopened
         if re.search(r'\b(demolished|torn down|razed|reopened|now a museum|redeveloped into)\b', it.get('condition', ''), re.I) and not re.search(r'partly|partially|still stand|whether it|no source|not confirm|demolished yet|not (been )?demolished|no (later )?report', it.get('condition', ''), re.I): continue
         seen.add(k); items.append(it)
