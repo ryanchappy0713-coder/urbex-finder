@@ -124,6 +124,29 @@
       { enableHighAccuracy: true, timeout: 15000 });
   });
 
+  // One tap: legal-to-visit spots within 100 km of you, safest first.
+  {
+    const legalBtn = document.createElement('button');
+    legalBtn.type = 'button'; legalBtn.className = 'btn'; legalBtn.id = 'legalNearBtn';
+    legalBtn.textContent = '🟢 Legal spots near me';
+    legalBtn.title = 'Find places on public land you can legally visit, within 100 km';
+    $('savedBtn').before(legalBtn);
+    const go = (lat, lon, you) => {
+      $('radius').value = '100000';
+      state.legalOnly = true; state.sort = 'safe';
+      const sel = document.getElementById('listSort'); if (sel) sel.value = 'safe';
+      setCenter(lat, lon, { scan: true, you });
+    };
+    legalBtn.addEventListener('click', () => {
+      if (!navigator.geolocation) { const c = state.center || { lat: 39.74, lon: -104.99 }; return go(c.lat, c.lon, false); }
+      setStatus('Finding your location…');
+      navigator.geolocation.getCurrentPosition(
+        (pos) => go(pos.coords.latitude, pos.coords.longitude, true),
+        () => { const c = state.center || { lat: 39.74, lon: -104.99 }; setStatus('Location unavailable, so using the map center.'); go(c.lat, c.lon, false); },
+        { enableHighAccuracy: true, timeout: 15000 });
+    });
+  }
+
   $('scanBtn').addEventListener('click', () => {
     if (!state.center) { const c = map.getCenter(); setCenter(c.lat, c.lng, { pan: false }); }
     scan();
