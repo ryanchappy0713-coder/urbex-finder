@@ -4184,23 +4184,6 @@
    ]
   },
   {
-   "id": "herrick-sawmill-ruins",
-   "name": "Herrick Sawmill ruins",
-   "cat": "industrial",
-   "type": "mill",
-   "lat": 38.38844,
-   "lon": -105.11644,
-   "approx": true,
-   "location": "Newlin Creek Trail, past Florence Mountain Park; reached by County Road 15 west off Colorado Highway 67, near Florence, Fremont County",
-   "condition": "Atlas Obscura describes an abandoned sawmill more than 134 years old. A 2021 Medium post says the steam boiler is still there, 'rusting and perched upon a crumbling stone and brick cradle', and a flywheel survives.",
-   "access": "Reached by a hiking trail off Florence Mountain Park; land ownership unknown",
-   "sources": [
-    "https://assets.atlasobscura.com/places/herrick-sawmill",
-    "https://justodd.medium.com/rusting-trailside-dreams-bf5f6d95a264",
-    "https://www.coloradocentralmagazine.com/places-florence-mountain-park-newlin-creek-trail/"
-   ]
-  },
-  {
    "id": "keating-education-center-former-keating-school",
    "name": "Keating Education Center (former Keating School)",
    "cat": "institutional",
@@ -4214,40 +4197,6 @@
    "sources": [
     "https://cpr.org/2021/01/04/plans-are-underway-to-restore-pueblos-historic-keating-school",
     "https://krdo.com/?p=73146"
-   ]
-  },
-  {
-   "id": "st-aloysius-church-ruins-morley-ghost-town",
-   "name": "St. Aloysius Church ruins (Morley ghost town)",
-   "cat": "religious",
-   "type": "church",
-   "lat": 37.03096,
-   "lon": -104.50338,
-   "approx": true,
-   "location": "West side of I-25, about 3 miles north of the New Mexico border (visible from I-25), Morley, Las Animas County",
-   "condition": "Morley was a coal town from 1878 to 1956 and was razed, but the church was spared. Sources say little more than the church's front remains; others say its walls and those of a few mine buildings still stand. Church dates to 1917/1918. Undated radio and tourism pages, current as of the 2020s.",
-   "access": "Private land. Sources conflict: one says there is no public access and it can only be viewed from I-25; another says the owner allows visitors who get permission in advance.",
-   "sources": [
-    "https://visittrinidadcolorado.com/attraction/morley-st-aloysius-church-ruins/",
-    "https://k99.com/ixp/510/p/colorado-abandoned-church-morley/",
-    "https://en.wikipedia.org/wiki/Morley,_Colorado"
-   ]
-  },
-  {
-   "id": "columbian-hotel-former-grand-union-hotel-upper-floors",
-   "name": "Columbian Hotel (former Grand Union Hotel), upper floors",
-   "cat": "leisure",
-   "type": "hotel",
-   "lat": 37.16614,
-   "lon": -104.50331,
-   "approx": true,
-   "location": "111 N. Commercial St., Trinidad",
-   "condition": "Listings say the 2nd and 3rd floors (about 100 rooms) have been vacant since the 1970s. Listed for sale from August 2025 as a redevelopment project; a listing was still updated May 2026. Whether the ground floor is occupied is unconfirmed, so it is only partly vacant.",
-   "access": "Private. Marketed for sale (about $1.75M).",
-   "sources": [
-    "https://realmo.com/listing/111-north-commercial-st-trinidad-co-81082/12400068",
-    "https://www.commercialsearch.com/commercial-property/us/co/trinidad/columbian-hotel/",
-    "https://www.loopnet.ca/Listing/111-N-Commercial-St-Trinidad-CO/37473389/"
    ]
   },
   {
@@ -4265,21 +4214,6 @@
     "https://livingnewdeal.org/sites/schoolhouse-kim-co/",
     "https://livingnewdeal.org/?p=81297",
     "https://historypointer.com/nris/resource/07000342"
-   ]
-  },
-  {
-   "id": "brooks-general-store-rugby",
-   "name": "Brooks General Store (Rugby)",
-   "cat": "other",
-   "type": "store",
-   "lat": 37.46817,
-   "lon": -104.66282,
-   "approx": true,
-   "location": "Just west of I-25 at Exit 41 (Rugby Road), about 15 miles north of Trinidad. A rough road runs behind it.",
-   "condition": "A red brick general store built in the early 1930s by the Moses Brooks family. Described as abandoned in 2015; current status is unverified.",
-   "access": "Unknown",
-   "sources": [
-    "https://lifedeathiron.com/2015/11/25/25-abandoned-buildings-in-colorado-you-must-see-before-they-are-gone"
    ]
   },
   {
