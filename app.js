@@ -2128,7 +2128,7 @@ Give lat and lon only when a source states them or you are confident; otherwise 
     <select id="listSort" title="Sort results"><option value="best">Best spots first</option><option value="near">Nearest first</option><option value="safe">Safest &amp; legal first</option></select>`;
   filtersEl.after(listTools);
   listTools.querySelector('#listQuery').addEventListener('input', (e) => { state.query = e.target.value; render(); });
-  listTools.querySelector('#listSort').addEventListener('change', (e) => { state.sort = e.target.value === 'best' ? 'best' : 'near'; render(); });
+  listTools.querySelector('#listSort').addEventListener('change', (e) => { state.sort = e.target.value; render(); });
 
   const fix = document.createElement('style');
   fix.textContent = `.leaflet-control-layers-toggle{background-image:none!important;display:flex!important;align-items:center;justify-content:center;font-size:20px;text-decoration:none;color:#333}
