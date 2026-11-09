@@ -132,3 +132,6 @@ textarea {
 .hist-list li { margin: 2px 0; }
 .legal-list { margin: 0; padding-left: 18px; font-size: 13px; }
 .legal-list li { margin: 3px 0; }
+.deep h4 { margin: 12px 0 4px; font-size: 13px; }
+.deep h4:first-child { margin-top: 2px; }
+.deep mark { background: rgba(224,162,58,.3); color: inherit; padding: 0 1px; border-radius: 2px; }

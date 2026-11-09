@@ -948,6 +948,8 @@ out center tags ${MAX_RESULTS * 3};`;
         <li>"No Trespassing" signs, fences and locked gates mean stay out without permission. Abandoned doesn't mean ownerless.</li>
         <li>Take nothing and damage nothing. If the owner or police show up, stay calm and leave when asked.</li>
       </ul>
+      <button class="btn accent" id="deepBtn" style="width:100%;justify-content:center;margin-top:6px">🔍 Deep check: history, owner & security level</button>
+      <div id="deepBox" class="sat-hist" hidden></div>
 
       <h3>Look at it</h3>
       <div class="row">
@@ -992,6 +994,13 @@ out center tags ${MAX_RESULTS * 3};`;
       b.onclick = () => openAddSpot(p.lat, p.lon, state.saved[p.id]);
       $('checkBox').appendChild(b);
     }
+    $('deepBtn').onclick = () => {
+      const box = $('deepBox');
+      if (box.dataset.done) { box.hidden = !box.hidden; return; }
+      box.dataset.done = '1';
+      deepCheck({ lat: p.lat, lon: p.lon, name: p.name, osm: p.osmType && p.osmId ? `${p.osmType}/${p.osmId}` : null,
+        tags: p.tags, text: p.tags?.['reported condition'] || '', legal: legalOf(p) }, box);
+    };
     $('compareYears').onclick = () => {
       detailEl.hidden = true;
       if (map.hasLayer(streets)) { map.removeLayer(streets); satellite.addTo(map); }
@@ -2388,11 +2397,16 @@ out geom;
           <button class="btn" data-a="show">📍 Show</button>
           <a class="btn" target="_blank" rel="noopener" href="https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=${k.lat},${k.lon}">Street View</a>
           <a class="btn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=${k.lat},${k.lon}">Google Maps</a>
-          <button class="btn" data-a="hist">📜 History</button>
+          <button class="btn" data-a="hist">🔍 Deep check</button>
           <button class="btn" data-a="save">★ Save</button>
           <button class="btn ghost" data-a="hide" title="Not abandoned: hide it from now on">✕ Not it</button>
         </div><div class="sat-hist" hidden></div>`;
-      li.querySelector('[data-a=hist]').onclick = () => satHistory(k, name, li.querySelector('.sat-hist'));
+      li.querySelector('[data-a=hist]').onclick = () => {
+        const hb = li.querySelector('.sat-hist');
+        if (hb.dataset.done) { hb.hidden = !hb.hidden; return; }
+        hb.dataset.done = '1';
+        deepCheck({ lat: k.lat, lon: k.lon, name, osm: k.id, tags: k.tags, text: k.why.join('. '), legal: 'unknown' }, hb);
+      };
       const figs = li.querySelectorAll('figure');
       if (k.old) figs[0].prepend(k.old); if (k.now) figs[1].prepend(k.now);
       li.querySelector('[data-a=show]').onclick = () => {
@@ -2427,54 +2441,221 @@ out geom;
     }
   }
 
-  // ---------- 📜 Free building history: OSM edit history, address, Wikipedia, search links ----------
-  async function satHistory(k, name, box) {
-    box.hidden = !box.hidden;
-    if (box.hidden || box.dataset.done) return;
-    box.innerHTML = '<p class="muted">Looking up this building’s history…</p>';
-    const [hist, addr, wiki] = await Promise.all([
-      fetchJson(`https://api.openstreetmap.org/api/0.6/${k.id}/history.json`).catch(() => null),
-      fetchJson(`${NOMINATIM}/reverse?format=jsonv2&zoom=18&addressdetails=1&lat=${k.lat}&lon=${k.lon}`).catch(() => null),
-      fetchJson(`${WIKI}?action=query&format=json&origin=*&generator=geosearch&ggscoord=${k.lat}|${k.lon}&ggsradius=300&ggslimit=5&prop=extracts|info&exintro=1&explaintext=1&exsentences=3&inprop=url`).catch(() => null),
+  // ---------- 🔍 Deep check: every free record we can reach, plus a security level ----------
+  const RISK_RE = /\b(security|guard(s|ed)?|patrol(s|led)?|camera(s)?|surveillance|alarm(s)?|fenc(e|ed|es|ing)|barbed|razor wire|gate(s|d)?|lock(s|ed)?|welded|boarded|trespass\w*|arrest\w*|cited|charged|police|sheriff|burglar\w*|no trespassing|demolish\w*|torn down|razed|fire(s)?|burn(ed|t)|arson|asbestos|collaps\w*|unsafe|condemn\w*|vacant|abandon\w*|closed|redevelop\w*|sold|purchas\w*|squat\w*|homeless|encampment)\b/i;
+  const SEC_WORDS = [
+    [/\b(security guard|guard(s|ed)?|patrol(s|led)?|security company|on-?site security)\b/i, 3, 'reports mention guards or patrols'],
+    [/\b(camera(s)?|surveillance|alarm(s)?|motion sensor)\b/i, 2, 'reports mention cameras or alarms'],
+    [/\b(arrest\w*|cited|charged|sheriff|police (are|were) (called|looking)|prosecut\w*)\b/i, 3, 'reports mention arrests, citations or police'],
+    [/\b(welded|sealed|bricked|boarded( up)?|locked)\b/i, 1, 'reports say it is sealed, boarded or locked'],
+    [/\b(fenc(e|ed|ing)|barbed|razor wire)\b/i, 1, 'reports mention fencing'],
+    [/\b(no trespassing|posted)\b/i, 1, 'reports mention No Trespassing signs'],
+    [/\b(asbestos|collaps\w*|unsafe|condemn\w*|structural)\b/i, 0, 'reports mention structural or asbestos danger'],
+  ];
+  function riskSentences(text, max = 8) {
+    const out = [];
+    for (const sent of (text || '').replace(/\s+/g, ' ').split(/(?<=[.!?])\s+/)) {
+      if (sent.length > 30 && sent.length < 400 && RISK_RE.test(sent)) out.push(sent);
+      if (out.length >= max) break;
+    }
+    return out;
+  }
+  const hl = (s) => esc(s).replace(new RegExp(RISK_RE.source, 'gi'), (m) => `<mark>${m}</mark>`);
+
+  // Free parcel (owner) lookup from county and state assessor map services (ArcGIS REST, no key).
+  const PARCEL_SERVICES = [
+    ['Denver assessor', 'https://services1.arcgis.com/zdB7qR0BtYrg0Xpl/ArcGIS/rest/services/ODC_PROP_PARCELS_A/FeatureServer/245'],
+    ['Broomfield assessor', 'https://services1.arcgis.com/vXSRPZbyyOmH9pek/arcgis/rest/services/Parcels/FeatureServer/0'],
+    ['Jefferson County assessor', 'https://services.arcgis.com/PFikmPaTMlt2KX1O/arcgis/rest/services/Jeffco_Parcels/FeatureServer/0'],
+    ['Adams County assessor', 'https://services3.arcgis.com/4PNQOtAivErR7nbT/arcgis/rest/services/Parcels/FeatureServer/0'],
+    ['Arapahoe County assessor', 'https://gis.arapahoegov.com/arcgis/rest/services/OpenDataService/FeatureServer/0'],
+    ['Boulder County assessor', 'https://maps.bouldercounty.org/arcgis/rest/services/PARCELS/PARCELS_OWNER/FeatureServer/0'],
+    ['Colorado statewide parcels', 'https://gis.colorado.gov/public/rest/services/Address_and_Parcel/Colorado_Public_Parcels/FeatureServer/0'],
+  ];
+  const PF = {
+    owner: ['OWNER_NAME', 'owner', 'OWNERNAMEFULL', 'Owner', 'OWNNAM', 'OwnerName', 'OWNERNAME', 'OWNERNAME1'],
+    owner2: ['owner2', 'OWNNAM2', 'CareOf'],
+    mail: [['OWNER_ADDRESS_LINE1', 'OWNER_CITY', 'OWNER_STATE', 'OWNER_ZIP'], ['ownerAdd', 'ownAddCty', 'ownAddStt', 'ownAddZip'], ['OWNERADDRESSFULL'],
+      ['Owner_Mail_Address', 'Owner_City_State_Zip'], ['MAILSTRNBR', 'MAILSTRNAM', 'MAILCTYNAM', 'MAILZIP5'], ['MailAddr1', 'MailCity', 'MailState', 'MailZip'],
+      ['OWNERADDRESS_ADDRESS1', 'OWNERADDRESS_CITY', 'OWNERADDRESS_STATE', 'OWNERADDRESS_ZIP']],
+    situs: ['SITUS_ADDRESS_LINE1', 'situsAdd', 'Situs_Address', 'PRPADDRESS', 'SITUS_FULL_ADDRESS', 'CONCATADDR1'],
+    use: ['D_CLASS_CN', 'PROP_CLASS', 'landUseDsc', 'Classification', 'STTTYPUSE', 'PROPERTYUSE', 'TAXCLS', 'zoningDesc'],
+    year: ['COM_ORIG_YEAR_BUILT', 'RES_ORIG_YEAR_BUILT', 'STTYRBLT', 'ACTUALYEARBUILT'],
+    saleDate: ['SALE_DATE', 'saleDate', 'Sale_Date', 'SLSDT', 'SALEDATE'],
+    salePrice: ['SALE_PRICE', 'salePrice', 'Price', 'SLSAMT', 'SALEPRICE'],
+    value: ['APPRAISED_TOTAL_VALUE', 'apprValTot', 'Appr_Value', 'TOTACTVAL', 'FINALACTUALVALUE', 'ASSESSED_TOTAL_VALUE'],
+  };
+  function fetchTimeout(url, ms) {
+    const c = new AbortController(); const t = setTimeout(() => c.abort(), ms);
+    return fetch(url, { signal: c.signal }).then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); }).finally(() => clearTimeout(t));
+  }
+  const fmtDate = (v) => { if (v == null || v === '') return ''; const d = typeof v === 'number' ? new Date(v) : new Date(String(v)); return isNaN(d) ? String(v) : d.toISOString().slice(0, 10); };
+  async function parcelLookup(lat, lon) {
+    const qs = `query?geometry=${lon},${lat}&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json`;
+    const res = await Promise.all(PARCEL_SERVICES.map(([src, url]) => fetchTimeout(`${url}/${qs}`, 12000)
+      .then((d) => ({ src, at: d.features?.[0]?.attributes })).catch(() => null)));
+    const hit = res.find((x) => x?.at && PF.owner.some((f) => x.at[f]));
+    if (!hit) return null;
+    const A = hit.at;
+    const pick = (keys) => { for (const k of keys) if (A[k] != null && String(A[k]).trim() && String(A[k]).trim() !== '0') return String(A[k]).trim(); return ''; };
+    const owner = [pick(PF.owner), pick(PF.owner2)].filter(Boolean).join(' / ');
+    let mail = '';
+    for (const set of PF.mail) { const v = set.map((k) => A[k]).filter((x) => x != null && String(x).trim()).join(', '); if (v) { mail = v; break; } }
+    const saleRaw = PF.saleDate.map((k) => A[k]).find((v) => v != null && v !== '');
+    const sale = fmtDate(saleRaw), price = pick(PF.salePrice), value = pick(PF.value);
+    const O = owner.toUpperCase();
+    const ownerType = /\b(CITY|COUNTY|STATE OF|UNITED STATES|USA|U S A|SCHOOL DIST|DISTRICT|AUTHORITY|HOUSING|REGIONAL TRANSPORTATION|DEPARTMENT|DEPT|BOARD OF|UNIVERSITY|REGENTS|FEDERAL)\b/.test(O) ? 'government'
+      : /\b(BANK|MORTGAGE|LOAN|SAVINGS|FANNIE|FREDDIE|HUD|SECRETARY OF HOUSING)\b/.test(O) ? 'bank'
+      : /\b(LLC|L L C|INC|CORP|CORPORATION|CO|COMPANY|LP|LLP|LTD|TRUST|PROPERTIES|HOLDINGS|PARTNERS|INVESTMENTS|DEVELOPMENT|REALTY|ENTERPRISES|CHURCH|MINISTRIES)\b/.test(O) ? 'company' : 'person';
+    const typeText = { government: 'Government agency (public owner, still not open to walk into)', bank: 'Bank or lender (often foreclosed; property managers check these regularly)',
+      company: 'Company, trust or organization', person: 'Private individual' }[ownerType];
+    const rows = [['Owner', owner], ['Owner type', typeText], ['Owner mailing address (ask permission here)', mail], ['Property address', pick(PF.situs)],
+      ['Land use', pick(PF.use)], ['Year built', pick(PF.year)],
+      ['Last sale', [sale, price && `$${Number(price).toLocaleString()}`].filter(Boolean).join(' for ')], ['Value', value && `$${Number(value).toLocaleString()}`],
+      ['Source', hit.src]].filter(([, v]) => v);
+    return { rows, ownerType, situs: pick(PF.situs), saleYear: +(sale || '').slice(0, 4) || null };
+  }
+
+  async function securityScan(lat, lon) {
+    const q = `[out:json][timeout:25];
+is_in(${lat},${lon})->.in;
+(
+  area.in["landuse"]; area.in["military"]; area.in["access"]; area.in["power"]; area.in["amenity"];
+  node(around:250,${lat},${lon})["man_made"="surveillance"];
+  nwr(around:120,${lat},${lon})["barrier"~"^(fence|wall|gate|lift_gate|swing_gate|chain|guard_rail|retaining_wall)$"];
+  nwr(around:1500,${lat},${lon})["amenity"="police"];
+  nwr(around:250,${lat},${lon})["power"~"^(substation|plant|generator)$"];
+  way(around:100,${lat},${lon})["railway"="rail"]["service"!~"spur|siding"];
+  nwr(around:300,${lat},${lon})["landuse"="construction"];
+  nwr(around:400,${lat},${lon})["military"];
+  way(around:150,${lat},${lon})["building"~"^(house|residential|apartments|detached|semidetached_house|terrace)$"];
+  nwr(around:150,${lat},${lon})["shop"];
+  nwr(around:150,${lat},${lon})["amenity"~"^(restaurant|cafe|fast_food|bar|pub|fuel|bank|school|kindergarten|hospital|clinic|place_of_worship)$"];
+);
+out tags center;`;
+    const data = await overpass(q, 40000);
+    return data.elements || [];
+  }
+
+  function securityLevel(els, lat, lon, texts, legal, parcel) {
+    let s = 0; const why = [], good = [];
+    if (parcel?.ownerType === 'government') { s += 1; why.push('owned by a government agency: often inspected, and trespass is enforced'); }
+    if (parcel?.ownerType === 'bank') { s += 1; why.push('owned by a bank or lender: property managers check these regularly'); }
+    if (parcel?.saleYear && parcel.saleYear >= new Date().getFullYear() - 2) { s += 1; why.push(`sold in ${parcel.saleYear}: new owners often add fences, cameras or crews`); }
+    const T = (e) => e.tags || {};
+    const cams = els.filter((e) => T(e).man_made === 'surveillance').length;
+    if (cams) { s += Math.min(4, cams * 2); why.push(`${cams} mapped security camera${cams > 1 ? 's' : ''} within 250 m`); }
+    const fences = els.filter((e) => /fence|wall|chain|guard_rail/.test(T(e).barrier || '')).length;
+    const gates = els.filter((e) => /gate/.test(T(e).barrier || ''));
+    if (fences) { s += 2; why.push(`fences or walls mapped around it (${fences})`); }
+    if (gates.length) { s += 1; why.push(`${gates.length} gate${gates.length > 1 ? 's' : ''}${gates.some((g) => /private|no/.test(T(g).access || '')) ? ', marked private' : ''}`); }
+    const areas = els.filter((e) => e.type === 'area');
+    if (areas.some((e) => T(e).military || T(e).landuse === 'military') || els.some((e) => T(e).military && e.type !== 'area')) { s += 8; why.push('military land: federal property, armed security, never enter'); }
+    if (areas.some((e) => /private|no/.test(T(e).access || ''))) { s += 1; why.push('the area is mapped as private access'); }
+    if (els.some((e) => T(e).power)) { s += 3; why.push('power substation or plant next to it: deadly and watched'); }
+    if (els.some((e) => T(e).railway === 'rail')) { s += 2; why.push('active railroad within 100 m: railroad police patrol and track trespass is a crime'); }
+    if (els.some((e) => T(e).landuse === 'construction')) { s += 2; why.push('active construction nearby: crews and site security'); }
+    if (areas.some((e) => /school|hospital|prison/.test(T(e).amenity || ''))) { s += 2; why.push('on school, hospital or prison grounds'); }
+    const police = els.filter((e) => T(e).amenity === 'police' && e.center).map((e) => haversine(lat, lon, e.center.lat, e.center.lon)).sort((a, b) => a - b)[0];
+    if (police != null) { s += police < 600 ? 2 : 1; why.push(`police station ${fmtDist(police)} away`); }
+    const homes = els.filter((e) => T(e).building && /house|residential|apartments|detached|terrace/.test(T(e).building)).length;
+    const shops = els.filter((e) => T(e).shop || (T(e).amenity && e.type !== 'area' && T(e).amenity !== 'police')).length;
+    if (homes >= 8) { s += 1; why.push(`${homes} homes within 150 m: neighbors are likely to notice and call it in`); }
+    if (shops >= 3) { s += 1; why.push(`${shops} open businesses within 150 m: lots of eyes`); }
+    if (!homes && !shops) good.push('no homes or businesses mapped close by (isolated)');
+    const text = texts.join(' ');
+    for (const [re, pts, label] of SEC_WORDS) if (re.test(text)) { s += pts; (pts ? why : good).push(label); }
+    let level = s >= 9 ? 'Very high' : s >= 6 ? 'High' : s >= 3 ? 'Medium' : 'Low';
+    if (legal === 'public' && level !== 'Very high') level = `${level} (public land)`;
+    else if (level === 'Low') level = 'Low in the records (still private property)';
+    return { level, score: s, why, good };
+  }
+
+  // target: { lat, lon, name, osm: 'way/123'?, wikidata?, tags?, text? }
+  async function deepCheck(target, box) {
+    box.hidden = false;
+    box.innerHTML = '<p class="muted">Checking every free record we can reach: address, owner, map history, Wikipedia, Wikidata, news, and security around the building. This takes a few seconds…</p>';
+    const { lat, lon } = target;
+    const nm = target.name && !/^Unnamed /.test(target.name) ? target.name : '';
+    const settle = (p) => p.then((v) => v, () => null);
+    const [addr, hist, wikiNear, wikiByName, sec, parcel] = await Promise.all([
+      settle(fetchJson(`${NOMINATIM}/reverse?format=jsonv2&zoom=18&addressdetails=1&lat=${lat}&lon=${lon}`)),
+      target.osm ? settle(fetchJson(`https://api.openstreetmap.org/api/0.6/${target.osm}/history.json`)) : null,
+      settle(fetchJson(`${WIKI}?action=query&format=json&origin=*&generator=geosearch&ggscoord=${lat}|${lon}&ggsradius=400&ggslimit=4&prop=extracts|info&explaintext=1&exlimit=4&inprop=url`)),
+      nm ? settle(fetchJson(`${WIKI}?action=query&format=json&origin=*&generator=search&gsrsearch=${encodeURIComponent(`"${nm}" Colorado`)}&gsrlimit=2&prop=extracts|info&explaintext=1&exlimit=2&inprop=url`)) : null,
+      settle(securityScan(lat, lon)),
+      settle(parcelLookup(lat, lon)),
     ]);
-    box.dataset.done = '1';
     const a = addr?.address || {};
-    const street = [a.house_number, a.road].filter(Boolean).join(' ');
+    const street = [a.house_number, a.road].filter(Boolean).join(' ') || (parcel?.situs || '').replace(/\b([A-Z])([A-Z]+)\b/g, (m, x, y) => x + y.toLowerCase());
     const town = a.city || a.town || a.village || a.hamlet || a.county || '';
     const address = [street, town, a.state].filter(Boolean).join(', ');
-    // What the building was mapped as over time.
-    const KEYS = /^(name|old_name|was:name|shop|amenity|building|craft|office|industrial|man_made|operator|brand|(disused|abandoned|was|demolished):.*|disused|abandoned|vacant|start_date|opening_date|end_date)$/;
-    const timeline = [], seenVals = new Set(), oldNames = new Set();
+    // Recent news (GDELT, last ~3 months) about the name or the street address.
+    const newsQ = nm ? `"${nm}"` : street ? `"${street}"` : '';
+    const news = newsQ ? await settle(fetchJson(`https://api.gdeltproject.org/api/v2/doc/doc?query=${encodeURIComponent(`${newsQ} ${town}`.trim())}&mode=artlist&maxrecords=15&format=json&sort=datedesc`)) : null;
+
+    // Map history timeline
+    const KEYS = /^(name|old_name|was:name|shop|amenity|building|craft|office|industrial|man_made|operator|brand|access|(disused|abandoned|was|demolished):.*|disused|abandoned|vacant|start_date|end_date)$/;
+    const timeline = [], seen = new Set(), oldNames = new Set();
     for (const v of hist?.elements || []) {
       const ch = [];
-      for (const [key, val] of Object.entries(v.tags || {})) {
-        if (!KEYS.test(key) || seenVals.has(`${key}=${val}`)) continue;
-        seenVals.add(`${key}=${val}`); ch.push(`${key} = ${val}`);
-        if (/name$/.test(key)) oldNames.add(val);
+      for (const [k, val] of Object.entries(v.tags || {})) {
+        if (!KEYS.test(k) || seen.has(`${k}=${val}`)) continue;
+        seen.add(`${k}=${val}`); ch.push(`${k} = ${val}`);
+        if (/name$/.test(k)) oldNames.add(val);
       }
       if (ch.length) timeline.push(`<li><b>${esc((v.timestamp || '').slice(0, 10))}</b>: ${esc(ch.join(', '))}</li>`);
     }
-    const pages = Object.values(wiki?.query?.pages || {}).sort((x, y) => (x.index || 0) - (y.index || 0));
-    const nameQ = [...oldNames].filter((n) => n !== name).concat(k.tags.name ? [k.tags.name] : []);
-    const what = nameQ[0] ? `"${nameQ[0]}"` : street ? `"${street}"` : `${k.lat.toFixed(4)},${k.lon.toFixed(4)}`;
+    // Scan Wikipedia text sentence by sentence for anything about security, closure, fire, demolition, sale.
+    const pages = [...Object.values(wikiByName?.query?.pages || {}), ...Object.values(wikiNear?.query?.pages || {})]
+      .filter((pg, i, arr) => arr.findIndex((x) => x.pageid === pg.pageid) === i).slice(0, 5);
+    const wikiHits = pages.map((pg) => ({ pg, hits: riskSentences(pg.extract, 6) }));
+    const reportText = [target.text || '', ...(target.tags ? Object.values(target.tags) : []), ...wikiHits.flatMap((w) => w.hits)];
+    const newsArts = (news?.articles || []).slice(0, 10);
+    reportText.push(...newsArts.map((x) => x.title));
+    const legal = target.legal || 'unknown';
+    const secLv = sec ? securityLevel(sec, lat, lon, reportText, legal, parcel) : null;
+    const lvCls = !secLv ? '' : /Very high|High/.test(secLv.level) ? 'warn' : /Low/.test(secLv.level) ? 'good' : '';
+
+    const nameQ = [...oldNames, nm].filter(Boolean)[0];
+    const what = nameQ ? `"${nameQ}"` : street ? `"${street}"` : `${lat.toFixed(4)},${lon.toFixed(4)}`;
     const place = [town, a.state].filter(Boolean).join(' ');
     const g = (q) => `https://www.google.com/search?q=${encodeURIComponent(q)}`;
     const link = (href, text) => `<a class="btn" href="${href}" target="_blank" rel="noopener">${text}</a>`;
     box.innerHTML = `
-      <p class="badge warn" style="display:block;margin:6px 0;line-height:1.4">🔒 Treat this as private property. Find the owner with <b>Owner (assessor)</b> below and ask permission before going in. Never force entry.</p>
-      ${address ? `<p style="margin:6px 0"><b>Address:</b> ${esc(address)}</p>` : ''}
-      <p style="margin:6px 0"><b>Map history</b> (what people mapped here, by date):</p>
-      ${timeline.length ? `<ul class="hist-list">${timeline.join('')}</ul>` : '<p class="muted" style="margin:0">No past names or uses recorded.</p>'}
-      ${pages.length ? `<p style="margin:6px 0"><b>Wikipedia nearby:</b></p>${pages.map((pg) => `<p style="margin:4px 0;font-size:12px"><a href="${esc(pg.fullurl)}" target="_blank" rel="noopener">${esc(pg.title)}</a>: ${esc((pg.extract || '').slice(0, 280))}</p>`).join('')}` : ''}
-      <p style="margin:8px 0 4px"><b>Dig deeper</b> (free searches, filled in for you):</p>
+      <div class="deep">
+      <h4>🛡 Security level: <span class="badge ${lvCls}">${secLv ? esc(secLv.level) : 'couldn\'t check (map servers busy)'}</span></h4>
+      ${secLv ? `<ul class="hist-list">${secLv.why.map((w) => `<li>⚠ ${esc(w)}</li>`).join('') || '<li>No cameras, fences, guards or risky neighbors found in the records.</li>'}${secLv.good.map((w) => `<li>ℹ ${esc(w)}</li>`).join('')}</ul>
+        <p class="muted" style="font-size:12px;margin:4px 0">Based on mapped cameras, fences, gates, nearby police, rail, power and military land, neighbors, and warning words in reports and news. Lots of cameras and alarms are never mapped, so <b>Low doesn't mean safe or legal</b>.</p>` : ''}
+
+      <h4>🏠 Address & owner</h4>
+      <p style="margin:4px 0">${address ? esc(address) : 'No street address found.'}</p>
+      ${parcel ? `<ul class="hist-list">${parcel.rows.map(([k, v]) => `<li><b>${esc(k)}:</b> ${esc(v)}</li>`).join('')}</ul>` : `<p class="muted" style="font-size:12px;margin:4px 0">Owner records aren't available here automatically. Use <b>Owner (assessor)</b> below. The county assessor lists the owner's name and mailing address, which is who to ask for permission.</p>`}
+
+      <h4>🗺 Map history</h4>
+      ${timeline.length ? `<ul class="hist-list">${timeline.join('')}</ul>` : '<p class="muted" style="margin:4px 0">No past names or uses recorded.</p>'}
+
+      <h4>📚 Wikipedia (scanned for security, closures, fires, demolition, sales)</h4>
+      ${wikiHits.length ? wikiHits.map(({ pg, hits }) => `<p style="margin:6px 0 2px"><a href="${esc(pg.fullurl)}" target="_blank" rel="noopener">${esc(pg.title)}</a></p>${hits.length ? `<ul class="hist-list">${hits.map((h) => `<li>${hl(h)}</li>`).join('')}</ul>` : '<p class="muted" style="font-size:12px;margin:0">Nothing about security or closure in this article.</p>'}`).join('') : '<p class="muted" style="margin:4px 0">No Wikipedia articles here.</p>'}
+
+      <h4>📰 Recent news (last few months)</h4>
+      ${newsArts.length ? `<ul class="hist-list">${newsArts.map((x) => `<li>${esc((x.seendate || '').slice(0, 8).replace(/(\d{4})(\d\d)(\d\d)/, '$1-$2-$3'))} · <a href="${esc(x.url)}" target="_blank" rel="noopener">${hl(x.title || '')}</a> <span class="muted">${esc(x.domain || '')}</span></li>`).join('')}</ul>` : `<p class="muted" style="margin:4px 0">${newsQ ? 'No recent news found.' : 'No name or address to search news for.'}</p>`}
+
+      <h4>🔎 Dig deeper (searches filled in for you)</h4>
       <div class="row">
         ${link(g(`${what} ${place} history`), 'History')}
-        ${link(`https://www.google.com/search?tbm=nws&q=${encodeURIComponent(`${what} ${place} closed OR vacant OR abandoned OR fire`)}`, 'News: closed / vacant')}
-        ${link(g(`${what} ${place} abandoned OR urbex`), 'Urbex posts')}
+        ${link(`https://www.google.com/search?tbm=nws&q=${encodeURIComponent(`${what} ${place} security OR trespassing OR arrested OR police`)}`, 'News: security / arrests')}
+        ${link(`https://www.google.com/search?tbm=nws&q=${encodeURIComponent(`${what} ${place} closed OR vacant OR fire OR demolition`)}`, 'News: closed / fire / demolition')}
+        ${link(g(`${what} ${place} abandoned OR urbex OR explore`), 'Urbex posts')}
+        ${link(`https://www.reddit.com/search/?q=${encodeURIComponent(`${nameQ || street} ${town}`.trim())}`, 'Reddit')}
         ${link(`https://www.youtube.com/results?search_query=${encodeURIComponent(`${what} ${place} abandoned`)}`, 'YouTube')}
         ${link(g(`${street || what} ${place} county assessor property owner`), 'Owner (assessor)')}
-        ${link(g(`${what} ${place} for sale OR lease loopnet`), 'For sale / lease')}
-        ${link(`https://www.google.com/search?tbm=isch&q=${encodeURIComponent(`${what} ${place}`)}`, 'Old photos')}
+        ${link(g(`${what} ${place} for sale OR lease loopnet OR crexi`), 'For sale / lease')}
+        ${link(g(`${what} ${place} permit OR "code enforcement" OR violation OR "city council"`), 'Permits & city records')}
+        ${link(`https://www.loc.gov/collections/chronicling-america/?q=${encodeURIComponent(`${nameQ || street} ${town}`.trim())}`, 'Old newspapers')}
+        ${link(`https://www.google.com/search?tbm=isch&q=${encodeURIComponent(`${what} ${place}`)}`, 'Photos')}
+      </div>
+      <p class="badge warn" style="display:block;margin:10px 0 0;line-height:1.4">🔒 Only go in with the owner's permission or on public land that's open to visitors. Never force a door, window, board or fence: that can turn trespassing into burglary or criminal-mischief charges.</p>
       </div>`;
   }
 
