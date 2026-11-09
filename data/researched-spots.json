@@ -3448,6 +3448,207 @@
     "https://www.uncovercolorado.com/ghost-towns/ohio-city",
     "https://www.allcrestedbutte.com/history_museums/ohio_city_colorado_ghost_town.php"
    ]
+  },
+  {
+   "id": "former-schmitt-elementary-school",
+   "name": "Former Schmitt Elementary School",
+   "cat": "institutional",
+   "type": "school",
+   "lat": 39.68279,
+   "lon": -105.01229,
+   "approx": false,
+   "location": "1820 S. Vallejo St., Denver",
+   "condition": "Closed in spring 2025 because enrollment fell. In 2026 it was still one of several vacant DPS buildings with no assigned use. DPS asked for reuse proposals in early 2026 (due March 2026), and Rocky Mountain Prep asked to put a campus there. No final decision had been reported as of spring 2026.",
+   "access": "Owned by Denver Public Schools; vacant district property",
+   "sources": [
+    "https://www.chalkbeat.org/colorado/2026/04/16/denver-school-board-brings-back-proposed-policy-for-reusing-empty-buildings/",
+    "https://denverite.com/2026/04/16/dps-proposed-empty-school-buildings-policy/",
+    "https://www.chalkbeat.org/colorado/2026/03/03/how-denver-might-repurpose-closed-school-buildings/"
+   ]
+  },
+  {
+   "id": "former-columbian-elementary-school",
+   "name": "Former Columbian Elementary School",
+   "cat": "institutional",
+   "type": "school",
+   "lat": 39.67962,
+   "lon": -104.94,
+   "approx": true,
+   "location": "2925 W. 40th Ave., Denver, CO 80211 (Sunnyside, northwest Denver; near 41st Ave. and Federal Blvd.)",
+   "condition": "Permanently closed in spring 2025 (38% utilization). It was one of five standalone DPS buildings left vacant in summer 2025. As of March 2026, DPS had issued a request for proposals and wanted it to become an infant and toddler child care center. Rocky Mountain Prep also asked for it. No final reuse had been reported in 2026.",
+   "access": "Owned by Denver Public Schools; vacant district property",
+   "sources": [
+    "https://www.cpr.org/2026/03/03/school-closures-denver-child-care-community-center/",
+    "https://www.chalkbeat.org/colorado/2026/03/03/how-denver-might-repurpose-closed-school-buildings/",
+    "https://dpsk12.org/page/columbian-elementary-school"
+   ]
+  },
+  {
+   "id": "former-moore-middle-school",
+   "name": "Former Moore Middle School",
+   "cat": "institutional",
+   "type": "school",
+   "lat": 39.88418,
+   "lon": -105.14707,
+   "approx": true,
+   "location": "8455 W. 88th Ave., Westminster (about 13 acres)",
+   "condition": "Opened in 1980 and closed in 2024 when it merged with Pomona High. In 2025 it was one of 13 closed Jeffco schools still unsold, at about $150,000 a year in upkeep each. The city of Westminster sent Jeffco a nonbinding letter of intent to buy it. The city says the building is at the end of its useful life and contains asbestos and mercury, and that any public use would start with demolition, possibly for a fire station.",
+   "access": "Owned by Jeffco Public Schools; city of Westminster in purchase talks",
+   "sources": [
+    "https://our.westminsterco.gov/mooreproperty",
+    "https://www.westminsterwindow.com/news/article_43bb90ef-3161-4b5e-8046-db8de4abb665.html",
+    "https://www.cbsnews.com/amp/colorado/news/ideas-emerge-closed-jefferson-county-school-westminster"
+   ]
+  },
+  {
+   "id": "barth-hotel",
+   "name": "Barth Hotel",
+   "cat": "leisure",
+   "type": "hotel",
+   "lat": 39.75156,
+   "lon": -104.99839,
+   "approx": false,
+   "location": "1514 17th St., Denver (LoDo)",
+   "condition": "A 142-year-old landmark, built as a warehouse and turned into a hotel in the 1880s. It ran as assisted living for more than 40 years until Senior Housing Options moved all residents out by January 2025. It has sat vacant and listed for $2.5M since; BusinessDen calls it 'derelict.' In January 2026 the Downtown Development Authority granted $6M toward a senior housing conversion. Eaton Senior Communities was under contract with a year-end 2026 deadline to buy. No reports said renovation had started.",
+   "access": "Owned by Senior Housing Options (sale pending to Eaton Senior Communities / Urban Ventures)",
+   "sources": [
+    "https://businessden.com/lodo-landmark-barth-hotel-now-vacant-listed-for-2-5m/",
+    "https://businessden.com/nonprofit-has-11-months-to-buy-derelict-lodo-hotel/",
+    "https://denverite.com/2026/01/28/barth-hotel-affordable-housing-loan/"
+   ]
+  },
+  {
+   "id": "former-kullerstrand-elementary-school",
+   "name": "Former Kullerstrand Elementary School",
+   "cat": "institutional",
+   "type": "school",
+   "lat": 39.76903,
+   "lon": -105.13619,
+   "approx": false,
+   "location": "12225 W. 38th Ave., Wheat Ridge",
+   "condition": "Closed in May 2023. Wheat Ridge described it as a vacant Jeffco-owned school when it sought redevelopment or reuse partners. In 2025-26 it was still waiting for the city to pick a buyer. The closure is older than 24 months, but recent reports still describe it as vacant.",
+   "access": "Owned by Jeffco Public Schools; city of Wheat Ridge has first right to buy",
+   "sources": [
+    "https://projects.constructconnect.com/details/7492187-rfp-redevelopment-and-or-reuse-partner-for-vacant-wheat-ridge-elementary-schools&find_loc=colorado-80033",
+    "https://www.jeffcopublicschools.org/services/facilities/property-disposition"
+   ]
+  },
+  {
+   "id": "former-wilmore-davis-elementary-school",
+   "name": "Former Wilmore Davis Elementary School",
+   "cat": "institutional",
+   "type": "school",
+   "lat": 39.77356,
+   "lon": -105.08538,
+   "approx": false,
+   "location": "7975 W. 41st Ave., Wheat Ridge",
+   "condition": "Closed in May 2023 and still a vacant Jeffco property in recent reports. Wheat Ridge's council chose Spectra Centers, a school for children with disabilities, as its preferred buyer on June 22. The Jeffco board still has the final vote on the sale, so this one may get a new use soon. The closure is older than 24 months.",
+   "access": "Owned by Jeffco Public Schools; sale to Spectra Centers pending",
+   "sources": [
+    "https://projects.constructconnect.com/details/7492187-rfp-redevelopment-and-or-reuse-partner-for-vacant-wheat-ridge-elementary-schools&find_loc=colorado-80033",
+    "https://www.jeffcopublicschools.org/services/facilities/property-disposition"
+   ]
+  },
+  {
+   "id": "former-mission-foods-tortilla-plant-originally-candy-s-torti",
+   "name": "Former Mission Foods tortilla plant (originally Candy's Tortilla Factory)",
+   "cat": "industrial",
+   "type": "factory",
+   "lat": 38.264,
+   "lon": -104.61419,
+   "approx": true,
+   "location": "2110 Santa Fe Drive (South Santa Fe Dr.), Pueblo",
+   "condition": "Production stopped without warning on Aug. 14, 2026, and workers were told to pack up and leave. The plant was set to close permanently on Oct. 13, 2026, with about 90 layoffs. Mission said it would keep only its distribution centers in Pueblo and Denver. Sources give no reuse or sale. Newest info: 2026.",
+   "access": "Owned by Mission Foods (Gruma); private industrial site. Unknown.",
+   "sources": [
+    "https://www.koaa.com/news/local-news/mission-foods-plant-in-pueblo-closing-affecting-90-employees",
+    "https://www.denvergazette.com/2026/08/18/mission-foods-tortilla-factory-in-pueblo-shutting-down-90-people-laid-off/",
+    "https://www.kktv.com/2026/08/18/mission-foods-close-pueblo-plant-cutting-90-jobs/"
+   ]
+  },
+  {
+   "id": "former-royal-gorge-dinosaur-experience",
+   "name": "Former Royal Gorge Dinosaur Experience",
+   "cat": "other",
+   "type": "site",
+   "lat": 38.44225,
+   "lon": -105.23718,
+   "approx": true,
+   "location": "W. US Highway 50 west of Ca\u00f1on City, near Royal Gorge; a LoopNet listing gives 44899 W US Hwy 50, Ca\u00f1on City area, Fremont County",
+   "condition": "The roadside dinosaur attraction closed permanently on Dec. 31, 2025, after almost 10 years. Its 35.9-acre property was listed for sale (about $2.9M, later cut to about $2.25M; listing updated July 2026). In April 2026 the Colorado Gator Farm said it hoped to buy it and close by August 2026, but I found no report that the sale went through. Newest info: 2026.",
+   "access": "Private, listed for sale; possible buyer is Colorado Gator Farm. Unknown.",
+   "sources": [
+    "https://www.denvergazette.com/2026/04/16/colorado-gator-rescue-seeks-3-1-million-for-jurassic-expansion-in-another-town/",
+    "https://www.yahoo.com/news/articles/royal-gorge-dinosaur-experience-shutting-033334657.html",
+    "https://www.commercialcafe.com/commercial-property/us/co/canon-city/royal-gorge-dinosaur-experience/"
+   ]
+  },
+  {
+   "id": "former-aspen-house-assisted-living-memory-care-campus",
+   "name": "Former Aspen House assisted living / memory care campus",
+   "cat": "institutional",
+   "type": "hospital",
+   "lat": 40.39776,
+   "lon": -105.07728,
+   "approx": true,
+   "location": "2212 E. 11th St. (Aspen House II next door at 2224 E. 11th St.), Loveland 80537",
+   "condition": "A LoopNet listing (market date Feb. 5, 2026) calls the 27,433 sq ft, 40-unit assisted living campus 'currently vacant and unlicensed' and offers it at $4.7M to a buyer who might reopen it for behavioral health. A user review says the operator closed the doors. The closure date is not documented. Newest info: 2026.",
+   "access": "Private, for sale. Unknown.",
+   "sources": [
+    "https://www.loopnet.com/Listing/2212-E-11th-St-Loveland-CO/39341454",
+    "https://www.loopnet.ca/Listing/2212-E-11th-St-Loveland-CO/39341454/"
+   ]
+  },
+  {
+   "id": "scenic-elementary-school-former",
+   "name": "Scenic Elementary School (former)",
+   "cat": "institutional",
+   "type": "school",
+   "lat": 39.07186,
+   "lon": -108.61073,
+   "approx": false,
+   "location": "451 West Scenic Drive, Grand Junction (Redlands area)",
+   "condition": "The D51 board voted 5-0 in Nov 2024 to close it, citing declining enrollment and poor building condition. It held a last-day celebration and closed for good in May 2025. CDE lists it as closed. The district said closed properties would be assessed and sold if they have no future use. No 2025-26 report of a sale, reuse or demolition was found, so current status is unconfirmed. Newest info: 2025.",
+   "access": "Owned by Mesa County Valley School District 51; possible future sale. Assume no public access.",
+   "sources": [
+    "https://www.yahoo.com/news/scenic-elementary-celebrates-last-day-003956687.html",
+    "https://www.kjct8.com/2024/11/23/scenic-clifton-elementary-close/",
+    "https://www.rmpbs.org/news/education/d51-school-closures-colorado"
+   ]
+  },
+  {
+   "id": "clifton-elementary-school-former",
+   "name": "Clifton Elementary School (former)",
+   "cat": "institutional",
+   "type": "school",
+   "lat": 39.09302,
+   "lon": -108.44509,
+   "approx": false,
+   "location": "Clifton Elementary campus, Clifton (east Grand Valley); exact address not given in sources",
+   "condition": "Closed at the end of the 2024-25 school year after a 5-0 board vote in Nov 2024. The district cited poor condition: about $14 million needed to bring it back into shape. Its pre-K moved to the converted Nisley Elementary. The district said surplus schools would be sold if they have no use. No report of a sale or new use was found. Newest info: 2025.",
+   "access": "Owned by Mesa County Valley School District 51. Assume no public access.",
+   "sources": [
+    "https://www.kjct8.com/2024/11/23/scenic-clifton-elementary-close/",
+    "https://www.kjct8.com/2025/02/08/district-51-hopes-converting-nisley-elementary-will-honor-schools-legacy/",
+    "https://www.rmpbs.org/news/education/d51-school-closures-colorado"
+   ]
+  },
+  {
+   "id": "west-springs-hospital-former-mind-springs-health-psychiatric",
+   "name": "West Springs Hospital (former Mind Springs Health psychiatric hospital)",
+   "cat": "institutional",
+   "type": "hospital",
+   "lat": 39.07847,
+   "lon": -108.52167,
+   "approx": false,
+   "location": "West Springs Hospital campus, Grand Junction (Mind Springs Health); exact address not given in sources",
+   "condition": "This 48-bed psychiatric hospital, the only one between Salt Lake and Denver, closed permanently on March 10, 2025, with 187 layoffs. The board said it was evaluating other healthcare uses for the community-funded building. A Feb 2025 report said Larkin Health was considering an ICE detainee contract for the empty beds, but no later confirmation was found either way. No reuse was found in 2025-26 searches. Newest info: 2025.",
+   "access": "Owned by Mind Springs Health, which says it is committed to maintaining the building. Assume private with no access.",
+   "sources": [
+    "https://www.cpr.org/2025/02/24/west-springs-psychiatric-hospital-in-grand-junction-closing/",
+    "https://www.kkco11news.com/2025/02/24/west-springs-only-psychiatric-hospital-between-salt-lake-denver-will-close-permanently",
+    "https://www.ksjd.org/2025-02-26/grand-junction-hospital-to-close-reducing-mental-healthcare-capacity-on-western-slope"
+   ]
   }
  ]
 }
