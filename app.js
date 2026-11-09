@@ -416,7 +416,7 @@ out center tags ${MAX_RESULTS * 3};`;
       status: 'abandoned', conf: 'high', label: `Abandoned ${x.type}`, name: x.name, hasName: true,
       tags: { location: x.location, 'reported condition': x.condition, access: x.access,
         ...(x.approx ? { 'map position': 'approximate (from the description in the sources)' } : {}) },
-      aiSources: x.sources, researched: researchData.researched,
+      aiSources: x.sources, researched: researchData.researched, verify: x.verify,
     })).filter((p) => p.dist <= r);
   }
 
@@ -799,8 +799,8 @@ out center tags ${MAX_RESULTS * 3};`;
     if (/demolish|torn down|razed|redevelop|reopen/.test(c)) s -= 40;
     return s;
   }
-  const isGone = (p) => p.check?.status === 'demolished';
-  const isReused = (p) => p.check?.status === 'reused';
+  const isGone = (p) => p.check?.status === 'demolished' || p.verify?.status === 'demolished';
+  const isReused = (p) => p.check?.status === 'reused' || /reopen|redevelop|construction/.test(p.verify?.status || '');
 
   // ---------- Rendering ----------
   function render() {
@@ -845,7 +845,10 @@ out center tags ${MAX_RESULTS * 3};`;
       && (leadsOn || confOf(p) !== 'low')
       && (!state.legalOnly || legalOf(p) === 'public')
       && (!q || `${p.name} ${p.label} ${p.tags?.description || ''} ${p.tags?.commodities || ''} ${p.tags?.['instance of'] || ''} ${p.tags?.type || ''}`.toLowerCase().includes(q)));
-    shown = state.sort === 'best'
+    const safeOf = (p) => ({ public: 0, unknown: 2, private: 3 }[legalOf(p)] + ({ low: 0, medium: 1, high: 3 }[p.verify?.security] ?? 1)) * 1000 - scoreOf(p);
+    shown = state.sort === 'safe'
+      ? shown.map((p) => [safeOf(p), p]).sort((a, b) => a[0] - b[0]).map((x) => x[1])
+      : state.sort === 'best'
       ? shown.map((p) => [scoreOf(p), p]).sort((a, b) => b[0] - a[0]).map((x) => x[1])
       : shown.sort((a, b) => a.dist - b.dist);
     const top = new Set(state.sort === 'best' ? shown.filter((p) => confOf(p) !== 'low' && !isGone(p) && !isReused(p)).slice(0, 5).map((p) => p.id) : []);
@@ -860,7 +863,7 @@ out center tags ${MAX_RESULTS * 3};`;
       li.innerHTML = `<span class="dot" style="background:${color}"></span>
         <span class="name">${state.saved[p.id] ? '★ ' : ''}${esc(p.name)}</span>
         <span class="dist">${fmtDist(p.dist)}</span>
-        <span class="sub">${top.has(p.id) ? '<b class="top">⭐ Top pick</b> · ' : ''}${p.source === 'research' ? '📰 ' : ''}<span class="conf conf-${confOf(p)}">${CONF_INFO[confOf(p)].label}</span> · ${p.source === 'ai' ? '✨ ' : ''}${esc(p.hasName ? p.label : CATEGORIES[p.cat].label)}${accessWarning(p.tags) ? ' · ⚠ private' : ''}${p.check && STATUS_INFO[p.check.status] ? ` · ${STATUS_INFO[p.check.status].icon} ${STATUS_INFO[p.check.status].badge}` : ''}</span>`;
+        <span class="sub">${top.has(p.id) ? '<b class="top">⭐ Top pick</b> · ' : ''}${p.source === 'research' ? '📰 ' : ''}<span class="conf conf-${confOf(p)}">${CONF_INFO[confOf(p)].label}</span> · ${p.source === 'ai' ? '✨ ' : ''}${esc(p.hasName ? p.label : CATEGORIES[p.cat].label)}${accessWarning(p.tags) ? ' · ⚠ private' : ''}${legalOf(p) === 'public' ? ' · 🟢 legal' : ''}${p.verify?.security === 'high' ? ' · 🛡 high security' : p.verify?.security === 'medium' ? ' · 🛡 medium security' : ''}${p.check && STATUS_INFO[p.check.status] ? ` · ${STATUS_INFO[p.check.status].icon} ${STATUS_INFO[p.check.status].badge}` : ''}</span>`;
       li.onclick = () => openDetail(p);
       resultsEl.appendChild(li);
 
@@ -875,6 +878,8 @@ out center tags ${MAX_RESULTS * 3};`;
   // Is this a place you can legally walk into? Based on the reported access/ownership.
   function legalOf(p) {
     const a = `${p.tags?.access || ''}`;
+    if (p.verify?.legal === 'public') return 'public';
+    if (/private|government/.test(p.verify?.legal || '')) return 'private';
     if (/^(private|no|military)$/.test(a)) return 'private';
     if (/legal to visit/i.test(a)) return 'public';
     if (/(public land|national forest|\bBLM\b|open space|state park|public trail|interpretive trail|national monument|national park|forest service|\bUSFS\b|hiking trail)/i.test(a)
@@ -887,6 +892,13 @@ out center tags ${MAX_RESULTS * 3};`;
     private: '<span class="badge warn">🔒 Private: get the owner\'s permission first</span>',
     unknown: '<span class="badge">❔ Access unknown: treat it as private</span>',
   };
+  const SEC_BADGE = { high: ['warn', '🛡 Security: HIGH'], medium: ['', '🛡 Security: medium'], low: ['good', '🛡 Security: low'] };
+  function verifyBadge(p) {
+    const v = p.verify;
+    if (!v || !SEC_BADGE[v.security]) return '';
+    const [cls, text] = SEC_BADGE[v.security];
+    return `<span class="badge ${cls}" title="${esc(v.security_notes || '')}">${text}${v.as_of ? ` (${esc(v.as_of)})` : ''}</span>`;
+  }
   function accessWarning(t) {
     return /^(private|no|military)$/.test(t.access || '') ? (t.access) : null;
   }
@@ -928,6 +940,7 @@ out center tags ${MAX_RESULTS * 3};`;
       <div class="badges">
         <span class="badge" style="border-color:${cat.color};color:${cat.color}">${cat.label}</span>
         ${LEGAL_BADGE[legalOf(p)]}
+        ${verifyBadge(p)}
         ${t.start_date ? `<span class="badge">Built ${esc(t.start_date)}</span>` : ''}
         ${t.end_date || t['end_date'] ? `<span class="badge">Closed ${esc(t.end_date)}</span>` : ''}
         ${t.heritage || t['heritage:operator'] ? '<span class="badge good">Heritage listed</span>' : ''}
@@ -942,6 +955,7 @@ out center tags ${MAX_RESULTS * 3};`;
 
       <h3>Stay legal</h3>
       <ul class="legal-list">
+        ${p.verify?.security_notes ? `<li><b>Security reports${p.verify.as_of ? ` (${esc(p.verify.as_of)})` : ''}:</b> ${esc(p.verify.security_notes)}${(p.verify.sources || []).slice(0, 3).map((u, i) => ` <a href="${esc(u)}" target="_blank" rel="noopener">[${i + 1}]</a>`).join('')}</li>` : ''}
         ${t.access ? `<li><b>Reported access:</b> ${esc(t.access)}</li>` : ''}
         <li>Go in only with the owner's permission, or on public land that's open to visitors. <a href="https://www.google.com/search?q=${encodeURIComponent(`${p.lat.toFixed(5)},${p.lon.toFixed(5)} county assessor parcel owner`)}" target="_blank" rel="noopener">Find the owner</a> and ask.</li>
         <li>Never force your way in. Breaking a lock, window, board or fence can turn trespassing into burglary or criminal-mischief charges.</li>
@@ -2111,7 +2125,7 @@ Give lat and lon only when a source states them or you are confident; otherwise 
   const listTools = document.createElement('div');
   listTools.className = 'list-tools';
   listTools.innerHTML = `<input id="listQuery" type="search" placeholder="Filter results: hospital, mall, school, a name…">
-    <select id="listSort" title="Sort results"><option value="best">Best spots first</option><option value="near">Nearest first</option></select>`;
+    <select id="listSort" title="Sort results"><option value="best">Best spots first</option><option value="near">Nearest first</option><option value="safe">Safest &amp; legal first</option></select>`;
   filtersEl.after(listTools);
   listTools.querySelector('#listQuery').addEventListener('input', (e) => { state.query = e.target.value; render(); });
   listTools.querySelector('#listSort').addEventListener('change', (e) => { state.sort = e.target.value === 'best' ? 'best' : 'near'; render(); });
