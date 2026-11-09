@@ -1115,7 +1115,50 @@ out center tags ${MAX_RESULTS * 3};`;
       };
       $('savedList').appendChild(li);
     });
+    renderTrip(list);
     savedEl.hidden = false;
+  }
+
+  // ---------- 🗺 Trip planner: route through saved spots + a before-you-go checklist ----------
+  function renderTrip(list) {
+    let box = $('tripBox');
+    if (!box) {
+      box = document.createElement('div'); box.id = 'tripBox';
+      $('savedList').before(box);
+    }
+    if (list.length < 1) { box.innerHTML = ''; return; }
+    box.innerHTML = `<details class="scout" style="margin-top:12px"><summary>🗺 Plan a trip to your saved spots</summary>
+      <p class="muted" style="font-size:12px;margin:6px 0">Tick the spots to visit. The route starts from your search center and visits the nearest spot next each time (up to 9 stops).</p>
+      <ul class="trip-pick">${list.map((x) => `<li><label><input type="checkbox" value="${esc(x.id)}" checked> ${esc(x.name)}</label></li>`).join('')}</ul>
+      <div class="row"><button class="btn accent" id="tripGo">Open route in Google Maps</button></div>
+      <div id="tripOut"></div>
+      <h3>Before you go</h3>
+      <ul class="legal-list">
+        <li>Run <b>🔍 Deep check</b> on each spot. Skip anything with <b>High</b> security, and get the owner's OK for private places.</li>
+        <li>Go with at least one friend and tell someone at home where you're going and when you'll be back.</li>
+        <li>Bring a charged phone, a flashlight, water, sturdy shoes and gloves. Bring a dust mask too: old buildings often have asbestos, mold and bird droppings.</li>
+        <li>Check trail closures, fire restrictions and the weather for mountain spots, and go in daylight.</li>
+        <li>Never go into mine shafts, tunnels or silos, and stay off upper floors and roofs: rotten floors and hidden shafts injure explorers every year.</li>
+        <li>If an owner or police show up, stay calm, be polite, and leave when asked.</li>
+      </ul></details>`;
+    $('tripGo').onclick = () => {
+      const ids = new Set([...box.querySelectorAll('.trip-pick input:checked')].map((i) => i.value));
+      const pts = list.filter((x) => ids.has(x.id));
+      if (!pts.length) { $('tripOut').innerHTML = '<p class="muted">Tick at least one spot.</p>'; return; }
+      const start = state.center || { lat: pts[0].lat, lon: pts[0].lon };
+      const order = []; let cur = start; const left = [...pts];
+      while (left.length && order.length < 10) {
+        left.sort((a, b) => haversine(cur.lat, cur.lon, a.lat, a.lon) - haversine(cur.lat, cur.lon, b.lat, b.lon));
+        cur = left.shift(); order.push(cur);
+      }
+      let km = 0, prev = start;
+      for (const x of order) { km += haversine(prev.lat, prev.lon, x.lat, x.lon) / 1000; prev = x; }
+      const dest = order[order.length - 1], way = order.slice(0, -1);
+      const url = `https://www.google.com/maps/dir/?api=1&origin=${start.lat},${start.lon}&destination=${dest.lat},${dest.lon}`
+        + (way.length ? `&waypoints=${encodeURIComponent(way.map((x) => `${x.lat},${x.lon}`).join('|'))}` : '') + '&travelmode=driving';
+      $('tripOut').innerHTML = `<p style="margin:8px 0">Order: ${order.map((x, i) => `${i + 1}. ${esc(x.name)}`).join(' → ')}<br><span class="muted">About ${Math.round(km * 1.3)} km of driving (rough estimate).</span>${left.length ? `<br><span class="muted">${left.length} more didn't fit (Google allows 9 stops).</span>` : ''}</p>`;
+      window.open(url, '_blank', 'noopener');
+    };
   }
   function exportKml() {
     const list = Object.values(state.saved);

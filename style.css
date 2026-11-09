@@ -135,3 +135,5 @@ textarea {
 .deep h4 { margin: 12px 0 4px; font-size: 13px; }
 .deep h4:first-child { margin-top: 2px; }
 .deep mark { background: rgba(224,162,58,.3); color: inherit; padding: 0 1px; border-radius: 2px; }
+.trip-pick { list-style: none; padding: 0; margin: 6px 0; max-height: 200px; overflow-y: auto; }
+.trip-pick li { padding: 3px 0; font-size: 13px; }
