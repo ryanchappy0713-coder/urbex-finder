@@ -123,7 +123,19 @@
    "access": "Private; the townsite road was still reachable in 2023 (4WD).",
    "sources": [
     "https://www.aspentimes.com/news/group-racing-to-raise-10m-to-preserve-iconic-crystal-mill-before-potential-sale/"
-   ]
+   ],
+   "verify": {
+    "status": "standing",
+    "security": "medium",
+    "security_notes": "2023: owner Chris Cox closed the riverbank trail, put up ropes and 'No Trespassing' signs, and covered the trail with logs. The general store and the $10 trailhead fee also ended. No 2025-26 changes found.",
+    "legal": "private",
+    "as_of": "2023",
+    "sources": [
+     "https://coloradosun.com/2023/07/06/crystal-mill-closes-visitor-trail-marble-colorado/",
+     "https://www.territorysupply.com/how-to-visit-crystal-mill"
+    ],
+    "checked": "2026-11-09"
+   }
   },
   {
    "id": "marble-ski-area-lodge-skeleton",
@@ -138,7 +150,18 @@
    "access": "Private; owner permission only.",
    "sources": [
     "https://soprissun.com/have-you-seen-the-ghost-of-marble-past/"
-   ]
+   ],
+   "verify": {
+    "status": "unknown",
+    "security": "unknown",
+    "security_notes": "Sources say the lodge is entirely on private property and can only be reached with the owner's permission. Colorado Ski History says 'no trespassing'. No dates were given and no recent status was found.",
+    "legal": "private",
+    "sources": [
+     "https://soprissun.com/have-you-seen-the-ghost-of-marble-past/",
+     "https://coloradoskihistory.com/lost/marble.html"
+    ],
+    "checked": "2026-11-09"
+   }
   },
   {
    "id": "geneva-basin-ski-area",
@@ -208,7 +231,19 @@
    "access": "BLM land. Legal to visit.",
    "sources": [
     "https://en.wikipedia.org/wiki/Animas_Forks,_Colorado"
-   ]
+   ],
+   "verify": {
+    "status": "standing",
+    "security": "low",
+    "security_notes": "2025: a travel article says BLM stabilized the buildings and they are free and open for the public to explore. Some buildings are fragile. Best season is May to October.",
+    "legal": "public",
+    "as_of": "2025",
+    "sources": [
+     "https://www.blm.gov/visit/animas-forks",
+     "https://en.wikipedia.org/wiki/Animas_Forks,_Colorado"
+    ],
+    "checked": "2026-11-09"
+   }
   },
   {
    "id": "gold-prince-mill-ruins",
@@ -223,7 +258,18 @@
    "access": "BLM. Legal to visit.",
    "sources": [
     "https://www.legendsofamerica.com/animas-forks-colorado/"
-   ]
+   ],
+   "verify": {
+    "status": "standing",
+    "security": "low",
+    "security_notes": "The steel-frame skeleton of the mill and the boarding-house foundation remain at the Animas Forks site. No barriers were reported. Dates not given.",
+    "legal": "public",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Animas_Forks,_Colorado",
+     "https://sah-archipedia.org/node/9576"
+    ],
+    "checked": "2026-11-09"
+   }
   },
   {
    "id": "sound-democrat-mill",
@@ -238,7 +284,18 @@
    "access": "BLM land, 4WD. Legal to visit.",
    "sources": [
     "https://www.durangotelegraph.com/news/top-stories/safe-and-sound/"
-   ]
+   ],
+   "verify": {
+    "status": "standing",
+    "security": "low",
+    "security_notes": "Donated to BLM in 1991. BLM ran volunteer stabilization in the mid-1990s and it is described as restored for visitors to tour. Reached by 4WD road. No current closure info found.",
+    "legal": "public",
+    "sources": [
+     "https://www.durangotelegraph.com/news/top-stories/safe-and-sound/",
+     "https://www.onxmaps.com/offroad/trails/us/colorado/sound-democrat-mill-7861577dozlm"
+    ],
+    "checked": "2026-11-09"
+   }
   },
   {
    "id": "old-hundred-mine-boarding-house",
@@ -253,7 +310,18 @@
    "access": "No road, only a mule trail.",
    "sources": [
     "https://sanjuancountyhistoricalsociety.org/old-hundred-boarding-house.html"
-   ]
+   ],
+   "verify": {
+    "status": "standing",
+    "security": "unknown",
+    "security_notes": "Repaired by the San Juan County Historical Society and reported still standing as of 2023. On the National Register of Historic Places. There is no road and the last 200 vertical feet is a scramble over loose rock. Ownership not found.",
+    "legal": "unknown",
+    "as_of": "2023",
+    "sources": [
+     "https://sanjuancountyhistoricalsociety.org/old-hundred-boarding-house.html"
+    ],
+    "checked": "2026-11-09"
+   }
   },
   {
    "id": "yankee-girl-mine-headframe",
@@ -268,7 +336,20 @@
    "access": "Private; view from the US 550 pullout.",
    "sources": [
     "https://www.legendsofamerica.com/guston-colorado/"
-   ]
+   ],
+   "verify": {
+    "status": "standing",
+    "security": "medium",
+    "security_notes": "2006: sold to a Montrose couple who planned a conservation easement. The owners reportedly allow respectful visitors, but say not to climb on anything. Guides say to obey NO TRESPASSING signs on private land along the route.",
+    "legal": "private",
+    "as_of": "2006",
+    "sources": [
+     "https://www.ghosttowns.com/news/news43.html",
+     "https://en.wikipedia.org/wiki/Yankee_Headframe",
+     "https://www.legendsofamerica.com/guston-colorado/"
+    ],
+    "checked": "2026-11-09"
+   }
   },
   {
    "id": "national-bell-mine",
@@ -283,7 +364,19 @@
    "access": "Unknown.",
    "sources": [
     "https://www.westword.com/arts-culture/ten-most-amazing-abandoned-places-in-colorado-6921683/"
-   ]
+   ],
+   "verify": {
+    "status": "standing",
+    "security": "unknown",
+    "security_notes": "Legends of America (updated Nov 2025) lists the National Belle headframe among the remains. One undated visitor report says access to the mine was closed off. Land status not confirmed.",
+    "legal": "unknown",
+    "as_of": "2025",
+    "sources": [
+     "https://www.legendsofamerica.com/red-mountain-town-colorado/",
+     "https://gregdisch.com/2018/03/20/red-mountain-ghost-town/"
+    ],
+    "checked": "2026-11-09"
+   }
   },
   {
    "id": "ironton-ghost-town",
@@ -313,7 +406,20 @@
    "access": "Unknown.",
    "sources": [
     "https://www.visitouray.com/ghost-towns"
-   ]
+   ],
+   "verify": {
+    "status": "unknown",
+    "security": "unknown",
+    "security_notes": "Legends of America (updated Nov 2025) lists only the headframe, a leaning cabin, debris and foundations, and does not mention the jail. Older undated sources say the jail still stood. The Trust for Public Land conveyed Red Mountain mining claims to the Forest Service in 2005, but I did not confirm the townsite was among them.",
+    "legal": "unknown",
+    "as_of": "2025",
+    "sources": [
+     "https://www.legendsofamerica.com/red-mountain-town-colorado/",
+     "https://www.uncovercolorado.com/ghost-towns/red-mountain-town",
+     "https://tpl.org/media-room/662-acres-protected-red-mountain-co"
+    ],
+    "checked": "2026-11-09"
+   }
   },
   {
    "id": "atlas-mill-ruins",
@@ -328,7 +434,20 @@
    "access": "National forest; Camp Bird Road can close for rockfall.",
    "sources": [
     "https://www.ouraynews.com/2020/03/05/forest-service-eyes-atlas-mill-cleanup"
-   ]
+   ],
+   "verify": {
+    "status": "unknown",
+    "security": "high",
+    "security_notes": "Feb 2025: after a rockfall, Ouray County closed Camp Bird Road (CR 361) indefinitely to both foot and vehicle traffic under an emergency disaster order. No 2026 reopening was found. 'High' reflects that legal closure order, not guards or cameras.",
+    "legal": "unknown",
+    "as_of": "2025",
+    "sources": [
+     "https://www.ouraynews.com/2025/02/28/rockfall-closes-camp-bird-road",
+     "https://www.kjct8.com/2025/02/27/rockslide-ouray-closes-camp-bird-rd",
+     "https://www.montrosepress.com/free_access/camp-bird-road-closed-due-to-life-threatening-conditions-after-rockfall/article_6b9a793c-f936-11ef-b80d-7fbbb273c56d.html"
+    ],
+    "checked": "2026-11-09"
+   }
   },
   {
    "id": "alta-ghost-town",
@@ -344,7 +463,19 @@
    "sources": [
     "https://www.coloradopreservation.org/endangered-place/alta-lakes",
     "https://en.wikipedia.org/wiki/Alta,_Colorado"
-   ]
+   ],
+   "verify": {
+    "status": "standing",
+    "security": "medium",
+    "security_notes": "The townsite is on private land. A 2012 visitor reported it had been bought and fenced off, and land below it is fenced and posted no trespassing. Owners were approved to build 28 homes (date not given). Sources warn of prosecution for trespassing.",
+    "legal": "private",
+    "as_of": "2012",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Alta,_Colorado",
+     "https://www.coloradopreservation.org/?p=2127"
+    ],
+    "checked": "2026-11-09"
+   }
   },
   {
    "id": "tomboy-ghost-town",
@@ -359,7 +490,18 @@
    "access": "High-clearance 4x4 or hike, summer only.",
    "sources": [
     "https://www.denver7.com/lifestyle/discover-colorado/colorado-ghost-towns-see-the-remnants-of-the-tomboy-mining-camp-near-telluride"
-   ]
+   ],
+   "verify": {
+    "status": "standing",
+    "security": "unknown",
+    "security_notes": "Undated guides say most of the ghost town is on private property and dangerous to explore. Visitors are told to respect property boundaries. Reached by high-clearance 4WD or hiking the Imogene Pass road.",
+    "legal": "private",
+    "sources": [
+     "https://www.uncovercolorado.com/activities/tomboy-ghost-town",
+     "https://telluride.com/activity/tomboy-ghost-town"
+    ],
+    "checked": "2026-11-09"
+   }
   },
   {
    "id": "capitol-city",
@@ -374,7 +516,18 @@
    "access": "Unknown.",
    "sources": [
     "https://westernmininghistory.com/towns/colorado/capitol_city"
-   ]
+   ],
+   "verify": {
+    "status": "standing",
+    "security": "unknown",
+    "security_notes": "The post office was stabilized in 1992 by the Hinsdale County Historical Society and BLM, and the smelter stack remains. Private homes and land surround the townsite, and sources say not to trespass on them.",
+    "legal": "unknown",
+    "sources": [
+     "https://www.legendsofamerica.com/capitol-city-colorado/",
+     "https://denver7.com/news/local-news/colorado-ghost-towns-their-past-present-and-future-in-the-rocky-mountains"
+    ],
+    "checked": "2026-11-09"
+   }
   },
   {
    "id": "bachelor-commodore-mine-complex",
@@ -389,7 +542,20 @@
    "access": "Visible from a public interpretive route; Superfund site.",
    "sources": [
     "https://historycolorado.org/node/57049"
-   ]
+   ],
+   "verify": {
+    "status": "standing",
+    "security": "unknown",
+    "security_notes": "Part of the Nelson Tunnel/Commodore Waste Rock Superfund site (listed 2008). EPA did repair work in fall 2021. Added to the National Register of Historic Places in July 2021. Colorado Preservation says ownership concerns leave the buildings in jeopardy.",
+    "legal": "unknown",
+    "as_of": "2021",
+    "sources": [
+     "https://response.epa.gov/commodorewasterockpile",
+     "https://www.coloradopreservation.org/?p=15985",
+     "https://historypointer.com/nris/resource/100006753"
+    ],
+    "checked": "2026-11-09"
+   }
   },
   {
    "id": "st-elmo-ghost-town",
@@ -513,7 +679,20 @@
    "access": "National forest, Aspen Historical Society. Legal to visit.",
    "sources": [
     "https://en.wikipedia.org/wiki/Ashcroft,_Colorado"
-   ]
+   ],
+   "verify": {
+    "status": "standing",
+    "security": "low",
+    "security_notes": "Run by the Aspen Historical Society and open year-round for self-guided visits. A docent is on site in summer, roughly Memorial Day to September (2026 article). Admission is on the honor system outside staffed hours. No dogs allowed.",
+    "legal": "public",
+    "as_of": "2026",
+    "sources": [
+     "https://aspenhistory.org/ashcroft-ghost-town/",
+     "https://aspenhistory.org/contact-us",
+     "https://www.mightytravels.com/2026/10/ashcroft-ghost-town-near-aspen-11-mile-drive-memorial-daysept-2026-visit-or-skip/index.md"
+    ],
+    "checked": "2026-11-09"
+   }
   },
   {
    "id": "interlaken-resort",
@@ -859,7 +1038,19 @@
    "sources": [
     "https://kool1079.com/ixp/510/p/colorado-abandoned-schoolhouse-aroya",
     "https://en.wikipedia.org/wiki/Aroya,_Colorado"
-   ]
+   ],
+   "verify": {
+    "status": "standing",
+    "security": "unknown",
+    "security_notes": "2019: roof rotted and partly caving in. A source says it is private property and warns visitors not to enter because trespassers risk prosecution.",
+    "legal": "private",
+    "as_of": "2019",
+    "sources": [
+     "https://kool1079.com/aroya-colorado-ghost-town/",
+     "https://lifedeathiron.com/2019/10/27/photo-blog-the-ghost-town-of-aroya-colorado-sprang-from-bohemian-immigrant-joseph-dostals-ranching-empire"
+    ],
+    "checked": "2026-11-09"
+   }
   },
   {
    "id": "last-chance-motel",
@@ -985,7 +1176,18 @@
    "sources": [
     "https://www.hppr.org/hppr-people-communities/2015-07-29/a-journey-around-colorados-ghost-towns",
     "https://en.wikipedia.org/wiki/Chivington,_Colorado"
-   ]
+   ],
+   "verify": {
+    "status": "standing",
+    "security": "unknown",
+    "security_notes": "2015: dilapidated schoolhouse still standing, and described as getting worse year by year. Ownership not found.",
+    "legal": "unknown",
+    "as_of": "2015",
+    "sources": [
+     "https://www.hppr.org/hppr-people-communities/2015-07-29/a-journey-around-colorados-ghost-towns"
+    ],
+    "checked": "2026-11-09"
+   }
   },
   {
    "id": "arlington-schoolhouse",
@@ -1000,7 +1202,18 @@
    "access": "Private; owner reportedly refused to sell.",
    "sources": [
     "https://kmax943.com/a-historic-schoolhouse-can-be-found-in-this-colorado-ghost-town/"
-   ]
+   ],
+   "verify": {
+    "status": "standing",
+    "security": "unknown",
+    "security_notes": "Blogs describe the two-story schoolhouse as visible from a distance. Arlington is a 'living ghost town' with residents. Ownership was not confirmed.",
+    "legal": "unknown",
+    "sources": [
+     "https://lifedeathiron.com/tag/arlington",
+     "https://kmax943.com/a-historic-schoolhouse-can-be-found-in-this-colorado-ghost-town/"
+    ],
+    "checked": "2026-11-09"
+   }
   },
   {
    "id": "galatea-townsite",
@@ -1473,7 +1686,19 @@
    "access": "Unknown, likely private.",
    "sources": [
     "https://kekbfm.com/dinosaur-colorado-wileys-resort-motel/"
-   ]
+   ],
+   "verify": {
+    "status": "standing",
+    "security": "unknown",
+    "security_notes": "2022 local radio articles describe it as vacant and very dilapidated, visible from Hwy 40; no security info found; ownership not found.",
+    "legal": "unknown",
+    "as_of": "2022",
+    "sources": [
+     "https://kekbfm.com/dinosaur-colorado-wileys-resort-motel/",
+     "https://94kix.com/can-you-believe-this-run-down-place-was-once-a-colorado-resort/"
+    ],
+    "checked": "2026-11-09"
+   }
   },
   {
    "id": "calamity-camp",
@@ -1489,7 +1714,19 @@
    "sources": [
     "https://historicorps.org/?p=29303",
     "https://blm.gov/visit/search-details/627/2"
-   ]
+   ],
+   "verify": {
+    "status": "standing",
+    "security": "low",
+    "security_notes": "BLM-managed public site, on the National Register since 2011; HistoriCorps stabilized two structures May-June 2024; BLM warns of residual radiation. No barriers reported.",
+    "legal": "public",
+    "as_of": "2024",
+    "sources": [
+     "https://www.blm.gov/visit/calamity-camp-mining-site",
+     "https://muleapi.blm.gov/sites/default/files/docs/2025-01/2024%20BLM%20Colorado%20Cultural%20Resource%20Program%20Highlights.pdf"
+    ],
+    "checked": "2026-11-09"
+   }
   },
   {
    "id": "summitville-ghost-town",
@@ -1519,7 +1756,19 @@
    "access": "National Park Service, closed building.",
    "sources": [
     "https://coloradopreservation.org/?p=15715"
-   ]
+   ],
+   "verify": {
+    "status": "standing",
+    "security": "unknown",
+    "security_notes": "Vacant and mothballed NPS building, named a Most Endangered Place in 2023; future undecided. No security details found.",
+    "legal": "government-owned (not open)",
+    "as_of": "2023",
+    "sources": [
+     "https://coloradopreservation.org/?p=15715",
+     "https://the-journal.com/?p=79893"
+    ],
+    "checked": "2026-11-09"
+   }
   },
   {
    "id": "la-morada-penitente-morada",
@@ -1534,7 +1783,19 @@
    "access": "Unknown; restoration planned.",
    "sources": [
     "https://www.alamosacitizen.com/la-morada-in-san-luis-added-to-most-endangered-places-list"
-   ]
+   ],
+   "verify": {
+    "status": "standing",
+    "security": "unknown",
+    "security_notes": "On the 2026 Most Endangered Places list; vacant 50+ years; privately owned (Ortega), who is getting CPI help to restore it as a community exhibit space.",
+    "legal": "private",
+    "as_of": "2026",
+    "sources": [
+     "https://www.alamosacitizen.com/la-morada-in-san-luis-added-to-most-endangered-places-list",
+     "https://www.coloradopreservation.org/?p=17971"
+    ],
+    "checked": "2026-11-09"
+   }
   },
   {
    "id": "m-m-truck-stop",
@@ -1549,7 +1810,19 @@
    "access": "Unknown.",
    "sources": [
     "https://fourcornersfreepress.com/derelicts/"
-   ]
+   ],
+   "verify": {
+    "status": "demolished",
+    "security": "unknown",
+    "security_notes": "Demolished in 2021 to make way for a Love's Travel Stop; construction later resumed (opening not confirmed).",
+    "legal": "private",
+    "as_of": "2021",
+    "sources": [
+     "https://www.the-journal.com/?p=23274",
+     "https://the-journal.com/?p=91981"
+    ],
+    "checked": "2026-11-09"
+   }
   },
   {
    "id": "cardiff-coke-ovens",
@@ -1564,7 +1837,19 @@
    "access": "Glenwood Springs Historical Society; National Register.",
    "sources": [
     "https://glenwoodhistory.com/projects/cardiff-the-coke-ovens"
-   ]
+   ],
+   "verify": {
+    "status": "standing",
+    "security": "unknown",
+    "security_notes": "About 50 surviving ovens owned by the Glenwood Springs Historical Society; Phase I stabilization funded 2022-2023 (included graffiti removal and signage). No info on fencing or patrols.",
+    "legal": "private",
+    "as_of": "2023",
+    "sources": [
+     "https://glenwoodhistory.com/projects/cardiff-the-coke-ovens",
+     "https://soprissun.com/phase-one-of-cardiff-coke-ovens-project-commences/"
+    ],
+    "checked": "2026-11-09"
+   }
   },
   {
    "id": "ludlow-ghost-town",
@@ -1580,7 +1865,18 @@
    "sources": [
     "https://www.placesthatwere.com/2016/01/the-bloody-history-of-ludlow-colorado.html",
     "https://uncovercolorado.com/ghost-towns/ludlow"
-   ]
+   ],
+   "verify": {
+    "status": "standing",
+    "security": "medium",
+    "security_notes": "Guide says all structures are behind fenced private property (viewable from the road); sources warn that entering risks prosecution for trespassing. Undated web guides.",
+    "legal": "private",
+    "sources": [
+     "https://ghosttowns.com/states/co/ludlow.html",
+     "https://www.denvergazette.com/?p=106779"
+    ],
+    "checked": "2026-11-09"
+   }
   },
   {
    "id": "berwind-and-tabasco-coal-camp-ruins",
@@ -1596,7 +1892,17 @@
    "sources": [
     "https://www.du.edu/ludlow/berwind.html",
     "https://en.wikipedia.org/wiki/Berwind,_Colorado"
-   ]
+   ],
+   "verify": {
+    "status": "standing",
+    "security": "unknown",
+    "security_notes": "Wikipedia describes several ruined structures; no ownership or security info found.",
+    "legal": "unknown",
+    "sources": [
+     "https://en.wikipedia.com/wiki/Berwind,_Colorado"
+    ],
+    "checked": "2026-11-09"
+   }
   },
   {
    "id": "first-state-bank-of-aguilar",
@@ -1611,7 +1917,19 @@
    "access": "Unknown.",
    "sources": [
     "https://lifedeathiron.com/2015/11/28/25-more-abandoned-buildings-in-colorado-you-must-see-before-they-are-gone"
-   ]
+   ],
+   "verify": {
+    "status": "standing",
+    "security": "unknown",
+    "security_notes": "Also called the Gianella Building; on the State Register; bought by a new owner in 2021, who began restoration; also seen listed for sale (102 E Main St).",
+    "legal": "private",
+    "as_of": "2021",
+    "sources": [
+     "https://www.coloradopreservation.org/?p=16028",
+     "https://www.landbrokermls.com/property/583055933/aguilar-bank-102-e-main-st-aguilar-co-81020"
+    ],
+    "checked": "2026-11-09"
+   }
   },
   {
    "id": "cokedale-coke-ovens",
@@ -1626,7 +1944,19 @@
    "access": "Viewable from the highway.",
    "sources": [
     "https://www.denvergazette.com/2022/05/15/coke-ovens-among-living-history-at-this-model-camp-colorful-colorado/"
-   ]
+   ],
+   "verify": {
+    "status": "standing",
+    "security": "unknown",
+    "security_notes": "Ruins of 300+ ovens visible west of Hwy 12 (2022); the highway splits the site; part of a National Historic District. No access or security info found.",
+    "legal": "unknown",
+    "as_of": "2022",
+    "sources": [
+     "https://www.denvergazette.com/2022/05/15/coke-ovens-among-living-history-at-this-model-camp-colorful-colorado/",
+     "https://www.roadsideamerica.com/tip/67380"
+    ],
+    "checked": "2026-11-09"
+   }
   },
   {
    "id": "pritchett-soda-shop",
@@ -1641,7 +1971,18 @@
    "access": "Unknown.",
    "sources": [
     "https://lifedeathiron.com/2015/11/25/25-abandoned-buildings-in-colorado-you-must-see-before-they-are-gone"
-   ]
+   ],
+   "verify": {
+    "status": "unknown",
+    "security": "unknown",
+    "security_notes": "The only source is a 2015 blog (chairs and counter visible through the windows); no newer info.",
+    "legal": "unknown",
+    "as_of": "2015",
+    "sources": [
+     "https://lifedeathiron.com/2015/11/25/25-abandoned-buildings-in-colorado-you-must-see-before-they-are-gone"
+    ],
+    "checked": "2026-11-09"
+   }
   },
   {
    "id": "goldfield-city-hall-and-ghost-town",
@@ -1863,7 +2204,17 @@
    "access": "Unknown.",
    "sources": [
     "https://cinematreasures.org/theaters/27791/comments"
-   ]
+   ],
+   "verify": {
+    "status": "demolished",
+    "security": "unknown",
+    "security_notes": "Cinema Treasures says the drive-in is demolished except for the screen; the snack bar/projection building was burned in a controlled fire so a gravel pit could expand (undated).",
+    "legal": "unknown",
+    "sources": [
+     "https://cinematreasures.org/theaters/27791"
+    ],
+    "checked": "2026-11-09"
+   }
   },
   {
    "id": "merri-land-amusement-park-remnants",
@@ -1956,7 +2307,18 @@
    "access": "Unknown.",
    "sources": [
     "https://lifedeathiron.com/2015/11/25/25-abandoned-buildings-in-colorado-you-must-see-before-they-are-gone"
-   ]
+   ],
+   "verify": {
+    "status": "unknown",
+    "security": "unknown",
+    "security_notes": "The only source is a 2015 blog; no newer info.",
+    "legal": "unknown",
+    "as_of": "2015",
+    "sources": [
+     "https://lifedeathiron.com/2015/11/25/25-abandoned-buildings-in-colorado-you-must-see-before-they-are-gone"
+    ],
+    "checked": "2026-11-09"
+   }
   },
   {
    "id": "redstone-coke-ovens",
@@ -1971,7 +2333,19 @@
    "access": "Public historic site; legal to view.",
    "sources": [
     "https://www.cpr.org/2025/12/22/colorado-history-coke-ovens-redstone/"
-   ]
+   ],
+   "verify": {
+    "status": "standing",
+    "security": "low",
+    "security_notes": "Dec 2025: 90 ovens in various stages of decay and restoration, maintained by the Redstone Historical Society; interpretive signage; an undated photo caption mentions guardrails and fences keeping visitors back.",
+    "legal": "public",
+    "as_of": "2025",
+    "sources": [
+     "https://www.cpr.org/2025/12/22/colorado-history-coke-ovens-redstone/",
+     "https://aspenhistory.org/blog/map_pin/redstone-coke-ovens"
+    ],
+    "checked": "2026-11-09"
+   }
   },
   {
    "id": "birch-ruins",
@@ -2222,7 +2596,18 @@
    "sources": [
     "https://en.wikipedia.org/wiki/Morley,_Colorado",
     "https://k99.com/ixp/510/p/colorado-abandoned-church-morley/"
-   ]
+   ],
+   "verify": {
+    "status": "standing",
+    "security": "medium",
+    "security_notes": "Church shell (mostly the front) on private property; sources say the owner allows visitors who get permission ahead of time. Undated.",
+    "legal": "private",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Morley,_Colorado",
+     "https://mix1043fm.com/morley-colorado-ghost-town/"
+    ],
+    "checked": "2026-11-09"
+   }
   },
   {
    "id": "unfinished-grand-junction-regional-airport-building",
@@ -2426,7 +2811,18 @@
     "https://www.coloradopreservation.org/endangered-place/hartman-castle/",
     "https://www.cpr.org/2026/02/14/hartman-castle-gunnison-colorado-endangered-places/",
     "https://www.denvergazette.com/2026/02/13/castle-fort-and-small-town-americana-movie-theater-on-2026-most-endangered-places-in-colorado-list/"
-   ]
+   ],
+   "verify": {
+    "status": "standing",
+    "security": "unknown",
+    "security_notes": "Named to the 2026 Most Endangered Places list (seen in passing; not searched directly).",
+    "legal": "private",
+    "as_of": "2026",
+    "sources": [
+     "https://www.alamosacitizen.com/la-morada-in-san-luis-added-to-most-endangered-places-list"
+    ],
+    "checked": "2026-11-09"
+   }
   },
   {
    "id": "ordway-pharmacy",
@@ -2442,7 +2838,18 @@
    "sources": [
     "https://www.denvergazette.com/2026/02/13/castle-fort-and-small-town-americana-movie-theater-on-2026-most-endangered-places-in-colorado-list/",
     "https://www.coloradopreservation.org/county/crowley/"
-   ]
+   ],
+   "verify": {
+    "status": "standing",
+    "security": "unknown",
+    "security_notes": "Named to the 2026 Most Endangered Places list (seen in passing; not searched directly).",
+    "legal": "unknown",
+    "as_of": "2026",
+    "sources": [
+     "https://www.alamosacitizen.com/la-morada-in-san-luis-added-to-most-endangered-places-list"
+    ],
+    "checked": "2026-11-09"
+   }
   },
   {
    "id": "pearl-theater",
@@ -2692,7 +3099,20 @@
     "https://maps.roadtrippers.com/us/mancos-co/points-of-interest/abandoned-sinclair-station",
     "https://fourcornersfreepress.com/derelicts/",
     "https://dh.durangoherald.com/tj/wp-json/wp/v2/posts/110710"
-   ]
+   ],
+   "verify": {
+    "status": "unknown",
+    "security": "unknown",
+    "security_notes": "No guards/fencing reported. Owner Ray McCarty has refused site access even to state officials; Montezuma County was seeking access; ~6,000-gal gasoline spill (2006). Dates of coverage mostly older/unclear.",
+    "legal": "private",
+    "sources": [
+     "https://the-journal.com/?p=31302",
+     "https://www.the-journal.com/?p=37681",
+     "https://www.the-journal.com/?p=5449",
+     "https://fourcornersfreepress.com/judge-sinclair-can-remove-dino-from-mancos-site/"
+    ],
+    "checked": "2026-11-09"
+   }
   },
   {
    "id": "last-chance-dairy-king",
@@ -2737,7 +3157,18 @@
    "sources": [
     "https://geraintsmith.com/ruins-of-america-trading-post-colorado/",
     "https://geraintsmith.com/2018/07/14"
-   ]
+   ],
+   "verify": {
+    "status": "unknown",
+    "security": "unknown",
+    "security_notes": "Only a 2018 photography blog post found; no security or ownership info.",
+    "legal": "unknown",
+    "as_of": "2018",
+    "sources": [
+     "https://geraintsmith.com/ruins-of-america-trading-post-colorado/"
+    ],
+    "checked": "2026-11-09"
+   }
   },
   {
    "id": "antero-junction",
@@ -2805,7 +3236,18 @@
    "sources": [
     "https://roadarch.com/gas/co.html",
     "https://www.roadarch.com/gas/co3.html"
-   ]
+   ],
+   "verify": {
+    "status": "standing",
+    "security": "unknown",
+    "security_notes": "Roadarch Conoco page: former station (1920s/30s), once a Mustang restoration business, appears vacant; photos 2012 and 2024. No security info.",
+    "legal": "unknown",
+    "as_of": "2024",
+    "sources": [
+     "https://roadarch.com/gas/cocan.html"
+    ],
+    "checked": "2026-11-09"
+   }
   },
   {
    "id": "abandoned-us-34-rest-area-east-of-greeley",
@@ -2929,7 +3371,20 @@
     "https://www.coloradopreservation.org/endangered-place/koch-homestead/",
     "https://9news.com/article/news/history/most-endangered-sites-colorado-2023-list/73-9f9f92ea-abea-4dae-b24d-9617d4591070",
     "https://k99.com/ixp/510/p/aspen-koch-ranch/"
-   ]
+   ],
+   "verify": {
+    "status": "standing",
+    "security": "low",
+    "security_notes": "Stabilization completed by Hunter Creek Historical Foundation, White River NF and HistoriCorps; HistoriCorps restoration on nearby Hunter Creek buildings Aug-Sep 2025. No barriers reported; a 2026 search found no Hunter Creek Valley closure.",
+    "legal": "public",
+    "as_of": "2025",
+    "sources": [
+     "https://www.coloradopreservation.org/endangered-place/koch-homestead/",
+     "https://www.aspenpublicradio.org/arts-culture/2025-09-24/historic-buildings-restored-in-hunter-creek-valley",
+     "https://soprissun.com/hunter-creek-preservation-project-chugs-along/"
+    ],
+    "checked": "2026-11-09"
+   }
   },
   {
    "id": "homestead-meadows",
@@ -2974,7 +3429,19 @@
    "sources": [
     "https://lifedeathiron.com/tag/atchee",
     "https://en.wikipedia.org/wiki/Atchee,_Colorado"
-   ]
+   ],
+   "verify": {
+    "status": "standing",
+    "security": "medium",
+    "security_notes": "Blog: all remnants on clearly posted private property; only the machine/repair shop walls stand. Trail guide: Baxter Pass road runs mostly through private property, no camping. Undated.",
+    "legal": "private",
+    "sources": [
+     "https://lifedeathiron.com/tag/atchee",
+     "https://trailsoffroad.com/US/colorado/scout-routes/557-baxter-pass",
+     "https://en.wikipedia.org/wiki/Atchee,_Colorado"
+    ],
+    "checked": "2026-11-09"
+   }
   },
   {
    "id": "russell-gulch",
@@ -3074,7 +3541,19 @@
    "sources": [
     "https://en.wikipedia.org/wiki/Wild_Horse,_Colorado",
     "https://lifedeathiron.com/tag/wild-horse"
-   ]
+   ],
+   "verify": {
+    "status": "standing",
+    "security": "unknown",
+    "security_notes": "Post office still operating; 1912 schoolhouse used as a community building. No security info.",
+    "legal": "unknown",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Wild_Horse,_Colorado",
+     "https://www.geocaching.com/geocache/GC6RWXV",
+     "https://lifedeathiron.com/tag/wild-horse"
+    ],
+    "checked": "2026-11-09"
+   }
   },
   {
    "id": "garcia-abandoned-adobes",
@@ -3091,7 +3570,20 @@
     "https://lifedeathiron.com/2020/04/30/a-ghost-town-a-day-for-30-days-day-30-garcia-colorado-and-costilla-new-mexico",
     "https://geraintsmith.com/tag/garcia/",
     "https://www.coloradocentralmagazine.com/in-search-of-colorados-oldest-town/"
-   ]
+   ],
+   "verify": {
+    "status": "standing",
+    "security": "unknown",
+    "security_notes": "Abandoned adobes with crumbling stucco among occupied homes in a still-inhabited community (2019-2020 sources). No security info.",
+    "legal": "unknown",
+    "as_of": "2020",
+    "sources": [
+     "https://www.coloradocentralmagazine.com/in-search-of-colorados-oldest-town/",
+     "https://lifedeathiron.com/2020/04/30/a-ghost-town-a-day-for-30-days-day-30-garcia-colorado-and-costilla-new-mexico",
+     "https://sah-archipedia.org/node/3579"
+    ],
+    "checked": "2026-11-09"
+   }
   },
   {
    "id": "brown-s-dance-hall",
@@ -3163,7 +3655,18 @@
     "https://sah-archipedia.org/buildings/CO-01-SH11",
     "https://npgallery.nps.gov/GetAsset/66afb981-3bd5-4f18-b80c-f7c801d31a1c",
     "https://historycolorado.org/node/7835"
-   ]
+   ],
+   "verify": {
+    "status": "unknown",
+    "security": "unknown",
+    "security_notes": "National Register nomination: mill closed, most machinery still inside. No recent news found.",
+    "legal": "unknown",
+    "sources": [
+     "https://npgallery.nps.gov/GetAsset/66afb981-3bd5-4f18-b80c-f7c801d31a1c",
+     "https://historycolorado.org/node/7835"
+    ],
+    "checked": "2026-11-09"
+   }
   },
   {
    "id": "schneider-brewery-philip-schneider-brewing-co",
@@ -3180,7 +3683,19 @@
     "https://sah-archipedia.org/buildings/CO-01-LA06",
     "https://youraudiotour.com/tours/a-walk-through-the-history-of-trinidad/stops/10144",
     "https://krtnradio.com/?p=82874"
-   ]
+   ],
+   "verify": {
+    "status": "standing",
+    "security": "unknown",
+    "security_notes": "Undated sources: building stands empty; Tavern Trove says it is used as school-system storage. No 2025 news found.",
+    "legal": "private",
+    "sources": [
+     "https://sah-archipedia.org/node/9010",
+     "https://youraudiotour.com/tours/a-walk-through-the-history-of-trinidad/stops/10144",
+     "https://www.taverntrove.com/ph-schneider-brewing-company-of-trinidad-colorado-usa-br-5862.html?pID=13160"
+    ],
+    "checked": "2026-11-09"
+   }
   },
   {
    "id": "salida-smokestack-ohio-colorado-smelting-refining-co",
@@ -3224,7 +3739,17 @@
    "access": "Roadside along a county road; ownership unknown",
    "sources": [
     "https://en.wikipedia.org/wiki/Blistered_Horn_Mill,_Colorado"
-   ]
+   ],
+   "verify": {
+    "status": "unknown",
+    "security": "unknown",
+    "security_notes": "Wikipedia (undated) describes an abandoned c.1890 stamp mill at 10,938 ft. No security or ownership info.",
+    "legal": "unknown",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Blistered_Horn_Mill,_Colorado"
+    ],
+    "checked": "2026-11-09"
+   }
   },
   {
    "id": "marble-mill-site-colorado-yule-marble-co-finishing-mill",
@@ -3241,7 +3766,20 @@
     "https://www.atlasobscura.com:443/places/marble-mill-site-park",
     "https://historycolorado.org/node/7341",
     "https://soprissun.com/marbles-mill-site-makeover/"
-   ]
+   ],
+   "verify": {
+    "status": "standing",
+    "security": "low",
+    "security_notes": "Public town park with stage, court and picnic areas; volunteer restoration; GOCO grant. Removing marble, artifacts or plants is illegal.",
+    "legal": "public",
+    "as_of": "2025",
+    "sources": [
+     "https://aspenhistory.org/blog/map_pin/marble-mill-site-park",
+     "https://soprissun.com/marbles-mill-site-makeover/",
+     "https://mcrchamber.org/mill-site/"
+    ],
+    "checked": "2026-11-09"
+   }
   },
   {
    "id": "paris-mill",
@@ -3373,7 +3911,19 @@
     "https://conejoscountycitizen.com/article/photogenic-old-church-has-amazing-story",
     "https://www.aroundtheworldineightyyears.com/old-catholic-churches-las-mesitas/",
     "https://mgerwingarch.com/m-gerwing/tag/San+Luis+Valley"
-   ]
+   ],
+   "verify": {
+    "status": "standing",
+    "security": "unknown",
+    "security_notes": "Roofless shell after 1975 fire, beside the active Las Mesitas Catholic Cemetery; historical marker on the property; Diocese lists a San Isidro Mission there holding Sunday Mass. Ownership not stated.",
+    "legal": "unknown",
+    "sources": [
+     "https://conejoscountycitizen.com/article/photogenic-old-church-has-amazing-story",
+     "https://www.waymarking.com/waymarks/WM16F8N_Keeping_The_Faith_Las_Mesitas_CO",
+     "https://www.catholicchurchtimes.com/church/70090e50-499c-48a7-8359-18533dc51fbd"
+    ],
+    "checked": "2026-11-09"
+   }
   },
   {
    "id": "aspen-grove-brick-schoolhouse",
@@ -3388,7 +3938,17 @@
    "access": "unknown",
    "sources": [
     "https://www.cogenweb.org/pitkin/photos.htm"
-   ]
+   ],
+   "verify": {
+    "status": "unknown",
+    "security": "unknown",
+    "security_notes": "Only the undated COGenWeb photo page describes it as long-abandoned.",
+    "legal": "unknown",
+    "sources": [
+     "https://www.cogenweb.org/pitkin/photos.htm"
+    ],
+    "checked": "2026-11-09"
+   }
   },
   {
    "id": "titan-i-missile-complex-2c-725-c-south-of-elizabeth",
@@ -3464,7 +4024,21 @@
     "https://www.motherjones.com/politics/2025/09/ice-detention-money-goldrush-concentration-camp-godsend-walsenburg-colorado-corecivic/",
     "https://krdo.com/news/2018/01/22/prison-reopening-near-walsenburg-bringing-70-jobs",
     "https://breakthroughnews.org/2025/08/19/colorado-residents-reject-trumps-plan-to-turn-private-prison-into-ice-detention/"
-   ]
+   ],
+   "verify": {
+    "status": "standing",
+    "security": "unknown",
+    "security_notes": "CoreCivic-owned, dormant since 2010. ICE toured it March 2025; CoreCivic posted detention-officer jobs 'contingent on contract award'; ~100 protested Aug 2025. No signed contract found. No site-security info found.",
+    "legal": "private",
+    "as_of": "2025",
+    "sources": [
+     "https://www.cpr.org/2025/08/15/walsenburg-possible-ice-detention-facility-protest/",
+     "https://www.motherjones.com/politics/2025/09/ice-detention-money-goldrush-concentration-camp-godsend-walsenburg-colorado-corecivic/",
+     "https://worldjournalnewspaper.com/ice-deal-gets-closer-protests-get-larger/",
+     "https://coloradosun.com/2025/07/28/colorado-proposed-ice-detention-centers/"
+    ],
+    "checked": "2026-11-09"
+   }
   },
   {
    "id": "new-raymer-centre-avenue-storefronts",
@@ -3690,7 +4264,20 @@
     "https://www.the-journal.com/?p=140670",
     "https://snowbrains.com/hesperus-ski-area-co-to-remain-closed-for-another-season/",
     "https://unofficialnetworks.com/2025/09/22/hesperus-ski-area-still-closed/"
-   ]
+   ],
+   "verify": {
+    "status": "standing",
+    "security": "unknown",
+    "security_notes": "Owned by Mountain Capital Partners on leased land; closed since the 2023-24 season after the Bighorn lift gearbox failed; stayed closed for 2025-26 with no reopening timeline (Sept 2025). No security info.",
+    "legal": "private",
+    "as_of": "2025",
+    "sources": [
+     "https://unofficialnetworks.com/2025/09/22/hesperus-ski-area-still-closed/",
+     "https://www.the-journal.com/?p=140670",
+     "https://snowbrains.com/hesperus-ski-area-co-to-remain-closed-for-another-season/"
+    ],
+    "checked": "2026-11-09"
+   }
   },
   {
    "id": "ski-san-isabel",
@@ -3733,7 +4320,17 @@
    "access": "private (scout property next to the public state wildlife area)",
    "sources": [
     "https://www.telluridenews.com/the_watch/news/article_cbf19fe8-f22b-539f-a795-97b2203c76fa.html"
-   ]
+   ],
+   "verify": {
+    "status": "unknown",
+    "security": "unknown",
+    "security_notes": "Undated Telluride News article calls the camp idle and 'in limbo' for about six years. Next to the Dan Noble SWA, where CPW requires a license for anyone 18+.",
+    "legal": "private",
+    "sources": [
+     "https://www.telluridenews.com/the_watch/news/article_cbf19fe8-f22b-539f-a795-97b2203c76fa.html"
+    ],
+    "checked": "2026-11-09"
+   }
   },
   {
    "id": "jaffa-opera-house",
@@ -3749,7 +4346,19 @@
    "sources": [
     "https://www.cpr.org/2025/04/12/trinidad-city-council-concerns-historic-jaffa-opera-house/",
     "https://en.wikipedia.org/wiki/Jaffa_Opera_House"
-   ]
+   ],
+   "verify": {
+    "status": "standing",
+    "security": "unknown",
+    "security_notes": "Vacant about 20 years; city began issuing code citations Jan 2024; survey says the NW corner is failing (structural hazard). Nonprofit foundation took ownership and is seeking a $1.9M EPA grant (Apr 2025).",
+    "legal": "private",
+    "as_of": "2025",
+    "sources": [
+     "https://pod.cpr.org/2025/04/12/trinidad-city-council-concerns-historic-jaffa-opera-house",
+     "https://en.wikipedia.org/wiki/Jaffa_Opera_House"
+    ],
+    "checked": "2026-11-09"
+   }
   },
   {
    "id": "golden-nugget-nite-club-former-antonito-opera-house",
@@ -3765,7 +4374,18 @@
    "sources": [
     "https://newcountry991.com/whats-the-story-behind-this-abandoned-colorado-night-club/",
     "https://conejoscountycitizen.com/article/opera-houses-early-homes-of-entertainment"
-   ]
+   ],
+   "verify": {
+    "status": "standing",
+    "security": "unknown",
+    "security_notes": "Older articles say it sits quietly or abandoned on Main Street. No current ownership or security info.",
+    "legal": "unknown",
+    "sources": [
+     "https://newcountry991.com/whats-the-story-behind-this-abandoned-colorado-night-club/",
+     "https://conejoscountycitizen.com/article/opera-houses-early-homes-of-entertainment"
+    ],
+    "checked": "2026-11-09"
+   }
   },
   {
    "id": "querida-bassick-city-and-bassick-mine",
@@ -3782,7 +4402,19 @@
     "https://en.wikipedia.org/wiki/Querida,_Colorado",
     "https://www.ghosttowns.com/states/co/bassick.html",
     "https://uncovercolorado.com/ghost-towns/querida"
-   ]
+   ],
+   "verify": {
+    "status": "standing",
+    "security": "unknown",
+    "security_notes": "Mining database lists Bassick Mine land ownership as private and says to assume all mines are private; private mining-claim parcels near the townsite have been sold. No security info.",
+    "legal": "private",
+    "sources": [
+     "https://westernmininghistory.com/mine-detail/10101726",
+     "https://www.land.com/property/44.44-acres-in-custer-county-colorado/2723238",
+     "https://en.wikipedia.org/wiki/Querida,_Colorado"
+    ],
+    "checked": "2026-11-09"
+   }
   },
   {
    "id": "rosita-ghost-town",
@@ -3799,7 +4431,17 @@
     "https://en.wikipedia.org/wiki/Rosita,_Colorado",
     "https://ghosttowns.com/states/co/rosita.html",
     "https://kmitch.com/Custer/custerrosita.html"
-   ]
+   ],
+   "verify": {
+    "status": "unknown",
+    "security": "unknown",
+    "security_notes": "Most of the old town is gone; the area is largely developed into semi-rural home sites. No security info.",
+    "legal": "unknown",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Rosita,_Colorado"
+    ],
+    "checked": "2026-11-09"
+   }
   },
   {
    "id": "uptop-ghost-town",
@@ -3814,7 +4456,20 @@
    "access": "Privately run historic site, occasionally open to the public",
    "sources": [
     "https://www.uncovercolorado.com/activities/uptop-ghost-town"
-   ]
+   ],
+   "verify": {
+    "status": "standing",
+    "security": "unknown",
+    "security_notes": "Privately owned historic site; only a few buildings open to the public and the chapel occasionally open. The owners planned a sale in 2021 (current owner unconfirmed). Survived the Spring Creek fire.",
+    "legal": "private",
+    "as_of": "2021",
+    "sources": [
+     "https://www.uncovercolorado.com/activities/uptop-ghost-town",
+     "https://medium.com/pulp-newsmag/the-revival-of-southern-colorados-uptop-f88cc59ffdb8",
+     "https://www.denvergazette.com/?p=73776"
+    ],
+    "checked": "2026-11-09"
+   }
   },
   {
    "id": "chandler-coal-camp-ruins",
@@ -3859,7 +4514,18 @@
    "sources": [
     "https://en.wikipedia.org/wiki/Tercio,_Colorado",
     "https://scalar.usc.edu/works/mines-of-the-colorado-fuel-and-iron-company/tercio-coal-mine.10"
-   ]
+   ],
+   "verify": {
+    "status": "unknown",
+    "security": "unknown",
+    "security_notes": "CPW says the ~25,000-acre Tercio Ranch is private ranch land normally closed to the public (Ranching for Wildlife hunts only). Not confirmed whether the townsite is inside the ranch.",
+    "legal": "unknown",
+    "sources": [
+     "https://cpw.state.co.us/ranching-for-wildlife/tercio-ranch",
+     "https://en.wikipedia.org/wiki/Tercio,_Colorado"
+    ],
+    "checked": "2026-11-09"
+   }
   },
   {
    "id": "delhi-ghost-town",
@@ -3875,7 +4541,19 @@
    "sources": [
     "https://newcountry991.com/did-you-know-the-ghost-town-of-delhi-colorado-was-in-a-movie/",
     "https://lifedeathiron.com/2018/05/29/colorados-lost-highway-a-photo-voyage-down-highway-350-from-la-junta-to-trinidad"
-   ]
+   ],
+   "verify": {
+    "status": "standing",
+    "security": "unknown",
+    "security_notes": "Cabins, car skeletons and outbuildings in rough shape, plus the former One Stop store (about 2018 sources). No security info.",
+    "legal": "unknown",
+    "as_of": "2018",
+    "sources": [
+     "https://lifedeathiron.com/2018/05/29/colorados-lost-highway-a-photo-voyage-down-highway-350-from-la-junta-to-trinidad",
+     "https://newcountry991.com/did-you-know-the-ghost-town-of-delhi-colorado-was-in-a-movie/"
+    ],
+    "checked": "2026-11-09"
+   }
   },
   {
    "id": "timpas-ghost-town",
@@ -3906,7 +4584,20 @@
    "access": "Trespassing prohibited",
    "sources": [
     "https://mix1043fm.com/historic-abandoned-colorado-schoolhouse/"
-   ]
+   ],
+   "verify": {
+    "status": "standing",
+    "security": "unknown",
+    "security_notes": "Vacant since 1995; 2023 Most Endangered listing (demolition by neglect). Centennial School District is considering renovation for school use; grants fund construction drawings (Colorado Sun, Mar 2024).",
+    "legal": "unknown",
+    "as_of": "2024",
+    "sources": [
+     "https://coloradosun.com/2024/03/04/garcia-school-san-luis-valley-colorado-schoolhouse/",
+     "https://coloradopreservation.org/?p=16026",
+     "https://en.wikipedia.org/wiki/Garcia,_Colorado"
+    ],
+    "checked": "2026-11-09"
+   }
   },
   {
    "id": "unnamed-ruins-near-gardner-possibly-sharpsdale",
@@ -3921,7 +4612,18 @@
    "access": "unknown",
    "sources": [
     "https://lifedeathiron.com/2016/09/06/mysterious-colorado-ghost-town-on-the-huerfano-river"
-   ]
+   ],
+   "verify": {
+    "status": "unknown",
+    "security": "unknown",
+    "security_notes": "Only a 2016 blog found; the site's identity is disputed and some structures date to 1960s repairs.",
+    "legal": "unknown",
+    "as_of": "2016",
+    "sources": [
+     "https://lifedeathiron.com/2016/09/06/mysterious-colorado-ghost-town-on-the-huerfano-river"
+    ],
+    "checked": "2026-11-09"
+   }
   },
   {
    "id": "fitzsimons-place-apartments-aka-aspen-grove-bahamas-apartmen",
@@ -4665,7 +5367,20 @@
     "https://clui.org/ludb/site/alpine-tunnel-west-portal",
     "https://www.uncovercolorado.com/alpine-tunnel-west-portal-pitkin",
     "https://www.legendsofamerica.com/co-alpinetunnel/"
-   ]
+   ],
+   "verify": {
+    "status": "standing",
+    "security": "low",
+    "security_notes": "2024: Forest Service reopened Alpine Tunnel Road (NFSR 839) after Palisade Wall rebuild and reversed the closure order for the historic district. A boulder blocked the West Portal parking area, so visitors were told to hike the last mile. An undated Denver Gazette note says the west side is closed to vehicles after an avalanche; I could not confirm when. No guards or citations found.",
+    "legal": "public",
+    "as_of": "2024",
+    "sources": [
+     "https://crestedbuttenews.com/2024/10/historic-alpine-tunnel-road-and-palisade-wall-construction-complete/",
+     "https://www.kjct8.com/2024/09/30/historic-alpine-tunnel-road-reopened-palisade-wall-construction-complete",
+     "https://en.wikipedia.org/wiki/Alpine_Tunnel"
+    ],
+    "checked": "2026-11-09"
+   }
   },
   {
    "id": "boreas-pass-railroad-relics-baker-s-tank-engine-house-ruins",
@@ -4712,7 +5427,19 @@
    "sources": [
     "https://www.historycolorado.org/node/7844",
     "https://npgallery.nps.gov/GetAsset/3d0324ca-78cf-4ce8-965d-a0438ace838a"
-   ]
+   ],
+   "verify": {
+    "status": "standing",
+    "security": "unknown",
+    "security_notes": "Bought in 2005 by the Upper Tomichi Historical & Community Association for preservation. Restoration donations are taken at the site (2009 article). No security info found.",
+    "legal": "private",
+    "as_of": "2009",
+    "sources": [
+     "https://www.coloradocentralmagazine.com/colorado-rail-facts-may-2009/",
+     "https://www.historycolorado.org/node/7844"
+    ],
+    "checked": "2026-11-09"
+   }
   },
   {
    "id": "trout-lake-rio-grande-southern-water-tank-and-trestle-bridge",
@@ -4729,7 +5456,20 @@
     "https://en.wikipedia.org/wiki/Trout_Lake_(Colorado)",
     "https://historypointer.com/nris/resource/03000777",
     "https://www.onxmaps.com/offroad/trails/us/colorado/trestle-road-3l6orepmv6w4"
-   ]
+   ],
+   "verify": {
+    "status": "standing",
+    "security": "low",
+    "security_notes": "Trestle is preserved and closed to vehicles. Forest Service put a foundation under the tank to stabilize it (undated). Reached by a public gravel trail (2026 TrailLink guide). No guards or enforcement reported.",
+    "legal": "public",
+    "as_of": "2026",
+    "sources": [
+     "https://www.onxmaps.com/offroad/trails/us/colorado/trestle-road-3l6orepmv6w4",
+     "https://www.the-journal.com/?p=23147",
+     "https://www.traillink.com/gdbkpdf/trail/6015543/galloping-goose-trail-(co)63920801093103-2026.pdf"
+    ],
+    "checked": "2026-11-09"
+   }
   },
   {
    "id": "rattlesnake-trestle-san-luis-southern-railway",
@@ -4745,7 +5485,18 @@
    "sources": [
     "https://en.wikipedia.org/wiki/San_Luis_Southern_Railway_Trestle",
     "https://townofblanca.colorado.gov/rattlesnake-trestle"
-   ]
+   ],
+   "verify": {
+    "status": "unknown",
+    "security": "unknown",
+    "security_notes": "Sources only cover history and the 2004 NRHP listing (Costilla County, near Smith Reservoir outlet). No current condition or security info found.",
+    "legal": "unknown",
+    "sources": [
+     "https://en.wikipedia.org/wiki/San_Luis_Southern_Railway_Trestle",
+     "https://townofblanca.colorado.gov/rattlesnake-trestle"
+    ],
+    "checked": "2026-11-09"
+   }
   },
   {
    "id": "wilson-gulch-trestle-d-rgw-farmington-branch",
@@ -4761,7 +5512,18 @@
    "sources": [
     "https://www.durangoherald.com/?p=197875",
     "https://drgw.net/info/FarmingtonBranch"
-   ]
+   ],
+   "verify": {
+    "status": "unknown",
+    "security": "unknown",
+    "security_notes": "Durango Herald says the right-of-way stayed in county hands. No current condition or security report found.",
+    "legal": "unknown",
+    "sources": [
+     "https://www.durangoherald.com/?p=152550",
+     "https://en.wikipedia.org/wiki/Alamosa%E2%80%93Durango_line"
+    ],
+    "checked": "2026-11-09"
+   }
   },
   {
    "id": "devil-s-creek-railroad-trestle",
@@ -4777,7 +5539,17 @@
    "sources": [
     "https://silverthreadbyway.com/21-devil-s-creek-railroad-trestle",
     "https://lakecity.com/silver-thread-scenic-byway/"
-   ]
+   ],
+   "verify": {
+    "status": "demolished",
+    "security": "unknown",
+    "security_notes": "The byway's stop #21 page says trains stopped in 1933 and the trestle was taken apart two years later, with its timber moved to Gunnison. Only the site and grade remain as a byway stop. No security info.",
+    "legal": "unknown",
+    "sources": [
+     "https://silverthreadbyway.com/21-devil-s-creek-railroad-trestle"
+    ],
+    "checked": "2026-11-09"
+   }
   },
   {
    "id": "gold-camp-road-tunnel-3-short-line-railroad",
@@ -4943,7 +5715,19 @@
     "https://www.montrosepress.com/news/local-group-buys-russell-stover-plant-after-years-of-vacancy/article_e98690d0-4dd1-11ef-b713-7f0c37890035.html",
     "https://www.montrosebusinesstimes.com/2024/05/30/former-russell-stover-plant-heading-foreclosure-sale-developers-failed-find-tenant-buyer/",
     "https://kekbfm.com/colorado-montrose-russell-stover-plant-update/"
-   ]
+   ],
+   "verify": {
+    "status": "unknown",
+    "security": "unknown",
+    "security_notes": "July 2024: Red Nile LLC bought the foreclosed plant for $4.5M and planned food processing and cold storage. No 2025-26 status or security info found.",
+    "legal": "private",
+    "as_of": "2024",
+    "sources": [
+     "https://ground.news/article/local-group-buys-russell-stover-plant-after-years-of-vacancy",
+     "https://www.foodmanufacturing.com/labor/video/21366353/shuttered-chocolate-plant-buyer-to-retain-workers"
+    ],
+    "checked": "2026-11-09"
+   }
   },
   {
    "id": "ute-ulay-mill-and-town-site",
@@ -4960,7 +5744,20 @@
     "https://www.coloradopreservation.org/?p=16160",
     "https://www.denver7.com/lifestyle/discover-colorado/colorado-ghost-towns-and-mining-history-exploring-the-ute-ulay-mining-complex-and-town-site",
     "https://mininghistoryassociation.org/LakeCityTour2.htm"
-   ]
+   ],
+   "verify": {
+    "status": "standing",
+    "security": "medium",
+    "security_notes": "Abandoned mine openings were permanently closed and the headframe stabilized in fall 2012. Site is being reclaimed for heritage tourism, with partners including LKA Gold and Hinsdale County. Guided walks are led by a caretaker (video about a year old).",
+    "legal": "unknown",
+    "as_of": "2013",
+    "sources": [
+     "https://sambuz.com/doc/the-ute-ulay-ppt-presentation-365743",
+     "https://www.cbsnews.com/colorado/news/the-mine-that-built-lake-city-looks-to-reclaim-title",
+     "https://www.tripbacon.com/videos/tour-of-ute-ulay-mine-and-mill-site-lake-city-colorado-lake-city-adventures"
+    ],
+    "checked": "2026-11-09"
+   }
   },
   {
    "id": "ohio-city",
@@ -4976,7 +5773,20 @@
    "sources": [
     "https://www.uncovercolorado.com/ghost-towns/ohio-city",
     "https://www.allcrestedbutte.com/history_museums/ohio_city_colorado_ghost_town.php"
-   ]
+   ],
+   "verify": {
+    "status": "standing",
+    "security": "unknown",
+    "security_notes": "Semi-ghost town with some current residents. Its last business closed in 2016. Property has been advertised for sale (listing undated). No security info.",
+    "legal": "private",
+    "as_of": "2016",
+    "sources": [
+     "https://www.uncovercolorado.com/ghost-towns/ohio-city",
+     "https://kmax943.com/the-many-rebirths-of-ohio-city-colorado/",
+     "https://999thepoint.com/ohio-city-colorado-real-estate/"
+    ],
+    "checked": "2026-11-09"
+   }
   },
   {
    "id": "former-schmitt-elementary-school",
@@ -5254,7 +6064,20 @@
     "https://www.yahoo.com/news/scenic-elementary-celebrates-last-day-003956687.html",
     "https://www.kjct8.com/2024/11/23/scenic-clifton-elementary-close/",
     "https://www.rmpbs.org/news/education/d51-school-closures-colorado"
-   ]
+   ],
+   "verify": {
+    "status": "unknown",
+    "security": "unknown",
+    "security_notes": "School closed for good (KREX last-day story; CDE lists it closed). A Dec 2024 parent charter-school proposal wanted the building; no confirmation it happened. No sale, reuse or security info found.",
+    "legal": "government-owned (not open)",
+    "as_of": "2025",
+    "sources": [
+     "https://www.yahoo.com/news/scenic-elementary-celebrates-last-day-003956687.html",
+     "https://www.kjct8.com/2024/12/05/parents-make-moves-bring-new-charter-school-grand-junction/",
+     "https://www.cde.state.co.us/schoolview/explore/profile/2000/9434"
+    ],
+    "checked": "2026-11-09"
+   }
   },
   {
    "id": "clifton-elementary-school-former",
@@ -5271,7 +6094,19 @@
     "https://www.kjct8.com/2024/11/23/scenic-clifton-elementary-close/",
     "https://www.kjct8.com/2025/02/08/district-51-hopes-converting-nisley-elementary-will-honor-schools-legacy/",
     "https://www.rmpbs.org/news/education/d51-school-closures-colorado"
-   ]
+   ],
+   "verify": {
+    "status": "unknown",
+    "security": "unknown",
+    "security_notes": "Recommended for closure Nov 2024. Students moved to Chatfield, Taylor or Rocky Mountain; pre-K moved to Nisley (2025). No reuse or security info found.",
+    "legal": "government-owned (not open)",
+    "as_of": "2025",
+    "sources": [
+     "https://www.kjct8.com/2024/11/16/amid-declining-enrollment-clifton-elementary-confirmed-third-d51-school-recommended-closure/",
+     "https://www.kkco11news.com/2025/02/08/district-51-hopes-converting-nisley-elementary-will-honor-schools-legacy"
+    ],
+    "checked": "2026-11-09"
+   }
   },
   {
    "id": "west-springs-hospital-former-mind-springs-health-psychiatric",
@@ -5288,7 +6123,19 @@
     "https://www.cpr.org/2025/02/24/west-springs-psychiatric-hospital-in-grand-junction-closing/",
     "https://www.kkco11news.com/2025/02/24/west-springs-only-psychiatric-hospital-between-salt-lake-denver-will-close-permanently",
     "https://www.ksjd.org/2025-02-26/grand-junction-hospital-to-close-reducing-mental-healthcare-capacity-on-western-slope"
-   ]
+   ],
+   "verify": {
+    "status": "unknown",
+    "security": "unknown",
+    "security_notes": "Closed March 10, 2025. Mind Springs said it is committed to maintaining the community-funded building. No 2026 status or security info found.",
+    "legal": "private",
+    "as_of": "2025",
+    "sources": [
+     "https://www.kjct8.com/2025/02/24/west-springs-only-psychiatric-hospital-between-salt-lake-denver-will-close-permanently",
+     "https://www.ksjd.org/2025-02-26/grand-junction-hospital-to-close-reducing-mental-healthcare-capacity-on-western-slope"
+    ],
+    "checked": "2026-11-09"
+   }
   },
   {
    "id": "leadville-abandoned-silver-mine-structures",
@@ -5351,7 +6198,19 @@
    "sources": [
     "https://rockymountainprofiles.com/colorado/colorado-scenes/buildings-sites-vistas/jackson-hill-stage-stop-colorado",
     "https://wetmorehistoricalsociety.com/2026/01/20/wetmore-halfway-house-jackson-stage-stop/"
-   ]
+   ],
+   "verify": {
+    "status": "standing",
+    "security": "unknown",
+    "security_notes": "On private property; visible from a dead-end road (Rocky Mountain Profiles). Wetmore Historical Society posted about it Jan 2026. No security info.",
+    "legal": "private",
+    "as_of": "2026",
+    "sources": [
+     "https://wetmorehistoricalsociety.com/2026/01/20/wetmore-halfway-house-jackson-stage-stop/",
+     "https://rockymountainprofiles.com/colorado/colorado-scenes/buildings-sites-vistas/jackson-hill-stage-stop-colorado"
+    ],
+    "checked": "2026-11-09"
+   }
   },
   {
    "id": "foster-house-stage-station-and-hotel-ruins",
@@ -5366,7 +6225,19 @@
    "access": "unknown",
    "sources": [
     "https://www.washingtontimes.com/news/2015/may/13/one-time-oasis-now-belongs-to-history/"
-   ]
+   ],
+   "verify": {
+    "status": "standing",
+    "security": "unknown",
+    "security_notes": "2015 AP: adobe ruins still standing, about 4 mi east of Aguilar. The property is still a working open-prairie cattle ranch (state register). No security info.",
+    "legal": "private",
+    "as_of": "2015",
+    "sources": [
+     "https://www.washingtontimes.com/news/2015/may/13/one-time-oasis-now-belongs-to-history/",
+     "https://historycolorado.org/node/7525"
+    ],
+    "checked": "2026-11-09"
+   }
   },
   {
    "id": "hoyt",
@@ -5462,7 +6333,16 @@
    "sources": [
     "https://lifedeathiron.com/2015/11/22/five-colorado-ghost-towns-with-tragic-stories",
     "https://forum.expeditionportal.com/threads/andrix-colorado.203423/post-2601529"
-   ]
+   ],
+   "verify": {
+    "status": "unknown",
+    "security": "unknown",
+    "legal": "unknown",
+    "sources": [
+     "https://forum.expeditionportal.com/threads/andrix-colorado.203423/latest"
+    ],
+    "checked": "2026-11-09"
+   }
   },
   {
    "id": "weston-abandoned-general-store",
@@ -5494,7 +6374,19 @@
    "sources": [
     "https://lifedeathiron.com/2020/05/18/powderhorn-colorado-ghost-town-in-the-gunnison-country",
     "https://ghosttowns.com/states/co/powderhorn.html"
-   ]
+   ],
+   "verify": {
+    "status": "standing",
+    "security": "unknown",
+    "security_notes": "2020 blog: abandoned buildings among occupied homes and ranches. A historical marker says ranching is still the main economy. No security info.",
+    "legal": "private",
+    "as_of": "2020",
+    "sources": [
+     "https://lifedeathiron.com/2020/05",
+     "https://www.hmdb.org/m.asp?m=291788"
+    ],
+    "checked": "2026-11-09"
+   }
   },
   {
    "id": "former-stay-inn-city-owned-motel-i-70-peoria",
@@ -5570,7 +6462,19 @@
     "https://lifedeathiron.com/2019/11",
     "https://ghosttowns.com/states/co/brandon.html",
     "https://www.cogenweb.org/Archives/kiowa/history/directories/business/1911/1911-brandon.txt"
-   ]
+   ],
+   "verify": {
+    "status": "standing",
+    "security": "unknown",
+    "security_notes": "Nov 2019 blog: red brick bank 'dangerously close to collapsing'; vault visible. Population 21 (2020 census). No security info.",
+    "legal": "unknown",
+    "as_of": "2019",
+    "sources": [
+     "https://lifedeathiron.com/2019/11",
+     "https://en.wikipedia.org/wiki/Brandon,_Colorado"
+    ],
+    "checked": "2026-11-09"
+   }
   },
   {
    "id": "hotel-holly-haswell-hotel",
@@ -5587,7 +6491,19 @@
     "https://en.wikipedia.org/wiki/Hotel_Holly%E2%80%93Haswell_Hotel",
     "https://historycolorado.org/node/7377",
     "https://maps.roadtrippers.com/us/haswell-co/points-of-interest/hotel-holly-haswell-hotel-co"
-   ]
+   ],
+   "verify": {
+    "status": "unknown",
+    "security": "unknown",
+    "security_notes": "Unverified Wikipedia text: bought Nov 2023 and rebranded 'The Historic', in a multi-year project. An undated listing says unoccupied since 1994. Conflicting; no primary source.",
+    "legal": "unknown",
+    "as_of": "2023",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Hotel_Holly%E2%80%93Haswell_Hotel",
+     "https://maps.roadtrippers.com/us/haswell-co/points-of-interest/hotel-holly-haswell-hotel-co"
+    ],
+    "checked": "2026-11-09"
+   }
   },
   {
    "id": "haswell-old-texaco-station-and-empty-storefronts",
@@ -5603,7 +6519,17 @@
    "sources": [
     "https://lifedeathiron.com/tag/haswell",
     "https://lifedeathiron.com/tag/kiowa-county"
-   ]
+   ],
+   "verify": {
+    "status": "standing",
+    "security": "unknown",
+    "security_notes": "Undated blog: Texaco station visible on Hwy 96 and recently got a new tin roof, which suggests someone maintains it. No security info.",
+    "legal": "unknown",
+    "sources": [
+     "https://lifedeathiron.com/tag/haswell"
+    ],
+    "checked": "2026-11-09"
+   }
   },
   {
    "id": "konantz-wpa-school",
@@ -5619,7 +6545,17 @@
    "sources": [
     "https://livingnewdeal.org/sites/school-konantz-co/",
     "https://livingnewdeal.org/?p=117228"
-   ]
+   ],
+   "verify": {
+    "status": "unknown",
+    "security": "unknown",
+    "security_notes": "Living New Deal lists survival status as unknown.",
+    "legal": "unknown",
+    "sources": [
+     "https://livingnewdeal.org/sites/school-konantz-co/"
+    ],
+    "checked": "2026-11-09"
+   }
   },
   {
    "id": "arriba-vacant-storefronts-deserted-block",
@@ -5714,7 +6650,18 @@
    "sources": [
     "https://www.bentcountyheritage.org/?p=2718",
     "https://en.wikipedia.org/wiki/Bent_County_Courthouse_and_Jail"
-   ]
+   ],
+   "verify": {
+    "status": "standing",
+    "security": "unknown",
+    "security_notes": "Bent County Heritage (undated): jail closed 2000 and 'still stands vacant on Courthouse Square'. It sits next to the courthouse, which is still in use. No security info.",
+    "legal": "government-owned (not open)",
+    "sources": [
+     "https://www.bentcountyheritage.org/?p=2718",
+     "https://en.wikipedia.org/wiki/Bent_County_Courthouse_and_Jail"
+    ],
+    "checked": "2026-11-09"
+   }
   },
   {
    "id": "former-brighton-town-hall-library-senior-center",
@@ -6072,7 +7019,19 @@
    "sources": [
     "https://cpr.org/2021/01/04/plans-are-underway-to-restore-pueblos-historic-keating-school",
     "https://krdo.com/?p=73146"
-   ]
+   ],
+   "verify": {
+    "status": "unknown",
+    "security": "unknown",
+    "security_notes": "2021: Keating Group was buying the building from D60 for an up to $18M restoration; up to $1M in federal funding reported. There was also an asbestos-abatement solicitation (undated). Restoration progress is unconfirmed.",
+    "legal": "unknown",
+    "as_of": "2021",
+    "sources": [
+     "https://cpr.org/2021/01/04/plans-are-underway-to-restore-pueblos-historic-keating-school",
+     "https://constructionreporter.com/?p=13019"
+    ],
+    "checked": "2026-11-09"
+   }
   },
   {
    "id": "kim-schools-new-deal-school-complex",
@@ -6089,7 +7048,19 @@
     "https://livingnewdeal.org/sites/schoolhouse-kim-co/",
     "https://livingnewdeal.org/?p=81297",
     "https://historypointer.com/nris/resource/07000342"
-   ]
+   ],
+   "verify": {
+    "status": "unknown",
+    "security": "unknown",
+    "security_notes": "Sources conflict. Living New Deal lists it as abandoned; another source says the buildings still serve as the community's main schools, and the gym houses the Kim Activity Center. May be in active use; verify before listing.",
+    "legal": "unknown",
+    "sources": [
+     "https://livingnewdeal.org/sites/schoolhouse-kim-co/",
+     "https://livingnewdeal.org/sites/school-former-kim-co/",
+     "https://historycolorado.org/node/7531"
+    ],
+    "checked": "2026-11-09"
+   }
   },
   {
    "id": "union-printers-home",
@@ -6415,6 +7386,1169 @@
     "status": "unknown",
     "security": "unknown",
     "legal": "unknown",
+    "checked": "2026-11-09"
+   }
+  },
+  {
+   "id": "lulu-city-ghost-town",
+   "name": "Lulu City ghost town",
+   "cat": "ruins",
+   "type": "ghost town",
+   "lat": 40.25221,
+   "lon": -105.82307,
+   "approx": true,
+   "location": "Kawuneeche Valley, Rocky Mountain National Park. Colorado River Trailhead on US 34, about 9.5 mi north of the Kawuneeche Visitor Center. About 6.2 mi round trip on the Colorado River Trail, Grand Lake, Grand County",
+   "condition": "Silver camp from 1879 to about 1885. Reports differ: 3 recognizable cabin ruins out of 9, or one crumbling cabin plus building platforms and foundations. Old mine shafts nearby. On the National Register since 1977",
+   "access": "National Park Service (Rocky Mountain NP). Easy hiking trail, best June to October. A park entry pass is required",
+   "sources": [
+    "https://denver7.com/news/local-news/clothes-left-hanging-in-the-closet-the-story-behind-lulu-city-a-ghost-town-in-rocky-mountain-national-park",
+    "https://www.historycolorado.org/node/7415",
+    "https://npgallery.nps.gov/NRHP/GetAsset/NRHP/76002292_text"
+   ],
+   "verify": {
+    "status": "standing",
+    "security": "low",
+    "security_notes": "National park rules: do not remove artifacts or climb on ruins. Stay away from old mine shafts. Snow from about October to June",
+    "legal": "public",
+    "as_of": "1977",
+    "sources": [
+     "https://denver7.com/news/local-news/clothes-left-hanging-in-the-closet-the-story-behind-lulu-city-a-ghost-town-in-rocky-mountain-national-park",
+     "https://www.historycolorado.org/node/7415",
+     "https://npgallery.nps.gov/NRHP/GetAsset/NRHP/76002292_text"
+    ],
+    "checked": "2026-11-09"
+   }
+  },
+  {
+   "id": "dutchtown-ghost-town",
+   "name": "Dutchtown ghost town",
+   "cat": "ruins",
+   "type": "ghost town",
+   "lat": 40.25037,
+   "lon": -105.82091,
+   "approx": true,
+   "location": "Never Summer Mountains near timberline, above Lulu City. Reached by a side route near the Lake of the Clouds Trail, with the Dutch Town backcountry campsite nearby, Grand Lake, Grand County",
+   "condition": "Camp from about 1879 to 1884. The NPS nomination describes 4 decaying cabin ruins; one other source counts 3",
+   "access": "National Park Service (Rocky Mountain NP). Long, strenuous hike past Lulu City. Summer only",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Dutchtown,_Colorado",
+    "https://historycolorado.org/node/7406",
+    "https://npgallery.nps.gov/NRHP/GetAsset/NRHP/76002292_text"
+   ],
+   "verify": {
+    "status": "standing",
+    "security": "low",
+    "security_notes": "Free to visit with park entry. Overnight camping needs a backcountry permit. Remote high-altitude terrain: plan for lightning and getting lost",
+    "legal": "public",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Dutchtown,_Colorado",
+     "https://historycolorado.org/node/7406",
+     "https://npgallery.nps.gov/NRHP/GetAsset/NRHP/76002292_text"
+    ],
+    "checked": "2026-11-09"
+   }
+  },
+  {
+   "id": "masontown-ghost-town-victoria-mine",
+   "name": "Masontown ghost town (Victoria Mine)",
+   "cat": "industrial",
+   "type": "ghost town / mine ruins",
+   "lat": 39.57686,
+   "lon": -106.09283,
+   "approx": true,
+   "location": "Mount Royal/Masontown Trail #1 on the east face of Mount Royal. Trailhead at the west end of Frisco (I-70 Exit 201, Frisco Main Street). About 1 mile of climbing",
+   "condition": "Founded in 1866. Destroyed by an avalanche around 1926 and fires through 1968. Foundations, scrap metal, collapsed cabin remains and mining equipment are still visible",
+   "access": "White River National Forest, Dillon Ranger District. Hiking trail, summer and fall. The Frisco Historic Park & Museum runs guided hikes",
+   "sources": [
+    "https://www.fs.usda.gov/r02/whiteriver/recreation/mount-royalmasontown-th-1",
+    "https://summitpost.org/mount-royal/477543",
+    "https://ghosttowns.com/states/co/masontown.htm"
+   ],
+   "verify": {
+    "status": "standing",
+    "security": "low",
+    "security_notes": "Steep trail. Do not take artifacts (federal law). This is avalanche terrain in winter",
+    "legal": "public",
+    "as_of": "1968",
+    "sources": [
+     "https://www.fs.usda.gov/r02/whiteriver/recreation/mount-royalmasontown-th-1",
+     "https://summitpost.org/mount-royal/477543",
+     "https://ghosttowns.com/states/co/masontown.htm"
+    ],
+    "checked": "2026-11-09"
+   }
+  },
+  {
+   "id": "pieplant-mill-and-cabins",
+   "name": "Pieplant mill and cabins",
+   "cat": "industrial",
+   "type": "mill ruins / mining camp",
+   "lat": 38.82351,
+   "lon": -106.57998,
+   "approx": true,
+   "location": "Pieplant Creek 4WD road (signed FR 742.3D in 2015) off County Road 742, north of Taylor Park Reservoir, Taylor Park / Almont, Gunnison County",
+   "condition": "Camp abandoned soon after 1910. A few log cabins remain; the Forest Service re-roofed one in 2006. Part of the 200-ton mill stands among collapsed mill and mine ruins",
+   "access": "Gunnison National Forest (GMUG). Rocky 4WD or hiking road. Snow-free roughly June to October. Dispersed camping nearby",
+   "sources": [
+    "https://ghosttowns.com/states/co/pieplant.html",
+    "https://coloradoearthscience.blogspot.com/2020/08/pieplant-taylor-park-mining-camp.html",
+    "https://www.fs.usda.gov/r02/gmug/natural-resources/arch-cultural"
+   ],
+   "verify": {
+    "status": "standing",
+    "security": "low",
+    "security_notes": "Collapsed mill: do not enter or climb it. Watch for fire restrictions",
+    "legal": "public",
+    "as_of": "2006",
+    "sources": [
+     "https://ghosttowns.com/states/co/pieplant.html",
+     "https://coloradoearthscience.blogspot.com/2020/08/pieplant-taylor-park-mining-camp.html",
+     "https://www.fs.usda.gov/r02/gmug/natural-resources/arch-cultural"
+    ],
+    "checked": "2026-11-09"
+   }
+  },
+  {
+   "id": "vicksburg-mining-camp",
+   "name": "Vicksburg mining camp",
+   "cat": "houses",
+   "type": "ghost town / cabins",
+   "lat": 38.7413,
+   "lon": -106.1825,
+   "approx": true,
+   "location": "County Road 390 (Clear Creek Road), about 9-10 mi west of US 24 near Clear Creek Reservoir. The road continues to Winfield, Granite / Buena Vista, Chaffee County",
+   "condition": "About 7-10 original log cabins are still standing, and the cabin nearest the road is a museum run by the Clear Creek Canyon Historical Society. On the National Register",
+   "access": "Pike & San Isabel National Forest land, but many cabins are privately owned. Graded dirt road OK for cars in summer. The museum opens on some summer weekends",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Vicksburg,_Colorado",
+    "https://uncovercolorado.com/ghost-towns/vicksburg",
+    "https://ghosttowns.com/states/co/vicksburg.html"
+   ],
+   "verify": {
+    "status": "standing",
+    "security": "low",
+    "security_notes": "PRIVATE CABINS: view from the road and the museum only. Do not enter buildings. No services",
+    "legal": "public",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Vicksburg,_Colorado",
+     "https://uncovercolorado.com/ghost-towns/vicksburg",
+     "https://ghosttowns.com/states/co/vicksburg.html"
+    ],
+    "checked": "2026-11-09"
+   }
+  },
+  {
+   "id": "sallie-barber-mine",
+   "name": "Sallie Barber Mine",
+   "cat": "industrial",
+   "type": "mine ruins (headframe, ore bin)",
+   "lat": 39.48107,
+   "lon": -106.04439,
+   "approx": true,
+   "location": "Sallie Barber Road. Lincoln Townsite Trailhead on French Gulch Road (about 3882 French Gulch Rd), or the V3 Trail from the B&B Trailhead, Breckenridge, Summit County",
+   "condition": "Mine worked from the 1880s to the 1940s. Breckenridge History stabilized the headframe and ore bin, and a grate covers the shaft. Interpretive signs",
+   "access": "Town of Breckenridge / Summit County open space. Old road closed to motor vehicles. Hike, bike or snowshoe year-round",
+   "sources": [
+    "https://www.summitdaily.com/news/sallie-barber-mine-stabilization-in-breckenridge-completed/",
+    "https://breckhistory.org/?p=4757",
+    "https://gobreck.com/trip-ideas/hiking/historic-hiking-trails-in-breckenridge/"
+   ],
+   "verify": {
+    "status": "standing",
+    "security": "low",
+    "security_notes": "Stay out of any open shafts. Do not climb the headframe",
+    "legal": "public",
+    "as_of": "1940",
+    "sources": [
+     "https://www.summitdaily.com/news/sallie-barber-mine-stabilization-in-breckenridge-completed/",
+     "https://breckhistory.org/?p=4757",
+     "https://gobreck.com/trip-ideas/hiking/historic-hiking-trails-in-breckenridge/"
+    ],
+    "checked": "2026-11-09"
+   }
+  },
+  {
+   "id": "jessie-mill-and-extension-mill-gold-run-loop",
+   "name": "Jessie Mill and Extension Mill (Gold Run Loop)",
+   "cat": "industrial",
+   "type": "mill ruins",
+   "lat": 39.48313,
+   "lon": -106.04974,
+   "approx": true,
+   "location": "Gold Run Road / Gold Run Loop in the Golden Horseshoe area northeast of Breckenridge. About a 3-mile round-trip hike",
+   "condition": "Partial remains of the 1890s Jessie Mill have been stabilized under a new roof that copies the historic roofline. The smaller Extension Mill is nearby. Caverns, tunnels and collapsed adits are visible on the hillside",
+   "access": "Golden Horseshoe open space trails (Breckenridge History trail guide). Hike or bike in summer. Guided snowshoe tours in winter",
+   "sources": [
+    "https://breckhistory.org/gold-run-loop/",
+    "https://breckhistory.org/?p=65",
+    "https://4x4explore.com/rds/g_rds/golden_horseshoe.html"
+   ],
+   "verify": {
+    "status": "standing",
+    "security": "low",
+    "security_notes": "Sources warn that many sites are badly decayed: never enter or climb on ruins. Stay out of adits and caverns",
+    "legal": "public",
+    "sources": [
+     "https://breckhistory.org/gold-run-loop/",
+     "https://breckhistory.org/?p=65",
+     "https://4x4explore.com/rds/g_rds/golden_horseshoe.html"
+    ],
+    "checked": "2026-11-09"
+   }
+  },
+  {
+   "id": "mayflower-tram-towers-arrastra-gulch",
+   "name": "Mayflower tram towers, Arrastra Gulch",
+   "cat": "industrial",
+   "type": "mine and tram relics",
+   "lat": 37.81153,
+   "lon": -107.66436,
+   "approx": true,
+   "location": "Arrastra Gulch road off CO 110 (Animas River road) east of Silverton, climbing to the Mayflower Mine site",
+   "condition": "Many towers of the 10,100-ft Mayflower tram (the only steel-tower tram in the county) still stand along the road. The 1929-1991 Mayflower Mill below is owned by the San Juan County Historical Society",
+   "access": "BLM Tres Rios Field Office with San Juan County. Graded road; the top section is steep and loose (high clearance or 4WD). Summer and fall",
+   "sources": [
+    "https://4x4explore.com/rds/a_rds/arrastra_glch.html",
+    "https://historycolorado.org/node/7492"
+   ],
+   "verify": {
+    "status": "standing",
+    "security": "low",
+    "security_notes": "See the mill only on historical society tours. Stay off tram towers and out of adits. Patented (private) claims are mixed in",
+    "legal": "public",
+    "as_of": "1991",
+    "sources": [
+     "https://4x4explore.com/rds/a_rds/arrastra_glch.html",
+     "https://historycolorado.org/node/7492"
+    ],
+    "checked": "2026-11-09"
+   }
+  },
+  {
+   "id": "grizzly-bear-mine-ruins-bear-creek-national-recreation-trail",
+   "name": "Grizzly Bear Mine ruins (Bear Creek National Recreation Trail)",
+   "cat": "industrial",
+   "type": "mine ruins",
+   "lat": 38.02277,
+   "lon": -107.67145,
+   "approx": true,
+   "location": "Bear Creek National Recreation Trail, trailhead at the US 550 tunnel south of Ouray. Ruins along the trail",
+   "condition": "A wooden mine building stands among mine debris (described in a current hiking guide)",
+   "access": "Uncompahgre National Forest, Ouray Ranger District. Hiking trail with steep exposed switchbacks. Summer and fall",
+   "sources": [
+    "https://www.hikingwalking.com/destinations/co/co_sw/ouray/bear_creek/bear_creek_detail"
+   ],
+   "verify": {
+    "status": "standing",
+    "security": "low",
+    "security_notes": "Exposed cliff trail, so it is not for beginners. Do not enter mine openings. Not verified beyond a search snippet",
+    "legal": "public",
+    "sources": [
+     "https://www.hikingwalking.com/destinations/co/co_sw/ouray/bear_creek/bear_creek_detail"
+    ],
+    "checked": "2026-11-09"
+   }
+  },
+  {
+   "id": "chief-ouray-mine-and-boarding-house",
+   "name": "Chief Ouray Mine and boarding house",
+   "cat": "industrial",
+   "type": "mine ruins / boarding house",
+   "lat": 38.02093,
+   "lon": -107.66929,
+   "approx": true,
+   "location": "Trail above Ouray's Box Canyon area, Uncompahgre National Forest",
+   "condition": "Abandoned mine and boarding house (komoot listing)",
+   "access": "Uncompahgre National Forest. Steep hiking trail, summer",
+   "sources": [
+    "https://www.komoot.com/highlight/5930870"
+   ],
+   "verify": {
+    "status": "standing",
+    "security": "low",
+    "security_notes": "Only one listing found. Check the route with the Ouray Ranger District. Stay out of the building and the mine",
+    "legal": "public",
+    "sources": [
+     "https://www.komoot.com/highlight/5930870"
+    ],
+    "checked": "2026-11-09"
+   }
+  },
+  {
+   "id": "fulford-ghost-town",
+   "name": "Fulford ghost town",
+   "cat": "houses",
+   "type": "ghost town / cabins",
+   "lat": 39.65454,
+   "lon": -106.82804,
+   "approx": true,
+   "location": "East Brush Creek Road (FR 415), about 17 mi southeast of Eagle, near Fulford Cave Campground. Old Fulford Stagecoach Trail toward Yeoman Park",
+   "condition": "Post office from 1892 to 1910. A few cabins and old buildings remain",
+   "access": "White River National Forest, Eagle-Holy Cross Ranger District. The last mile is rough and rocky. Seasonal road closure about November 23 to May 20",
+   "sources": [
+    "https://4x4explore.com/rds/o_rds/old_fulford.html",
+    "https://rockymountainprofiles.com/colorado/derry-ranch-thru-hull-city/fulford-co/"
+   ],
+   "verify": {
+    "status": "standing",
+    "security": "low",
+    "security_notes": "Lower Fulford is a private subdivision (some cabins are private), so view from public land only. Entering Fulford Cave needs a permit",
+    "legal": "public",
+    "as_of": "1910",
+    "sources": [
+     "https://4x4explore.com/rds/o_rds/old_fulford.html",
+     "https://rockymountainprofiles.com/colorado/derry-ranch-thru-hull-city/fulford-co/"
+    ],
+    "checked": "2026-11-09"
+   }
+  },
+  {
+   "id": "rourke-ranch-wineglass-ranch-national-historic-site",
+   "name": "Rourke Ranch (Wineglass Ranch) National Historic Site",
+   "cat": "other",
+   "type": "historic ranch",
+   "lat": 37.98501,
+   "lon": -103.54383,
+   "approx": true,
+   "location": "Picket Wire Canyonlands, Comanche National Grassland. About 8.5 to 8.8 miles one way along the Picket Wire Canyon Trail from the Withers Canyon Trailhead (about 17 miles round trip), past the dinosaur tracksite, La Junta, Otero County",
+   "condition": "Adobe and jacal buildings of a cattle and horse ranch that Eugene Rourke founded in 1871 and that ran until 1971. Listed on the National Register and preserved as a National Historic Site (USFS, checked 2026)",
+   "access": "US Forest Service, Comanche National Grassland. On foot, by bike or by horse; the only motorized access is the guided auto tour. Open all year, daylight only. Guided tours run on some Saturdays in May, June, September and October and need a reservation",
+   "sources": [
+    "https://fs.usda.gov/r02/psicc/recreation/rourke-ranch-national-historic-site",
+    "https://www.fs.usda.gov/visit/destination/picket-wire-trail",
+    "https://fs.usda.gov/r02/psicc/recreation/withers-canyon-trailhead"
+   ],
+   "verify": {
+    "status": "standing",
+    "security": "low",
+    "security_notes": "Day use only; no overnight camping anywhere in the Picket Wire Canyonlands (USFS 2026). Long hike with no shade and extreme summer heat; carry at least 1 gallon of water per person. There are restrooms at the ranch. Do not disturb the adobe structures",
+    "legal": "public",
+    "as_of": "2026",
+    "sources": [
+     "https://fs.usda.gov/r02/psicc/recreation/rourke-ranch-national-historic-site",
+     "https://www.fs.usda.gov/visit/destination/picket-wire-trail",
+     "https://fs.usda.gov/r02/psicc/recreation/withers-canyon-trailhead"
+    ],
+    "checked": "2026-11-09"
+   }
+  },
+  {
+   "id": "dolores-mission-and-cemetery-ruins",
+   "name": "Dolores Mission and Cemetery ruins",
+   "cat": "religious",
+   "type": "church ruins / cemetery",
+   "lat": 37.30966,
+   "lon": -104.05914,
+   "approx": true,
+   "location": "Picket Wire Canyon Trail, a few miles below the Withers Canyon Trailhead (about a 250 ft descent into the canyon). It is on the 11.2-mile round-trip route to the dinosaur tracks, La Junta, Las Animas County",
+   "condition": "Ruins of the adobe chapel of an 1870s Hispanic settlement of about 11 families, with a small cemetery of fragile carved headstones, some from the 1890s (sources seen 2026)",
+   "access": "US Forest Service, Comanche National Grassland. Hike or bike from the Withers Canyon Trailhead; the guided auto tour is the only motorized access. Daytime only, all year",
+   "sources": [
+    "https://www.fs.usda.gov/r02/psicc/recreation/picket-wire-canyonlands",
+    "https://sunset.com/travel/rockies/jurassic-footprints",
+    "https://www.findagrave.com/cemetery/2522556/dolores-mission-cemetery"
+   ],
+   "verify": {
+    "status": "standing",
+    "security": "low",
+    "security_notes": "Daytime use only and no camping (USFS 2026). Headstones are fragile, so do not touch them or make rubbings. Carry 1 gallon of water per person; it gets very hot",
+    "legal": "public",
+    "as_of": "2026",
+    "sources": [
+     "https://www.fs.usda.gov/r02/psicc/recreation/picket-wire-canyonlands",
+     "https://sunset.com/travel/rockies/jurassic-footprints",
+     "https://www.findagrave.com/cemetery/2522556/dolores-mission-cemetery"
+    ],
+    "checked": "2026-11-09"
+   }
+  },
+  {
+   "id": "lopez-family-homestead-adobe-ruins",
+   "name": "Lopez Family Homestead adobe ruins",
+   "cat": "other",
+   "type": "homestead ruins",
+   "lat": 37.30782,
+   "lon": -104.05698,
+   "approx": true,
+   "location": "Purgatoire River bottom in Picket Wire Canyon, Comanche National Grassland, south of La Junta. The exact point on the trail is not given in the sources",
+   "condition": "Decaying adobe walls of the Demacio and Loretta Lopez homestead, lived in from the late 1870s to 1903. UCCS students excavated it in 2003, and the Forest Service planned to stabilize it and interpret it for visitors",
+   "access": "US Forest Service, Comanche National Grassland, through Picket Wire Canyon (Withers Canyon Trailhead). Daylight only",
+   "sources": [
+    "https://anthropology.uccs.edu/lopez-family-homestead",
+    "https://pressreleases.uccs.edu/?p=12"
+   ],
+   "verify": {
+    "status": "standing",
+    "security": "low",
+    "security_notes": "This is an archaeological site: look only, and do not dig or remove anything (federal law). Exact location and current interpretation status not confirmed, so ask the Comanche NG office in La Junta. Same day-use and no-camping rules as the rest of the canyonlands (2026)",
+    "legal": "public",
+    "as_of": "2026",
+    "sources": [
+     "https://anthropology.uccs.edu/lopez-family-homestead",
+     "https://pressreleases.uccs.edu/?p=12"
+    ],
+    "checked": "2026-11-09"
+   }
+  },
+  {
+   "id": "westbrook-homestead-and-barlow-sanderson-stage-station-ruins",
+   "name": "Westbrook Homestead and Barlow & Sanderson stage station ruins, Vogel Canyon",
+   "cat": "other",
+   "type": "homestead / stage station ruins",
+   "lat": 37.98317,
+   "lon": -103.54167,
+   "approx": true,
+   "location": "Vogel Canyon Picnic Area and trails, about 17 miles south of La Junta (off CO 109), Comanche National Grassland, Timpas area",
+   "condition": "Stone walls and a fireplace of the Westbrook homestead (Depression era) are still standing, along with ruins of an 1870s Barlow & Sanderson stage station and pieces of the old stage road. The site is part of a 500-acre archaeological district (USFS/recreation.gov, checked 2026)",
+   "access": "US Forest Service, Comanche National Grassland. Gravel road to the picnic area trailhead, then a short loop hike. Open all year",
+   "sources": [
+    "https://www.fs.usda.gov/r02/psicc/recreation/vogel-canyon-picnic-area",
+    "https://www.recreation.gov/camping/poi/10068208",
+    "https://ericandnoelle.blogspot.com/2025/09/comanche-national-grassland-vogel-canyon.html?m=1"
+   ],
+   "verify": {
+    "status": "standing",
+    "security": "low",
+    "security_notes": "The archaeological district has rock art: do not touch it or collect anything. Report vandalism to the Comanche NG office in La Junta. Bring water, and watch for heat and rattlesnakes. The stage-station identification comes partly from a 2025 blog",
+    "legal": "public",
+    "as_of": "2026",
+    "sources": [
+     "https://www.fs.usda.gov/r02/psicc/recreation/vogel-canyon-picnic-area",
+     "https://www.recreation.gov/camping/poi/10068208",
+     "https://ericandnoelle.blogspot.com/2025/09/comanche-national-grassland-vogel-canyon.html?m=1"
+    ],
+    "checked": "2026-11-09"
+   }
+  },
+  {
+   "id": "picture-canyon-homestead-remains",
+   "name": "Picture Canyon homestead remains",
+   "cat": "other",
+   "type": "homestead ruins",
+   "lat": 37.31477,
+   "lon": -102.57709,
+   "approx": true,
+   "location": "Picture Canyon, Carrizo Unit, Comanche National Grassland. Canyon Trail (1.75 mi round trip) and Mesa Trail (2.25 mi round trip) from the parking area; the longer Homestead loop is 8.5 mi round trip, Campo / Springfield, Baca County",
+   "condition": "The Forest Service describes early 20th-century homestead remains and stone ruins along the trails, near Crack Cave (USFS, checked 2026)",
+   "access": "US Forest Service, Comanche National Grassland, by gravel roads from US 287/160. Trails open all year. Crack Cave is sealed except for guided equinox tours in March and September",
+   "sources": [
+    "https://www.fs.usda.gov/r02/psicc/recreation/picture-canyon",
+    "https://trails.colorado.gov/routes/5313",
+    "https://ericandnoelle.blogspot.com/2025/09/comanche-national-grassland-picture.html"
+   ],
+   "verify": {
+    "status": "standing",
+    "security": "low",
+    "security_notes": "Per USFS, no camping in Picture Canyon and the spring water is not safe to drink (2026). Do not enter Crack Cave outside guided tours. Very remote; bring water and fuel",
+    "legal": "public",
+    "as_of": "2026",
+    "sources": [
+     "https://www.fs.usda.gov/r02/psicc/recreation/picture-canyon",
+     "https://trails.colorado.gov/routes/5313",
+     "https://ericandnoelle.blogspot.com/2025/09/comanche-national-grassland-picture.html"
+    ],
+    "checked": "2026-11-09"
+   }
+  },
+  {
+   "id": "rambo-homestead-cabin-little-dominguez-canyon",
+   "name": "Rambo Homestead cabin, Little Dominguez Canyon",
+   "cat": "houses",
+   "type": "homestead cabin",
+   "lat": 39.11816,
+   "lon": -108.68574,
+   "approx": true,
+   "location": "Dominguez Canyon Wilderness (Dominguez-Escalante NCA). From the Bridgeport Trailhead, hike about 2.5 mi to the Big/Little Dominguez confluence, then about 1 mile up Little Dominguez Canyon (3.5 to 4 mi from the trailhead), Whitewater / Delta, Mesa County",
+   "condition": "A one-room cabin from a 1911 Rambo family homestead, with skeletal 1920s-30s farm equipment, still standing (2021 article). Bill Rambo lived there until 2015, and the BLM acquired the land in 1988",
+   "access": "BLM Grand Junction Field Office, Dominguez-Escalante NCA. Foot or horse only; no bikes or mechanized equipment in the wilderness. Open all year",
+   "sources": [
+    "https://www.spokeandblossom.com/stories/2021/4/27/take-a-hike-little-dominguez-canyon",
+    "https://www.blm.gov/sites/blm.gov/files/documents/files/recreation_in_dcw.pdf",
+    "https://en.wikipedia.org/wiki/Dominguez_Canyon_Wilderness"
+   ],
+   "verify": {
+    "status": "standing",
+    "security": "low",
+    "security_notes": "Wilderness rules apply. One source says overnight stays are restricted in the first few miles; check BLM camping rules (2026). Summer heat, no shade. The Bridgeport trailhead route crosses the railroad on a footbridge, and the route requires crossing creeks",
+    "legal": "public",
+    "as_of": "2026",
+    "sources": [
+     "https://www.spokeandblossom.com/stories/2021/4/27/take-a-hike-little-dominguez-canyon",
+     "https://www.blm.gov/sites/blm.gov/files/documents/files/recreation_in_dcw.pdf",
+     "https://en.wikipedia.org/wiki/Dominguez_Canyon_Wilderness"
+    ],
+    "checked": "2026-11-09"
+   }
+  },
+  {
+   "id": "skinner-cabin",
+   "name": "Skinner Cabin",
+   "cat": "houses",
+   "type": "homestead cabin",
+   "lat": 39.15888,
+   "lon": -108.73364,
+   "approx": true,
+   "location": "McInnis Canyons NCA, Fruita Paleo Area / Devils Canyon area. Reached by a short foot-only loop (about 1.8 mi) or from the Devils Canyon Trailhead (the Devils Canyon trail is 6.7 mi round trip)",
+   "condition": "Historic homestead cabin (one photo essay dates it to 1909). The BLM, HistoriCorps and partners restored it in 2016. One user report calls it old and unmaintained",
+   "access": "BLM Grand Junction Field Office, McInnis Canyons NCA. Foot-only trail. Open all year, no fee noted",
+   "sources": [
+    "https://blm.gov/visit/fruita-paleo-area",
+    "https://icoat.de/pocketmaps/co/brochure/co-blm-mcin-fruita/index.html",
+    "https://www.blm.gov/sites/default/files/documents/files/devils_pollock_6_2018_GeoPDF.pdf"
+   ],
+   "verify": {
+    "status": "standing",
+    "security": "low",
+    "security_notes": "Foot travel only. Do not collect fossils in the Paleo Area (federal law). Desert heat in summer. Current condition reports conflict (2016 restoration vs. 'unmaintained')",
+    "legal": "public",
+    "as_of": "2016",
+    "sources": [
+     "https://blm.gov/visit/fruita-paleo-area",
+     "https://icoat.de/pocketmaps/co/brochure/co-blm-mcin-fruita/index.html",
+     "https://www.blm.gov/sites/default/files/documents/files/devils_pollock_6_2018_GeoPDF.pdf"
+    ],
+    "checked": "2026-11-09"
+   }
+  },
+  {
+   "id": "hanging-flume-montrose-placer-mining-co-flume",
+   "name": "Hanging Flume (Montrose Placer Mining Co. flume)",
+   "cat": "other",
+   "type": "mining / water flume ruin",
+   "lat": 38.43754,
+   "lon": -108.24039,
+   "approx": true,
+   "location": "Hanging Flume Overlook and interpretive site on CO 141 (Unaweep-Tabeguache Byway) above the Dolores River canyon, between Uravan and Gateway, Uravan / Naturita, Montrose County",
+   "condition": "Sections of an 1888-1891 wooden flume still hang on the cliff face halfway up the canyon wall. A 48-ft section was restored in 2012. It is on the National Register (1980) and the World Monuments Watch (2006)",
+   "access": "BLM Uncompahgre (Montrose) Field Office. Roadside overlook off CO 141 with interpretive signs. Open all year, free",
+   "sources": [
+    "https://www.blm.gov/visit/unaweep-tabeguache-2",
+    "https://westernmininghistory.com/2252/an-engineering-marvel-colorados-hanging-flume",
+    "https://www.uncovercolorado.com/activities/hanging-flume-overlook"
+   ],
+   "verify": {
+    "status": "standing",
+    "security": "low",
+    "security_notes": "View from the overlook only. The flume is on a sheer cliff and climbing to it is dangerous and damages a fragile National Register structure (2026)",
+    "legal": "public",
+    "as_of": "2026",
+    "sources": [
+     "https://www.blm.gov/visit/unaweep-tabeguache-2",
+     "https://westernmininghistory.com/2252/an-engineering-marvel-colorados-hanging-flume",
+     "https://www.uncovercolorado.com/activities/hanging-flume-overlook"
+    ],
+    "checked": "2026-11-09"
+   }
+  },
+  {
+   "id": "captain-henry-a-smith-s-cabin",
+   "name": "Captain Henry A. Smith's Cabin",
+   "cat": "houses",
+   "type": "homestead cabin",
+   "lat": 38.74544,
+   "lon": -108.0711,
+   "approx": true,
+   "location": "Escalante Canyon Road (from US 50 west of Delta), about 7.9 mi up the canyon, on the Escalante State Wildlife Area (Cap Smith Tract) in the Dominguez-Escalante NCA",
+   "condition": "Two cabins from 1911. The main one is built against a sandstone slab, with carved niches and a rock shelf bed. There is vandalism and deterioration; volunteers cleaned up and secured it in 2017",
+   "access": "Colorado Parks and Wildlife (Escalante SWA, Cap Smith Tract), with BLM land around it. Mostly dirt road with narrow shelf sections; the cabin is right off the road",
+   "sources": [
+    "https://coloradobirdingtrail.com/?p=220",
+    "https://cpw.state.co.us/state-wildlife-areas/escalante-swa",
+    "https://www.coloradopreservation.org/?p=4483"
+   ],
+   "verify": {
+    "status": "standing",
+    "security": "low",
+    "security_notes": "Everyone 16 or older needs a valid hunting or fishing license or a State Wildlife Area pass on SWA land (CPW 2026). Much of the canyon floor below the cabin is private ranch land, so stay on the road. Colorado Preservation lists the site as endangered (2013) because of vandalism",
+    "legal": "public",
+    "as_of": "2026",
+    "sources": [
+     "https://coloradobirdingtrail.com/?p=220",
+     "https://cpw.state.co.us/state-wildlife-areas/escalante-swa",
+     "https://www.coloradopreservation.org/?p=4483"
+    ],
+    "checked": "2026-11-09"
+   }
+  },
+  {
+   "id": "walker-stone-cabin",
+   "name": "Walker Stone Cabin",
+   "cat": "houses",
+   "type": "homestead cabin",
+   "lat": 38.7436,
+   "lon": -108.06894,
+   "approx": true,
+   "location": "Escalante Canyon Road, Escalante Canyon (Dominguez-Escalante NCA area), west of Delta",
+   "condition": "A stone cottage of about 30 x 27 ft with mason-built walls, built in 1911 by homesteader Harry Walker and his sons. It has been badly vandalized; a 2018 State Historical Fund grant paid for repairs (due to finish in 2022)",
+   "access": "A blog reports it is state-owned and that visitors can go inside. Reached by the dirt Escalante Canyon Road",
+   "sources": [
+    "https://www.coloradopreservation.org/?p=16092",
+    "https://www.coloradopreservation.org/?p=4483",
+    "https://littleadventures-jg.blogspot.com/2015/07/escalante-canyon-co.html"
+   ],
+   "verify": {
+    "status": "standing",
+    "security": "low",
+    "security_notes": "Ownership is reported as state-owned (blog) but not officially confirmed, so check with CPW or the BLM Uncompahgre FO. If it is on the Escalante SWA, an SWA pass or license is needed (2026). Private ranch land is nearby",
+    "legal": "public",
+    "as_of": "2026",
+    "sources": [
+     "https://www.coloradopreservation.org/?p=16092",
+     "https://www.coloradopreservation.org/?p=4483",
+     "https://littleadventures-jg.blogspot.com/2015/07/escalante-canyon-co.html"
+    ],
+    "checked": "2026-11-09"
+   }
+  },
+  {
+   "id": "two-bar-ranch-ruins-and-lodore-school",
+   "name": "Two Bar Ranch ruins and Lodore School",
+   "cat": "institutional",
+   "type": "historic ranch ruins / schoolhouse",
+   "lat": 40.51819,
+   "lon": -108.08669,
+   "approx": true,
+   "location": "Browns Park National Wildlife Refuge off CO 318. An easy 1.75-mi loop starts at the Lodore School, passes the Two Bar Ranch ruins and comes back along the Green River, Maybell, Moffat County",
+   "condition": "Ruined headquarters of the Two Bar Ranch (c. 1887-1895): main house, bunkhouse, log dugouts and other log buildings (NRHP 78000873). The 1910-11 Lodore School still stands; classes ran 1911-1947 (NRHP 1975)",
+   "access": "US Fish & Wildlife Service, Browns Park NWR. Reached via CO 318; hiking is allowed throughout the refuge",
+   "sources": [
+    "https://trails.colorado.gov/routes/974",
+    "https://www.fws.gov/sites/default/files/documents/2015%20Browns%20Park%20General%20Brochure-%20web%20version.pdf",
+    "https://en.wikipedia.org/wiki/Old_Ladore_School"
+   ],
+   "verify": {
+    "status": "standing",
+    "security": "low",
+    "security_notes": "Wildlife-refuge rules apply, so check FWS for seasonal closures. Do not enter or climb on the log ruins. This is very remote far-northwest Colorado (2026)",
+    "legal": "public",
+    "as_of": "2026",
+    "sources": [
+     "https://trails.colorado.gov/routes/974",
+     "https://www.fws.gov/sites/default/files/documents/2015%20Browns%20Park%20General%20Brochure-%20web%20version.pdf",
+     "https://en.wikipedia.org/wiki/Old_Ladore_School"
+    ],
+    "checked": "2026-11-09"
+   }
+  },
+  {
+   "id": "crags-hotel-ruins",
+   "name": "Crags Hotel ruins",
+   "cat": "leisure",
+   "type": "hotel ruins",
+   "lat": 39.92722,
+   "lon": -105.29495,
+   "approx": false,
+   "location": "Rattlesnake Gulch Trail, Eldorado Canyon State Park. Start at the west Fowler Trail trailhead, about 0.5 mi into the canyon. The ruins are about 1.4 mi up, roughly 600 ft above the trailhead, on a grassy side path off the main trail., Eldorado Springs, Boulder County",
+   "condition": "Small brick ruins, foundations and remnants of a hotel built in 1908 that burned in 1912, after about four years in business. Benches with canyon views (sources seen 2015-2026).",
+   "access": "Colorado Parks & Wildlife. A state park pass is required. About 3.6 mi round trip with the upper loop. The park gets very crowded and can fill completely on weekends.",
+   "sources": [
+    "https://trails.colorado.gov/routes/45",
+    "https://www.eldoradosprings.com/eldorado-news/take-a-hike-to-the-remains-of-colorados-historic-crags-hotel",
+    "https://www.hikespeak.com/trails/rattlesnake-gulch-trail-eldorado-canyon-sp-colorado/"
+   ],
+   "verify": {
+    "status": "standing",
+    "security": "low",
+    "security_notes": "The upper part of the loop is sometimes closed in spring and summer for raptor nesting. Stay on the trail.",
+    "legal": "public",
+    "as_of": "2026",
+    "sources": [
+     "https://trails.colorado.gov/routes/45",
+     "https://www.eldoradosprings.com/eldorado-news/take-a-hike-to-the-remains-of-colorados-historic-crags-hotel",
+     "https://www.hikespeak.com/trails/rattlesnake-gulch-trail-eldorado-canyon-sp-colorado/"
+    ],
+    "checked": "2026-11-09"
+   }
+  },
+  {
+   "id": "castlewood-canyon-dam-ruins",
+   "name": "Castlewood Canyon Dam ruins",
+   "cat": "other",
+   "type": "dam ruins",
+   "lat": 39.38758,
+   "lon": -104.74581,
+   "approx": true,
+   "location": "Castlewood Canyon State Park. Reached by the Creek Bottom Trail or the Castlewood Canyon Ruins Loop (4.75 mi, moderate)., Franktown, Douglas County",
+   "condition": "Both sides of an 1890 stone dam still stand. The dam failed in a storm in 1933 and flooded Denver. The breach is now a grassy path.",
+   "access": "Colorado Parks & Wildlife. Day use only, with no camping. A state park pass is required.",
+   "sources": [
+    "https://trails.colorado.gov/routes/26",
+    "https://www.atlasobscura.com/places/castlewood-canyon-dam-ruins",
+    "https://www.coloradovirtuallibrary.org/?p=48342"
+   ],
+   "verify": {
+    "status": "standing",
+    "security": "low",
+    "security_notes": "Day-use park. Follow the park's posted hours and stay on the trails.",
+    "legal": "public",
+    "as_of": "1933",
+    "sources": [
+     "https://trails.colorado.gov/routes/26",
+     "https://www.atlasobscura.com/places/castlewood-canyon-dam-ruins",
+     "https://www.coloradovirtuallibrary.org/?p=48342"
+    ],
+    "checked": "2026-11-09"
+   }
+  },
+  {
+   "id": "crest-house-ruins-mount-blue-sky-summit",
+   "name": "Crest House ruins (Mount Blue Sky summit)",
+   "cat": "leisure",
+   "type": "lodge / restaurant ruins",
+   "lat": 39.74076,
+   "lon": -105.51148,
+   "approx": true,
+   "location": "Summit parking area at the end of the Mount Blue Sky (formerly Mount Evans) road, Arapaho National Forest. A 135 ft trail continues to the 14,265 ft summit., Idaho Springs, Clear Creek County",
+   "condition": "Stone shell of a restaurant and gift shop that opened in 1941-42 and was destroyed by a propane fire or explosion on September 1, 1979. The Forest Service stabilized it as an observation platform starting in 1992.",
+   "access": "USDA Forest Service, Arapaho-Roosevelt National Forest. Driving in requires a timed-entry ticket from recreation.gov. The road is seasonal, and a 2026 listing said the summit would reopen, conditions allowing, on Memorial Day weekend 2026. Off-season the summit can only be reached on hiking trails.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Crest_House",
+    "https://www.fs.usda.gov/r02/arp/recreation/mount-blue-sky-summit",
+    "https://www.recreation.gov/timed-entry/10087438/ticket/10087441"
+   ],
+   "verify": {
+    "status": "standing",
+    "security": "low",
+    "security_notes": "Use the stabilized ruin only as the observation platform it is meant to be. This is extreme high altitude, and the road closes seasonally (2026).",
+    "legal": "public",
+    "as_of": "2026",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Crest_House",
+     "https://www.fs.usda.gov/r02/arp/recreation/mount-blue-sky-summit",
+     "https://www.recreation.gov/timed-entry/10087438/ticket/10087441"
+    ],
+    "checked": "2026-11-09"
+   }
+  },
+  {
+   "id": "lost-park-reservoir-shafthouse-and-historic-cabins-goose-cre",
+   "name": "Lost Park Reservoir shafthouse and historic cabins (Goose Creek)",
+   "cat": "houses",
+   "type": "abandoned dam project / cabins",
+   "lat": 39.56814,
+   "lon": -105.25403,
+   "approx": true,
+   "location": "Goose Creek Trail #612 from the Goose Creek Trailhead, Lost Creek Wilderness, Pike National Forest. The cabins are about 4.1 mi in, on a signed 'Historic Buildings' spur. The shafthouse is about 0.5 mi farther., Deckers / Sedalia area, Jefferson County",
+   "condition": "Two semi-intact cabins, other ruins and an old car at the camp. Old machinery at the shaft house from a failed attempt to dam Lost Creek underground (trip reports seen up to 2022).",
+   "access": "USDA Forest Service, Pike-San Isabel National Forest. A long day hike of about 8 to 9.7 mi round trip. Wilderness rules apply.",
+   "sources": [
+    "https://www.fs.usda.gov/r02/psicc/recreation/trails/goose-creek-trail-612",
+    "https://www.cmc.org/education-adventure/trips/routes-places/goose-creek-trailhead",
+    "https://en.wikipedia.org/wiki/Goose_Creek_(South_Platte_River)"
+   ],
+   "verify": {
+    "status": "standing",
+    "security": "low",
+    "security_notes": "Wilderness area: leave the artifacts in place and stay out of shafts. Check Forest Service conditions before going.",
+    "legal": "public",
+    "as_of": "2022",
+    "sources": [
+     "https://www.fs.usda.gov/r02/psicc/recreation/trails/goose-creek-trail-612",
+     "https://www.cmc.org/education-adventure/trips/routes-places/goose-creek-trailhead",
+     "https://en.wikipedia.org/wiki/Goose_Creek_(South_Platte_River)"
+    ],
+    "checked": "2026-11-09"
+   }
+  },
+  {
+   "id": "frazer-barn-and-homestead-ruins-frazer-meadow",
+   "name": "Frazer Barn and homestead ruins (Frazer Meadow)",
+   "cat": "other",
+   "type": "homestead ruins / barn",
+   "lat": 39.80799,
+   "lon": -105.45886,
+   "approx": true,
+   "location": "Frazer Meadow, Golden Gate Canyon State Park. Reached by the Horseshoe Trail, or by the Burro and Mule Deer trails from Golden Gate Canyon Road., Golden / Black Hawk area, Gilpin County",
+   "condition": "State Register-listed Frazer's Barn (5GL.700) and ruins of the Frazer homestead cabin. Remnants of an old bread truck lie in the meadow (2023 hike report).",
+   "access": "Colorado Parks & Wildlife. A state park pass is required, and sources disagree on the day fee.",
+   "sources": [
+    "https://historycolorado.org/node/5562",
+    "https://www.10adventures.com/hikes/denver/john-frazer-cabin-via-blue-grouse-trail",
+    "https://www.cmc.org/education-adventure/trips/routes-places/golden-gate-canyon-state-park"
+   ],
+   "verify": {
+    "status": "standing",
+    "security": "low",
+    "security_notes": "Historic structure: look from outside and do not climb on it.",
+    "legal": "public",
+    "as_of": "2023",
+    "sources": [
+     "https://historycolorado.org/node/5562",
+     "https://www.10adventures.com/hikes/denver/john-frazer-cabin-via-blue-grouse-trail",
+     "https://www.cmc.org/education-adventure/trips/routes-places/golden-gate-canyon-state-park"
+    ],
+    "checked": "2026-11-09"
+   }
+  },
+  {
+   "id": "staunton-historic-cabin-district",
+   "name": "Staunton historic cabin district",
+   "cat": "houses",
+   "type": "homestead cabins",
+   "lat": 39.46681,
+   "lon": -105.3987,
+   "approx": true,
+   "location": "Historic Cabin Trail and Chase Meadow Trail, Staunton State Park. The Staunton Cabin is 1/4 mi along the Historic Cabin Trail. A 'Building Ruin' is marked on the Scenic Loop., Pine, Jefferson / Park County",
+   "condition": "Brola, Blaine, Richardson and Staunton cabins. The 1918 Staunton homestead cabin is on the National Register. A separate building ruin is marked on the route map.",
+   "access": "Colorado Parks & Wildlife. A state park pass is required. The Historic Cabin Trail is foot-only, so bikes use the Staunton Ranch Trail. Guided history hikes are offered at times.",
+   "sources": [
+    "https://trails.colorado.gov/routes/422",
+    "https://friendsofstauntonstatepark.org/wp-content/uploads/2020/06/FOSSP-Staunton-Cabin-Preservation-Trifold-Brochure.pdf"
+   ],
+   "verify": {
+    "status": "standing",
+    "security": "low",
+    "security_notes": "The cabins are under preservation. Do not enter unless on a guided tour.",
+    "legal": "public",
+    "as_of": "1918",
+    "sources": [
+     "https://trails.colorado.gov/routes/422",
+     "https://friendsofstauntonstatepark.org/wp-content/uploads/2020/06/FOSSP-Staunton-Cabin-Preservation-Trifold-Brochure.pdf"
+    ],
+    "checked": "2026-11-09"
+   }
+  },
+  {
+   "id": "heil-valley-ranch-lime-kiln",
+   "name": "Heil Valley Ranch lime kiln",
+   "cat": "other",
+   "type": "kiln",
+   "lat": 40.22259,
+   "lon": -105.26837,
+   "approx": true,
+   "location": "Lime Kiln Spur off the Lichen Loop (1.3 mi), Heil Valley Ranch Open Space. Take the signed trails east of the Heil parking area, across the creek bridges., Lyons area, Boulder County",
+   "condition": "Sandstone kiln once used to fire limestone into lime.",
+   "access": "Boulder County Parks & Open Space. The Lichen Loop is foot traffic only. No fee was mentioned in the sources.",
+   "sources": [
+    "https://www.hikingproject.com/trail/7018794/lichen-loop",
+    "https://5280.com/lyons-grindstone-quarry-trail-to-lichen-loop/"
+   ],
+   "verify": {
+    "status": "standing",
+    "security": "low",
+    "security_notes": "Stay on the trail and do not climb the kiln.",
+    "legal": "public",
+    "sources": [
+     "https://www.hikingproject.com/trail/7018794/lichen-loop",
+     "https://5280.com/lyons-grindstone-quarry-trail-to-lichen-loop/"
+    ],
+    "checked": "2026-11-09"
+   }
+  },
+  {
+   "id": "woods-quarry-and-roosa-cabin",
+   "name": "Woods Quarry and Roosa Cabin",
+   "cat": "houses",
+   "type": "quarry / stone cabin",
+   "lat": 40.01499,
+   "lon": -105.27054,
+   "approx": true,
+   "location": "Junction of the Mesa Trail and the Woods Quarry Trail, near Chautauqua (City of Boulder OSMP). The quarry is a short spur uphill from the cabin.",
+   "condition": "Sandstone quarry used from the 1890s until it closed in the 1920s, with 'sandstone sofas' carved at the site. The small stone Roosa Cabin stands at the trail junction.",
+   "access": "City of Boulder Open Space & Mountain Parks. Free, with dogs on leash. Heavily used.",
+   "sources": [
+    "https://bouldercolorado.gov/trail/woods-quarry",
+    "https://yourboulder.com/boulder-hike-woods-quarry/",
+    "https://www.cmc.org/education-adventure/trips/routes-places/woods-quarry-via-mcclintock-mesa-and-enchanted-mesa"
+   ],
+   "verify": {
+    "status": "standing",
+    "security": "low",
+    "security_notes": "Check OSMP trail status before going.",
+    "legal": "public",
+    "as_of": "1920",
+    "sources": [
+     "https://bouldercolorado.gov/trail/woods-quarry",
+     "https://yourboulder.com/boulder-hike-woods-quarry/",
+     "https://www.cmc.org/education-adventure/trips/routes-places/woods-quarry-via-mcclintock-mesa-and-enchanted-mesa"
+    ],
+    "checked": "2026-11-09"
+   }
+  },
+  {
+   "id": "old-kiln-trail-lime-kiln",
+   "name": "Old Kiln Trail lime kiln",
+   "cat": "other",
+   "type": "kiln",
+   "lat": 40.01315,
+   "lon": -105.26838,
+   "approx": true,
+   "location": "Old Kiln Trail and Old Kiln Spur, City of Boulder OSMP, off the Foothills South trail., Boulder (north), Boulder County",
+   "condition": "Remains of a crude lime kiln that may have made lime plaster and cement for the earliest CU buildings. The 2013 floods damaged the trail, and a narrow eroded section was still reported in 2015.",
+   "access": "City of Boulder Open Space & Mountain Parks. Free.",
+   "sources": [
+    "https://bouldercolorado.gov/trail/old-kiln",
+    "https://hikingproject.com/trail/7005385/old-kiln-spur",
+    "https://www.geocaching.com/geocache/GC156EH_old-kiln-trail-geology-field-guide"
+   ],
+   "verify": {
+    "status": "standing",
+    "security": "low",
+    "security_notes": "Check current OSMP status for flood damage. Stay on the trail.",
+    "legal": "public",
+    "as_of": "2015",
+    "sources": [
+     "https://bouldercolorado.gov/trail/old-kiln",
+     "https://hikingproject.com/trail/7005385/old-kiln-spur",
+     "https://www.geocaching.com/geocache/GC156EH_old-kiln-trail-geology-field-guide"
+    ],
+    "checked": "2026-11-09"
+   }
+  },
+  {
+   "id": "cambria-lime-kiln",
+   "name": "Cambria Lime Kiln",
+   "cat": "other",
+   "type": "kiln",
+   "lat": 39.75463,
+   "lon": -105.22058,
+   "approx": true,
+   "location": "East side of the Kinney Run Trail, Kinney Run Open Space / Eagle Ridge area (City of Golden).",
+   "condition": "Kiln built in 1879 by the Cambria Brick and Tile Co. and used until 1892. Its base was restored in 2009 and interpretive signs were added.",
+   "access": "City of Golden open space. A public trail, with no fee found in the sources.",
+   "sources": [
+    "https://schweich.com/geoCOJefCambriaLimeKiln.html",
+    "https://www.coloradopreservation.org/?p=16107"
+   ],
+   "verify": {
+    "status": "standing",
+    "security": "low",
+    "security_notes": "Restored historic structure: do not climb it.",
+    "legal": "public",
+    "as_of": "2009",
+    "sources": [
+     "https://schweich.com/geoCOJefCambriaLimeKiln.html",
+     "https://www.coloradopreservation.org/?p=16107"
+    ],
+    "checked": "2026-11-09"
+   }
+  },
+  {
+   "id": "north-table-mountain-old-quarries",
+   "name": "North Table Mountain old quarries",
+   "cat": "other",
+   "type": "quarry",
+   "lat": 39.75279,
+   "lon": -105.21842,
+   "approx": true,
+   "location": "North Table Mountain Park. The Old Quarry Road is now part of the North Table Loop, and the West Quarry and Tilting Mesa trails pass the old quarries. West Trailhead: 4788 Hwy 93., Golden, Jefferson County",
+   "condition": "Two old basalt quarries on top of the mesa, now also used as climbing areas.",
+   "access": "Jefferson County Open Space. Free.",
+   "sources": [
+    "https://www.summitpost.org/north-table-mountain/152172",
+    "https://www.visitgolden.com/?p=8180",
+    "https://mountainproject.com/area/105744249/north-table-mountaingolden-cliffs"
+   ],
+   "verify": {
+    "status": "standing",
+    "security": "low",
+    "security_notes": "The Rim Rock Trail closes Feb 1 to Jul 31 each year for nesting birds. The quarry walls have steep drop-offs.",
+    "legal": "public",
+    "sources": [
+     "https://www.summitpost.org/north-table-mountain/152172",
+     "https://www.visitgolden.com/?p=8180",
+     "https://mountainproject.com/area/105744249/north-table-mountaingolden-cliffs"
+    ],
+    "checked": "2026-11-09"
+   }
+  },
+  {
+   "id": "nelson-house-hall-ranch",
+   "name": "Nelson House, Hall Ranch",
+   "cat": "houses",
+   "type": "homestead / ranch house",
+   "lat": 40.22465,
+   "lon": -105.27372,
+   "approx": true,
+   "location": "Nelson Loop Trail, Hall Ranch Open Space, reached from the Bitterbrush Trail (about 3.7 mi to the junction)., Lyons, Boulder County",
+   "condition": "The Nelson homestead house still stands, with a grain silo.",
+   "access": "Boulder County Parks & Open Space. Free.",
+   "sources": [
+    "https://yourboulder.com/?p=46708",
+    "https://myoutdoorbasecamp.com/hall-ranch-open-space-hike/"
+   ],
+   "verify": {
+    "status": "standing",
+    "security": "low",
+    "security_notes": "View from the trail. Do not enter the house.",
+    "legal": "public",
+    "sources": [
+     "https://yourboulder.com/?p=46708",
+     "https://myoutdoorbasecamp.com/hall-ranch-open-space-hike/"
+    ],
+    "checked": "2026-11-09"
+   }
+  },
+  {
+   "id": "walker-ranch-homestead",
+   "name": "Walker Ranch Homestead",
+   "cat": "other",
+   "type": "ranch buildings",
+   "lat": 39.95294,
+   "lon": -105.33364,
+   "approx": false,
+   "location": "Walker Ranch Open Space, Flagstaff Road. The homestead complex is near the Walker Ranch Loop., Boulder (Flagstaff Rd), Boulder County",
+   "condition": "Ranch homesteaded in 1882 with original 1880s buildings, plus a newly reconstructed ranch house. National Register historic district (1984), which also includes sawmill and cyanide mill sites.",
+   "access": "Boulder County Parks & Open Space. The open space trails are free. The homestead itself is open to the public only for certain events, such as heritage days.",
+   "sources": [
+    "https://bouldercounty.gov/open-space/parks-and-trails/walker-ranch/",
+    "https://en.wikipedia.org/wiki/Walker_Ranch"
+   ],
+   "verify": {
+    "status": "standing",
+    "security": "low",
+    "security_notes": "The homestead grounds are open only during scheduled events. Check the county calendar.",
+    "legal": "public",
+    "as_of": "1984",
+    "sources": [
+     "https://bouldercounty.gov/open-space/parks-and-trails/walker-ranch/",
+     "https://en.wikipedia.org/wiki/Walker_Ranch"
+    ],
+    "checked": "2026-11-09"
+   }
+  },
+  {
+   "id": "white-ranch-abandoned-barn-and-ranch-equipment",
+   "name": "White Ranch abandoned barn and ranch equipment",
+   "cat": "other",
+   "type": "ranch buildings / equipment",
+   "lat": 39.75485,
+   "lon": -105.22377,
+   "approx": true,
+   "location": "Rawhide Trail, White Ranch Park. It is the first trail east of the West Trailhead (25373 Belcher Hill Rd). An open-air display of farm implements sits near a parking lot., Golden, Jefferson County",
+   "condition": "Abandoned ranch structures, a barn in a meadow, and old wagons and equipment from a cattle ranch the county bought in 1974.",
+   "access": "Jefferson County Open Space. Free, with about 20 mi of trails.",
+   "sources": [
+    "https://www.jeffco.us/1437/White-Ranch-Park",
+    "https://www.komoot.com/highlight/5855032"
+   ],
+   "verify": {
+    "status": "standing",
+    "security": "low",
+    "security_notes": "Leave the equipment in place. Check Jeffco for trail reroutes.",
+    "legal": "public",
+    "as_of": "1974",
+    "sources": [
+     "https://www.jeffco.us/1437/White-Ranch-Park",
+     "https://www.komoot.com/highlight/5855032"
+    ],
+    "checked": "2026-11-09"
+   }
+  },
+  {
+   "id": "fourth-of-july-mine-remnants",
+   "name": "Fourth of July Mine remnants",
+   "cat": "industrial",
+   "type": "mine ruins",
+   "lat": 39.95697,
+   "lon": -105.52152,
+   "approx": true,
+   "location": "Arapaho Pass Trail #904 from the Fourth of July Trailhead at the end of Fourth of July Road, at about 11,245 ft., Eldora / Nederland, Boulder County",
+   "condition": "Rusted machinery and leftover equipment at the inactive mine. The Forest Service has sealed the open shafts, including one 17 ft across.",
+   "access": "USDA Forest Service, Boulder Ranger District, Indian Peaks Wilderness edge. In winter the road closes at the west end of Eldora.",
+   "sources": [
+    "https://fs.usda.gov/r02/arp/recreation/trails/arapaho-pass-trail-0",
+    "https://cms.10adventures.com/hikes/indian-peaks/fourth-of-july-mine-via-arapaho-pass-trail/",
+    "https://summitpost.org/fourth-of-july-trailhead/171615"
+   ],
+   "verify": {
+    "status": "standing",
+    "security": "low",
+    "security_notes": "Stay away from mine openings. Seasonal road closure. Wilderness rules apply.",
+    "legal": "public",
+    "sources": [
+     "https://fs.usda.gov/r02/arp/recreation/trails/arapaho-pass-trail-0",
+     "https://cms.10adventures.com/hikes/indian-peaks/fourth-of-july-mine-via-arapaho-pass-trail/",
+     "https://summitpost.org/fourth-of-july-trailhead/171615"
+    ],
+    "checked": "2026-11-09"
+   }
+  },
+  {
+   "id": "evans-evans-gandy-homestead-lincoln-mountain-open-space",
+   "name": "Evans (Evans-Gandy) Homestead, Lincoln Mountain Open Space",
+   "cat": "other",
+   "type": "homestead",
+   "lat": 39.22885,
+   "lon": -104.88449,
+   "approx": true,
+   "location": "Homestead Trail, which branches off the Palmer Divide Trail about 1.25 mi from the Lincoln Mountain Open Space trailhead., Larkspur, Douglas County",
+   "condition": "National Register homestead, stabilized and preserved with about $400K. The trail and homestead had a ribbon-cutting on July 18, 2026.",
+   "access": "Douglas County Open Space. A public trail, with no fee mentioned in the sources.",
+   "sources": [
+    "https://www.douglas.co.us/nature-and-history-will-come-together-as-part-of-trail-expansion-plans/",
+    "https://www.douglasco.gov/youre-invited-celebrate-the-opening-of-evans-homestead-and-new-trail-at-lincoln-mountain-open-space/"
+   ],
+   "verify": {
+    "status": "standing",
+    "security": "low",
+    "security_notes": "Opened in July 2026. Confirm current access with Douglas County.",
+    "legal": "public",
+    "as_of": "2026",
+    "sources": [
+     "https://www.douglas.co.us/nature-and-history-will-come-together-as-part-of-trail-expansion-plans/",
+     "https://www.douglasco.gov/youre-invited-celebrate-the-opening-of-evans-homestead-and-new-trail-at-lincoln-mountain-open-space/"
+    ],
+    "checked": "2026-11-09"
+   }
+  },
+  {
+   "id": "soderberg-homestead",
+   "name": "Soderberg Homestead",
+   "cat": "other",
+   "type": "homestead / ranch buildings",
+   "lat": 40.58718,
+   "lon": -105.07701,
+   "approx": true,
+   "location": "Soderberg Trailhead, Horsetooth Mountain Open Space, 1.2 mi along Shoreline Dr on the west side of the road. This is about 95 km from Denver, at the edge of the range., Fort Collins, Larimer County",
+   "condition": "Historic homestead and horse-ranch buildings, restored by HistoriCorps volunteers in September and October 2019.",
+   "access": "Larimer County Natural Resources. Open sunrise to sunset, and a park permit or fee is required.",
+   "sources": [
+    "https://www.larimer.gov/naturalresources/openlands/acquisitions/soderberg",
+    "https://larimer.gov//naturalresources/parks/horsetooth-mountain",
+    "https://northfortynews.com/category/new-scene/events/volunteers-needed-to-preserve-horsetooth-mountain-open-space-history"
+   ],
+   "verify": {
+    "status": "standing",
+    "security": "low",
+    "security_notes": "Open sunrise to sunset. Do not enter the buildings.",
+    "legal": "public",
+    "as_of": "2019",
+    "sources": [
+     "https://www.larimer.gov/naturalresources/openlands/acquisitions/soderberg",
+     "https://larimer.gov//naturalresources/parks/horsetooth-mountain",
+     "https://northfortynews.com/category/new-scene/events/volunteers-needed-to-preserve-horsetooth-mountain-open-space-history"
+    ],
+    "checked": "2026-11-09"
+   }
+  },
+  {
+   "id": "hidden-valley-lost-ski-area",
+   "name": "Hidden Valley lost ski area",
+   "cat": "leisure",
+   "type": "abandoned ski area",
+   "lat": 40.37535,
+   "lon": -105.52106,
+   "approx": true,
+   "location": "Hidden Valley, off Trail Ridge Road, Rocky Mountain National Park. Old lift lines (such as the Lower T-Bar) are still used as backcountry runs. About 100 km from Denver., Estes Park, Larimer County",
+   "condition": "The ski area ran until the NPS closed it in 1991 and removed its structures. Concrete lift footings, sign and snow-fence remnants, and lift-line scars remain (KUNC 2014). A sledding hill is still used.",
+   "access": "National Park Service. The park entrance fee applies.",
+   "sources": [
+    "https://www.kunc.org/arts-life/2014-08-01/a-past-still-visible-finding-estes-parks-lost-ski-resort",
+    "https://en.wikipedia.org/wiki/Hidden_Valley_(Ski_Estes_Park)",
+    "https://www.denvergazette.com/outtherecolorado/2024/03/05/rocky-mountain-national-parks-ski-area-is-no-more-but-the-fun-remains/"
+   ],
+   "verify": {
+    "status": "standing",
+    "security": "low",
+    "security_notes": "There is avalanche terrain above treeline in winter. Leave the artifacts in place.",
+    "legal": "public",
+    "as_of": "2014",
+    "sources": [
+     "https://www.kunc.org/arts-life/2014-08-01/a-past-still-visible-finding-estes-parks-lost-ski-resort",
+     "https://en.wikipedia.org/wiki/Hidden_Valley_(Ski_Estes_Park)",
+     "https://www.denvergazette.com/outtherecolorado/2024/03/05/rocky-mountain-national-parks-ski-area-is-no-more-but-the-fun-remains/"
+    ],
     "checked": "2026-11-09"
    }
   }
