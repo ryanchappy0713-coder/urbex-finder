@@ -406,7 +406,21 @@
    "sources": [
     "https://gregdisch.com/2018/10/09/ironton-ghost-town/"
    ],
-   "added": "2026-11-08T02:47:28+00:00"
+   "added": "2026-11-08T02:47:28+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "low",
+    "security_notes": "Dec 2024: Trust for Land Restoration helped Ouray County install gates at the townsite, and the Forest Service removed hazard trees near four historic structures. Camping inside the townsite is banned. Feb 2025: US-550 Ouray–Ironton had a planned winter closure. Owned by Ouray County (bought 2001), with some sources also naming the USFS.",
+    "legal": "public",
+    "as_of": "2025",
+    "sources": [
+     "https://www.ouraynews.com/2024/12/04/trust-land-restoration/",
+     "https://en.wikipedia.org/wiki/Ironton,_Colorado",
+     "https://myhikes.org/trails/abandoned-ironton-townsite-trail",
+     "https://nixle.us/G4C79"
+    ],
+    "checked": "2026-11-09"
+   }
   },
   {
    "id": "red-mountain-town-jail",
@@ -1274,7 +1288,18 @@
    "sources": [
     "https://rockymountainprofiles.com/colorado/derry-ranch-thru-hull-city/galatea-colorado"
    ],
-   "added": "2026-11-08T02:47:28+00:00"
+   "added": "2026-11-08T02:47:28+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "unknown",
+    "legal": "unknown",
+    "as_of": "2021",
+    "sources": [
+     "https://lifedeathiron.com/tag/galatea",
+     "https://1johnbord-blog.blogspot.com/2021/09"
+    ],
+    "checked": "2026-11-09"
+   }
   },
   {
    "id": "boyero-townsite",
@@ -1290,7 +1315,19 @@
    "sources": [
     "https://lifedeathiron.com/2020/09/22/ghost-town-photo-blog-boyero-colorado"
    ],
-   "added": "2026-11-08T02:47:28+00:00"
+   "added": "2026-11-08T02:47:28+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "unknown",
+    "security_notes": "A few families still live in Boyero. The old townsite is on private property (2020 blog).",
+    "legal": "private",
+    "as_of": "2020",
+    "sources": [
+     "https://lifedeathiron.com/2020/09/22/ghost-town-photo-blog-boyero-colorado",
+     "https://1johnbord-blog.blogspot.com/2016/02/boyero-co.html"
+    ],
+    "checked": "2026-11-09"
+   }
   },
   {
    "id": "pritchett-grain-elevators",
@@ -1306,7 +1343,20 @@
    "sources": [
     "https://ourgrandfathersgrainelevators.com/2012/03/21/pritchett-3-elevators"
    ],
-   "added": "2026-11-08T02:47:28+00:00"
+   "added": "2026-11-08T02:47:28+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "unknown",
+    "security_notes": "A July 2026 blog post says three abandoned elevators stand downtown. A nearby wooden elevator may still be in use. Nothing found on ownership or security.",
+    "legal": "unknown",
+    "as_of": "2026",
+    "sources": [
+     "https://ourgrandfathersgrainelevators.com/2026/06/22/mayer-osborns-signature-stepped-cupola/",
+     "https://ourgrandfathersgrainelevators.com/2026/07/page/2/",
+     "https://ourgrandfathersgrainelevators.com/2012/03/21/pritchett-3-elevators"
+    ],
+    "checked": "2026-11-09"
+   }
   },
   {
    "id": "cabin-creek-roadside-stop",
@@ -1610,7 +1660,19 @@
    "sources": [
     "https://www.weichert.com/125504332"
    ],
-   "added": "2026-11-08T02:47:28+00:00"
+   "added": "2026-11-08T02:47:28+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "unknown",
+    "security_notes": "Listed for sale as a food-processing property. Asking price is $1M on some listings and $1.5M on others. Nothing found on security.",
+    "legal": "private",
+    "sources": [
+     "https://www.loopnet.ca/Listing/20094-US-Highway-50-Rocky-Ford-CO/34807026/",
+     "https://www.crexi.com/properties/1880687/colorado-20094-us-highway-50",
+     "https://www.weichert.com/127920615"
+    ],
+    "checked": "2026-11-09"
+   }
   },
   {
    "id": "columbian-hotel",
@@ -1627,7 +1689,20 @@
     "https://realmo.com/listing/111-north-commercial-st-trinidad-co-81082/12400068",
     "https://visittrinidadcolorado.com/attraction/the-columbian-hotel/"
    ],
-   "added": "2026-11-08T02:47:28+00:00"
+   "added": "2026-11-08T02:47:28+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "unknown",
+    "security_notes": "May 2026 listing: for sale at $1.75M as a redevelopment project. The 2nd and 3rd floors (100 rooms) have been vacant since the 1970s. It sits in the downtown Corazon de Trinidad NRHP district. No buyer or plan found.",
+    "legal": "private",
+    "as_of": "2026",
+    "sources": [
+     "https://www.commercialcafe.com/commercial-property/us/co/trinidad/columbian-hotel/",
+     "https://www.loopnet.ca/Listing/111-N-Commercial-St-Trinidad-CO/37473389/",
+     "https://en.wikipedia.org/wiki/Corazon_de_Trinidad"
+    ],
+    "checked": "2026-11-09"
+   }
   },
   {
    "id": "walsen-power-plant",
@@ -1643,7 +1718,20 @@
    "sources": [
     "https://www.coloradopreservation.org/?p=1749"
    ],
-   "added": "2026-11-08T02:47:28+00:00"
+   "added": "2026-11-08T02:47:28+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "unknown",
+    "security_notes": "Listed as Most Endangered in 2009 because of neglect, vandalism and scrap-metal theft. The City of Walsenburg bought it in 1955. The current owner was not confirmed, and no 2025-26 updates were found.",
+    "legal": "unknown",
+    "as_of": "2009",
+    "sources": [
+     "https://www.coloradopreservation.org/?p=16163",
+     "https://www.coloradopreservation.org/?p=1749",
+     "https://worldjournalnewspaper.com/?p=3268"
+    ],
+    "checked": "2026-11-09"
+   }
   },
   {
    "id": "former-lathrop-park-juvenile-facility",
@@ -1659,7 +1747,20 @@
    "sources": [
     "https://worldjournalnewspaper.com/?p=5829"
    ],
-   "added": "2026-11-08T02:47:28+00:00"
+   "added": "2026-11-08T02:47:28+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "unknown",
+    "security_notes": "June 2026: Huerfano County Economic Development (HCED) posted an RFQ for reuse concepts for the former Lathrop Youth Camp (5 main buildings). July 2026 report: Walsenburg council is moving to sell it through a $1.1M lease/purchase to a Colorado Springs nonprofit. The land is city-owned and was leased to the state. Redevelopment activity is likely.",
+    "legal": "government-owned (not open)",
+    "as_of": "2026",
+    "sources": [
+     "https://samsearch.co/gov-explore/sled/hced-design-concept-informal-request-for-quote/9131216551",
+     "https://groundnews.lakegeneva.lib.wi.us/article/walsenburg-oks-11-million-lathrop-deal",
+     "https://worldjournalnewspaper.com/?p=5829"
+    ],
+    "checked": "2026-11-09"
+   }
   },
   {
    "id": "deputy-warden-s-house",
@@ -1736,7 +1837,20 @@
     "https://www.kjct8.com/2026/02/19/mesa-county-supports-historic-loma-school-endangered-places-program/",
     "https://999thepoint.com/ixp/510/p/colorado-abandoned-loma-school/"
    ],
-   "added": "2026-11-08T02:47:28+00:00"
+   "added": "2026-11-08T02:47:28+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "unknown",
+    "security_notes": "Feb 2026: vacated over foundation and wall problems. County backs a nomination to the 2027 Endangered Places program. Local media say going inside is strictly prohibited, with risk of injury and prosecution for trespassing on private property. No specific enforcement reports found.",
+    "legal": "private",
+    "as_of": "2026",
+    "sources": [
+     "https://www.kkco11news.com/2026/02/19/mesa-county-supports-historic-loma-school-endangered-places-program/",
+     "https://www.kjct8.com/2026/02/19/mesa-county-supports-historic-loma-school-endangered-places-program/",
+     "https://999thepoint.com/ixp/510/p/colorado-abandoned-loma-school/"
+    ],
+    "checked": "2026-11-09"
+   }
   },
   {
    "id": "wiley-s-resort-motel-club-40-dance-hall",
@@ -1809,7 +1923,20 @@
    "sources": [
     "https://ghosttowns.com/states/co/summitville.html"
    ],
-   "added": "2026-11-08T02:47:28+00:00"
+   "added": "2026-11-08T02:47:28+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "medium",
+    "security_notes": "Rio Grande County took over most of the mining district through a 2020 land exchange. Four structure locations were identified to be fenced off for preservation. An active Superfund water-treatment facility is on site and the state runs the cleanup. No enforcement or arrest reports found.",
+    "legal": "public",
+    "as_of": "2020",
+    "sources": [
+     "https://delnorteprospector.com/stories/summitville-preservation-plans-underway,61609",
+     "https://delnorteprospector.com/article/tour-of-summitville-shows-progress",
+     "https://delnorteprospector.com/article/summitville-tour-showcases-history"
+    ],
+    "checked": "2026-11-09"
+   }
   },
   {
    "id": "far-view-visitor-center",
@@ -2274,7 +2401,20 @@
    "sources": [
     "https://longmontian.blogspot.com/2009/07/sterling-sugar-beet-factory.html"
    ],
-   "added": "2026-11-08T03:06:53+00:00"
+   "added": "2026-11-08T03:06:53+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "unknown",
+    "security_notes": "Vacant for nearly 40 years. The 283-acre site is privately owned and zoned heavy industrial. May 2026: Logan County EDC is seeking grants, including a CHIPS grant, to buy part of the site. No trespass reports found for Sterling.",
+    "legal": "private",
+    "as_of": "2026",
+    "sources": [
+     "https://www.prismnews.com/local/logan-co/logan-county-edc-seeks-grants-to-buy-former-sterling-sugar",
+     "https://www.logancountyco.gov/AgendaCenter/ViewFile/Minutes/_05262026-149",
+     "https://longmontian.blogspot.com/2009/07/sterling-sugar-beet-factory.html"
+    ],
+    "checked": "2026-11-09"
+   }
   },
   {
    "id": "romantic-motor-vu-drive-in",
@@ -2481,7 +2621,20 @@
     "https://kekbfm.com/abandoned-colorado-rio-cucharas-inn/",
     "https://k99.com/drone-footage-captures-footage-of-abandoned-colorado-hotel/"
    ],
-   "added": "2026-11-08T03:06:53+00:00"
+   "added": "2026-11-08T03:06:53+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "unknown",
+    "security_notes": "Permanently closed to guests. 2020 drone footage showed trash on the property, and local media say curious wanderers still stop by. No sale or redevelopment news found.",
+    "legal": "private",
+    "as_of": "2020",
+    "sources": [
+     "https://k99.com/drone-footage-captures-footage-of-abandoned-colorado-hotel/",
+     "https://kekbfm.com/abandoned-colorado-rio-cucharas-inn/",
+     "https://mix1043fm.com/abandoned-colorado-rio-cucharas-inn/"
+    ],
+    "checked": "2026-11-09"
+   }
   },
   {
    "id": "a-frame-lounge",
@@ -2665,7 +2818,20 @@
     "https://en.wikipedia.org/wiki/Model,_Colorado",
     "https://placesthatwere.com/2016/01/eerie-ghost-towns-of-colorado.html?m=0"
    ],
-   "added": "2026-11-08T03:06:53+00:00"
+   "added": "2026-11-08T03:06:53+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "unknown",
+    "security_notes": "Abandoned village. Its post office ran until 2021. Radio-station pages call the buildings unsafe to explore. Land ownership was not confirmed.",
+    "legal": "unknown",
+    "as_of": "2021",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Model,_Colorado",
+     "https://placesthatwere.com/2016/01/eerie-ghost-towns-of-colorado.html?m=0",
+     "https://kool1079.com/ixp/510/p/colorado-model-ghost-town/"
+    ],
+    "checked": "2026-11-09"
+   }
   },
   {
    "id": "tyrone-schoolhouse",
@@ -2681,7 +2847,18 @@
    "sources": [
     "https://placesthatwere.com/2016/01/eerie-ghost-towns-of-colorado.html?m=0"
    ],
-   "added": "2026-11-08T03:06:53+00:00"
+   "added": "2026-11-08T03:06:53+00:00",
+   "verify": {
+    "status": "unknown",
+    "security": "unknown",
+    "security_notes": "Only source is a 2016 blog post. Nothing newer found.",
+    "legal": "unknown",
+    "as_of": "2016",
+    "sources": [
+     "https://placesthatwere.com/2016/01/eerie-ghost-towns-of-colorado.html?m=0"
+    ],
+    "checked": "2026-11-09"
+   }
   },
   {
    "id": "st-aloysius-church-ruins-morley",
@@ -2725,7 +2902,20 @@
    "sources": [
     "https://cbsnews.com/colorado/news/unfinished-airport-building-could-house-blm-headquarters-in-grand-junction"
    ],
-   "added": "2026-11-08T03:06:53+00:00"
+   "added": "2026-11-08T03:06:53+00:00",
+   "verify": {
+    "status": "unknown",
+    "security": "unknown",
+    "security_notes": "At 800 Eagle Drive on airport property. Work stopped in 2014 after about $4.1M was spent. In 2019 a demolition recommendation was paused while BLM headquarters use was considered. No later outcome found.",
+    "legal": "government-owned (not open)",
+    "as_of": "2019",
+    "sources": [
+     "https://cbsnews.com/colorado/news/unfinished-airport-building-could-house-blm-headquarters-in-grand-junction",
+     "https://m.washingtontimes.com/news/2019/aug/8/plans-for-unfinished-colorado-airport-building-put/",
+     "https://www.coloradopolitics.com/2019/09/19/the-grand-junction-daily-sentinel-finally-the-end-to-an-ugly-chapter"
+    ],
+    "checked": "2026-11-09"
+   }
   },
   {
    "id": "arroyo-school",
@@ -2741,7 +2931,17 @@
    "sources": [
     "https://joshua-house.pixels.com/featured/arroyo-school-sunset-joshua-house.html"
    ],
-   "added": "2026-11-08T03:06:53+00:00"
+   "added": "2026-11-08T03:06:53+00:00",
+   "verify": {
+    "status": "unknown",
+    "security": "unknown",
+    "security_notes": "Only source is an undated photo print listing describing the 'abandoned shell' north of La Veta.",
+    "legal": "unknown",
+    "sources": [
+     "https://joshua-house.pixels.com/featured/arroyo-school-sunset-joshua-house.html"
+    ],
+    "checked": "2026-11-09"
+   }
   },
   {
    "id": "elephant-rock-property-former-living-word-fellowship-compoun",
@@ -3074,7 +3274,19 @@
     "https://www.blm.gov/sites/default/files/docs/2020-12/blm_co_arch_2020Highlights.pdf",
     "https://www.cpr.org/news/story/colorados-5-most-endangered-historic-places-include-potato-cellars-a-firehouse-and-more"
    ],
-   "added": "2026-11-08T03:46:17+00:00"
+   "added": "2026-11-08T03:46:17+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "unknown",
+    "security_notes": "Fragile roofless adobe on BLM land (acquired 1993). Colorado Preservation Inc., BLM and partners are seeking funding and 'improving controlled access'. Listed Most Endangered in 2019.",
+    "legal": "public",
+    "as_of": "2019",
+    "sources": [
+     "https://www.coloradopreservation.org/endangered-place/mcintire-ranch-mansion/",
+     "https://en.wikipedia.org/wiki/McIntire_Ranch"
+    ],
+    "checked": "2026-11-09"
+   }
   },
   {
    "id": "lafayette-head-home-and-ute-indian-agency",
@@ -3092,7 +3304,20 @@
     "https://www.rmpbs.org/blogs/rocky-mountain-pbs/restoring-one-of-colorados-most-endangered-places/",
     "https://coloradopreservation.org/2021-colorados-most-endangered-places"
    ],
-   "added": "2026-11-08T03:46:17+00:00"
+   "added": "2026-11-08T03:46:17+00:00",
+   "verify": {
+    "status": "reopened/redeveloped/under construction",
+    "security": "unknown",
+    "security_notes": "Owner and architect Ronald Rael rescued it in 2018 and is restoring it, including workshops plastering the walls. No vandalism reports found in these searches.",
+    "legal": "private",
+    "as_of": "2021",
+    "sources": [
+     "https://www.rmpbs.org/blogs/rocky-mountain-pbs/restoring-one-of-colorados-most-endangered-places/",
+     "https://www.cbsnews.com/colorado/news/lafayette-head-conejos-endangered-places",
+     "https://www.cooperhewitt.org/?p=47624"
+    ],
+    "checked": "2026-11-09"
+   }
   },
   {
    "id": "iglesia-de-la-inmaculada-concepcion",
@@ -3110,7 +3335,20 @@
     "https://www.coloradopreservation.org/?p=16116",
     "https://alamosanews.com/article/nine-mission-churches-in-costilla-county-named-as-most-endangered-places-in-colorado"
    ],
-   "added": "2026-11-08T03:46:17+00:00"
+   "added": "2026-11-08T03:46:17+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "unknown",
+    "security_notes": "2024 Alert listing: the roof is failing and sections of adobe wall have collapsed. A Sangre de Cristo Parish priest still holds summer Mass at the mission churches, so this is an active church property.",
+    "legal": "private",
+    "as_of": "2024",
+    "sources": [
+     "https://www.coloradopreservation.org/?p=16116",
+     "https://alamosanews.com/article/nine-mission-churches-in-costilla-county-named-as-most-endangered-places-in-colorado",
+     "https://en.wikipedia.org/wiki/Iglesia_de_la_Inmaculada"
+    ],
+    "checked": "2026-11-09"
+   }
   },
   {
    "id": "tarryall-cline-ranch-headquarters",
@@ -4322,7 +4560,17 @@
    "sources": [
     "https://lifedeathiron.com/tag/ghost-town/page/3"
    ],
-   "added": "2026-11-08T04:12:21+00:00"
+   "added": "2026-11-08T04:12:21+00:00",
+   "verify": {
+    "status": "unknown",
+    "security": "unknown",
+    "security_notes": "Only source is an undated blog post. The town is still lightly inhabited, with a post office and UP switch yard.",
+    "legal": "unknown",
+    "sources": [
+     "https://lifedeathiron.com/tag/ghost-town/page/3"
+    ],
+    "checked": "2026-11-09"
+   }
   },
   {
    "id": "kinikinik-store",
@@ -4744,7 +4992,18 @@
     "https://newcountry991.com/take-a-look-at-the-tiny-ghost-town-of-timpas-colorado/",
     "https://www.waymarking.com/waymarks/WM7NET_The_Timpas_School_Timpas_Colorado"
    ],
-   "added": "2026-11-08T04:12:21+00:00"
+   "added": "2026-11-08T04:12:21+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "unknown",
+    "security_notes": "A visitor reports the 1916 school is owned by an older man who gave tours and that it is in better shape. Several other buildings are abandoned. Undated.",
+    "legal": "private",
+    "sources": [
+     "https://www.waymarking.com/waymarks/WM7NET_The_Timpas_School_Timpas_Colorado",
+     "https://newcountry991.com/take-a-look-at-the-tiny-ghost-town-of-timpas-colorado/"
+    ],
+    "checked": "2026-11-09"
+   }
   },
   {
    "id": "garcia-schoolhouse",
@@ -6597,7 +6856,18 @@
     "https://lifedeathiron.com/2015/11/28/25-more-abandoned-buildings-in-colorado-you-must-see-before-they-are-gone",
     "https://takemytrip.com/2015/11/highway-of-legends-scenic-byway/"
    ],
-   "added": "2026-11-09T14:57:12+00:00"
+   "added": "2026-11-09T14:57:12+00:00",
+   "verify": {
+    "status": "unknown",
+    "security": "unknown",
+    "security_notes": "No source found specifically about this building. A different Weston general store (Vintage Merchant, built 1894) operates as an antiques shop. Don't confuse the two.",
+    "legal": "unknown",
+    "as_of": "2015",
+    "sources": [
+     "https://lifedeathiron.com/2015/11/25/25-abandoned-buildings-in-colorado-you-must-see-before-they-are-gone"
+    ],
+    "checked": "2026-11-09"
+   }
   },
   {
    "id": "powderhorn-abandoned-buildings",
@@ -7512,7 +7782,19 @@
     "https://krdo.com/?p=1439032",
     "https://mail.seconews.org/article/6684"
    ],
-   "added": "2026-11-09T18:54:28+00:00"
+   "added": "2026-11-09T18:54:28+00:00",
+   "verify": {
+    "status": "unknown",
+    "security": "unknown",
+    "security_notes": "Abandoned since 2012. Burned on Nov 24, 2024 and reignited the next morning. State fire investigators and Rocky Ford PD investigated. Whether it was demolished after the fire was not found.",
+    "legal": "unknown",
+    "as_of": "2024",
+    "sources": [
+     "https://mail.seconews.org/article/6684",
+     "https://krdo.com/?p=1439032"
+    ],
+    "checked": "2026-11-09"
+   }
   },
   {
    "id": "former-convergys-call-center",
@@ -7529,7 +7811,21 @@
     "https://www.koaa.com/news/politics/pueblo-considers-demolishing-the-convergys-building-for-new-circle-k-and-affordable-housing-in-bessemer",
     "https://www.aol.com/articles/circle-k-store-more-housing-110433636.html"
    ],
-   "added": "2026-11-09T18:54:28+00:00"
+   "added": "2026-11-09T18:54:28+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "unknown",
+    "security_notes": "Vacant since 2018. On Nov 10, 2025 Pueblo council narrowly approved a Circle K and housing deal that requires demolition. A report cites a demolition vote in April 2026. Completed demolition was not confirmed. Active demolition or construction site likely.",
+    "legal": "unknown",
+    "as_of": "2026",
+    "sources": [
+     "https://www.koaa.com/news/politics/pueblo-considers-demolishing-the-convergys-building-for-new-circle-k-and-affordable-housing-in-bessemer",
+     "https://www.aol.com/articles/circle-k-store-more-housing-110433636.html",
+     "https://ground.news/article/pueblo-city-council-votes-to-demolish-blighted-buildings-in-bessemer-neighborhood-revitalization",
+     "https://constructionreporter.com/circle-k-project-in-pueblo-may-go-up-on-site-that-will-also-see-new-affordable-housing/"
+    ],
+    "checked": "2026-11-09"
+   }
   },
   {
    "id": "abandoned-motel-at-1420-s-nevada-ave",
