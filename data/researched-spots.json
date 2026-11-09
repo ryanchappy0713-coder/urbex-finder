@@ -4182,6 +4182,248 @@
     "https://www.coloradopreservation.org/?p=16024",
     "https://en.wikipedia.org/wiki/Foxton,_Colorado"
    ]
+  },
+  {
+   "id": "herrick-sawmill-ruins",
+   "name": "Herrick Sawmill ruins",
+   "cat": "industrial",
+   "type": "mill",
+   "lat": 38.38844,
+   "lon": -105.11644,
+   "approx": true,
+   "location": "Newlin Creek Trail, past Florence Mountain Park; reached by County Road 15 west off Colorado Highway 67, near Florence, Fremont County",
+   "condition": "Atlas Obscura describes an abandoned sawmill more than 134 years old. A 2021 Medium post says the steam boiler is still there, 'rusting and perched upon a crumbling stone and brick cradle', and a flywheel survives.",
+   "access": "Reached by a hiking trail off Florence Mountain Park; land ownership unknown",
+   "sources": [
+    "https://assets.atlasobscura.com/places/herrick-sawmill",
+    "https://justodd.medium.com/rusting-trailside-dreams-bf5f6d95a264",
+    "https://www.coloradocentralmagazine.com/places-florence-mountain-park-newlin-creek-trail/"
+   ]
+  },
+  {
+   "id": "keating-education-center-former-keating-school",
+   "name": "Keating Education Center (former Keating School)",
+   "cat": "institutional",
+   "type": "school",
+   "lat": 38.26216,
+   "lon": -104.61203,
+   "approx": true,
+   "location": "Pueblo (address not given in the sources)",
+   "condition": "Closed in 2008. On the National and State Registers. In 2021 the nonprofit Keating Group was buying it from District 60 for an $18M restoration expected to take about five years. No source confirms the purchase or whether work started, so it may be under renovation.",
+   "access": "District 60 owned as of 2021, with a sale to the Keating Group pending",
+   "sources": [
+    "https://cpr.org/2021/01/04/plans-are-underway-to-restore-pueblos-historic-keating-school",
+    "https://krdo.com/?p=73146"
+   ]
+  },
+  {
+   "id": "st-aloysius-church-ruins-morley-ghost-town",
+   "name": "St. Aloysius Church ruins (Morley ghost town)",
+   "cat": "religious",
+   "type": "church",
+   "lat": 37.03096,
+   "lon": -104.50338,
+   "approx": true,
+   "location": "West side of I-25, about 3 miles north of the New Mexico border (visible from I-25), Morley, Las Animas County",
+   "condition": "Morley was a coal town from 1878 to 1956 and was razed, but the church was spared. Sources say little more than the church's front remains; others say its walls and those of a few mine buildings still stand. Church dates to 1917/1918. Undated radio and tourism pages, current as of the 2020s.",
+   "access": "Private land. Sources conflict: one says there is no public access and it can only be viewed from I-25; another says the owner allows visitors who get permission in advance.",
+   "sources": [
+    "https://visittrinidadcolorado.com/attraction/morley-st-aloysius-church-ruins/",
+    "https://k99.com/ixp/510/p/colorado-abandoned-church-morley/",
+    "https://en.wikipedia.org/wiki/Morley,_Colorado"
+   ]
+  },
+  {
+   "id": "columbian-hotel-former-grand-union-hotel-upper-floors",
+   "name": "Columbian Hotel (former Grand Union Hotel), upper floors",
+   "cat": "leisure",
+   "type": "hotel",
+   "lat": 37.16614,
+   "lon": -104.50331,
+   "approx": true,
+   "location": "111 N. Commercial St., Trinidad",
+   "condition": "Listings say the 2nd and 3rd floors (about 100 rooms) have been vacant since the 1970s. Listed for sale from August 2025 as a redevelopment project; a listing was still updated May 2026. Whether the ground floor is occupied is unconfirmed, so it is only partly vacant.",
+   "access": "Private. Marketed for sale (about $1.75M).",
+   "sources": [
+    "https://realmo.com/listing/111-north-commercial-st-trinidad-co-81082/12400068",
+    "https://www.commercialsearch.com/commercial-property/us/co/trinidad/columbian-hotel/",
+    "https://www.loopnet.ca/Listing/111-N-Commercial-St-Trinidad-CO/37473389/"
+   ]
+  },
+  {
+   "id": "kim-schools-new-deal-school-complex",
+   "name": "Kim Schools (New Deal school complex)",
+   "cat": "institutional",
+   "type": "school",
+   "lat": 37.24694,
+   "lon": -103.35341,
+   "approx": false,
+   "location": "425 State St., Kim",
+   "condition": "Three WPA/CWA/FERA buildings from the late 1930s to early 1940s: an elementary school, a gymnasium and a high school. The Living New Deal lists the complex as abandoned (page undated). Listed on the National Register in 2007.",
+   "access": "Unknown",
+   "sources": [
+    "https://livingnewdeal.org/sites/schoolhouse-kim-co/",
+    "https://livingnewdeal.org/?p=81297",
+    "https://historypointer.com/nris/resource/07000342"
+   ]
+  },
+  {
+   "id": "brooks-general-store-rugby",
+   "name": "Brooks General Store (Rugby)",
+   "cat": "other",
+   "type": "store",
+   "lat": 37.46817,
+   "lon": -104.66282,
+   "approx": true,
+   "location": "Just west of I-25 at Exit 41 (Rugby Road), about 15 miles north of Trinidad. A rough road runs behind it.",
+   "condition": "A red brick general store built in the early 1930s by the Moses Brooks family. Described as abandoned in 2015; current status is unverified.",
+   "access": "Unknown",
+   "sources": [
+    "https://lifedeathiron.com/2015/11/25/25-abandoned-buildings-in-colorado-you-must-see-before-they-are-gone"
+   ]
+  },
+  {
+   "id": "union-printers-home",
+   "name": "Union Printers Home",
+   "cat": "institutional",
+   "type": "hospital",
+   "lat": 38.83054,
+   "lon": -104.79089,
+   "approx": false,
+   "location": "101 S. Union Blvd, Colorado Springs, El Paso County",
+   "condition": "A 137-year-old campus (a former sanatorium and retirement home) that has been vacant since it closed in 2020. Local investors bought it in 2021. In January 2026 the developer's mixed-use redevelopment cleared an urban-renewal step, but no renovation had been reported. Newest info: 2026.",
+   "access": "Private (UPH Partners / local investor group); redevelopment pending",
+   "sources": [
+    "https://gazette.com/2026/01/29/proposed-union-printers-home-makeover-clears-key-step-toward-urban-renewal-designation/",
+    "https://www.cpr.org/2024/03/08/union-printers-home-colorado-springs-new-vision/"
+   ]
+  },
+  {
+   "id": "former-el-paso-county-public-health-buildings",
+   "name": "Former El Paso County Public Health buildings",
+   "cat": "other",
+   "type": "site",
+   "lat": 38.8335,
+   "lon": -104.7954,
+   "approx": true,
+   "location": "301 S. Union Blvd, across from Memorial Park, Colorado Springs, El Paso County",
+   "condition": "1961 buildings described in July 2024 as abandoned for years and ravaged by vandals, with broken glass everywhere and doors standing open. They were then slated for demolition for an apartment and retail project, but demolition was not confirmed. Newest info: 2024. Verify they are still standing.",
+   "access": "Private (MoonStar 301, bought in 2021); city code enforcement was monitoring the site",
+   "sources": [
+    "https://gazette.com/2024/07/25/ravaged-by-vandals-former-el-paso-county-buildings-on-path-for-demolition/"
+   ]
+  },
+  {
+   "id": "john-wolfe-house-harlan-wolfe-house",
+   "name": "John Wolfe House (Harlan-Wolfe House)",
+   "cat": "houses",
+   "type": "house",
+   "lat": 38.8118,
+   "lon": -104.841,
+   "approx": true,
+   "location": "905 W. Cheyenne Rd, in the 4-acre Harlan Wolfe park along Cheyenne Creek, Colorado Springs, El Paso County",
+   "condition": "An 1894 homestead house, listed on the National Register of Historic Places in 2013. Wikipedia describes it as currently abandoned with all windows boarded up. No date is given for that status.",
+   "access": "City of Colorado Springs owns it (donated as a park after 1995); the house itself is boarded",
+   "sources": [
+    "https://en.wikipedia.org/wiki/John_Wolfe_House",
+    "https://gazette.com/?p=1083274"
+   ]
+  },
+  {
+   "id": "former-lorraine-east-elementary-school",
+   "name": "Former Lorraine (East) Elementary School",
+   "cat": "institutional",
+   "type": "school",
+   "lat": 38.68222,
+   "lon": -104.70081,
+   "approx": true,
+   "location": "East Iowa Ave, just east of Fountain Mesa Rd",
+   "condition": "A long-unused former school. Residents at a November 17, 2025 meeting called parts of it an eyesore and a costly maintenance problem. The city got about $2M from the EPA for cleanup and renovation, but no renovation is reported yet. Newest info: 2025.",
+   "access": "City of Fountain (public property)",
+   "sources": [
+    "https://www.koaa.com/news/local-news/city-of-fountain-receives-almost-2-million-for-lorraine-elementary-renovation",
+    "https://cp.soar.com/articles/7006456/Fountain-City/El-Paso-County/Colorado/Fountain-City-residents-celebrate-grant-to-repurpose-former-East-Elementary-urge-preservation-of-historic-features"
+   ]
+  },
+  {
+   "id": "palace-hotel-palace-block",
+   "name": "Palace Hotel (Palace Block)",
+   "cat": "leisure",
+   "type": "hotel",
+   "lat": 38.74666,
+   "lon": -105.17831,
+   "approx": true,
+   "location": "Bennett Ave, historic downtown Cripple Creek",
+   "condition": "An 1896 brick hotel that became a casino in 1992 and closed around 2001. Century Casinos bought it in 2002, then put its plan to turn it into a 30-room boutique hotel on hold. A Waymarking page updated after a 2021 visit says it still stands vacant. Newest info: about 2021.",
+   "access": "Private (Century Casinos); paid paranormal groups have been allowed inside",
+   "sources": [
+    "https://www.hotel-online.com/news/century-casinos-puts-cripple-creek-hotel-expansion-on-hold",
+    "https://www.waymarking.com/waymarks/WM7W3V_Palace_Hotel_Cripple_Creek_CO",
+    "https://hauntedhouses.com/?p=11789"
+   ]
+  },
+  {
+   "id": "union-block",
+   "name": "Union Block",
+   "cat": "other",
+   "type": "site",
+   "lat": 38.74482,
+   "lon": -105.17615,
+   "approx": true,
+   "location": "326 E. Bennett Ave, next to the Colorado Grande casino, Cripple Creek, Teller County",
+   "condition": "A multi-story former newspaper building. It has storm damage, many windows boarded up, and structural problems noted in a 1994 engineering report; its fate was described as unclear. The article is undated.",
+   "access": "Private (marketed by broker Reed Grainger at the time); historic preservation rules limit demolition",
+   "sources": [
+    "https://mountainjackpot.com/?p=91"
+   ]
+  },
+  {
+   "id": "liberty-elementary-school",
+   "name": "Liberty Elementary School",
+   "cat": "institutional",
+   "type": "school",
+   "lat": 38.05359,
+   "lon": -103.71585,
+   "approx": false,
+   "location": "608 North 11th St, Rocky Ford",
+   "condition": "Abandoned since 2012. Caught fire November 24, 2024 and reignited the next morning; state fire investigators assisted. No source found saying it was demolished afterward, but it is not confirmed standing in 2025-2026 and may be heavily burned.",
+   "access": "unknown",
+   "sources": [
+    "https://krdo.com/?p=1439032",
+    "https://mail.seconews.org/article/6684"
+   ]
+  },
+  {
+   "id": "former-convergys-call-center",
+   "name": "Former Convergys call center",
+   "cat": "other",
+   "type": "site",
+   "lat": 38.2395,
+   "lon": -104.602,
+   "approx": true,
+   "location": "1228 E. Orman Ave at Northern Ave, across from Ray Aguilera Park, Pueblo (Bessemer), Pueblo County",
+   "condition": "Has sat vacant for years with the roof caved in; the city calls it an eyesore. Pueblo City Council approved a Circle K deal on Nov. 10, 2025 that calls for demolishing it. No source confirms it has been demolished yet, so it may be gone by now.",
+   "access": "Privately owned; slated for demolition",
+   "sources": [
+    "https://www.koaa.com/news/politics/pueblo-considers-demolishing-the-convergys-building-for-new-circle-k-and-affordable-housing-in-bessemer",
+    "https://www.aol.com/articles/circle-k-store-more-housing-110433636.html"
+   ]
+  },
+  {
+   "id": "abandoned-motel-at-1420-s-nevada-ave",
+   "name": "Abandoned motel at 1420 S. Nevada Ave",
+   "cat": "leisure",
+   "type": "motel",
+   "lat": 38.817,
+   "lon": -104.8213,
+   "approx": true,
+   "location": "1420 S. Nevada Ave, between Arvada St and Brookside St, near downtown, Colorado Springs, El Paso County",
+   "condition": "Reported as an abandoned motel/hotel when it burned on May 19, 2024. Smoke was pouring out, flames came through the roof, and crews were warned of possible asbestos. Sources do not say whether it has been demolished since. Newest info: 2024.",
+   "access": "unknown; owner not named in sources",
+   "sources": [
+    "https://www.kktv.com/2024/05/19/firefighters-respond-fire-motel-near-i-25-s-nevada",
+    "https://www.koaa.com/news/covering-colorado/csfd-puts-out-a-fire-at-an-abandoned-motel-in-colorado-springs"
+   ]
   }
  ]
 }
