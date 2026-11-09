@@ -954,7 +954,7 @@
    "lat": 38.44225,
    "lon": -105.23488,
    "approx": true,
-   "location": "Next to the Colorado State Penitentiary, Ca\u00f1on City, Ca\u00f1on City, Fremont County",
+   "location": "Next to the Colorado State Penitentiary, Cañon City, Cañon City, Fremont County",
    "condition": "State-owned historic house empty for years, no plans to reoccupy; on Colorado's endangered list in 2011.",
    "access": "Colorado Department of Corrections, no public access.",
    "sources": [
@@ -2688,8 +2688,8 @@
    "lat": 38.44225,
    "lon": -105.23718,
    "approx": true,
-   "location": "South of SH 115 along Chandler Road, west of Williamsburg and north of Rockvale, near Ca\u00f1on City, Fremont County",
-   "condition": "Victor-American company coal town, completely depopulated since about 1942. Many houses were moved to Ca\u00f1on City. A February 2022 Outdoor Project gallery shows coal mining ruins and remnants of several buildings along a marked trail. That page does not explicitly name Chandler, so check it.",
+   "location": "South of SH 115 along Chandler Road, west of Williamsburg and north of Rockvale, near Cañon City, Fremont County",
+   "condition": "Victor-American company coal town, completely depopulated since about 1942. Many houses were moved to Cañon City. A February 2022 Outdoor Project gallery shows coal mining ruins and remnants of several buildings along a marked trail. That page does not explicitly name Chandler, so check it.",
    "access": "Trail access is reported (trail markers, no map at the trailhead). Ownership unknown.",
    "sources": [
     "https://en.wikipedia.org/wiki/Chandler,_Colorado",
@@ -3425,7 +3425,7 @@
    "lon": -107.31929,
    "approx": true,
    "location": "County Road 20 along Henson Creek, about 4 miles west of Lake City",
-   "condition": "Colorado Preservation Inc. put it on its Most Endangered Places list in 2015, naming the threat as 'demolition by neglect \u2013 vacant'. Denver7 calls it a decaying, neglected mining town. A 2011 blog called the mill 'remarkably intact', and a 2012 photo caption says the mill and some buildings are still standing. A Mining History Association tour describes a restored headframe and hoist house, a boarding house and a log cabin. It was listed on the National Register in 2017. Newest info: 2017.",
+   "condition": "Colorado Preservation Inc. put it on its Most Endangered Places list in 2015, naming the threat as 'demolition by neglect – vacant'. Denver7 calls it a decaying, neglected mining town. A 2011 blog called the mill 'remarkably intact', and a 2012 photo caption says the mill and some buildings are still standing. A Mining History Association tour describes a restored headframe and hoist house, a boarding house and a log cabin. It was listed on the National Register in 2017. Newest info: 2017.",
    "access": "Interpretive site that visitors can tour (per Denver7 and the Mining History Association). Exact ownership unknown.",
    "sources": [
     "https://www.coloradopreservation.org/?p=16160",
@@ -3571,10 +3571,10 @@
    "name": "Former Royal Gorge Dinosaur Experience",
    "cat": "other",
    "type": "site",
-   "lat": 38.44225,
-   "lon": -105.23718,
+   "lat": 38.44041,
+   "lon": -105.23502,
    "approx": true,
-   "location": "W. US Highway 50 west of Ca\u00f1on City, near Royal Gorge; a LoopNet listing gives 44899 W US Hwy 50, Ca\u00f1on City area, Fremont County",
+   "location": "W. US Highway 50 west of Cañon City, near Royal Gorge; a LoopNet listing gives 44899 W US Hwy 50, Cañon City area, Fremont County",
    "condition": "The roadside dinosaur attraction closed permanently on Dec. 31, 2025, after almost 10 years. Its 35.9-acre property was listed for sale (about $2.9M, later cut to about $2.25M; listing updated July 2026). In April 2026 the Colorado Gator Farm said it hoped to buy it and close by August 2026, but I found no report that the sale went through. Newest info: 2026.",
    "access": "Private, listed for sale; possible buyer is Colorado Gator Farm. Unknown.",
    "sources": [
@@ -3648,6 +3648,343 @@
     "https://www.cpr.org/2025/02/24/west-springs-psychiatric-hospital-in-grand-junction-closing/",
     "https://www.kkco11news.com/2025/02/24/west-springs-only-psychiatric-hospital-between-salt-lake-denver-will-close-permanently",
     "https://www.ksjd.org/2025-02-26/grand-junction-hospital-to-close-reducing-mental-healthcare-capacity-on-western-slope"
+   ]
+  },
+  {
+   "id": "leadville-abandoned-silver-mine-structures",
+   "name": "Leadville abandoned silver mine structures",
+   "cat": "industrial",
+   "type": "mine",
+   "lat": 39.24898,
+   "lon": -106.29036,
+   "approx": true,
+   "location": "Immediately east of the town of Leadville (Atlas Obscura listing 'Abandoned Silver Mine')",
+   "condition": "Atlas Obscura: area covered in twisted and decaying mining structures. No date given; needs verification.",
+   "access": "unknown",
+   "sources": [
+    "https://atlasobscura.com/places/abandoned-silver-mine"
+   ]
+  },
+  {
+   "id": "abandoned-church-at-snyder",
+   "name": "Abandoned church at Snyder",
+   "cat": "religious",
+   "type": "church",
+   "lat": 40.32915,
+   "lon": -103.59634,
+   "approx": true,
+   "location": "Corner of Highway 71 and County Road GG, Snyder",
+   "condition": "Print-site caption describes an old, abandoned church. Photo taken July 2016; older than 2018, needs verification.",
+   "access": "unknown",
+   "sources": [
+    "https://brian-gustafson.pixels.com/featured/the-sunday-sermon-brian-gustafson.html"
+   ]
+  },
+  {
+   "id": "former-living-word-fellowship-compound-former-salvation-army",
+   "name": "Former Living Word Fellowship compound (former Salvation Army camp)",
+   "cat": "other",
+   "type": "site",
+   "lat": 39.12037,
+   "lon": -104.91504,
+   "approx": true,
+   "location": "28-acre former compound in Palmer Lake: main sanctuary and worship space, with seven cabins downslope",
+   "condition": "Gazette and Colorado Politics, 2024: site in disarray with vandalism and theft, a dusty grand piano and piles of trash. The 'land and its many buildings currently sit completely abandoned'. The group collapsed around 2018–2021. An eco-spa is being planned on 3 acres.",
+   "access": "Donated to the Town of Palmer Lake; town-owned. Its future is under debate.",
+   "sources": [
+    "https://www.coloradopolitics.com/2024/10/13/after-decades-of-use-by-a-cult-future-of-palmer-lake-property-now-in-the-hands-of-citizens/",
+    "https://www.denvergazette.com/?p=402669",
+    "https://kmax943.com/ixp/510/p/colorado-abandoned-cult-land/"
+   ]
+  },
+  {
+   "id": "jackson-hill-stage-stop-wetmore-halfway-house",
+   "name": "Jackson Hill Stage Stop (Wetmore Halfway House)",
+   "cat": "other",
+   "type": "site",
+   "lat": 38.23664,
+   "lon": -105.08286,
+   "approx": true,
+   "location": "Top of Jackson Hill east of Wetmore, near CO-96; visible from a dead-end road",
+   "condition": "Rocky Mountain Profiles calls it an 'abandoned stage stop' that is easy to find. The Wetmore Historical Society says the 1872-73 building 'is still standing' (posts 2022 and 2026).",
+   "access": "Private property; viewable from the road.",
+   "sources": [
+    "https://rockymountainprofiles.com/colorado/colorado-scenes/buildings-sites-vistas/jackson-hill-stage-stop-colorado",
+    "https://wetmorehistoricalsociety.com/2026/01/20/wetmore-halfway-house-jackson-stage-stop/"
+   ]
+  },
+  {
+   "id": "foster-house-stage-station-and-hotel-ruins",
+   "name": "Foster House Stage Station and Hotel ruins",
+   "cat": "leisure",
+   "type": "hotel",
+   "lat": 37.40095,
+   "lon": -104.65116,
+   "approx": true,
+   "location": "On the plains near the Apishapa River, Aguilar vicinity (former Denver and Santa Fe Stage Trail), near Aguilar, Las Animas County",
+   "condition": "AP, 2015: historic adobe ruins of an 1872 stage station and hotel 'stand' on the site. Older than 2018; needs verification.",
+   "access": "unknown",
+   "sources": [
+    "https://www.washingtontimes.com/news/2015/may/13/one-time-oasis-now-belongs-to-history/"
+   ]
+  },
+  {
+   "id": "hoyt",
+   "name": "Hoyt",
+   "cat": "ruins",
+   "type": "ghost town",
+   "lat": 40.01554,
+   "lon": -104.07495,
+   "approx": false,
+   "location": "About an hour east of Denver, near the bottom of Bijou Creek, Hoyt, Morgan County",
+   "condition": "lifedeathiron, Feb 2020: scattered dwellings with roughly two of every three houses or ranches abandoned, and old 1920s–60s cars in the pastures. The author felt visitors were not welcome.",
+   "access": "Mostly private property; some homes occupied.",
+   "sources": [
+    "https://lifedeathiron.com/2020/02/15/abandoned-hoyt-colorado-visitors-beware/"
+   ]
+  },
+  {
+   "id": "rexford",
+   "name": "Rexford",
+   "cat": "ruins",
+   "type": "ghost town",
+   "lat": 39.6071,
+   "lon": -106.06367,
+   "approx": true,
+   "location": "Up the North Fork (Swan River area), Summit County, Rexford, Summit County",
+   "condition": "lifedeathiron, 2020 ('A Ghost Town a Day' series): a surviving small cabin, ruins of a large log bunkhouse, a log foundation said to be the assay office, and the collapsed facade of the general store.",
+   "access": "unknown",
+   "sources": [
+    "https://lifedeathiron.com/tag/ghost-towns/page/2",
+    "https://ghosttowns.com/states/co/rexford.html"
+   ]
+  },
+  {
+   "id": "garo-general-store-and-townsite",
+   "name": "Garo general store and townsite",
+   "cat": "ruins",
+   "type": "ghost town",
+   "lat": 39.10777,
+   "lon": -105.89029,
+   "approx": true,
+   "location": "Colorado Highway 9, about 7 miles south of Fairplay, Garo, Park County",
+   "condition": "Ghosttowns.com lists remains as the general store, the Guiraud ranch, one fallen building and a house. A Park County Local History Archive photo dated Jan 20, 2020 is tagged abandoned buildings. The store dates to the 1880s.",
+   "access": "unknown",
+   "sources": [
+    "https://ghosttowns.com/states/co/garo.html",
+    "https://pclha.cvlcollections.org/items/show/357",
+    "https://en.wikipedia.org/wiki/Garo,_Colorado"
+   ]
+  },
+  {
+   "id": "andrix-general-store",
+   "name": "Andrix general store",
+   "cat": "ruins",
+   "type": "ghost town",
+   "lat": 37.27907,
+   "lon": -103.19338,
+   "approx": true,
+   "location": "Along US Highway 160 between Trinidad and Kim, near the eastern county line (about 37.28N, 103.19W), Andrix, Las Animas County",
+   "condition": "lifedeathiron, Nov 2015: the store stands empty along the highway with other structures, an abandoned car and debris, and a memorial painted on its front. An Expedition Portal forum visitor reported foundations. Older than 2018; needs verification.",
+   "access": "unknown",
+   "sources": [
+    "https://lifedeathiron.com/2015/11/22/five-colorado-ghost-towns-with-tragic-stories",
+    "https://forum.expeditionportal.com/threads/andrix-colorado.203423/post-2601529"
+   ]
+  },
+  {
+   "id": "weston-abandoned-general-store",
+   "name": "Weston abandoned general store",
+   "cat": "other",
+   "type": "site",
+   "lat": 37.1328,
+   "lon": -104.84887,
+   "approx": true,
+   "location": "Along Highway 12 as you enter the east side of Weston, facing the highway (not the operating Stonewall Shopping Bag at 6689 SH 12)",
+   "condition": "lifedeathiron, Nov 2015, lists it among abandoned buildings. A 2015 travel blog calls it the old general store facing Highway 12. Older than 2018; needs verification.",
+   "access": "unknown",
+   "sources": [
+    "https://lifedeathiron.com/2015/11/28/25-more-abandoned-buildings-in-colorado-you-must-see-before-they-are-gone",
+    "https://takemytrip.com/2015/11/highway-of-legends-scenic-byway/"
+   ]
+  },
+  {
+   "id": "powderhorn-abandoned-buildings",
+   "name": "Powderhorn abandoned buildings",
+   "cat": "ruins",
+   "type": "ghost town",
+   "lat": 38.27694,
+   "lon": -107.09588,
+   "approx": true,
+   "location": "On Cebolla Creek between Gunnison and Lake City (CO 149 corridor), Powderhorn, Gunnison County",
+   "condition": "lifedeathiron, May 2020: several abandoned buildings among a few occupied homes and ranches dating to the 1870s, plus seasonal cabins.",
+   "access": "Mixed. Some buildings are occupied; still has a post office. Likely private.",
+   "sources": [
+    "https://lifedeathiron.com/2020/05/18/powderhorn-colorado-ghost-town-in-the-gunnison-country",
+    "https://ghosttowns.com/states/co/powderhorn.html"
+   ]
+  },
+  {
+   "id": "former-stay-inn-city-owned-motel-i-70-peoria",
+   "name": "Former Stay Inn (city-owned motel, I-70 & Peoria)",
+   "cat": "leisure",
+   "type": "motel",
+   "lat": 39.67778,
+   "lon": -104.93554,
+   "approx": true,
+   "location": "12033 E. 38th Ave., near I-70 and Peoria St., Denver, Denver County",
+   "condition": "Four-story, 96-room former Stay Inn. Denver bought it in 2023 for $9M as homeless housing and boarded it up. It was still fenced off and had housed no one in 2025 reports. It was offered for $10 to a buyer who would turn it into supportive housing. BusinessDen (Feb 2026) reported it still empty, with the city negotiating a sale to a development partner. Newest info: Feb 2026.",
+   "access": "Owned by the City and County of Denver (Department of Housing Stability). Fenced and boarded; no public access.",
+   "sources": [
+    "https://businessden.com/2026/02/10/deal-coming-for-still-empty-hotel-bought-by-denver-in-2023-city-says/",
+    "https://www.denver7.com/follow-up/9-million-denver-motel-meant-to-shelter-the-unhoused-remains-vacant-two-years-after-citys-purchase",
+    "https://www.denvergazette.com/2025/08/15/denvers-9m-unused-homeless-shelter-has-a-new-price-tag-it-isnt-what-you-expected-29889a2a-cf40-4df5-b9b8-f7e1a476495f"
+   ]
+  },
+  {
+   "id": "rossonian-hotel",
+   "name": "Rossonian Hotel",
+   "cat": "other",
+   "type": "site",
+   "lat": 39.75435,
+   "lon": -104.97832,
+   "approx": false,
+   "location": "2650 Welton St., Five Points, Denver, Denver County (Five Points)",
+   "condition": "Historic jazz-era hotel that Westword describes as still empty despite more than $3M in city loans and grants over three decades. Revival attempts, including one in 2005, failed. The current redevelopment plan (90 hotel rooms, restaurant, music lounge) won city tax-increment financing of up to $15.5M and targets a 2028 opening. No source confirms work has started. Newest info: about 2025-2026 (TIF approval). Check whether construction has begun before listing it.",
+   "access": "Privately owned by a redevelopment group; no public access.",
+   "sources": [
+    "https://www.westword.com/?p=40722559",
+    "https://denver7.com/news/front-range/denver/new-effort-to-revive-historic-rossonian-hotel-cornerstone-of-denvers-five-points-moves-forward",
+    "https://milehighcre.com/?p=60780"
+   ]
+  },
+  {
+   "id": "brandon-ghost-town-brick-bank-and-abandoned-houses",
+   "name": "Brandon ghost town: brick bank and abandoned houses",
+   "cat": "ruins",
+   "type": "ghost town",
+   "lat": 38.4464,
+   "lon": -102.43963,
+   "approx": true,
+   "location": "Brandon townsite, on CO Highway 96 in eastern Kiowa County, east of Eads",
+   "condition": "A 2019 lifedeathiron photo blog says little is left besides grain silos, two or three occupied homes and many abandoned houses, businesses and cars. It describes a red brick bank building 'dangerously close to collapsing', with a concrete vault in the foundation. The town's 1911 directory lists a First State Bank and a general store. Newest info: 2019.",
+   "access": "unknown (private property; a few homes are still occupied)",
+   "sources": [
+    "https://lifedeathiron.com/2019/11",
+    "https://ghosttowns.com/states/co/brandon.html",
+    "https://www.cogenweb.org/Archives/kiowa/history/directories/business/1911/1911-brandon.txt"
+   ]
+  },
+  {
+   "id": "hotel-holly-haswell-hotel",
+   "name": "Hotel Holly–Haswell Hotel",
+   "cat": "leisure",
+   "type": "hotel",
+   "lat": 38.45223,
+   "lon": -103.16298,
+   "approx": true,
+   "location": "Haswell, along CO Highway 96. The NRHP historic district includes a two-story hotel, a filling station, a bunkhouse and a chicken coop.",
+   "condition": "Ran as a hotel for about 60 years and closed in the 1990s. A listing says it has been unoccupied since 1994. Added to the National Register of Historic Places on August 20, 2013. No newer status found. Newest info: 2013.",
+   "access": "unknown (private)",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Hotel_Holly%E2%80%93Haswell_Hotel",
+    "https://historycolorado.org/node/7377",
+    "https://maps.roadtrippers.com/us/haswell-co/points-of-interest/hotel-holly-haswell-hotel-co"
+   ]
+  },
+  {
+   "id": "haswell-old-texaco-station-and-empty-storefronts",
+   "name": "Haswell old Texaco station and empty storefronts",
+   "cat": "other",
+   "type": "gas station",
+   "lat": 38.45039,
+   "lon": -103.16082,
+   "approx": true,
+   "location": "Along CO Highway 96 in Haswell",
+   "condition": "The lifedeathiron photo blog calls the old Texaco station a highlight 'which you can't miss along Highway 96'. It describes the town (about 60 residents) as a mix of abandoned or empty storefronts, grain elevators, service stations and homes, and shows a vacant home on Highway 96 in the town center. Undated blog posts, probably late 2010s.",
+   "access": "unknown (private; roadside viewing)",
+   "sources": [
+    "https://lifedeathiron.com/tag/haswell",
+    "https://lifedeathiron.com/tag/kiowa-county"
+   ]
+  },
+  {
+   "id": "konantz-wpa-school",
+   "name": "Konantz WPA School",
+   "cat": "institutional",
+   "type": "school",
+   "lat": 37.3886,
+   "lon": -102.27824,
+   "approx": true,
+   "location": "Konantz area near Walsh. Living New Deal says it does not know the exact location.",
+   "condition": "1,147 sq ft school built by the WPA in 1938. Possibly abandoned around 1960 when school districts changed (unverified). A 2018 commenter says it is still standing and empty, based on newer Colorado Preservation photos. Newest info: 2018.",
+   "access": "unknown",
+   "sources": [
+    "https://livingnewdeal.org/sites/school-konantz-co/",
+    "https://livingnewdeal.org/?p=117228"
+   ]
+  },
+  {
+   "id": "arriba-vacant-storefronts-deserted-block",
+   "name": "Arriba vacant storefronts / deserted block",
+   "cat": "other",
+   "type": "store",
+   "lat": 39.28395,
+   "lon": -103.27507,
+   "approx": true,
+   "location": "Arriba, off I-70 at exit 383",
+   "condition": "GhostTowns.com calls Arriba a semi-ghost town where nearly half of all structures are abandoned. Its photos are captioned 'Vacant Storefront, Arriba (March 2010)' and 'Deserted block'. Newest info: 2010.",
+   "access": "unknown (private)",
+   "sources": [
+    "https://ghosttowns.com/states/co/arriba.html"
+   ]
+  },
+  {
+   "id": "arriba-schoolhouse",
+   "name": "Arriba schoolhouse",
+   "cat": "institutional",
+   "type": "school",
+   "lat": 39.28601,
+   "lon": -103.28042,
+   "approx": true,
+   "location": "Arriba (exact site not given)",
+   "condition": "Listed as 'Schoolhouse - Arriba, Colorado' in a lifedeathiron list of abandoned buildings on Colorado's eastern plains. No further detail. Undated, probably 2015-2019.",
+   "access": "unknown",
+   "sources": [
+    "https://lifedeathiron.com/tag/abandoned-buildings-in-colorado"
+   ]
+  },
+  {
+   "id": "willard-ghost-town-abandoned-homes-store-grain-elevator",
+   "name": "Willard ghost town (abandoned homes, store, grain elevator)",
+   "cat": "ruins",
+   "type": "ghost town",
+   "lat": 40.55443,
+   "lon": -103.48633,
+   "approx": true,
+   "location": "About 20 miles west of Sterling off CO Highway 14, reached by dirt roads, Willard, Logan County",
+   "condition": "Described as a ghost town with abandoned homes, farm buildings and a cemetery. A Denver Public Library photo note says Willard 'has its share of abandoned buildings'. Mahoney's Store closed in 1967 and the grain elevator closed in the 1960s. Newest info: unclear date (Townsquare article, probably 2020s).",
+   "access": "Private property. One source warns that trespassers risk prosecution.",
+   "sources": [
+    "https://kool1079.com/willard-colorado-abandoned/",
+    "https://ghosttowns.com/states/co/willard.html",
+    "https://digital.denverlibrary.org/nodes/view/1826771"
+   ]
+  },
+  {
+   "id": "old-bent-county-jail-1902",
+   "name": "Old Bent County Jail (1902)",
+   "cat": "other",
+   "type": "site",
+   "lat": 38.06646,
+   "lon": -103.22248,
+   "approx": true,
+   "location": "Courthouse Square, 725 Bent Ave (some sources say Carson Ave), Las Animas",
+   "condition": "The jail stopped operating in 2000, and Bent County Heritage says the old jail building 'still stands vacant on Courthouse Square'. The courthouse next to it is still in use. NRHP-listed 1976. Newest info: undated heritage page.",
+   "access": "County-owned, on the grounds of a working courthouse; no public access to the interior known",
+   "sources": [
+    "https://www.bentcountyheritage.org/?p=2718",
+    "https://en.wikipedia.org/wiki/Bent_County_Courthouse_and_Jail"
    ]
   }
  ]
