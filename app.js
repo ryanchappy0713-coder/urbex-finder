@@ -40,6 +40,7 @@
     hideDemolished: true,  // hide places the status check says are gone
     hideReused: true,      // hide places that are back in use
     showLeads: false,      // low-confidence leads (former/closed, ghost towns, mines)
+    legalOnly: false,      // only places reported as legal to visit (public land)
     sort: 'best',
     query: '',
     activeId: null,
@@ -830,6 +831,8 @@ out center tags ${MAX_RESULTS * 3};`;
     const gone = state.places.filter(isGone).length, reused = state.places.filter(isReused).length;
     if (gone) toggle(!state.hideDemolished, state.hideDemolished ? `🚫 ${gone} demolished hidden · show` : `🚫 Hide ${gone} demolished`, () => { state.hideDemolished = !state.hideDemolished; render(); });
     if (reused) toggle(!state.hideReused, state.hideReused ? `♻ ${reused} back in use hidden · show` : `♻ Hide ${reused} back in use`, () => { state.hideReused = !state.hideReused; render(); });
+    const legalN = state.places.filter((p) => legalOf(p) === 'public' && !isGone(p)).length;
+    if (legalN || state.legalOnly) toggle(!state.legalOnly, state.legalOnly ? `🟢 Showing only ${legalN} legal to visit · show all` : `🟢 Only legal to visit (${legalN})`, () => { state.legalOnly = !state.legalOnly; render(); });
     if (leads) toggle(state.showLeads, state.showLeads ? `Hide ${leads} weaker leads` : `🔎 ${leads} more leads (closed, former, mines) · show`, () => { state.showLeads = !state.showLeads; render(); });
 
     // List + markers
@@ -840,6 +843,7 @@ out center tags ${MAX_RESULTS * 3};`;
     let shown = state.places.filter((p) => !state.hidden.has(p.cat)
       && !(state.hideDemolished && isGone(p)) && !(state.hideReused && isReused(p))
       && (leadsOn || confOf(p) !== 'low')
+      && (!state.legalOnly || legalOf(p) === 'public')
       && (!q || `${p.name} ${p.label} ${p.tags?.description || ''} ${p.tags?.commodities || ''} ${p.tags?.['instance of'] || ''} ${p.tags?.type || ''}`.toLowerCase().includes(q)));
     shown = state.sort === 'best'
       ? shown.map((p) => [scoreOf(p), p]).sort((a, b) => b[0] - a[0]).map((x) => x[1])
@@ -868,6 +872,21 @@ out center tags ${MAX_RESULTS * 3};`;
     });
   }
 
+  // Is this a place you can legally walk into? Based on the reported access/ownership.
+  function legalOf(p) {
+    const a = `${p.tags?.access || ''}`;
+    if (/^(private|no|military)$/.test(a)) return 'private';
+    if (/legal to visit/i.test(a)) return 'public';
+    if (/(public land|national forest|\bBLM\b|open space|state park|public trail|interpretive trail|national monument|national park|forest service|\bUSFS\b|hiking trail)/i.test(a)
+      && !/(not public|no public|closed to (the )?public|privat|unknown|closed to entry|closed building|building closed|is not|trestles closed|tunnel closed)/i.test(a)) return 'public';
+    if (/(privat|no public|closed|owned by|fenced|trespass|condemned|boarded|no entry|not public)/i.test(a)) return 'private';
+    return 'unknown';
+  }
+  const LEGAL_BADGE = {
+    public: '<span class="badge good">🟢 Legal to visit: public land</span>',
+    private: '<span class="badge warn">🔒 Private: get the owner\'s permission first</span>',
+    unknown: '<span class="badge">❔ Access unknown: treat it as private</span>',
+  };
   function accessWarning(t) {
     return /^(private|no|military)$/.test(t.access || '') ? (t.access) : null;
   }
@@ -908,7 +927,7 @@ out center tags ${MAX_RESULTS * 3};`;
       <div class="muted">${esc(p.label)} · ${fmtDist(p.dist)} away · ${p.lat.toFixed(5)}, ${p.lon.toFixed(5)}</div>
       <div class="badges">
         <span class="badge" style="border-color:${cat.color};color:${cat.color}">${cat.label}</span>
-        ${access ? `<span class="badge warn">Access: ${esc(access)}</span>` : ''}
+        ${LEGAL_BADGE[legalOf(p)]}
         ${t.start_date ? `<span class="badge">Built ${esc(t.start_date)}</span>` : ''}
         ${t.end_date || t['end_date'] ? `<span class="badge">Closed ${esc(t.end_date)}</span>` : ''}
         ${t.heritage || t['heritage:operator'] ? '<span class="badge good">Heritage listed</span>' : ''}
@@ -920,6 +939,15 @@ out center tags ${MAX_RESULTS * 3};`;
       ${p.source === 'usgs' ? `<p class="badge warn" style="display:block;margin:10px 0;line-height:1.4">⚠ Old mine record. USGS data can be decades old, and many sites are only shafts, adits or tailings. Never go into a mine: bad air, collapses and hidden shafts kill explorers every year.</p>` : ''}
       <h3>Still standing?</h3>
       <div id="checkBox"></div>
+
+      <h3>Stay legal</h3>
+      <ul class="legal-list">
+        ${t.access ? `<li><b>Reported access:</b> ${esc(t.access)}</li>` : ''}
+        <li>Go in only with the owner's permission, or on public land that's open to visitors. <a href="https://www.google.com/search?q=${encodeURIComponent(`${p.lat.toFixed(5)},${p.lon.toFixed(5)} county assessor parcel owner`)}" target="_blank" rel="noopener">Find the owner</a> and ask.</li>
+        <li>Never force your way in. Breaking a lock, window, board or fence can turn trespassing into burglary or criminal-mischief charges.</li>
+        <li>"No Trespassing" signs, fences and locked gates mean stay out without permission. Abandoned doesn't mean ownerless.</li>
+        <li>Take nothing and damage nothing. If the owner or police show up, stay calm and leave when asked.</li>
+      </ul>
 
       <h3>Look at it</h3>
       <div class="row">
@@ -2433,6 +2461,7 @@ out geom;
     const g = (q) => `https://www.google.com/search?q=${encodeURIComponent(q)}`;
     const link = (href, text) => `<a class="btn" href="${href}" target="_blank" rel="noopener">${text}</a>`;
     box.innerHTML = `
+      <p class="badge warn" style="display:block;margin:6px 0;line-height:1.4">🔒 Treat this as private property. Find the owner with <b>Owner (assessor)</b> below and ask permission before going in. Never force entry.</p>
       ${address ? `<p style="margin:6px 0"><b>Address:</b> ${esc(address)}</p>` : ''}
       <p style="margin:6px 0"><b>Map history</b> (what people mapped here, by date):</p>
       ${timeline.length ? `<ul class="hist-list">${timeline.join('')}</ul>` : '<p class="muted" style="margin:0">No past names or uses recorded.</p>'}

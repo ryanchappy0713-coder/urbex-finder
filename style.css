@@ -130,3 +130,5 @@ textarea {
 .sat-hist { margin-top: 8px; border-top: 1px solid var(--line); padding-top: 6px; font-size: 13px; }
 .hist-list { margin: 0; padding-left: 18px; font-size: 12px; }
 .hist-list li { margin: 2px 0; }
+.legal-list { margin: 0; padding-left: 18px; font-size: 13px; }
+.legal-list li { margin: 3px 0; }
