@@ -119,3 +119,11 @@ textarea {
   .sidebar { width: auto; border-right: 0; border-top: 1px solid var(--line); flex: 1; }
   .drawer { top: auto; height: 75vh; right: 8px; left: 8px; bottom: 8px; width: auto; }
 }
+.sat-list { list-style: none; padding: 0; margin: 0; }
+.sat-card { padding: 8px; border: 1px solid var(--line); border-radius: 8px; margin-bottom: 8px; color: var(--text); }
+.sat-card.active { border-color: var(--accent); }
+.sat-head { display: flex; justify-content: space-between; gap: 8px; align-items: baseline; }
+.sat-pics { display: flex; gap: 6px; margin: 6px 0; }
+.sat-pics figure { margin: 0; flex: 1; min-width: 0; }
+.sat-pics canvas { width: 100%; height: auto; border-radius: 4px; display: block; }
+.sat-pics figcaption { font-size: 11px; color: var(--muted); text-align: center; }

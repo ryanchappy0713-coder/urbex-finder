@@ -2085,6 +2085,268 @@ Give lat and lon only when a source states them or you are confident; otherwise 
   document.head.appendChild(fix);
 
   persist();
+
+  // ---------- 🛰 Satellite Scout: the #1 way explorers find spots, automated ----------
+  // Explorers pan satellite view looking for big buildings with empty or overgrown parking
+  // lots and no cars, then use old imagery to check the place has looked dead for years.
+  // This pulls every large building in the area from OpenStreetMap, scores the ones with
+  // no business attached, then reads the satellite photos (now vs. 2016) for an empty lot,
+  // weeds and an unchanged roof, and gives you a ranked review queue with before/after photos.
+  const SAT_OLD = ['2016-01', 3515];
+  const SAT_HIDDEN_KEY = 'urbex.scout.hidden';
+  const satHidden = (() => { try { return new Set(JSON.parse(localStorage.getItem(SAT_HIDDEN_KEY) || '[]')); } catch { return new Set(); } })();
+  const satLayer = L.layerGroup().addTo(map);
+  const satBox = document.createElement('details');
+  satBox.className = 'scout';
+  satBox.innerHTML = `<summary>🛰 Satellite Scout: auto-check buildings from above</summary>
+    <div id="satBody" class="muted">
+      <p style="margin:6px 0">Checks every large building near the search center the way explorers scout: no business listed, empty or overgrown parking lot, no cars, and a roof that hasn't changed in years. You get a ranked list of leads with 2016 vs. now photos to flip through.</p>
+      <button id="satRun" class="btn accent" style="width:100%;justify-content:center">Scout buildings around here</button>
+      <div id="satOut"></div>
+    </div>`;
+  scoutBox.after(satBox);
+  $('satRun').onclick = () => runSatScout();
+
+  const tileCache = new Map();
+  let satPixelsOk = true;
+  function loadTile(url) {
+    if (!tileCache.has(url)) {
+      tileCache.set(url, new Promise((resolve) => {
+        const img = new Image();
+        img.crossOrigin = 'anonymous';
+        img.onload = () => resolve(img);
+        img.onerror = () => {
+          // Without CORS the photo still shows, it just can't be measured.
+          const plain = new Image();
+          plain.onload = () => { satPixelsOk = false; resolve(plain); };
+          plain.onerror = () => resolve(null);
+          plain.src = url;
+        };
+        img.src = url;
+      }));
+    }
+    return tileCache.get(url);
+  }
+  const wbUrl = (id) => `https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/${id}/{z}/{y}/{x}`;
+  const gx = (lon, z) => (lon + 180) / 360 * 256 * 2 ** z;
+  const gy = (lat, z) => { const s = Math.sin(lat * Math.PI / 180); return (0.5 - Math.log((1 + s) / (1 - s)) / (4 * Math.PI)) * 256 * 2 ** z; };
+
+  // Draws the imagery around a point onto a canvas; returns it with a lat/lon -> pixel mapper.
+  async function satFrame(tmpl, lat, lon, z, W) {
+    const cv = document.createElement('canvas'); cv.width = cv.height = W;
+    const ctx = cv.getContext('2d'); ctx.fillStyle = '#222'; ctx.fillRect(0, 0, W, W);
+    const x0 = gx(lon, z) - W / 2, y0 = gy(lat, z) - W / 2;
+    const jobs = [];
+    for (let tx = Math.floor(x0 / 256); tx <= Math.floor((x0 + W - 1) / 256); tx++) {
+      for (let ty = Math.floor(y0 / 256); ty <= Math.floor((y0 + W - 1) / 256); ty++) {
+        const url = tmpl.replace('{z}', z).replace('{x}', tx).replace('{y}', ty);
+        jobs.push(loadTile(url).then((img) => { if (img) ctx.drawImage(img, tx * 256 - x0, ty * 256 - y0); return !!img; }));
+      }
+    }
+    const got = await Promise.all(jobs);
+    return { cv, ok: got.some(Boolean), px: (la, lo) => [gx(lo, z) - x0, gy(la, z) - y0] };
+  }
+  function pixels(cv) {
+    if (!satPixelsOk) return null;
+    try { return cv.getContext('2d').getImageData(0, 0, cv.width, cv.height).data; } catch { satPixelsOk = false; return null; }
+  }
+  // Lot stats over a pixel mask: weeds (green), clutter (cars: bright, dark or colorful specks).
+  function lotStats(d, W, inLot) {
+    const lum = [], cols = [];
+    for (let y = 0; y < W; y += 2) for (let x = 0; x < W; x += 2) {
+      if (!inLot(x, y)) continue;
+      const i = (y * W + x) * 4, r = d[i], g = d[i + 1], b = d[i + 2];
+      lum.push(0.3 * r + 0.59 * g + 0.11 * b); cols.push([r, g, b]);
+    }
+    if (lum.length < 40) return null;
+    const med = [...lum].sort((a, b) => a - b)[lum.length >> 1];
+    let veg = 0, clutter = 0;
+    cols.forEach(([r, g, b], k) => {
+      if (g > r + 6 && g > b + 6 && g > 50) veg++;
+      const mx = Math.max(r, g, b), mn = Math.min(r, g, b);
+      if (Math.abs(lum[k] - med) > 55 || (mx > 60 && (mx - mn) / mx > 0.45)) clutter++;
+    });
+    return { veg: veg / lum.length, clutter: clutter / lum.length, n: lum.length };
+  }
+  // How different the roof looks between two dates (after evening out brightness).
+  function roofChange(a, b, W, inRoof) {
+    const A = [], B = [];
+    for (let y = 0; y < W; y += 2) for (let x = 0; x < W; x += 2) {
+      if (!inRoof(x, y)) continue;
+      const i = (y * W + x) * 4;
+      A.push(0.3 * a[i] + 0.59 * a[i + 1] + 0.11 * a[i + 2]); B.push(0.3 * b[i] + 0.59 * b[i + 1] + 0.11 * b[i + 2]);
+    }
+    if (A.length < 30) return null;
+    const norm = (v) => { const m = v.reduce((s, x) => s + x, 0) / v.length; const sd = Math.sqrt(v.reduce((s, x) => s + (x - m) ** 2, 0) / v.length) || 1; return v.map((x) => (x - m) / sd); };
+    const na = norm(A), nb = norm(B);
+    return na.reduce((s, x, k) => s + Math.abs(x - nb[k]), 0) / na.length;
+  }
+
+  const SAT_TYPES = 'industrial|warehouse|commercial|retail|manufacture|factory|school|hospital|hotel|motel|church|office|hangar|college|university|dormitory|train_station|transportation|barn|silo|civic|public|government|sports_hall|theatre|cinema|supermarket|kindergarten';
+  const ACTIVE_KEYS = ['shop', 'website', 'contact:website', 'opening_hours', 'brand', 'phone', 'contact:phone', 'operator', 'craft', 'office'];
+  const DEAD_RE = /^(abandoned|disused|vacant|was|demolished|razed)(:|$)/;
+
+  async function runSatScout() {
+    const out = $('satOut'), btn = $('satRun');
+    const c = state.center || (() => { const m = map.getCenter(); return { lat: m.lat, lon: m.lng }; })();
+    const r = Math.min(+$('radius').value || 5000, 4000);
+    btn.disabled = true; satLayer.clearLayers();
+    out.innerHTML = `<p>Finding large buildings within ${r / 1000} km…</p>`;
+    const dLat = r / 111320, dLon = r / (111320 * Math.cos(c.lat * Math.PI / 180));
+    const bbox = [c.lat - dLat, c.lon - dLon, c.lat + dLat, c.lon + dLon].map((n) => n.toFixed(5)).join(',');
+    const q = `[out:json][timeout:50][bbox:${bbox}];
+way["landuse"~"^(industrial|brownfield|railway|retail|commercial|military)$"]->.lu;
+.lu map_to_area->.a;
+(way["building"~"^(${SAT_TYPES})$"]; way["building"="yes"](area.a); way["building"]["abandoned"="yes"]; way["building"]["disused"="yes"];)->.b;
+.b out tags bb;
+way["amenity"="parking"]["parking"!~"^(multi-storey|underground|rooftop)$"];
+out tags bb;
+way["railway"~"^(abandoned|disused)$"];
+out geom;
+.lu out tags bb;`;
+    let data;
+    try { data = await overpass(q, 60000); } catch (e) {
+      out.innerHTML = `<p class="error">Couldn't get buildings from OpenStreetMap (${esc(e.message)}). Try again in a minute, or pick a smaller radius.</p>`;
+      btn.disabled = false; return;
+    }
+    const els = data.elements || [];
+    const mPerDegLat = 111320, mPerDegLon = 111320 * Math.cos(c.lat * Math.PI / 180);
+    const boxArea = (b) => (b.maxlat - b.minlat) * mPerDegLat * (b.maxlon - b.minlon) * mPerDegLon;
+    const lots = els.filter((e) => e.tags?.amenity === 'parking' && e.bounds);
+    const rails = els.filter((e) => /abandoned|disused/.test(e.tags?.railway || '') && e.geometry);
+    const brown = els.filter((e) => e.tags?.landuse === 'brownfield' && e.bounds);
+    const near = (b, o, m) => !(o.minlat > b.maxlat + m / mPerDegLat || o.maxlat < b.minlat - m / mPerDegLat ||
+      o.minlon > b.maxlon + m / mPerDegLon || o.maxlon < b.minlon - m / mPerDegLon);
+    const cands = [];
+    for (const e of els) {
+      const t = e.tags || {};
+      if (!t.building || !e.bounds || satHidden.has(`way/${e.id}`)) continue;
+      const area = boxArea(e.bounds);
+      const dead = Object.keys(t).some((k) => DEAD_RE.test(k)) || /abandoned|ruins/.test(t.building);
+      if (area < 1500 && !dead) continue;
+      let s = 0; const why = [];
+      if (dead) { s += 4; why.push('tagged abandoned/disused in OpenStreetMap'); }
+      const active = ACTIVE_KEYS.filter((k) => t[k]);
+      if (active.length) s -= 1.5 + active.length * 0.5; else if (!t.name) { s += 1; why.push('no business or name listed'); }
+      if (t.amenity && t.amenity !== 'parking') s -= 0.5;
+      const lot = lots.filter((p) => near(e.bounds, p.bounds, 40));
+      if (lot.length) { s += 0.5; }
+      if (brown.some((p) => near(e.bounds, p.bounds, 0))) { s += 2; why.push('on brownfield land'); }
+      const ctr = [(e.bounds.minlat + e.bounds.maxlat) / 2, (e.bounds.minlon + e.bounds.maxlon) / 2];
+      if (rails.some((rw) => rw.geometry.some((g) => haversine(ctr[0], ctr[1], g.lat, g.lon) < 200))) { s += 1.5; why.push('next to an abandoned rail line'); }
+      s += Math.min(2, Math.log10(area / 1500) * 1.5);
+      if (area > 8000) why.push(`big footprint (~${Math.round(area / 100) * 100} m²)`);
+      cands.push({ id: `way/${e.id}`, tags: t, b: e.bounds, lat: ctr[0], lon: ctr[1], area, lots: lot, s, osmS: s, why });
+    }
+    if (!cands.length) { out.innerHTML = '<p>No large buildings found here. Move the search center to an industrial or older commercial area and try again.</p>'; btn.disabled = false; return; }
+    cands.sort((a, b) => b.s - a.s);
+    const top = cands.slice(0, 60);
+    let done = 0;
+    const tick = () => { out.innerHTML = `<p>Checking satellite photos… ${done}/${top.length} buildings (of ${cands.length} large ones)</p>`; };
+    tick();
+    let idx = 0;
+    await Promise.all(Array.from({ length: 4 }, async () => {
+      while (idx < top.length) { const k = top[idx++]; await satAnalyze(k); done++; tick(); }
+    }));
+    top.sort((a, b) => b.s - a.s);
+    renderSat(top, cands.length);
+    btn.disabled = false;
+  }
+
+  async function satAnalyze(k) {
+    const W = 220;
+    const spanM = Math.max((k.b.maxlat - k.b.minlat) * 111320, (k.b.maxlon - k.b.minlon) * 111320 * Math.cos(k.lat * Math.PI / 180)) * 1.8 + 60;
+    let z = 18;
+    while (z > 14 && spanM / (156543 * Math.cos(k.lat * Math.PI / 180) / 2 ** z) > W) z--;
+    const [now, old] = await Promise.all([satFrame(LIVE_SAT, k.lat, k.lon, z, W), satFrame(wbUrl(SAT_OLD[1]), k.lat, k.lon, z, W)]);
+    k.now = now.cv; k.old = old.cv;
+    const [bx0, by0] = now.px(k.b.maxlat, k.b.minlon), [bx1, by1] = now.px(k.b.minlat, k.b.maxlon);
+    const inRoof = (x, y) => x > bx0 + 2 && x < bx1 - 2 && y > by0 + 2 && y < by1 - 2;
+    const lotRects = k.lots.map((p) => { const [a, b] = now.px(p.bounds.maxlat, p.bounds.minlon), [c2, d] = now.px(p.bounds.minlat, p.bounds.maxlon); return [a, b, c2, d]; });
+    const inLot = lotRects.length
+      ? (x, y) => !inRoof(x, y) && lotRects.some(([a, b, c2, d]) => x > a && x < c2 && y > b && y < d)
+      : (x, y) => !(x > bx0 - 6 && x < bx1 + 6 && y > by0 - 6 && y < by1 + 6) && x > bx0 - 35 && x < bx1 + 35 && y > by0 - 35 && y < by1 + 35;
+    const dn = now.ok && pixels(now.cv), dd = old.ok && pixels(old.cv);
+    if (!dn) return;
+    const w = lotRects.length ? 1 : 0.5;
+    const ln = lotStats(dn, W, inLot), lo = dd ? lotStats(dd, W, inLot) : null;
+    if (ln) {
+      k.s += w * (2.5 * (1 - Math.min(1, ln.clutter * 4)));
+      if (ln.clutter < 0.08) k.why.push(lotRects.length ? 'parking lot looks empty (no cars)' : 'no cars around it');
+      if (ln.veg > 0.15) { k.s += w * Math.min(3, ln.veg * 8); k.why.push('weeds or trees growing in the lot'); }
+      k.lot = ln;
+    }
+    if (lo) {
+      k.s += w * 1.5 * (1 - Math.min(1, lo.clutter * 4));
+      if (ln && lo.clutter < 0.08 && ln.clutter < 0.08) { k.s += 1.5; k.why.push('lot was empty in 2016 too'); }
+    }
+    if (dd) {
+      const ch = roofChange(dn, dd, W, inRoof);
+      k.change = ch;
+      if (ch != null && ch > 0.95) { k.s -= 3; k.why.push('looks very different from 2016 (new, rebuilt or demolished?)'); }
+      else if (ch != null && ch < 0.55) { k.s += 1; k.why.push('roof unchanged since 2016'); }
+    }
+    // Outline the building on both photos.
+    for (const cv of [k.now, k.old]) {
+      const ctx = cv.getContext('2d'); ctx.strokeStyle = '#e0a23a'; ctx.lineWidth = 2;
+      ctx.strokeRect(bx0, by0, bx1 - bx0, by1 - by0);
+    }
+  }
+
+  function satName(k) {
+    const t = k.tags;
+    const kind = { yes: 'Building', industrial: 'Industrial building', warehouse: 'Warehouse', retail: 'Store building', commercial: 'Commercial building' }[t.building]
+      || (t.building.charAt(0).toUpperCase() + t.building.slice(1).replace(/_/g, ' '));
+    return t.name || t['old_name'] || t['was:name'] || t['addr:street'] && `${kind} on ${t['addr:housenumber'] ? t['addr:housenumber'] + ' ' : ''}${t['addr:street']}` || `Unnamed ${kind.toLowerCase()}`;
+  }
+
+  function renderSat(list, total) {
+    const out = $('satOut');
+    const shown = list.filter((k) => !satHidden.has(k.id));
+    const note = satPixelsOk ? '' : '<p class="error" style="font-size:12px">Your browser blocked reading the photos, so the ranking only uses map data. You can still flip through them.</p>';
+    out.innerHTML = `${note}<p style="margin:8px 0">Top ${shown.length} leads of ${total} large buildings, best first. <b>These are guesses from photos.</b> Many will be working businesses, so check the photos, use <b>🕰 Imagery</b> and <b>Street View</b>, and get permission before you go.</p><ol id="satList" class="sat-list"></ol>`;
+    const ol = $('satList');
+    shown.forEach((k, n) => {
+      const li = document.createElement('li');
+      li.className = 'sat-card'; li.id = `sat-${k.id.replace('/', '-')}`;
+      const name = satName(k);
+      li.innerHTML = `<div class="sat-head"><b>${n + 1}. ${esc(name)}</b><span class="badge ${k.s >= 7 ? 'good' : ''}">score ${k.s.toFixed(1)}</span></div>
+        <div class="sat-pics"><figure><figcaption>${SAT_OLD[0].slice(0, 4)}</figcaption></figure><figure><figcaption>Now</figcaption></figure></div>
+        <div class="muted" style="font-size:12px">${k.why.length ? esc(k.why.join(' · ')) : 'no strong signs either way'}</div>
+        <div class="row" style="margin-top:6px">
+          <button class="btn" data-a="show">📍 Show</button>
+          <a class="btn" target="_blank" rel="noopener" href="https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=${k.lat},${k.lon}">Street View</a>
+          <a class="btn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=${k.lat},${k.lon}">Google Maps</a>
+          <button class="btn" data-a="save">★ Save</button>
+          <button class="btn ghost" data-a="hide" title="Not abandoned: hide it from now on">✕ Not it</button>
+        </div>`;
+      const figs = li.querySelectorAll('figure');
+      if (k.old) figs[0].prepend(k.old); if (k.now) figs[1].prepend(k.now);
+      li.querySelector('[data-a=show]').onclick = () => {
+        if (!map.hasLayer(satellite)) { map.removeLayer(streets); satellite.addTo(map); }
+        map.fitBounds([[k.b.minlat, k.b.minlon], [k.b.maxlat, k.b.maxlon]], { maxZoom: 19, padding: [60, 60] });
+      };
+      li.querySelector('[data-a=save]').onclick = (ev) => {
+        const id = `mine/sat-${k.id.replace('/', '-')}`;
+        const cat = /school|hospital|college|university|dormitory|kindergarten/.test(k.tags.building) ? 'institutional'
+          : /hotel|motel|theatre|cinema|sports_hall/.test(k.tags.building) ? 'leisure' : k.tags.building === 'church' ? 'religious' : 'industrial';
+        state.saved[id] = { id, name, label: `Your spot · Satellite lead`, lat: k.lat, lon: k.lon, cat,
+          condition: 'Found with Satellite Scout. Check it in person.', note: k.why.join('; '), savedAt: new Date().toISOString() };
+        persist(); ev.target.textContent = '★ Saved'; ev.target.disabled = true;
+      };
+      li.querySelector('[data-a=hide]').onclick = () => {
+        satHidden.add(k.id);
+        try { localStorage.setItem(SAT_HIDDEN_KEY, JSON.stringify([...satHidden])); } catch { /* private mode */ }
+        li.remove(); k.rect?.remove();
+      };
+      ol.append(li);
+      const col = k.s >= 7 ? '#7fb069' : k.s >= 4 ? '#e0a23a' : '#9a9993';
+      k.rect = L.rectangle([[k.b.minlat, k.b.minlon], [k.b.maxlat, k.b.maxlon]], { color: col, weight: 2, fillOpacity: 0.12 })
+        .bindTooltip(`🛰 ${n + 1}. ${name}`).on('click', () => { satBox.open = true; li.scrollIntoView({ behavior: 'smooth', block: 'center' }); li.classList.add('active'); setTimeout(() => li.classList.remove('active'), 1500); })
+        .addTo(satLayer);
+    });
+  }
+
   // Expose for tests.
   window.__urbex = { normalize, state };
 })();

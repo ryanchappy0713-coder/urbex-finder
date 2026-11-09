@@ -4358,6 +4358,68 @@
     "https://www.kktv.com/2024/05/19/firefighters-respond-fire-motel-near-i-25-s-nevada",
     "https://www.koaa.com/news/covering-colorado/csfd-puts-out-a-fire-at-an-abandoned-motel-in-colorado-springs"
    ]
+  },
+  {
+   "id": "former-elvis-cinemas-kipling-6-kipling-plaza-6",
+   "name": "Former Elvis Cinemas Kipling 6 (Kipling Plaza 6)",
+   "cat": "leisure",
+   "type": "movie theater",
+   "lat": 39.6079,
+   "lon": -105.11,
+   "approx": true,
+   "location": "6014 S. Kipling Parkway, Littleton",
+   "condition": "Closed since Feb 26, 2023. In Oct 2025 the Jefferson County Sheriff's Office asked for help identifying 'urban explorers' who broke in, blaming social media challenges. Interior condition unknown; 2026 status not confirmed.",
+   "access": "Private, closed building. The sheriff is actively pursuing intruders, so trespass risk is high.",
+   "sources": [
+    "https://www.denvergazette.com/2025/10/30/urban-explorers-fueled-by-social-media-challenges-blamed-for-breaking-into-former-colorado-theater",
+    "https://www.cinematreasures.org/theaters/27743",
+    "https://denverite.com/2023/03/02/elvis-cinemas-closed-permanently/"
+   ]
+  },
+  {
+   "id": "mesa-road-abandoned-houses-with-tunnels",
+   "name": "Mesa Road abandoned houses with tunnels",
+   "cat": "houses",
+   "type": "house",
+   "lat": 38.84762,
+   "lon": -104.83481,
+   "approx": false,
+   "location": "1065 Mesa Road, 80904, Colorado Springs, El Paso County",
+   "condition": "A radio-station article built on a videographer's walkthrough video describes two boarded-up houses still standing, plus tunnels; possibly about 60 years abandoned. The tie to General Palmer is legend.",
+   "access": "Private property; the article warns of injury and trespassing prosecution.",
+   "sources": [
+    "https://kekbfm.com/colorado-pioneers-former-land-abandoned-hidden-tunnels/"
+   ]
+  },
+  {
+   "id": "lucas-homestead-ruins",
+   "name": "Lucas Homestead ruins",
+   "cat": "houses",
+   "type": "house",
+   "lat": 39.38942,
+   "lon": -104.74797,
+   "approx": true,
+   "location": "Castlewood Canyon State Park, Franktown, Douglas County",
+   "condition": "Abandoned concrete homestead ruins featured by explorer Derelict Doug ('American Ruins - The Lucas Homestead Discovered').",
+   "access": "Inside Castlewood Canyon State Park; legal to visit during park hours (park fee).",
+   "sources": [
+    "https://www.derelictdoug.net/derelict-doug-blog/abandoned-homestead"
+   ]
+  },
+  {
+   "id": "burke-springs-creek-ranch-abandoned-farm-and-homestead",
+   "name": "Burke Springs Creek Ranch (abandoned farm and homestead)",
+   "cat": "houses",
+   "type": "house",
+   "lat": 40.0607,
+   "lon": -106.80821,
+   "approx": true,
+   "location": "Old Park, off the Gore Pass road (CO-134 area), Toponas, Routt County",
+   "condition": "Derelict Doug post 'Abandoned Farm and Homestead - Old Park Colorado' shows a ranch falling into ruin. County not confirmed (Routt or Grand).",
+   "access": "Conservation easement land; treat as private.",
+   "sources": [
+    "https://www.derelictdoug.net/derelict-doug-blog/abandoned-farm-and-homestead-old-park-colorado"
+   ]
   }
  ]
 }
