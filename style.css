@@ -137,3 +137,6 @@ textarea {
 .deep mark { background: rgba(224,162,58,.3); color: inherit; padding: 0 1px; border-radius: 2px; }
 .trip-pick { list-style: none; padding: 0; margin: 6px 0; max-height: 200px; overflow-y: auto; }
 .trip-pick li { padding: 3px 0; font-size: 13px; }
+.new-list { list-style: none; padding: 0; margin: 6px 0; max-height: 320px; overflow-y: auto; }
+.new-list li { padding: 6px 4px; border-bottom: 1px solid var(--line); cursor: pointer; font-size: 13px; }
+.new-list li:hover { background: var(--panel-2); }

@@ -74,6 +74,7 @@ for it in items:
         'lat': round(pos[0], 5), 'lon': round(pos[1], 5), 'approx': bool(approx),
         'location': (loc + ', ' + it.get('town', '')) if it.get('town', '').split(',')[0] not in loc else loc,
         'condition': it.get('condition', ''), 'access': it.get('access', 'unknown'), 'sources': it['sources'][:3]})
+    data['spots'][-1]['added'] = __import__('datetime').datetime.now(__import__('datetime').timezone.utc).isoformat(timespec='seconds')
     if it.get('security') or it.get('legal'):
         yr = re.findall(r'(?:19|20)\d\d', it.get('security_notes', '') + ' ' + it.get('condition', ''))
         data['spots'][-1]['verify'] = {k: v for k, v in {'status': 'standing', 'security': it.get('security'), 'security_notes': it.get('security_notes'),

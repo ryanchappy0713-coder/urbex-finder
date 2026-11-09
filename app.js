@@ -416,7 +416,7 @@ out center tags ${MAX_RESULTS * 3};`;
       status: 'abandoned', conf: 'high', label: `Abandoned ${x.type}`, name: x.name, hasName: true,
       tags: { location: x.location, 'reported condition': x.condition, access: x.access,
         ...(x.approx ? { 'map position': 'approximate (from the description in the sources)' } : {}) },
-      aiSources: x.sources, researched: researchData.researched, verify: x.verify,
+      aiSources: x.sources, researched: researchData.researched, verify: x.verify, added: x.added,
     })).filter((p) => p.dist <= r);
   }
 
@@ -863,7 +863,7 @@ out center tags ${MAX_RESULTS * 3};`;
       li.innerHTML = `<span class="dot" style="background:${color}"></span>
         <span class="name">${state.saved[p.id] ? '★ ' : ''}${esc(p.name)}</span>
         <span class="dist">${fmtDist(p.dist)}</span>
-        <span class="sub">${top.has(p.id) ? '<b class="top">⭐ Top pick</b> · ' : ''}${p.source === 'research' ? '📰 ' : ''}<span class="conf conf-${confOf(p)}">${CONF_INFO[confOf(p)].label}</span> · ${p.source === 'ai' ? '✨ ' : ''}${esc(p.hasName ? p.label : CATEGORIES[p.cat].label)}${accessWarning(p.tags) ? ' · ⚠ private' : ''}${legalOf(p) === 'public' ? ' · 🟢 legal' : ''}${p.verify?.security === 'high' ? ' · 🛡 high security' : p.verify?.security === 'medium' ? ' · 🛡 medium security' : ''}${p.check && STATUS_INFO[p.check.status] ? ` · ${STATUS_INFO[p.check.status].icon} ${STATUS_INFO[p.check.status].badge}` : ''}</span>`;
+        <span class="sub">${top.has(p.id) ? '<b class="top">⭐ Top pick</b> · ' : ''}${p.source === 'research' ? '📰 ' : ''}<span class="conf conf-${confOf(p)}">${CONF_INFO[confOf(p)].label}</span> · ${p.source === 'ai' ? '✨ ' : ''}${esc(p.hasName ? p.label : CATEGORIES[p.cat].label)}${accessWarning(p.tags) ? ' · ⚠ private' : ''}${legalOf(p) === 'public' ? ' · 🟢 legal' : ''}${isNewSpot(p) ? ' · <b class="top">🆕 new</b>' : ''}${p.verify?.security === 'high' ? ' · 🛡 high security' : p.verify?.security === 'medium' ? ' · 🛡 medium security' : ''}${p.check && STATUS_INFO[p.check.status] ? ` · ${STATUS_INFO[p.check.status].icon} ${STATUS_INFO[p.check.status].badge}` : ''}</span>`;
       li.onclick = () => openDetail(p);
       resultsEl.appendChild(li);
 
@@ -2715,6 +2715,42 @@ out tags center;`;
       <p class="badge warn" style="display:block;margin:10px 0 0;line-height:1.4">🔒 Only go in with the owner's permission or on public land that's open to visitors. Never force a door, window, board or fence: that can turn trespassing into burglary or criminal-mischief charges.</p>
       </div>`;
   }
+
+  // ---------- 🆕 What's new: places added since your last visit ----------
+  const LAST_VISIT_KEY = 'urbex.lastVisit';
+  const prevVisit = (() => { try { return localStorage.getItem(LAST_VISIT_KEY); } catch { return null; } })();
+  // First visit: show the last 3 days. Otherwise everything added since the previous visit.
+  const newSince = prevVisit || new Date(Date.now() - 3 * 86400000).toISOString();
+  function isNewSpot(p) { return !!(p.added && p.added > newSince); }
+  (async () => {
+    try { if (!researchData) researchData = await fetchJson('data/researched-spots.json'); } catch { return; }
+    // Mark as seen only after the app has been open a couple of minutes, so a quick reload doesn't hide the list.
+    const seenAt = new Date().toISOString();
+    setTimeout(() => { try { localStorage.setItem(LAST_VISIT_KEY, seenAt); } catch { /* private mode */ } }, 120000);
+    const fresh = (researchData.spots || []).filter((x) => x.added && x.added > newSince)
+      .sort((a, b) => b.added.localeCompare(a.added));
+    if (!fresh.length) return;
+    const box = document.createElement('details');
+    box.className = 'scout'; box.id = 'newBox';
+    box.innerHTML = `<summary>🆕 ${fresh.length} new place${fresh.length > 1 ? 's' : ''} ${prevVisit ? 'since your last visit' : 'added recently'}</summary>
+      <ul class="new-list">${fresh.map((x) => {
+        const v = x.verify || {};
+        const tag = v.legal === 'public' ? ' <span class="badge good">🟢 legal</span>' : v.security === 'high' ? ' <span class="badge warn">🛡 high security</span>' : '';
+        return `<li data-id="${esc(x.id)}"><b>${esc(x.name)}</b>${tag}<br><small class="muted">${esc(x.type || '')} · ${esc((x.location || '').slice(0, 70))}</small></li>`;
+      }).join('')}</ul>`;
+    statusEl.after(box);
+    box.querySelectorAll('li').forEach((li) => {
+      li.onclick = async () => {
+        const x = fresh.find((y) => y.id === li.dataset.id);
+        const c = state.center || { lat: x.lat, lon: x.lon };
+        const [p] = (await researchedSpots(c.lat, c.lon, Infinity)).filter((y) => y.id === `research/${x.id}`);
+        if (!p) return;
+        map.setView([x.lat, x.lon], 15);
+        if (!state.places.some((y) => y.id === p.id)) { state.places = [...state.places, p]; render(); }
+        openDetail(p);
+      };
+    });
+  })();
 
   // Expose for tests.
   window.__urbex = { normalize, state };
