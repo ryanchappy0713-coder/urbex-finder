@@ -3681,23 +3681,6 @@
    ]
   },
   {
-   "id": "former-living-word-fellowship-compound-former-salvation-army",
-   "name": "Former Living Word Fellowship compound (former Salvation Army camp)",
-   "cat": "other",
-   "type": "site",
-   "lat": 39.12037,
-   "lon": -104.91504,
-   "approx": true,
-   "location": "28-acre former compound in Palmer Lake: main sanctuary and worship space, with seven cabins downslope",
-   "condition": "Gazette and Colorado Politics, 2024: site in disarray with vandalism and theft, a dusty grand piano and piles of trash. The 'land and its many buildings currently sit completely abandoned'. The group collapsed around 2018–2021. An eco-spa is being planned on 3 acres.",
-   "access": "Donated to the Town of Palmer Lake; town-owned. Its future is under debate.",
-   "sources": [
-    "https://www.coloradopolitics.com/2024/10/13/after-decades-of-use-by-a-cult-future-of-palmer-lake-property-now-in-the-hands-of-citizens/",
-    "https://www.denvergazette.com/?p=402669",
-    "https://kmax943.com/ixp/510/p/colorado-abandoned-cult-land/"
-   ]
-  },
-  {
    "id": "jackson-hill-stage-stop-wetmore-halfway-house",
    "name": "Jackson Hill Stage Stop (Wetmore Halfway House)",
    "cat": "other",
@@ -3829,8 +3812,8 @@
    "name": "Former Stay Inn (city-owned motel, I-70 & Peoria)",
    "cat": "leisure",
    "type": "motel",
-   "lat": 39.67778,
-   "lon": -104.93554,
+   "lat": 39.7696,
+   "lon": -104.8495,
    "approx": true,
    "location": "12033 E. 38th Ave., near I-70 and Peoria St., Denver, Denver County",
    "condition": "Four-story, 96-room former Stay Inn. Denver bought it in 2023 for $9M as homeless housing and boarded it up. It was still fenced off and had housed no one in 2025 reports. It was offered for $10 to a buyer who would turn it into supportive housing. BusinessDen (Feb 2026) reported it still empty, with the city negotiating a sale to a development partner. Newest info: Feb 2026.",
