@@ -3969,6 +3969,219 @@
     "https://www.bentcountyheritage.org/?p=2718",
     "https://en.wikipedia.org/wiki/Bent_County_Courthouse_and_Jail"
    ]
+  },
+  {
+   "id": "former-brighton-town-hall-library-senior-center",
+   "name": "Former Brighton Town Hall / Library / Senior Center",
+   "cat": "other",
+   "type": "site",
+   "lat": 39.98532,
+   "lon": -104.81577,
+   "approx": false,
+   "location": "575 Bush Street, Brighton, CO 80601",
+   "condition": "Built as Brighton Town Hall, later the public library, then the senior center from 1976 to 2012. Locally designated historic landmark in 2014. Vacant about 14 years, with asbestos, significant deterioration and several break-ins. A 2025 historic structure assessment put rehab at about $1.99M. On Feb 19, 2026 a Certificate of Appropriateness for total demolition went before the city, and council voted 7-2 to demolish but left the door open to development ideas until demolition happens. Demolition had not been confirmed as of 2026; it may be imminent or already done, so verify first.",
+   "access": "City of Brighton owned; closed to the public",
+   "sources": [
+    "https://www.denver7.com/news/front-range/brighton/brighton-city-council-votes-to-demolish-century-old-historical-landmark-despite-community-pushback",
+    "https://www.brightonco.gov/AgendaCenter/ViewFile/Minutes/_02192026-2029"
+   ]
+  },
+  {
+   "id": "westfall-road-abandoned-farm-ruins-old-gonsenhauser-property",
+   "name": "Westfall Road abandoned farm ruins (old Gonsenhauser property)",
+   "cat": "other",
+   "type": "farm",
+   "lat": 39.98372,
+   "lon": -104.81108,
+   "approx": true,
+   "location": "Westfall Road, next to Buckland Town Park, Brighton",
+   "condition": "A 2017 photo post describes ruined farmhouses on the old Gonsenhauser property: two silos, two abandoned homes and other dilapidated buildings and sheds. No newer information (newest info is 2017); may have been redeveloped since.",
+   "access": "unknown (likely private)",
+   "sources": [
+    "https://talkerofthetown.com/2017/01/26/abandoned-farm-in-brighton/"
+   ]
+  },
+  {
+   "id": "vacant-warehouse-at-40th-walnut",
+   "name": "Vacant warehouse at 40th & Walnut",
+   "cat": "houses",
+   "type": "warehouse",
+   "lat": 39.7741,
+   "lon": -104.9738,
+   "approx": true,
+   "location": "Near 40th St. and Walnut St., RiNo / north Denver",
+   "condition": "Unoccupied warehouse hit by a two-alarm fire on Jan. 26, 2025 that injured a firefighter. Crews fought it from outside because of collapse risk. Officials called it a repeat fire at the same vacant warehouse; an earlier fire was a 'warming fire'. No later report on whether it was demolished. Newest info: Jan 2025.",
+   "access": "Unknown; collapse hazard reported.",
+   "sources": [
+    "https://www.denvergazette.com/2025/01/26/warehouse-fire-injures-denver-firefighter-on-sunday-morning/",
+    "https://www.fireengineering.com/?p=668611",
+    "https://digital-release.kdvr.com/?p=3295507"
+   ]
+  },
+  {
+   "id": "abandoned-commercial-building-at-36th-wazee",
+   "name": "Abandoned commercial building at 36th & Wazee",
+   "cat": "houses",
+   "type": "warehouse",
+   "lat": 39.7693,
+   "lon": -104.9782,
+   "approx": true,
+   "location": "Near 36th St. and Wazee St., River North, Denver, Denver County (RiNo)",
+   "condition": "Denver Fire said the building was abandoned and its doors were welded shut. A fire in October 2024 killed one person, and crews entered through a window. No later report on whether it was demolished. Newest info: Oct 2024.",
+   "access": "Unknown; doors were welded shut.",
+   "sources": [
+    "https://www.kktv.com/2024/10/09/1-killed-fire-abandoned-commercial-building-denvers-river-north-district-doors-building-welded-shut/",
+    "https://www.cbsnews.com/colorado/news/deadly-denver-commercial-structure-fire-36th-wazee",
+    "https://9news.com/article/news/local/36th-wazee-fire-denver/73-0a3e1c16-1e2d-46b6-a868-435c45c8e921"
+   ]
+  },
+  {
+   "id": "white-satin-amalgamated-sugar-plant-former-great-western-sug",
+   "name": "White Satin / Amalgamated Sugar plant (former Great Western Sugar factory, Loveland)",
+   "cat": "industrial",
+   "type": "factory",
+   "lat": 40.39592,
+   "lon": -105.07282,
+   "approx": true,
+   "location": "Former sugar factory site along N. Madison Ave near E. Eisenhower Blvd (US 34), east Loveland",
+   "condition": "The Great Western plant opened in 1901 and closed in 1977 or 1985 (sources disagree). A 2009 blog says Amalgamated owned it and the site was listed for sale at $1.25M. Photo posts from 2015-2016 describe crumbling abandoned buildings with large sections of outer wall fallen away. Newest info is 2016, and I found no later report confirming the buildings still stand.",
+   "access": "Private (Amalgamated Sugar as of 2009); unknown now",
+   "sources": [
+    "https://www.placesthatwere.com/2016/01/abandoned-buildings-colorado-amalgamated-sugar.html",
+    "https://www.28dayslater.co.uk/threads/white-satin-amalgamated-sugar-plant-in-loveland-colorado-march-2015.101630/",
+    "https://longmontian.blogspot.com/2009/01/loveland-colorado-sugar-factory.html?m=1"
+   ]
+  },
+  {
+   "id": "keenesburg-historic-school-1927",
+   "name": "Keenesburg historic school (1927)",
+   "cat": "institutional",
+   "type": "school",
+   "lat": 40.10817,
+   "lon": -104.5197,
+   "approx": true,
+   "location": "Keenesburg (exact address not given in sources)",
+   "condition": "The 1927 school was decommissioned in 2002 after 75 years. A CU Denver UTAP adaptive-reuse study describes it as having fallen somewhat into disrepair and used mainly for storage by the Weld school district. The study is undated, so newest info is after 2002 but the exact year is unknown.",
+   "access": "School district owned (Weld RE-3J per study context); not public",
+   "sources": [
+    "https://architectureandplanning.ucdenver.edu/utap/UTAP/our-work/community-buildings-and-facilities/keenesburg-community-center"
+   ]
+  },
+  {
+   "id": "argo-mine-kismet-mine-remnants",
+   "name": "Argo Mine (Kismet Mine) remnants",
+   "cat": "industrial",
+   "type": "mine",
+   "lat": 40.11554,
+   "lon": -105.3886,
+   "approx": true,
+   "location": "Jamestown Mining District, near Jamestown off Left Hand Canyon / James Canyon",
+   "condition": "Opened in 1875 as the Kismet Mine (gold and silver) and switched to fluorspar in 1911; it produced copper, fluorine, gold, lead and silver in the 1940s. A 2021 photo shows remnants still standing (newest info 2021).",
+   "access": "Private land (mindat). Boulder County Open Space says the site is closed to the public for safety reasons.",
+   "sources": [
+    "https://exstrom.com/mpod/20210409.html",
+    "https://bouldercountyopenspace.org/hard-rock-mine-tour/argo.html",
+    "https://zh.mindat.org/loc-109839.html"
+   ]
+  },
+  {
+   "id": "belvidere-theatre",
+   "name": "Belvidere Theatre",
+   "cat": "other",
+   "type": "site",
+   "lat": 39.80009,
+   "lon": -105.512,
+   "approx": true,
+   "location": "Prominent spot at the entrance to Central City from I-70 (Central City Parkway / Main St area); adjacent to Shoo Fly (Wisebart Hall) building",
+   "condition": "Built 1875; a 1991 casino conversion deal failed and the building has been 'empty for decades', neglected since about 2000. EPA, CDPHE and city cleanup and rehab are under way (asbestos abatement done, a Sept 2024 milestone). Colorado Preservation lists it as an Active Project. Still unoccupied as of the newest info (2024).",
+   "access": "Owned by the town / Belvidere Foundation and under rehabilitation; no public entry",
+   "sources": [
+    "https://www.denvergazette.com/?p=407478",
+    "https://www.cbsnews.com/colorado/news/belvidere-theatre-central-city-revival-efforts-underway-colorado-thanks-donors-epa",
+    "https://www.coloradopreservation.org/endangered-place/belvidere-theatre-central-city"
+   ]
+  },
+  {
+   "id": "former-coyote-creek-casino-building",
+   "name": "Former Coyote Creek Casino building",
+   "cat": "other",
+   "type": "site",
+   "lat": 39.80215,
+   "lon": -105.51735,
+   "approx": true,
+   "location": "Main Street, Central City (built originally as a bank)",
+   "condition": "Search results said the building is 'now empty', and a photo caption calls it vacant. The same sources mention the closed Scarlet's Casino building at the south end of Main Street. Undated; sources from about the 2020s.",
+   "access": "Private; unknown",
+   "sources": [
+    "https://9news.com/article/life/style/colorado-guide/history-of-central-city-casinos-dispensaries/73-3ddf9562-bc14-4cb6-8df7-a1f3eab5a878",
+    "https://www.denvergazette.com/?p=105815"
+   ]
+  },
+  {
+   "id": "kassler-water-treatment-plant",
+   "name": "Kassler water treatment plant",
+   "cat": "other",
+   "type": "site",
+   "lat": 39.34204,
+   "lon": -104.94689,
+   "approx": true,
+   "location": "Mouth of Waterton Canyon near the Kassler Center, High Line Canal mile 1.6 (Waterton Canyon trailhead off Waterton Rd), Kassler / Waterton Canyon, Douglas County",
+   "condition": "Slow-sand filter plant built 1901-1907 and decommissioned about 1985-86 (EPA: kept on emergency standby). A CBS report says it is not working now; a rusted sign tells its history. Exact condition of the buildings is unclear (sources about 2015-2020s).",
+   "access": "Denver Water property; the canyon trail is public but the plant is not",
+   "sources": [
+    "https://denverwater.org/tap/water-treatment-blast-past",
+    "https://coyotegulch.blog/2015/08/03/town-of-kassler-supplied-water-for-a-thirsty-growing-denver-the-colorado-statesman/",
+    "https://highlinecanal.org/2015/11/800/"
+   ]
+  },
+  {
+   "id": "englewood-depot-1915-santa-fe-train-depot",
+   "name": "Englewood Depot (1915 Santa Fe train depot)",
+   "cat": "other",
+   "type": "site",
+   "lat": 39.6597,
+   "lon": -104.9965,
+   "approx": true,
+   "location": "675 W Dartmouth Ave (CBS gives 3098 S Galapago St), Englewood, Arapahoe County",
+   "condition": "Historic depot called vacant in news coverage. In 2022 the city sued the owners (Tom and Patti Parson / Englewood Depot Inc.) over an unfinished letterpress-museum restoration; the suit settled with a completion deadline. As of a Nov 2024 fundraising appeal the museum still had not opened.",
+   "access": "Owned by the nonprofit Englewood Depot Inc.; private",
+   "sources": [
+    "https://businessden.com/englewood-settles-lawsuit-against-vacant-train-depot-owners/",
+    "https://denverite.com/2022/10/06/englewood-sold-an-abandoned-depot-to-a-letterpress-museums-owners-now-the-city-is-suing-the-nonprofit-over-fraud",
+    "https://www.cbsnews.com/colorado/news/englewood-lawsuit-train-depot-thomas-patti-parson-against-owners-historic/"
+   ]
+  },
+  {
+   "id": "bradford-perley-house-ruins",
+   "name": "Bradford Perley House ruins",
+   "cat": "houses",
+   "type": "mansion",
+   "lat": 39.59987,
+   "lon": -105.1739,
+   "approx": false,
+   "location": "Ken-Caryl Ranch open space (Bradford/Perley historic site with apple orchard, picnic area nearby), Ken Caryl, Jefferson County",
+   "condition": "1859-60 stone house, neglected after 1926 and gutted by fire in 1967. Now a stabilized roofless ruin ('a shell of its former self', 2011). It was on the 2002 endangered list and the National Register in 2015.",
+   "access": "Within Ken-Caryl Ranch, stewarded by the Ken Caryl Ranch Historical Society; access may be restricted to community members",
+   "sources": [
+    "https://www.coloradopreservation.org/?p=15971",
+    "https://issuu.com/bford2here/docs/htimber-a-3-08-31-11-k"
+   ]
+  },
+  {
+   "id": "foxton-post-office",
+   "name": "Foxton Post Office",
+   "cat": "other",
+   "type": "site",
+   "lat": 39.42443,
+   "lon": -105.2361,
+   "approx": true,
+   "location": "Foxton, North Fork Historic District, along the North Fork South Platte (Foxton Rd)",
+   "condition": "Post office from 1909 that also served as a train depot until 1927. Listed as endangered in 2002 with the threat 'demolition by neglect, vacant'; its later status is shown only as 'Progress'. Newest info is undated.",
+   "access": "Unknown",
+   "sources": [
+    "https://www.coloradopreservation.org/?p=16024",
+    "https://en.wikipedia.org/wiki/Foxton,_Colorado"
+   ]
   }
  ]
 }
