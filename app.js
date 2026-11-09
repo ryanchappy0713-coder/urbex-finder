@@ -2101,11 +2101,19 @@ Give lat and lon only when a source states them or you are confident; otherwise 
   satBox.innerHTML = `<summary>🛰 Satellite Scout: auto-check buildings from above</summary>
     <div id="satBody" class="muted">
       <p style="margin:6px 0">Checks every large building near the search center the way explorers scout: no business listed, empty or overgrown parking lot, no cars, and a roof that hasn't changed in years. You get a ranked list of leads with 2016 vs. now photos to flip through.</p>
-      <button id="satRun" class="btn accent" style="width:100%;justify-content:center">Scout buildings around here</button>
+      <div class="row"><button id="satRun" class="btn accent" style="flex:1;justify-content:center">Scout around search center</button>
+      <button id="satView" class="btn" style="flex:1;justify-content:center">Scout what's on screen</button></div>
       <div id="satOut"></div>
     </div>`;
   scoutBox.after(satBox);
   $('satRun').onclick = () => runSatScout();
+  $('satView').onclick = () => {
+    const m = map.getCenter(), bnd = map.getBounds();
+    const half = Math.min(bnd.getNorthEast().distanceTo([bnd.getSouth(), bnd.getEast()]), bnd.getNorthEast().distanceTo([bnd.getNorth(), bnd.getWest()])) / 2;
+    runSatScout({ lat: m.lat, lon: m.lng }, Math.max(500, Math.min(4000, half)));
+  };
+  const SAT_MID = ['2020-01', 23001];
+  let satAll = [], satShown = 0;
 
   const tileCache = new Map();
   let satPixelsOk = true;
@@ -2168,6 +2176,18 @@ Give lat and lon only when a source states them or you are confident; otherwise 
     });
     return { veg: veg / lum.length, clutter: clutter / lum.length, n: lum.length };
   }
+  // Share of the roof much darker than the rest of it: holes, collapse or missing panels.
+  function roofStats(d, W, inRoof) {
+    const L = [];
+    for (let y = 0; y < W; y += 2) for (let x = 0; x < W; x += 2) {
+      if (!inRoof(x, y)) continue;
+      const i = (y * W + x) * 4; L.push(0.3 * d[i] + 0.59 * d[i + 1] + 0.11 * d[i + 2]);
+    }
+    if (L.length < 40) return null;
+    const med = [...L].sort((a, b) => a - b)[L.length >> 1];
+    if (med < 70) return null;
+    return { dark: L.filter((v) => v < med * 0.45).length / L.length };
+  }
   // How different the roof looks between two dates (after evening out brightness).
   function roofChange(a, b, W, inRoof) {
     const A = [], B = [];
@@ -2186,12 +2206,23 @@ Give lat and lon only when a source states them or you are confident; otherwise 
   const ACTIVE_KEYS = ['shop', 'website', 'contact:website', 'opening_hours', 'brand', 'phone', 'contact:phone', 'operator', 'craft', 'office'];
   const DEAD_RE = /^(abandoned|disused|vacant|was|demolished|razed)(:|$)/;
 
-  async function runSatScout() {
+  async function runSatScout(center, radius) {
     const out = $('satOut'), btn = $('satRun');
-    const c = state.center || (() => { const m = map.getCenter(); return { lat: m.lat, lon: m.lng }; })();
-    const r = Math.min(+$('radius').value || 5000, 4000);
-    btn.disabled = true; satLayer.clearLayers();
-    out.innerHTML = `<p>Finding large buildings within ${r / 1000} km…</p>`;
+    const c = center || state.center || (() => { const m = map.getCenter(); return { lat: m.lat, lon: m.lng }; })();
+    let r = Math.round(radius || Math.min(+$('radius').value || 5000, 4000));
+    btn.disabled = $('satView').disabled = true; satLayer.clearLayers();
+    let data;
+    for (;;) {
+      out.innerHTML = `<p>Finding large buildings within ${(r / 1000).toFixed(1)} km…</p>`;
+      try { data = await overpass(satQuery(c, r), 60000); break; } catch (e) {
+        if (r > 1200) { r = Math.round(r / 2); continue; }
+        out.innerHTML = `<p class="error">Couldn't get buildings from OpenStreetMap (${esc(e.message)}). The free map servers are busy. Try again in a minute, or zoom in and use “Scout what's on screen”.</p>`;
+        btn.disabled = $('satView').disabled = false; return;
+      }
+    }
+    satFinish(c, r, data);
+  }
+  function satQuery(c, r) {
     const dLat = r / 111320, dLon = r / (111320 * Math.cos(c.lat * Math.PI / 180));
     const bbox = [c.lat - dLat, c.lon - dLon, c.lat + dLat, c.lon + dLon].map((n) => n.toFixed(5)).join(',');
     const q = `[out:json][timeout:50][bbox:${bbox}];
@@ -2204,11 +2235,10 @@ out tags bb;
 way["railway"~"^(abandoned|disused)$"];
 out geom;
 .lu out tags bb;`;
-    let data;
-    try { data = await overpass(q, 60000); } catch (e) {
-      out.innerHTML = `<p class="error">Couldn't get buildings from OpenStreetMap (${esc(e.message)}). Try again in a minute, or pick a smaller radius.</p>`;
-      btn.disabled = false; return;
-    }
+    return q;
+  }
+  async function satFinish(c, r, data) {
+    const out = $('satOut'), btn = $('satRun');
     const els = data.elements || [];
     const mPerDegLat = 111320, mPerDegLon = 111320 * Math.cos(c.lat * Math.PI / 180);
     const boxArea = (b) => (b.maxlat - b.minlat) * mPerDegLat * (b.maxlon - b.minlon) * mPerDegLon;
@@ -2238,19 +2268,25 @@ out geom;
       if (area > 8000) why.push(`big footprint (~${Math.round(area / 100) * 100} m²)`);
       cands.push({ id: `way/${e.id}`, tags: t, b: e.bounds, lat: ctr[0], lon: ctr[1], area, lots: lot, s, osmS: s, why });
     }
-    if (!cands.length) { out.innerHTML = '<p>No large buildings found here. Move the search center to an industrial or older commercial area and try again.</p>'; btn.disabled = false; return; }
+    if (!cands.length) { out.innerHTML = '<p>No large buildings found here. Move to an industrial or older commercial area and try again.</p>'; btn.disabled = $('satView').disabled = false; return; }
     cands.sort((a, b) => b.s - a.s);
-    const top = cands.slice(0, 60);
-    let done = 0;
-    const tick = () => { out.innerHTML = `<p>Checking satellite photos… ${done}/${top.length} buildings (of ${cands.length} large ones)</p>`; };
+    satAll = cands; satShown = 0;
+    await satMore(60);
+    btn.disabled = $('satView').disabled = false;
+  }
+  async function satMore(n) {
+    const out = $('satOut');
+    const batch = satAll.slice(satShown, satShown + n);
+    const prog = document.createElement('p'); out.append(prog);
+    let done = 0, idx = 0;
+    const tick = () => { prog.textContent = `Checking satellite photos… ${done}/${batch.length} buildings (of ${satAll.length} large ones)`; };
     tick();
-    let idx = 0;
     await Promise.all(Array.from({ length: 4 }, async () => {
-      while (idx < top.length) { const k = top[idx++]; await satAnalyze(k); done++; tick(); }
+      while (idx < batch.length) { const k = batch[idx++]; await satAnalyze(k); done++; tick(); }
     }));
-    top.sort((a, b) => b.s - a.s);
-    renderSat(top, cands.length);
-    btn.disabled = false;
+    satShown += batch.length;
+    const checked = satAll.slice(0, satShown).filter((k) => k.analyzed).sort((a, b) => b.s - a.s);
+    renderSat(checked, satAll.length);
   }
 
   async function satAnalyze(k) {
@@ -2258,7 +2294,8 @@ out geom;
     const spanM = Math.max((k.b.maxlat - k.b.minlat) * 111320, (k.b.maxlon - k.b.minlon) * 111320 * Math.cos(k.lat * Math.PI / 180)) * 1.8 + 60;
     let z = 18;
     while (z > 14 && spanM / (156543 * Math.cos(k.lat * Math.PI / 180) / 2 ** z) > W) z--;
-    const [now, old] = await Promise.all([satFrame(LIVE_SAT, k.lat, k.lon, z, W), satFrame(wbUrl(SAT_OLD[1]), k.lat, k.lon, z, W)]);
+    k.analyzed = true;
+    const [now, old, mid] = await Promise.all([satFrame(LIVE_SAT, k.lat, k.lon, z, W), satFrame(wbUrl(SAT_OLD[1]), k.lat, k.lon, z, W), satFrame(wbUrl(SAT_MID[1]), k.lat, k.lon, z, W)]);
     k.now = now.cv; k.old = old.cv;
     const [bx0, by0] = now.px(k.b.maxlat, k.b.minlon), [bx1, by1] = now.px(k.b.minlat, k.b.maxlon);
     const inRoof = (x, y) => x > bx0 + 2 && x < bx1 - 2 && y > by0 + 2 && y < by1 - 2;
@@ -2269,7 +2306,12 @@ out geom;
     const dn = now.ok && pixels(now.cv), dd = old.ok && pixels(old.cv);
     if (!dn) return;
     const w = lotRects.length ? 1 : 0.5;
-    const ln = lotStats(dn, W, inLot), lo = dd ? lotStats(dd, W, inLot) : null;
+    const dm = mid.ok && pixels(mid.cv);
+    const ln = lotStats(dn, W, inLot), lo = dd ? lotStats(dd, W, inLot) : null, lm = dm ? lotStats(dm, W, inLot) : null;
+    if (ln && lm && lo && ln.clutter < 0.08 && lm.clutter < 0.08 && lo.clutter < 0.08) { k.s += 1.5; k.why.push('lot empty in 2016, 2020 and now'); }
+    else if (lm && lm.clutter > 0.2 && ln && ln.clutter > 0.2) k.s -= 1;
+    const rs = roofStats(dn, W, inRoof);
+    if (rs && rs.dark > 0.05 && rs.dark < 0.35) { k.s += Math.min(2, rs.dark * 20); k.why.push('dark patches on the roof (holes or damage?)'); }
     if (ln) {
       k.s += w * (2.5 * (1 - Math.min(1, ln.clutter * 4)));
       if (ln.clutter < 0.08) k.why.push(lotRects.length ? 'parking lot looks empty (no cars)' : 'no cars around it');
@@ -2278,7 +2320,7 @@ out geom;
     }
     if (lo) {
       k.s += w * 1.5 * (1 - Math.min(1, lo.clutter * 4));
-      if (ln && lo.clutter < 0.08 && ln.clutter < 0.08) { k.s += 1.5; k.why.push('lot was empty in 2016 too'); }
+      if (ln && lo.clutter < 0.08 && ln.clutter < 0.08) { k.s += 1.5; if (!k.why.includes('lot empty in 2016, 2020 and now')) k.why.push('lot was empty in 2016 too'); }
     }
     if (dd) {
       const ch = roofChange(dn, dd, W, inRoof);
@@ -2302,6 +2344,7 @@ out geom;
 
   function renderSat(list, total) {
     const out = $('satOut');
+    satLayer.clearLayers();
     const shown = list.filter((k) => !satHidden.has(k.id));
     const note = satPixelsOk ? '' : '<p class="error" style="font-size:12px">Your browser blocked reading the photos, so the ranking only uses map data. You can still flip through them.</p>';
     out.innerHTML = `${note}<p style="margin:8px 0">Top ${shown.length} leads of ${total} large buildings, best first. <b>These are guesses from photos.</b> Many will be working businesses, so check the photos, use <b>🕰 Imagery</b> and <b>Street View</b>, and get permission before you go.</p><ol id="satList" class="sat-list"></ol>`;
@@ -2317,9 +2360,11 @@ out geom;
           <button class="btn" data-a="show">📍 Show</button>
           <a class="btn" target="_blank" rel="noopener" href="https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=${k.lat},${k.lon}">Street View</a>
           <a class="btn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=${k.lat},${k.lon}">Google Maps</a>
+          <button class="btn" data-a="hist">📜 History</button>
           <button class="btn" data-a="save">★ Save</button>
           <button class="btn ghost" data-a="hide" title="Not abandoned: hide it from now on">✕ Not it</button>
-        </div>`;
+        </div><div class="sat-hist" hidden></div>`;
+      li.querySelector('[data-a=hist]').onclick = () => satHistory(k, name, li.querySelector('.sat-hist'));
       const figs = li.querySelectorAll('figure');
       if (k.old) figs[0].prepend(k.old); if (k.now) figs[1].prepend(k.now);
       li.querySelector('[data-a=show]').onclick = () => {
@@ -2345,6 +2390,63 @@ out geom;
         .bindTooltip(`🛰 ${n + 1}. ${name}`).on('click', () => { satBox.open = true; li.scrollIntoView({ behavior: 'smooth', block: 'center' }); li.classList.add('active'); setTimeout(() => li.classList.remove('active'), 1500); })
         .addTo(satLayer);
     });
+    if (satShown < satAll.length) {
+      const more = document.createElement('button');
+      more.className = 'btn'; more.style.cssText = 'width:100%;justify-content:center';
+      more.textContent = `Check ${Math.min(40, satAll.length - satShown)} more buildings`;
+      more.onclick = () => { more.remove(); satMore(40); };
+      out.append(more);
+    }
+  }
+
+  // ---------- 📜 Free building history: OSM edit history, address, Wikipedia, search links ----------
+  async function satHistory(k, name, box) {
+    box.hidden = !box.hidden;
+    if (box.hidden || box.dataset.done) return;
+    box.innerHTML = '<p class="muted">Looking up this building’s history…</p>';
+    const [hist, addr, wiki] = await Promise.all([
+      fetchJson(`https://api.openstreetmap.org/api/0.6/${k.id}/history.json`).catch(() => null),
+      fetchJson(`${NOMINATIM}/reverse?format=jsonv2&zoom=18&addressdetails=1&lat=${k.lat}&lon=${k.lon}`).catch(() => null),
+      fetchJson(`${WIKI}?action=query&format=json&origin=*&generator=geosearch&ggscoord=${k.lat}|${k.lon}&ggsradius=300&ggslimit=5&prop=extracts|info&exintro=1&explaintext=1&exsentences=3&inprop=url`).catch(() => null),
+    ]);
+    box.dataset.done = '1';
+    const a = addr?.address || {};
+    const street = [a.house_number, a.road].filter(Boolean).join(' ');
+    const town = a.city || a.town || a.village || a.hamlet || a.county || '';
+    const address = [street, town, a.state].filter(Boolean).join(', ');
+    // What the building was mapped as over time.
+    const KEYS = /^(name|old_name|was:name|shop|amenity|building|craft|office|industrial|man_made|operator|brand|(disused|abandoned|was|demolished):.*|disused|abandoned|vacant|start_date|opening_date|end_date)$/;
+    const timeline = [], seenVals = new Set(), oldNames = new Set();
+    for (const v of hist?.elements || []) {
+      const ch = [];
+      for (const [key, val] of Object.entries(v.tags || {})) {
+        if (!KEYS.test(key) || seenVals.has(`${key}=${val}`)) continue;
+        seenVals.add(`${key}=${val}`); ch.push(`${key} = ${val}`);
+        if (/name$/.test(key)) oldNames.add(val);
+      }
+      if (ch.length) timeline.push(`<li><b>${esc((v.timestamp || '').slice(0, 10))}</b>: ${esc(ch.join(', '))}</li>`);
+    }
+    const pages = Object.values(wiki?.query?.pages || {}).sort((x, y) => (x.index || 0) - (y.index || 0));
+    const nameQ = [...oldNames].filter((n) => n !== name).concat(k.tags.name ? [k.tags.name] : []);
+    const what = nameQ[0] ? `"${nameQ[0]}"` : street ? `"${street}"` : `${k.lat.toFixed(4)},${k.lon.toFixed(4)}`;
+    const place = [town, a.state].filter(Boolean).join(' ');
+    const g = (q) => `https://www.google.com/search?q=${encodeURIComponent(q)}`;
+    const link = (href, text) => `<a class="btn" href="${href}" target="_blank" rel="noopener">${text}</a>`;
+    box.innerHTML = `
+      ${address ? `<p style="margin:6px 0"><b>Address:</b> ${esc(address)}</p>` : ''}
+      <p style="margin:6px 0"><b>Map history</b> (what people mapped here, by date):</p>
+      ${timeline.length ? `<ul class="hist-list">${timeline.join('')}</ul>` : '<p class="muted" style="margin:0">No past names or uses recorded.</p>'}
+      ${pages.length ? `<p style="margin:6px 0"><b>Wikipedia nearby:</b></p>${pages.map((pg) => `<p style="margin:4px 0;font-size:12px"><a href="${esc(pg.fullurl)}" target="_blank" rel="noopener">${esc(pg.title)}</a>: ${esc((pg.extract || '').slice(0, 280))}</p>`).join('')}` : ''}
+      <p style="margin:8px 0 4px"><b>Dig deeper</b> (free searches, filled in for you):</p>
+      <div class="row">
+        ${link(g(`${what} ${place} history`), 'History')}
+        ${link(`https://www.google.com/search?tbm=nws&q=${encodeURIComponent(`${what} ${place} closed OR vacant OR abandoned OR fire`)}`, 'News: closed / vacant')}
+        ${link(g(`${what} ${place} abandoned OR urbex`), 'Urbex posts')}
+        ${link(`https://www.youtube.com/results?search_query=${encodeURIComponent(`${what} ${place} abandoned`)}`, 'YouTube')}
+        ${link(g(`${street || what} ${place} county assessor property owner`), 'Owner (assessor)')}
+        ${link(g(`${what} ${place} for sale OR lease loopnet`), 'For sale / lease')}
+        ${link(`https://www.google.com/search?tbm=isch&q=${encodeURIComponent(`${what} ${place}`)}`, 'Old photos')}
+      </div>`;
   }
 
   // Expose for tests.
