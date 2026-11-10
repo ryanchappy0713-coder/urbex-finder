@@ -9164,6 +9164,327 @@
     "checked": "2026-11-09"
    },
    "added": "2026-11-09T21:01:54+00:00"
+  },
+  {
+   "id": "matterhorn-mill-valley-view-leasing-and-mining-company-mill",
+   "name": "Matterhorn Mill (Valley View Leasing and Mining Company Mill)",
+   "cat": "industrial",
+   "type": "mill",
+   "lat": 38.02741,
+   "lon": -108.46909,
+   "approx": true,
+   "location": "About 2.8 miles south of Ophir, just off Colorado Highway 145, on the former Matterhorn townsite. A loop road connects it to the highway north and south of the mill. The mill is 96 ft tall and can be seen above the trees from the highway., Matterhorn townsite near Ophir, San Miguel County",
+   "condition": "Shut since 1968. Telluride News (2020) called it 'still remarkably intact' at its 100th anniversary. It is a 1920 flotation mill that was renovated in 1961 and listed on the NRHP in 2010. One low-quality page mentions restoration efforts. No status report after 2020 found.",
+   "access": "A 2009 record lists the owner as the U.S. Forest Service (Uncompahgre National Forest). Current access rules unknown.",
+   "sources": [
+    "https://www.telluridenews.com/news/article_aa76c85e-09b7-11eb-8cc6-574700e6934a.html",
+    "https://en.wikipedia.org/wiki/Valley_View_Leasing_and_Mining_Company_Mill",
+    "https://www.hikingproject.com/gem/51528/matterhorn-mill"
+   ],
+   "added": "2026-11-10T00:54:14+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "unknown",
+    "legal": "government-owned (not open)",
+    "as_of": "2020",
+    "sources": [
+     "https://www.telluridenews.com/news/article_aa76c85e-09b7-11eb-8cc6-574700e6934a.html",
+     "https://en.wikipedia.org/wiki/Valley_View_Leasing_and_Mining_Company_Mill",
+     "https://www.hikingproject.com/gem/51528/matterhorn-mill"
+    ],
+    "checked": "2026-11-10"
+   }
+  },
+  {
+   "id": "atlantic-cable-mine-headframe",
+   "name": "Atlantic Cable Mine headframe",
+   "cat": "industrial",
+   "type": "mine headframe / hoist house",
+   "lat": 37.69269,
+   "lon": -108.0315,
+   "approx": true,
+   "location": "North side of Rico along Colorado Highway 145. A bronze marker sits on a mine car at the site.",
+   "condition": "Headframe built 1898-1905 and changed in the early 1940s. A mining record says the headframe was still standing in 1989. Marker photos from July 2025 show it still standing, with an exhibit beside it. Sources disagree on the hoist house: Waymarking says part of it survives, an art-photo page says it is gone.",
+   "access": "Unknown ownership. Waymarking says the site is fenced off, but it can be seen from the highway.",
+   "sources": [
+    "https://waymarking.com/waymarks/WMP5KY_The_Atlantic_Cable_Mine_Rico_CO",
+    "https://www.hmdb.org/m.asp?m=282997",
+    "https://sah-archipedia.org/node/8321"
+   ],
+   "added": "2026-11-10T00:54:18+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "low",
+    "security_notes": "Fenced off, per Waymarking (date not given)",
+    "legal": "unknown",
+    "as_of": "2025",
+    "sources": [
+     "https://waymarking.com/waymarks/WMP5KY_The_Atlantic_Cable_Mine_Rico_CO",
+     "https://www.hmdb.org/m.asp?m=282997",
+     "https://sah-archipedia.org/node/8321"
+    ],
+    "checked": "2026-11-10"
+   }
+  },
+  {
+   "id": "pandora-mill-smuggler-union-idarado",
+   "name": "Pandora Mill (Smuggler-Union / Idarado)",
+   "cat": "industrial",
+   "type": "mill",
+   "lat": 37.93094,
+   "lon": -107.77791,
+   "approx": false,
+   "location": "Pandora townsite at the east end of the Telluride box canyon, on Idarado Mining Company land",
+   "condition": "Stopped processing ore in 1974 or 1978 (sources disagree). In 2016 the Telluride Historical Museum said the mill faced demolition. A 2017 state mining-agency letter discussed keeping the mill building and a few outbuildings for viewing from outside. Travel pages describe some structures still standing. No 2024-2026 status found, so it may have been demolished since.",
+   "access": "Private (Idarado Mining Company). Tailings are being reclaimed, and housing is expected on the site.",
+   "sources": [
+    "https://www.telluridemuseum.org/pressitem/tellurides-historic-pandora-mill-faces-demolition/",
+    "https://dnrweblink.state.co.us/DRMSSearch/0/doc/1210208/Page1.aspx",
+    "https://en.wikipedia.org/wiki/Pandora,_Colorado"
+   ],
+   "added": "2026-11-10T00:54:22+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "unknown",
+    "security_notes": "Active reclamation site owned by a mining company (2016-2017). No specific security details found.",
+    "legal": "private",
+    "as_of": "2026",
+    "sources": [
+     "https://www.telluridemuseum.org/pressitem/tellurides-historic-pandora-mill-faces-demolition/",
+     "https://dnrweblink.state.co.us/DRMSSearch/0/doc/1210208/Page1.aspx",
+     "https://en.wikipedia.org/wiki/Pandora,_Colorado"
+    ],
+    "checked": "2026-11-10"
+   }
+  },
+  {
+   "id": "feminilas-building-spmdtu-women-s-auxiliary-hall",
+   "name": "Feminilas Building (SPMDTU women's auxiliary hall)",
+   "cat": "other",
+   "type": "meeting hall (adobe)",
+   "lat": 37.23679,
+   "lon": -105.4182,
+   "approx": true,
+   "location": "Culebra Valley, southeast of San Luis (Westword calls it El Rito; other sources say Culebra Valley), near San Francisco / San Luis, Costilla County",
+   "condition": "Crumbling adobe built about 1920. On Colorado's Most Endangered Places list in 2023 with the threat given as demolition by neglect. CPI's project status reads 'Progress', but I found no news of 2024–2025 stabilization work",
+   "access": "Owned by the SPMDTU / property owners; CPI said it would work with the owners on stabilization",
+   "sources": [
+    "https://www.westword.com/news/colorado-preservation-endangered-places-16134325/",
+    "https://spmdtu.org/2023/03/01/spmdtu-feminizes-building-identified-as-endangered/",
+    "https://coloradopreservation.org/?p=16021"
+   ],
+   "added": "2026-11-10T00:54:27+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "unknown",
+    "legal": "private",
+    "as_of": "2025",
+    "sources": [
+     "https://www.westword.com/news/colorado-preservation-endangered-places-16134325/",
+     "https://spmdtu.org/2023/03/01/spmdtu-feminizes-building-identified-as-endangered/",
+     "https://coloradopreservation.org/?p=16021"
+    ],
+    "checked": "2026-11-10"
+   }
+  },
+  {
+   "id": "boyd-school-historic-elementary-school",
+   "name": "Boyd School (historic elementary school)",
+   "cat": "institutional",
+   "type": "school",
+   "lat": 37.46071,
+   "lon": -105.86464,
+   "approx": false,
+   "location": "Boyd School block, across the street from Boyd Park, Alamosa",
+   "condition": "Alamosa News describes the 34,000 sq ft school as sitting vacant. The SLV Housing Coalition bought it in late 2022 for an affordable-housing conversion. In 2025 the coalition was redesigning the plan ('Moose Manor'), and I found no confirmation that construction has started. Treat it as vacant but slated for redevelopment",
+   "access": "Owned by the San Luis Valley Housing Coalition",
+   "sources": [
+    "https://alamosanews.com/article/adaptive-reuse-in-alamosa-transforming-an-historic-school-building-into-new-housing",
+    "https://sites.google.com/slvhc.com/slvhc/housing-projects"
+   ],
+   "added": "2026-11-10T00:54:30+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "unknown",
+    "legal": "private",
+    "as_of": "2025",
+    "sources": [
+     "https://alamosanews.com/article/adaptive-reuse-in-alamosa-transforming-an-historic-school-building-into-new-housing",
+     "https://sites.google.com/slvhc.com/slvhc/housing-projects"
+    ],
+    "checked": "2026-11-10"
+   }
+  },
+  {
+   "id": "former-canon-potato-packing-shed",
+   "name": "Former Canon Potato packing shed",
+   "cat": "houses",
+   "type": "potato warehouse",
+   "lat": 37.75354,
+   "lon": -106.10822,
+   "approx": true,
+   "location": "1016 E. State Highway 112, Center, CO (has a railroad spur)",
+   "condition": "A commercial listing (undated, seen 2026) describes it as vacant: more than 90,000 sq ft of warehouse, office and storage space, sold as real estate only",
+   "access": "Private; listed for sale",
+   "sources": [
+    "https://loopnet.ca/Listing/1016-E-State-Highway-112-Center-CO/31784406"
+   ],
+   "added": "2026-11-10T00:54:35+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "unknown",
+    "legal": "private",
+    "as_of": "2026",
+    "sources": [
+     "https://loopnet.ca/Listing/1016-E-State-Highway-112-Center-CO/31784406"
+    ],
+    "checked": "2026-11-10"
+   }
+  },
+  {
+   "id": "bonanza-ghost-town-remnants-incl-empire-chief-mill-ruins",
+   "name": "Bonanza ghost town remnants (incl. Empire Chief Mill ruins)",
+   "cat": "industrial",
+   "type": "mining ghost town / mill ruins",
+   "lat": 38.29436,
+   "lon": -106.14259,
+   "approx": true,
+   "location": "Townsite at about 9,500 ft. From Villa Grove go north on US 285, then left onto County Rd LL56 for about 14 miles. The Empire Chief Mill is near town, Bonanza, Saguache County",
+   "condition": "Largely abandoned former silver town. Sources say a few old houses, mine structures and rock piles remain; one says several historic buildings remain. The Empire Chief Mill is an avalanche-destroyed ruin, and an old ore mill is described as partly fallen down. 30 buildings burned in the 1937 fire. CPR reported the state was weighing declaring the town abandoned as a municipality. The Rawley Mill was reportedly dismantled in an ASARCO cleanup",
+   "access": "Mixed: the townsite is reached by county road; mine and mill parcels are likely private (a Rawley/Bonanza property was offered at auction)",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Bonanza,_Colorado",
+    "https://www.uncovercolorado.com/ghost-towns/bonanza",
+    "https://rockymountainprofiles.com/colorado/colorado-scenes/mines-and-mills/bonanza-empire-chief-mine-colorado"
+   ],
+   "added": "2026-11-10T00:54:38+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "low",
+    "security_notes": "Remote and rough road; a guide warns a standard sedan will likely suffer severe undercarriage damage. No guards or fencing reported",
+    "legal": "unknown",
+    "as_of": "1937",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Bonanza,_Colorado",
+     "https://www.uncovercolorado.com/ghost-towns/bonanza",
+     "https://rockymountainprofiles.com/colorado/colorado-scenes/mines-and-mills/bonanza-empire-chief-mine-colorado"
+    ],
+    "checked": "2026-11-10"
+   }
+  },
+  {
+   "id": "holy-moses-mine-ruins",
+   "name": "Holy Moses Mine ruins",
+   "cat": "industrial",
+   "type": "mine",
+   "lat": 37.84832,
+   "lon": -106.92548,
+   "approx": true,
+   "location": "About 3 miles up East Willow Creek from Creede, off the Bachelor Loop",
+   "condition": "SAH Archipedia says the Holy Moses ruins can still be seen. This was the 1889 strike that started Creede's silver rush. I found no source with a recent condition or date",
+   "access": "Sources say almost all of the Bachelor Loop runs through private land",
+   "sources": [
+    "https://sah-archipedia.org/node/3600",
+    "https://creederocks.com/bachelor-loop"
+   ],
+   "added": "2026-11-10T00:54:42+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "unknown",
+    "security_notes": "Sources warn the mine buildings are structurally unsound and the shafts may hold poisonous or explosive gases; they advise staying off private property",
+    "legal": "private",
+    "sources": [
+     "https://sah-archipedia.org/node/3600",
+     "https://creederocks.com/bachelor-loop"
+    ],
+    "checked": "2026-11-10"
+   }
+  },
+  {
+   "id": "artesia-artesian-motel",
+   "name": "Artesia (Artesian) Motel",
+   "cat": "leisure",
+   "type": "motel",
+   "lat": 39.06542,
+   "lon": -108.56232,
+   "approx": true,
+   "location": "640 Highway 50, north side of the highway, Orchard Mesa, Grand Junction (Orchard Mesa), Mesa County",
+   "condition": "A local radio article (undated) calls it the 'old abandoned pink motel' and says the owners had recently applied for a fence permit. I found no newer status, so it may have changed.",
+   "access": "Privately owned; owners unknown",
+   "sources": [
+    "https://kekbfm.com/whats-happening-at-the-artesia-motel-in-orchard-mesa/"
+   ],
+   "added": "2026-11-10T00:54:47+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "unknown",
+    "security_notes": "The owners applied to the city for a fence permit (article undated), so the site may now be fenced.",
+    "legal": "private",
+    "sources": [
+     "https://kekbfm.com/whats-happening-at-the-artesia-motel-in-orchard-mesa/"
+    ],
+    "checked": "2026-11-10"
+   }
+  },
+  {
+   "id": "grand-junction-union-depot-1906-d-rg-passenger-depot",
+   "name": "Grand Junction Union Depot (1906 D&RG passenger depot)",
+   "cat": "other",
+   "type": "train station",
+   "lat": 39.06748,
+   "lon": -108.56767,
+   "approx": true,
+   "location": "Downtown Grand Junction next to the current Amtrak station, at the south end of Main St/2nd St",
+   "condition": "Vacant for decades since Amtrak moved out in 1991, with deferred maintenance. In late 2025 it was still unoccupied but getting slow restoration: a $250k State Historical Fund grant (late 2025) for roof and utility stabilization, window restoration under way, and a federal grant bid in Nov 2025.",
+   "access": "Privately owned (Grand Junction Union Depot owners). An active restoration site, not open to the public.",
+   "sources": [
+    "https://kjct8.com/2025/11/18/grand-junction-considers-federal-grant-application-train-depot-renovation",
+    "https://www.coloradopreservation.org/?p=16034",
+    "https://www.kjct8.com/2024/05/08/grand-junctions-historic-union-depot-slowly-getting-restored/"
+   ],
+   "added": "2026-11-10T00:54:48+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "medium",
+    "security_notes": "Owners are present and restoration crews were active in 2024-2025.",
+    "legal": "private",
+    "as_of": "2025",
+    "sources": [
+     "https://kjct8.com/2025/11/18/grand-junction-considers-federal-grant-application-train-depot-renovation",
+     "https://www.coloradopreservation.org/?p=16034",
+     "https://www.kjct8.com/2024/05/08/grand-junctions-historic-union-depot-slowly-getting-restored/"
+    ],
+    "checked": "2026-11-10"
+   }
+  },
+  {
+   "id": "vulcan-mine-remnants-burning-coal-mine",
+   "name": "Vulcan Mine remnants (burning coal mine)",
+   "cat": "industrial",
+   "type": "coal mine",
+   "lat": 39.57148,
+   "lon": -107.53496,
+   "approx": true,
+   "location": "South side of the Colorado River, about 2 miles from New Castle. Visible looking east up the river from Grand River Park.",
+   "condition": "Abandoned after the 1896 and 1913 explosions, and the coal seam is still burning underground. Mine remnants are visible from Grand River Park; the sources are undated.",
+   "access": "Private property. View only from Grand River Park or Burning Mountain Park (Coal Miner Memorial).",
+   "sources": [
+    "https://www.atlasobscura.com/places/vulcan-mine-disasters",
+    "https://www.hmdb.org/m.asp?m=120120"
+   ],
+   "added": "2026-11-10T00:54:51+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "unknown",
+    "security_notes": "Underground coal fire: risk of toxic gas and ground collapse.",
+    "legal": "private",
+    "as_of": "1913",
+    "sources": [
+     "https://www.atlasobscura.com/places/vulcan-mine-disasters",
+     "https://www.hmdb.org/m.asp?m=120120"
+    ],
+    "checked": "2026-11-10"
+   }
   }
  ]
 }
