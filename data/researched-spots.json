@@ -20,13 +20,16 @@
    "verify": {
     "status": "standing",
     "security": "medium",
-    "security_notes": "Radio write-ups say trespassing is strictly prohibited on this private property and warn of prosecution (undated). It sits inside the grounds of an operating amusement park (2026 season). No arrest reports found.",
+    "security_notes": "Track closed in 1988 and is decaying, per undated Denver7 coverage. It sits inside Lakeside Amusement Park, which opened its 118th season on May 15, 2026. Radio write-ups say not to enter under any circumstances (undated). No arrest or citation reports found.",
     "legal": "private",
+    "as_of": "2026",
     "sources": [
-     "https://94kix.com/abandoned-lakeside-speedway/",
-     "https://www.denver7.com/news/local-news/there-was-no-place-like-it-the-rich-history-of-lakeside-speedway-once-known-as-denvers-palace"
+     "https://kosi101.com/lakeside-amusement-park-opens-for-118th-season-may-15-with-its-iconic-cyclone-coaster-possibly-returning/",
+     "https://www.denver7.com/news/local-news/there-was-no-place-like-it-the-rich-history-of-lakeside-speedway-once-known-as-denvers-palace",
+     "https://en.wikipedia.org/wiki/Lakeside_Amusement_Park",
+     "https://kool1079.com/this-is-what-colorados-lakeside-race-track-looks-like-today/"
     ],
-    "checked": "2026-11-09"
+    "checked": "2026-11-10"
    },
    "added": "2026-11-08T02:29:06+00:00"
   },
@@ -77,12 +80,14 @@
    "verify": {
     "status": "unknown",
     "security": "unknown",
-    "security_notes": "Only a radio-station feature describing it as abandoned, which repeats an unverified meth-lab rumor. No enforcement info.",
+    "security_notes": "No report of demolition, sale or enforcement. A radio feature (undated) says visiting is prohibited for legal and safety reasons. Choice Hotels lists an Econo Lodge in Roggen as 'coming soon', with booking from Jun 2026. I could not confirm whether it is on or near this site, so the motel may be under redevelopment. Check before going.",
     "legal": "private",
     "sources": [
-     "https://94kix.com/ixp/510/p/colorado-abandoned-prairie-lodge/"
+     "https://94kix.com/ixp/510/p/colorado-abandoned-prairie-lodge/",
+     "https://ghosttowns.com/states/co/roggen.html",
+     "https://www.choicehotels.com/colorado/roggen/econo-lodge-hotels"
     ],
-    "checked": "2026-11-09"
+    "checked": "2026-11-10"
    },
    "added": "2026-11-08T02:29:06+00:00"
   },
@@ -1007,14 +1012,17 @@
    ],
    "verify": {
     "status": "standing",
-    "security": "unknown",
-    "security_notes": "On the state register (5CC.1136). A cleanup project addressed lead and arsenic contamination while keeping the buildings intact (undated).",
+    "security": "medium",
+    "security_notes": "In 2015 the Forest Service temporarily closed the mill area for soil cleanup because of very high contamination. I found no proof the cleanup is finished or the closure lifted. A Santiago Mill Access Trail project was decided and marked completed in Apr 2025. The land mixes Forest Service ground and private mining claims (2015). High altitude, about 12,000 ft.",
     "legal": "unknown",
+    "as_of": "2025",
     "sources": [
-     "https://historycolorado.org/node/4857",
-     "https://kenlockwood.tu.org/blog-posts/restoration-challenge-at-12000-feet"
+     "https://www.fs.usda.gov/r02/arp/projects/archive/67144",
+     "https://dnrweblink.state.co.us/DRMSSearch/0/doc/1086150/Page3.aspx",
+     "https://kenlockwood.tu.org/blog-posts/restoration-challenge-at-12000-feet",
+     "https://rockymountainprofiles.com/colorado/colorado-scenes/mines-and-mills/santiago-mine-colorado"
     ],
-    "checked": "2026-11-09"
+    "checked": "2026-11-10"
    },
    "added": "2026-11-08T02:47:28+00:00"
   },
@@ -1150,14 +1158,15 @@
    ],
    "verify": {
     "status": "standing",
-    "security": "unknown",
-    "security_notes": "Unincorporated community where people still live. Abandoned buildings are private property.",
+    "security": "medium",
+    "security_notes": "No 2024-2026 news. A 2015 blog says the Roggen Telephone Cooperative staff watch for trespassers. People still live here, and ghosttowns.com (undated) lists about a dozen abandoned homes and shacks. The buildings are private property.",
     "legal": "private",
+    "as_of": "2015",
     "sources": [
-     "https://en.wikipedia.org/wiki/Roggen,_Colorado",
+     "https://unchartedsights.blogspot.com/2015/11",
      "https://ghosttowns.com/states/co/roggen.html"
     ],
-    "checked": "2026-11-09"
+    "checked": "2026-11-10"
    },
    "added": "2026-11-08T02:47:28+00:00"
   },
@@ -2261,14 +2270,15 @@
    "verify": {
     "status": "standing",
     "security": "low",
-    "security_notes": "Clear Creek County manages the trails. The trailhead sign says the mill remnants are owned by Georgetown. Open year-round per CMC. Watch for scattered metal debris.",
+    "security_notes": "No new info found, so the previous values stand. Only concrete ruins remain. Clear Creek County manages the trails and the remnants are reportedly owned by Georgetown. A trail-conditions entry dated Nov 15, 2025 gave no details. Watch for scattered metal debris.",
     "legal": "public",
+    "as_of": "2025",
     "sources": [
-     "https://www.denver7.com/lifestyle/discover-colorado/family-hike-on-guanella-pass-silver-dale-and-colorado-central-mill",
+     "https://www.cmc.org/education-adventure/trips/routes-places/silverdale-historic-area-trails-1",
      "https://trails.colorado.gov/routes/184",
      "https://georgetown-colorado.org/?p=1063"
     ],
-    "checked": "2026-11-09"
+    "checked": "2026-11-10"
    },
    "added": "2026-11-08T03:06:53+00:00"
   },
@@ -2459,12 +2469,14 @@
    "verify": {
     "status": "standing",
     "security": "unknown",
-    "security_notes": "Local blog (undated) says the land is private and a ticket booth and pavilion are visible from Rossum Drive.",
+    "security_notes": "No new info found, so the previous values stand. Most of the park was destroyed in the 1976 Big Thompson flood. Local sources (undated) say it is private land, with a possible ticket booth and pavilion visible from Rossum Drive. An undated Loveland city record mentions proposed dense development on a city-owned Rossum Drive parcel. It is not confirmed to be this site.",
     "legal": "private",
     "sources": [
-     "https://kmax943.com/loveland-colorados-old-amusement-park/"
+     "https://kmax943.com/loveland-colorados-old-amusement-park/",
+     "https://power1029noco.com/loveland-colorados-old-amusement-park/",
+     "https://lovgov.org/home/showpublisheddocument/27663/636063380519970000"
     ],
-    "checked": "2026-11-09"
+    "checked": "2026-11-10"
    },
    "added": "2026-11-08T03:06:53+00:00"
   },
@@ -2681,12 +2693,12 @@
    "verify": {
     "status": "unknown",
     "security": "unknown",
-    "security_notes": "Undated syndicated article. The farm is private land in a suburban area, and the article warns of trespass prosecution.",
+    "security_notes": "Nothing new found. Only undated syndicated radio articles, which say the farm has been abandoned for about 30 years on private land in a suburban area and warn of trespass prosecution.",
     "legal": "private",
     "sources": [
-     "https://kubcthecanyon.com/ixp/510/p/colorado-abandoned-frederick-farm/"
+     "https://espnwesterncolorado.com/ixp/510/p/colorado-abandoned-frederick-farm/"
     ],
-    "checked": "2026-11-09"
+    "checked": "2026-11-10"
    },
    "added": "2026-11-08T03:06:53+00:00"
   },
@@ -2771,33 +2783,6 @@
     "sources": [
      "https://bouldercounty.gov/open-space/education/altona-schoolhouse/",
      "https://bouldercountyopenspace.org/i/?p=1513"
-    ],
-    "checked": "2026-11-09"
-   },
-   "added": "2026-11-08T03:06:53+00:00"
-  },
-  {
-   "id": "colorado-motorsports-park-byers-race-track",
-   "name": "Colorado Motorsports Park / Byers Race Track",
-   "cat": "leisure",
-   "type": "race track",
-   "lat": 39.68048,
-   "lon": -104.24721,
-   "approx": false,
-   "location": "2050 S County Road 201, Byers",
-   "condition": "Built as a greyhound track and later used as Colorado Motorsports Park; called 'the abandoned racetrack in Byers' on Reddit (2026).",
-   "access": "Private; listed for sale or lease.",
-   "sources": [
-    "https://www.rofo.com/commercial-real-estate/building/CO/Byers/2050-S-County-Road-201-206924.html",
-    "https://reddit.sentinel-team.org/posts/1szarw0/snapshots/2026-05-01T03%3A24%3A07.050221Z"
-   ],
-   "verify": {
-    "status": "unknown",
-    "security": "unknown",
-    "security_notes": "A building listing for 2050 S County Road 201 describes an event center with an IMCA-sanctioned clay oval (undated), so it may still be in use. I could not confirm it is abandoned.",
-    "legal": "private",
-    "sources": [
-     "https://www.rofo.com/commercial-real-estate/building/CO/Byers/2050-S-County-Road-201-206924.html"
     ],
     "checked": "2026-11-09"
    },
@@ -2974,33 +2959,6 @@
    "added": "2026-11-08T03:06:53+00:00"
   },
   {
-   "id": "creepy-abandoned-barn-off-huron-street",
-   "name": "Creepy abandoned barn off Huron Street",
-   "cat": "other",
-   "type": "site",
-   "lat": 39.91009,
-   "lon": -104.98755,
-   "approx": true,
-   "location": "Off Huron Street, Northglenn",
-   "condition": "Abandoned barn shown in a YouTube video with dolls and nooses hanging inside (undated); a nearby barn fire was reported, so check it still stands.",
-   "access": "Private; trespassing charges warned.",
-   "sources": [
-    "https://www.youtube.com/watch?v=jDTNoIEp0dA",
-    "https://kmax943.com/creepy-abandoned-colorado-barn/"
-   ],
-   "verify": {
-    "status": "unknown",
-    "security": "unknown",
-    "security_notes": "Only a syndicated radio write-up of a YouTube video. The exact location is unclear.",
-    "legal": "unknown",
-    "sources": [
-     "https://kmax943.com/creepy-abandoned-colorado-barn/"
-    ],
-    "checked": "2026-11-09"
-   },
-   "added": "2026-11-08T03:06:53+00:00"
-  },
-  {
    "id": "former-encounter-church-building",
    "name": "Former Encounter Church building",
    "cat": "religious",
@@ -3017,39 +2975,13 @@
    "verify": {
     "status": "unknown",
     "security": "unknown",
-    "security_notes": "A radio write-up says it has been empty since 2017. A church directory lists Encounter Church at 6825 S Galena St (unverified as the same building).",
+    "security_notes": "Nothing new found. Undated radio write-ups say the former school, shopping center and megachurch building has been empty since 2017 (described as 'allegedly'). The 6825 S Galena St directory address is still not confirmed as the same building.",
     "legal": "unknown",
     "sources": [
      "https://1037theriver.com/ixp/510/p/colorado-abandoned-megachurch/",
      "https://www.devout.org/churches/co/englewood/encounter-church"
     ],
-    "checked": "2026-11-09"
-   },
-   "added": "2026-11-08T03:06:53+00:00"
-  },
-  {
-   "id": "abandoned-broomfield-homestead-tv-graveyard",
-   "name": "Abandoned Broomfield homestead ('TV graveyard')",
-   "cat": "houses",
-   "type": "house",
-   "lat": 39.93078,
-   "lon": -105.07433,
-   "approx": true,
-   "location": "Broomfield (exact spot not given)",
-   "condition": "Main house, three-car garage and silo with a field of old TVs; belongings left behind (urbex photos, undated).",
-   "access": "Unknown; trespassing warned.",
-   "sources": [
-    "https://kekbfm.com/abandoned-colorado-homestead/"
-   ],
-   "verify": {
-    "status": "unknown",
-    "security": "unknown",
-    "security_notes": "Only an undated radio-station blog post. It calls the site private property and warns of prosecution for trespassing. No address or owner is given.",
-    "legal": "private",
-    "sources": [
-     "https://kekbfm.com/abandoned-colorado-homestead/"
-    ],
-    "checked": "2026-11-09"
+    "checked": "2026-11-10"
    },
    "added": "2026-11-08T03:06:53+00:00"
   },
@@ -3070,12 +3002,13 @@
    "verify": {
     "status": "unknown",
     "security": "unknown",
-    "security_notes": "Radio write-ups give no exact location and warn that trespassing is illegal (undated).",
+    "security_notes": "Nothing new or dated found. Undated radio write-ups describe vandalism and signs of squatting and warn against trespassing. A listing for a 1952 house at 13305 W 82nd Ave says it is being remodeled, but nothing links it to this farmhouse.",
     "legal": "unknown",
     "sources": [
-     "https://mix1043fm.com/abandoned-colorado-satanic-graffiti/"
+     "https://mix1043fm.com/abandoned-colorado-satanic-graffiti/",
+     "https://www.estately.com/listings/info/13305-w-82nd-ave-arvada-co-80005--1"
     ],
-    "checked": "2026-11-09"
+    "checked": "2026-11-10"
    },
    "added": "2026-11-08T03:06:53+00:00"
   },
@@ -3096,13 +3029,15 @@
    "verify": {
     "status": "standing",
     "security": "unknown",
-    "security_notes": "An undated article warns the structures are unstable. A real-estate listing describes a privately held land assemblage running from Prosser Gulch through Nevadaville Valley.",
+    "security_notes": "A privately held 235-acre parcel from Prosser Gulch through Nevadaville is listed for sale at $6M, with 2025 tax data. An undated article warns the structures are unstable. No security or arrest reports found.",
     "legal": "private",
+    "as_of": "2025",
     "sources": [
-     "https://kmax943.com/ixp/510/p/prosser-gulch-ghost-town/",
-     "https://mhmhomes.com/co/central-city/quartz-hill,-nevadaville-and-prosser-gulch/01-nevadaville-road/"
+     "https://www.landsearch.com/properties/1-nevadaville-rd-central-city-co-80427/5435393",
+     "https://mhmhomes.com/co/central-city/quartz-hill,-nevadaville-and-prosser-gulch/01-nevadaville-road/",
+     "https://kmax943.com/ixp/510/p/prosser-gulch-ghost-town/"
     ],
-    "checked": "2026-11-09"
+    "checked": "2026-11-10"
    },
    "added": "2026-11-08T03:06:53+00:00"
   },
@@ -3615,31 +3550,6 @@
    "added": "2026-11-08T03:46:17+00:00"
   },
   {
-   "id": "abandoned-us-34-rest-area-east-of-greeley",
-   "name": "Abandoned US 34 rest area east of Greeley",
-   "cat": "other",
-   "type": "roadside attraction",
-   "lat": 40.42331,
-   "lon": -104.70913,
-   "approx": true,
-   "location": "US 34 east of Greeley, near the Dearfield ghost town site",
-   "condition": "A roadside rest area that 'looks like it's been abandoned for decades', found by a YouTuber looking for Dearfield. Single undated radio-station article; no exact milepost given.",
-   "access": "unknown; probably state highway right-of-way",
-   "sources": [
-    "https://kmax943.com/abandoned-greeley-rest-area-looks-like-life-after-the-apocalypse/"
-   ],
-   "verify": {
-    "status": "unknown",
-    "security": "unknown",
-    "legal": "unknown",
-    "sources": [
-     "https://newcountry991.com/abandoned-greeley-rest-area-looks-like-life-after-the-apocalypse/"
-    ],
-    "checked": "2026-11-09"
-   },
-   "added": "2026-11-08T03:46:17+00:00"
-  },
-  {
    "id": "tarado-mansion-former-adams-hotel",
    "name": "Tarado Mansion (former Adams Hotel)",
    "cat": "houses",
@@ -3685,14 +3595,14 @@
    "verify": {
     "status": "standing",
     "security": "low",
-    "security_notes": "Foundation ruins on a spur trail in Jefferson County Open Space's Mount Falcon Park. Free and open to the public; dogs must be leashed.",
+    "security_notes": "Ruins on a trail in Jeffco's Mount Falcon Park. Free, no permit needed, dogs on leash. A Backpacker guide updated Dec 2024 still routes hikers past the ruins. No closures found.",
     "legal": "public",
+    "as_of": "2024",
     "sources": [
-     "https://10adventures.com/hikes/denver/mount-falcon-park/",
-     "https://www.hmdb.org/m.asp?m=141095",
-     "https://cms.10adventures.com/hikes/denver/walkers-home-ruins-via-parmalee-trail/"
+     "https://www.jeffco.us/1332/Mount-Falcon-Park",
+     "https://www.backpacker.com/news-and-events/hike-of-the-day-mount-falcon-near-denver-co/?scope=anon"
     ],
-    "checked": "2026-11-09"
+    "checked": "2026-11-10"
    },
    "added": "2026-11-08T03:46:17+00:00"
   },
@@ -4359,15 +4269,17 @@
    "verify": {
     "status": "unknown",
     "security": "unknown",
-    "security_notes": "I found no security or enforcement reports for Complex 2C itself. At the nearby Deer Trail Titan site (2B, a different site on private land), the Arapahoe County Sheriff cited teens for trespassing. One teen there fell into the silo and was hurt. A fire-service source says none of Colorado's Titan complexes are open to the public and some have toxic carbon monoxide levels.",
+    "security_notes": "No reports found for 725-C/2C itself, which is listed about 5 mi SSE of Elizabeth. At other Colorado Titan sites: in May 2024 an 18-year-old fell about 30 ft at Deer Trail and the Arapahoe County Sheriff cited teens for criminal trespass. On Jan 1, 2025 another teen fell 30-50 ft into a Titan site on the eastern plains, with the sheriff and fire rescue responding. A fire department now charges $5,000 for silo rescues (undated). CDPHE says the sites are a mix of public and private ownership and have serious fall hazards.",
     "legal": "unknown",
+    "as_of": "2025",
     "sources": [
-     "https://cdphe.colorado.gov/hm/titan-1-missile-complexes",
-     "https://www.denver7.com/news/local-news/there-are-a-lot-more-decommissioned-icbm-sites-in-colorado-than-you-knew-about",
+     "https://www.themilitarystandard.com/missile/titan1/silo/725-c/",
      "https://www.denver7.com/news/local-news/two-teens-cited-for-breaking-into-abandoned-missile-silo-in-deer-trail-last-month",
-     "https://www.themilitarystandard.com/missile/titan1/silo/725-c/"
+     "https://www.denver7.com/news/local-news/teen-rescued-after-falling-several-dozen-feet-into-missile-silo-on-colorados-eastern-plains",
+     "https://www.firefighternation.com/news/stuck-in-one-of-cos-abandoned-missile-silos-this-fire-department-will-now-charge-5000-to-rescue-you/",
+     "https://www.denver7.com/news/local-news/there-are-a-lot-more-decommissioned-icbm-sites-in-colorado-than-you-knew-about"
     ],
-    "checked": "2026-11-09"
+    "checked": "2026-11-10"
    },
    "added": "2026-11-08T04:12:21+00:00"
   },
@@ -4390,14 +4302,14 @@
    "verify": {
     "status": "standing",
     "security": "unknown",
-    "security_notes": "CDPHE: 1A is Denver-owned, and an environmental covenant restricts access to the underground complex. Other sources call the sites private property with fall hazards. No site-specific security or arrest reports found. Teens were cited for trespassing at a different silo (Deer Trail).",
+    "security_notes": "Nothing newer found. CDPHE says 1A is owned by Denver, and environmental covenant HMCOV00028 restricts access to the underground complex (undated). One source describes a chain-link fence around the complex. Unexploded ordnance was never cleared at the complexes. The trespass citations were at a different silo, near Deer Trail.",
     "legal": "government-owned (not open)",
     "sources": [
      "https://cdphe.colorado.gov/hm/titan-1-missile-complexes",
      "https://en.wikipedia.org/wiki/Lowry_Bombing_and_Gunnery_Range",
      "https://www.denver7.com/news/local-news/two-teens-cited-for-breaking-into-abandoned-missile-silo-in-deer-trail-last-month"
     ],
-    "checked": "2026-11-09"
+    "checked": "2026-11-10"
    },
    "added": "2026-11-08T04:12:21+00:00"
   },
@@ -5164,10 +5076,15 @@
     "https://fourbaggersandforeclosures.blogspot.com/2023/09/abandoned-packing-peanuts-martin.html"
    ],
    "verify": {
-    "status": "unknown",
-    "security": "unknown",
-    "legal": "unknown",
-    "checked": "2026-11-09"
+    "status": "standing",
+    "security": "medium",
+    "security_notes": "A Sept 2023 blog post describes the plant set back behind fences above an intersection near Oxford Ave. No demolition or redevelopment news found. No arrest reports found.",
+    "legal": "private",
+    "as_of": "2023",
+    "sources": [
+     "https://fourbaggersandforeclosures.blogspot.com/2023/09/abandoned-packing-peanuts-martin.html"
+    ],
+    "checked": "2026-11-10"
    },
    "added": "2026-11-08T04:12:21+00:00"
   },
@@ -5194,29 +5111,6 @@
     "sources": [
      "https://fourbaggersandforeclosures.blogspot.com/2021/05/the-london-motel-englewood-co.html"
     ],
-    "checked": "2026-11-09"
-   },
-   "added": "2026-11-08T04:12:21+00:00"
-  },
-  {
-   "id": "apparently-abandoned-building-at-1525-joliet-st",
-   "name": "Apparently abandoned building at 1525 Joliet St",
-   "cat": "other",
-   "type": "site",
-   "lat": 39.74014,
-   "lon": -104.87564,
-   "approx": true,
-   "location": "1525 Joliet St, north Aurora (80010)",
-   "condition": "The Aurora Sentinel describes it as an apparently abandoned building whose owners the city has been unable to get to deal with it. The article is undated, probably around 2024. County records show a 2,088 sq ft building on a 0.30-acre lot.",
-   "access": "Privately owned (the owner is unresponsive to the city)",
-   "sources": [
-    "https://sentinelcolorado.com/metro/aurora-poised-to-gain-authority-to-step-in-against-neglectful-property-owners/",
-    "https://www.loopnet.com/property/1525-joliet-st-aurora-co-80010/08001-R0097198"
-   ],
-   "verify": {
-    "status": "unknown",
-    "security": "unknown",
-    "legal": "private",
     "checked": "2026-11-09"
    },
    "added": "2026-11-08T04:12:21+00:00"
@@ -5268,13 +5162,13 @@
    "verify": {
     "status": "standing",
     "security": "medium",
-    "security_notes": "An undated blog says the townsite was bought by private interests around 1990 and the access road is chained and posted no trespassing. Very little original remains.",
+    "security_notes": "No new info found, so the previous values stand. A lifedeathiron.com post says the road in is chained and posted no trespassing, and that private interests bought the site around 1990. The post is undated; the blog also has posts from Aug 2020. Very little original remains (ghosttowns.com).",
     "legal": "private",
     "sources": [
-     "https://lifedeathiron.com/tag/colorado-ghost-town",
+     "https://lifedeathiron.com/tag/gilpin-county-colorado",
      "https://www.ghosttowns.com/states/co/baltimore.htm"
     ],
-    "checked": "2026-11-09"
+    "checked": "2026-11-10"
    },
    "added": "2026-11-08T06:05:27+00:00"
   },
@@ -5354,15 +5248,14 @@
    "verify": {
     "status": "unknown",
     "security": "unknown",
-    "security_notes": "Mill described as stabilized. The adventure-park plan (first phase targeted 2019, alpine coaster announced for 2020) was never confirmed as opened or cancelled. A ropes course (Colorado Adventure Center) now lists a Stanley Road address; its link to the mill site is unconfirmed.",
+    "security_notes": "No confirmation that the adventure park ever opened or was cancelled. A Jan 2025 state mining document records a Nov 2024 inspection of a permitted mill site on Stanley Road, about 1.5 mi west of Idaho Springs (operator Salisbury Gladstone LLC). Whether that is the historic Stanley mill is unconfirmed, but it shows active permitted industrial use nearby.",
     "legal": "private",
     "sources": [
      "https://sah-archipedia.org/node/8192",
-     "https://www.denver7.com/news/local-news/plans-in-the-works-to-turn-old-stanley-mines-property-into-adventure-park",
-     "https://www.sk2arch.com/?p=4229",
-     "https://1037theriver.com/stanley-mines-adventure-park/"
+     "https://dnrweblink.state.co.us/DRMSSearch/0/edoc/1436883/2025-01-11_INSPECTION%20-%20M2021007.pdf",
+     "https://blooloop.com/theme-park/news/stanley-mines-adventure-park-colorado/"
     ],
-    "checked": "2026-11-09"
+    "checked": "2026-11-10"
    },
    "added": "2026-11-08T06:05:27+00:00"
   },
@@ -5445,14 +5338,15 @@
    ],
    "verify": {
     "status": "standing",
-    "security": "unknown",
-    "security_notes": "4x4 guides describe tailings and building remains along the Bill Moore Lake 4WD road. No security info found.",
+    "security": "low",
+    "security_notes": "No closures or enforcement found. The Forest Service runs the Bill Moore/North Empire Loop as OHV roads, and guides say it passes the Conqueror Mine remains. The route crosses private property and residents live nearby, so stay on the road (undated sources).",
     "legal": "unknown",
     "sources": [
-     "https://4x4explore.com/rds/b_rds/bill_more_lk.html",
-     "https://westernmininghistory.com/mine-detail/10046706"
+     "https://www.fs.usda.gov/r02/arp/recreation/bill-moore-lakeempire-loop",
+     "https://4x4explore.com/rds/e_rds/empire_lp.html",
+     "https://visitclearcreek.com/things-to-do/trails-and-recreation-maps/off-road-atv-trails/"
     ],
-    "checked": "2026-11-09"
+    "checked": "2026-11-10"
    },
    "added": "2026-11-08T06:05:27+00:00"
   },
@@ -7319,13 +7213,13 @@
    "verify": {
     "status": "unknown",
     "security": "unknown",
-    "security_notes": "On the state register (5WL.2562, 33318 Hwy 52). A CU Denver study looked at reusing it as a community center. I found no current status.",
-    "legal": "unknown",
+    "security_notes": "No 2024-2026 news on a sale, reuse or demolition. CU Denver (undated) says the school closed in 2002 and the district used it mainly for storage. It is on the state register at 33318 Hwy 52 (5WL.2562). No security info.",
+    "legal": "government-owned (not open)",
     "sources": [
-     "https://historycolorado.org/node/7178",
-     "https://architectureandplanning.ucdenver.edu/utap/UTAP/our-work/community-buildings-and-facilities/keenesburg-community-center"
+     "https://architectureandplanning.ucdenver.edu/utap/UTAP/our-work/community-buildings-and-facilities/keenesburg-community-center",
+     "https://historycolorado.org/node/7178"
     ],
-    "checked": "2026-11-09"
+    "checked": "2026-11-10"
    },
    "added": "2026-11-09T15:55:04+00:00"
   },
@@ -7468,15 +7362,17 @@
     "https://www.cbsnews.com/colorado/news/englewood-lawsuit-train-depot-thomas-patti-parson-against-owners-historic/"
    ],
    "verify": {
-    "status": "standing",
+    "status": "under construction",
     "security": "unknown",
-    "security_notes": "The city's lawsuit was settled. Undated Westword coverage says the nonprofit is still restoring the building for a letterpress museum. No security reports found.",
+    "security_notes": "The building is owned by the Englewood Depot Inc. nonprofit and is still being restored as the Letterpress Depot museum. A Nov 2024 nonprofit post says it is still fundraising to open. Not confirmed open as of 2026. No security reports found.",
     "legal": "private",
+    "as_of": "2024",
     "sources": [
-     "https://businessden.com/englewood-settles-lawsuit-against-vacant-train-depot-owners/",
-     "https://www.westword.com/?p=40756830"
+     "https://tom-parson.squarespace.com/news/2024/11/24/5-reasons-why-we-printers-care-about-a-rr-depot",
+     "https://coloradogives.org/letterpressdepot",
+     "https://businessden.com/englewood-settles-lawsuit-against-vacant-train-depot-owners/"
     ],
-    "checked": "2026-11-09"
+    "checked": "2026-11-10"
    },
    "added": "2026-11-09T15:55:04+00:00"
   },
@@ -7528,12 +7424,13 @@
    "verify": {
     "status": "unknown",
     "security": "unknown",
-    "security_notes": "Listed endangered in 2002 for demolition by neglect; Colorado Preservation status shown only as 'Progress'. No current condition found.",
+    "security_notes": "Nothing new found. Listed as endangered in 2002 for demolition by neglect. Colorado Preservation shows its status only as 'Progress' and says CPI re-engaged the Jefferson County Historical Commission (undated). No current condition found.",
     "legal": "unknown",
     "sources": [
-     "https://www.coloradopreservation.org/?p=16024"
+     "https://www.coloradopreservation.org/?p=16024",
+     "https://en.wikipedia.org/wiki/Foxton,_Colorado"
     ],
-    "checked": "2026-11-09"
+    "checked": "2026-11-10"
    },
    "added": "2026-11-09T15:55:04+00:00"
   },
@@ -8012,14 +7909,15 @@
    "verify": {
     "status": "standing",
     "security": "low",
-    "security_notes": "Free to visit with park entry. Overnight camping needs a backcountry permit. Remote high-altitude terrain: plan for lightning and getting lost",
+    "security_notes": "No new info found, so the previous values stand. Ruins of four cabins on the National Register, inside Rocky Mountain National Park. Park entry is required, and overnight stays need a backcountry permit. Part of the Colorado River Trail closed for flooding in June 2023, and I found no newer closures. Remote high-altitude terrain.",
     "legal": "public",
+    "as_of": "2023",
     "sources": [
      "https://en.wikipedia.org/wiki/Dutchtown,_Colorado",
-     "https://historycolorado.org/node/7406",
-     "https://npgallery.nps.gov/NRHP/GetAsset/NRHP/76002292_text"
+     "https://cbsnews.com/colorado/news/colorado-river-trail-temporarily-closed-flooding",
+     "https://hike734.com/hikingrockymountain/dutch-town/"
     ],
-    "checked": "2026-11-09"
+    "checked": "2026-11-10"
    },
    "added": "2026-11-09T21:01:54+00:00"
   },
@@ -8827,13 +8725,14 @@
    "verify": {
     "status": "standing",
     "security": "low",
-    "security_notes": "Stay on the trail and do not climb the kiln.",
+    "security_notes": "Public open space with no enforcement reports. Boulder County closes trails for mud: the May 5, 2026 notice listed Lichen Loop as closed. A trail volunteer day was held July 2025. Check closures before going, stay on the trail and do not climb the kiln.",
     "legal": "public",
+    "as_of": "2026",
     "sources": [
-     "https://www.hikingproject.com/trail/7018794/lichen-loop",
-     "https://5280.com/lyons-grindstone-quarry-trail-to-lichen-loop/"
+     "https://bouldercounty.gov/news/muddy-trail-closures/",
+     "https://www.hikingproject.com/trail/7018794/lichen-loop"
     ],
-    "checked": "2026-11-09"
+    "checked": "2026-11-10"
    },
    "added": "2026-11-09T21:01:54+00:00"
   },
@@ -8947,14 +8846,13 @@
    "verify": {
     "status": "standing",
     "security": "low",
-    "security_notes": "The Rim Rock Trail closes Feb 1 to Jul 31 each year for nesting birds. The quarry walls have steep drop-offs.",
+    "security_notes": "Public Jeffco Open Space park. The Rim Rock Trail closes Feb 1 to Jul 31 each year for nesting birds, and some quarry climbing routes also close seasonally for nesting. Jeffco posts an undated notice about grading and culvert work. The quarry walls have steep drop-offs.",
     "legal": "public",
     "sources": [
-     "https://www.summitpost.org/north-table-mountain/152172",
-     "https://www.visitgolden.com/?p=8180",
-     "https://mountainproject.com/area/105744249/north-table-mountaingolden-cliffs"
+     "https://www.jeffco.us/1427/north-table-mountain-park",
+     "https://www.mountainproject.com/area/105744249/north-table-mountaingolden-cliffs"
     ],
-    "checked": "2026-11-09"
+    "checked": "2026-11-10"
    },
    "added": "2026-11-09T21:01:54+00:00"
   },
@@ -8976,13 +8874,16 @@
    "verify": {
     "status": "standing",
     "security": "low",
-    "security_notes": "View from the trail. Do not enter the house.",
+    "security_notes": "The house still stands beside the Nelson Loop. Boulder County Parks & Open Space has restored it (undated). Undated notices show Nelson Loop closing for mud. A county event at Hall Ranch was scheduled for Aug 2026. No dogs allowed. View from the trail only.",
     "legal": "public",
+    "as_of": "2026",
     "sources": [
-     "https://yourboulder.com/?p=46708",
-     "https://myoutdoorbasecamp.com/hall-ranch-open-space-hike/"
+     "https://yourboulder.com/boulder-hike-hall-ranch/",
+     "https://www.360cities.net/ru/image/nelson",
+     "https://bouldercounty.gov/events/2026-08-09/",
+     "https://www.longmontleader.com/news-releases/boulder-county-open-space-closures-3662084"
     ],
-    "checked": "2026-11-09"
+    "checked": "2026-11-10"
    },
    "added": "2026-11-09T21:01:54+00:00"
   },
@@ -9063,14 +8964,15 @@
    "verify": {
     "status": "standing",
     "security": "low",
-    "security_notes": "Stay away from mine openings. Seasonal road closure. Wilderness rules apply.",
+    "security_notes": "Public trail site with a tailings pile, a rusted boiler and filled shafts. No enforcement reports. A 2025 CMC listing says Boulder County graded the access road July 28-29, 2025. The road gets no winter maintenance and parking is limited. Snowfields and high water early in summer. Stay away from mine openings.",
     "legal": "public",
+    "as_of": "2025",
     "sources": [
-     "https://fs.usda.gov/r02/arp/recreation/trails/arapaho-pass-trail-0",
-     "https://cms.10adventures.com/hikes/indian-peaks/fourth-of-july-mine-via-arapaho-pass-trail/",
-     "https://summitpost.org/fourth-of-july-trailhead/171615"
+     "https://www.fs.usda.gov/r02/arp/recreation/arapaho-pass-904",
+     "https://www.fs.usda.gov/r02/arp/recreation/fourth-july-trailhead",
+     "https://cms.10adventures.com/hikes/indian-peaks/fourth-of-july-mine-via-arapaho-pass-trail/"
     ],
-    "checked": "2026-11-09"
+    "checked": "2026-11-10"
    },
    "added": "2026-11-09T21:01:54+00:00"
   },
