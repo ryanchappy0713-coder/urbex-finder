@@ -10414,6 +10414,326 @@
     ],
     "checked": "2026-11-10"
    }
+  },
+  {
+   "id": "bordenville-townsite-and-abandoned-ranches-cabins",
+   "name": "Bordenville townsite and abandoned ranches/cabins",
+   "cat": "ruins",
+   "type": "ghost town / abandoned ranch buildings",
+   "lat": 39.2761,
+   "lon": -105.68362,
+   "approx": true,
+   "location": "Small cluster of buildings on Tarryall Road (CR/Hwy 77) between Jefferson and Tarryall Reservoir; ghosttowns.com: from Jefferson take CR-77 south 11.2 miles, Bordenville (near Jefferson), Park County",
+   "condition": "lifedeathiron.com (2020, 'A Ghost Town a Day' Day 15): small cluster of buildings with numerous abandoned ranches and small cabins nearby; ghosttowns.com (undated): old post office (now part of a ranch), cemetery, a few log buildings, some mines",
+   "access": "Post office building is part of a working ranch; Park County's Tarryall Road guide says nearly all properties along the road are privately owned. View from the county road only.",
+   "sources": [
+    "https://lifedeathiron.com/2020/04/15/a-ghost-town-a-day-for-30-days-day-15-bordenville-colorado/",
+    "https://mail.ghosttowns.com/states/co/bordenville.html",
+    "https://www.parkcoarchives.org/Guide_Tarryall_Road.pdf"
+   ],
+   "added": "2026-11-10T12:55:55+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "unknown",
+    "legal": "private",
+    "as_of": "2020",
+    "sources": [
+     "https://lifedeathiron.com/2020/04/15/a-ghost-town-a-day-for-30-days-day-15-bordenville-colorado/",
+     "https://mail.ghosttowns.com/states/co/bordenville.html",
+     "https://www.parkcoarchives.org/Guide_Tarryall_Road.pdf"
+    ],
+    "checked": "2026-11-10"
+   }
+  },
+  {
+   "id": "bowsher-ranch-abandoned-buildings",
+   "name": "Bowsher Ranch abandoned buildings",
+   "cat": "other",
+   "type": "abandoned homestead / ranch",
+   "lat": 39.10709,
+   "lon": -105.754,
+   "approx": true,
+   "location": "North side of Tarryall Road (Park County Road 77); exact milepost is in the Park County Archives 'Guide for the Tarryall Road', Tarryall Road between Jefferson and Lake George, Park County",
+   "condition": "Park County Local History Archives Tarryall Road guide (year not seen): abandoned buildings and remains of buildings on the north side of the road; 1918 homestead of Anthony D. Bowsher, sold in 1951",
+   "access": "Guide says nearly all properties described are privately owned; inside the Tarryall Rural Historic District. View from the road.",
+   "sources": [
+    "https://www.parkcoarchives.org/Guide_Tarryall_Road.pdf"
+   ],
+   "added": "2026-11-10T12:55:59+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "unknown",
+    "legal": "private",
+    "as_of": "1951",
+    "sources": [
+     "https://www.parkcoarchives.org/Guide_Tarryall_Road.pdf"
+    ],
+    "checked": "2026-11-10"
+   }
+  },
+  {
+   "id": "abandoned-brothels-in-mosquito-gulch",
+   "name": "Abandoned brothels in Mosquito Gulch",
+   "cat": "other",
+   "type": "abandoned mining-era buildings",
+   "lat": 39.28206,
+   "lon": -106.06046,
+   "approx": true,
+   "location": "On Mosquito Gulch road (CR 12) near Highway 9, just outside Alma",
+   "condition": "Park County Local History Digital Archive photo dated September 26, 2019 (Sam Carlson), titled 'Abandoned Brothels in Mosquito Gulch'; a 2004 archive image describes them as buildings that served as a brothel in the mining era",
+   "access": "Ownership not stated in the sources; much of the Alma area is patented mining claims. Assume private and view from the road.",
+   "sources": [
+    "https://pclha.cvlcollections.org/items/show/620"
+   ],
+   "added": "2026-11-10T12:56:02+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "unknown",
+    "legal": "unknown",
+    "as_of": "2019",
+    "sources": [
+     "https://pclha.cvlcollections.org/items/show/620"
+    ],
+    "checked": "2026-11-10"
+   }
+  },
+  {
+   "id": "summerville-ghost-town",
+   "name": "Summerville ghost town",
+   "cat": "houses",
+   "type": "ghost town (mining camp cabins/shacks)",
+   "lat": 40.05693,
+   "lon": -105.39444,
+   "approx": true,
+   "location": "On Gold Run Road (Boulder County) between Salina and Gold Hill, at the head of the canyon, Summerville (between Salina and Gold Hill), Boulder County",
+   "condition": "lifedeathiron.com (April 2020, 'A Ghost Town a Day'): a small number of shacks, cabins and outbuildings still stand in various states of decay; the 1877 hotel burned in a 2004 forest fire",
+   "access": "Blog says all remaining structures are privately owned. View from Gold Run Road only.",
+   "sources": [
+    "https://lifedeathiron.com/2020/04/20/a-ghost-town-a-day-for-30-days-day-19-summerville-colorado/",
+    "https://lifedeathiron.com/tag/summerville-colorado/"
+   ],
+   "added": "2026-11-10T12:56:05+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "unknown",
+    "legal": "private",
+    "as_of": "2020",
+    "sources": [
+     "https://lifedeathiron.com/2020/04/20/a-ghost-town-a-day-for-30-days-day-19-summerville-colorado/",
+     "https://lifedeathiron.com/tag/summerville-colorado/"
+    ],
+    "checked": "2026-11-10"
+   }
+  },
+  {
+   "id": "smole-camp-smole-lumber-camp",
+   "name": "Smole Camp (Smole Lumber Camp)",
+   "cat": "ruins",
+   "type": "ghost town / abandoned lumber camp",
+   "lat": 40.09901,
+   "lon": -106.1367,
+   "approx": true,
+   "location": "Southern side of Muddy Pass along US Highway 40, about 30 minutes north of Kremmling (roughly 150 km from Denver), Muddy Pass area north of Kremmling, Grand County",
+   "condition": "lifedeathiron.com (April 4, 2020, 'A Ghost Town a Day' Day 4): a little-known ghost town with structures visible from the road",
+   "access": "Blog says it is on private property but can be viewed and photographed from the road shoulder.",
+   "sources": [
+    "https://lifedeathiron.com/2020/04/04/a-ghost-town-a-day-for-30-days-day-4-muddy-pass-colorado/",
+    "https://lifedeathiron.com/tag/smole-lumber-camp"
+   ],
+   "added": "2026-11-10T12:56:14+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "unknown",
+    "legal": "private",
+    "as_of": "2020",
+    "sources": [
+     "https://lifedeathiron.com/2020/04/04/a-ghost-town-a-day-for-30-days-day-4-muddy-pass-colorado/",
+     "https://lifedeathiron.com/tag/smole-lumber-camp"
+    ],
+    "checked": "2026-11-10"
+   }
+  },
+  {
+   "id": "leavick-townsite-and-hilltop-mill",
+   "name": "Leavick townsite and Hilltop Mill",
+   "cat": "industrial",
+   "type": "mill site / mining camp",
+   "lat": 39.22519,
+   "lon": -106.00195,
+   "approx": true,
+   "location": "Park County Road 18 (Fourmile Creek Road), about 11 miles up Fourmile/Horseshoe Creek southwest of Fairplay, a little over 2 miles past Fourmile Campground",
+   "condition": "4x4explore (page last updated March 2017) describes the remains of the Hilltop Mine mill as a large building on a curve in the road. Colorado Central Magazine calls it the only remaining structure at Leavick. Climb13ers says some old buildings remain at the townsite. Sources disagree on when the mill was built (1892 or 1897). The town was abandoned after the railroad closed in 1923.",
+   "access": "The county road enters Pike-San Isabel National Forest a few miles in. 4x4explore notes a few private homes are still in the area. No source I saw says whether the mill parcel itself is private or Forest Service land. Passenger cars can park at the Leavick site, which is a 13er trailhead. Summer to fall.",
+   "sources": [
+    "https://4x4explore.com/rds/cnty_rds/park_18_four_mile_crk.html",
+    "https://coloradocentralmagazine.com/?p=4987",
+    "https://sah-archipedia.org/node/9401"
+   ],
+   "added": "2026-11-10T12:56:18+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "unknown",
+    "legal": "unknown",
+    "as_of": "2017",
+    "sources": [
+     "https://4x4explore.com/rds/cnty_rds/park_18_four_mile_crk.html",
+     "https://coloradocentralmagazine.com/?p=4987",
+     "https://sah-archipedia.org/node/9401"
+    ],
+    "checked": "2026-11-10"
+   }
+  },
+  {
+   "id": "perigo-mill-ruins-and-gamble-gulch-mine-cabin",
+   "name": "Perigo mill ruins and Gamble Gulch mine cabin",
+   "cat": "industrial",
+   "type": "mill site / mining camp",
+   "lat": 39.91525,
+   "lon": -105.49959,
+   "approx": true,
+   "location": "Gamble Gulch Road (CR 15-N), about 4 miles southwest of Rollinsville. The Perigo 4WD road branches right about 3.3 miles up Gamble Gulch.",
+   "condition": "Lifedeathiron (Oct 2016) describes the twisted, shattered remains of the mill, wood structures flat on the ground, a stone or concrete foundation and 'a couple of old tumbledown tin sided shacks'. 4x4explore says little is left at the townsite except a bare section of road, with the remains of a mine shaft and cabin about a mile up the Perigo 4WD road. A 2025 real-estate listing on Gamble Gulch mentions an old stamp mill foundation and 2 cabin sites. The EPA reports the Perigo adit collapsed and drains acidic water.",
+   "access": "Private. 4x4explore warns that old mine sites here are private property, and a parcel with the mill foundation was listed for sale in 2025. Only view from the county road. Easy 4WD, summer to fall.",
+   "sources": [
+    "https://lifedeathiron.com/2016/10/17/perigo-colorado-when-the-tax-bill-came-it-was-paid-with-dynamite",
+    "https://www.4x4explore.com/rds/p_rds/perigo.html",
+    "https://scribenet.response.epa.gov/PerigoMine"
+   ],
+   "added": "2026-11-10T12:56:20+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "unknown",
+    "security_notes": "Listed for sale in 2025.",
+    "legal": "private",
+    "as_of": "2025",
+    "sources": [
+     "https://lifedeathiron.com/2016/10/17/perigo-colorado-when-the-tax-bill-came-it-was-paid-with-dynamite",
+     "https://www.4x4explore.com/rds/p_rds/perigo.html",
+     "https://scribenet.response.epa.gov/PerigoMine"
+    ],
+    "checked": "2026-11-10"
+   }
+  },
+  {
+   "id": "puzzler-mining-camp-boarding-house",
+   "name": "Puzzler mining camp (boarding house)",
+   "cat": "other",
+   "type": "mining camp",
+   "lat": 40.07226,
+   "lon": -105.50792,
+   "approx": true,
+   "location": "Where California Gulch meets Left Hand Canyon, below Ward",
+   "condition": "Lifedeathiron (April 2020) covers this small 1890s gold and silver camp. In the comments, a Boulder County historic preservation staffer says the county was restoring one of the camp's old boarding houses, so at least one structure stands. Sources disagree on when gold was found (1885 or 1890).",
+   "access": "No source I saw says who owns the land. County restoration work suggests county involvement but does not prove public access, so check with Boulder County Historic Preservation first. Paved and dirt county roads, all seasons.",
+   "sources": [
+    "https://www.lifedeathiron.com/2020/04/05/a-ghost-town-a-day-for-30-days-day-5-puzzler-colorado/",
+    "https://miningcamps.blogspot.com/2007/01/boulder-colorado-mining-camps.html"
+   ],
+   "added": "2026-11-10T12:56:24+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "unknown",
+    "security_notes": "County restoration was under way around 2020.",
+    "legal": "unknown",
+    "as_of": "2020",
+    "sources": [
+     "https://www.lifedeathiron.com/2020/04/05/a-ghost-town-a-day-for-30-days-day-5-puzzler-colorado/",
+     "https://miningcamps.blogspot.com/2007/01/boulder-colorado-mining-camps.html"
+    ],
+    "checked": "2026-11-10"
+   }
+  },
+  {
+   "id": "altman-ghost-town",
+   "name": "Altman ghost town",
+   "cat": "other",
+   "type": "mining camp",
+   "lat": 38.70815,
+   "lon": -105.13782,
+   "approx": true,
+   "location": "On Bull Hill above Victor, next to the American Eagles Mine and Overlook inside the Cresson surface mine",
+   "condition": "Ghosttowns.com says 'a few buildings remain' and that the American Eagle mine still dominates the site. Wikipedia's list of ghost towns says 'some structures remain'. A fire in 1903 destroyed much of the town. No visit date is given.",
+   "access": "Inside the active Newmont Cresson surface mine. CPR reported the last public tour of the American Eagles mine in 2016. Treat the site as closed private mine property and only view it from public roads unless Newmont says the overlook is open.",
+   "sources": [
+    "https://ghosttowns.com/states/co/altman.htm",
+    "https://en.wikipedia.org/wiki/Altman,_Colorado",
+    "https://cpr.org/show-segment/the-last-tour-of-the-american-eagles-mine"
+   ],
+   "added": "2026-11-10T12:56:27+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "high",
+    "security_notes": "Active Newmont mine operations around the site (CPR 2016).",
+    "legal": "private",
+    "as_of": "2016",
+    "sources": [
+     "https://ghosttowns.com/states/co/altman.htm",
+     "https://en.wikipedia.org/wiki/Altman,_Colorado",
+     "https://cpr.org/show-segment/the-last-tour-of-the-american-eagles-mine"
+    ],
+    "checked": "2026-11-10"
+   }
+  },
+  {
+   "id": "victor-masonic-temple-masons-building",
+   "name": "Victor Masonic Temple (Masons Building)",
+   "cat": "leisure",
+   "type": "fraternal lodge / commercial building",
+   "lat": 38.71021,
+   "lon": -105.14317,
+   "approx": true,
+   "location": "114-116 S. 4th St, Victor (per the SAH Archipedia entry seen in search results)",
+   "condition": "Townsquare posts show an abandoned Masonic temple interior from an explorer video. The K99 version says its location is unconfirmed and only 'speculated' to be Victor. Travel blogs from 2016 and 2019 describe the Victor Masonic building as vacant, neglected and awaiting restoration. Built c.1900-1910; sources differ on the date.",
+   "access": "Private building in an active town. Viewable from the street only. The article warns that entering is trespassing.",
+   "sources": [
+    "https://kekbfm.com/victor-colorado-has-an-abandoned-masonic-temple-more/",
+    "https://k99.com/secret-societies-explore-an-abandoned-masonic-temple-in-colorado/",
+    "https://takemytrip.com/2016/09/victor-colorado"
+   ],
+   "added": "2026-11-10T12:56:29+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "unknown",
+    "legal": "private",
+    "as_of": "2019",
+    "sources": [
+     "https://kekbfm.com/victor-colorado-has-an-abandoned-masonic-temple-more/",
+     "https://k99.com/secret-societies-explore-an-abandoned-masonic-temple-in-colorado/",
+     "https://takemytrip.com/2016/09/victor-colorado"
+    ],
+    "checked": "2026-11-10"
+   }
+  },
+  {
+   "id": "geneva-city-ghost-town",
+   "name": "Geneva City ghost town",
+   "cat": "ruins",
+   "type": "ghost town",
+   "lat": 39.5795,
+   "lon": -105.7705,
+   "approx": true,
+   "location": "Headwaters of Geneva Creek in a timberline bowl around 11,000-12,000 ft near Guanella Pass; reached by a rough 4WD road (July-September)",
+   "condition": "lifedeathiron.com (April 2020, Day 27): Geneva City sits at the headwaters of Geneva Creek and mentions an 1899 City Hall/fire station; uncovercolorado.com (undated): many log cabins still stand, plus remnants of homes, mining facilities, a boarding house and a saloon",
+   "access": "uncovercolorado places it in Pike National Forest; the status of individual mining claims was not confirmed. Rough 4WD access, summer only. One visitor thought the site was private (patented claims likely), so check ownership first.",
+   "sources": [
+    "https://uncovercolorado.com/activities/geneva-city-ghost-town",
+    "https://lifedeathiron.com/tag/geneva-city",
+    "https://rockymountainprofiles.com/colorado/derry-ranch-thru-hull-city/geneva-city-co"
+   ],
+   "verify": {
+    "status": "standing",
+    "security": "low",
+    "security_notes": "Remote high-altitude 4WD site; decaying cabins. Check claim ownership before entering structures.",
+    "legal": "unknown",
+    "as_of": "2020",
+    "sources": [
+     "https://uncovercolorado.com/activities/geneva-city-ghost-town",
+     "https://lifedeathiron.com/tag/geneva-city",
+     "https://rockymountainprofiles.com/colorado/derry-ranch-thru-hull-city/geneva-city-co"
+    ],
+    "checked": "2026-11-10"
+   },
+   "added": "2026-11-10T12:56:40+00:00"
   }
  ]
 }
