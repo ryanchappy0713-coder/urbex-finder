@@ -410,7 +410,7 @@
    "verify": {
     "status": "standing",
     "security": "low",
-    "security_notes": "Dec 2024: Trust for Land Restoration helped Ouray County install gates at the townsite, and the Forest Service removed hazard trees near four historic structures. Camping inside the townsite is banned. Feb 2025: US-550 Ouray–Ironton had a planned winter closure. Owned by Ouray County (bought 2001), with some sources also naming the USFS.",
+    "security_notes": "Dec 2024: Trust for Land Restoration helped Ouray County install gates at the townsite, and the Forest Service removed hazard trees near four historic structures. Camping inside the townsite is banned. Feb 2025: US-550 Ouray\u2013Ironton had a planned winter closure. Owned by Ouray County (bought 2001), with some sources also naming the USFS.",
     "legal": "public",
     "as_of": "2025",
     "sources": [
@@ -1770,7 +1770,7 @@
    "lat": 38.44225,
    "lon": -105.23488,
    "approx": true,
-   "location": "Next to the Colorado State Penitentiary, Cañon City, Cañon City, Fremont County",
+   "location": "Next to the Colorado State Penitentiary, Ca\u00f1on City, Ca\u00f1on City, Fremont County",
    "condition": "State-owned historic house empty for years, no plans to reoccupy; on Colorado's endangered list in 2011.",
    "access": "Colorado Department of Corrections, no public access.",
    "sources": [
@@ -4898,8 +4898,8 @@
    "lat": 38.44225,
    "lon": -105.23718,
    "approx": true,
-   "location": "South of SH 115 along Chandler Road, west of Williamsburg and north of Rockvale, near Cañon City, Fremont County",
-   "condition": "Victor-American company coal town, completely depopulated since about 1942. Many houses were moved to Cañon City. A February 2022 Outdoor Project gallery shows coal mining ruins and remnants of several buildings along a marked trail. That page does not explicitly name Chandler, so check it.",
+   "location": "South of SH 115 along Chandler Road, west of Williamsburg and north of Rockvale, near Ca\u00f1on City, Fremont County",
+   "condition": "Victor-American company coal town, completely depopulated since about 1942. Many houses were moved to Ca\u00f1on City. A February 2022 Outdoor Project gallery shows coal mining ruins and remnants of several buildings along a marked trail. That page does not explicitly name Chandler, so check it.",
    "access": "Trail access is reported (trail markers, no map at the trailhead). Ownership unknown.",
    "sources": [
     "https://en.wikipedia.org/wiki/Chandler,_Colorado",
@@ -6213,7 +6213,7 @@
    "lon": -107.31929,
    "approx": true,
    "location": "County Road 20 along Henson Creek, about 4 miles west of Lake City",
-   "condition": "Colorado Preservation Inc. put it on its Most Endangered Places list in 2015, naming the threat as 'demolition by neglect – vacant'. Denver7 calls it a decaying, neglected mining town. A 2011 blog called the mill 'remarkably intact', and a 2012 photo caption says the mill and some buildings are still standing. A Mining History Association tour describes a restored headframe and hoist house, a boarding house and a log cabin. It was listed on the National Register in 2017. Newest info: 2017.",
+   "condition": "Colorado Preservation Inc. put it on its Most Endangered Places list in 2015, naming the threat as 'demolition by neglect \u2013 vacant'. Denver7 calls it a decaying, neglected mining town. A 2011 blog called the mill 'remarkably intact', and a 2012 photo caption says the mill and some buildings are still standing. A Mining History Association tour describes a restored headframe and hoist house, a boarding house and a log cabin. It was listed on the National Register in 2017. Newest info: 2017.",
    "access": "Interpretive site that visitors can tour (per Denver7 and the Mining History Association). Exact ownership unknown.",
    "sources": [
     "https://www.coloradopreservation.org/?p=16160",
@@ -6483,7 +6483,7 @@
    "lat": 38.44041,
    "lon": -105.23502,
    "approx": true,
-   "location": "W. US Highway 50 west of Cañon City, near Royal Gorge; a LoopNet listing gives 44899 W US Hwy 50, Cañon City area, Fremont County",
+   "location": "W. US Highway 50 west of Ca\u00f1on City, near Royal Gorge; a LoopNet listing gives 44899 W US Hwy 50, Ca\u00f1on City area, Fremont County",
    "condition": "The roadside dinosaur attraction closed permanently on Dec. 31, 2025, after almost 10 years. Its 35.9-acre property was listed for sale (about $2.9M, later cut to about $2.25M; listing updated July 2026). In April 2026 the Colorado Gator Farm said it hoped to buy it and close by August 2026, but I found no report that the sale went through. Newest info: 2026.",
    "access": "Private, listed for sale; possible buyer is Colorado Gator Farm. Unknown.",
    "sources": [
@@ -6741,7 +6741,7 @@
    "lon": -104.07495,
    "approx": false,
    "location": "About an hour east of Denver, near the bottom of Bijou Creek, Hoyt, Morgan County",
-   "condition": "lifedeathiron, Feb 2020: scattered dwellings with roughly two of every three houses or ranches abandoned, and old 1920s–60s cars in the pastures. The author felt visitors were not welcome.",
+   "condition": "lifedeathiron, Feb 2020: scattered dwellings with roughly two of every three houses or ranches abandoned, and old 1920s\u201360s cars in the pastures. The author felt visitors were not welcome.",
    "access": "Mostly private property; some homes occupied.",
    "sources": [
     "https://lifedeathiron.com/2020/02/15/abandoned-hoyt-colorado-visitors-beware/"
@@ -6991,7 +6991,7 @@
   },
   {
    "id": "hotel-holly-haswell-hotel",
-   "name": "Hotel Holly–Haswell Hotel",
+   "name": "Hotel Holly\u2013Haswell Hotel",
    "cat": "leisure",
    "type": "hotel",
    "lat": 38.45223,
@@ -9266,7 +9266,7 @@
    "lon": -105.4182,
    "approx": true,
    "location": "Culebra Valley, southeast of San Luis (Westword calls it El Rito; other sources say Culebra Valley), near San Francisco / San Luis, Costilla County",
-   "condition": "Crumbling adobe built about 1920. On Colorado's Most Endangered Places list in 2023 with the threat given as demolition by neglect. CPI's project status reads 'Progress', but I found no news of 2024–2025 stabilization work",
+   "condition": "Crumbling adobe built about 1920. On Colorado's Most Endangered Places list in 2023 with the threat given as demolition by neglect. CPI's project status reads 'Progress', but I found no news of 2024\u20132025 stabilization work",
    "access": "Owned by the SPMDTU / property owners; CPI said it would work with the owners on stabilization",
    "sources": [
     "https://www.westword.com/news/colorado-preservation-endangered-places-16134325/",
@@ -9482,6 +9482,68 @@
     "sources": [
      "https://www.atlasobscura.com/places/vulcan-mine-disasters",
      "https://www.hmdb.org/m.asp?m=120120"
+    ],
+    "checked": "2026-11-10"
+   }
+  },
+  {
+   "id": "old-lutheran-medical-center-campus-former-lutheran-hospital-",
+   "name": "Old Lutheran Medical Center campus (former Lutheran hospital, Lutheran Legacy Campus)",
+   "cat": "institutional",
+   "type": "hospital",
+   "lat": 39.7661,
+   "lon": -105.07721,
+   "approx": true,
+   "location": "Former hospital campus near W. 38th Avenue and N. Lutheran Parkway (about 100 acres; 92 acres sold), Wheat Ridge, Jefferson County",
+   "condition": "In August 2025 Wheat Ridge police reported a summer spike in break-ins at the empty former hospital building, which they linked to the online 'urban exploring' trend. The hospital moved to Clear Creek Crossing in August 2024. In Dec 2025 E5X Management bought the site for $60M and plans 1,000+ housing units. I found no demolition report as of the sources.",
+   "access": "Private (sold by Intermountain Health to developer E5X Management, Dec 2025); no public access",
+   "sources": [
+    "https://www.yahoo.com/news/articles/old-lutheran-medical-center-wheat-165719713.html",
+    "https://x.com/KDVR/status/1958946555567747366",
+    "https://www.cbsnews.com/colorado/news/break-ins-abandoned-colorado-hospital-safety-concerns-multiple-arrests"
+   ],
+   "added": "2026-11-10T01:03:49+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "high",
+    "security_notes": "2025: full-time security and a camera system used to identify suspects; police added graveyard-shift patrols; multiple arrests of adults and juveniles; police warned of possible felony charges and said parents were unaware their kids were doing this.",
+    "legal": "private",
+    "as_of": "2025",
+    "sources": [
+     "https://www.yahoo.com/news/articles/old-lutheran-medical-center-wheat-165719713.html",
+     "https://x.com/KDVR/status/1958946555567747366",
+     "https://www.cbsnews.com/colorado/news/break-ins-abandoned-colorado-hospital-safety-concerns-multiple-arrests"
+    ],
+    "checked": "2026-11-10"
+   }
+  },
+  {
+   "id": "william-penn-apartments",
+   "name": "William Penn Apartments",
+   "cat": "other",
+   "type": "apartment building",
+   "lat": 39.74257,
+   "lon": -104.98073,
+   "approx": false,
+   "location": "1644 Pennsylvania St., North Capitol Hill / Uptown, Denver, Denver County",
+   "condition": "A judge ordered the building closed in January 2025 because of deteriorating conditions: no heat, hot water or natural gas, and a fire alarm system that did not work. A later Townsquare feature (espnwesterncolorado/kekbfm, around 2026) says it remains closed a year later. It is on Denver's Neglected and Derelict Buildings list, with over $280,000 in fines and three liens.",
+   "access": "Private (owned by CBZ Management); closed by city/court order",
+   "sources": [
+    "https://kekbfm.com/ixp/510/p/colorado-william-penn-apartments/",
+    "https://espnwesterncolorado.com/ixp/510/p/colorado-william-penn-apartments/",
+    "https://denverite.com/2025/01/24/william-penn-apartmenss-cbz-management-shut-down/"
+   ],
+   "added": "2026-11-10T01:03:52+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "unknown",
+    "security_notes": "2025: closed under court order and city enforcement; a Denver judge issued an arrest warrant for the CBZ owner. No sources describe guards or fencing.",
+    "legal": "private",
+    "as_of": "2026",
+    "sources": [
+     "https://kekbfm.com/ixp/510/p/colorado-william-penn-apartments/",
+     "https://espnwesterncolorado.com/ixp/510/p/colorado-william-penn-apartments/",
+     "https://denverite.com/2025/01/24/william-penn-apartmenss-cbz-management-shut-down/"
     ],
     "checked": "2026-11-10"
    }
