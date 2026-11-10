@@ -10232,6 +10232,188 @@
     ],
     "checked": "2026-11-10"
    }
+  },
+  {
+   "id": "isaac-solomon-synagogue-former-jewish-consumptives-relief-so",
+   "name": "Isaac Solomon Synagogue (former Jewish Consumptives' Relief Society TB sanatorium campus)",
+   "cat": "institutional",
+   "type": "TB sanatorium building (synagogue on the sanatorium campus)",
+   "lat": 39.70857,
+   "lon": -105.08467,
+   "approx": true,
+   "location": "Former JCRS campus, now Rocky Mountain College of Art + Design, 1600 Pierce St, Lakewood, CO",
+   "condition": "Built 1911 by Isaac Solomon. Used until the 1950s. A restoration foundation gave up its lease in late 2012 and control went back to RMCAD. Westword describes it as 'fallen into disrepair, its paint peeling'. That article is undated, and I found no 2025-2026 status report, so whether it is still vacant now is unverified.",
+   "access": "Owned by Rocky Mountain College of Art + Design, which uses the surrounding campus as an active college. IJN says RMCAD welcomes visitors and Jewish events on campus. That does not mean the synagogue interior is open.",
+   "sources": [
+    "https://www.ijn.com/historic-isaac-solomon-synagogue-returned-due-to-insufficient-funds/",
+    "https://www.westword.com/?p=40609083",
+    "https://www.cpr.org/2010/04/05/solomon-synagogue-restoration"
+   ],
+   "added": "2026-11-10T06:56:00+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "medium",
+    "security_notes": "The building is on an active college campus, so staff and students are present (as of the 2024 IJN page). Sources do not describe guards, cameras or fencing.",
+    "legal": "private",
+    "as_of": "2026",
+    "sources": [
+     "https://www.ijn.com/historic-isaac-solomon-synagogue-returned-due-to-insufficient-funds/",
+     "https://www.westword.com/?p=40609083",
+     "https://www.cpr.org/2010/04/05/solomon-synagogue-restoration"
+    ],
+    "checked": "2026-11-10"
+   }
+  },
+  {
+   "id": "eastlake-farmers-co-operative-elevator",
+   "name": "Eastlake Farmers Co-Operative Elevator",
+   "cat": "industrial",
+   "type": "grain elevator",
+   "lat": 39.86955,
+   "lon": -104.98518,
+   "approx": true,
+   "location": "Historic Eastlake area of Thornton (exact street address not found in sources)",
+   "condition": "Built about 1914–1920. The NRHP nomination says the elevator, grain shed, warehouse and one outbuilding are vacant and not in use (NRHP listing 2010). Wikipedia still calls it vacant. In 2023 the city weighed a single bar/event-space proposal and made no decision. No newer status found.",
+   "access": "Thornton acquired it by eminent domain: possession awarded January 2023, title expected and court-ordered acquisition about $3.3M in 2024. Not open to the public.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Eastlake_Farmers_Co-Operative_Elevator_Company",
+    "https://npgallery.nps.gov/GetAsset/24b1a964-0a2e-4f1f-b47e-e76f1fb303a6",
+    "https://issuu.com/coloradocommunitymedia/docs/mnnns_2023-04-13/s/22359604"
+   ],
+   "added": "2026-11-10T06:56:03+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "unknown",
+    "legal": "government-owned (not open)",
+    "as_of": "2023",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Eastlake_Farmers_Co-Operative_Elevator_Company",
+     "https://npgallery.nps.gov/GetAsset/24b1a964-0a2e-4f1f-b47e-e76f1fb303a6",
+     "https://issuu.com/coloradocommunitymedia/docs/mnnns_2023-04-13/s/22359604"
+    ],
+    "checked": "2026-11-10"
+   }
+  },
+  {
+   "id": "columbine-mill",
+   "name": "Columbine Mill",
+   "cat": "industrial",
+   "type": "grain elevator / flour mill",
+   "lat": 39.6127,
+   "lon": -105.017,
+   "approx": false,
+   "location": "5798 S. Rapp Street, Littleton",
+   "condition": "Historic grain elevator, a Littleton landmark since 1994. Reported vacant in 2018 after the restaurant tenant (Rio Grande) left. BusinessDen said it was still vacant in May 2024, when owner Safieddine (bought July 2022) listed it for sale at $1.25M alone or $6M with adjacent parcels. Nothing found for 2025–2026.",
+   "access": "Private owner (Safieddine). Listed for sale in 2024. Downtown Littleton location.",
+   "sources": [
+    "https://www.littletonco.gov/Building-Development/Historic-Preservation/Historic-Littleton-Buildings/Columbine-Mill",
+    "https://businessden.com/2024/05/28/safieddine-lists-properties-for-sale-in-lodo-downtown-littleton",
+    "https://www.coloradocommunitymedia.com/archives/digital-south/business/article_52c9db1b-efe0-52a4-9421-fa0e5560b44f.html"
+   ],
+   "added": "2026-11-10T06:56:06+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "unknown",
+    "legal": "private",
+    "as_of": "2026",
+    "sources": [
+     "https://www.littletonco.gov/Building-Development/Historic-Preservation/Historic-Littleton-Buildings/Columbine-Mill",
+     "https://businessden.com/2024/05/28/safieddine-lists-properties-for-sale-in-lodo-downtown-littleton",
+     "https://www.coloradocommunitymedia.com/archives/digital-south/business/article_52c9db1b-efe0-52a4-9421-fa0e5560b44f.html"
+    ],
+    "checked": "2026-11-10"
+   }
+  },
+  {
+   "id": "burnham-yard-locomotive-shop",
+   "name": "Burnham Yard Locomotive Shop",
+   "cat": "rail",
+   "type": "rail shop",
+   "lat": 39.7262,
+   "lon": -105.0003,
+   "approx": true,
+   "location": "Burnham Yard, La Alma/Lincoln Park area, Denver (exact address not found in sources)",
+   "condition": "Rail yard closed in 2016. The 2021 coverage called it decaying, and the coach shop burned in August 2021. CDOT demolished five historic buildings in July 2025. Historic Denver's Winter 2026 newsletter says the Locomotive Shop is the last building standing, plus turntable pit remains. No source says outright that the shop is vacant.",
+   "access": "Owned by CDOT since 2021 and being sold or redeveloped (preferred site for a Broncos stadium). CDOT says it will keep the shop. Not open.",
+   "sources": [
+    "https://historicdenver.org/wp-content/uploads/sites/7422/2026/06/HD-News.Winter.2026-1.pdf",
+    "https://denverite.com/2025/07/28/burnham-yard-demolition-broncos-stadium/",
+    "https://www.westword.com/news/historic-buildings-at-denvers-burnham-yard-demolished-by-state-agency-25164180"
+   ],
+   "added": "2026-11-10T06:56:09+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "high",
+    "security_notes": "Active state-owned demolition and redevelopment site (demolition July 2025). Fire in the abandoned coach shop in August 2021.",
+    "legal": "government-owned (not open)",
+    "as_of": "2026",
+    "sources": [
+     "https://historicdenver.org/wp-content/uploads/sites/7422/2026/06/HD-News.Winter.2026-1.pdf",
+     "https://denverite.com/2025/07/28/burnham-yard-demolition-broncos-stadium/",
+     "https://www.westword.com/news/historic-buildings-at-denvers-burnham-yard-demolished-by-state-agency-25164180"
+    ],
+    "checked": "2026-11-10"
+   }
+  },
+  {
+   "id": "colorado-sanitary-canning-factory",
+   "name": "Colorado Sanitary Canning Factory",
+   "cat": "other",
+   "type": "cannery",
+   "lat": 39.99034,
+   "lon": -104.82027,
+   "approx": false,
+   "location": "224 N. Main Street, Brighton",
+   "condition": "Massive two-story ornamental concrete-block cannery built in 1908 that housed German POWs in 1945. Unoccupied since the late 1990s per sources dated to the mid-2010s. In 2015 Garrison Properties looked at converting it to lofts or apartments; outcome unknown. State Register 1997, National Register 2016. No 2025–2026 status found.",
+   "access": "Private (current owner not identified). Downtown Main Street building.",
+   "sources": [
+    "https://encyclopediastg.exemplifi.io/article/colorado-sanitary-canning-factory",
+    "https://historycolorado.org/node/3915",
+    "https://npgallery.nps.gov/GetAsset/196217c8-5354-4102-a40d-d6ce780b1c93"
+   ],
+   "added": "2026-11-10T06:56:13+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "unknown",
+    "legal": "private",
+    "as_of": "2026",
+    "sources": [
+     "https://encyclopediastg.exemplifi.io/article/colorado-sanitary-canning-factory",
+     "https://historycolorado.org/node/3915",
+     "https://npgallery.nps.gov/GetAsset/196217c8-5354-4102-a40d-d6ce780b1c93"
+    ],
+    "checked": "2026-11-10"
+   }
+  },
+  {
+   "id": "robinson-house-1889-queen-anne-house-former-kate-s-restauran",
+   "name": "Robinson House (1889 Queen Anne house, former Kate's Restaurant / The Garden)",
+   "cat": "houses",
+   "type": "historic house / mansion",
+   "lat": 39.7653,
+   "lon": -104.9392,
+   "approx": true,
+   "location": "3435 Albion St., Denver, CO, Denver (Northeast Park Hill), Denver County",
+   "condition": "Historic Denver says it has been empty since 2017, when The Garden closed. BusinessDen called it vacant, 'but not entirely.' Denverite (2022) said it was in rough shape and needed major renovation. Denver made it a city landmark in April 2022, so it can't be demolished; the owner also planned 4-5 townhomes on the same lot. I found nothing newer than 2022, so it may be under renovation or occupied by now",
+   "access": "Private property (owner Steven Davis per 2021-2022 coverage). It sits in a residential neighborhood next to planned new construction; there is no public access",
+   "sources": [
+    "https://historicdenver.org/blog/the-robinson-house-3435-albion/",
+    "https://denverite.com/2022/04/19/denver-officially-landmarks-one-of-park-hills-oldest-home/",
+    "https://denverite.com/2022/03/29/one-of-the-oldest-homes-in-park-hill-could-be-preserved-as-new-townhomes-are-built-next-to-it/"
+   ],
+   "added": "2026-11-10T06:56:32+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "unknown",
+    "legal": "private",
+    "as_of": "2022",
+    "sources": [
+     "https://historicdenver.org/blog/the-robinson-house-3435-albion/",
+     "https://denverite.com/2022/04/19/denver-officially-landmarks-one-of-park-hills-oldest-home/",
+     "https://denverite.com/2022/03/29/one-of-the-oldest-homes-in-park-hill-could-be-preserved-as-new-townhomes-are-built-next-to-it/"
+    ],
+    "checked": "2026-11-10"
+   }
   }
  ]
 }

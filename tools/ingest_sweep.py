@@ -39,7 +39,7 @@ for f in sorted(glob.glob(os.path.join(sys.argv[1] if len(sys.argv) > 1 else '.'
         ws = set(k.split()) - GENERIC
         if any(h and (h <= ws or ws <= h) for h in havesets): continue
         # skip anything whose condition says it's gone or reopened
-        if re.search(r'\b(demolished|torn down|razed|reopened|now a museum|redeveloped into)\b', it.get('condition', ''), re.I) and not re.search(r'partly|partially|still stand|whether it|no source|not confirm|demolished yet|not (been )?demolished|no (later )?report', it.get('condition', ''), re.I): continue
+        if re.search(r'\b(demolished|torn down|razed|reopened|now a museum|redeveloped into)\b', it.get('condition', ''), re.I) and not re.search(r'partly|partially|still stand|whether it|no source|not confirm|demolished yet|can.t be demolished|cannot be demolished|not (been )?demolished|no (later )?report', it.get('condition', ''), re.I): continue
         seen.add(k); items.append(it)
 print(len(items), 'new unique places', flush=True)
 towncache = {}
