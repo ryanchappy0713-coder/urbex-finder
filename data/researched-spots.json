@@ -11526,6 +11526,508 @@
     ],
     "checked": "2026-11-11"
    }
+  },
+  {
+   "id": "wild-irishman-mining-camp-preston",
+   "name": "Wild Irishman mining camp (Preston)",
+   "cat": "industrial",
+   "type": "silver mining camp ruins (cabins, mine buildings, outhouses)",
+   "lat": 39.56304,
+   "lon": -105.87835,
+   "approx": false,
+   "location": "Above Saints John ghost town on the 4x4 road up Glacier Mountain. Take the left fork that zig-zags up Glacier Mountain from Saints John. The camp is right at timberline, in the last trees below the tundra, about 11,880 ft., Montezuma, Summit County",
+   "condition": "A 2013 lifedeathiron post found collapsed cabins and mine buildings buried in shrubs, plus a large tailings pile at the mine. A Keystone guidebook says several cabins, silver-mining structures and outhouses remain. An October 2025 Bronco Nation trip report still names the 'Wild Irishman Cabin'.",
+   "access": "Only by rugged 4x4 trail or on foot, summer and early fall. The route goes through Saints John, which is private land; the road does continue through. The sources do not say who owns the Wild Irishman site itself.",
+   "sources": [
+    "https://lifedeathiron.com/2013/05/25/wild-irishman-mining-camp-colorado-a-place-as-fantastic-as-its-name/",
+    "https://ghosttowns.com/states/co/wildirishman.html",
+    "https://thebronconation.com/trails-trips-n.64/colorados-saints-john-trail-to-visit-wild-irishman-cabin-general-teller-mine-above-12-000ft-t.23138"
+   ],
+   "added": "2026-11-11T12:57:21+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "unknown",
+    "legal": "unknown",
+    "as_of": "2025",
+    "sources": [
+     "https://lifedeathiron.com/2013/05/25/wild-irishman-mining-camp-colorado-a-place-as-fantastic-as-its-name/",
+     "https://ghosttowns.com/states/co/wildirishman.html",
+     "https://thebronconation.com/trails-trips-n.64/colorados-saints-john-trail-to-visit-wild-irishman-cabin-general-teller-mine-above-12-000ft-t.23138"
+    ],
+    "checked": "2026-11-11"
+   }
+  },
+  {
+   "id": "swandyke-ghost-town-and-wise-mountain-cabin",
+   "name": "Swandyke ghost town and Wise Mountain cabin",
+   "cat": "houses",
+   "type": "mining camp (cabins)",
+   "lat": 39.51147,
+   "lon": -105.90476,
+   "approx": false,
+   "location": "Middle Fork of the Swan River 4WD road (Forest Service Trail 6), past the Tony Mine, near 11,000 ft close to the Continental Divide. The road continues to the top of Wise Mountain, which has another cabin., Breckenridge, Summit County",
+   "condition": "Sparse ruins. A 2005 trip report called one Swandyke cabin 'well-preserved'. Reports on the Wise Mountain cabin conflict: older entries call it habitable with a working stove, a later review says it is no longer habitable. The ore mill was destroyed by an avalanche in 1898-99. The newest report found is from 2024.",
+   "access": "Middle Fork road is in White River National Forest and rated moderate, high-clearance 4x4. The nearby North Fork road is closed to vehicles Nov 23 to May 20; check the Middle Fork dates with the Dillon Ranger District. One guide says an unmarked spur trail to the camp is illegal to drive but can be hiked.",
+   "sources": [
+    "https://4x4explore.com/rds/m_rds/mdl_frk_swan.html",
+    "https://www.fs.usda.gov/r02/whiteriver/recreation/middle-fork-road-swan-river-th-6",
+    "https://traildamage.com/reports/swan_river-050827/"
+   ],
+   "added": "2026-11-11T12:57:26+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "low",
+    "security_notes": "No security mentioned in any source; remote national forest backcountry.",
+    "legal": "unknown",
+    "as_of": "2024",
+    "sources": [
+     "https://4x4explore.com/rds/m_rds/mdl_frk_swan.html",
+     "https://www.fs.usda.gov/r02/whiteriver/recreation/middle-fork-road-swan-river-th-6",
+     "https://traildamage.com/reports/swan_river-050827/"
+    ],
+    "checked": "2026-11-11"
+   }
+  },
+  {
+   "id": "lincoln-city-townsite",
+   "name": "Lincoln City townsite",
+   "cat": "houses",
+   "type": "mining camp (shacks, cabins)",
+   "lat": 39.48343,
+   "lon": -105.99098,
+   "approx": false,
+   "location": "French Gulch, in the Golden Horseshoe area east of Breckenridge. Drive past the Reiling Dredge to the Lincoln City trailhead.",
+   "condition": "Blog accounts describe a couple of buildings, falling-down cabins, tin-roofed and tin-sided shacks, mining debris, tailings and an 1864 grave. These are undated, roughly 2010s.",
+   "access": "2WD reachable. Modern luxury homes now surround the old shacks and cabins, so assume the buildings are private and look only from the road or trail. No source confirms which parcels are public.",
+   "sources": [
+    "https://lifedeathiron.com/tag/lincoln-city-colorado",
+    "https://breckhistory.org/?p=4757",
+    "https://4x4explore.com/rds/g_rds/golden_horseshoe.html"
+   ],
+   "added": "2026-11-11T12:57:29+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "unknown",
+    "legal": "unknown",
+    "as_of": "2010",
+    "sources": [
+     "https://lifedeathiron.com/tag/lincoln-city-colorado",
+     "https://breckhistory.org/?p=4757",
+     "https://4x4explore.com/rds/g_rds/golden_horseshoe.html"
+    ],
+    "checked": "2026-11-11"
+   }
+  },
+  {
+   "id": "pennsylvania-mine-peru-creek",
+   "name": "Pennsylvania Mine (Peru Creek)",
+   "cat": "industrial",
+   "type": "mine ruins (tram house, adits)",
+   "lat": 39.59471,
+   "lon": -105.79501,
+   "approx": false,
+   "location": "Peru Creek Road (FDR 260): about 4.6 mi up Montezuma Road, then about 4.5 mi up Peru Creek. The mine is on the NW slope of Decatur Mountain, south side of Peru Creek, about 3 mi ENE of Montezuma. Motorized access ends at the gate near the Shoe Basin Mine.",
+   "condition": "A trail guide describes a tram house above the Pennsylvania Mine. Mine adits remain; a 2018 visitor posted photos. This is an EPA cleanup site because of metal-laden drainage.",
+   "access": "High-clearance road, some 4WD sections; summer. The road has been closed at times for avalanche repair. The Forest Service warns of many underground shafts in the drainage. Stay out of adits and off EPA work areas.",
+   "sources": [
+    "https://www.4x4explore.com/rds/p_rds/peru_crk.html",
+    "https://funtreks.com/off-road-trails/peru-creek/",
+    "https://response.epa.gov/PennMine"
+   ],
+   "added": "2026-11-11T12:57:32+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "unknown",
+    "security_notes": "EPA remediation site; work crews may be present.",
+    "legal": "unknown",
+    "as_of": "2018",
+    "sources": [
+     "https://www.4x4explore.com/rds/p_rds/peru_crk.html",
+     "https://funtreks.com/off-road-trails/peru-creek/",
+     "https://response.epa.gov/PennMine"
+    ],
+    "checked": "2026-11-11"
+   }
+  },
+  {
+   "id": "champion-mill-and-champion-mine-cabin",
+   "name": "Champion Mill and Champion Mine cabin",
+   "cat": "industrial",
+   "type": "stamp mill, tram towers, mine cabin",
+   "lat": 39.117,
+   "lon": -106.47,
+   "approx": true,
+   "location": "End of Halfmoon Creek Road (Champion Mine road), past the Forest Service campgrounds and trailheads. The mill is on the east slope of Mount Champion. Tram towers are in the valley SW of the mill. The cabin and a collapsed tunnel are at the top of the Champion Mine road., Leadville / Twin Lakes, Lake County",
+   "condition": "Operated until about 1919. A guide says the mill is in remarkably good shape but could collapse at any time, with much of the milling equipment still inside. A trip report calls it a well-preserved stamp mill. Tram towers and the upper cabin still stand.",
+   "access": "Graded road, last few miles 4WD, ending at a gate at the mill site (4x4explore, updated 2014). The Forest Service section was added to the Motor Vehicle Use Map in 2022. The upper road is private land whose owners have allowed public use, but the mine parcel itself is private and closed to the public. View the mill from outside and do not enter.",
+   "sources": [
+    "https://4x4explore.com/rds/c_rds/champn_mine.html",
+    "https://www.trailsoffroad.com/US/colorado/scout-routes/4443-champion-mine",
+    "https://www.onxmaps.com/offroad/trails/us/colorado/champion-mine-trail-3l6om499gzw4"
+   ],
+   "added": "2026-11-11T12:57:37+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "high",
+    "security_notes": "A September 2025 onX user review says the mine owner, often armed, is there on weekends and does not want visitors. Not confirmed by any official source.",
+    "legal": "private",
+    "as_of": "2025",
+    "sources": [
+     "https://4x4explore.com/rds/c_rds/champn_mine.html",
+     "https://www.trailsoffroad.com/US/colorado/scout-routes/4443-champion-mine",
+     "https://www.onxmaps.com/offroad/trails/us/colorado/champion-mine-trail-3l6om499gzw4"
+    ],
+    "checked": "2026-11-11"
+   },
+   "pin": "manual"
+  },
+  {
+   "id": "hayden-ranch-headquarters",
+   "name": "Hayden Ranch headquarters",
+   "cat": "houses",
+   "type": "historic ranch complex (barns, houses, outbuildings)",
+   "lat": 39.24898,
+   "lon": -106.29036,
+   "approx": true,
+   "location": "5801 US Highway 24, south of Leadville. A 35-acre headquarters on the highway.",
+   "condition": "Sixteen buildings built 1880-1930, on the National Register. Sales listings (2024-2025) say the buildings fell out of use and into disrepair, and that historic barns, sheds and outbuildings remain.",
+   "access": "Private. Owned by Colorado Mountain College (CMC) under a conservation easement since 2008, and listed for sale or gift in 2024-2025. View only from US-24; do not enter.",
+   "sources": [
+    "https://horseproperties.net/index.php/properties/colorado/lake-county/leadville/67763",
+    "https://land.com/property/35.38-acres-in-Lake-County-Colorado/22384764",
+    "https://commercial.century21.com/listing/5801-hwy-24-leadville-co-80461-REN029353240"
+   ],
+   "added": "2026-11-11T12:57:43+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "unknown",
+    "legal": "private",
+    "as_of": "2025",
+    "sources": [
+     "https://horseproperties.net/index.php/properties/colorado/lake-county/leadville/67763",
+     "https://land.com/property/35.38-acres-in-Lake-County-Colorado/22384764",
+     "https://commercial.century21.com/listing/5801-hwy-24-leadville-co-80461-REN029353240"
+    ],
+    "checked": "2026-11-11"
+   }
+  },
+  {
+   "id": "ruby-mine-cabin-weston-pass",
+   "name": "Ruby Mine cabin, Weston Pass",
+   "cat": "industrial",
+   "type": "mine cabin remains",
+   "lat": 39.13119,
+   "lon": -106.18199,
+   "approx": false,
+   "location": "Weston Pass road (Park County 5 / FS 425 on the east side). Just before the top of the pass, on the west side of the road. Other mine sites are near the summit parking lot., Fairplay / Leadville, Park-Lake County line",
+   "condition": "A guide (undated) describes the remains of a cabin at the Ruby Mine. Very little is left of the other workings near the pass.",
+   "access": "East side is easier; the Leadville (west) side is not maintained for low-clearance vehicles; summer. The Forest Service asks visitors to respect private land around the summit, so view from the road. A Forest Service auto-tour brochure is available at the South Park Ranger District.",
+   "sources": [
+    "https://4x4explore.com/rds/w_rds/weston_ps.html",
+    "https://www.fs.usda.gov/r02/psicc/recreation/weston-pass-auto-tour",
+    "https://fs.usda.gov/r02/psicc/recreation/weston-pass"
+   ],
+   "added": "2026-11-11T12:57:51+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "unknown",
+    "legal": "unknown",
+    "sources": [
+     "https://4x4explore.com/rds/w_rds/weston_ps.html",
+     "https://www.fs.usda.gov/r02/psicc/recreation/weston-pass-auto-tour",
+     "https://fs.usda.gov/r02/psicc/recreation/weston-pass"
+    ],
+    "checked": "2026-11-11"
+   }
+  },
+  {
+   "id": "whitepine-townsite",
+   "name": "Whitepine townsite",
+   "cat": "houses",
+   "type": "mining camp (cabins)",
+   "lat": 38.64767,
+   "lon": -107.06031,
+   "approx": true,
+   "location": "Gunnison County Road 888, about 10 mi north of Sargents, south of Tomichi Pass. Tomichi Cemetery is about 2 mi north.",
+   "condition": "A few cabins remain. ghosttowns.com says many original buildings remain, but sources conflict. A flotation mill ran from 1947 to 1953. About 200 km from Denver, at the edge of the range.",
+   "access": "County road from US-50 at Sargents; Tomichi Pass beyond is rough 4WD; summer. The sources do not say who owns the buildings; treat them as private and view from the road.",
+   "sources": [
+    "https://gunnisoncrestedbutte.com/blog/town-profiles-whitepine",
+    "https://www.ghosttowns.com/states/co/whitepine.html",
+    "https://4x4explore.com/rds/t_rds/tomichi_ps.html"
+   ],
+   "added": "2026-11-11T12:57:57+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "unknown",
+    "legal": "unknown",
+    "as_of": "1953",
+    "sources": [
+     "https://gunnisoncrestedbutte.com/blog/town-profiles-whitepine",
+     "https://www.ghosttowns.com/states/co/whitepine.html",
+     "https://4x4explore.com/rds/t_rds/tomichi_ps.html"
+    ],
+    "checked": "2026-11-11"
+   }
+  },
+  {
+   "id": "coalmont-coal-camp-townsite-and-schoolhouse",
+   "name": "Coalmont (coal camp townsite and schoolhouse)",
+   "cat": "ruins",
+   "type": "ghost town / coal mining camp",
+   "lat": 40.56248,
+   "lon": -106.44448,
+   "approx": true,
+   "location": "About 16 miles southwest of Walden; reached from State Highway 14 by Jackson County Road 24, which passes through the original townsite, Coalmont, Jackson County",
+   "condition": "A few dilapidated century-old buildings and a few restored ones are still visible. The Coalmont School House (about 1915) was restored by the Spicer Club in 1997 and is now a community center. Coal mining ran from 1909 to the end of WWII; the post office closed in 1983.",
+   "access": "Most of the land is private. View from County Road 24; do not go into buildings without permission. Easy for a 2WD car in normal conditions.",
+   "sources": [
+    "https://rockymountainprofiles.com/colorado/adena-thru-dearfield/coalmont-co",
+    "https://uncovercolorado.com/towns/coalmont"
+   ],
+   "added": "2026-11-11T12:58:00+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "unknown",
+    "legal": "private",
+    "as_of": "1997",
+    "sources": [
+     "https://rockymountainprofiles.com/colorado/adena-thru-dearfield/coalmont-co",
+     "https://uncovercolorado.com/towns/coalmont"
+    ],
+    "checked": "2026-11-11"
+   }
+  },
+  {
+   "id": "poudre-city-stamp-mill-chimney-zimmerman-s-mill",
+   "name": "Poudre City stamp mill chimney (Zimmerman's mill)",
+   "cat": "industrial",
+   "type": "mill ruin / ghost town",
+   "lat": 40.69805,
+   "lon": -105.54241,
+   "approx": false,
+   "location": "Poudre Canyon (Highway 14 corridor), northwestern Larimer County; reached by a short path from a chapel and the cemetery next to it, Upper Poudre Canyon, Larimer County",
+   "condition": "Only the stone chimney of the gold stamp mill remains, with a 1973 Colorado State Historical Society plaque on it. The town (founded 1890) was wiped out on June 10, 1891, when the Chambers Lake dam burst.",
+   "access": "Short walk from the road. Sources say the canyon is mostly Roosevelt National Forest, but none confirms that the chimney parcel itself is federal land, so check a current map or ask the Canyon Lakes Ranger District. Highway 14 is paved; summer and fall are best.",
+   "sources": [
+    "https://www.visitftcollins.com/blog/post/poudre-canyon-off-the-beaten-path/",
+    "https://en.wikipedia.org/wiki/Poudre_City,_Colorado"
+   ],
+   "added": "2026-11-11T12:58:06+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "low",
+    "legal": "unknown",
+    "as_of": "1973",
+    "sources": [
+     "https://www.visitftcollins.com/blog/post/poudre-canyon-off-the-beaten-path/",
+     "https://en.wikipedia.org/wiki/Poudre_City,_Colorado"
+    ],
+    "checked": "2026-11-11"
+   }
+  },
+  {
+   "id": "hermit-s-cabin-and-crocker-ranch-line-shack-hermit-park-open",
+   "name": "Hermit's Cabin and Crocker Ranch line shack, Hermit Park Open Space",
+   "cat": "houses",
+   "type": "homestead / ranch cabins",
+   "lat": 40.35635,
+   "lon": -105.45646,
+   "approx": false,
+   "location": "Hermit Park Open Space (Larimer County Natural Resources), next to the Homestead Meadows area of the national forest, Estes Park, Larimer County",
+   "condition": "A two-story log cabin traditionally said to have been built about 1910 by a squatter called 'Dutch Louie' (the story is folklore) is still standing. A one-story log line shack used by Crocker Ranch cowboys is also on site (county management plan; brochure dated September 2023). Note: the two 1970s kit-built camper cabins the county auctioned in 2018 are NOT historic.",
+   "access": "Public county open space, bought by Larimer County and partners in 2007. Normal park hours and rules apply; the park has reopened seasonally (for example on March 1 in some years). Paved and gravel park roads.",
+   "sources": [
+    "https://www.larimer.gov/sites/default/files/uploads/2017/hermit_management_plan.pdf",
+    "https://larimer.gov/sites/default/files/2024-11/brochure_-_hermit_park_english_-_september_07_2023.pdf"
+   ],
+   "added": "2026-11-11T12:58:12+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "low",
+    "security_notes": "A staffed county park with rangers and campground hosts.",
+    "legal": "public",
+    "as_of": "2023",
+    "sources": [
+     "https://www.larimer.gov/sites/default/files/uploads/2017/hermit_management_plan.pdf",
+     "https://larimer.gov/sites/default/files/2024-11/brochure_-_hermit_park_english_-_september_07_2023.pdf"
+    ],
+    "checked": "2026-11-11"
+   }
+  },
+  {
+   "id": "purcell-townsite",
+   "name": "Purcell townsite",
+   "cat": "rail",
+   "type": "ghost town / railroad and cattle-shipping town",
+   "lat": 40.638,
+   "lon": -104.602,
+   "approx": true,
+   "location": "North of Ault on US Highway 14. Approx. 40.638 N, 104.602 W. The remains of the old Hungerford Wye track loop are just south of County Road 90.",
+   "condition": "The old gas station / candy store / post office, the lumber store and the stockyard remain, along with a false-front building, a few other old buildings and foundations. Many original buildings (the Grange and churches) were moved to Pierce and Galeton; the gas station and lumber yard were moved to the southeast corner of the townsite (ghosttowns.com and Rocky Mountain Profiles; ghosttowns.com page is old).",
+   "access": "Private land. The east side is being developed as 'Purcell Estates'. An older ghosttowns.com listing said visitors were welcome and tours were available through a local contact, but it also notes the ranch has changed hands. Ask permission first; otherwise view from the county road.",
+   "sources": [
+    "https://ghosttowns.com/states/co/purcell.html",
+    "https://rockymountainprofiles.com/colorado/oro-city-thru-summerville/purcell-colorado"
+   ],
+   "added": "2026-11-11T12:58:15+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "unknown",
+    "security_notes": "Active development on the east side of the townsite (date not given).",
+    "legal": "private",
+    "sources": [
+     "https://ghosttowns.com/states/co/purcell.html",
+     "https://rockymountainprofiles.com/colorado/oro-city-thru-summerville/purcell-colorado"
+    ],
+    "checked": "2026-11-11"
+   },
+   "pin": "manual"
+  },
+  {
+   "id": "agate-semi-ghost-town-and-agate-hotel",
+   "name": "Agate semi-ghost town and Agate Hotel",
+   "cat": "leisure",
+   "type": "plains semi-ghost town / vacant hotel",
+   "lat": 39.46197,
+   "lon": -103.94298,
+   "approx": true,
+   "location": "Just off I-70 at exit 340. The Agate Hotel is on 1st Avenue.",
+   "condition": "ghosttowns.com (photo August 2010) says most buildings are abandoned, with many empty homes and businesses, and some new homes going up nearby. SAH Archipedia says the Agate Hotel, a house from about 1910 that became a boarding house in the Depression, now stands empty and deteriorating behind a weathered sign.",
+   "access": "Private buildings inside a small community where people still live. View from public streets.",
+   "sources": [
+    "https://ghosttowns.com/states/co/agate.html",
+    "https://sah-archipedia.org/buildings/CO-01-EL09"
+   ],
+   "added": "2026-11-11T12:58:18+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "low",
+    "security_notes": "Some buildings nearby are occupied (2010 listing).",
+    "legal": "private",
+    "as_of": "2010",
+    "sources": [
+     "https://ghosttowns.com/states/co/agate.html",
+     "https://sah-archipedia.org/buildings/CO-01-EL09"
+    ],
+    "checked": "2026-11-11"
+   }
+  },
+  {
+   "id": "former-stone-bank-building-188-main-st-elbert",
+   "name": "Former stone bank building, 188 Main St., Elbert",
+   "cat": "other",
+   "type": "abandoned bank / commercial building",
+   "lat": 39.21915,
+   "lon": -104.53672,
+   "approx": true,
+   "location": "188 Main St., northeast corner of East Broadway, Elbert",
+   "condition": "SAH Archipedia describes a one-story stone building from 1907 with a Neoclassical arched entry and a parapet with cannonball finials. It is abandoned and decaying behind two juniper trees. The entry ties it to the Elbert County Bank (1907 to 1947, later a garage), though the sources do not fully agree.",
+   "access": "Private building in town. View from the public sidewalk.",
+   "sources": [
+    "https://sah-archipedia.org/node/8630"
+   ],
+   "added": "2026-11-11T12:58:23+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "unknown",
+    "legal": "private",
+    "as_of": "1947",
+    "sources": [
+     "https://sah-archipedia.org/node/8630"
+    ],
+    "checked": "2026-11-11"
+   }
+  },
+  {
+   "id": "genoa-abandoned-business-district-and-world-s-wonder-view-to",
+   "name": "Genoa abandoned business district and World's Wonder View Tower",
+   "cat": "ruins",
+   "type": "plains near-ghost town / roadside attraction",
+   "lat": 39.27832,
+   "lon": -103.50022,
+   "approx": true,
+   "location": "Next to I-70 at exit 371, about 10 miles east of Limon. The tower is just outside town on a dirt road., Genoa, Lincoln County",
+   "condition": "A ghosttowns.com visit in 2010 found the business district entirely abandoned, with a former roadside service station and a former truck stop and restaurant. Legends of America shows a closed gas station and Main Street buildings. The 1926 tower still stands, but the motel, station and restaurant at the tower complex are gone. The Friends of the Genoa Tower are restoring it (Denver Gazette, Sept 2025).",
+   "access": "The tower is private property and is being restored, so visit only during official openings. The Main Street buildings are private and can be seen from the public street.",
+   "sources": [
+    "https://ghosttowns.com/states/co/genoa.html",
+    "https://www.legendsofamerica.com/genoa-colorado-wonder-tower/",
+    "https://www.denvergazette.com/2025/09/21/new-era-on-the-horizon-for-worlds-wonder-view-tower-of-colorado"
+   ],
+   "added": "2026-11-11T12:58:26+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "medium",
+    "security_notes": "The tower is under active restoration by a nonprofit (2025 to 2026), so owners or volunteers are often present.",
+    "legal": "private",
+    "as_of": "2026",
+    "sources": [
+     "https://ghosttowns.com/states/co/genoa.html",
+     "https://www.legendsofamerica.com/genoa-colorado-wonder-tower/",
+     "https://www.denvergazette.com/2025/09/21/new-era-on-the-horizon-for-worlds-wonder-view-tower-of-colorado"
+    ],
+    "checked": "2026-11-11"
+   }
+  },
+  {
+   "id": "pearl-ghost-town-copper-camp-and-smelter-site",
+   "name": "Pearl ghost town (copper camp and smelter site)",
+   "cat": "ruins",
+   "type": "ghost town / mining camp",
+   "lat": 40.982,
+   "lon": -106.546,
+   "approx": true,
+   "location": "Far northern North Park, northwest of Walden and about a mile short of the Wyoming border, on the way to Big Creek Lake; county roads loop around the townsite",
+   "condition": "About a dozen cabins and frame homes, apparently used seasonally or kept up by the townsite's owner. There is a smokestack and the concrete foundations of the copper smelter, plus stretches of boardwalk and ruins of log and frame houses (SAH Archipedia and Life, Death & Iron; year of the observations not given). The town was active about 1889-1919.",
+   "access": "All buildings are private property. View and photograph only from the public county roads around the site; a zoom lens is recommended. Gravel county roads, best in summer and fall.",
+   "sources": [
+    "https://rockymountainprofiles.com/colorado/oro-city-thru-summerville/pearl-colorado",
+    "https://lifedeathiron.com/tag/pearl-colorado",
+    "https://sah-archipedia.org/node/8922"
+   ],
+   "added": "2026-11-11T12:58:53+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "unknown",
+    "security_notes": "Some cabins appear to be used seasonally or maintained by an owner, so assume people may be there (no date given).",
+    "legal": "private",
+    "as_of": "1919",
+    "sources": [
+     "https://rockymountainprofiles.com/colorado/oro-city-thru-summerville/pearl-colorado",
+     "https://lifedeathiron.com/tag/pearl-colorado",
+     "https://sah-archipedia.org/node/8922"
+    ],
+    "checked": "2026-11-11"
+   },
+   "pin": "manual"
+  },
+  {
+   "id": "manoa-ghost-town-cabins",
+   "name": "Manoa ghost town cabins",
+   "cat": "ruins",
+   "type": "ghost town",
+   "lat": 38.472,
+   "lon": -105.925,
+   "approx": true,
+   "location": "Arkansas Hills near Whitehorn. The source gives no exact road.",
+   "condition": "A 2018 lifedeathiron photo blog shows a number of well-preserved cabins with moss-covered rusted tin roofs.",
+   "access": "Private property. The photographer stayed at the fence line out of respect for the boundary. View from outside the fence only.",
+   "sources": [
+    "https://lifedeathiron.com/2018/09/08/photo-blog-preserved-in-the-pines-manoa-and-whitehorn-two-colorado-ghost-towns-youve-probably-never-seen-before"
+   ],
+   "verify": {
+    "status": "standing",
+    "security": "medium",
+    "security_notes": "Fenced private property boundary (2018).",
+    "legal": "private",
+    "as_of": "2018",
+    "sources": [
+     "https://lifedeathiron.com/2018/09/08/photo-blog-preserved-in-the-pines-manoa-and-whitehorn-two-colorado-ghost-towns-youve-probably-never-seen-before"
+    ],
+    "checked": "2026-11-11"
+   },
+   "added": "2026-11-11T12:58:57+00:00"
   }
  ]
 }
