@@ -11355,8 +11355,8 @@
    "name": "Lindsay Ranch barn and house remnants",
    "cat": "other",
    "type": "historic ranch barn / homestead remains",
-   "lat": 39.5663,
-   "lon": -105.25187,
+   "lat": 39.8987,
+   "lon": -105.2117,
    "approx": true,
    "location": "Lindsay Ranch Loop Trail (1.4 mi, crosses Rock Creek), Rocky Flats National Wildlife Refuge, Arvada / Broomfield area, Jefferson County",
    "condition": "1940s barn still stands, with remnants of the house, on the site of the Scott family's 1868 homestead. FWS still features the barn on its current hiking page. A January 2024 blog said one building was open but looked very unstable.",
@@ -11379,7 +11379,8 @@
      "https://handstandsaroundtheworld.blog/2024/01/30/colorado-destinations-rocky-flats-national-wildlife-refuge/"
     ],
     "checked": "2026-11-11"
-   }
+   },
+   "pin": "manual"
   }
  ]
 }
