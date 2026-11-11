@@ -1389,14 +1389,15 @@
    "verify": {
     "status": "unknown",
     "security": "unknown",
-    "security_notes": "Only 2016 coverage of a $350K Craigslist sale listing; the owner's family was retiring. Nothing newer found.",
+    "security_notes": "Listed for sale in July 2016 (old station, cafe, 8-unit motel, house, private shooting range). A CPR editor's note says it sold in January 2017. The buyer and current use are unknown, and nothing newer was found. Treat as private property with a possible new owner, and do not enter.",
     "legal": "private",
-    "as_of": "2016",
+    "as_of": "2017",
     "sources": [
+     "https://www.cpr.org/show-segment/whats-it-like-to-buy-a-colorado-town",
      "https://www.cbsnews.com/colorado/news/for-sale-a-colorado-ghost-town",
      "https://www.hppr.org/hppr-people-communities/2016-07-06/buy-your-very-own-colorado-ghost-town-on-craigslist"
     ],
-    "checked": "2026-11-09"
+    "checked": "2026-11-11"
    },
    "added": "2026-11-08T02:47:28+00:00"
   },
@@ -2485,31 +2486,6 @@
      "https://lovgov.org/home/showpublisheddocument/27663/636063380519970000"
     ],
     "checked": "2026-11-10"
-   },
-   "added": "2026-11-08T03:06:53+00:00"
-  },
-  {
-   "id": "apache-court-motel",
-   "name": "Apache Court Motel",
-   "cat": "leisure",
-   "type": "motel",
-   "lat": 38.85858,
-   "lon": -104.91787,
-   "approx": true,
-   "location": "Manitou Springs historic district",
-   "condition": "Abandoned motel with a decaying sign (photo, undated).",
-   "access": "Unknown.",
-   "sources": [
-    "https://www.75centralphotography.com/place/united-states/colorado/colorado-springs/manitou-springs-historic-distric/"
-   ],
-   "verify": {
-    "status": "unknown",
-    "security": "unknown",
-    "legal": "unknown",
-    "sources": [
-     "https://www.75centralphotography.com/place/united-states/colorado/colorado-springs/manitou-springs-historic-distric/"
-    ],
-    "checked": "2026-11-09"
    },
    "added": "2026-11-08T03:06:53+00:00"
   },
@@ -3633,16 +3609,17 @@
     "https://pclha.cvlcollections.org/items/show/1571"
    ],
    "verify": {
-    "status": "unknown",
+    "status": "standing",
     "security": "unknown",
-    "security_notes": "Park County Historic Landmark at 24001 CR 77 since 2008, inside the Tarryall Rural Historic District. A fishing site lists 'Upper Allen Creek Ranch' as a private fee fishing area. No info found on current condition.",
-    "legal": "unknown",
+    "security_notes": "A Park County archive photo of the 'abandoned main house at the Allen Ranch homestead' was donated in 2020; the photo's own date is not known. The ranch, called Allen Creek Ranch, at 24001 CR 77, has been a Park County Historic Landmark since 2008 and is inside the Tarryall Rural Historic District (National Register, 2017). No source shows public access; it looks like a working private ranch, but ownership is not confirmed. Do not enter without the owner's permission.",
+    "legal": "private",
+    "as_of": "2020",
     "sources": [
-     "https://parkcountyco.gov/396/Tarryall-Area",
      "https://pclha.cvlcollections.org/items/show/1570",
-     "https://anglerscovey.com/fishing-locations/tarryall-creek-upper-allen-creek-ranch/"
+     "https://parkcountyco.gov/396/Tarryall-Area",
+     "https://historycolorado.org/node/57518"
     ],
-    "checked": "2026-11-09"
+    "checked": "2026-11-11"
    },
    "added": "2026-11-08T03:46:17+00:00"
   },
@@ -3900,12 +3877,13 @@
    "verify": {
     "status": "standing",
     "security": "unknown",
-    "security_notes": "An undated town guide lists it among the old buildings still on Ramah's Main Street.",
+    "security_notes": "Only undated sources: Uncover Colorado and a 2015 blog list it as still standing on Ramah's Main Street. No 2024-2026 news on its condition, any sale, or security. It is in a small town where people still live, so assume it is private and view it from the street.",
     "legal": "unknown",
     "sources": [
-     "https://www.uncovercolorado.com/towns/ramah"
+     "https://www.uncovercolorado.com/towns/ramah",
+     "https://lifedeathiron.com/2015/11/28/25-more-abandoned-buildings-in-colorado-you-must-see-before-they-are-gone"
     ],
-    "checked": "2026-11-09"
+    "checked": "2026-11-11"
    },
    "added": "2026-11-08T03:46:17+00:00"
   },
@@ -5149,14 +5127,15 @@
    "verify": {
     "status": "standing",
     "security": "unknown",
-    "security_notes": "A few privately held summer cabins and one year-round resident are reported. The road is passable in season.",
-    "legal": "unknown",
+    "security_notes": "Undated sources say surviving buildings include a hotel on the Gilpin County Historical Register and a schoolhouse. Two wildfires destroyed much of the old business district, and some buildings were scraped. A 2014 blog assumes side streets are private. A real-estate listing exists at 1 Apex (Coldwell Banker, undated). No public-access confirmation. View from Apex Valley Rd and do not enter structures.",
+    "legal": "private",
     "as_of": "2014",
     "sources": [
+     "https://www.uncovercolorado.com/ghost-towns/apex",
      "https://lifedeathiron.com/2014/03/29/apex-colorado-ghost-town-comparative-photos-1890s-and-today",
-     "https://www.uncovercolorado.com/ghost-towns/apex"
+     "https://www.coldwellbanker.com/co/black-hawk/1-apex/lid-P00800000HDwSJGOQigOnTuAf2zzQVQAdSLcOFDZ"
     ],
-    "checked": "2026-11-09"
+    "checked": "2026-11-11"
    },
    "added": "2026-11-08T06:05:27+00:00"
   },
@@ -5386,13 +5365,16 @@
    "verify": {
     "status": "unknown",
     "security": "unknown",
-    "security_notes": "The only source is a 2012 off-road trip report describing the ruins and cabins along the Saxon Mountain trail.",
+    "security_notes": "Saxon Mountain Rd is on Arapaho NF and rated difficult 4x4, usually snowbound Nov-May. A Clear Creek Courant article (date not visible) reports the county closed a 4-mile section above Georgetown for safety, citing amateur 4x4 drivers and road deterioration. dangerousroads.org (undated) says the road is closed. Some listings say it is open. Check with Clear Creek Ranger District. Ruin details still come only from a 2012 trip report.",
     "legal": "unknown",
     "as_of": "2012",
     "sources": [
+     "https://ccm.creativecirclemedia.com/stories/part-of-saxon-mountain-road-closed-through-aug-3,379866",
+     "https://www.fs.usda.gov/r02/arp/recreation/saxon-mountain",
+     "https://www.dangerousroads.org/north-america/usa/6343-saxon-mountain.html",
      "https://tflcar.com/2012/11/colorado-off-road-adventure-saxon-mountain-trail"
     ],
-    "checked": "2026-11-09"
+    "checked": "2026-11-11"
    },
    "added": "2026-11-08T06:05:27+00:00",
    "pin": "landmark"
@@ -5444,16 +5426,16 @@
    ],
    "verify": {
     "status": "standing",
-    "security": "unknown",
-    "security_notes": "Boulder County bought it in 2003, rehabilitated it 2005-2010, and it was listed on the National Register in 2011. A county remediation project went out to bid (undated). One county page calls it newly open to the public (undated), so current access rules are unclear.",
+    "security": "medium",
+    "security_notes": "County Parks & Open Space pages say 'This site is closed to the public for safety reasons' (undated). Access has been by registered guided open houses only (2022-2023 listings). In 2024 the county put an environmental remediation of mine waste and mill tailings out to bid (RFP-083-24). No 2025-2026 updates found. Do not visit outside a guided open house.",
     "legal": "government-owned (not open)",
-    "as_of": "2011",
+    "as_of": "2024",
     "sources": [
-     "https://historycolorado.org/node/6350",
-     "https://npgallery.nps.gov/AssetDetail/NRIS/11000945",
-     "https://projects.constructconnect.com/details/6692974-cardinal-mill-environmental-remediation-project%26find_loc=colorado-80466"
+     "https://bouldercountyopenspace.org/hard-rock-mine-tour/cardinal.html",
+     "https://assets.bouldercounty.gov/wp-content/uploads/2024/06/RFP-083-24-Addendum-2.pdf",
+     "https://bouldercounty.gov/events/cardinal-mill-open-house-9-7"
     ],
-    "checked": "2026-11-09"
+    "checked": "2026-11-11"
    },
    "added": "2026-11-08T06:05:27+00:00"
   },
@@ -5475,13 +5457,15 @@
    "verify": {
     "status": "standing",
     "security": "low",
-    "security_notes": "Site has Forest Service campgrounds (Hall Valley, Handcart). No barriers reported.",
+    "security_notes": "Pike-San Isabel National Forest land. Hall Valley Road (Park County 60) ends at a day-use OHV staging area. User reports from 2025 mention snowdrifts, mud and a dirt pile blocking the road. Roads close for the season. No official 2024-2025 closure found and no barriers reported. Check the South Park Ranger District before going.",
     "legal": "public",
+    "as_of": "2025",
     "sources": [
-     "https://ghosttowns.com/states/co/hall.html",
-     "https://www.geocaching.com/geocache/GC4H4X0"
+     "https://www.fs.usda.gov/r02/psicc/recreation/hall-valley-area",
+     "https://www.onxmaps.com/offroad/trails/us/colorado/handcart-gulch-road-j0647m7w7615",
+     "https://ghosttowns.com/states/co/hall.html"
     ],
-    "checked": "2026-11-09"
+    "checked": "2026-11-11"
    },
    "added": "2026-11-08T06:05:27+00:00"
   },
@@ -6702,12 +6686,14 @@
    "verify": {
     "status": "standing",
     "security": "unknown",
+    "security_notes": "Ghost town with only a few fallen-down cabins left (undated MyTopo and 4x4explore pages). The site is beside the North Fork Swan River 4WD road off County Road 6, in White River National Forest. That road closes for the season about Nov 23 to May 20. No 2024-2026 info found. Nobody says who owns the townsite itself.",
     "legal": "unknown",
     "sources": [
      "https://ghosttowns.com/states/co/rexford.html",
+     "https://4x4explore.com/rds/n_rds/nrth_frk_swan.html",
      "https://geo.mytopo.com/feature/colorado/summit/populated-place/203910/rexford-historical/"
     ],
-    "checked": "2026-11-09"
+    "checked": "2026-11-11"
    },
    "added": "2026-11-09T14:57:12+00:00"
   },
@@ -7215,14 +7201,15 @@
    "verify": {
     "status": "unknown",
     "security": "unknown",
-    "security_notes": "The newest info is 2015-2016 explorer and blog posts. I found no demolition or redevelopment reports. The Great Western depot is described as the only surviving portion of the factory, which may mean the main plant buildings are gone; it is being relocated.",
+    "security_notes": "Nothing newer than 2016 found on the plant. A 2016 blog says the storage buildings were sold to Amalgamated and had recently been in use. A separate plan moves the Great Western depot about 500 ft into a city park. The 2025-2026 Madison Ave corridor road project runs nearby, and Madison Ave was to close temporarily in spring 2026. No demolition report found. Private industrial site that may still be in use: do not enter.",
     "legal": "private",
     "as_of": "2016",
     "sources": [
-     "https://www.placesthatwere.com/2016/01/abandoned-buildings-colorado-amalgamated-sugar.html?m=1",
-     "https://boettcherfoundation.org/preserving-lovelands-sweet-history/"
+     "https://www.placesthatwere.com/2016/01/abandoned-buildings-colorado-amalgamated-sugar.html",
+     "https://www.northerncoloradohistory.com/lovelands-great-western-train-depots-an-opportunity-to-help-lovelanders-thrive/",
+     "https://www.letstalkloveland.org/madison-avenue-corridor-improvement-project/news_feed/for-release-madison-avenue-between-29th-and-37th-streets-reopens-to-traffic"
     ],
-    "checked": "2026-11-09"
+    "checked": "2026-11-11"
    },
    "added": "2026-11-09T15:55:04+00:00"
   },
@@ -7860,14 +7847,15 @@
    "verify": {
     "status": "standing",
     "security": "low",
-    "security_notes": "Interpreted historic site on a self-guided trail in Castlewood Canyon State Park. Needs a park pass and is open during park hours.",
+    "security_notes": "Interpreted ruins on a self-guided trail in the state park, during park hours with a park pass. In April 2025, CPW roadwork affected the east entrance road and lots, with a one-day east-side closure for paving; it was projected to finish in May 2025. No homestead-specific closure found.",
     "legal": "public",
-    "as_of": "2015",
+    "as_of": "2025",
     "sources": [
-     "https://coloradooutdoorsmag.com/2015/05/15/castlewood-canyons-lucas-homestead",
-     "https://icoat.de/pocketmaps/co/brochure/co-caca-homestead/index.html"
+     "https://cpw.state.co.us/news/04042025/road-construction-project-impact-castlewood-canyon-state-park",
+     "https://cpw.state.co.us/state-parks/castlewood-canyon-state-park",
+     "https://CPW.state.co.us/placestogo/parks/CastlewoodCanyon/Documents/Discover_Lucas_Homestead_Booklet.pdf"
     ],
-    "checked": "2026-11-09"
+    "checked": "2026-11-11"
    },
    "added": "2026-11-09T19:46:17+00:00",
    "pin": "landmark"
@@ -7977,15 +7965,15 @@
    "verify": {
     "status": "standing",
     "security": "low",
-    "security_notes": "Steep trail. Do not take artifacts (federal law). This is avalanche terrain in winter",
+    "security_notes": "Only ruins are left. Avalanches destroyed the town in the early 1900s. The Forest Service trailhead page (updated Feb 2025) lists the trail open to hikers and says it is steep. The Town of Frisco runs guided Masontown hikes (2024-era listing). No fences or enforcement found. Do not take artifacts. Avalanche terrain in winter.",
     "legal": "public",
-    "as_of": "1968",
+    "as_of": "2025",
     "sources": [
      "https://www.fs.usda.gov/r02/whiteriver/recreation/mount-royalmasontown-th-1",
-     "https://summitpost.org/mount-royal/477543",
-     "https://ghosttowns.com/states/co/masontown.htm"
+     "https://www.townoffrisco.com/play/historic-park-and-museum/programs-and-events/",
+     "https://summitpost.org/masontown-trail/482709"
     ],
-    "checked": "2026-11-09"
+    "checked": "2026-11-11"
    },
    "added": "2026-11-09T21:01:54+00:00"
   },
@@ -8070,15 +8058,15 @@
    "verify": {
     "status": "standing",
     "security": "low",
-    "security_notes": "Stay out of any open shafts. Do not climb the headframe",
+    "security_notes": "Breckenridge History, Summit County and Town of Breckenridge open space stabilized the ore bin and headframe in summer 2022. The 2024 Historic Resources Management Plan update lists completed projects. A Summit Historical Society hike to the mine was set for Sep 20, 2025 and then postponed. Open space land: do not climb the headframe and stay out of shafts.",
     "legal": "public",
-    "as_of": "1940",
+    "as_of": "2025",
     "sources": [
      "https://www.summitdaily.com/news/sallie-barber-mine-stabilization-in-breckenridge-completed/",
-     "https://breckhistory.org/?p=4757",
-     "https://gobreck.com/trip-ideas/hiking/historic-hiking-trails-in-breckenridge/"
+     "https://summithistorical.org/events/sallie-barber-mine-hike/",
+     "https://breckhistory.org/?p=4145"
     ],
-    "checked": "2026-11-09"
+    "checked": "2026-11-11"
    },
    "added": "2026-11-09T21:01:54+00:00",
    "pin": "landmark"
@@ -8102,14 +8090,15 @@
    "verify": {
     "status": "standing",
     "security": "low",
-    "security_notes": "Sources warn that many sites are badly decayed: never enter or climb on ruins. Stay out of adits and caverns",
+    "security_notes": "Preservation work, including a new roof, was finished in 2023. The Town of Breckenridge Recreation Department ran guided snowshoe tours to Jessie Mill in 2024, 2025 and Jan-Mar 2026. It is a managed historic site: look from outside, do not enter the ruins, and stay out of adits. Nothing found specifically on the Extension Mill.",
     "legal": "public",
+    "as_of": "2026",
     "sources": [
      "https://breckhistory.org/gold-run-loop/",
-     "https://breckhistory.org/?p=65",
-     "https://4x4explore.com/rds/g_rds/golden_horseshoe.html"
+     "https://www.active.com/breckenridge-co/winter-sports/snowshoeing-classes/jessie-mill-guided-snowshoe-tour-jan-mar-2026",
+     "https://mtbproject.com/trail/5466999/gold-run-road"
     ],
-    "checked": "2026-11-09"
+    "checked": "2026-11-11"
    },
    "added": "2026-11-09T21:01:54+00:00"
   },
@@ -8616,15 +8605,15 @@
    "verify": {
     "status": "standing",
     "security": "low",
-    "security_notes": "Day-use park. Follow the park's posted hours and stay on the trails.",
+    "security_notes": "State park, open sunrise to sunset, daily vehicle pass about $10. Parking at the dam ruins is not allowed. In June 2023 floods washed out every bridge and damaged the Creek Bottom, Inner Canyon and Dam trails. A later Gazette item (undated in results) says the trails reopened after a separate flood closure with the bridges intact. A Denver Gazette visitor guide from March 2026 covers visiting the park. Check CPW trail status before going.",
     "legal": "public",
-    "as_of": "1933",
+    "as_of": "2026",
     "sources": [
-     "https://trails.colorado.gov/routes/26",
-     "https://www.atlasobscura.com/places/castlewood-canyon-dam-ruins",
-     "https://www.coloradovirtuallibrary.org/?p=48342"
+     "https://cpw.state.co.us/news/06272023/high-creek-flow-washes-out-bridges-castlewood-canyon-state-park",
+     "https://www.denvergazette.com/2026/03/01/castlewood-canyon-state-park-a-guide-to-visiting-the-park-home-to-the-dam-that-flooded-denver/",
+     "https://trails.colorado.gov/routes/26"
     ],
-    "checked": "2026-11-09"
+    "checked": "2026-11-11"
    },
    "added": "2026-11-09T21:01:54+00:00",
    "pin": "landmark"
@@ -8741,14 +8730,15 @@
    "verify": {
     "status": "standing",
     "security": "low",
-    "security_notes": "The cabins are under preservation. Do not enter unless on a guided tour.",
+    "security_notes": "Colorado state park. Guided Staunton Cabin Tours ran Aug 10, 2025, including the newly renovated family cabin. CPW listed Living History Days for Sep 2026. The cabins are kept up and open only on tours: do not go inside on your own.",
     "legal": "public",
-    "as_of": "1918",
+    "as_of": "2026",
     "sources": [
-     "https://trails.colorado.gov/routes/422",
-     "https://friendsofstauntonstatepark.org/wp-content/uploads/2020/06/FOSSP-Staunton-Cabin-Preservation-Trifold-Brochure.pdf"
+     "https://mymountaintown.com/community/calendar/eventdetail/367598/-/staunton-cabin-tours?pop=0",
+     "https://cpw.state.co.us/event/education/2026/09/living-history-days",
+     "https://trails.colorado.gov/routes/422"
     ],
-    "checked": "2026-11-09"
+    "checked": "2026-11-11"
    },
    "added": "2026-11-09T21:01:54+00:00",
    "pin": "landmark"
@@ -8802,15 +8792,15 @@
    "verify": {
     "status": "standing",
     "security": "low",
-    "security_notes": "Check OSMP trail status before going.",
+    "security_notes": "City of Boulder OSMP land. No 2025-2026 closure notice for Woods Quarry found, and Historic Boulder lists a 2026 history hike there. OSMP has seasonal closures for nesting birds, so check the OSMP closures page before going.",
     "legal": "public",
-    "as_of": "1920",
+    "as_of": "2026",
     "sources": [
      "https://bouldercolorado.gov/trail/woods-quarry",
-     "https://yourboulder.com/boulder-hike-woods-quarry/",
-     "https://www.cmc.org/education-adventure/trips/routes-places/woods-quarry-via-mcclintock-mesa-and-enchanted-mesa"
+     "https://bouldercolorado.gov/osmp/closures",
+     "https://historicboulder.org/events/category/history-hike/"
     ],
-    "checked": "2026-11-09"
+    "checked": "2026-11-11"
    },
    "added": "2026-11-09T21:01:54+00:00"
   },
@@ -8833,15 +8823,15 @@
    "verify": {
     "status": "standing",
     "security": "low",
-    "security_notes": "Check current OSMP status for flood damage. Stay on the trail.",
+    "security_notes": "The City of Boulder trail page lists Old Kiln as an OSMP trail. The kiln is described as deteriorated, and 2013 floods damaged the trail (narrow eroded section as of 2015). No 2025 closure found. Check OSMP trail status and stay on the trail.",
     "legal": "public",
     "as_of": "2015",
     "sources": [
      "https://bouldercolorado.gov/trail/old-kiln",
-     "https://hikingproject.com/trail/7005385/old-kiln-spur",
-     "https://www.geocaching.com/geocache/GC156EH_old-kiln-trail-geology-field-guide"
+     "https://www.hikingproject.com/trail/7005384/old-kiln-trail",
+     "https://www.geocaching.com/geocache/GC156EH"
     ],
-    "checked": "2026-11-09"
+    "checked": "2026-11-11"
    },
    "added": "2026-11-09T21:01:54+00:00"
   },
@@ -8863,14 +8853,13 @@
    "verify": {
     "status": "standing",
     "security": "low",
-    "security_notes": "Restored historic structure: do not climb it.",
+    "security_notes": "Nothing newer than the previous check was found. It is a kiln restored in 2009 beside the paved Kinney Run Trail in a City of Golden open space and education park (Golden Today, undated). Do not climb it.",
     "legal": "public",
     "as_of": "2009",
     "sources": [
-     "https://schweich.com/geoCOJefCambriaLimeKiln.html",
-     "https://www.coloradopreservation.org/?p=16107"
+     "https://goldentoday.com/where-are-the-city-of-goldens-open-spaces-kinney-run-north"
     ],
-    "checked": "2026-11-09"
+    "checked": "2026-11-11"
    },
    "added": "2026-11-09T21:01:54+00:00"
   },
@@ -8954,14 +8943,16 @@
    "verify": {
     "status": "standing",
     "security": "low",
-    "security_notes": "The homestead grounds are open only during scheduled events. Check the county calendar.",
-    "legal": "public",
-    "as_of": "1984",
+    "security_notes": "Boulder County says the homestead is open to the public only for certain events. A 2017 county map labels it 'No Public Access'. Events were held in 2025 (June 1, July 20, Oct 5). The July 19, 2026 event was canceled for heat and wildfire concerns. The next listed event is Oct 4, 2026. Bikes and pets are not allowed at events. Do not visit outside events.",
+    "legal": "government-owned (not open)",
+    "as_of": "2026",
     "sources": [
      "https://bouldercounty.gov/open-space/parks-and-trails/walker-ranch/",
-     "https://en.wikipedia.org/wiki/Walker_Ranch"
+     "https://bouldercounty.gov/news/event-canceled-summer-heritage-morning-at-walker-ranch-homestead-on-sunday-july-19/",
+     "https://bouldercounty.gov/news/summer-heritage-morning-at-walker-ranch-homestead-on-sunday-july-20/",
+     "https://assets.bouldercounty.gov/wp-content/uploads/2017/03/walker-ranch-map.pdf"
     ],
-    "checked": "2026-11-09"
+    "checked": "2026-11-11"
    },
    "added": "2026-11-09T21:01:54+00:00"
   },
@@ -8983,14 +8974,15 @@
    "verify": {
     "status": "standing",
     "security": "low",
-    "security_notes": "Leave the equipment in place. Check Jeffco for trail reroutes.",
+    "security_notes": "No 2025 closure found for Rawhide Trail. In 2025 Jeffco rerouted about 2,000 ft of Belcher Hill Trail (work through mid-September). Jeffco announced pile burning at White Ranch for fall/winter (Nov 3, 2025). Check Jeffco Alerts & Closures. Nothing new on the barn or equipment itself.",
     "legal": "public",
-    "as_of": "1974",
+    "as_of": "2025",
     "sources": [
      "https://www.jeffco.us/1437/White-Ranch-Park",
-     "https://www.komoot.com/highlight/5855032"
+     "https://www.denver7.com/news/local-news/white-ranch-parks-decades-old-belcher-hill-to-undergo-trail-construction",
+     "https://goldengatefire.colorado.gov/sites/goldengatefire/files/documents/Pile%20Burn%20News%20Release%2011_2025.pdf"
     ],
-    "checked": "2026-11-09"
+    "checked": "2026-11-11"
    },
    "added": "2026-11-09T21:01:54+00:00",
    "pin": "landmark"
@@ -9107,15 +9099,15 @@
    "verify": {
     "status": "standing",
     "security": "low",
-    "security_notes": "There is avalanche terrain above treeline in winter. Leave the artifacts in place.",
+    "security_notes": "2024 and 2026 articles say it is still used for backcountry skiing and as the park's only sledding hill. No 2025-2026 closure found. Rocky Mountain National Park restricts use, parking and entry by season. Rangers turn cars away when the lot fills, and an entry fee or timed entry may apply. Avalanche terrain above treeline. Leave artifacts in place.",
     "legal": "public",
-    "as_of": "2014",
+    "as_of": "2026",
     "sources": [
-     "https://www.kunc.org/arts-life/2014-08-01/a-past-still-visible-finding-estes-parks-lost-ski-resort",
-     "https://en.wikipedia.org/wiki/Hidden_Valley_(Ski_Estes_Park)",
-     "https://www.denvergazette.com/outtherecolorado/2024/03/05/rocky-mountain-national-parks-ski-area-is-no-more-but-the-fun-remains/"
+     "https://unofficialnetworks.com/2026/08/19/rocky-mountain-abandoned-ski-area/",
+     "https://www.denvergazette.com/outtherecolorado/2024/03/05/rocky-mountain-national-parks-ski-area-is-no-more-but-the-fun-remains/",
+     "https://www.cmc.org/education-adventure/trips/routes-places/rmnp-hidden-valley"
     ],
-    "checked": "2026-11-09"
+    "checked": "2026-11-11"
    },
    "added": "2026-11-09T21:01:54+00:00",
    "pin": "manual"
@@ -10748,12 +10740,12 @@
    "verify": {
     "status": "standing",
     "security": "low",
-    "security_notes": "The Henderson Mine near the trailhead is an active private industrial operation: stay off it. Do not enter any adits or shafts. Avalanche terrain in winter. Mine names come from blogs, not the Forest Service.",
+    "security_notes": "The trail is still in active use: Colorado Mountain Club listed a hike in Sept 2025. Undated trail guides describe rusted Jean Mine remnants north of the trail, about 2.7 mi in. No 2025 report on the ruins' condition. The Henderson Mine near the trailhead is private industrial land: stay off it. Do not enter adits. Avalanche terrain in winter.",
     "legal": "public",
-    "as_of": "2012",
+    "as_of": "2025",
     "sources": [
-     "https://www.theoutbound.com/colorado/hiking/hike-butler-gulch",
-     "https://www.gohikecolorado.com/butler-gulch",
+     "https://10adventures.com/hikes/front-range/butler-gulch-trail",
+     "https://www.meetup.com/denver-trail-heads/events/315276902/",
      "https://cmc.org/education-adventure/trips/routes-places/butler-gulch"
     ],
     "checked": "2026-11-11"
@@ -10780,13 +10772,11 @@
    "verify": {
     "status": "standing",
     "security": "low",
-    "security_notes": "Day-use fee. Very crowded in fall color season. Do not remove railroad artifacts: that is illegal under ARPA.",
+    "security_notes": "Pike-San Isabel National Forest has a recreation page for the site, last updated Feb 18, 2025. No 2025-2026 closure found. The earlier advice still applies: there is a day-use fee, it is crowded in fall, and taking artifacts is illegal.",
     "legal": "public",
-    "as_of": "1938",
+    "as_of": "2025",
     "sources": [
-     "https://www.fs.usda.gov/r02/psicc/recreation/kenosha-pass-railroad-station-documentary-site",
-     "https://historycolorado.org/node/7231",
-     "https://en.wikipedia.org/wiki/Kenosha_Pass"
+     "https://fs.usda.gov/r02/psicc/recreation/kenosha-pass-railroad-station-documentary-site-2"
     ],
     "checked": "2026-11-11"
    }
@@ -10811,13 +10801,12 @@
    "verify": {
     "status": "standing",
     "security": "low",
-    "security_notes": "Patented mining claims (private inholdings) are scattered along the grade, so stay on the road and obey posted signs. Open adits and shafts nearby: do not enter. Exposed above treeline, so watch for afternoon lightning.",
+    "security_notes": "Clear Creek County says the grade is today's Leavenworth Creek Road. One undated hiking listing says the bottom of the grade starts at a closed gate that keeps vehicles out. A 2013 Forest Service permit shows private mining property near Waldorf. No 2024-2026 closure or enforcement info found, so the earlier advice stands: stay on the road, respect private claims, and stay out of adits.",
     "legal": "public",
-    "as_of": "1918",
     "sources": [
+     "https://www.hikingproject.com/trail/7044337/argentine-central-railroad-grade-acrg",
      "https://en.wikipedia.org/wiki/Argentine_Central_Railway",
-     "https://www.onxmaps.com/offroad/trails/us/colorado/argentine-central-railroad-grade-trail-n2qvd0lddq95",
-     "https://www.clearcreekcounty.us/DocumentCenter/View/7807"
+     "https://www.fs.usda.gov/r02/arp/projects/42686"
     ],
     "checked": "2026-11-11"
    }
@@ -11058,13 +11047,13 @@
    "verify": {
     "status": "standing",
     "security": "low",
-    "security_notes": "Public park ruin. Do not climb on the cornerstone. This is separate from the Walker Home ruins already on the list.",
+    "security_notes": "A Jeffco Open Space park, and Jeffco's page lists the cornerstone among its historic sites. Trailforks user reports from 2026 show the Castle Trail open, with snow, ice or mud at times. No official 2025-2026 closure found. Do not climb on the cornerstone. Sources disagree on its date: the inscription says 1911, the marker says it was laid in 1914.",
     "legal": "public",
-    "as_of": "1914",
+    "as_of": "2026",
     "sources": [
      "https://www.jeffco.us/1332/Mount-Falcon-Park",
-     "https://9news.com/article/life/a-trail-in-jefferson-county-leads-to-what-could-have-been-the-summer-home-for-the-president/73-567930958",
-     "https://www.backpacker.com/trips/denver-co-mount-falcon-open-space-park-summer-white-house/?scope=anon"
+     "https://www.hmdb.org/m.asp?m=141085",
+     "https://www.trailforks.com/report/4645409/"
     ],
     "checked": "2026-11-11"
    },
@@ -11341,12 +11330,12 @@
    "verify": {
     "status": "standing",
     "security": "low",
-    "security_notes": "Its historical marker says no public access to the house. Stay on designated trails. The South Plants and North Plants areas are still held by the Army (North Plants is a landfill) and are off limits.",
-    "legal": "public",
+    "security_notes": "The historical marker (undated) calls it the only farmhouse still standing on the refuge and says there is no public access to the house. You can view it from the refuge trails but not go in. A closure listing on trails.colorado.gov says the refuge's Southwest Loop is closed until further notice, with no date given. No 2024-2026 news about the house.",
+    "legal": "government-owned (not open)",
     "sources": [
-     "https://www.fws.gov/refuge/rocky-mountain-arsenal/visit-us/activities/hiking",
+     "https://www.hmdb.org/m.asp?m=255718",
      "https://historycolorado.org/node/3939",
-     "https://www.hmdb.org/m.asp?m=255718"
+     "https://trails.colorado.gov/closures/5488t"
     ],
     "checked": "2026-11-11"
    }
@@ -11608,12 +11597,12 @@
    "verify": {
     "status": "standing",
     "security": "unknown",
+    "security_notes": "Undated blogs report a couple of buildings, falling-down cabins and mine tailings, reachable by 2WD. The Lincoln Townsite Trailhead is about 3 mi up French Gulch Rd. Nearby land (the B&B Mine area) is Breckenridge/Summit County open space. Who owns the cabins was not confirmed. No security or enforcement information found.",
     "legal": "unknown",
-    "as_of": "2010",
     "sources": [
+     "https://rockymountainprofiles.com/colorado/idaho-springs-thru-orchard/lincoln-city-colorado",
      "https://lifedeathiron.com/tag/lincoln-city-colorado",
-     "https://breckhistory.org/?p=4757",
-     "https://4x4explore.com/rds/g_rds/golden_horseshoe.html"
+     "https://cmc.org/education-adventure/trips/routes-places/b-b-mine-trailhead-breckenridge"
     ],
     "checked": "2026-11-11"
    }
@@ -11901,40 +11890,14 @@
    ],
    "added": "2026-11-11T12:58:18+00:00",
    "verify": {
-    "status": "standing",
+    "status": "unknown",
     "security": "low",
-    "security_notes": "Some buildings nearby are occupied (2010 listing).",
+    "security_notes": "Nothing new found. The SAH Archipedia entry (undated) describes the c.1910 Agate Hotel on 1st Ave and does not say whether it is occupied. Ghosttowns.com (undated) calls the town almost empty, with new homes nearby. Keeping the 2010 values: some nearby buildings are occupied.",
     "legal": "private",
     "as_of": "2010",
     "sources": [
-     "https://ghosttowns.com/states/co/agate.html",
-     "https://sah-archipedia.org/buildings/CO-01-EL09"
-    ],
-    "checked": "2026-11-11"
-   }
-  },
-  {
-   "id": "former-stone-bank-building-188-main-st-elbert",
-   "name": "Former stone bank building, 188 Main St., Elbert",
-   "cat": "other",
-   "type": "abandoned bank / commercial building",
-   "lat": 39.21915,
-   "lon": -104.53672,
-   "approx": true,
-   "location": "188 Main St., northeast corner of East Broadway, Elbert",
-   "condition": "SAH Archipedia describes a one-story stone building from 1907 with a Neoclassical arched entry and a parapet with cannonball finials. It is abandoned and decaying behind two juniper trees. The entry ties it to the Elbert County Bank (1907 to 1947, later a garage), though the sources do not fully agree.",
-   "access": "Private building in town. View from the public sidewalk.",
-   "sources": [
-    "https://sah-archipedia.org/node/8630"
-   ],
-   "added": "2026-11-11T12:58:23+00:00",
-   "verify": {
-    "status": "standing",
-    "security": "unknown",
-    "legal": "private",
-    "as_of": "1947",
-    "sources": [
-     "https://sah-archipedia.org/node/8630"
+     "https://sah-archipedia.org/buildings/CO-01-EL09",
+     "https://ghosttowns.com/states/co/agate.html"
     ],
     "checked": "2026-11-11"
    }
