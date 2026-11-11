@@ -7,8 +7,8 @@
    "name": "Lakeside Speedway",
    "cat": "leisure",
    "type": "race track",
-   "lat": 39.7785,
-   "lon": -105.0545,
+   "lat": 39.78045,
+   "lon": -105.05403,
    "approx": true,
    "location": "Inside the Lakeside Amusement Park grounds, 4601 Sheridan Blvd, Lakeside",
    "condition": "Closed in 1988 and still sitting abandoned next to the amusement park; used as a graveyard for old vehicles.",
@@ -31,7 +31,8 @@
     ],
     "checked": "2026-11-10"
    },
-   "added": "2026-11-08T02:29:06+00:00"
+   "added": "2026-11-08T02:29:06+00:00",
+   "pin": "landmark"
   },
   {
    "id": "south-platte-hotel",
@@ -179,8 +180,8 @@
    "name": "Geneva Basin Ski Area",
    "cat": "leisure",
    "type": "ski area",
-   "lat": 39.50985,
-   "lon": -105.71087,
+   "lat": 39.59489,
+   "lon": -105.71111,
    "approx": true,
    "location": "Guanella Pass Road north of Grant, Grant area, Park County",
    "condition": "Closed after 1983/84; the ski patrol building at the top of the old lift still stands (2019-2024).",
@@ -201,7 +202,8 @@
     ],
     "checked": "2026-11-09"
    },
-   "added": "2026-11-08T02:47:28+00:00"
+   "added": "2026-11-08T02:47:28+00:00",
+   "pin": "landmark"
   },
   {
    "id": "echo-lake-lodge",
@@ -345,8 +347,8 @@
    "name": "Yankee Girl Mine headframe",
    "cat": "industrial",
    "type": "mine",
-   "lat": 37.91469,
-   "lon": -107.69638,
+   "lat": 37.89892,
+   "lon": -107.71191,
    "approx": true,
    "location": "Yankee Girl Mine, Ouray County, Red Mountain Pass, Ouray County",
    "condition": "Mine closed ~1914; the timber headframe still stands and has been stabilized.",
@@ -367,7 +369,8 @@
     ],
     "checked": "2026-11-09"
    },
-   "added": "2026-11-08T02:47:28+00:00"
+   "added": "2026-11-08T02:47:28+00:00",
+   "pin": "landmark"
   },
   {
    "id": "national-bell-mine",
@@ -432,8 +435,8 @@
    "name": "Red Mountain Town jail",
    "cat": "ruins",
    "type": "ghost town",
-   "lat": 37.89892,
-   "lon": -107.71191,
+   "lat": 37.89708,
+   "lon": -107.70975,
    "approx": false,
    "location": "Red Mountain Town, Colorado, Red Mountain Town, Ouray County",
    "condition": "Most of the town burned in 1939; the jail is reported as the only structure still standing.",
@@ -774,8 +777,8 @@
    "name": "Boston Mine (Mayflower Gulch)",
    "cat": "industrial",
    "type": "mine",
-   "lat": 39.4302,
-   "lon": -106.163,
+   "lat": 39.47809,
+   "lon": -106.16289,
    "approx": true,
    "location": "Mayflower Gulch trailhead on CO 91 south of Copper Mountain, Summit County; the mine is about 1.8 miles up the trail",
    "condition": "About six decaying cabins, collapsed miners' quarters and rusting equipment above treeline (2023).",
@@ -795,7 +798,8 @@
     ],
     "checked": "2026-11-09"
    },
-   "added": "2026-11-08T02:47:28+00:00"
+   "added": "2026-11-08T02:47:28+00:00",
+   "pin": "landmark"
   },
   {
    "id": "saints-john-ghost-town",
@@ -860,8 +864,8 @@
    "name": "Reiling Gold Dredge",
    "cat": "other",
    "type": "site",
-   "lat": 39.48113,
-   "lon": -106.01964,
+   "lat": 39.48527,
+   "lon": -105.99314,
    "approx": true,
    "location": "French Gulch, Breckenridge, Breckenridge, Summit County",
    "condition": "Gold dredge boat abandoned in a pond in 1922; stabilized in 2022.",
@@ -881,7 +885,8 @@
     ],
     "checked": "2026-11-09"
    },
-   "added": "2026-11-08T02:47:28+00:00"
+   "added": "2026-11-08T02:47:28+00:00",
+   "pin": "landmark"
   },
   {
    "id": "camp-hale-ruins",
@@ -1747,8 +1752,8 @@
    "name": "Former Lathrop Park juvenile facility",
    "cat": "other",
    "type": "site",
-   "lat": 37.62508,
-   "lon": -104.78215,
+   "lat": 37.61321,
+   "lon": -104.83728,
    "approx": true,
    "location": "Walsenburg, just east of the hospital, Walsenburg, Huerfano County",
    "condition": "Closed boys' juvenile facility, buildings left empty (undated local article; may since have been reused).",
@@ -1769,7 +1774,8 @@
      "https://worldjournalnewspaper.com/?p=5829"
     ],
     "checked": "2026-11-09"
-   }
+   },
+   "pin": "landmark"
   },
   {
    "id": "deputy-warden-s-house",
@@ -2258,8 +2264,8 @@
    "name": "Colorado Central Mill (Silverdale)",
    "cat": "industrial",
    "type": "mill",
-   "lat": 39.70623,
-   "lon": -105.69712,
+   "lat": 39.59305,
+   "lon": -105.70895,
    "approx": true,
    "location": "Silverdale Trailhead off Guanella Pass Road above Georgetown",
    "condition": "Concrete 1920s mill structure and rusted iron left from the Silverdale mining camp.",
@@ -2280,7 +2286,8 @@
     ],
     "checked": "2026-11-10"
    },
-   "added": "2026-11-08T03:06:53+00:00"
+   "added": "2026-11-08T03:06:53+00:00",
+   "pin": "landmark"
   },
   {
    "id": "hessie-townsite-cabins",
@@ -2345,8 +2352,8 @@
    "name": "Iowa Hill mining site",
    "cat": "industrial",
    "type": "mine",
-   "lat": 39.48291,
-   "lon": -106.04655,
+   "lat": 39.41039,
+   "lon": -105.96844,
    "approx": true,
    "location": "Iowa Hill trail off Boreas Pass Road, Breckenridge",
    "condition": "Abandoned hydraulic placer mining area with sluices and an 1870s boarding house.",
@@ -2366,7 +2373,8 @@
     ],
     "checked": "2026-11-09"
    },
-   "added": "2026-11-08T03:06:53+00:00"
+   "added": "2026-11-08T03:06:53+00:00",
+   "pin": "landmark"
   },
   {
    "id": "leadville-mill",
@@ -2595,8 +2603,8 @@
    "name": "Birch Ruins",
    "cat": "houses",
    "type": "house",
-   "lat": 40.37719,
-   "lon": -105.52322,
+   "lat": 40.37934,
+   "lon": -105.5195,
    "approx": true,
    "location": "Knoll-Willows Open Space, Estes Park",
    "condition": "Stone walls and fireplace of a bungalow left standing since a 1907 fire (2023).",
@@ -2616,15 +2624,16 @@
     ],
     "checked": "2026-11-09"
    },
-   "added": "2026-11-08T03:06:53+00:00"
+   "added": "2026-11-08T03:06:53+00:00",
+   "pin": "landmark"
   },
   {
    "id": "rio-cucharas-inn",
    "name": "Rio Cucharas Inn",
    "cat": "leisure",
    "type": "hotel",
-   "lat": 37.62196,
-   "lon": -104.78215,
+   "lat": 37.61137,
+   "lon": -104.83512,
    "approx": true,
    "location": "Off US 160 heading east, a little past Lathrop State Park, Walsenburg",
    "condition": "Closed to guests around 2016-2018; 2020 drone footage shows trash, Kokopelli murals on the adobe walls and swallows nesting in the rafters. Once had an Olympic-size indoor pool.",
@@ -2646,7 +2655,8 @@
      "https://mix1043fm.com/abandoned-colorado-rio-cucharas-inn/"
     ],
     "checked": "2026-11-09"
-   }
+   },
+   "pin": "landmark"
   },
   {
    "id": "a-frame-lounge",
@@ -2765,8 +2775,8 @@
    "name": "Altona Schoolhouse",
    "cat": "institutional",
    "type": "school",
-   "lat": 40.22443,
-   "lon": -105.27053,
+   "lat": 40.14941,
+   "lon": -105.30013,
    "approx": true,
    "location": "Heil Valley Ranch open space, near Lyons",
    "condition": "Abandoned historic schoolhouse and ranch buildings (virtual tour, undated).",
@@ -2786,7 +2796,8 @@
     ],
     "checked": "2026-11-09"
    },
-   "added": "2026-11-08T03:06:53+00:00"
+   "added": "2026-11-08T03:06:53+00:00",
+   "pin": "landmark"
   },
   {
    "id": "model",
@@ -4023,8 +4034,8 @@
    "name": "Blistered Horn Mill",
    "cat": "industrial",
    "type": "mill",
-   "lat": 38.75523,
-   "lon": -106.47985,
+   "lat": 38.68933,
+   "lon": -106.48416,
    "approx": true,
    "location": "About 4 miles south of Tincup, off Gunnison County Road 765, about 4 miles north of Cumberland Pass, near Tincup, Gunnison County",
    "condition": "Stamp mill built around 1890 by the Brunswick Mining and Milling Co. It is abandoned and partially collapsed (Wikipedia, undated).",
@@ -4042,7 +4053,8 @@
     ],
     "checked": "2026-11-09"
    },
-   "added": "2026-11-08T03:46:17+00:00"
+   "added": "2026-11-08T03:46:17+00:00",
+   "pin": "landmark"
   },
   {
    "id": "marble-mill-site-colorado-yule-marble-co-finishing-mill",
@@ -4510,7 +4522,8 @@
     ],
     "checked": "2026-11-09"
    },
-   "added": "2026-11-08T04:12:21+00:00"
+   "added": "2026-11-08T04:12:21+00:00",
+   "pin": "landmark"
   },
   {
    "id": "saint-mary-s-glacier-ski-area-the-slopes-at-st-mary-s-glacie",
@@ -4637,8 +4650,8 @@
    "name": "O.A. Greager Scout Camp (Miramonte Lake Boy Scout Camp)",
    "cat": "other",
    "type": "camp",
-   "lat": 38.13055,
-   "lon": -108.2923,
+   "lat": 37.96999,
+   "lon": -108.34104,
    "approx": true,
    "location": "Lakefront at Miramonte Reservoir (Dan Noble State Wildlife Area), south of Norwood, Norwood area, San Miguel County",
    "condition": "Telluride News calls this formerly popular summer camp 'idle' and 'in limbo for a half dozen years'. Locals objected to its abandonment and to the Western Colorado Boy Scout council's failure to refurbish or reopen it. The article is undated (year unknown), and no follow-up on a sale or demolition was found.",
@@ -4656,7 +4669,8 @@
     ],
     "checked": "2026-11-09"
    },
-   "added": "2026-11-08T04:12:21+00:00"
+   "added": "2026-11-08T04:12:21+00:00",
+   "pin": "landmark"
   },
   {
    "id": "jaffa-opera-house",
@@ -4800,7 +4814,8 @@
     ],
     "checked": "2026-11-09"
    },
-   "added": "2026-11-08T04:12:21+00:00"
+   "added": "2026-11-08T04:12:21+00:00",
+   "pin": "landmark"
   },
   {
    "id": "chandler-coal-camp-ruins",
@@ -5177,8 +5192,8 @@
    "name": "East Portal Camp Cabins (Moffat Tunnel)",
    "cat": "houses",
    "type": "cabin",
-   "lat": 39.90217,
-   "lon": -105.64632,
+   "lat": 39.93373,
+   "lon": -105.68323,
    "approx": true,
    "location": "East Portal of the Moffat Tunnel, at the end of Tolland/Rollins Pass road, East Portal (near Rollinsville), Gilpin County",
    "condition": "Five worker cabins remain. Tunnel workers' families lived in them until the early 2000s. A 2023 request asked the Gilpin County Historic Preservation Commission to designate them a local landmark. This is a railroad camp, not a mining site.",
@@ -5198,7 +5213,8 @@
     ],
     "checked": "2026-11-09"
    },
-   "added": "2026-11-08T06:05:27+00:00"
+   "added": "2026-11-08T06:05:27+00:00",
+   "pin": "landmark"
   },
   {
    "id": "golden-gilpin-mill",
@@ -5264,8 +5280,8 @@
    "name": "7:30 Mine Trail ruins",
    "cat": "industrial",
    "type": "mine",
-   "lat": 39.6961,
-   "lon": -105.72584,
+   "lat": 39.71471,
+   "lon": -105.73556,
    "approx": true,
    "location": "7:30 Mine Road/Trail climbing Republican Mountain above Silver Plume toward Brown Gulch, ending at the Griffin Memorial",
    "condition": "Mine ruins, an abandoned cabin and old ore carts along the old mining road. Most mine openings are closed with grates. The roadbed is crumbling and exposed. Date of the information is unclear (recent trail guides).",
@@ -5287,15 +5303,16 @@
     ],
     "checked": "2026-11-09"
    },
-   "added": "2026-11-08T06:05:27+00:00"
+   "added": "2026-11-08T06:05:27+00:00",
+   "pin": "landmark"
   },
   {
    "id": "waldorf-ghost-town-and-mine",
    "name": "Waldorf ghost town and mine",
    "cat": "ruins",
    "type": "ghost town",
-   "lat": 39.70623,
-   "lon": -105.69942,
+   "lat": 39.59511,
+   "lon": -105.7143,
    "approx": true,
    "location": "Leavenworth Creek Road off Guanella Pass Road (turnoff about 0.7 mi south of Georgetown Reservoir), at about 11,666 ft below McClellan Mountain, near Georgetown, Clear Creek County",
    "condition": "A few original buildings and mine structures remain. A 2007 SummitPost visit describes the remains as standing silent and empty. Archive photos also show collapsed buildings.",
@@ -5318,7 +5335,8 @@
     ],
     "checked": "2026-11-09"
    },
-   "added": "2026-11-08T06:05:27+00:00"
+   "added": "2026-11-08T06:05:27+00:00",
+   "pin": "landmark"
   },
   {
    "id": "conqueror-mine-complex-north-empire",
@@ -5355,8 +5373,8 @@
    "name": "Anglo Saxon mill and mine ruins / Saxon Mountain cabins",
    "cat": "industrial",
    "type": "mill",
-   "lat": 39.67546,
-   "lon": -105.64583,
+   "lat": 39.72332,
+   "lon": -105.66945,
    "approx": true,
    "location": "Saxon Mountain Road: side road about 200 yd east off a switchback about 2 mi up leads to the mill and mine ruins; several abandoned cabins on the right about 1 mi farther, Georgetown / Lawson, Clear Creek County",
    "condition": "Ruins of the Anglo Saxon mill and mine, and several abandoned cabins (2012 off-road report).",
@@ -5376,15 +5394,16 @@
     ],
     "checked": "2026-11-09"
    },
-   "added": "2026-11-08T06:05:27+00:00"
+   "added": "2026-11-08T06:05:27+00:00",
+   "pin": "landmark"
   },
   {
    "id": "blue-bird-mine-complex",
    "name": "Blue Bird Mine complex",
    "cat": "industrial",
    "type": "mine",
-   "lat": 39.96138,
-   "lon": -105.51083,
+   "lat": 39.99422,
+   "lon": -105.53896,
    "approx": true,
    "location": "Caribou Ranch Open Space: about 2 mi from the parking lot via the Switzerland Trail railbed (DeLonde/Blue Bird loop), on a 0.1-mi spur, near Nederland, Boulder County",
    "condition": "A preserved collection of mine buildings and debris, including a bunkhouse later used as a boarding house. Boulder County calls it well preserved. Trip reports are from 2010-2025. This is a protected historic site, not a museum.",
@@ -5406,7 +5425,8 @@
     ],
     "checked": "2026-11-09"
    },
-   "added": "2026-11-08T06:05:27+00:00"
+   "added": "2026-11-08T06:05:27+00:00",
+   "pin": "landmark"
   },
   {
    "id": "cardinal-mill",
@@ -5531,8 +5551,8 @@
    "name": "Devil's Slide Trestles (Moffat Road)",
    "cat": "rail",
    "type": "railroad",
-   "lat": 39.93218,
-   "lon": -105.5372,
+   "lat": 39.93189,
+   "lon": -105.68107,
    "approx": true,
    "location": "Rollins Pass Road east side, about 16 mi from Rollinsville, ~11,600 ft, roughly 1,000 ft above Middle Boulder Creek; short hike from parking area",
    "condition": "1905 wooden trestles still standing but decaying, unstable and closed to crossing; viewable from trail on either side (Denver Gazette, July 2025).",
@@ -5553,15 +5573,16 @@
     ],
     "checked": "2026-11-09"
    },
-   "added": "2026-11-08T06:05:27+00:00"
+   "added": "2026-11-08T06:05:27+00:00",
+   "pin": "landmark"
   },
   {
    "id": "riflesight-notch-trestle-and-collapsed-tunnel-33",
    "name": "Riflesight Notch Trestle and collapsed Tunnel 33",
    "cat": "rail",
    "type": "railroad",
-   "lat": 39.91804,
-   "lon": -105.78556,
+   "lat": 39.93395,
+   "lon": -105.68642,
    "approx": true,
    "location": "Rollins Pass Road (west side), about 7 mi from Winter Park; Riflesight trail (1.73 mi, west side) passes two small 'twin' trestles and ends at collapsed Tunnel No. 33 beneath the trestle",
    "condition": "Loop trestle still standing but dilapidated and unpassable; tunnel beneath caved in after closure; twin trestles nearby. Reports 2007-2022, no 2024-specific report.",
@@ -5584,15 +5605,16 @@
     ],
     "checked": "2026-11-09"
    },
-   "added": "2026-11-08T06:05:27+00:00"
+   "added": "2026-11-08T06:05:27+00:00",
+   "pin": "landmark"
   },
   {
    "id": "switzerland-trail-grade-colorado-northwestern-denver-boulder",
    "name": "Switzerland Trail grade (Colorado & Northwestern / Denver, Boulder & Western)",
    "cat": "rail",
    "type": "railroad",
-   "lat": 40.10256,
-   "lon": -105.36321,
+   "lat": 40.02296,
+   "lon": -105.50272,
    "approx": true,
    "location": "Switzerland Trail county road / OHV route between Sunset, Gold Hill Road and Glacier Lake (Boulder County Rd 93 north section), Sunset / Gold Hill / Ward, Boulder County",
    "condition": "Line closed 1919, rails pulled; roadbed survives with rock cuts, trestle ruins and visible embankment rockwork; a townsite building remains at Sunset. 5280 and Boulder Reporting Lab (July 2026) coverage.",
@@ -5614,15 +5636,16 @@
     ],
     "checked": "2026-11-09"
    },
-   "added": "2026-11-08T06:05:27+00:00"
+   "added": "2026-11-08T06:05:27+00:00",
+   "pin": "landmark"
   },
   {
    "id": "hagerman-tunnel-and-colorado-midland-grade-with-douglass-cit",
    "name": "Hagerman Tunnel and Colorado Midland grade (with Douglass City ruins)",
    "cat": "other",
    "type": "tunnel",
-   "lat": 39.25082,
-   "lon": -106.29482,
+   "lat": 39.26342,
+   "lon": -106.48319,
    "approx": true,
    "location": "Colorado Midland Centennial Trail from trailhead on Hagerman Pass Road (past Native/Windsor Lakes turnoff); tunnel at 11,528 ft, Leadville, Lake County",
    "condition": "Abandoned 1887 tunnel (bypassed 1893), open at both ends but west end caved in 1943 - do not enter; trail passes trestle remains, snowshed remains, rock cuts and Douglass City worker-camp ruins. Trip reports to 2020-2022.",
@@ -5645,15 +5668,16 @@
     ],
     "checked": "2026-11-09"
    },
-   "added": "2026-11-08T06:05:27+00:00"
+   "added": "2026-11-08T06:05:27+00:00",
+   "pin": "landmark"
   },
   {
    "id": "colorado-midland-railroad-tunnels-buena-vista",
    "name": "Colorado Midland Railroad Tunnels (Buena Vista)",
    "cat": "other",
    "type": "tunnel",
-   "lat": 38.84222,
-   "lon": -106.13343,
+   "lat": 38.84554,
+   "lon": -106.12316,
    "approx": true,
    "location": "County Road 371 north of Buena Vista along the Arkansas River; Midland grade bike trail (8.8 mi) from River Park/Shields Gulch",
    "condition": "Rock tunnels from the Colorado Midland (abandoned c.1918-1922) still standing; can be driven, biked or walked through; trestles scrapped in WWII. Info to roughly 2021-2024.",
@@ -5677,7 +5701,8 @@
     ],
     "checked": "2026-11-09"
    },
-   "added": "2026-11-08T06:05:27+00:00"
+   "added": "2026-11-08T06:05:27+00:00",
+   "pin": "landmark"
   },
   {
    "id": "colorado-midland-tunnels-in-ute-pass",
@@ -5744,8 +5769,8 @@
    "name": "Boreas Pass railroad relics (Baker's Tank, engine house ruins)",
    "cat": "rail",
    "type": "railroad",
-   "lat": 39.45664,
-   "lon": -105.90816,
+   "lat": 39.40855,
+   "lon": -105.96628,
    "approx": true,
    "location": "Boreas Pass Road (DSP&P/C&S grade); Baker's Tank at MP 102.16 ~3-4 mi below summit on Breckenridge side; engine house ruins across road from summit section house, Breckenridge / Como, Summit-Park County",
    "condition": "Last train 1937; wooden Baker's water tank still stands (restored 1958); foundations/remains of 1883 engine house (burned 1909) visible at summit; summit section house is a restored hut.",
@@ -5769,7 +5794,8 @@
     ],
     "checked": "2026-11-09"
    },
-   "added": "2026-11-08T06:05:27+00:00"
+   "added": "2026-11-08T06:05:27+00:00",
+   "pin": "landmark"
   },
   {
    "id": "sargents-d-rgw-water-tank",
@@ -5864,8 +5890,8 @@
    "name": "Wilson Gulch Trestle (D&RGW Farmington Branch)",
    "cat": "rail",
    "type": "railroad",
-   "lat": 37.27695,
-   "lon": -107.8766,
+   "lat": 37.24316,
+   "lon": -107.81957,
    "approx": true,
    "location": "Wilson Gulch south of Durango on the former Farmington Branch right-of-way (county-owned strip)",
    "condition": "Century-old wooden trestle (c.1905) still standing; branch abandoned 1968, rails removed by 1971.",
@@ -5885,7 +5911,8 @@
     ],
     "checked": "2026-11-09"
    },
-   "added": "2026-11-08T06:05:27+00:00"
+   "added": "2026-11-08T06:05:27+00:00",
+   "pin": "landmark"
   },
   {
    "id": "devil-s-creek-railroad-trestle",
@@ -5949,8 +5976,8 @@
    "name": "Tennessee Pass railroad tunnels (original 1890 bore)",
    "cat": "other",
    "type": "tunnel",
-   "lat": 39.35564,
-   "lon": -106.33105,
+   "lat": 39.36227,
+   "lon": -106.31103,
    "approx": true,
    "location": "Tennessee Pass on the dormant D&RGW/UP Tennessee Pass line beside US 24; 1945 tunnel 50 ft west of original; Belden Tunnel near Gilman, Leadville / Red Cliff, Lake-Eagle County",
    "condition": "Line silent since 1997; original 1890 tunnel portals buried, part collapsed 2012 causing a highway sinkhole and was sealed; 1945 tunnel stands with snow curtain. Reddit exploration post May 2025.",
@@ -5974,7 +6001,8 @@
     ],
     "checked": "2026-11-09"
    },
-   "added": "2026-11-08T06:05:27+00:00"
+   "added": "2026-11-08T06:05:27+00:00",
+   "pin": "landmark"
   },
   {
    "id": "uintah-railway-grade-and-trestle-sites-baxter-pass",
@@ -6042,8 +6070,8 @@
    "name": "Cave of the Winds abandoned exit road and farewell sign",
    "cat": "other",
    "type": "site",
-   "lat": 38.85858,
-   "lon": -104.92017,
+   "lat": 38.88875,
+   "lon": -104.91884,
    "approx": true,
    "location": "The former exit road of the Cave of the Winds attraction in Williams Canyon, about 3 miles up to Rampart Range Road, Manitou Springs, El Paso County",
    "condition": "The road is abandoned and full of rockfall, with a stream running over it. The old sign bidding visitors farewell still stands. Graffiti reported as recent as 2018.",
@@ -6066,7 +6094,8 @@
     ],
     "checked": "2026-11-09"
    },
-   "added": "2026-11-08T06:05:27+00:00"
+   "added": "2026-11-08T06:05:27+00:00",
+   "pin": "landmark"
   },
   {
    "id": "former-russell-stover-candy-plant",
@@ -7228,8 +7257,8 @@
    "name": "Argo Mine (Kismet Mine) remnants",
    "cat": "industrial",
    "type": "mine",
-   "lat": 40.11554,
-   "lon": -105.3886,
+   "lat": 40.10991,
+   "lon": -105.35754,
    "approx": true,
    "location": "Jamestown Mining District, near Jamestown off Left Hand Canyon / James Canyon",
    "condition": "Opened in 1875 as the Kismet Mine (gold and silver) and switched to fluorspar in 1911; it produced copper, fluorine, gold, lead and silver in the 1940s. A 2021 photo shows remnants still standing (newest info 2021).",
@@ -7251,7 +7280,8 @@
     ],
     "checked": "2026-11-09"
    },
-   "added": "2026-11-09T15:55:04+00:00"
+   "added": "2026-11-09T15:55:04+00:00",
+   "pin": "landmark"
   },
   {
    "id": "belvidere-theatre",
@@ -7527,8 +7557,8 @@
    "name": "Former El Paso County Public Health buildings",
    "cat": "other",
    "type": "site",
-   "lat": 38.8335,
-   "lon": -104.7954,
+   "lat": 38.82764,
+   "lon": -104.79925,
    "approx": true,
    "location": "301 S. Union Blvd, across from Memorial Park, Colorado Springs, El Paso County",
    "condition": "1961 buildings described in July 2024 as abandoned for years and ravaged by vandals, with broken glass everywhere and doors standing open. They were then slated for demolition for an apartment and retail project, but demolition was not confirmed. Newest info: 2024. Verify they are still standing.",
@@ -7547,7 +7577,8 @@
     ],
     "checked": "2026-11-09"
    },
-   "added": "2026-11-09T18:54:28+00:00"
+   "added": "2026-11-09T18:54:28+00:00",
+   "pin": "landmark"
   },
   {
    "id": "john-wolfe-house-harlan-wolfe-house",
@@ -7583,8 +7614,8 @@
    "name": "Former Lorraine (East) Elementary School",
    "cat": "institutional",
    "type": "school",
-   "lat": 38.68222,
-   "lon": -104.70081,
+   "lat": 38.7236,
+   "lon": -104.69938,
    "approx": true,
    "location": "East Iowa Ave, just east of Fountain Mesa Rd",
    "condition": "A long-unused former school. Residents at a November 17, 2025 meeting called parts of it an eyesore and a costly maintenance problem. The city got about $2M from the EPA for cleanup and renovation, but no renovation is reported yet. Newest info: 2025.",
@@ -7605,7 +7636,8 @@
     ],
     "checked": "2026-11-09"
    },
-   "added": "2026-11-09T18:54:28+00:00"
+   "added": "2026-11-09T18:54:28+00:00",
+   "pin": "landmark"
   },
   {
    "id": "palace-hotel-palace-block",
@@ -7698,8 +7730,8 @@
    "name": "Former Convergys call center",
    "cat": "other",
    "type": "site",
-   "lat": 38.2395,
-   "lon": -104.602,
+   "lat": 38.24325,
+   "lon": -104.6196,
    "approx": true,
    "location": "1228 E. Orman Ave at Northern Ave, across from Ray Aguilera Park, Pueblo (Bessemer), Pueblo County",
    "condition": "Has sat vacant for years with the roof caved in; the city calls it an eyesore. Pueblo City Council approved a Circle K deal on Nov. 10, 2025 that calls for demolishing it. No source confirms it has been demolished yet, so it may be gone by now.",
@@ -7722,7 +7754,8 @@
      "https://constructionreporter.com/circle-k-project-in-pueblo-may-go-up-on-site-that-will-also-see-new-affordable-housing/"
     ],
     "checked": "2026-11-09"
-   }
+   },
+   "pin": "landmark"
   },
   {
    "id": "abandoned-motel-at-1420-s-nevada-ave",
@@ -7814,8 +7847,8 @@
    "name": "Lucas Homestead ruins",
    "cat": "houses",
    "type": "house",
-   "lat": 39.38942,
-   "lon": -104.74797,
+   "lat": 39.33509,
+   "lon": -104.74506,
    "approx": true,
    "location": "Castlewood Canyon State Park, Franktown, Douglas County",
    "condition": "Abandoned concrete homestead ruins featured by explorer Derelict Doug ('American Ruins - The Lucas Homestead Discovered').",
@@ -7835,15 +7868,16 @@
     ],
     "checked": "2026-11-09"
    },
-   "added": "2026-11-09T19:46:17+00:00"
+   "added": "2026-11-09T19:46:17+00:00",
+   "pin": "landmark"
   },
   {
    "id": "burke-springs-creek-ranch-abandoned-farm-and-homestead",
    "name": "Burke Springs Creek Ranch (abandoned farm and homestead)",
    "cat": "houses",
    "type": "house",
-   "lat": 40.0607,
-   "lon": -106.80821,
+   "lat": 40.07625,
+   "lon": -106.56159,
    "approx": true,
    "location": "Old Park, off the Gore Pass road (CO-134 area), Toponas, Routt County",
    "condition": "Derelict Doug post 'Abandoned Farm and Homestead - Old Park Colorado' shows a ranch falling into ruin. County not confirmed (Routt or Grand).",
@@ -7857,15 +7891,16 @@
     "legal": "unknown",
     "checked": "2026-11-09"
    },
-   "added": "2026-11-09T19:46:17+00:00"
+   "added": "2026-11-09T19:46:17+00:00",
+   "pin": "landmark"
   },
   {
    "id": "lulu-city-ghost-town",
    "name": "Lulu City ghost town",
    "cat": "ruins",
    "type": "ghost town",
-   "lat": 40.25221,
-   "lon": -105.82307,
+   "lat": 40.4466,
+   "lon": -105.847,
    "approx": true,
    "location": "Kawuneeche Valley, Rocky Mountain National Park. Colorado River Trailhead on US 34, about 9.5 mi north of the Kawuneeche Visitor Center. About 6.2 mi round trip on the Colorado River Trail, Grand Lake, Grand County",
    "condition": "Silver camp from 1879 to about 1885. Reports differ: 3 recognizable cabin ruins out of 9, or one crumbling cabin plus building platforms and foundations. Old mine shafts nearby. On the National Register since 1977",
@@ -7888,7 +7923,8 @@
     ],
     "checked": "2026-11-09"
    },
-   "added": "2026-11-09T21:01:54+00:00"
+   "added": "2026-11-09T21:01:54+00:00",
+   "pin": "manual"
   },
   {
    "id": "dutchtown-ghost-town",
@@ -7957,8 +7993,8 @@
    "name": "Pieplant mill and cabins",
    "cat": "industrial",
    "type": "mill ruins / mining camp",
-   "lat": 38.82351,
-   "lon": -106.57998,
+   "lat": 38.83885,
+   "lon": -106.57837,
    "approx": true,
    "location": "Pieplant Creek 4WD road (signed FR 742.3D in 2015) off County Road 742, north of Taylor Park Reservoir, Taylor Park / Almont, Gunnison County",
    "condition": "Camp abandoned soon after 1910. A few log cabins remain; the Forest Service re-roofed one in 2006. Part of the 200-ton mill stands among collapsed mill and mine ruins",
@@ -7981,7 +8017,8 @@
     ],
     "checked": "2026-11-09"
    },
-   "added": "2026-11-09T21:01:54+00:00"
+   "added": "2026-11-09T21:01:54+00:00",
+   "pin": "landmark"
   },
   {
    "id": "vicksburg-mining-camp",
@@ -8018,8 +8055,8 @@
    "name": "Sallie Barber Mine",
    "cat": "industrial",
    "type": "mine ruins (headframe, ore bin)",
-   "lat": 39.48107,
-   "lon": -106.04439,
+   "lat": 39.48343,
+   "lon": -105.99098,
    "approx": true,
    "location": "Sallie Barber Road. Lincoln Townsite Trailhead on French Gulch Road (about 3882 French Gulch Rd), or the V3 Trail from the B&B Trailhead, Breckenridge, Summit County",
    "condition": "Mine worked from the 1880s to the 1940s. Breckenridge History stabilized the headframe and ore bin, and a grate covers the shaft. Interpretive signs",
@@ -8042,7 +8079,8 @@
     ],
     "checked": "2026-11-09"
    },
-   "added": "2026-11-09T21:01:54+00:00"
+   "added": "2026-11-09T21:01:54+00:00",
+   "pin": "landmark"
   },
   {
    "id": "jessie-mill-and-extension-mill-gold-run-loop",
@@ -8079,8 +8117,8 @@
    "name": "Mayflower tram towers, Arrastra Gulch",
    "cat": "industrial",
    "type": "mine and tram relics",
-   "lat": 37.81153,
-   "lon": -107.66436,
+   "lat": 37.8282,
+   "lon": -107.62633,
    "approx": true,
    "location": "Arrastra Gulch road off CO 110 (Animas River road) east of Silverton, climbing to the Mayflower Mine site",
    "condition": "Many towers of the 10,100-ft Mayflower tram (the only steel-tower tram in the county) still stand along the road. The 1929-1991 Mayflower Mill below is owned by the San Juan County Historical Society",
@@ -8101,7 +8139,8 @@
     ],
     "checked": "2026-11-09"
    },
-   "added": "2026-11-09T21:01:54+00:00"
+   "added": "2026-11-09T21:01:54+00:00",
+   "pin": "landmark"
   },
   {
    "id": "grizzly-bear-mine-ruins-bear-creek-national-recreation-trail",
@@ -8160,8 +8199,8 @@
    "name": "Fulford ghost town",
    "cat": "houses",
    "type": "ghost town / cabins",
-   "lat": 39.65454,
-   "lon": -106.82804,
+   "lat": 39.50388,
+   "lon": -106.67837,
    "approx": true,
    "location": "East Brush Creek Road (FR 415), about 17 mi southeast of Eagle, near Fulford Cave Campground. Old Fulford Stagecoach Trail toward Yeoman Park",
    "condition": "Post office from 1892 to 1910. A few cabins and old buildings remain",
@@ -8182,7 +8221,8 @@
     ],
     "checked": "2026-11-09"
    },
-   "added": "2026-11-09T21:01:54+00:00"
+   "added": "2026-11-09T21:01:54+00:00",
+   "pin": "landmark"
   },
   {
    "id": "rourke-ranch-wineglass-ranch-national-historic-site",
@@ -8280,8 +8320,8 @@
    "name": "Westbrook Homestead and Barlow & Sanderson stage station ruins, Vogel Canyon",
    "cat": "other",
    "type": "homestead / stage station ruins",
-   "lat": 37.98317,
-   "lon": -103.54167,
+   "lat": 37.77018,
+   "lon": -103.51281,
    "approx": true,
    "location": "Vogel Canyon Picnic Area and trails, about 17 miles south of La Junta (off CO 109), Comanche National Grassland, Timpas area",
    "condition": "Stone walls and a fireplace of the Westbrook homestead (Depression era) are still standing, along with ruins of an 1870s Barlow & Sanderson stage station and pieces of the old stage road. The site is part of a 500-acre archaeological district (USFS/recreation.gov, checked 2026)",
@@ -8304,7 +8344,8 @@
     ],
     "checked": "2026-11-09"
    },
-   "added": "2026-11-09T21:01:54+00:00"
+   "added": "2026-11-09T21:01:54+00:00",
+   "pin": "landmark"
   },
   {
    "id": "picture-canyon-homestead-remains",
@@ -8373,8 +8414,8 @@
    "name": "Skinner Cabin",
    "cat": "houses",
    "type": "homestead cabin",
-   "lat": 39.15888,
-   "lon": -108.73364,
+   "lat": 39.11572,
+   "lon": -108.76916,
    "approx": true,
    "location": "McInnis Canyons NCA, Fruita Paleo Area / Devils Canyon area. Reached by a short foot-only loop (about 1.8 mi) or from the Devils Canyon Trailhead (the Devils Canyon trail is 6.7 mi round trip)",
    "condition": "Historic homestead cabin (one photo essay dates it to 1909). The BLM, HistoriCorps and partners restored it in 2016. One user report calls it old and unmaintained",
@@ -8397,7 +8438,8 @@
     ],
     "checked": "2026-11-09"
    },
-   "added": "2026-11-09T21:01:54+00:00"
+   "added": "2026-11-09T21:01:54+00:00",
+   "pin": "landmark"
   },
   {
    "id": "hanging-flume-montrose-placer-mining-co-flume",
@@ -8559,8 +8601,8 @@
    "name": "Castlewood Canyon Dam ruins",
    "cat": "other",
    "type": "dam ruins",
-   "lat": 39.38758,
-   "lon": -104.74581,
+   "lat": 39.33325,
+   "lon": -104.7429,
    "approx": true,
    "location": "Castlewood Canyon State Park. Reached by the Creek Bottom Trail or the Castlewood Canyon Ruins Loop (4.75 mi, moderate)., Franktown, Douglas County",
    "condition": "Both sides of an 1890 stone dam still stand. The dam failed in a storm in 1933 and flooded Denver. The breach is now a grassy path.",
@@ -8583,7 +8625,8 @@
     ],
     "checked": "2026-11-09"
    },
-   "added": "2026-11-09T21:01:54+00:00"
+   "added": "2026-11-09T21:01:54+00:00",
+   "pin": "landmark"
   },
   {
    "id": "crest-house-ruins-mount-blue-sky-summit",
@@ -8652,8 +8695,8 @@
    "name": "Frazer Barn and homestead ruins (Frazer Meadow)",
    "cat": "other",
    "type": "homestead ruins / barn",
-   "lat": 39.80799,
-   "lon": -105.45886,
+   "lat": 39.85082,
+   "lon": -105.42207,
    "approx": true,
    "location": "Frazer Meadow, Golden Gate Canyon State Park. Reached by the Horseshoe Trail, or by the Burro and Mule Deer trails from Golden Gate Canyon Road., Golden / Black Hawk area, Gilpin County",
    "condition": "State Register-listed Frazer's Barn (5GL.700) and ruins of the Frazer homestead cabin. Remnants of an old bread truck lie in the meadow (2023 hike report).",
@@ -8676,15 +8719,16 @@
     ],
     "checked": "2026-11-09"
    },
-   "added": "2026-11-09T21:01:54+00:00"
+   "added": "2026-11-09T21:01:54+00:00",
+   "pin": "landmark"
   },
   {
    "id": "staunton-historic-cabin-district",
    "name": "Staunton historic cabin district",
    "cat": "houses",
    "type": "homestead cabins",
-   "lat": 39.46681,
-   "lon": -105.3987,
+   "lat": 39.50839,
+   "lon": -105.41604,
    "approx": true,
    "location": "Historic Cabin Trail and Chase Meadow Trail, Staunton State Park. The Staunton Cabin is 1/4 mi along the Historic Cabin Trail. A 'Building Ruin' is marked on the Scenic Loop., Pine, Jefferson / Park County",
    "condition": "Brola, Blaine, Richardson and Staunton cabins. The 1918 Staunton homestead cabin is on the National Register. A separate building ruin is marked on the route map.",
@@ -8705,15 +8749,16 @@
     ],
     "checked": "2026-11-09"
    },
-   "added": "2026-11-09T21:01:54+00:00"
+   "added": "2026-11-09T21:01:54+00:00",
+   "pin": "landmark"
   },
   {
    "id": "heil-valley-ranch-lime-kiln",
    "name": "Heil Valley Ranch lime kiln",
    "cat": "other",
    "type": "kiln",
-   "lat": 40.22259,
-   "lon": -105.26837,
+   "lat": 40.14757,
+   "lon": -105.29797,
    "approx": true,
    "location": "Lime Kiln Spur off the Lichen Loop (1.3 mi), Heil Valley Ranch Open Space. Take the signed trails east of the Heil parking area, across the creek bridges., Lyons area, Boulder County",
    "condition": "Sandstone kiln once used to fire limestone into lime.",
@@ -8734,7 +8779,8 @@
     ],
     "checked": "2026-11-10"
    },
-   "added": "2026-11-09T21:01:54+00:00"
+   "added": "2026-11-09T21:01:54+00:00",
+   "pin": "landmark"
   },
   {
    "id": "woods-quarry-and-roosa-cabin",
@@ -8832,8 +8878,8 @@
    "name": "North Table Mountain old quarries",
    "cat": "other",
    "type": "quarry",
-   "lat": 39.75279,
-   "lon": -105.21842,
+   "lat": 39.79138,
+   "lon": -105.20082,
    "approx": true,
    "location": "North Table Mountain Park. The Old Quarry Road is now part of the North Table Loop, and the West Quarry and Tilting Mesa trails pass the old quarries. West Trailhead: 4788 Hwy 93., Golden, Jefferson County",
    "condition": "Two old basalt quarries on top of the mesa, now also used as climbing areas.",
@@ -8854,15 +8900,16 @@
     ],
     "checked": "2026-11-10"
    },
-   "added": "2026-11-09T21:01:54+00:00"
+   "added": "2026-11-09T21:01:54+00:00",
+   "pin": "landmark"
   },
   {
    "id": "nelson-house-hall-ranch",
    "name": "Nelson House, Hall Ranch",
    "cat": "houses",
    "type": "homestead / ranch house",
-   "lat": 40.22465,
-   "lon": -105.27372,
+   "lat": 40.21179,
+   "lon": -105.28873,
    "approx": true,
    "location": "Nelson Loop Trail, Hall Ranch Open Space, reached from the Bitterbrush Trail (about 3.7 mi to the junction)., Lyons, Boulder County",
    "condition": "The Nelson homestead house still stands, with a grain silo.",
@@ -8885,7 +8932,8 @@
     ],
     "checked": "2026-11-10"
    },
-   "added": "2026-11-09T21:01:54+00:00"
+   "added": "2026-11-09T21:01:54+00:00",
+   "pin": "landmark"
   },
   {
    "id": "walker-ranch-homestead",
@@ -8921,8 +8969,8 @@
    "name": "White Ranch abandoned barn and ranch equipment",
    "cat": "other",
    "type": "ranch buildings / equipment",
-   "lat": 39.75485,
-   "lon": -105.22377,
+   "lat": 39.81928,
+   "lon": -105.27734,
    "approx": true,
    "location": "Rawhide Trail, White Ranch Park. It is the first trail east of the West Trailhead (25373 Belcher Hill Rd). An open-air display of farm implements sits near a parking lot., Golden, Jefferson County",
    "condition": "Abandoned ranch structures, a barn in a meadow, and old wagons and equipment from a cattle ranch the county bought in 1974.",
@@ -8943,7 +8991,8 @@
     ],
     "checked": "2026-11-09"
    },
-   "added": "2026-11-09T21:01:54+00:00"
+   "added": "2026-11-09T21:01:54+00:00",
+   "pin": "landmark"
   },
   {
    "id": "fourth-of-july-mine-remnants",
@@ -8981,8 +9030,8 @@
    "name": "Evans (Evans-Gandy) Homestead, Lincoln Mountain Open Space",
    "cat": "other",
    "type": "homestead",
-   "lat": 39.22885,
-   "lon": -104.88449,
+   "lat": 39.17801,
+   "lon": -104.74377,
    "approx": true,
    "location": "Homestead Trail, which branches off the Palmer Divide Trail about 1.25 mi from the Lincoln Mountain Open Space trailhead., Larkspur, Douglas County",
    "condition": "National Register homestead, stabilized and preserved with about $400K. The trail and homestead had a ribbon-cutting on July 18, 2026.",
@@ -9003,15 +9052,16 @@
     ],
     "checked": "2026-11-09"
    },
-   "added": "2026-11-09T21:01:54+00:00"
+   "added": "2026-11-09T21:01:54+00:00",
+   "pin": "landmark"
   },
   {
    "id": "soderberg-homestead",
    "name": "Soderberg Homestead",
    "cat": "other",
    "type": "homestead / ranch buildings",
-   "lat": 40.58718,
-   "lon": -105.07701,
+   "lat": 40.53217,
+   "lon": -105.16253,
    "approx": true,
    "location": "Soderberg Trailhead, Horsetooth Mountain Open Space, 1.2 mi along Shoreline Dr on the west side of the road. This is about 95 km from Denver, at the edge of the range., Fort Collins, Larimer County",
    "condition": "Historic homestead and horse-ranch buildings, restored by HistoriCorps volunteers in September and October 2019.",
@@ -9034,15 +9084,16 @@
     ],
     "checked": "2026-11-09"
    },
-   "added": "2026-11-09T21:01:54+00:00"
+   "added": "2026-11-09T21:01:54+00:00",
+   "pin": "landmark"
   },
   {
    "id": "hidden-valley-lost-ski-area",
    "name": "Hidden Valley lost ski area",
    "cat": "leisure",
    "type": "abandoned ski area",
-   "lat": 40.37535,
-   "lon": -105.52106,
+   "lat": 40.3936,
+   "lon": -105.6556,
    "approx": true,
    "location": "Hidden Valley, off Trail Ridge Road, Rocky Mountain National Park. Old lift lines (such as the Lower T-Bar) are still used as backcountry runs. About 100 km from Denver., Estes Park, Larimer County",
    "condition": "The ski area ran until the NPS closed it in 1991 and removed its structures. Concrete lift footings, sign and snow-fence remnants, and lift-line scars remain (KUNC 2014). A sledding hill is still used.",
@@ -9065,7 +9116,8 @@
     ],
     "checked": "2026-11-09"
    },
-   "added": "2026-11-09T21:01:54+00:00"
+   "added": "2026-11-09T21:01:54+00:00",
+   "pin": "manual"
   },
   {
    "id": "matterhorn-mill-valley-view-leasing-and-mining-company-mill",
@@ -9364,8 +9416,8 @@
    "name": "Vulcan Mine remnants (burning coal mine)",
    "cat": "industrial",
    "type": "coal mine",
-   "lat": 39.57148,
-   "lon": -107.53496,
+   "lat": 39.56441,
+   "lon": -107.51122,
    "approx": true,
    "location": "South side of the Colorado River, about 2 miles from New Castle. Visible looking east up the river from Grand River Park.",
    "condition": "Abandoned after the 1896 and 1913 explosions, and the coal seam is still burning underground. Mine remnants are visible from Grand River Park; the sources are undated.",
@@ -9386,7 +9438,8 @@
      "https://www.hmdb.org/m.asp?m=120120"
     ],
     "checked": "2026-11-10"
-   }
+   },
+   "pin": "landmark"
   },
   {
    "id": "old-lutheran-medical-center-campus-former-lutheran-hospital-",
@@ -9845,8 +9898,8 @@
    "name": "4 Bar 4 Ranch (stagecoach station and hotel)",
    "cat": "leisure",
    "type": "1895 stage stop and roadhouse hotel, plus barn",
-   "lat": 39.94729,
-   "lon": -105.81542,
+   "lat": 39.903,
+   "lon": -105.793,
    "approx": true,
    "location": "Former Berthoud Pass stage route near Fraser. Exact address not verified., Near Fraser, Grand County",
    "condition": "Listed in 2014. CPI now marks it Saved, but restoration is unfinished. The Ford Barn was restored after a 2018 State Historical Fund grant. The hotel still needs stabilization and exterior work: a 2024 grant application sought money to rebuild its windows and doors. Described as vacant since ranching ended in the late 1980s.",
@@ -9869,7 +9922,8 @@
      "https://historycolorado.org/sites/default/files/media/document/2024/24-M2%20Applications%20Received%20Report%20for%20Website.pdf"
     ],
     "checked": "2026-11-10"
-   }
+   },
+   "pin": "manual"
   },
   {
    "id": "former-zerger-elementary-school",
@@ -10315,15 +10369,16 @@
      "https://denverite.com/2022/03/29/one-of-the-oldest-homes-in-park-hill-could-be-preserved-as-new-townhomes-are-built-next-to-it/"
     ],
     "checked": "2026-11-10"
-   }
+   },
+   "pin": "manual"
   },
   {
    "id": "bordenville-townsite-and-abandoned-ranches-cabins",
    "name": "Bordenville townsite and abandoned ranches/cabins",
    "cat": "ruins",
    "type": "ghost town / abandoned ranch buildings",
-   "lat": 39.2761,
-   "lon": -105.68362,
+   "lat": 39.22788,
+   "lon": -105.6097,
    "approx": true,
    "location": "Small cluster of buildings on Tarryall Road (CR/Hwy 77) between Jefferson and Tarryall Reservoir; ghosttowns.com: from Jefferson take CR-77 south 11.2 miles, Bordenville (near Jefferson), Park County",
    "condition": "lifedeathiron.com (2020, 'A Ghost Town a Day' Day 15): small cluster of buildings with numerous abandoned ranches and small cabins nearby; ghosttowns.com (undated): old post office (now part of a ranch), cemetery, a few log buildings, some mines",
@@ -10345,7 +10400,8 @@
      "https://www.parkcoarchives.org/Guide_Tarryall_Road.pdf"
     ],
     "checked": "2026-11-10"
-   }
+   },
+   "pin": "landmark"
   },
   {
    "id": "bowsher-ranch-abandoned-buildings",
@@ -10490,8 +10546,8 @@
    "name": "Perigo mill ruins and Gamble Gulch mine cabin",
    "cat": "industrial",
    "type": "mill site / mining camp",
-   "lat": 39.91525,
-   "lon": -105.49959,
+   "lat": 39.89898,
+   "lon": -105.51058,
    "approx": true,
    "location": "Gamble Gulch Road (CR 15-N), about 4 miles southwest of Rollinsville. The Perigo 4WD road branches right about 3.3 miles up Gamble Gulch.",
    "condition": "Lifedeathiron (Oct 2016) describes the twisted, shattered remains of the mill, wood structures flat on the ground, a stone or concrete foundation and 'a couple of old tumbledown tin sided shacks'. 4x4explore says little is left at the townsite except a bare section of road, with the remains of a mine shaft and cabin about a mile up the Perigo 4WD road. A 2025 real-estate listing on Gamble Gulch mentions an old stamp mill foundation and 2 cabin sites. The EPA reports the Perigo adit collapsed and drains acidic water.",
@@ -10514,7 +10570,8 @@
      "https://scribenet.response.epa.gov/PerigoMine"
     ],
     "checked": "2026-11-10"
-   }
+   },
+   "pin": "landmark"
   },
   {
    "id": "puzzler-mining-camp-boarding-house",
@@ -10550,8 +10607,8 @@
    "name": "Altman ghost town",
    "cat": "other",
    "type": "mining camp",
-   "lat": 38.70815,
-   "lon": -105.13782,
+   "lat": 38.70631,
+   "lon": -105.13566,
    "approx": true,
    "location": "On Bull Hill above Victor, next to the American Eagles Mine and Overlook inside the Cresson surface mine",
    "condition": "Ghosttowns.com says 'a few buildings remain' and that the American Eagle mine still dominates the site. Wikipedia's list of ghost towns says 'some structures remain'. A fire in 1903 destroyed much of the town. No visit date is given.",
@@ -10581,8 +10638,8 @@
    "name": "Victor Masonic Temple (Masons Building)",
    "cat": "leisure",
    "type": "fraternal lodge / commercial building",
-   "lat": 38.71021,
-   "lon": -105.14317,
+   "lat": 38.70837,
+   "lon": -105.14101,
    "approx": true,
    "location": "114-116 S. 4th St, Victor (per the SAH Archipedia entry seen in search results)",
    "condition": "Townsquare posts show an abandoned Masonic temple interior from an explorer video. The K99 version says its location is unconfirmed and only 'speculated' to be Victor. Travel blogs from 2016 and 2019 describe the Victor Masonic building as vacant, neglected and awaiting restoration. Built c.1900-1910; sources differ on the date.",
@@ -10611,8 +10668,8 @@
    "name": "Geneva City ghost town",
    "cat": "ruins",
    "type": "ghost town",
-   "lat": 39.5795,
-   "lon": -105.7705,
+   "lat": 39.59641,
+   "lon": -105.70857,
    "approx": true,
    "location": "Headwaters of Geneva Creek in a timberline bowl around 11,000-12,000 ft near Guanella Pass; reached by a rough 4WD road (July-September)",
    "condition": "lifedeathiron.com (April 2020, Day 27): Geneva City sits at the headwaters of Geneva Creek and mentions an 1899 City Hall/fire station; uncovercolorado.com (undated): many log cabins still stand, plus remnants of homes, mining facilities, a boarding house and a saloon",
@@ -10635,7 +10692,694 @@
     ],
     "checked": "2026-11-10"
    },
-   "added": "2026-11-10T12:56:40+00:00"
+   "added": "2026-11-10T12:56:40+00:00",
+   "pin": "landmark"
+  },
+  {
+   "id": "devils-head-fire-lookout",
+   "name": "Devils Head Fire Lookout",
+   "cat": "other",
+   "type": "fire lookout",
+   "lat": 39.27219,
+   "lon": -105.1054,
+   "approx": true,
+   "location": "Devils Head Trailhead at the end of Rampart Range Rd, 1.4 mi trail plus a long stairway, Sedalia, Douglas County",
+   "condition": "Standing. Originally built 1912 and listed on the National Register in 1991. A 2025 FFLA lookout report says it was closed up in fall 2024, was not staffed in 2025 and won't be in 2026. That report also raises vandalism concerns.",
+   "access": "South Platte Ranger District, Pike NF ((303) 275-5610). Rampart Range Rd. Historically open to the public mid-May to mid-September. Because it is unstaffed in 2025-26, the cab and stairs may be locked.",
+   "sources": [
+    "https://trails.colorado.gov/routes/69",
+    "https://firelookout.org/wp-content/uploads/2026/01/cr-co-2025.pdf",
+    "https://www.fs.usda.gov/r02/psicc/alerts/devils-head-peregrine-falcon-protection-seasonal-closure-order"
+   ],
+   "added": "2026-11-11T00:54:48+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "low",
+    "security_notes": "Seasonal peregrine falcon and climbing-area closure orders apply near the trailhead and rocks. Not staffed 2025-2026 per FFLA. Exposed stairway with lightning risk. Do not climb past locked gates.",
+    "legal": "public",
+    "as_of": "2026",
+    "sources": [
+     "https://trails.colorado.gov/routes/69",
+     "https://firelookout.org/wp-content/uploads/2026/01/cr-co-2025.pdf",
+     "https://www.fs.usda.gov/r02/psicc/alerts/devils-head-peregrine-falcon-protection-seasonal-closure-order"
+    ],
+    "checked": "2026-11-11"
+   },
+   "pin": "landmark"
+  },
+  {
+   "id": "jean-mine-ruins-butler-gulch",
+   "name": "Jean Mine ruins, Butler Gulch",
+   "cat": "industrial",
+   "type": "mine ruins",
+   "lat": 39.75251,
+   "lon": -105.86638,
+   "approx": true,
+   "location": "Butler Gulch trail off Jones Pass / Henderson Mine Rd (from I-70 exit 232 to US 40). Ruins near the top at about 11,963 ft., Empire / Berthoud Falls, Clear Creek County",
+   "condition": "Rusted mine remnants of the Jean Mine along the trail and at the top of the gulch (2012 trip report and current trail guides).",
+   "access": "Clear Creek Ranger District, Arapaho NF. Park near the gate. About 4-6.5 mi round trip, open year-round, popular with skiers in winter.",
+   "sources": [
+    "https://www.theoutbound.com/colorado/hiking/hike-butler-gulch",
+    "https://www.gohikecolorado.com/butler-gulch",
+    "https://cmc.org/education-adventure/trips/routes-places/butler-gulch"
+   ],
+   "added": "2026-11-11T00:54:52+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "low",
+    "security_notes": "The Henderson Mine near the trailhead is an active private industrial operation: stay off it. Do not enter any adits or shafts. Avalanche terrain in winter. Mine names come from blogs, not the Forest Service.",
+    "legal": "public",
+    "as_of": "2012",
+    "sources": [
+     "https://www.theoutbound.com/colorado/hiking/hike-butler-gulch",
+     "https://www.gohikecolorado.com/butler-gulch",
+     "https://cmc.org/education-adventure/trips/routes-places/butler-gulch"
+    ],
+    "checked": "2026-11-11"
+   },
+   "pin": "landmark"
+  },
+  {
+   "id": "kenosha-pass-railroad-station-documentary-site-dsp-p-wye",
+   "name": "Kenosha Pass Railroad Station Documentary Site (DSP&P wye)",
+   "cat": "rail",
+   "type": "railroad grade / station site",
+   "lat": 39.10525,
+   "lon": -105.75184,
+   "approx": true,
+   "location": "Kenosha Pass summit on US 285, next to the Colorado Trail trailhead, Jefferson / Grant, Park County",
+   "condition": "Remnants of the c.1879 Denver, South Park and Pacific station and wye. A short stretch of track was rebuilt by the South Park club and the Forest Service. Original tracks were removed in 1938. Listed on the State and National Registers.",
+   "access": "South Park Ranger District, Pike NF. US 285, open year-round. Day-use fee for the Colorado Trail area.",
+   "sources": [
+    "https://www.fs.usda.gov/r02/psicc/recreation/kenosha-pass-railroad-station-documentary-site",
+    "https://historycolorado.org/node/7231",
+    "https://en.wikipedia.org/wiki/Kenosha_Pass"
+   ],
+   "added": "2026-11-11T00:54:58+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "low",
+    "security_notes": "Day-use fee. Very crowded in fall color season. Do not remove railroad artifacts: that is illegal under ARPA.",
+    "legal": "public",
+    "as_of": "1938",
+    "sources": [
+     "https://www.fs.usda.gov/r02/psicc/recreation/kenosha-pass-railroad-station-documentary-site",
+     "https://historycolorado.org/node/7231",
+     "https://en.wikipedia.org/wiki/Kenosha_Pass"
+    ],
+    "checked": "2026-11-11"
+   }
+  },
+  {
+   "id": "argentine-central-railway-grade",
+   "name": "Argentine Central Railway grade",
+   "cat": "rail",
+   "type": "railroad grade",
+   "lat": 39.69426,
+   "lon": -105.72368,
+   "approx": true,
+   "location": "Leavenworth Creek Road from Silver Plume / Georgetown toward Waldorf and Mount McClellan",
+   "condition": "Narrow-gauge line that ran 1906-1918. Little is left besides the roadbed, which parts of today's roads follow.",
+   "access": "Clear Creek Ranger District, Arapaho NF. Leavenworth Creek Rd (high-clearance), summer to early fall.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Argentine_Central_Railway",
+    "https://www.onxmaps.com/offroad/trails/us/colorado/argentine-central-railroad-grade-trail-n2qvd0lddq95",
+    "https://www.clearcreekcounty.us/DocumentCenter/View/7807"
+   ],
+   "added": "2026-11-11T00:55:01+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "low",
+    "security_notes": "Patented mining claims (private inholdings) are scattered along the grade, so stay on the road and obey posted signs. Open adits and shafts nearby: do not enter. Exposed above treeline, so watch for afternoon lightning.",
+    "legal": "public",
+    "as_of": "1918",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Argentine_Central_Railway",
+     "https://www.onxmaps.com/offroad/trails/us/colorado/argentine-central-railroad-grade-trail-n2qvd0lddq95",
+     "https://www.clearcreekcounty.us/DocumentCenter/View/7807"
+    ],
+    "checked": "2026-11-11"
+   }
+  },
+  {
+   "id": "bard-creek-mine-ore-chute",
+   "name": "Bard Creek Mine ore chute",
+   "cat": "industrial",
+   "type": "mine ruins",
+   "lat": 39.75927,
+   "lon": -105.68084,
+   "approx": true,
+   "location": "Bard Creek Road 4x4 route south of Empire (Main St, bear right at the Democrat Rd fork)",
+   "condition": "Remarkably intact ore chute along the road (onX listing). A 2024 Trail Damage report describes the road.",
+   "access": "Clear Creek Ranger District, Arapaho NF. High-clearance 4WD road, about 2.3-2.5 mi, summer and fall.",
+   "sources": [
+    "https://www.onxmaps.com/offroad/trails/us/colorado/bard-creek-road",
+    "https://traildamage.com/reports/bard-creek-241006/",
+    "https://fs.usda.gov/r02/arp/recreation/trails/bard-creek-trail"
+   ],
+   "added": "2026-11-11T00:55:05+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "low",
+    "security_notes": "Trail Damage reports private property on both sides of most of the road. View the chute from the road only, do not climb on it, and do not enter mine openings. Parking is limited.",
+    "legal": "public",
+    "as_of": "2024",
+    "sources": [
+     "https://www.onxmaps.com/offroad/trails/us/colorado/bard-creek-road",
+     "https://traildamage.com/reports/bard-creek-241006/",
+     "https://fs.usda.gov/r02/arp/recreation/trails/bard-creek-trail"
+    ],
+    "checked": "2026-11-11"
+   }
+  },
+  {
+   "id": "montgomery-pass-log-cabin-ruins",
+   "name": "Montgomery Pass log cabin ruins",
+   "cat": "houses",
+   "type": "historic cabin ruins",
+   "lat": 40.67918,
+   "lon": -105.47053,
+   "approx": true,
+   "location": "Montgomery Pass East trail from CO 14 along Joe Wright Creek, at the Roosevelt NF / State Forest State Park boundary, Cameron Pass / Gould area, Larimer County",
+   "condition": "Remains of a log cabin built around 1900, per the Colorado trails listing.",
+   "access": "Canyon Lakes Ranger District, Roosevelt NF. Trail is 4.2 mi with 1,193 ft of gain. Summer and fall. In winter it is avalanche-prone backcountry ski terrain. About 125-150 km from Denver.",
+   "sources": [
+    "https://trails.colorado.gov/routes/847"
+   ],
+   "added": "2026-11-11T00:55:10+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "low",
+    "security_notes": "The ruin sits on the boundary with Colorado State Forest State Park, and the state park side requires a CPW pass. Ruins are fragile, so do not climb on them. Only one source confirms the ruin.",
+    "legal": "public",
+    "as_of": "1900",
+    "sources": [
+     "https://trails.colorado.gov/routes/847"
+    ],
+    "checked": "2026-11-11"
+   }
+  },
+  {
+   "id": "bobcat-ridge-historic-cabin-kitchen-smith-cabin",
+   "name": "Bobcat Ridge historic cabin (Kitchen/Smith Cabin)",
+   "cat": "houses",
+   "type": "historic homestead cabin",
+   "lat": 40.47763,
+   "lon": -105.23268,
+   "approx": true,
+   "location": "Bobcat Ridge Natural Area (City of Fort Collins), off the ADA-accessible trail from the main trailhead to the shelter and historic cabin, Masonville, Larimer County",
+   "condition": "A 2024 city brochure describes an ADA trail leading to a historic cabin. A 2010 blog says the cabin was built in 1917. The city's history booklet lists a Kitchen/Smith Cabin among the historic structures, so sources name it differently.",
+   "access": "City of Fort Collins Natural Areas; reached on foot by the accessible trail. A 2014 brochure keeps horses off the accessible trail and off the Ginny Trail. No fee was mentioned in any source I saw.",
+   "sources": [
+    "https://www.fcgov.com/naturalareas/files/24-26265-2024-bobcat-ridge-na-bilingual-brochure-for-print.pdf",
+    "https://www.fcgov.com/naturalareas/pdf/bobcat-history-booklet.pdf",
+    "https://www.fcgov.com/naturalareas/pdf/bcr-brochure2014.pdf"
+   ],
+   "added": "2026-11-11T00:55:13+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "low",
+    "security_notes": "Public natural area. Stay on the designated trails; trail-use limits per the 2014 brochure. Check fcgov.com for current hours (2026).",
+    "legal": "public",
+    "as_of": "2026",
+    "sources": [
+     "https://www.fcgov.com/naturalareas/files/24-26265-2024-bobcat-ridge-na-bilingual-brochure-for-print.pdf",
+     "https://www.fcgov.com/naturalareas/pdf/bobcat-history-booklet.pdf",
+     "https://www.fcgov.com/naturalareas/pdf/bcr-brochure2014.pdf"
+    ],
+    "checked": "2026-11-11"
+   },
+   "pin": "landmark"
+  },
+  {
+   "id": "delonde-homestead-barn-and-house-caribou-ranch",
+   "name": "DeLonde Homestead (barn and house), Caribou Ranch",
+   "cat": "other",
+   "type": "historic homestead / ranch buildings",
+   "lat": 39.99238,
+   "lon": -105.5368,
+   "approx": true,
+   "location": "Caribou Ranch Open Space, DeLonde Trail, about 1.2 mi from the trailhead at the homestead and pond overlook, Nederland, Boulder County",
+   "condition": "Boulder County calls it a modified homestead showing several periods of the ranch. A 2010 hiker account describes a large restored barn and a two-story home. No more recent condition report was found.",
+   "access": "Boulder County Parks & Open Space; DeLonde Trail / Blue Bird Loop. The entire property is closed every year from April 1 to June 30 for migratory birds and elk calving, and reopens July 1. No fee was mentioned.",
+   "sources": [
+    "https://bouldercounty.gov/open-space/parks-and-trails/caribou-ranch/",
+    "https://assets.bouldercounty.gov/wp-content/uploads/2017/03/caribou-ranch-trail-map.pdf",
+    "https://cyberwest.com/caribou-ranch-open-space-hike"
+   ],
+   "added": "2026-11-11T00:55:16+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "low",
+    "security_notes": "Annual closure April 1 to June 30 (in place as of 2026). Do not enter the buildings. The famous Caribou Ranch recording-studio barn is on separate private land, so do not go there.",
+    "legal": "public",
+    "as_of": "2026",
+    "sources": [
+     "https://bouldercounty.gov/open-space/parks-and-trails/caribou-ranch/",
+     "https://assets.bouldercounty.gov/wp-content/uploads/2017/03/caribou-ranch-trail-map.pdf",
+     "https://cyberwest.com/caribou-ranch-open-space-hike"
+    ],
+    "checked": "2026-11-11"
+   },
+   "pin": "landmark"
+  },
+  {
+   "id": "walker-ranch-sawmill-ruins-and-langridge-cyanide-mill-remain",
+   "name": "Walker Ranch sawmill ruins and Langridge cyanide mill remains",
+   "cat": "industrial",
+   "type": "sawmill / mill ruins",
+   "lat": 39.93861,
+   "lon": -105.34132,
+   "approx": true,
+   "location": "Walker Ranch Open Space. The sawmill ruins are early on the Meyers Homestead Trail, which starts at the Meyers Gulch trailhead, by a short side trail. The cyanide mill remains are elsewhere on the property, exact spot not confirmed., Boulder, Boulder County",
+   "condition": "The National Register nomination (1984) describes sawmill ruins and the Langridge cyanide mill among the remains. Hiking Project (photos 2015-2021) says the trail passes an old sawmill with a side trail to it. Current condition is not confirmed.",
+   "access": "Boulder County Parks & Open Space; Meyers Homestead Trail is 2.5 mi one way and rated moderate. No fee was mentioned.",
+   "sources": [
+    "https://www.hikingproject.com/trail/7005463/meyers-homestead-trail",
+    "https://en.wikipedia.org/wiki/Walker_Ranch",
+    "https://bouldercounty.gov/open-space/parks-and-trails/walker-ranch/"
+   ],
+   "added": "2026-11-11T00:55:19+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "low",
+    "security_notes": "National Register historic district: do not remove or disturb artifacts. Check Boulder County for closures before visiting (2026).",
+    "legal": "public",
+    "as_of": "2026",
+    "sources": [
+     "https://www.hikingproject.com/trail/7005463/meyers-homestead-trail",
+     "https://en.wikipedia.org/wiki/Walker_Ranch",
+     "https://bouldercounty.gov/open-space/parks-and-trails/walker-ranch/"
+    ],
+    "checked": "2026-11-11"
+   },
+   "pin": "landmark"
+  },
+  {
+   "id": "mount-lugo-ski-area-rope-tow-remnants-meyer-ranch-park",
+   "name": "Mount Lugo ski area rope-tow remnants, Meyer Ranch Park",
+   "cat": "leisure",
+   "type": "lost ski area relic",
+   "lat": 39.55019,
+   "lon": -105.2771,
+   "approx": true,
+   "location": "Meyer Ranch Park, north face of Mount Legault, near the top of the park on the Old Ski Run Trail, Aspen Park / Conifer, Jefferson County",
+   "condition": "The ski area ran 1940-1942 with one 1,200-ft rope tow. Colorado Ski History says remnants of the tow motor are still visible. No official county confirmation was found.",
+   "access": "Jefferson County Parks & Open Space; trailhead off US 285. Free.",
+   "sources": [
+    "https://coloradoskihistory.com/lost/mountlugo.html",
+    "https://westandmainhomes.com/blog/find-joy-on-the-trails-at-meyer-ranch"
+   ],
+   "added": "2026-11-11T00:55:22+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "low",
+    "security_notes": "Public park. Leave the relics in place. Check the Jeffco Alerts & Closures page (2026).",
+    "legal": "public",
+    "as_of": "2026",
+    "sources": [
+     "https://coloradoskihistory.com/lost/mountlugo.html",
+     "https://westandmainhomes.com/blog/find-joy-on-the-trails-at-meyer-ranch"
+    ],
+    "checked": "2026-11-11"
+   },
+   "pin": "landmark"
+  },
+  {
+   "id": "bergen-barn-elk-meadow-park",
+   "name": "Bergen Barn, Elk Meadow Park",
+   "cat": "other",
+   "type": "historic ranch barn",
+   "lat": 39.66502,
+   "lon": -105.36893,
+   "approx": true,
+   "location": "Elk Meadow Park, Painters Pause Trail between the Lewis Ridge Rd trailhead and the Meadow View / Founders junctions, Evergreen, Jefferson County",
+   "condition": "Hiking Project names it the old Bergen Barn, on the right side of the trail. 5280 calls it a historic barn passed on the Meadow View / Painters Pause loop. The barn is described as standing.",
+   "access": "Jefferson County Parks & Open Space; trailhead off Evergreen Parkway (Hwy 74) via Lewis Ridge Rd. Free. Dogs on leash on Painters Pause.",
+   "sources": [
+    "https://www.hikingproject.com/trail/7007025/painters-pause-trail",
+    "https://5280.com/hike-we-like-meadow-view-trail/",
+    "https://www.theoutbound.com/colorado/hiking/hike-the-south-loop-at-elk-meadow-park"
+   ],
+   "added": "2026-11-11T00:55:26+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "low",
+    "security_notes": "View from the trail and do not enter. Check Jeffco closures (2026).",
+    "legal": "public",
+    "as_of": "2026",
+    "sources": [
+     "https://www.hikingproject.com/trail/7007025/painters-pause-trail",
+     "https://5280.com/hike-we-like-meadow-view-trail/",
+     "https://www.theoutbound.com/colorado/hiking/hike-the-south-loop-at-elk-meadow-park"
+    ],
+    "checked": "2026-11-11"
+   },
+   "pin": "landmark"
+  },
+  {
+   "id": "summer-white-house-cornerstone-ruins-mount-falcon",
+   "name": "Summer White House cornerstone ruins, Mount Falcon",
+   "cat": "other",
+   "type": "unfinished building ruins",
+   "lat": 39.64254,
+   "lon": -105.2156,
+   "approx": true,
+   "location": "Mount Falcon Park, reached from the West Trailhead by the Castle Trail and the Walker's Dream spur, Indian Hills / Morrison, Jefferson County",
+   "condition": "Walker's 1914 marble cornerstone remains crumbling at the site of the never-finished presidential summer home. Sources say stone ruins remain.",
+   "access": "Jefferson County Parks & Open Space. The spur is about 0.3 mi; round trips from the West Trailhead are about 3-6 mi. Free.",
+   "sources": [
+    "https://www.jeffco.us/1332/Mount-Falcon-Park",
+    "https://9news.com/article/life/a-trail-in-jefferson-county-leads-to-what-could-have-been-the-summer-home-for-the-president/73-567930958",
+    "https://www.backpacker.com/trips/denver-co-mount-falcon-open-space-park-summer-white-house/?scope=anon"
+   ],
+   "added": "2026-11-11T00:55:29+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "low",
+    "security_notes": "Public park ruin. Do not climb on the cornerstone. This is separate from the Walker Home ruins already on the list.",
+    "legal": "public",
+    "as_of": "1914",
+    "sources": [
+     "https://www.jeffco.us/1332/Mount-Falcon-Park",
+     "https://9news.com/article/life/a-trail-in-jefferson-county-leads-to-what-could-have-been-the-summer-home-for-the-president/73-567930958",
+     "https://www.backpacker.com/trips/denver-co-mount-falcon-open-space-park-summer-white-house/?scope=anon"
+    ],
+    "checked": "2026-11-11"
+   },
+   "pin": "landmark"
+  },
+  {
+   "id": "old-mine-remnants-centennial-cone",
+   "name": "Old mine remnants, Centennial Cone",
+   "cat": "other",
+   "type": "mining ruins",
+   "lat": 39.75567,
+   "lon": -105.34804,
+   "approx": true,
+   "location": "Centennial Cone Park, in a gully on the northwest slope of the peak (exact spot and trail relation not confirmed), Golden, Jefferson County",
+   "condition": "SummitPost reports ruins of an old mine and old mining equipment in the NW gully. No official confirmation or date was found, so confidence is low.",
+   "access": "Jefferson County Parks & Open Space; trailheads at Mayhem Gulch, Douglas Mountain Dr and Robinson Hill Rd. The Elk Range Trail and park interior close February 1 to mid-June for elk calving. The whole park is closed to non-hunters in December and January. Free.",
+   "sources": [
+    "https://summitpost.org/mountain/558565",
+    "https://www.jeffco.us/1192/Centennial-Cone-Park",
+    "https://www.jeffco.us/1531/Alerts-Closures"
+   ],
+   "added": "2026-11-11T00:55:32+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "low",
+    "security_notes": "Elk closure Feb 1 to mid-June and hunting closure Dec-Jan (2026). The ruins may be off-trail, so confirm with Jeffco whether off-trail travel is allowed.",
+    "legal": "public",
+    "as_of": "2026",
+    "sources": [
+     "https://summitpost.org/mountain/558565",
+     "https://www.jeffco.us/1192/Centennial-Cone-Park",
+     "https://www.jeffco.us/1531/Alerts-Closures"
+    ],
+    "checked": "2026-11-11"
+   },
+   "pin": "landmark"
+  },
+  {
+   "id": "sandstone-ranch-historic-barns-and-silos",
+   "name": "Sandstone Ranch historic barns and silos",
+   "cat": "other",
+   "type": "historic ranch buildings",
+   "lat": 39.21873,
+   "lon": -104.95611,
+   "approx": true,
+   "location": "Sandstone Ranch Open Space, trailhead at 2028 N. Perry Park Rd (Hwy 105); trails pass near the barns, Larkspur, Douglas County",
+   "condition": "The county master plan lists three historic barns plus silos, windmills and sheds from 1870-1950. The Gove Barn dates to 1878. The trail winds near some of the barns.",
+   "access": "Douglas County Open Space; 12 mi of trails, opened 2020. Open 1 hour before sunrise to 1 hour after sunset. Pets on leash. Free.",
+   "sources": [
+    "https://www.douglas.co.us/documents/sanstone-ranch-master-plan.pdf",
+    "https://www.douglas.co.us/documents/sandstone-ranch-trail-map.pdf/",
+    "https://trailsandopenspaces.org/?p=20111"
+   ],
+   "added": "2026-11-11T00:55:35+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "low",
+    "security_notes": "View from the trails; do not enter the barns. Hours as posted (2026).",
+    "legal": "public",
+    "as_of": "2026",
+    "sources": [
+     "https://www.douglas.co.us/documents/sanstone-ranch-master-plan.pdf",
+     "https://www.douglas.co.us/documents/sandstone-ranch-trail-map.pdf/",
+     "https://trailsandopenspaces.org/?p=20111"
+    ],
+    "checked": "2026-11-11"
+   },
+   "pin": "landmark"
+  },
+  {
+   "id": "columbine-open-space-historic-red-barn-and-farm-buildings",
+   "name": "Columbine Open Space historic red barn and farm buildings",
+   "cat": "other",
+   "type": "historic farm buildings",
+   "lat": 39.28224,
+   "lon": -104.89415,
+   "approx": true,
+   "location": "Columbine Open Space, 2 Faraway Place, two loop trails along East Plum Creek (Colorado Front Range Trail), Castle Rock, Douglas County",
+   "condition": "Douglas County describes historic farm buildings on the former farm. A hiking guide describes an old historic red barn.",
+   "access": "Douglas County Open Space; open 1 hour before sunrise to 1 hour after sunset. No dogs and no water. Free.",
+   "sources": [
+    "https://www.douglas.co.us/open-space-natural-resources/properties/columbine",
+    "https://www.gohikecolorado.com/columbine-open-space",
+    "https://trailsandopenspaces.org/open-space/columbine-open-space/"
+   ],
+   "added": "2026-11-11T00:55:39+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "low",
+    "security_notes": "No dogs. Preble's meadow jumping mouse habitat, so stay on the trails (2026).",
+    "legal": "public",
+    "as_of": "2026",
+    "sources": [
+     "https://www.douglas.co.us/open-space-natural-resources/properties/columbine",
+     "https://www.gohikecolorado.com/columbine-open-space",
+     "https://trailsandopenspaces.org/open-space/columbine-open-space/"
+    ],
+    "checked": "2026-11-11"
+   },
+   "pin": "landmark"
+  },
+  {
+   "id": "william-converse-ranch-house-and-outbuildings-hidden-mesa",
+   "name": "William Converse Ranch house and outbuildings, Hidden Mesa",
+   "cat": "houses",
+   "type": "historic ranch house / homestead",
+   "lat": 39.40488,
+   "lon": -104.78675,
+   "approx": true,
+   "location": "Hidden Mesa Open Space; the trail starts at the old homestead trailhead on Parker Rd (Hwy 83), about 1 mi north of Franktown, Franktown / Castle Rock, Douglas County",
+   "condition": "An 1884-era Converse house built onto the earlier Brian homestead, with a cottage, a stable-cabin, a pump house, a granary and a chicken coop. A State Historical Fund grant is restoring the windows, porches and foundation.",
+   "access": "Douglas County Open Space; open 1 hour before sunrise to 1 hour after sunset. Dogs on leash; multi-use trails. Free.",
+   "sources": [
+    "https://www.douglas.co.us/museum/vex15",
+    "https://www.historycolorado.org/location/william-converse-ranch",
+    "https://douglas.co.us/open-space-natural-resources/properties/hidden-mesa-open-space-and-trail"
+   ],
+   "added": "2026-11-11T00:55:44+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "low",
+    "security_notes": "Restoration underway: view the outside only. Hours as posted (2026).",
+    "legal": "public",
+    "as_of": "2026",
+    "sources": [
+     "https://www.douglas.co.us/museum/vex15",
+     "https://www.historycolorado.org/location/william-converse-ranch",
+     "https://douglas.co.us/open-space-natural-resources/properties/hidden-mesa-open-space-and-trail"
+    ],
+    "checked": "2026-11-11"
+   },
+   "pin": "landmark"
+  },
+  {
+   "id": "doudy-debacker-dunn-house-and-rock-walls-south-mesa",
+   "name": "Doudy-DeBacker-Dunn House and rock walls, South Mesa",
+   "cat": "houses",
+   "type": "historic homestead house",
+   "lat": 39.93886,
+   "lon": -105.25819,
+   "approx": true,
+   "location": "City of Boulder OSMP, South Mesa Trailhead on Eldorado Springs Dr; the Towhee Trail starts right beside the Dunn House, with the Homestead Trail nearby, Boulder (Eldorado Springs), Boulder County",
+   "condition": "A preserved homestead house with extensive rock walls, an old apple orchard and old irrigation works (city analysis and city trail page).",
+   "access": "City of Boulder Open Space & Mountain Parks; free for walk-ins. Non-county vehicles may need to pay for trailhead parking, so check OSMP.",
+   "sources": [
+    "https://www.bouldercolorado.gov/trail/towhee",
+    "https://webappsprod.bouldercolorado.gov/openspace/research-reports/docs/248_EROResources-1-201307091346.pdf"
+   ],
+   "added": "2026-11-11T00:55:46+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "low",
+    "security_notes": "Exterior viewing only. Follow OSMP dog and trail rules (2026).",
+    "legal": "public",
+    "as_of": "2026",
+    "sources": [
+     "https://www.bouldercolorado.gov/trail/towhee",
+     "https://webappsprod.bouldercolorado.gov/openspace/research-reports/docs/248_EROResources-1-201307091346.pdf"
+    ],
+    "checked": "2026-11-11"
+   },
+   "pin": "landmark"
+  },
+  {
+   "id": "stockton-cabin-ruins-shadow-canyon",
+   "name": "Stockton Cabin ruins, Shadow Canyon",
+   "cat": "houses",
+   "type": "cabin ruins (1890s mining shack)",
+   "lat": 39.9435,
+   "lon": -105.283,
+   "approx": true,
+   "location": "City of Boulder OSMP, at the base of Shadow Canyon where the access road ends, on the route from South Mesa Trailhead to South Boulder Peak, Boulder (Eldorado Springs), Boulder County",
+   "condition": "Ruins of a cabin said to be built in the 1890s, with a large section of water pipe nearby (2016 trail blog). Names for the cabins at the junction vary across sources (Debacker, McGillvray).",
+   "access": "City of Boulder OSMP; Mesa Trail to Shadow Canyon Trail, steep beyond the cabin. Parking as for South Mesa.",
+   "sources": [
+    "https://colorado-lifestyle.blogspot.com/2016/04/south-boulder-peak-via-shadow-canyon.html",
+    "https://yourboulder.com/hike-boulder-south-boulder-peak/",
+    "https://www.hikingproject.com/trail/7001532/shadow-canyon"
+   ],
+   "added": "2026-11-11T00:55:48+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "low",
+    "security_notes": "Fragile ruin, so do not climb on it. OSMP may post seasonal raptor closures in this area; check OSMP closures (2026).",
+    "legal": "public",
+    "as_of": "2026",
+    "sources": [
+     "https://colorado-lifestyle.blogspot.com/2016/04/south-boulder-peak-via-shadow-canyon.html",
+     "https://yourboulder.com/hike-boulder-south-boulder-peak/",
+     "https://www.hikingproject.com/trail/7001532/shadow-canyon"
+    ],
+    "checked": "2026-11-11"
+   },
+   "pin": "manual"
+  },
+  {
+   "id": "historic-stone-hut-mount-sanitas",
+   "name": "Historic stone hut, Mount Sanitas",
+   "cat": "other",
+   "type": "century-old stone shelter",
+   "lat": 40.01253,
+   "lon": -105.2711,
+   "approx": true,
+   "location": "City of Boulder OSMP, near the Mount Sanitas Trail (Sanitas Valley trailhead on Mapleton Ave)",
+   "condition": "The Gazette reports a century-old stone hut restored by the city for about $8,000, then covered in graffiti months later. The article's date is not shown, but the hut is still standing.",
+   "access": "City of Boulder OSMP; free. A multi-year Mount Sanitas trail project (2026, $1.1M LWCF grant) may close or reroute trail sections.",
+   "sources": [
+    "https://gazette.com/?p=1981479",
+    "https://bouldercolorado.gov/projects/mount-sanitas-trail-project"
+   ],
+   "added": "2026-11-11T00:55:49+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "low",
+    "security_notes": "A vandalism target, so treat it with respect. Watch for 2026 trail-construction closures.",
+    "legal": "public",
+    "as_of": "2026",
+    "sources": [
+     "https://gazette.com/?p=1981479",
+     "https://bouldercolorado.gov/projects/mount-sanitas-trail-project"
+    ],
+    "checked": "2026-11-11"
+   }
+  },
+  {
+   "id": "soapstone-prairie-homestead-ruins-and-schoolhouse-foundation",
+   "name": "Soapstone Prairie homestead ruins and schoolhouse foundation",
+   "cat": "other",
+   "type": "homestead / ranch ruins",
+   "lat": 40.9466,
+   "lon": -105.06698,
+   "approx": true,
+   "location": "Soapstone Prairie Natural Area (City of Fort Collins); exact ruin spots are not tied to a specific trail in the sources, Wellington (north of Fort Collins), Larimer County",
+   "condition": "The city page notes ruins of historic homesteads, ranches and their buildings, plus a schoolhouse foundation. Condition is not described.",
+   "access": "City of Fort Collins Natural Areas. No dogs. Open seasonally, about March to November, sunrise to sunset. The Plover Trail closes April 1 to July 15 for nesting birds. Ask Natural Areas (970-416-2815) for ruin locations.",
+   "sources": [
+    "https://www.fcgov.com/naturalareas/finder/soapstone",
+    "https://livinglandscapeobserver.net/soapstone-prairie-natural-area/",
+    "https://www.fcgov.com/naturalareas/files/soapstone-prairie-natural-area-brochure-web.pdf"
+   ],
+   "added": "2026-11-11T00:55:53+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "low",
+    "security_notes": "No dogs. Seasonal opening and Plover Trail closure (2026). The park protects an archaeological site, so stay on the trails and never collect artifacts.",
+    "legal": "public",
+    "as_of": "2026",
+    "sources": [
+     "https://www.fcgov.com/naturalareas/finder/soapstone",
+     "https://livinglandscapeobserver.net/soapstone-prairie-natural-area/",
+     "https://www.fcgov.com/naturalareas/files/soapstone-prairie-natural-area-brochure-web.pdf"
+    ],
+    "checked": "2026-11-11"
+   },
+   "pin": "landmark"
+  },
+  {
+   "id": "egli-house-last-homestead-farmhouse-on-rocky-mountain-arsena",
+   "name": "Egli House (last homestead farmhouse on Rocky Mountain Arsenal)",
+   "cat": "houses",
+   "type": "historic farmhouse",
+   "lat": 39.82184,
+   "lon": -104.86238,
+   "approx": false,
+   "location": "Locust Loop Trailhead, behind the Lake Mary Learning Center, Rocky Mountain Arsenal NWR (near Lake Mary and Lake Ladora), Commerce City, Adams County",
+   "condition": "Farmhouse and garage still stand. The refuge's hiking page (current) and the History Colorado register say they are the only pre-WWII buildings left of 180-200+ homesteads. All 295 South Plants Army structures were torn down.",
+   "access": "US Fish & Wildlife Service. Free. Open sunrise to sunset daily, closed Thanksgiving, Christmas and New Year's Day. You can see the house from the trailhead or trail. The building itself has no public access.",
+   "sources": [
+    "https://www.fws.gov/refuge/rocky-mountain-arsenal/visit-us/activities/hiking",
+    "https://historycolorado.org/node/3939",
+    "https://www.hmdb.org/m.asp?m=255718"
+   ],
+   "added": "2026-11-11T00:55:57+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "low",
+    "security_notes": "Its historical marker says no public access to the house. Stay on designated trails. The South Plants and North Plants areas are still held by the Army (North Plants is a landfill) and are off limits.",
+    "legal": "public",
+    "sources": [
+     "https://www.fws.gov/refuge/rocky-mountain-arsenal/visit-us/activities/hiking",
+     "https://historycolorado.org/node/3939",
+     "https://www.hmdb.org/m.asp?m=255718"
+    ],
+    "checked": "2026-11-11"
+   }
+  },
+  {
+   "id": "lindsay-ranch-barn-and-house-remnants",
+   "name": "Lindsay Ranch barn and house remnants",
+   "cat": "other",
+   "type": "historic ranch barn / homestead remains",
+   "lat": 39.5663,
+   "lon": -105.25187,
+   "approx": true,
+   "location": "Lindsay Ranch Loop Trail (1.4 mi, crosses Rock Creek), Rocky Flats National Wildlife Refuge, Arvada / Broomfield area, Jefferson County",
+   "condition": "1940s barn still stands, with remnants of the house, on the site of the Scott family's 1868 homestead. FWS still features the barn on its current hiking page. A January 2024 blog said one building was open but looked very unstable.",
+   "access": "US Fish & Wildlife Service. Free. Open sunrise to sunset, year-round. Trail rated moderate (rolling hills).",
+   "sources": [
+    "https://www.fws.gov/refuge/rocky-flats/visit-us/activities/hiking",
+    "https://fws.gov/refuge/rocky-flats/visit-us",
+    "https://handstandsaroundtheworld.blog/2024/01/30/colorado-destinations-rocky-flats-national-wildlife-refuge/"
+   ],
+   "added": "2026-11-11T00:56:02+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "low",
+    "security_notes": "Former nuclear-weapons plant site. Stay on trails. MTB Project warns the refuge could close because of lawsuits, so check FWS alerts before going. Don't go into the unstable buildings (blog, 2024).",
+    "legal": "public",
+    "as_of": "2024",
+    "sources": [
+     "https://www.fws.gov/refuge/rocky-flats/visit-us/activities/hiking",
+     "https://fws.gov/refuge/rocky-flats/visit-us",
+     "https://handstandsaroundtheworld.blog/2024/01/30/colorado-destinations-rocky-flats-national-wildlife-refuge/"
+    ],
+    "checked": "2026-11-11"
+   }
   }
  ]
 }

@@ -42,6 +42,16 @@ for f in sorted(glob.glob(os.path.join(sys.argv[1] if len(sys.argv) > 1 else '.'
         if re.search(r'\b(demolished|torn down|razed|reopened|now a museum|redeveloped into)\b', it.get('condition', ''), re.I) and not re.search(r'partly|partially|still stand|whether it|no source|not confirm|demolished yet|can.t be demolished|cannot be demolished|not (been )?demolished|no (later )?report', it.get('condition', ''), re.I): continue
         seen.add(k); items.append(it)
 print(len(items), 'new unique places', flush=True)
+LM_RE = re.compile(r"((?:[A-Z][\w'.&-]*\s+){1,5}(?:National Wildlife Refuge|Open Space|Natural Area|State Park|State Wildlife Area|Recreation Area|Park|Trailhead|Gulch|Pass|Canyon|Reservoir|Lake|Mountain|Mesa|Preserve|Refuge|Ranch))\b")
+STOP = {'The', 'A', 'An', 'Former', 'Old', 'Historic', 'Abandoned'}
+def landmarks(text):
+    out = []
+    for m in LM_RE.findall(text):
+        words = m.split()
+        while words and words[0] in STOP: words = words[1:]
+        lm = ' '.join(words)
+        if len(words) >= 2 and lm not in out and not re.search(r'National (Park|Forest|Monument)$', lm): out.append(lm)
+    return out[:4]
 towncache = {}
 def town_pos(town):
     t = re.sub(r'^(?:near|south of|north of|east of|west of|between|just \w+ of|outside)\s+', '', town.split(',')[0], flags=re.I)
@@ -60,6 +70,9 @@ for it in items:
     loc = it.get('location', '')
     if re.match(r'^\d+ ', loc): tries.append(loc + ', ' + it.get('town', '').split(',')[0] + ', Colorado')
     tries.append(re.sub(r'\(.*?\)', '', it['name']).strip() + ', Colorado')
+    # Parks, trails, gulches, passes etc. named in the name or location pin far better than the town center.
+    for lm in landmarks(it['name'] + ' ; ' + loc):
+        tries.append(f'{lm}, Colorado')
     for t in tries:
         r = q(t)
         if r and inCO(float(r[0]['lat']), float(r[0]['lon'])):
