@@ -6223,8 +6223,8 @@
    "name": "Former Columbian Elementary School",
    "cat": "institutional",
    "type": "school",
-   "lat": 39.67962,
-   "lon": -104.94,
+   "lat": 39.7714,
+   "lon": -105.0244,
    "approx": true,
    "location": "2925 W. 40th Ave., Denver, CO 80211 (Sunnyside, northwest Denver; near 41st Ave. and Federal Blvd.)",
    "condition": "Permanently closed in spring 2025 (38% utilization). It was one of five standalone DPS buildings left vacant in summer 2025. As of March 2026, DPS had issued a request for proposals and wanted it to become an infant and toddler child care center. Rocky Mountain Prep also asked for it. No final reuse had been reported in 2026.",
@@ -6246,7 +6246,8 @@
     ],
     "checked": "2026-11-09"
    },
-   "added": "2026-11-09T14:46:59+00:00"
+   "added": "2026-11-09T14:46:59+00:00",
+   "pin": "manual"
   },
   {
    "id": "former-moore-middle-school",
@@ -11381,6 +11382,150 @@
     "checked": "2026-11-11"
    },
    "pin": "manual"
+  },
+  {
+   "id": "former-highlands-lutheran-church",
+   "name": "Former Highlands Lutheran Church",
+   "cat": "religious",
+   "type": "church",
+   "lat": 39.7714,
+   "lon": -105.0305,
+   "approx": true,
+   "location": "3955 N. Irving St., Denver, Denver County",
+   "condition": "14,000 sq ft church vacant since the end of 2025 (reported July 2026). A nonprofit has proposed converting it to 10 senior apartments, which still needs a rezoning.",
+   "access": "Private; a redevelopment site plan has been submitted",
+   "sources": [
+    "https://therealdeal.com/national/denver/2026/07/17/denver-church-poised-to-become-affordable-senior-housing/"
+   ],
+   "added": "2026-11-11T06:55:13+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "unknown",
+    "legal": "private",
+    "as_of": "2026",
+    "sources": [
+     "https://therealdeal.com/national/denver/2026/07/17/denver-church-poised-to-become-affordable-senior-housing/"
+    ],
+    "checked": "2026-11-11"
+   },
+   "pin": "manual"
+  },
+  {
+   "id": "deno-s-6-85-truck-stop-former-oldest-truck-stop-in-colorado",
+   "name": "Deno's 6 & 85 truck stop (former oldest truck stop in Colorado)",
+   "cat": "other",
+   "type": "truck stop / restaurant",
+   "lat": 39.7955,
+   "lon": -104.9405,
+   "approx": true,
+   "location": "Near E. 55th Ave and Colorado Blvd, Commerce City, Adams County",
+   "condition": "Built in 1947, closed in 2017 and abandoned in disrepair. Damaged by fire March 2, 2025. No demolition reports found.",
+   "access": "Private; abandoned commercial site near the Suncor refinery",
+   "sources": [
+    "https://www.cbsnews.com/colorado/news/fire-abandoned-historic-denos-restaurant-building-commerce-city-colorado",
+    "https://www.denvergazette.com/2025/03/02/abandoned-colorado-truck-stop-catches-fire-early-sunday-in-commerce-city/",
+    "https://curbsideclassic.com/blog/cc-cohort/perry-curtis-outtake-denos-6-85-oldest-truck-stop-in-colorado-finally-closed"
+   ],
+   "added": "2026-11-11T06:55:17+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "unknown",
+    "security_notes": "2025: fire-damaged, so the structure may be unsafe",
+    "legal": "private",
+    "as_of": "2025",
+    "sources": [
+     "https://www.cbsnews.com/colorado/news/fire-abandoned-historic-denos-restaurant-building-commerce-city-colorado",
+     "https://www.denvergazette.com/2025/03/02/abandoned-colorado-truck-stop-catches-fire-early-sunday-in-commerce-city/",
+     "https://curbsideclassic.com/blog/cc-cohort/perry-curtis-outtake-denos-6-85-oldest-truck-stop-in-colorado-finally-closed"
+    ],
+    "checked": "2026-11-11"
+   },
+   "pin": "manual"
+  },
+  {
+   "id": "loveland-house-w-a-h-loveland-residence-1888",
+   "name": "Loveland House (W.A.H. Loveland residence, 1888)",
+   "cat": "houses",
+   "type": "mansion / historic house",
+   "lat": 39.7398,
+   "lon": -105.0815,
+   "approx": true,
+   "location": "1435 Harlan St (next to the White Swan Motel, 6060 W. Colfax Ave), Lakewood, Jefferson County",
+   "condition": "Boarded up and decaying after decades of neglect (2023 reports). A plan to restore it as the White Swan Motel lobby was targeted to start in April 2024. No confirmation found that work started.",
+   "access": "Private; a handshake purchase deal by the White Swan owner was reported in 2023",
+   "sources": [
+    "https://www.westword.com/news/lakewood-loveland-house-white-swan-owner-16178292",
+    "https://kmax943.com/new-life-planned-for-colorados-historic-loveland-house/"
+   ],
+   "added": "2026-11-11T06:55:22+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "medium",
+    "security_notes": "2023: behind a six-foot chain-link fence",
+    "legal": "private",
+    "as_of": "2024",
+    "sources": [
+     "https://www.westword.com/news/lakewood-loveland-house-white-swan-owner-16178292",
+     "https://kmax943.com/new-life-planned-for-colorados-historic-loveland-house/"
+    ],
+    "checked": "2026-11-11"
+   },
+   "pin": "manual"
+  },
+  {
+   "id": "denver-rock-drill-factory-rock-drill-rino",
+   "name": "Denver Rock Drill factory (Rock Drill RiNo)",
+   "cat": "industrial",
+   "type": "factory",
+   "lat": 39.7712,
+   "lon": -104.9686,
+   "approx": true,
+   "location": "39th Ave between Franklin and High streets, RiNo (the developer lists it as E. 40th Ave, 80205), Denver, Denver County",
+   "condition": "Factory dating to 1910, mostly empty since 2010 according to the Denver Gazette (Aug 2025). A mixed-use redevelopment is still going through approvals, with no construction yet.",
+   "access": "Private (Weiss family); a planned redevelopment site",
+   "sources": [
+    "https://www.denvergazette.com/2025/08/26/will-historic-rino-factory-ever-have-a-new-life-development-plans-heat-up-63c9cc8a-c20a-469d-a9c5-c0d01889a5b8",
+    "https://www.sasaki.com/projects/denver-rock-drill-redevelopment-plan/"
+   ],
+   "added": "2026-11-11T06:55:23+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "unknown",
+    "legal": "private",
+    "as_of": "2025",
+    "sources": [
+     "https://www.denvergazette.com/2025/08/26/will-historic-rino-factory-ever-have-a-new-life-development-plans-heat-up-63c9cc8a-c20a-469d-a9c5-c0d01889a5b8",
+     "https://www.sasaki.com/projects/denver-rock-drill-redevelopment-plan/"
+    ],
+    "checked": "2026-11-11"
+   },
+   "pin": "manual"
+  },
+  {
+   "id": "former-frontier-high-school-originally-the-red-brick-school",
+   "name": "Former Frontier High School (originally the Red Brick School)",
+   "cat": "institutional",
+   "type": "school",
+   "lat": 39.35776,
+   "lon": -104.59701,
+   "approx": false,
+   "location": "589 S. Banner St., Elizabeth, CO",
+   "condition": "Opened 1920, with an addition in 1971. The alternative high school in it was abandoned in 2020. The superintendent said the district pulled out the building's systems and contents. It was still unused as of May 2023, and no later status was found.",
+   "access": "Owned by Elizabeth School District. In April 2023 the board decided to convert the building to new uses (preschool, district offices or community center) rather than sell it. Its insurer would not cover it unless 30% was in use.",
+   "sources": [
+    "https://issuu.com/coloradocommunitymedia/docs/ccmecn_2023-05-04/s/23711776"
+   ],
+   "added": "2026-11-11T06:55:27+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "unknown",
+    "legal": "government-owned (not open)",
+    "as_of": "2023",
+    "sources": [
+     "https://issuu.com/coloradocommunitymedia/docs/ccmecn_2023-05-04/s/23711776"
+    ],
+    "checked": "2026-11-11"
+   }
   }
  ]
 }

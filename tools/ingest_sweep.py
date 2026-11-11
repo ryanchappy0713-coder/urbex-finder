@@ -59,7 +59,11 @@ def town_pos(town):
     county = town.split(',')[1].strip() if ',' in town else ''
     k = f'{t}, {county}, Colorado' if county else f'{t}, Colorado'
     if k not in towncache:
-        r = q(k) or (q(f'{county}, Colorado') if county else [])
+        r = q(k)
+        # 'Denver, Denver County' can match the county polygon (centroid miles off); prefer the town itself.
+        if r and county and r[0].get('type') in ('administrative',) and 'county' in (r[0].get('display_name', '').split(',')[0].lower()):
+            r = q(f'{t}, Colorado') or r
+        r = r or (q(f'{county}, Colorado') if county else [])
         towncache[k] = (float(r[0]['lat']), float(r[0]['lon'])) if r and inCO(float(r[0]['lat']), float(r[0]['lon'])) else None
     return towncache[k]
 added = 0
