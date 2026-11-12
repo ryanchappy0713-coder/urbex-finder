@@ -12546,8 +12546,8 @@
    "name": "Minnie Mine ruins",
    "cat": "industrial",
    "type": "mine ruins",
-   "lat": 39.48343,
-   "lon": -105.99098,
+   "lat": 39.48159,
+   "lon": -105.98882,
    "approx": false,
    "location": "Minnie Mine Loop / B&B and X10U8 trails, about 3 mi up French Gulch Road, Breckenridge, Summit County",
    "condition": "Remains of the 19th-century Minnie Mine complex: a large tailings pile and several mining ruins with interpretive signs, about 3/4 mi in. Breckenridge History has installed signs on the B&B, Minnie Mine and X10U8 trails. Sources note the structures and ground may be unstable (sources seen 2026).",
@@ -12753,6 +12753,146 @@
     ],
     "checked": "2026-11-12"
    }
+  },
+  {
+   "id": "old-glendale-stagecoach-station-mcclure-house-glendale-stage",
+   "name": "Old Glendale Stagecoach Station (McClure House / Glendale Stage Stop)",
+   "cat": "other",
+   "type": "stagecoach station / inn ruin (two-story stone)",
+   "lat": 38.41166,
+   "lon": -105.00323,
+   "approx": true,
+   "location": "Beaver Creek area just east of Penrose, at the old Colorado Springs–Canon City road crossing of Beaver Creek. Sources put it about 14.7 mi from Canon City and say it can be reached via the Turrell Trail east of Penrose. No exact coordinates seen., Penrose (former Glendale/Beaver Creek townsite), Fremont County",
+   "condition": "Built c.1861-1868. The settlement was abandoned after the July 3, 1921 Red Creek/Beaver Creek flood. Wikipedia says most of the stone walls remain but the roof and porches burned. Ghost-tour sites describe arson, vandalism, heavy graffiti and recent fires on the second-floor joists. The lifedeathiron 'Canon City' tag post is undated in what I saw. A 2014 Canon City Daily Record headline reports graffiti on the 'Glendale House'.",
+   "access": "Owner of the station itself not confirmed. HOLCIM owns a nearby stone building's land south of Hwy 50 (one hiker got permission there). Haunted-places listing says to respect private property and posted signs.",
+   "sources": [
+    "https://lifedeathiron.com/tag/canon-city/",
+    "https://en.wikipedia.org/wiki/Glendale,_Colorado_Territory",
+    "https://hauntedplaces.org/?p=51513"
+   ],
+   "added": "2026-11-12T12:56:14+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "unknown",
+    "security_notes": "Repeated arson and graffiti (2014 newspaper headline; undated ghost-tour accounts) suggest it is not actively guarded. No current info on fencing or patrols.",
+    "legal": "unknown",
+    "as_of": "2014",
+    "sources": [
+     "https://lifedeathiron.com/tag/canon-city/",
+     "https://en.wikipedia.org/wiki/Glendale,_Colorado_Territory",
+     "https://hauntedplaces.org/?p=51513"
+    ],
+    "checked": "2026-11-12"
+   }
+  },
+  {
+   "id": "ramah-abandoned-general-store-and-long-abandoned-homes",
+   "name": "Ramah abandoned general store (and long-abandoned homes)",
+   "cat": "ruins",
+   "type": "abandoned general store / homes in a semi-ghost town",
+   "lat": 39.11982,
+   "lon": -104.16363,
+   "approx": true,
+   "location": "Ramah, about 45 mi east of Colorado Springs on US Highway 24. The store's exact address is not given.",
+   "condition": "The GhostTowns.com entry (population figure dated 2008) says an abandoned general store still holds decades-old merchandise and that many homes and businesses are long abandoned, some virtually untouched. lifedeathiron (2015) says most storefronts are vacant but people still live in town. Only one source describes the store, so its current condition is unverified.",
+   "access": "Private buildings in an inhabited town. View from public streets.",
+   "sources": [
+    "https://mail.ghosttowns.com/states/co/ramah.html",
+    "https://lifedeathiron.com/2015/11/28/25-more-abandoned-buildings-in-colorado-you-must-see-before-they-are-gone"
+   ],
+   "added": "2026-11-12T12:56:17+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "unknown",
+    "security_notes": "Residents nearby (2008/2015).",
+    "legal": "private",
+    "as_of": "2015",
+    "sources": [
+     "https://mail.ghosttowns.com/states/co/ramah.html",
+     "https://lifedeathiron.com/2015/11/28/25-more-abandoned-buildings-in-colorado-you-must-see-before-they-are-gone"
+    ],
+    "checked": "2026-11-12"
+   }
+  },
+  {
+   "id": "peace-valley-school",
+   "name": "Peace Valley School",
+   "cat": "institutional",
+   "type": "rural schoolhouse",
+   "lat": 40.49471,
+   "lon": -103.83134,
+   "approx": false,
+   "location": "Near New Raymer; exact road not shown in the search snippet, near New Raymer, Weld County",
+   "condition": "Built by homesteaders in 1911, with a 1926 addition on the west end; closed in 1946. Photos from May 2020 show the building and a swing set still standing.",
+   "access": "Ownership not stated; likely private farmland. Photograph only from the public road.",
+   "sources": [
+    "https://rockymountainprofiles.com/colorado/colorado-scenes/buildings-sites-vistas/peace-valley-school-colorado"
+   ],
+   "added": "2026-11-12T12:56:41+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "unknown",
+    "legal": "unknown",
+    "as_of": "2020",
+    "sources": [
+     "https://rockymountainprofiles.com/colorado/colorado-scenes/buildings-sites-vistas/peace-valley-school-colorado"
+    ],
+    "checked": "2026-11-12"
+   }
+  },
+  {
+   "id": "leroy-schoolhouse",
+   "name": "Leroy Schoolhouse",
+   "cat": "institutional",
+   "type": "one-room wooden schoolhouse",
+   "lat": 40.5261,
+   "lon": -102.91409,
+   "approx": true,
+   "location": "Former Leroy townsite, standing among farm fields",
+   "condition": "Flickr post by Daniel McAdams: a small wooden one-room schoolhouse that 'now stands amongst the farm fields, testing time'. It replaced an earlier sod school. The town faded after its post office closed in 1918. The photo year was not visible in the search snippet.",
+   "access": "Surrounded by private farm fields; ownership not stated",
+   "sources": [
+    "https://www.flickr.com/photos/danielmcadams/38242755006"
+   ],
+   "added": "2026-11-12T12:56:45+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "unknown",
+    "legal": "unknown",
+    "as_of": "1918",
+    "sources": [
+     "https://www.flickr.com/photos/danielmcadams/38242755006"
+    ],
+    "checked": "2026-11-12"
+   }
+  },
+  {
+   "id": "building-2-south-campus-colorado-mental-health-institute-at-",
+   "name": "Building 2, south campus, Colorado Mental Health Institute at Pueblo (former State Hospital)",
+   "cat": "institutional",
+   "type": "institutional building (hospital campus)",
+   "lat": 38.2878,
+   "lon": -104.633,
+   "approx": true,
+   "location": "Building 2 on the south campus of the Colorado Mental Health Institute at Pueblo (CMHIP).",
+   "condition": "KOAA News5 report: an abandoned, state-owned building that never housed patients. On Saturday March 9 (probably 2024, when that date fell on a Saturday; the year is not shown in the snippet), men pulled off a wood panel to get in through a window, one armed with three guns and claiming to make videos.",
+   "access": "State-owned, on an active hospital campus; hospital police respond. The legal option is the campus's Colorado State Insane Asylum museum: tours Tuesdays or by appointment.",
+   "sources": [
+    "https://koaa.com/news/news5-investigates/police-armed-suspect-broke-into-abandoned-building-on-hospital-campus-to-make-videos"
+   ],
+   "added": "2026-11-12T12:56:48+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "high",
+    "security_notes": "March 2024 (probably): burglar alarm triggered a hospital police response; 'no trespassing' signs posted; one person arrested and another ticketed for trespassing; the campus said it is taking extra precautions.",
+    "legal": "government-owned (not open)",
+    "as_of": "2024",
+    "sources": [
+     "https://koaa.com/news/news5-investigates/police-armed-suspect-broke-into-abandoned-building-on-hospital-campus-to-make-videos"
+    ],
+    "checked": "2026-11-12"
+   },
+   "pin": "manual"
   }
  ]
 }
