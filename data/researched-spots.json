@@ -12546,8 +12546,8 @@
    "name": "Minnie Mine ruins",
    "cat": "industrial",
    "type": "mine ruins",
-   "lat": 39.48159,
-   "lon": -105.98882,
+   "lat": 39.47975,
+   "lon": -105.98666,
    "approx": false,
    "location": "Minnie Mine Loop / B&B and X10U8 trails, about 3 mi up French Gulch Road, Breckenridge, Summit County",
    "condition": "Remains of the 19th-century Minnie Mine complex: a large tailings pile and several mining ruins with interpretive signs, about 3/4 mi in. Breckenridge History has installed signs on the B&B, Minnie Mine and X10U8 trails. Sources note the structures and ground may be unstable (sources seen 2026).",
@@ -12889,6 +12889,242 @@
     "as_of": "2024",
     "sources": [
      "https://koaa.com/news/news5-investigates/police-armed-suspect-broke-into-abandoned-building-on-hospital-campus-to-make-videos"
+    ],
+    "checked": "2026-11-12"
+   },
+   "pin": "manual"
+  },
+  {
+   "id": "mad-creek-barn-james-ratliff-homestead-barn",
+   "name": "Mad Creek Barn (James Ratliff homestead barn)",
+   "cat": "other",
+   "type": "homestead / early Forest Service barn",
+   "lat": 40.54,
+   "lon": -106.862,
+   "approx": true,
+   "location": "Mad Creek Trailhead on Routt County Road 129 (Elk River Road), about 5 miles north of Steamboat Springs. The old homestead road and trail run about 2.5 miles each way to the barn, roughly 5 miles round trip.",
+   "condition": "Two-story log-and-frame barn still standing. James Ratliff homesteaded here from 1904 and built the barn around 1905-06; sources disagree on the exact year. An NPS Routt National Forest inventory describes it as a rare pre-design-era Forest Service barn and lists the site as Mad Creek Guard Station (5RT1177). It fell into disrepair, was restored in 2001, and trail guides say it is now open for exploring.",
+   "access": "Public land in the Routt National Forest, reached by a well-used day-hike trail. Visitors can walk up to the barn and explore it, per the trail guides. Summer and fall are easiest; expect snow in winter.",
+   "sources": [
+    "https://www.theoutbound.com/colorado/hiking/hike-to-mad-creek-barn",
+    "https://www.nps.gov/parkhistory/online_books/forest/colorado-nf/inventory6.htm",
+    "https://www.steamboatchamber.com/blog/post/mad-creek-is-crazy-fun-steamboat-hiking/"
+   ],
+   "added": "2026-11-12T18:55:18+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "low",
+    "security_notes": "Popular public trail; no security reported in the sources (2026 search).",
+    "legal": "public",
+    "as_of": "2026",
+    "sources": [
+     "https://www.theoutbound.com/colorado/hiking/hike-to-mad-creek-barn",
+     "https://www.nps.gov/parkhistory/online_books/forest/colorado-nf/inventory6.htm",
+     "https://www.steamboatchamber.com/blog/post/mad-creek-is-crazy-fun-steamboat-hiking/"
+    ],
+    "checked": "2026-11-12"
+   },
+   "pin": "manual"
+  },
+  {
+   "id": "pinnacle-coal-company-town-ruins",
+   "name": "Pinnacle coal company town ruins",
+   "cat": "other",
+   "type": "coal mining camp",
+   "lat": 40.262,
+   "lon": -106.975,
+   "approx": true,
+   "location": "About 1.25 miles southwest of Oak Creek, off Routt County Road 25.",
+   "condition": "The SAH Archipedia (Buildings of Colorado) survey entry describes the frame ruins of the company town of Pinnacle (1900-1946). The town once had about fifty homes, a store, a dance hall and a boarding house. Mine records give other dates (mine opened 1909-10, ran to about 1949). No current (2026) report of what is still standing was found, so the ruins may have deteriorated since that survey.",
+   "access": "Ownership not stated in any source seen. The area is ranch and coal-mining land, so assume private and look only from the county road unless you get the landowner's permission.",
+   "sources": [
+    "https://sah-archipedia.org/node/3671"
+   ],
+   "added": "2026-11-12T18:55:21+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "unknown",
+    "legal": "unknown",
+    "as_of": "2026",
+    "sources": [
+     "https://sah-archipedia.org/node/3671"
+    ],
+    "checked": "2026-11-12"
+   },
+   "pin": "manual"
+  },
+  {
+   "id": "madonna-mine-great-madonna-mine-remnants",
+   "name": "Madonna Mine (Great Madonna Mine) remnants",
+   "cat": "industrial",
+   "type": "mine complex",
+   "lat": 38.49643,
+   "lon": -106.32611,
+   "approx": false,
+   "location": "North side of US Highway 50 on the east approach to Monarch Pass, driveway just before mile marker 203; workings at about 10,750 ft, Monarch / Garfield, Chaffee County",
+   "condition": "A real-estate listing (seen 2026, marked Sold, listing undated) describes 'remnants of the boom days' on the 363-acre parcel: a concrete block storage building, the primary mine entrance building and several cabin sites. A local radio blog calls the site 'pretty dilapidated' and mentions a building labeled 'Madonna Mine' that looks newer than the originals. Mining ran 1883-c.1893, with lessees after 1895.",
+   "access": "PRIVATE. The listing calls it the largest private parcel next to Monarch Ski Area. You can only look from public US 50 or the pullouts; do not use the driveway. Mountain pass, so expect snow from about October to May.",
+   "sources": [
+    "https://mossyoakproperties.com/property/madonna-mine-salida-colorado-chaffee-colorado/32066",
+    "https://www.land.com/property/363-acres-in-chaffee-county-colorado/15322774",
+    "https://kool1079.com/colorado-madonna-mine-history/"
+   ],
+   "added": "2026-11-12T18:55:25+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "unknown",
+    "security_notes": "The property was sold (listing marked Sold, seen 2026). The blog says the owner looked into running tours but dropped the idea. Current owner and posting not known.",
+    "legal": "private",
+    "as_of": "2026",
+    "sources": [
+     "https://mossyoakproperties.com/property/madonna-mine-salida-colorado-chaffee-colorado/32066",
+     "https://www.land.com/property/363-acres-in-chaffee-county-colorado/15322774",
+     "https://kool1079.com/colorado-madonna-mine-history/"
+    ],
+    "checked": "2026-11-12"
+   }
+  },
+  {
+   "id": "silver-islet-mine-complex",
+   "name": "Silver Islet Mine complex",
+   "cat": "industrial",
+   "type": "mine (log mine building, bunkhouse ruins)",
+   "lat": 38.60748,
+   "lon": -106.51458,
+   "approx": true,
+   "location": "Hike up Maggie Road off County Road 76 near Pitkin; at a 'Y' take the uphill trail to the right. About 2.05 mi from the trailhead, at about 10,626 ft.",
+   "condition": "The Pitkin hike guide (undated, seen 2026) describes a small log building ruin at the Y, a first small log building at the start of the complex, a 'large log mine structure', and ruins of the miners' bunk cabin south of the open pits. Above the mine building is a large open pit, so be careful.",
+   "access": "The route uses a road the guide calls a 'Quartz Creek Properties road' and passes a cabin, so some of it may cross private land. The town of Pitkin promotes it as a public hike. Steep first third. Summer and fall only.",
+   "sources": [
+    "https://www.pitkincolorado.com/hikes/silver-islet-mine/",
+    "https://www.pitkincolorado.com/hikes/"
+   ],
+   "added": "2026-11-12T18:55:28+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "unknown",
+    "legal": "unknown",
+    "as_of": "2026",
+    "sources": [
+     "https://www.pitkincolorado.com/hikes/silver-islet-mine/",
+     "https://www.pitkincolorado.com/hikes/"
+    ],
+    "checked": "2026-11-12"
+   }
+  },
+  {
+   "id": "roosevelt-mine-and-concrete-power-plant",
+   "name": "Roosevelt Mine and concrete power plant",
+   "cat": "industrial",
+   "type": "mine / power plant ruins",
+   "lat": 38.56976,
+   "lon": -106.61773,
+   "approx": true,
+   "location": "Trailhead about 3 mi outside Ohio City along Quartz Creek; about 0.6 to 0.75 mi walk to the mine",
+   "condition": "The Pitkin guide (undated) describes a formed-concrete power generation plant that supplied the mine with electricity, the Roosevelt Mine tunnel, and the remaining walls of the old mine buildings. The mine was abandoned in 1919. The old wooden flume started at what is now Quartz Creek Cabins, which is a private rental, so stay off it.",
+   "access": "Short marked hike that both guides promote as public. The tunnel is barricaded; do not enter. Summer and fall.",
+   "sources": [
+    "https://www.pitkincolorado.com/hikes/roosevelt-mine-hike/",
+    "https://www.theoutbound.com/colorado/hiking/hike-to-roosevelt-mine"
+   ],
+   "added": "2026-11-12T18:55:31+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "low",
+    "security_notes": "Tunnel barricaded for safety (Pitkin guide, undated).",
+    "legal": "unknown",
+    "as_of": "1919",
+    "sources": [
+     "https://www.pitkincolorado.com/hikes/roosevelt-mine-hike/",
+     "https://www.theoutbound.com/colorado/hiking/hike-to-roosevelt-mine"
+    ],
+    "checked": "2026-11-12"
+   }
+  },
+  {
+   "id": "spencer-school-complex-spencer-townsite",
+   "name": "Spencer School complex (Spencer townsite)",
+   "cat": "institutional",
+   "type": "one-room schoolhouse, teacher's cabin, outbuildings",
+   "lat": 38.33,
+   "lon": -107.06,
+   "approx": true,
+   "location": "Gunnison Gold Belt, between Gunnison and Lake City, about 21 mi SW of Gunnison, Gunnison (21 mi SW), Gunnison County",
+   "condition": "A BLM Gunnison Field Office trip guide says the one-room schoolhouse and its outbuildings, used 1902-1946, are the only structures left at Spencer. The State Register lists a well, shed, privies and teacher's cabin. The complex was listed as a State Historic Site on 21 Jan 1997.",
+   "access": "BLM includes it in a field-trip guide, but Gunnison County's historic sites list marks it 'Tourist site/no entry'. View from outside only and do not go inside. Gravel roads; best in summer.",
+   "sources": [
+    "https://corpora.tika.apache.org/base/docs/govdocs1/410/410862.pdf",
+    "https://historycolorado.org/node/7350",
+    "https://gunnisoncounty.org/785/Historic-Sites"
+   ],
+   "added": "2026-11-12T18:55:34+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "unknown",
+    "security_notes": "County marks it 'no entry' (list seen 2026, undated).",
+    "legal": "unknown",
+    "as_of": "2026",
+    "sources": [
+     "https://corpora.tika.apache.org/base/docs/govdocs1/410/410862.pdf",
+     "https://historycolorado.org/node/7350",
+     "https://gunnisoncounty.org/785/Historic-Sites"
+    ],
+    "checked": "2026-11-12"
+   },
+   "pin": "manual"
+  },
+  {
+   "id": "rawley-mine-buildings-squirrel-creek-rawley-gulch",
+   "name": "Rawley Mine buildings (Squirrel Creek / Rawley Gulch)",
+   "cat": "industrial",
+   "type": "mine buildings",
+   "lat": 38.29252,
+   "lon": -106.14043,
+   "approx": true,
+   "location": "Rawley Gulch / Squirrel Creek, reached on the FunTreks 'Rawley Mine, Bonanza' 4x4 route; Forest Service Rawley 12 Trailhead nearby",
+   "condition": "A FunTreks trail review (undated) reports 'lots of standing mine buildings, especially at the Rawley Mine'. ASARCO removed the mill tailings from Squirrel Creek in 1994. Whether the headframe still stands is not confirmed.",
+   "access": "Moderate 4x4 route; the trail is described as badly washed out and deeply rutted at the Squirrel Creek crossing. The Forest Service says the Rawley and Bonanza area is 'interspersed with private land holdings', so check you are on public land. Summer and fall.",
+   "sources": [
+    "https://funtreks.com/off-road-trails/rawley-mine-bonanza/",
+    "https://fs.usda.gov/r02/riogrande/recreation/rawley-12-trailhead",
+    "https://westernmininghistory.com/mine-detail/10013082/"
+   ],
+   "added": "2026-11-12T18:55:39+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "unknown",
+    "legal": "unknown",
+    "as_of": "1994",
+    "sources": [
+     "https://funtreks.com/off-road-trails/rawley-mine-bonanza/",
+     "https://fs.usda.gov/r02/riogrande/recreation/rawley-12-trailhead",
+     "https://westernmininghistory.com/mine-detail/10013082/"
+    ],
+    "checked": "2026-11-12"
+   }
+  },
+  {
+   "id": "old-baldwin-coal-camp",
+   "name": "Old Baldwin coal camp",
+   "cat": "other",
+   "type": "coal company town",
+   "lat": 38.77,
+   "lon": -107.05,
+   "approx": true,
+   "location": "Ohio Creek valley, about 8.5 mi SW of Crested Butte, Crested Butte (8.5 mi SW) / Gunnison, Gunnison County",
+   "condition": "Wikipedia (seen 2026, citing a 2019 article by Judy Buffington Sammons) says 'many of the original structures still exist' at this old Rocky Mountain Fuel Co. company town.",
+   "access": "Wikipedia says much of the land with the remaining structures is now privately owned. View from the county road only. Summer and fall; snow in winter.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Baldwin,_Colorado"
+   ],
+   "added": "2026-11-12T18:55:42+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "unknown",
+    "legal": "private",
+    "as_of": "2026",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Baldwin,_Colorado"
     ],
     "checked": "2026-11-12"
    },
