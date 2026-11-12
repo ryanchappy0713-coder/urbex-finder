@@ -12111,6 +12111,648 @@
     ],
     "checked": "2026-11-12"
    }
+  },
+  {
+   "id": "shipler-cabins-ruins-and-shipler-mine-tailings",
+   "name": "Shipler Cabins ruins and Shipler Mine tailings",
+   "cat": "houses",
+   "type": "mining cabin ruins",
+   "lat": 40.4306,
+   "lon": -105.8508,
+   "approx": false,
+   "location": "Colorado River Trail, about 2 mi north of the Colorado River Trailhead (Trail Ridge Rd, Kawuneeche Valley), on the way to Lulu City, Grand Lake, Grand County",
+   "condition": "Ruined walls of the log cabins built c.1879-1881 (by Marcus Coon, later owned by silver miner Joe Shipler), with mine tailings nearby. Trail guides current in 2025-2026 still describe the remains along the trail.",
+   "access": "National Park Service (Rocky Mountain NP). Park entrance fee; a timed-entry permit may be needed late May to mid-October. Day hike, best June to October. Trail Ridge Road closes in winter.",
+   "sources": [
+    "https://www.hikingproject.com/trail/7000578/lulu-city-out-and-back",
+    "https://cms.10adventures.com/hikes/rocky-mountain-national-park/shipler-cabin-trail/",
+    "https://www.nps.gov/romo/planyourvisit/upload/Kawunceeche-Valley-Trail-Guide-2017-digital.pdf"
+   ],
+   "added": "2026-11-12T06:56:15+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "low",
+    "security_notes": "Stay away from the old mine openings, which can collapse. Dogs are not allowed on park trails. Taking or moving artifacts is illegal in the park (rules current 2025-2026).",
+    "legal": "public",
+    "as_of": "2026",
+    "sources": [
+     "https://www.hikingproject.com/trail/7000578/lulu-city-out-and-back",
+     "https://cms.10adventures.com/hikes/rocky-mountain-national-park/shipler-cabin-trail/",
+     "https://www.nps.gov/romo/planyourvisit/upload/Kawunceeche-Valley-Trail-Guide-2017-digital.pdf"
+    ],
+    "checked": "2026-11-12"
+   },
+   "pin": "manual"
+  },
+  {
+   "id": "hitchens-gulch-prospector-cabin-ruins",
+   "name": "Hitchens Gulch prospector cabin ruins",
+   "cat": "houses",
+   "type": "mining cabin ruins",
+   "lat": 40.441,
+   "lon": -105.873,
+   "approx": false,
+   "location": "About 0.3 mi above the Grand Ditch, between the trail and the creek in Hitchens Gulch. Reached from the Colorado River Trailhead by the Red Mountain Trail or the Grand Ditch Road (Never Summer Mountains), Grand Lake, Grand County",
+   "condition": "Ruins of cabins built around 1900 by prospectors, with 6-8 ft tree stumps nearby that show they were cut in deep winter snow. The NPS site page still lists the ruins.",
+   "access": "National Park Service (Rocky Mountain NP). Park entrance fee. Long day hike (about 6+ mi each way) or an overnight trip. Backcountry camping needs a permit at designated sites. Summer to early fall.",
+   "sources": [
+    "https://www.nps.gov/romo/planyourvisit/hitchens-gulch.htm"
+   ],
+   "added": "2026-11-12T06:56:20+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "low",
+    "security_notes": "The NPS says not to collect or move anything, because removing cultural resources is illegal. Overnight stays need a backcountry permit.",
+    "legal": "public",
+    "as_of": "1900",
+    "sources": [
+     "https://www.nps.gov/romo/planyourvisit/hitchens-gulch.htm"
+    ],
+    "checked": "2026-11-12"
+   },
+   "pin": "manual"
+  },
+  {
+   "id": "eugenia-mine-cabin-and-boiler",
+   "name": "Eugenia Mine cabin and boiler",
+   "cat": "industrial",
+   "type": "mine ruins",
+   "lat": 40.272,
+   "lon": -105.5565,
+   "approx": false,
+   "location": "Eugenia Mine Trail from the Longs Peak Trailhead, off CO-7 about 8.9 mi south of Estes Park. About 1.4 mi one way, 540 ft gain, Estes Park/Allenspark, Larimer/Boulder County",
+   "condition": "A ruined log cabin, a rusted steam boiler and scattered tailings remain from a claim staked in 1897 and worked until 1910-1911. The NPS sealed the shaft in the 1960s and chose to leave the site in place. Described in 2022-2025 sources.",
+   "access": "National Park Service (Rocky Mountain NP). Park entrance fee; timed entry applies in peak season. Easy hike, best May to October.",
+   "sources": [
+    "https://www.10adventures.com/hikes/rocky-mountain-national-park/eugenia-mine-hike",
+    "https://www.nps.gov/articles/cleaning-up-the-eugenia-mine.htm",
+    "https://www.nps.gov/romo/planyourvisit/upload/Longs-Peak-Area-Trail-Guide-2022_GPO.pdf"
+   ],
+   "added": "2026-11-12T06:56:26+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "low",
+    "security_notes": "The shaft is sealed. Do not disturb the waste rock, which contains heavy metals. Pets are not allowed on park trails (2022-2025).",
+    "legal": "public",
+    "as_of": "2025",
+    "sources": [
+     "https://www.10adventures.com/hikes/rocky-mountain-national-park/eugenia-mine-hike",
+     "https://www.nps.gov/articles/cleaning-up-the-eugenia-mine.htm",
+     "https://www.nps.gov/romo/planyourvisit/upload/Longs-Peak-Area-Trail-Guide-2022_GPO.pdf"
+    ],
+    "checked": "2026-11-12"
+   }
+  },
+  {
+   "id": "hewlett-gulch-homestead-foundations",
+   "name": "Hewlett Gulch homestead foundations",
+   "cat": "other",
+   "type": "homestead ruins",
+   "lat": 40.68866,
+   "lon": -105.31056,
+   "approx": false,
+   "location": "Hewlett Gulch Trail #954, trailhead on CO-14 just past Poudre Park in lower Poudre Canyon. Ruins are along the old road up Gordon Creek in the first ~2 mi, Poudre Park/Bellvue, Larimer County",
+   "condition": "Stone foundations and a fireplace remnant from homesteads settled 1911-1925, including the Spaulding homestead. The ruins are listed on the current USFS page, and trip reports from 2009-2021 photograph them.",
+   "access": "USDA Forest Service, Roosevelt NF (Canyon Lakes RD). Free trailhead. Open year-round, about 20 min from Fort Collins. Hikers, bikes and horses share the trail.",
+   "sources": [
+    "https://www.fs.usda.gov/r02/arp/recreation/hewlett-gulch-trailhead-954",
+    "https://ericandnoelle.blogspot.com/2021/01/roosevelt-national-forest-hewlett-gulch.html?m=1",
+    "https://excessivelocity.blogspot.com/2009/02/fort-collins-hewitt-gulch-trail.html"
+   ],
+   "added": "2026-11-12T06:56:32+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "low",
+    "security_notes": "Busy trail. Leave the ruins as they are. Removing artifacts from national forest land is prohibited.",
+    "legal": "public",
+    "as_of": "2021",
+    "sources": [
+     "https://www.fs.usda.gov/r02/arp/recreation/hewlett-gulch-trailhead-954",
+     "https://ericandnoelle.blogspot.com/2021/01/roosevelt-national-forest-hewlett-gulch.html?m=1",
+     "https://excessivelocity.blogspot.com/2009/02/fort-collins-hewitt-gulch-trail.html"
+    ],
+    "checked": "2026-11-12"
+   }
+  },
+  {
+   "id": "red-mountain-open-space-hand-hewn-log-cabin-and-sheepherder-",
+   "name": "Red Mountain Open Space hand-hewn log cabin and sheepherder's cabin",
+   "cat": "houses",
+   "type": "ranch cabin ruins",
+   "lat": 40.97,
+   "lon": -105.17,
+   "approx": true,
+   "location": "Bent Rock Trail heading west from the Red Mountain Open Space trailhead (about 25 mi north of Fort Collins off CR 21). Cultural sites are near Ruby Wash, Livermore/Wellington, Larimer County",
+   "condition": "Historic structures from 1870s-1920s ranching, including a hand-hewn log cabin and a sheepherder's cabin, visited on a loop off the Bent Rock Trail (trail guide 2018+).",
+   "access": "Larimer County Natural Resources. Open sunrise to sunset, March through November. Closed December 1 to March 1. Free. No water at the trailhead.",
+   "sources": [
+    "https://www.hikingproject.com/trail/7060312/bent-rock-and-k-lynn-cameron-loops",
+    "https://www.larimer.gov/redmountain/"
+   ],
+   "added": "2026-11-12T06:56:38+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "low",
+    "security_notes": "Seasonal closure Dec 1-Mar 1. No dogs. No bikes on the Bent Rock Trail. The restored 1915 horse barn and the 1870s cabin/schoolhouse are in a section closed to the public, so stay out (2025-2026).",
+    "legal": "public",
+    "as_of": "2026",
+    "sources": [
+     "https://www.hikingproject.com/trail/7060312/bent-rock-and-k-lynn-cameron-loops",
+     "https://www.larimer.gov/redmountain/"
+    ],
+    "checked": "2026-11-12"
+   },
+   "pin": "manual"
+  },
+  {
+   "id": "hampton-barn-hampton-ranch",
+   "name": "Hampton Barn (Hampton Ranch)",
+   "cat": "other",
+   "type": "homestead ranch barn",
+   "lat": 40.63356,
+   "lon": -106.27893,
+   "approx": false,
+   "location": "Arapaho National Wildlife Refuge, reached by a dirt road branching off the state highway near Walden",
+   "condition": "The barn is the only surviving building of the Hampton Ranch (land homesteaded 1911, bought by the Hamptons 1916, called 'Poverty Flats'), per the FWS cultural report (2010).",
+   "access": "US Fish & Wildlife Service, Arapaho NWR. Free. The refuge auto tour route closes in winter, so visit in summer and fall.",
+   "sources": [
+    "https://webarchive.library.unt.edu/web/20170101055737/https:/www.fws.gov/mountain-prairie/refuges/documents/Arapahoe - Hampton Barn.pdf",
+    "https://fws.gov/refuge/arapaho/visit-us"
+   ],
+   "added": "2026-11-12T06:56:44+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "low",
+    "security_notes": "Refuge rules apply. For the nearby Case Barn, the interior is closed to the public and access may be restricted, so contact Refuge HQ (970-723-8202) first (FWS 2010). Stay on open roads.",
+    "legal": "public",
+    "as_of": "2010",
+    "sources": [
+     "https://webarchive.library.unt.edu/web/20170101055737/https:/www.fws.gov/mountain-prairie/refuges/documents/Arapahoe - Hampton Barn.pdf",
+     "https://fws.gov/refuge/arapaho/visit-us"
+    ],
+    "checked": "2026-11-12"
+   }
+  },
+  {
+   "id": "kenmuir-quarry-and-red-rock-canyon-sandstone-quarries",
+   "name": "Kenmuir Quarry and Red Rock Canyon sandstone quarries",
+   "cat": "other",
+   "type": "historic quarry ruins (cut rock walls, bench cuts, old quarry roads)",
+   "lat": 38.84289,
+   "lon": -104.88393,
+   "approx": false,
+   "location": "Red Rock Canyon Open Space, Quarry Pass Trail (also reached from the Greenlee, Mesa and Contemplative trails), Colorado Springs, El Paso County",
+   "condition": "Sandstone quarrying ran from the late 1800s and mostly stopped in the early 1900s. The city says you can walk through the Kenmuir Quarry, the largest in the canyon, on the Quarry Pass Trail. A marker there says blocks were about 6x7x10 ft and weighed over 25 tons. Trails follow the old quarry roads and bench cuts, and a 'miners' staircase' is cut into the rock (sources seen 2026).",
+   "access": "City of Colorado Springs Parks, Recreation and Cultural Services, phone (719) 385-5940. Free. Posted gate hours differ between sources: about 5am-9pm Nov-Apr and 5am-10pm (one source says 11pm) May-Oct.",
+   "sources": [
+    "https://coloradosprings.gov/node/51456",
+    "https://www.hmdb.org/m.asp?m=283032",
+    "https://trailsandopenspaces.org/park/red-rock-canyon-open-space/"
+   ],
+   "added": "2026-11-12T06:56:51+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "low",
+    "security_notes": "Public city open space. Dogs must be leashed everywhere except the two fenced off-leash dog loops, including the parking lot. Follow posted climbing rules and wildlife closures. Stay on trails and off the quarry walls (2026).",
+    "legal": "public",
+    "as_of": "2026",
+    "sources": [
+     "https://coloradosprings.gov/node/51456",
+     "https://www.hmdb.org/m.asp?m=283032",
+     "https://trailsandopenspaces.org/park/red-rock-canyon-open-space/"
+    ],
+    "checked": "2026-11-12"
+   }
+  },
+  {
+   "id": "cahill-cabin",
+   "name": "Cahill Cabin",
+   "cat": "houses",
+   "type": "homestead cabin ruin",
+   "lat": 38.89501,
+   "lon": -105.18591,
+   "approx": false,
+   "location": "Mueller State Park, Cahill Pond / Cahill Cabin Interpretive Loop (Trails 17-34-36-17), Divide, Teller County",
+   "condition": "Wooden cabin built by the Cahill brothers in the early 1900s (one CPW listing says early 1920s). CPW event listings from 2025-2026 describe it as partly breaking down, with a danger sign on the front, at the edge of an open field. A 2020 visitor called it in disrepair and falling down.",
+   "access": "Colorado Parks and Wildlife, phone 719-687-2366. Loop is about 2.6 mi with about 400 ft of climbing, rated moderate. Day-use hours 5am-10pm. State park daily vehicle pass is $10 with Colorado plates and $15 with out-of-state plates (from May 1, 2026). Open year-round, but trails get icy in winter, so bring traction.",
+   "sources": [
+    "https://trails.colorado.gov/routes/91411",
+    "https://cpw.state.co.us/event/2026/07/cahill-cabin-hike",
+    "https://gazette.com/?p=1126766"
+   ],
+   "added": "2026-11-12T06:56:56+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "low",
+    "security_notes": "A danger sign is posted on the cabin, so look from outside and do not go in. Pets are not allowed on any Mueller trail or in the backcountry (2026). The park pass is required.",
+    "legal": "public",
+    "as_of": "2026",
+    "sources": [
+     "https://trails.colorado.gov/routes/91411",
+     "https://cpw.state.co.us/event/2026/07/cahill-cabin-hike",
+     "https://gazette.com/?p=1126766"
+    ],
+    "checked": "2026-11-12"
+   }
+  },
+  {
+   "id": "osborn-homestead-remnants",
+   "name": "Osborn Homestead remnants",
+   "cat": "other",
+   "type": "homestead ruins",
+   "lat": 38.89317,
+   "lon": -105.18375,
+   "approx": false,
+   "location": "Mueller State Park, Osborn Homestead Trail (#27), downhill from Black Bear Trailhead or from Homestead Trailhead, Divide, Teller County",
+   "condition": "Remains of Earl Osborn's homestead, where he lived with his wife and three children. A 2025 Gazette article calls them remnants, not an intact building. A running-guide source says the cabin remains are visible through the trees and the roof is falling in on one side.",
+   "access": "Colorado Parks and Wildlife. About 3.2 mi round trip. CPW runs guided 'Osborn Homestead' and 'murder mystery' hikes (4.5 mi). State park daily vehicle pass is $10 with Colorado plates and $15 with out-of-state plates (2026). Open year-round.",
+   "sources": [
+    "https://gazette.com/2025/10/15/unsolved-mystery-of-mueller-mueller-report/",
+    "https://greatruns.com/colorado-springs-mueller-state-park/",
+    "https://cpw.state.co.us/event/2026/10/osborn-homestead-hike"
+   ],
+   "added": "2026-11-12T06:56:58+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "low",
+    "security_notes": "No pets on trails (2026). The structure is collapsing, so stay out of it.",
+    "legal": "public",
+    "as_of": "2026",
+    "sources": [
+     "https://gazette.com/2025/10/15/unsolved-mystery-of-mueller-mueller-report/",
+     "https://greatruns.com/colorado-springs-mueller-state-park/",
+     "https://cpw.state.co.us/event/2026/10/osborn-homestead-hike"
+    ],
+    "checked": "2026-11-12"
+   }
+  },
+  {
+   "id": "cheesman-ranch-homestead-remains",
+   "name": "Cheesman Ranch homestead remains",
+   "cat": "houses",
+   "type": "ranch/homestead ruins (barn, log cabin, outbuildings)",
+   "lat": 38.90344,
+   "lon": -105.16953,
+   "approx": false,
+   "location": "Mueller State Park, Cheesman Ranch Trail (#17), north end of the park near CO 67, Divide, Teller County",
+   "condition": "About 1.5 mi along the trail you reach the first of several homestead remains. There is an old wooden barn with equipment inside, a fence around it, and a small log cabin next to it. A 2013 blog said the barn was well maintained, and a 2020 visitor said the cabin was in disrepair and falling down. These are described as the park's best-preserved historic buildings.",
+   "access": "Colorado Parks and Wildlife. Loop routes are about 5-9.9 mi depending on which way you go. CPW runs guided Cheesman Ranch hikes (2025-2026). State park daily vehicle pass is $10 with Colorado plates and $15 with out-of-state plates (2026).",
+   "sources": [
+    "https://on-walkabout.net/2013/01/31/on-walkabout-on-mueller-state-parks-cheesman-ranch-trail/",
+    "https://cat-pear-dbmf.squarespace.com/blog/mueller-state-park-august-4th-to-7th-2020",
+    "https://cpw.state.co.us/event/2025/08/hike-historic-cheesman-ranch"
+   ],
+   "added": "2026-11-12T06:57:01+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "low",
+    "security_notes": "No pets on trails (2026). Look at the buildings from outside only. The park pass is required.",
+    "legal": "public",
+    "as_of": "2026",
+    "sources": [
+     "https://on-walkabout.net/2013/01/31/on-walkabout-on-mueller-state-parks-cheesman-ranch-trail/",
+     "https://cat-pear-dbmf.squarespace.com/blog/mueller-state-park-august-4th-to-7th-2020",
+     "https://cpw.state.co.us/event/2025/08/hike-historic-cheesman-ranch"
+    ],
+    "checked": "2026-11-12"
+   }
+  },
+  {
+   "id": "dixon-and-swisher-homestead-remains-1917",
+   "name": "Dixon and Swisher homestead remains (1917)",
+   "cat": "other",
+   "type": "homestead ruins (lumber remains)",
+   "lat": 38.7294,
+   "lon": -104.84258,
+   "approx": false,
+   "location": "Cheyenne Mountain State Park, upper Dixon Trail at about 9,300 ft (reached from Limekiln Trailhead by Talon / North Talon trails), Colorado Springs, El Paso County",
+   "condition": "A Gazette guide says the shambled lumber remains of the 1917 Bert Swisher and Thomas Dixon homesteads still stand, with the Dixon homestead at about 9,300 ft near the trail's high point. Only one source says they still stand, and I could not confirm their current condition.",
+   "access": "Colorado Parks and Wildlife. The Dixon Trail opened in 2018 and is very strenuous: more than 2,000 ft of climbing over about 3.25-4 mi on the trail itself, and a long day from Limekiln Trailhead. State park daily vehicle pass required.",
+   "sources": [
+    "https://gazette.com/?p=1110209",
+    "https://cpr.org/news/story/dixon-trail-at-cheyenne-mountain-state-park-to-open-to-public-for-first-time",
+    "https://5280.com/cheyenne-mountains-dixon-trail-is-finally-open"
+   ],
+   "added": "2026-11-12T06:57:04+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "low",
+    "security_notes": "The Dixon Trail is hikers only because of its steep grade and rocky switchbacks, and it is rated difficult to extreme. Check current status with the park. Swisher's cabin site near the summit antenna farm is reached only by an unofficial route, so skip it.",
+    "legal": "public",
+    "as_of": "1917",
+    "sources": [
+     "https://gazette.com/?p=1110209",
+     "https://cpr.org/news/story/dixon-trail-at-cheyenne-mountain-state-park-to-open-to-public-for-first-time",
+     "https://5280.com/cheyenne-mountains-dixon-trail-is-finally-open"
+    ],
+    "checked": "2026-11-12"
+   }
+  },
+  {
+   "id": "phantom-canyon-road-tunnels-and-adelaide-bridge-florence-cri",
+   "name": "Phantom Canyon Road tunnels and Adelaide Bridge (Florence & Cripple Creek Railroad)",
+   "cat": "rail",
+   "type": "abandoned railroad grade relics (hand-cut tunnels, 1894 bridge) and ghost-town sites",
+   "lat": 38.71018,
+   "lon": -105.13268,
+   "approx": false,
+   "location": "Phantom Canyon Road (Fremont County Road 67), part of the Gold Belt Scenic Byway and a BLM Back Country Byway, Florence / Victor, Fremont and Teller counties",
+   "condition": "The road follows the Florence & Cripple Creek Railroad grade, which was abandoned after a 1912 flood and turned into an auto road in the 1930s. Two one-way tunnels cut in 1894 are still used by cars, at about mile 19.5 and mile 23. The 1894 Adelaide Bridge is listed on the National Register and is described as the only surviving railroad bridge on the route. Accounts differ on the Wilbur, Adelaide and Glenbrook townsites: one says a few structures stand along the road, another says almost nothing is left but signs.",
+   "access": "Gravel road maintained by Fremont County; the byway is BLM-designated. Free. No vehicles over 25 ft. Drive-through route, about 29-37 mi long.",
+   "sources": [
+    "https://www.goldbeltbyway.com/byway/tour/",
+    "https://www.hikingproject.com/trail/7027429/phantom-canyon-road",
+    "https://historycoloradodev.exemplifi.io/location/bridge-no-10-adelaide-bridge"
+   ],
+   "added": "2026-11-12T06:57:10+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "low",
+    "security_notes": "The road has closed before for floods (2006, 2015) and a rockslide at mile 14 (2023). I found no 2025-2026 closure, so check with Fremont County Road and Bridge before going. Narrow, single-lane tunnels. Any private land at the townsites is off-limits.",
+    "legal": "public",
+    "as_of": "2026",
+    "sources": [
+     "https://www.goldbeltbyway.com/byway/tour/",
+     "https://www.hikingproject.com/trail/7027429/phantom-canyon-road",
+     "https://historycoloradodev.exemplifi.io/location/bridge-no-10-adelaide-bridge"
+    ],
+    "checked": "2026-11-12"
+   }
+  },
+  {
+   "id": "big-stump-with-embedded-saw-blades",
+   "name": "Big Stump with embedded saw blades",
+   "cat": "other",
+   "type": "historic relic (abandoned 1890s sawing attempt)",
+   "lat": 38.94582,
+   "lon": -105.28944,
+   "approx": true,
+   "location": "Florissant Fossil Beds National Monument, Petrified Forest Loop",
+   "condition": "Around 1890-1893 someone tried to saw this petrified redwood stump into pieces to show at the 1893 Chicago World's Fair and failed. The rusty broken saw blades are still stuck in the top of the stump today (NPS, page updated 2021).",
+   "access": "National Park Service. Entrance fee applies (check NPS for the current amount). Short, easy loop trail from the visitor center.",
+   "sources": [
+    "https://www.nps.gov/places/the-big-stump.htm",
+    "https://www.nps.gov/flfo/learn/nature/virtual-big-stump.htm",
+    "https://www.nps.gov/flfo/upload/No4_Petrified_forest_site_bulletin_508.pdf"
+   ],
+   "added": "2026-11-12T06:57:13+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "low",
+    "security_notes": "Federal monument. Do not touch the stump or collect anything, and stay on trails. Removing fossils is illegal.",
+    "legal": "public",
+    "as_of": "2021",
+    "sources": [
+     "https://www.nps.gov/places/the-big-stump.htm",
+     "https://www.nps.gov/flfo/learn/nature/virtual-big-stump.htm",
+     "https://www.nps.gov/flfo/upload/No4_Petrified_forest_site_bulletin_508.pdf"
+    ],
+    "checked": "2026-11-12"
+   }
+  },
+  {
+   "id": "spruce-creek-mohawk-lakes-mining-cabins-and-tram-wheelhouse-",
+   "name": "Spruce Creek / Mohawk Lakes mining cabins and tram wheelhouse remains",
+   "cat": "industrial",
+   "type": "mine remains / miner's cabins",
+   "lat": 39.43709,
+   "lon": -106.05067,
+   "approx": false,
+   "location": "Spruce Creek Trailhead south of Breckenridge, Spruce Creek and Mohawk Lakes trails (spurs to Continental Falls and Mayflower Lakes)",
+   "condition": "Trail guides seen in 2026 searches describe a miner's cabin and the remains of an ore-cart tram wheelhouse above the switchbacks. They also describe an old mining cable leading up the falls, and the standing walls of one 1880s-era mining cabin on the west shore of Lower Mohawk Lake (about 11,860 ft). Hikers fixed up one cabin, the Continental Cabin, as a summer storm shelter.",
+   "access": "White River National Forest (Dillon Ranger District). Day hike of about 6.2-7 mi round trip, summer and fall. Trailhead parking is limited.",
+   "sources": [
+    "https://www.summitcountyexplorer.com/HIKES/MohawkLake-HikingTrail.html",
+    "https://5280.com/hike-we-like-mohawk-lakes-in-summit-county/",
+    "https://www.outdoorproject.com/node/3477"
+   ],
+   "added": "2026-11-12T06:57:18+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "low",
+    "security_notes": "Guides warn about mine shafts and old equipment, so stay off them. Afternoon lightning above treeline is common. Distances differ between sources; check a current map or the Dillon Ranger District.",
+    "legal": "public",
+    "as_of": "2026",
+    "sources": [
+     "https://www.summitcountyexplorer.com/HIKES/MohawkLake-HikingTrail.html",
+     "https://5280.com/hike-we-like-mohawk-lakes-in-summit-county/",
+     "https://www.outdoorproject.com/node/3477"
+    ],
+    "checked": "2026-11-12"
+   }
+  },
+  {
+   "id": "minnie-mine-ruins",
+   "name": "Minnie Mine ruins",
+   "cat": "industrial",
+   "type": "mine ruins",
+   "lat": 39.48343,
+   "lon": -105.99098,
+   "approx": false,
+   "location": "Minnie Mine Loop / B&B and X10U8 trails, about 3 mi up French Gulch Road, Breckenridge, Summit County",
+   "condition": "Remains of the 19th-century Minnie Mine complex: a large tailings pile and several mining ruins with interpretive signs, about 3/4 mi in. Breckenridge History has installed signs on the B&B, Minnie Mine and X10U8 trails. Sources note the structures and ground may be unstable (sources seen 2026).",
+   "access": "Summit County / Town of Breckenridge Open Space. Easy loop of about 1.5-2.7 mi. Open summer and fall; used for snowshoeing in winter.",
+   "sources": [
+    "https://www.gohikecolorado.com/minnie-mine",
+    "https://breckhistory.org/?p=4168",
+    "https://knownothingnomads.com/minnie-mine-loop/"
+   ],
+   "added": "2026-11-12T06:57:21+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "low",
+    "security_notes": "Open space rules: stay on trail, don't enter shafts or climb on equipment, open mine shafts in the area. French Gulch was an EPA Superfund site.",
+    "legal": "public",
+    "as_of": "2026",
+    "sources": [
+     "https://www.gohikecolorado.com/minnie-mine",
+     "https://breckhistory.org/?p=4168",
+     "https://knownothingnomads.com/minnie-mine-loop/"
+    ],
+    "checked": "2026-11-12"
+   }
+  },
+  {
+   "id": "pyrenees-mine-headframe-seen-from-the-mineral-belt-trail",
+   "name": "Pyrenees Mine headframe (seen from the Mineral Belt Trail)",
+   "cat": "industrial",
+   "type": "mine headframe",
+   "lat": 39.24595,
+   "lon": -106.26899,
+   "approx": false,
+   "location": "Mineral Belt National Recreation Trail (about 11.6 mi paved loop), east-side mining district section, Leadville, Lake County",
+   "condition": "The Mining History Association describes the headframe as 'just off the trail' and 'one of the largest still standing', over a 1,247 ft shaft. A 2022 hiking blog mentions an interpretive sign about the 'hulking relic'. Other 1880s headframes, cribbing and tailings are also visible along the loop.",
+   "access": "The trail is free and public, built as part of the California Gulch Superfund cleanup. Snow-free in summer and fall; groomed for Nordic skiing in winter.",
+   "sources": [
+    "https://mininghistoryassociation.org/LeadvilleMineTour6.htm",
+    "https://valhikes.blogspot.com/2022/08/mineral-belt-trail.html",
+    "https://en.wikipedia.org/wiki/Mineral_Belt_National_Recreation_Trail"
+   ],
+   "added": "2026-11-12T06:57:24+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "low",
+    "security_notes": "PRIVATE CLAIMS: the trail is public, but most land in the Leadville east-side mining district is privately owned. Lake County tourism asks visitors to stay on trails and roads and says no camping or rockhounding. View the headframe from the trail only. No source confirmed the land under the headframe is public.",
+    "legal": "public",
+    "as_of": "2022",
+    "sources": [
+     "https://mininghistoryassociation.org/LeadvilleMineTour6.htm",
+     "https://valhikes.blogspot.com/2022/08/mineral-belt-trail.html",
+     "https://en.wikipedia.org/wiki/Mineral_Belt_National_Recreation_Trail"
+    ],
+    "checked": "2026-11-12"
+   }
+  },
+  {
+   "id": "stone-huts-railroad-labor-camp-remains-officers-gulch",
+   "name": "Stone Huts railroad labor camp remains, Officers Gulch",
+   "cat": "rail",
+   "type": "railroad relic / labor camp ruins",
+   "lat": 39.53928,
+   "lon": -106.14617,
+   "approx": false,
+   "location": "Officers Gulch parking area off County Road 1220 near I-70, Tenmile Canyon (Tenmile Canyon Recpath corridor), Frisco, Summit County",
+   "condition": "A marker put up by the USDA Forest Service, Summit County, the Town of Frisco and the Frisco Historical Society says these stone structures appear to be the remains of late-1800s labor camps. Immigrant workers building the Tenmile Canyon railroad used them as temporary homes. There were once up to 50 huts (stone and packed-earth walls); many were destroyed when the highway was built.",
+   "access": "White River National Forest / Summit County, at the Officers Gulch parking area next to the paved Tenmile Recpath. Best in summer and fall.",
+   "sources": [
+    "https://www.hmdb.org/m.asp?m=120009",
+    "https://historicalmarkerproject.com/markers/HM298N_stone-huts_Frisco-CO.html",
+    "https://www.allsummitcounty.com/history_museums/officers_gulch.php"
+   ],
+   "added": "2026-11-12T06:57:29+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "low",
+    "security_notes": "Archaeological site: don't move stones or dig. The ruins are fragile and low to the ground. I-70 traffic is close by.",
+    "legal": "public",
+    "sources": [
+     "https://www.hmdb.org/m.asp?m=120009",
+     "https://historicalmarkerproject.com/markers/HM298N_stone-huts_Frisco-CO.html",
+     "https://www.allsummitcounty.com/history_museums/officers_gulch.php"
+    ],
+    "checked": "2026-11-12"
+   }
+  },
+  {
+   "id": "buffalo-cabin-log-cabin-ruins",
+   "name": "Buffalo Cabin log cabin ruins",
+   "cat": "houses",
+   "type": "cabin ruins",
+   "lat": 39.63179,
+   "lon": -106.07523,
+   "approx": true,
+   "location": "Buffalo Cabin Trailhead at the top of Ryan Gulch Rd / Wildernest Rd, Buffalo Mountain Trail #31, Silverthorne, Summit County",
+   "condition": "Recreation.gov lists 'a shorter hike to some log cabin ruins' on this trail. The Denver Gazette (2017) says the trail switchbacks steeply 'past some cabin ruins'. No date for the cabin was found.",
+   "access": "White River National Forest, Eagles Nest Wilderness. Short hike to the ruins. Summer and fall; snow in winter.",
+   "sources": [
+    "https://www.recreation.gov/camping/poi/10082510",
+    "https://www.denvergazette.com/2017/04/02/buffalo-mountain-trail-69a59611-49b6-5646-b22b-918a7d772a1d/"
+   ],
+   "added": "2026-11-12T06:57:37+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "low",
+    "security_notes": "Wilderness rules apply: no bikes or motor vehicles. Past the ruins the summit route is very steep (about 3,000 ft of gain in 2.8 mi) with a boulder field.",
+    "legal": "public",
+    "as_of": "2017",
+    "sources": [
+     "https://www.recreation.gov/camping/poi/10082510",
+     "https://www.denvergazette.com/2017/04/02/buffalo-mountain-trail-69a59611-49b6-5646-b22b-918a7d772a1d/"
+    ],
+    "checked": "2026-11-12"
+   }
+  },
+  {
+   "id": "maid-of-orleans-mine-ruins-peru-creek",
+   "name": "Maid of Orleans mine ruins, Peru Creek",
+   "cat": "industrial",
+   "type": "mine ruins / cabin ruins",
+   "lat": 39.60684,
+   "lon": -105.9651,
+   "approx": true,
+   "location": "Peru Creek Road (FR 260) east of Montezuma, about 1.5 mi up the valley, Montezuma / Keystone, Summit County",
+   "condition": "A 2009 blog describes the ruins of the Maid of Orleans mine at about 1.5 mi, with private cabins nearby. An onX listing says old mine sites and cabin ruins dot the valley.",
+   "access": "White River National Forest (Dillon Ranger District). Peru Creek Road for hiking or 4WD in summer; snowshoe route in winter. Motorized access ends at the locked gate near the Shoe Basin Mine.",
+   "sources": [
+    "https://colorado-lifestyle.blogspot.com/2009/01/peru-creek-snowshoe.html",
+    "https://www.onxmaps.com/offroad/trails/us/colorado/peru-creek-7861n43k0zlm",
+    "https://fs.usda.gov/r02/whiteriver/recreation/argentine-pass-trailhead-77-cdt-access"
+   ],
+   "added": "2026-11-12T06:57:40+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "low",
+    "security_notes": "PRIVATE CLAIMS: there are patented mining claims and private cabins in the valley, so stay on the road and trail. The Forest Service warns of many underground mine shafts in the Peru Creek drainage. Avalanche danger in winter (the road was once closed by an avalanche near Chihuahua Gulch, reported 2011).",
+    "legal": "public",
+    "as_of": "2011",
+    "sources": [
+     "https://colorado-lifestyle.blogspot.com/2009/01/peru-creek-snowshoe.html",
+     "https://www.onxmaps.com/offroad/trails/us/colorado/peru-creek-7861n43k0zlm",
+     "https://fs.usda.gov/r02/whiteriver/recreation/argentine-pass-trailhead-77-cdt-access"
+    ],
+    "checked": "2026-11-12"
+   }
+  },
+  {
+   "id": "cross-creek-treasure-vault-lake-mining-cabins-and-mill-ruins",
+   "name": "Cross Creek / Treasure Vault Lake mining cabins and mill ruins",
+   "cat": "industrial",
+   "type": "mine, mill and cabin ruins",
+   "lat": 39.40624,
+   "lon": -106.51992,
+   "approx": false,
+   "location": "Cross Creek Trail #2006 from the trailhead off US 24 south of Minturn, upper valley toward Treasure Vault Lake and Fancy Pass",
+   "condition": "Vail Daily says the trail passes ruins of mining cabins, ore mills and abandoned mines from the 1880s Holy Cross mining district. The Colorado trails site says the route passes old mining cabins. A Colorado Mountain Club route notes mining ruins scattered just below Fancy Pass. This is a separate site from Holy Cross City.",
+   "access": "White River National Forest (Holy Cross Ranger District), Holy Cross Wilderness. Long route: about 14-15 mi one way, so usually an overnight trip. Summer only.",
+   "sources": [
+    "https://www.vaildaily.com/sports/outdoors/trail-of-the-week-cross-creek-in-minturn/",
+    "https://trails.colorado.gov/routes/111",
+    "https://fs.usda.gov/r02/whiteriver/recreation/cross-creek-th-2006"
+   ],
+   "added": "2026-11-12T06:57:45+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "low",
+    "security_notes": "Wilderness rules: Leave No Trace, no camping or fires within 100 ft of water. Remote area with open mine workings, so stay out of adits and shafts. Too long for a casual day trip.",
+    "legal": "public",
+    "sources": [
+     "https://www.vaildaily.com/sports/outdoors/trail-of-the-week-cross-creek-in-minturn/",
+     "https://trails.colorado.gov/routes/111",
+     "https://fs.usda.gov/r02/whiteriver/recreation/cross-creek-th-2006"
+    ],
+    "checked": "2026-11-12"
+   }
+  },
+  {
+   "id": "deluge-lake-old-sheep-cabin",
+   "name": "Deluge Lake old sheep cabin",
+   "cat": "houses",
+   "type": "cabin",
+   "lat": 39.65702,
+   "lon": -106.22726,
+   "approx": false,
+   "location": "Gore Creek Trailhead, then Deluge Lake Trail #2014 (turns left at 0.1 mi) to the lake, East Vail, Eagle County",
+   "condition": "Hiking guides describe an old, unoccupied sheep cabin about 100 yards from Deluge Lake that is still standing, not a ruin. One source also mentions the remains of old mining camps along the route. Age and origin are unconfirmed; the Gore Creek valley had sheep ranching in the early 1900s.",
+   "access": "White River National Forest, Eagles Nest Wilderness. Steep hike of about 4.5 mi one way. Summer and fall.",
+   "sources": [
+    "https://www.gaiagps.com/hike/13193/deluge-lake/",
+    "https://www.hikingproject.com/trail/7019553/deluge-lake",
+    "https://fs.usda.gov/r02/whiteriver/recreation/deluge-lake-th-2014"
+   ],
+   "added": "2026-11-12T06:57:49+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "low",
+    "security_notes": "Wilderness rules apply, and dogs must be leashed on Vail-area wilderness trails. Steep, strenuous trail. Ownership and current condition of the cabin are not documented, so treat it as fragile.",
+    "legal": "public",
+    "as_of": "1900",
+    "sources": [
+     "https://www.gaiagps.com/hike/13193/deluge-lake/",
+     "https://www.hikingproject.com/trail/7019553/deluge-lake",
+     "https://fs.usda.gov/r02/whiteriver/recreation/deluge-lake-th-2014"
+    ],
+    "checked": "2026-11-12"
+   }
   }
  ]
 }
