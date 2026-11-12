@@ -11582,8 +11582,8 @@
    "name": "Lincoln City townsite",
    "cat": "houses",
    "type": "mining camp (shacks, cabins)",
-   "lat": 39.48343,
-   "lon": -105.99098,
+   "lat": 39.48159,
+   "lon": -105.98882,
    "approx": false,
    "location": "French Gulch, in the Golden Horseshoe area east of Breckenridge. Drive past the Reiling Dredge to the Lincoln City trailhead.",
    "condition": "Blog accounts describe a couple of buildings, falling-down cabins, tin-roofed and tin-sided shacks, mining debris, tailings and an 1864 grave. These are undated, roughly 2010s.",
@@ -11675,8 +11675,8 @@
    "name": "Hayden Ranch headquarters",
    "cat": "houses",
    "type": "historic ranch complex (barns, houses, outbuildings)",
-   "lat": 39.24898,
-   "lon": -106.29036,
+   "lat": 39.24714,
+   "lon": -106.2882,
    "approx": true,
    "location": "5801 US Highway 24, south of Leadville. A 35-acre headquarters on the highway.",
    "condition": "Sixteen buildings built 1880-1930, on the National Register. Sales listings (2024-2025) say the buildings fell out of use and into disrepair, and that historic barns, sheds and outbuildings remain.",
@@ -11991,6 +11991,126 @@
     "checked": "2026-11-11"
    },
    "added": "2026-11-11T12:58:57+00:00"
+  },
+  {
+   "id": "valmont-butte-mill-former-fluorspar-gold-mill",
+   "name": "Valmont Butte Mill (former fluorspar/gold mill)",
+   "cat": "industrial",
+   "type": "mill",
+   "lat": 40.0297,
+   "lon": -105.2089,
+   "approx": true,
+   "location": "Valmont Butte, east of Boulder near Valmont Rd and N 75th St, next to the Valmont power station",
+   "condition": "Mill built c.1935-40s (St. Joe Mining Co.), closed by Allied in 1973; described as abandoned and city-owned (2011) with buildings and equipment left to rot. No 2024+ condition report found.",
+   "access": "City of Boulder owns it (since 2000); not open to the public. Arsenic, lead and radioactive contamination.",
+   "sources": [
+    "https://atlasobscura.com/places/valmont-butte",
+    "https://archives.boulderweekly.com/news/valmont-butte-timeline/",
+    "https://mgerwingarch.com/m-gerwing/2011/08/13/valmont-mill"
+   ],
+   "added": "2026-11-12T00:54:25+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "medium",
+    "security_notes": "Visitor review (undated) reports No Trespassing and arsenic/lead warning signs.",
+    "legal": "government-owned (not open)",
+    "as_of": "2024",
+    "sources": [
+     "https://atlasobscura.com/places/valmont-butte",
+     "https://archives.boulderweekly.com/news/valmont-butte-timeline/",
+     "https://mgerwingarch.com/m-gerwing/2011/08/13/valmont-mill"
+    ],
+    "checked": "2026-11-12"
+   },
+   "pin": "manual"
+  },
+  {
+   "id": "silica-kiln-silica-brick-and-clay-company-kiln",
+   "name": "Silica kiln (Silica Brick and Clay Company kiln)",
+   "cat": "other",
+   "type": "kiln",
+   "lat": 39.43236,
+   "lon": -105.06046,
+   "approx": false,
+   "location": "Near the entrance to Roxborough State Park, off N Rampart Range Rd / E Roxborough Dr, Littleton, Douglas County",
+   "condition": "Last remnant of the 1904-1913 Silica Brick and Clay Company works; a lone limestone kiln still stands (undated sources).",
+   "access": "Douglas County landmark; ownership of the parcel (park, county or private inholding) unconfirmed. Ask Roxborough State Park before visiting.",
+   "sources": [
+    "https://sah-archipedia.org/node/8314",
+    "https://cpr.org/show-episode/silica"
+   ],
+   "added": "2026-11-12T00:54:31+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "unknown",
+    "legal": "unknown",
+    "as_of": "1913",
+    "sources": [
+     "https://sah-archipedia.org/node/8314",
+     "https://cpr.org/show-episode/silica"
+    ],
+    "checked": "2026-11-12"
+   }
+  },
+  {
+   "id": "longhurst-lodge",
+   "name": "Longhurst Lodge",
+   "cat": "leisure",
+   "type": "lodge (historic mountain lodge/cabin)",
+   "lat": 40.19536,
+   "lon": -105.48184,
+   "approx": true,
+   "location": "Allenspark, along the Hwy 7 / Peak to Peak corridor (exact address not given in sources seen)",
+   "condition": "Its 2017 National Register nomination lists current use as 'vacant/not in use'. Listed on the NRHP September 18, 2017. No newer source was found confirming it is still vacant or still standing in 2026, so verify first.",
+   "access": "Privately owned by the Allenspark Community Church, per a 2017 Boulder County Historic Preservation Advisory Board packet that also covers permit applications for the cabin. No public access is documented.",
+   "sources": [
+    "https://npgallery.nps.gov/AssetDetail/NRIS/100001606",
+    "https://npgallery.nps.gov/GetAsset/f53c3a13-d2ea-40e8-a37c-1737deb02978",
+    "https://historypointer.com/nris/resource/100001606"
+   ],
+   "added": "2026-11-12T00:54:35+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "unknown",
+    "legal": "private",
+    "as_of": "2026",
+    "sources": [
+     "https://npgallery.nps.gov/AssetDetail/NRIS/100001606",
+     "https://npgallery.nps.gov/GetAsset/f53c3a13-d2ea-40e8-a37c-1737deb02978",
+     "https://historypointer.com/nris/resource/100001606"
+    ],
+    "checked": "2026-11-12"
+   }
+  },
+  {
+   "id": "pantall-elementary-school-stevens-elementary-school-former",
+   "name": "Pantall Elementary School / Stevens Elementary School (former)",
+   "cat": "institutional",
+   "type": "school (1953 elementary)",
+   "lat": 40.6237,
+   "lon": -103.20555,
+   "approx": true,
+   "location": "Street address not given in the sources I saw. The NRHP nomination places it in a residential neighborhood in Sterling.",
+   "condition": "Closed in 2007 when Ayers Elementary opened. The Sterling Journal-Advocate called it 'abandoned' in November 2022, when contractor Tyrone Jackson asked the City Council to help turn it into 18-20 affordable apartments. I found no update after 2022, so I could not confirm whether that conversion has started. Colorado Preservation lists a roof rehabilitation as an active project. Listed on the National Register of Historic Places.",
+   "access": "Private. The school district sold it for $1 to Bernice Mills in 2014. A developer was pursuing it in 2022. Not open to the public.",
+   "sources": [
+    "https://www.pressreader.com/usa/journal-advocate-sterling/20221111/281479280395176",
+    "https://npgallery.nps.gov/AssetDetail/faffdc6b-fef8-4acd-a066-dc06386b10e6",
+    "https://www.coloradopreservation.org/endangered-place/pantall-school-stevens-elementary-school/"
+   ],
+   "added": "2026-11-12T00:54:38+00:00",
+   "verify": {
+    "status": "standing",
+    "security": "unknown",
+    "legal": "private",
+    "as_of": "2022",
+    "sources": [
+     "https://www.pressreader.com/usa/journal-advocate-sterling/20221111/281479280395176",
+     "https://npgallery.nps.gov/AssetDetail/faffdc6b-fef8-4acd-a066-dc06386b10e6",
+     "https://www.coloradopreservation.org/endangered-place/pantall-school-stevens-elementary-school/"
+    ],
+    "checked": "2026-11-12"
+   }
   }
  ]
 }
